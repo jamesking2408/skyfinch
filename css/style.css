@@ -1,46 +1,9 @@
 /********** Template CSS **********/
 
+
 /* import google font poppins */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-
-/* .tooltip {
-    position: relative;
-    display: inline-block;
-}
-
-.tooltiptext {
-    visibility: hidden;
-    position: absolute;
-    right: 33px;
-    bottom: 105px;
-    height: 50px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    background: #0670fc;
-    cursor: pointer;
-    border-radius: 5%;
-    transition: all .2s ease;
-    z-index: 9999;
-}
-
-.tooltiptext:hover  {
-    visibility: visible;
-} */
-
-.chatbot-toggler:hover .tooltip-text{
-    visibility: visible;
-    color: #0670fc;
-    background-color: rgb(252, 217, 102) ;
-    border-radius: 8px;
-    position: absolute;
-    z-index: 9999;
-    
-
-}
 
 
 .show-chatbot .chatbot-toggler span:first-child,
@@ -95,10 +58,12 @@
     pointer-events: none;
     overflow: hidden;
     background-color: #fff;
-    border-radius: 15px;
+    border-radius: 20px;
+    border: 1px solid var(--primary);
     transform-origin: bottom right;
-    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
-        0 32px 64px -48px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 1px 10px 5px #5e95e7;
+    -moz-box-shadow: 1px 1px 10px 5px #5e95e7;
+    box-shadow: 1px 1px 10px 5px #5e95e7;
     transition: all .1s ease;
     z-index: 9999;
 }
@@ -108,6 +73,7 @@
     opacity: 1;
     pointer-events: auto;
 }
+
 
 .chatbot header {
     background-color: rgb(6, 112, 252);
@@ -119,6 +85,10 @@
 .chatbot header h2 {
     color: #fff;
     font-size: 1.4rem;
+    border: 2px solid #fff;
+    margin-left: 90px;
+    margin-right: 90px;
+    border-radius: 20px 0 20px 0;
 }
 
 .chatbot header span {
@@ -131,7 +101,7 @@
     display: none;
 }
 
-.chatbot .chatbox {
+.chatbox {
     height: 355px;
     overflow-y: auto;
     padding: 15px 20px 70px;
@@ -145,31 +115,33 @@
     height: 32px;
     width: 32px;
     color: #fff;
-    background-color: rgba(63, 143, 248, 0.849);
     text-align: center;
     align-self: flex-end;
     line-height: 32px;
-    border-radius: 4px;
-    margin: 0 10px 7px 0;
+    border-radius: 40%;
+    margin-left: 0;
+    margin-right: 2px;
 }
 
 .chatbox .outgoing {
     justify-content: flex-end;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .chatbox .chat p {
     color: #fff;
-    padding: 12px 16px;
-    border-radius: 10px 10px 0 10px;
+    padding: 0 25px;
+    margin-bottom: 0;
+    border-radius: 20px 20px 0 20px;
     background-color: rgba(63, 143, 248, 0.849);
 
 }
 
 .chatbox .incoming p {
     color: #000;
-    background: #f2f2f2;
-    border-radius: 10px 10px 10px 0;
+    background: #d8d7d7;
+    border-radius: 30px 30px 30px 0;
+    width: fit-content;
 }
 
 .chatbot .chat-input {
@@ -184,20 +156,22 @@
 }
 
 .chat-input textarea {
-    height: 55px;
+    height: 35px;
     width: 100%;
     border: none;
     outline: none;
     font-size: 0.95rem;
     resize: none;
-    padding: 16px 15px 16px 0;
+    padding: 10px 15px 16px 0;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
     overflow: hidden;
 }
 
 .chat-input span {
     align-self: flex-end;
-    height: 55px;
-    line-height: 55px;
+    height: 35px;
+    line-height: 35px;
     color: rgb(6, 112, 252);
     font-size: 1.35rem;
     cursor: pointer;
@@ -208,25 +182,27 @@
     visibility: visible;
 }
 
-@media (max-width:490px) {
+@media (max-width:590px) {
     .chatbot {
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        border-radius: 0;
+        right: 80px;
+        bottom: 100px;
+        height: 350px;
+        width: 320px;
     }
 
     .chatbot .chatbox {
         height: 90%;
     }
 
-    .chatbot header spand {
-        display: block;
+    .chatbot header span {
+        display: none;
     }
 }
 
 
 /* End chat box design  */
+
+
 
 
 .SmoothScroll {
@@ -249,9 +225,9 @@
 
 
 .img-abt {
-    background-image: url(../img/india/aboutus1.jpg);
+    background-image: url(../img/aboutus1.jpg);
     width: 100%;
-    padding-bottom: 510px;
+    padding-bottom: 480px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -288,12 +264,12 @@
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width:1145px) {
+@media (max-width:800px) {
     .boder-blur {
         position: absolute;
         margin-left: 40px;
-        width: 40%;
-        bottom: 190px;
+        width: 49.85%;
+        bottom: 145px;
         border-radius: 15px;
         background: rgba(255, 255, 255, 0.5);
         -webkit-backdrop-filter: blur(15px);
@@ -305,8 +281,8 @@
     .boder-blur:hover {
         position: absolute;
         margin-left: 40px;
-        width: 40%;
-        bottom: 190px;
+        width: 49.85%;
+        bottom: 145px;
         border-radius: 15px;
         background: rgba(255, 255, 255, 0.596);
         -webkit-backdrop-filter: blur(15px);
@@ -322,14 +298,17 @@
 
 /* End change about us header */
 
-
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
 
 /* Start Service header change */
 
 .bg {
     background-image: url(../img/india/servicehead.jpeg);
     width: 100vw;
-    padding-bottom: 460px;
+    padding-bottom: 480px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -383,7 +362,7 @@
     .service-border {
         position: absolute;
         margin-left: 40px;
-        width: 40%;
+        width: 45%;
         bottom: 185px;
         border-radius: 15px;
         background: rgba(255, 255, 255, 0.5);
@@ -396,7 +375,7 @@
     .service-border:hover {
         position: absolute;
         margin-left: 40px;
-        width: 40%;
+        width: 45%;
         bottom: 185px;
         border-radius: 15px;
         background: rgba(255, 255, 255, 0.596);
@@ -411,37 +390,6 @@
     }
 }
 
-@media (max-width:455px) {
-    .service-border {
-        position: absolute;
-        margin-left: 40px;
-        width: 50%;
-        bottom: 185px;
-        border-radius: 15px;
-        background: rgba(255, 255, 255, 0.5);
-        -webkit-backdrop-filter: blur(15px);
-        backdrop-filter: blur(19px);
-        border: 2px solid rgba(255, 255, 255, 0.25);
-        transition: transform .2s;
-    }
-
-    .service-border:hover {
-        position: absolute;
-        margin-left: 40px;
-        width: 50%;
-        bottom: 185px;
-        border-radius: 15px;
-        background: rgba(255, 255, 255, 0.596);
-        -webkit-backdrop-filter: blur(15px);
-        backdrop-filter: blur(10px);
-        border: 2px solid rgba(255, 255, 255, 0.767);
-        -ms-transform: scale(1.05);
-        transform: scale(1.05);
-        -webkit-transform: scale(1.05);
-        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-    }
-}
 
 
 
@@ -452,7 +400,7 @@
 .contact_bg {
     background-image: url(../img/contact.jpg);
     width: 100%;
-    padding-bottom: 470px;
+    padding-bottom: 485px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -628,7 +576,7 @@ h6,
 /*** New Spinner ***/
 .loading {
     position: fixed;
-    z-index: 99;
+    z-index: 9999;
     top: 0;
     left: 0;
     width: 100%;
@@ -641,12 +589,12 @@ h6,
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 .loading>img {
-    width: 150px;
-    height: 200px;
+    width: 100px;
+    height: 150px;
 
 }
 
@@ -681,7 +629,7 @@ h6,
 #spinner {
     opacity: 0;
     visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    transition: opacity .1s ease-out, visibility 0s linear .1s;
     z-index: 99999;
 }
 
@@ -733,107 +681,70 @@ h6,
 /*** Navbar ***/
 
 /* dropdown new update */
-/* .dropbtn1 {
+.dropbtn1 {
     background-color: white;
-  }
-  
-  .dropdown1 {
+    color: grey;
+    padding: 2px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.submenu {
     position: relative;
     display: inline-block;
-  }
-  
-  .dropdown-content1 {
+}
+
+
+.dropdown-content1 {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #f9f9f9;
+    width: max-content;
+    margin-top: -34px;
+    margin-left: 155px;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    margin-left: 98px;
     border-radius: 10px;
-  }
-  
-  .dropdown-content1 a {
-    color: rgb(0, 119, 255);
-    padding: 12px 16px;
+    -webkit-box-shadow: 1px 1px 10px 3px #dddddd;
+    -moz-box-shadow: 1px 1px 10px 3px #dddddd;
+    box-shadow: 1px 1px 10px 3px #dddddd;
+    z-index: 1;
+}
+
+@media (max-width:800px) {
+    .dropdown-content1{
+        margin-left: 122px;
+    }
+}
+
+.dropdown-content1 a {
+    color: rgb(73, 72, 72);
+    padding: 5px 5px;
+    font-weight: bold;
+    border-radius: 10px;
     text-decoration: none;
     display: block;
-    margin-left: 5px;
-    border-radius: 10px;
-  }
-  
-  .dropdown-content1 a:hover {background-color: rgb(193, 197, 193); border-radius: 10px;}
-  
-  .dropdown1:hover .dropdown-content1 {display: block;}
-  
-  */
-
-/* End header dropdown  */
-/* 
- .application, .web{
-    display: none;
- } 
-
-
-.apphov:hover+.application, .webhov:hover+.web{
-    display: block; 
-    position: absolute;
-    z-index: 99;
-} */
-
-
-
-
-.application {
-    position: fixed;
-    z-index: 99;
-    background-color: #fffffff5;
-    width: 20%;
-    margin-top: 10px;
-    margin-left: 1070px;
-    border-color: var(--light);
-    border-radius: 10px;
 }
 
-#app {
-    right: 0;
-    text-align: left;
-}
-
-.application .row {
-    width: fit-content;
-}
-
-.application .row:hover {
-    background-color: #dddddd67;
-}
-
-#app>div:hover>button:hover {
+.dropdown-content1 a:hover {
+    font-weight: bold;
     color: var(--primary);
-    border-bottom: var(--primary);
+    background-color: #e7e7e7
 }
 
-.web {
-    position: fixed;
-    z-index: 99;
-    background-color: #fffffff5;
-    width: 20%;
-    margin-top: 35px;
-    margin-left: 1070px;
-    border-color: var(--light);
-    border-radius: 10px;
+.submenu:hover .dropdown-content1 {
+    display: block;
 }
 
-.web .row {
-    width: max-content;
+.submenu:hover .dropbtn1 {
+    font-weight: bold;
+    background-color: rgb(238, 235, 235);
 }
 
-#app1>div:hover>button:hover {
-    background-color: #dddddd67;
+.submenu:hover .dropbtn1 .arrow {
     color: var(--primary);
-    border-bottom: var(--primary);
+    font-size: larger;
 }
-
 
 
 /* ///////////////////////////////////////////////////////////// */
@@ -1003,12 +914,12 @@ h6,
 
 .footer {
     background: #000B1C;
-
 }
 
 .copyright {
     color: var(--light);
     background: #000B1C;
+    height:min-content;
 }
 
 .copyright a {
@@ -1030,7 +941,23 @@ h6,
     bottom: 0;
 }
 
-
+.me-5{
+    margin-right:3rem!important;
+}
+.me-6{
+    margin-right:4rem!important;
+}
+.me-8{
+    margin-right: 6rem!important;
+}
+.me-9{
+    margin-right: 8rem!important;
+}
+@media (max-width:768px) {
+    .w-md-50{
+        width: 42%!important;
+    }
+}
 /* Manual CSS Start*/
 
 
@@ -1083,18 +1010,45 @@ h6,
 
 .main {
     position: fixed;
-    background-color: rgba(224, 224, 235, 0.842);
-    border-color: #dadbff;
+    background-color: #dde8ee;
     bottom: 10%;
-    left: 4%;
+    left: 5%;
     width: min(100%, 300px);
-    border-radius: 35px;
+    border: 1px solid rgb(10, 79, 228);
+    -webkit-box-shadow: 0 0 21px 22px #298ffd;
+    -moz-box-shadow: 0 0 21px 22px #298ffd;
+    box-shadow: 0 0 21px 22px #298ffd;
+    border-radius: 35px 35px 35px 25px;
     z-index: 99999;
 }
 
+@media (max-width:800px) {
+    .main {
+        position: fixed;
+        background-color: #dde8ee;
+        bottom: 9%;
+        left: 11%;
+        width: min(100%, 300px);
+        border: 1px solid rgb(10, 79, 228);
+        -webkit-box-shadow: 0 0 21px 22px #298ffd;
+        -moz-box-shadow: 0 0 21px 22px #298ffd;
+        box-shadow: 0 0 21px 22px #298ffd;
+        border-radius: 35px 35px 35px 25px;
+        z-index: 99999;
+    }
+
+    #forms {
+        position: fixed;
+        bottom: 8%;
+        left: 10%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: 15px;
+        z-index: 99;
+    }
+}
+
 .main:hover {
-    background-color: rgba(250, 250, 255, 0.932);
-    border-color: #d7d7da;
+    background-color: #d8e8f1;
 }
 
 #forms {
@@ -1104,6 +1058,16 @@ h6,
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 15px;
     z-index: 99;
+}
+
+#show_form {
+    margin-bottom: 5px;
+}
+
+#show_form img {
+    width: 155px;
+    /* orange to blue converted */
+    filter: saturate(100%) sepia(10%) hue-rotate(180deg) contrast(250%) brightness(100%);
 }
 
 
@@ -1263,6 +1227,7 @@ h6,
     height: 30px;
 }
 
+
 .card .beat i {
     transition: 0.3s;
 }
@@ -1345,7 +1310,7 @@ h6,
     background-image: linear-gradient(#000B1C, #000B1C);
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 100% 45%;
+    background-size: 100% 40%;
 }
 
 @media (max-width: 768px) {
@@ -1353,23 +1318,23 @@ h6,
         background-image: linear-gradient(#000B1C, #000B1C);
         background-repeat: no-repeat;
         background-position: top;
-        background-size: 100% 40%;
+        background-size: 100% 38%;
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .bg-04 {
         background-image: linear-gradient(#000B1C, #000B1C);
         background-repeat: no-repeat;
         background-position: top;
-        background-size: 100% 33%;
+        background-size: 100% 35%;
     }
 }
 
 
 /* section 4 end */
 .pop1:hover {
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     -ms-transform: scale(1.2);
     transform: scale(1.2);
     -webkit-transform: scale(1.05);
@@ -1548,6 +1513,11 @@ h6,
     display: none;
 }
 
+.show2 img {
+    height: 330px;
+    border-radius: 300px 300px 150px 150px;
+}
+
 .active1 {
     background-color: #011A41 !important;
     color: white !important;
@@ -1624,14 +1594,39 @@ h6,
     background-size: 100% 100%;
 }
 
-.v360:hover i {
-    animation: rotate 0.2s linear;
+.v360 i {
+    animation-name: out;
+    animation-duration: 0.2s;
+
 }
 
+.v360:hover i {
+    animation-name: in;
+    animation-duration: 0.3s;
+}
 
+@keyframes in {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes out {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
 
 /* Rotate animation 360 degree */
-@keyframes rotate {
+/* @keyframes rotate {
     0% {
         transform: rotate(0deg);
     }
@@ -1643,13 +1638,20 @@ h6,
     100% {
         transform: rotate(360deg);
     }
-}
+} */
 
 /* service page callback */
 
 .callback {
-    border-radius: 50px;
+    width: 700px;
+    border-radius: 80px;
+}
 
+@media (max-width:768px) {
+    .callback {
+        width: 430px;
+        border-radius: 20px;
+    }
 }
 
 .bar-clor {
@@ -1661,12 +1663,6 @@ h6,
 }
 
 /* contact page start  */
-
-.submenu {
-    margin-left: 100%;
-    margin-right: 0;
-
-}
 
 
 
