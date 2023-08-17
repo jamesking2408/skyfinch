@@ -43,7 +43,7 @@ function msgButton() {
     const num = document.querySelector("#cus-number").value;
     const mail = document.querySelector("#cus-mail").value;
     const txt = document.querySelector("#cus-text").value;
-    if((cus_name == "")||(num == "")||(mail == "")||(txt == "")||(txt.length < 100)){
+    if((cus_name == "")||(num == "")||(mail == "")||(txt == "")||(txt.length = "")){
         document.querySelector(".sub-popup1 h2").innerHTML = "☹ SORRY!";
         document.querySelector(".sub-popup1 p").innerHTML = "Check your All Fields!";
         popup1.classList.add("open-popup");
@@ -70,7 +70,7 @@ function msgButton() {
     }
     else if (txt.length < 100) {
         document.querySelector(".sub-popup1 h2").innerHTML = "☹ SORRY!";
-        document.querySelector(".sub-popup1 p").innerHTML = "Please Fill out message field!!!";
+        document.querySelector(".sub-popup1 p").innerHTML = "Please Fill out message field more than 100 letters!!!";
         popup1.classList.add("open-popup");
     }
     else {
