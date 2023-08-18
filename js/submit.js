@@ -174,8 +174,15 @@ function closePopup() {
 
 function closePopup0() {
     popup.classList.remove("open-popup");
-    document.contactus.reset();
+    document.callus.reset();
 }
 function closePopup1() {
+    popup1.classList.remove("open-popup");
+}
+function closePopup2() {
+    popup.classList.remove("open-popup");
+    document.contactus.reset();
+}
+function closePopup3() {
     popup1.classList.remove("open-popup");
 }
