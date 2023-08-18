@@ -225,9 +225,7 @@
     margin-top: 0%;
     width: 100vw;
 }
-.w-lg-100 {
-    width: 100%!important;
-}
+
 .container2 {
     margin-top: auto;
     height: 560px;
@@ -313,35 +311,59 @@
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width:500px) {
+@media (min-width:300px) and (max-width:550px) {
     .img-abt {
         max-width: 100%!important;
-        height: 640px;
+        height: 680px;
         object-fit: none;
         background-position: 60%;
     }
     .boder-blur {
-        height: 12%;
+        margin-left: 16px;
         width: 65%;
-        left: 50%;
-        top: 50%;
-        transform: translate(-80%, 200%);
-        /* margin-left: 15px;
-        width: 65%;
-        bottom: 85px; */
+        bottom: 85px;
     }
 
     .boder-blur:hover {
-        height: 12%;
+        margin-left: 15px;
         width: 65%;
-        left: 50%;
-        top: 50%;
-        transform: translate(-80%, 200%);
-        /* margin-left: 15px;
-        width: 65%;
-        bottom: 85px; */
+        bottom: 85px;
+    }
+    .abt-icon {
+        font-size: x-small;
     }
 }
+
+@media (min-width:510px) and (max-width:850px) {
+    .mx-6 {
+        margin-left: 6rem!important ;
+        margin-right: 6rem!important;
+    }
+    .abt-icon {
+        font-size:large;
+    }
+
+    .w-lg-100 {
+        width: 100%!important;
+    }
+    .img-abt {
+        height: 515px;
+    }
+
+    .boder-blur {
+        margin-left: 40px;
+        width: 35%;
+        bottom: 710px;
+    }
+    .boder-blur:hover {
+        margin-left: 40px;
+        width: 35%;
+        bottom: 710px;
+    }
+}
+
+
+
 
 /* End change about us header */
 
@@ -405,38 +427,42 @@ input[type=number]::-webkit-outer-spin-button {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width:1145px) {
+@media (min-width:550px) and (max-width:850px) {
+    .bg {
+        height: 580px;
+    }
     .service-border {
-        position: absolute;
         margin-left: 40px;
-        width: 45%;
-        bottom: 185px;
-        border-radius: 15px;
-        background: rgba(255, 255, 255, 0.5);
-        -webkit-backdrop-filter: blur(15px);
-        backdrop-filter: blur(19px);
-        border: 2px solid rgba(255, 255, 255, 0.25);
-        transition: transform .2s;
+        width: 35%;
+        bottom: 655px;
     }
 
     .service-border:hover {
-        position: absolute;
         margin-left: 40px;
-        width: 45%;
-        bottom: 185px;
-        border-radius: 15px;
-        background: rgba(255, 255, 255, 0.596);
-        -webkit-backdrop-filter: blur(15px);
-        backdrop-filter: blur(10px);
-        border: 2px solid rgba(255, 255, 255, 0.767);
-        -ms-transform: scale(1.05);
-        transform: scale(1.05);
-        -webkit-transform: scale(1.05);
-        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        width: 35%;
+        bottom: 655px;
     }
 }
 
+@media (min-width:300px) and (max-width:550px) {
+    .bg {
+        max-width: 100%!important;
+        height: 680px;
+        object-fit: none;
+        background-position: 40%;
+    }
+    .service-border {
+        margin-left: 40px;
+        width: 55%;
+        bottom: 85px;
+    }
+
+    .service-border:hover {
+        margin-left: 40px;
+        width: 55%;
+        bottom: 85px;
+    }
+}
 
 
 
@@ -485,67 +511,41 @@ input[type=number]::-webkit-outer-spin-button {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width:1145px) {
+@media (min-width:550px) and (max-width:850px) {
+    .contact_bg {
+        height: 720px;
+    }
     .contact-border {
-        position: absolute;
         margin-left: 40px;
         width: 40%;
-        bottom: 185px;
-        border-radius: 15px;
-        background: rgba(255, 255, 255, 0.5);
-        -webkit-backdrop-filter: blur(15px);
-        backdrop-filter: blur(19px);
-        border: 2px solid rgba(255, 255, 255, 0.25);
-        transition: transform .2s;
+        bottom: 615px;
     }
 
     .contact-border:hover {
-        position: absolute;
         margin-left: 40px;
         width: 40%;
-        bottom: 185px;
-        border-radius: 15px;
-        background: rgba(255, 255, 255, 0.596);
-        -webkit-backdrop-filter: blur(15px);
-        backdrop-filter: blur(10px);
-        border: 2px solid rgba(255, 255, 255, 0.767);
-        -ms-transform: scale(1.05);
-        transform: scale(1.05);
-        -webkit-transform: scale(1.05);
-        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        bottom: 615px;
     }
 }
 
-@media (max-width:455px) {
+@media (min-width:300px) and (max-width:550px) {
+    .contact_bg {
+        max-width: 100%!important;
+        height: 680px;
+        object-fit: none;
+        background-position: 75%;
+    }
     .contact-border {
         position: absolute;
         margin-left: 40px;
-        width: 50%;
-        bottom: 185px;
-        border-radius: 15px;
-        background: rgba(255, 255, 255, 0.5);
-        -webkit-backdrop-filter: blur(15px);
-        backdrop-filter: blur(19px);
-        border: 2px solid rgba(255, 255, 255, 0.25);
-        transition: transform .2s;
+        width: 55%;
+        bottom: 115px;
     }
 
     .contact-border:hover {
-        position: absolute;
         margin-left: 40px;
-        width: 50%;
-        bottom: 185px;
-        border-radius: 15px;
-        background: rgba(255, 255, 255, 0.596);
-        -webkit-backdrop-filter: blur(15px);
-        backdrop-filter: blur(10px);
-        border: 2px solid rgba(255, 255, 255, 0.767);
-        -ms-transform: scale(1.05);
-        transform: scale(1.05);
-        -webkit-transform: scale(1.05);
-        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        width: 55%;
+        bottom: 115px;
     }
 }
 
@@ -553,11 +553,6 @@ input[type=number]::-webkit-outer-spin-button {
     border-width: 2px !important;
     border-radius: 3px;
 }
-
-
-
-
-
 
 /* End contact header change */
 
@@ -1005,7 +1000,7 @@ h6,
     margin-right: 8rem !important;
 }
 
-@media (max-width:768px) {
+@media (min-width: 300px) and (max-width:550px) {
     .w-md-50 {
         width: 42% !important;
     }
@@ -1090,7 +1085,7 @@ h6,
         width: 400px;
     }
     .display-my {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     .dump {
         background-size:50%;
@@ -1476,6 +1471,22 @@ h6,
     -o-transition: 0.5s;
     transition: 0.5s;
 }
+.pop3:hover {
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+}
+
+.pop3 {
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+@media (min-width: 550px) and (max-width: 810px) {
+    .pop3 {
+        width: 550px;
+    }
+}
 
 /* section 5 start */
 
@@ -1790,11 +1801,22 @@ h6,
     border-radius: 80px;
 }
 
-@media (max-width:768px) {
+@media (min-width: 550px) and (max-width: 810px) {
     .callback {
-        width: 430px;
-        border-radius: 20px;
+        width: 630px;
+        border-radius: 15px;
+        margin-bottom: 40px;
     }
+}
+
+@media (min-width: 350px) and (max-width: 550px) {
+    .callback {
+        width: 320px;
+        border-radius: 15px;
+        margin-bottom: 50px;
+        padding: 40px;     
+    }
+    
 }
 
 .bar-clor {
