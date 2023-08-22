@@ -1,6 +1,14 @@
 (function ($) {
     "use strict";
+    
+    // <!-- AOS Animation Not Firing Correctly After Browser Resize -->
+    let samt = 0;
+    window.addEventListener('scroll', function() {
+    samt <= 10 ? samt++ : AOS.refresh();
+    });
 
+ 
+    
     // Spinner
     var spinner = function () {
         setTimeout(function () {
