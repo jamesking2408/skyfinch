@@ -6,6 +6,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 
+body {
+    overflow-x: hidden;
+}
+
 .show-chatbot .chatbot-toggler span:first-child,
 .chatbot-toggler span:last-child {
     opacity: 0;
@@ -18,7 +22,7 @@
 .chatbot-toggler {
     position: fixed;
     right: 33px;
-    bottom: 85px;
+    bottom: 40px;
     height: 50px;
     width: 50px;
     display: flex;
@@ -33,6 +37,11 @@
     transition: all .2s ease;
     z-index: 9999;
 
+}
+.chatbot-toggler:hover {
+    color: #0670fc;
+    background: #fff;
+    border: 1px solid #0670fc;
 }
 
 .show-chatbot .chatbot-toggler {
@@ -50,7 +59,7 @@
 .chatbot {
     position: fixed;
     right: 80px;
-    bottom: 100px;
+    bottom: 70px;
     height: 450px;
     width: 320px;
     transform: scale(0.5);
@@ -184,12 +193,12 @@
 
 @media (max-width:590px) {
     .chatbot-toggler{
-        right: 33px;
-        bottom: 85px;
+        right: 23px;
+        bottom: 45px;
     }
     .chatbot {
-        right: 70px;
-        bottom: 113px;
+        right: 65px;
+        bottom: 80px;
         height: 368px;
         width: 240px;
     }
@@ -212,7 +221,41 @@
 
 /* End chat box design  */
 
+.custom-tooltip {
+    --bs-tooltip-bg:rgba(3, 86, 240, 0.975);
+    --bs-tooltip-color: var(--light);
+    --bs-tooltip-border-color: var(--primary);
+    --bs-tooltip-border-width: 1px;
+    --bs-tooltip-border-radius:.5rem;
+    --bs-tooltip-padding:.8rem;
+    --bs-tooltip-font-size:.95rem;
+    --bs-tooltip-opacity: 1;
+    --bs-tooltip-max-width: 200px;
+    --bs-tooltip-arrow-color: var(--primary);
+    --bs-tooltip-arrow-border-color: transparent;
+    --bs-tooltip-arrow-width: 15px;
+  }
 
+.chat-tooltip {
+    --bs-tooltip-bg:#0356f0;
+    --bs-tooltip-color: #fff;
+    --bs-tooltip-border-color: #fff;
+    --bs-tooltip-border-width: 1px;
+    --bs-tooltip-border-radius:.5rem;
+    --bs-tooltip-padding:.8rem;
+    --bs-tooltip-font-size:1rem;
+    --bs-tooltip-font-weight:2rem;
+}
+.contact-tooltip {
+    --bs-tooltip-bg:rgba(25, 162, 253, 0.973);
+    --bs-tooltip-color: #fff;
+    --bs-tooltip-border-color: #fff;
+    --bs-tooltip-border-width: 1px;
+    --bs-tooltip-border-radius:.5rem;
+    --bs-tooltip-padding:.8rem;
+    --bs-tooltip-font-size:.95rem;
+    --bs-tooltip-font-weight:1rem;
+}
 
 
 .SmoothScroll {
@@ -252,6 +295,10 @@
         margin-top: 20px;
         height: 645px;
     }
+    .container2, .container2 img {
+        height: 150px;
+        padding: 0;
+    }
     .bg-size {
         max-width: 100%!important;
         object-fit: none;
@@ -284,8 +331,10 @@
 .boder-blur {
     position: absolute;
     margin-left: 40px;
-    width: 25%;
-    bottom: 100px;
+    width: 30%;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 50px;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -297,8 +346,10 @@
 .boder-blur:hover {
     position: absolute;
     margin-left: 40px;
-    width: 25%;
-    bottom: 100px;
+    width: 30%;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 50px;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
@@ -313,21 +364,27 @@
 
 @media (min-width:300px) and (max-width:550px) {
     .img-abt {
+        top: 0;
+        left: 0;
+        bottom: 0;
         max-width: 100%!important;
-        height: 680px;
-        object-fit: none;
-        background-position: 60%;
+        height: 300px;
     }
+
+    .boder-blur h1,
+    .boder-blur:hover h1 {
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
     .boder-blur {
-        margin-left: 16px;
-        width: 65%;
-        bottom: 85px;
+        width: 55%;
+        margin-bottom: 435px;
     }
 
     .boder-blur:hover {
-        margin-left: 15px;
-        width: 65%;
-        bottom: 85px;
+        width: 55%;
+        margin-bottom: 435px;
     }
     .abt-icon {
         font-size: x-small;
@@ -352,12 +409,12 @@
 
     .boder-blur {
         margin-left: 40px;
-        width: 35%;
+        width: 40%;
         bottom: 710px;
     }
     .boder-blur:hover {
         margin-left: 40px;
-        width: 35%;
+        width: 40%;
         bottom: 710px;
     }
 }
@@ -388,7 +445,9 @@ input[type=number]::-webkit-outer-spin-button {
     position: absolute;
     margin-left: 40px;
     width: 25%;
-    bottom: 135px;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 50px;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -414,7 +473,9 @@ input[type=number]::-webkit-outer-spin-button {
     position: absolute;
     margin-left: 40px;
     width: 25%;
-    bottom: 135px;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 50px;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
@@ -431,6 +492,7 @@ input[type=number]::-webkit-outer-spin-button {
     .bg {
         height: 580px;
     }
+    
     .service-border {
         margin-left: 40px;
         width: 35%;
@@ -447,20 +509,24 @@ input[type=number]::-webkit-outer-spin-button {
 @media (min-width:300px) and (max-width:550px) {
     .bg {
         max-width: 100%!important;
-        height: 680px;
-        object-fit: none;
-        background-position: 40%;
+        height: 300px;
+    }
+    .container1 {
+        padding: 0;
+    }
+    .service-border h1,
+    .service-border:hover h1 {
+        font-size: 1.5rem;
+        font-weight: 100;
     }
     .service-border {
-        margin-left: 40px;
-        width: 55%;
-        bottom: 85px;
+        width: 50%;
+        margin-bottom: 450px;
     }
 
     .service-border:hover {
-        margin-left: 40px;
-        width: 55%;
-        bottom: 85px;
+        width: 50%;
+        margin-bottom: 450px;
     }
 }
 
@@ -484,7 +550,9 @@ input[type=number]::-webkit-outer-spin-button {
     position: absolute;
     margin-left: 40px;
     width: 25%;
-    bottom: 130px;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 50px;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -498,7 +566,9 @@ input[type=number]::-webkit-outer-spin-button {
     position: absolute;
     margin-left: 40px;
     width: 25%;
-    bottom: 135px;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 50px;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
@@ -511,43 +581,45 @@ input[type=number]::-webkit-outer-spin-button {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
-@media (min-width:550px) and (max-width:850px) {
-    .contact_bg {
-        height: 720px;
-    }
-    .contact-border {
-        margin-left: 40px;
-        width: 40%;
-        bottom: 615px;
-    }
-
-    .contact-border:hover {
-        margin-left: 40px;
-        width: 40%;
-        bottom: 615px;
-    }
-}
-
 @media (min-width:300px) and (max-width:550px) {
     .contact_bg {
-        max-width: 100%!important;
-        height: 680px;
-        object-fit: none;
-        background-position: 75%;
+        height: 310px;
+        padding: 0;
+    }
+    .contact-border h1,
+    .contact-border:hover h1 {
+        font-size: 1.5rem;
+        font-weight: 100;
     }
     .contact-border {
-        position: absolute;
+        width: 50%;
+        margin-bottom: 440px;
+    }
+    
+    .contact-border:hover {
+        width: 50%;
+        margin-bottom: 440px;
+    }
+}
+
+
+@media (min-width:550px) and (max-width:850px) {
+    .contact_bg {
+        height: 520px;
+    }
+    .contact-border {
         margin-left: 40px;
-        width: 55%;
-        bottom: 115px;
+        width: 35%;
+        bottom: 655px;
     }
 
     .contact-border:hover {
         margin-left: 40px;
-        width: 55%;
-        bottom: 115px;
+        width: 35%;
+        bottom: 655px;
     }
 }
+
 
 .border-width {
     border-width: 2px !important;
@@ -582,12 +654,47 @@ a {
     color: var(--secondary);
 }
 
+
+.b-2-top {
+    position: fixed;
+    right: 33px;
+    bottom: 85px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #0670fc;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all .2s ease;
+    z-index: 9999;
+
+}
+.b-2-top:hover {
+    color: #0670fc;
+    background: #fff;
+    border: 1px solid #0670fc;
+    font-size:1.5rem;
+}
+ 
+
 .back-to-top {
     position: fixed;
     display: none;
-    right: 30px;
-    bottom: 30px;
+    right: 35px;
+    bottom: 100px;
     z-index: 99;
+}
+
+@media (min-width:300px) and  (max-width:550px) {
+    .back-to-top{
+        right: 25px;
+    }
+    
 }
 
 h1,
@@ -726,8 +833,9 @@ h6,
 .dropbtn1 {
     background-color: white;
     color: grey;
-    padding: 2px;
-    font-size: 16px;
+    padding: 0;
+    font-weight: 400;
+    font-size: 18px;
     border: none;
     cursor: pointer;
 }
@@ -742,44 +850,51 @@ h6,
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    width: max-content;
+    width:max-content;
     margin-top: -34px;
-    margin-left: 155px;
-    min-width: 160px;
+    margin-left: 160px;
     border-radius: 10px;
     box-shadow: 1px 1px 1px 3px #dddddd;
     z-index: 1;
 }
 
-@media (max-width:800px) {
+@media (min-width:550px) and (max-width:1150px) {
     .dropdown-content1 {
-        margin-left: 128px;
-        width: fit-content;
+        margin-left: 130px!important;
+        width: max-content;
+    }
+}
+
+@media (min-width:300px) and (max-width:500px) {
+    .dropdown-content1 {
+        margin-left: 130px!important;
+        width: 180px;
     }
 }
 
 .dropdown-content1 a {
     color: rgb(73, 72, 72);
     padding: 5px 5px;
-    font-weight: bold;
-    border-radius: 10px 10px 0 0;
+    width: 100%;
+    font-weight: 500;
+    border-radius: 5px 5px 0 0;
     text-decoration: none;
     display: block;
 }
 
-.dropdown-content1 a:hover {
+/* .dropdown-content1 a:hover {
     font-weight: bold;
     color: var(--primary);
-    /* background-color: #e7e7e7 */
     border-bottom: 3px solid var(--primary);
-}
+} */
 
 .submenu:hover .dropdown-content1 {
     display: block;
 }
 
 .submenu:hover .dropbtn1 {
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 18px;
     background-color: rgb(238, 235, 235);
 }
 
@@ -1130,6 +1245,11 @@ h6,
     .display-my {
         font-size: 1.5rem;
     }
+
+    .fw-01 {font-weight: 100;} .fw-02 {font-weight: 200;}.fw-03 {font-weight: 300;}.fw-04 {font-weight: 400;}
+    
+    .fs-00 {font-size: x-small;}.fs-01 {font-size: smaller;}.fs-02 {font-size: small;}.fs-03 {font-size: medium;}.fs-04 {font-size: large;}.fs-05 {font-size: larger;}.fs-06 {font-size:x-large;}
+
     .dump {
         background-size:50%;
         background-position: center 15px;
@@ -1155,12 +1275,12 @@ h6,
 }
 
 #show_form {
-    margin-bottom: 5px;
+    margin-bottom: 12px;
 }
 
 
 #show_form img {
-    width: 155px;
+    width: 50px;
     /* orange to blue converted */
     filter: saturate(100%) sepia(10%) hue-rotate(180deg) contrast(250%) brightness(100%);
 }
@@ -1602,24 +1722,24 @@ h6,
 
 /* section 6 start */
 
-.show1 img.winapp {
+.show1 img.win-app {
     width: 420px; 
     height: 350px;
 }
 .show2 img.webapp{
-    width: 420px; 
-    height: 300px;
+    width: 450px; 
+    height: 380px;
 }
 
 
 @media (min-width: 358px) and (max-width: 550px) {
-    .show1 img.winapp {
+    .show1 img.win-app {
         width: 250px;
         height: 250px;
     }
     .show2 img.webapp {
         width: 280px;
-        height: 220px;
+        height: 250px;
     }
 
 }

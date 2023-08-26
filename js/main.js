@@ -1,6 +1,16 @@
 (function ($) {
     "use strict";
 
+    // <!-- AOS Animation Not Firing Correctly After Browser Resize -->
+    let samt = 0;
+    window.addEventListener('scroll', function () {
+        samt <= 10 ? samt++ : AOS.refresh();
+    });
+
+    //<!-- Tooltip bootstrap 5.3 -->
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
     // Spinner
     var spinner = function () {
         setTimeout(function () {
