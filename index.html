@@ -33,6 +33,7 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/3Dcards-02.css">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -57,7 +58,7 @@
 
     <!-- Start chat box Design  -->
 
-    <button title="" class="chatbot-toggler wow fadeInDown" data-wow-delay="2.2s">
+    <button title="" class="chatbot-toggler wow fadeInDown" data-wow-delay="2.2s" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="chat-tooltip" data-bs-title="Hi! I'm Help you.👋">
         <span class="material-symbols-outlined">mode_comment</span>
         <span class="material-symbols-outlined">close</span>
     </button>
@@ -99,24 +100,25 @@
     <!-- Submit alert box -->
 
 
-    <!-- Submit worng alert box -->
+    <!-- Submit wrong alert box -->
     <div class="container-sub container-md-sub">
         <div class="sub-popup1" id="pop1">
-            <img src="img/wrong.png" alt="">
+            <img src="img/wrong.png" class="wrong" alt="">
             <h2 class="display-5" style="color: rgb(219, 17, 17);"></h2>
             <p class="fw-semibold"></p>
             <button type="button" class="exit1 fs-5 fw-bolder" onclick="closePopup1()">OK<span><img src="img/thumbs.png"
                         alt="thumbs" style="width: 25px; margin-top: -2px;"></span></button>
         </div>
     </div>
-    <!-- Submit worng alert box -->
+    <!-- Submit wrong alert box -->
 
 
     <!-- Navbar Start -->
     <div class="container-fluid fixed-top m-0 p-0 wow fadeIn" data-wow-delay="0.8s">
         <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn bg-white" data-wow-delay="0.9s">
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-                <h1 class="display-6 text-primary m-0">SkyFinch</h1>
+                <h1 class="display-6 text-primary m-0" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-custom-class="custom-tooltip" data-bs-title="SkyFinch">SkyFinch</h1>
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse">
@@ -127,31 +129,32 @@
                     <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="service.html" class="nav-item nav-link">Service</a>
                     <div class="nav-item dropdown">
+                        <!-- This is show toggle arrow >> -->
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Solutions</a>
                         <div class="dropdown-menu border-light m-0">
                             <div class="submenu d-lg-block  align-items-sm-start">
                                 <button class="dropbtn1 w-100">Application &nbsp;&nbsp;
                                     <span class="arrow">➯</span></button>
-                                <div class="dropdown-content1 px-2 py-2">
-                                    <a href="#">POS</a>
-                                    <a href="#">Hotel management system</a>
-                                    <a href="#">Restaurant management system</a>
-                                    <a href="#">Smart-Skyfinch</a>
-                                    <a href="#">Visitor management system</a>
+                                <div class="dropdown-content1 text-dec px-2 py-2">
+                                    <a href="#">POS</a><br>
+                                    <a href="#">Hotel management system</a><br>
+                                    <a href="#">Restaurant management system</a><br>
+                                    <a href="#">Smart-Skyfinch</a><br>
+                                    <a href="#">Visitor management system</a><br>
                                 </div>
                             </div>
                             <br class="d-lg-none d-sm-block">
                             <div class="submenu d-lg-block  align-items-sm-center">
                                 <button class="dropbtn1 w-100">Web
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
                                         class="arrow">➯</span></button>
-                                <div class="dropdown-content1 px-2 py-2">
-                                    <a href="#">CRM</a>
-                                    <a href="#">Corporate Travel Management</a>
-                                    <a href="#">Fleet management system</a>
-                                    <a href="#">Event management system</a>
-                                    <a href="#">PayRoll</a>
-                                    <a href="#">Sales and Service</a>
+                                <div class="dropdown-content1 text-dec px-2 py-2">
+                                    <a href="#">CRM</a><br>
+                                    <a href="#">Corporate Travel Management</a><br>
+                                    <a href="#">Fleet management system</a><br>
+                                    <a href="#">Event management system</a><br>
+                                    <a href="#">PayRoll</a><br>
+                                    <a href="#">Sales and Service</a><br>
                                 </div>
                             </div>
                         </div>
@@ -160,18 +163,21 @@
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
 
-                <div class=" d-lg-flex ms-2">
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3"
-                        href="https://www.facebook.com/skyfinch.roadmap" target="_blank">
-                        <i class="fab fa-facebook-f text-primary"></i>
+                <div class=" d-lg-flex d-grid ms-lg-2 ms-md-2 ms-2 gap-2">
+                    <a class="btn btn-outline-primary btn-sm-square rounded-circle ms-lg-1 ms-3"
+                        href="https://www.facebook.com/skyfinch.roadmap" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip" data-bs-title="Facebook" target="_blank">
+                        <span><i class="fab fa-facebook-f"></i></span>
                     </a>
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="https://twitter.com/Roadmaperp"
-                        target="_blank">
-                        <i class="fab fa-twitter text-primary"></i>
+                    <a class="btn btn-outline-primary btn-sm-square rounded-circle ms-lg-1 ms-3"
+                        href="https://twitter.com/Roadmaperp" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip" data-bs-title="Twitter" target="_blank">
+                        <i class="fab fa-twitter"></i>
                     </a>
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3"
-                        href="https://www.linkedin.com/company/skyfinchroadmap" target="_blank">
-                        <i class="fab fa-linkedin-in text-primary"></i>
+                    <a class="btn btn-outline-primary btn-sm-square rounded-circle ms-lg-1 ms-3"
+                        href="https://www.linkedin.com/company/skyfinchroadmap" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip" data-bs-title="LinkedIn" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
                     </a>
                 </div>
             </div>
@@ -191,16 +197,18 @@
                     <div class="container3">
                         <div class="row wow fadeInDown" data-wow-delay="1.9s" id="forms">
                             <button class="btn shadow fw-bold btn-light btn-lg-square rounded-circle ms-3"
-                                id="show_form"><img src="img/cont.png" alt="contactMe"></button>
+                                id="show_form"><img src="img/contact.png" class="shake-little" data-bs-toggle="tooltip" data-bs-placement="right"
+                                data-bs-custom-class="contact-tooltip" data-bs-title="Contact Me!" alt="contactMe"></button>
                         </div>
 
                         <div class="container d-flex justify-content-center align-items-center form-popup">
                             <div class="container main shadow py-4 g-5" id="myForm">
 
                                 <form name="open_form" action="">
-                                    <div class="row g-2 ">
-                                        <p class="d-flex justify-content-center text-primary display-4 fw-bold">Contact
-                                            Me!</p>
+                                    <div class="row g-2">
+                                        <p class="d-flex justify-content-center text-primary display-4 fw-bold">
+                                            Contact Me!
+                                        </p>
                                     </div>
                                     <div class="row d-flex justify-content-center">
                                         <div class="col-lg-12 g-2">
@@ -249,14 +257,13 @@
                             <img class="img-fluid bg-size w-100 opacity-my" src="img/india/curInd01.jpg" height="450px;"
                                 alt="Image">
                             <div class="carousel-caption">
-                                <div class="container">
+                                <div class="container mt-lg-0 mt-md-0 mt-5">
                                     <div class="row justify-content-start">
                                         <div class="col-lg-7" style="padding-bottom: 80px; ">
                                             <p
-                                                class="d-inline-block border shadow border-muted rounded text-primary fw-bold mb-5 p-2 py-lg-1 px-lg-3 mb-lg-1 pb-lg-1 mb-md-1 pb-md-1 animated slideInDown">
+                                                class="d-inline-block border shadow border-muted rounded text-primary fw-bold py-lg-1 px-lg-3 mb-lg-1 pb-lg-1 mb-md-1 pb-md-1 animated slideInDown">
                                                 Empowering Businesses</p>
-                                            <h1
-                                                class="display-3 mb-lg-2 pb-lg-1 mb-md-2 pb-md-1 mb-5 pb-4 animated slideInDown">
+                                            <h1 class="display-3 mb-lg-2 pb-lg-1 mb-md-2 pb-md-1 animated slideInDown">
                                                 Scalable Platforms To Tackle
                                                 All Market Conditions
                                             </h1>
@@ -284,10 +291,9 @@
                                     <div class="row justify-content-start">
                                         <div class="col-lg-7" style="padding-bottom: 90px;">
                                             <p
-                                                class="d-inline-block border shadow border-muted rounded text-primary fw-bold mb-5 p-2 py-lg-1 px-lg-3 mb-lg-1 pb-lg-1 mb-md-1 pb-md-1 animated slideInDown">
+                                                class="d-inline-block border shadow border-muted rounded text-primary fw-bold py-lg-1 px-lg-3 mb-lg-1 pb-lg-1 mb-md-1 pb-md-1 animated slideInDown">
                                                 Empowering Businesses</p>
-                                            <h1
-                                                class="display-3 mb-lg-2 pb-lg-1 mb-md-2 pb-md-1 mb-5 pb-4 animated slideInDown">
+                                            <h1 class="display-3 mb-lg-2 pb-lg-1 mb-md-2 pb-md-1 animated slideInDown">
                                                 Get Skyfinch & Bridge
                                                 Digital Transformation</h1>
                                             <p class="text-dark fw-semibold"
@@ -313,11 +319,10 @@
                                     <div class="row justify-content-start ">
                                         <div class="col-lg-7" style="padding-bottom: 80px;">
                                             <p
-                                                class="d-inline-block border shadow border-muted rounded text-primary fw-bold mb-5 p-2 py-lg-1 px-lg-3 mb-lg-1 pb-lg-1 mb-md-1 pb-md-1 animated slideInDown">
+                                                class="d-inline-block border shadow border-muted rounded text-primary fw-bold py-lg-1 px-lg-3 mb-lg-1 pb-lg-1 mb-md-1 pb-md-1 animated slideInDown">
                                                 Empowering Businesses</p>
-                                            <h1
-                                                class="display-3 mb-lg-2 pb-lg-1 mb-md-2 pb-md-1 mb-5 pb-4 animated slideInDown">
-                                                Flexibles Solutions For
+                                            <h1 class="display-3 mb-lg-2 pb-lg-1 mb-md-2 pb-md-1 animated slideInDown">
+                                                Flexible Solutions For
                                                 All Businesses</h1>
                                             <p class="text-dark fw-semibold"
                                                 style="text-shadow: -0.05px 0 black, 0 0.05px black, 0.05px 0 black, 0 -0.05px black">
@@ -351,8 +356,9 @@
             <!--Section 1 start-->
             <section id="sec1" class="bg-01 pt-lg-2 pt-md-1">
                 <div class="container py-lg-5 py-md-2">
-                    <div class="row order d-flex justify-content-center align-items-center ">
-                        <div class="col-lg-4 col-12 order-item1 wow fadeInLeft" data-wow-delay="0.4s">
+                    <div class="row order gy-lg-5 d-flex justify-content-center align-items-center ">
+                        <div class="col-lg-4 col-12 order-item1 wow fadeInLeft" data-wow-delay="0.4s"
+                            data-aos-duration="1000" data-aos="fade-right">
                             <div class="row d-flex align-items-center justify-content-center">
                                 <div class="col-12 col-md-6 col-lg-12 gy-2">
                                     <div class="card p-lg-2 p-1 text-center border-0 shadow dump">
@@ -380,12 +386,13 @@
                             </div>
                         </div>
                         <div class="col-12 order-item2 col-sm-12 col-lg-4 col-md-8 pt-2 mt-2 pb-md-3 text-center wow fadeInDown"
-                            data-wow-delay="0.3s">
+                            data-wow-delay="0.3s" data-aos-duration="1000" data-aos="slide-up">
                             <h2 class="fw-bold display-6 pb-4 pt-4">Why you should Join Us</h2>
                             <img src="img/cur03.jpg" alt="" class="img-fluid">
                             <a href="" class="btn btn-primary py-2 my-3 px-3 animated slideInUp">Learn More</a>
                         </div>
-                        <div class="col-lg-4 order-item3 col-12 wow fadeInRight" data-wow-delay="0.3s">
+                        <div class="col-lg-4 order-item3 col-12 wow fadeInRight" data-wow-delay="0.3s"
+                            data-aos-duration="1000" data-aos="fade-left">
                             <div class="row d-flex align-items-center justify-content-center">
                                 <div class="col-12 col-md-6 col-lg-12 gy-3">
                                     <div class="card p-lg-2 p-1 text-center border-0 shadow dump">
@@ -421,7 +428,8 @@
             <section id="sec2" class="bg-02 my-lg-5">
                 <div class="container mt-lg-3 mt-3 pb-4 mb-3">
                     <div class="row d-flex justify-content-center align-items-center">
-                        <div class="col-lg-6 pb-md-1 pt-lg-5 mt-3 mt-lg-5 wow fadeInLeft" data- -delay="0.4s">
+                        <div class="col-lg-6 pb-md-1 pt-lg-5 mt-3 mt-lg-5 wow fadeInLeft" data-wow-delay="0.4s"
+                            data-aos-duration="1000" data-aos="fade-right">
                             <h2 class="fw-bold display-5 mt-lg-4 pt-lg-5">The Skyfinch Team</h2>
                             <h5 class="fw-bold pb-2 pt-2">Highly Qualified and Experienced</h5>
                             <p class="text-muted">Skyfinch’s Applications Development team is technically sound in the
@@ -429,12 +437,12 @@
                                 expertise to develop the Apps in Android, and Apple's iOS platforms using
                                 the latest development tools.</p>
                             <p class="text-muted">Loaded with such technical finesse Skyfinch’s expert Application
-                                development professionals have repeatedly and successfully brought onto the screen of
+                                development professionals have repeatedly and successfully brought on to the screen of
                                 any desired device, all the workflow requirements pictured by our clients
                                 for their business processes.</p>
                         </div>
                         <div class="col-lg-6 text-center mt-2 pt-2 mt-lg-5 pt-lg-5 wow fadeInRight"
-                            data-wow-delay="0.4s">
+                            data-wow-delay="0.4s" data-aos-duration="1000" data-aos="fade-left">
                             <img src="img/india/aboutus1.jpg" alt="" class="img-fluid rounded mt-2" width="400">
                         </div>
                     </div>
@@ -446,13 +454,14 @@
                 <div class="container">
                     <div class="row d-flex justify-content-center align-items-center">
                         <div class="col-lg-4 col-sm-12 pt-lg-5 pt-2 mt-lg-3 mt-1 justify-content-center wow fadeInDown"
-                            data-wow-delay="0.3s">
+                            data-wow-delay="0.3s" data-aos-duration="1000" data-aos="fade-down">
                             <img src="img/india/ind01.jpg" alt="" class="img-fluid rounded d-none d-lg-flex"
                                 width="500px" height="600px">
                         </div>
                         <div class="col-lg-8 py-lg-5 py-1">
                             <div class="row d-flex align-items-center justify-content-center g-1 g-lg-2 g-md-4">
-                                <div class="col-lg-6 col-md-6 pt-3 mt-3 gy-lg-1 g-2 wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="col-lg-6 col-md-6 pt-3 mt-3 gy-lg-5 g-2 wow fadeInUp" data-wow-delay="0.2s"
+                                    data-aos-duration="1000" data-aos="fade-up">
                                     <div class="card p-1 border-0 bg-pink py-1">
                                         <div
                                             class="row d-flex align-items-center justify-content-center text-primary team1">
@@ -470,8 +479,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 pt-3 mt-3 gy-lg-1 gy-2 wow fadeInUp"
-                                    data-wow-delay="0.2s">
+                                <div class="col-lg-6 col-md-6 pt-3 mt-3 gy-lg-5 gy-2 wow fadeInUp" data-wow-delay="0.2s"
+                                    data-aos-duration="1000" data-aos="fade-up">
                                     <div class="card p-1 border-0 bg-pink py-1">
                                         <div
                                             class="row d-flex align-items-center justify-content-center text-primary team1">
@@ -489,8 +498,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 pt-3 mt-3 gy-lg-1 gy-2 wow fadeInUp"
-                                    data-wow-delay="0.2s">
+                                <div class="col-lg-6 col-md-6 pt-3 mt-3 gy-lg-3 gy-2 wow fadeInUp" data-wow-delay="0.2s"
+                                    data-aos-duration="1000" data-aos="fade-up">
                                     <div class="card p-1 border-0 bg-pink py-1">
                                         <div
                                             class="row d-flex align-items-center justify-content-center text-primary team1">
@@ -508,14 +517,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 pt-3 mt-3 gy-lg-1 gy-2 wow fadeInUp"
-                                    data-wow-delay="0.2s">
+                                <div class="col-lg-6 col-md-6 pt-3 mt-3 gy-lg-3 gy-2 wow fadeInUp" data-wow-delay="0.2s"
+                                    data-aos-duration="1000" data-aos="fade-up">
                                     <div class="card p-1 border-0 bg-pink py-1">
-                                        <div
-                                            class="row d-flex align-items-center justify-content-center text-primary team1">
+                                        <div class="row d-flex align-items-center justify-content-center text-primary team1">
                                             <div class="col-2 col-lg-3">
                                                 <div class="heart1">
-                                                    <i class="bi bi-database-down display-my display-6"></i>
+                                                       <i class="bi bi-database-down display-my display-6"></i>
                                                 </div>
                                             </div>
                                             <div class="col-10 col-lg-9 ps-3">
@@ -538,7 +546,8 @@
             <section id="sec2" class="bg-02 mt-1">
                 <div class="container mb-lg-0 mb-md-4 mb-4">
                     <div class="row d-flex justify-content-center align-items-center pt-2 mt-1 mb-3">
-                        <div class="col-lg-6 pb-md-1 wow fadeInLeft" data-wow-delay="0.4s">
+                        <div class="col-lg-6 pb-md-1 wow fadeInLeft" data-wow-delay="0.4s" data-aos-duration="1000"
+                            data-aos="fade-left">
                             <h2 class="fw-bold display-5 pb-2 pt-4">The Skyfinch Team</h2>
                             <h5 class="fw-bold pb-2 pt-1">Highly Qualified and Experienced</h5>
                             <p class="text-muted">Skyfinch’s Applications Development team is technically sound in the
@@ -546,10 +555,10 @@
                                 expertise to develop the Apps in Android, and Apple's iOS platforms using
                                 the latest development tools.</p>
                             <div class="col-lg-4 col-8 pt-lg-5 ms-5 mb-4 pt-2 mt-lg-3 mt-1 d-lg-none d-flex d-md-flex justify-content-center align-items-center justify-content-md-center align-items-md-center wow slideInLeft"
-                                data-wow-delay="0.5s">
+                                data-wow-delay="0.5s" data-aos-duration="1000" data-aos="fade-left">
                                 <div>
                                     <img src="img/india/ind01.jpg" alt="" class="img-fluid rounded d-lg-none d-block"
-                                    width="500px" height="400px">
+                                        width="500px" height="400px">
                                 </div>
                             </div>
                             <p class="text-muted">Loaded with such technical finesse Skyfinch’s expert Application
@@ -558,10 +567,13 @@
                                 for their business processes.</p>
                             <a href="" class="btn btn-primary py-2 px-3 animated slideInDown">Learn More</a>
                         </div>
-                        <div class="col-lg-6 col-12 pt-lg-2 mt-lg-4 pb-lg-1 mb-lg-3">
-                            <div class="row d-flex mt-lg-3 mt-md-3 mt-2 mb-lg-0 mb-md-4 mb-4 align-items-center justify-content-center">
+                        <div class="col-lg-6 col-12 pt-lg-2 mt-lg-4 gy-lg-3 pb-lg-1 mb-lg-3" data-aos-duration="1000"
+                            data-aos="fade-left">
+                            <div
+                                class="row d-flex mt-lg-3 mt-md-3 mt-2 mb-lg-0 mb-md-4 mb-4 align-items-center justify-content-center">
 
-                                <div class="col-lg-6 col-9 col-md-6 gy-lg-1 gy-4 wow fadeInRight" data-wow-delay="0.6s">
+                                <div class="col-lg-6 col-9 col-md-6 gy-lg-3 gy-4 wow fadeInRight" data-wow-delay="0.6s"
+                                    data-aos-duration="2000" data-aos="fade-left">
                                     <div class="card text-center border-0 team">
                                         <div class="heart align-self-center">
                                             <i class="bi bi-arrow-down-up display-5 display-my text-primary"></i>
@@ -573,7 +585,8 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-9 col-md-6 gy-lg-1 gy-4 wow fadeInRight" data-wow-delay="0.3s">
+                                <div class="col-lg-6 col-9 col-md-6 gy-lg-3 gy-4 wow fadeInRight" data-wow-delay="0.3s"
+                                    data-aos-duration="1000" data-aos="fade-left">
                                     <div class="card text-center border-0 team">
                                         <div class="heart align-self-center">
                                             <i class="bi bi-wifi-off display-5 display-my text-primary"></i>
@@ -585,7 +598,8 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-9 col-md-6 gy-lg-1 gy-4 wow fadeInRight" data-wow-delay="0.6s">
+                                <div class="col-lg-6 col-9 col-md-6 gy-lg-2 gy-4 wow fadeInRight" data-wow-delay="0.6s"
+                                    data-aos-duration="2000" data-aos="fade-left">
                                     <div class="card text-center border-0 team">
                                         <div class="heart align-self-center">
                                             <i class="bi bi-phone-flip display-5 display-my text-primary"></i>
@@ -596,7 +610,8 @@
                                             through Mobile Apps.</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-9 col-md-6 gy-lg-1 gy-4 wow fadeInRight" data-wow-delay="0.3s">
+                                <div class="col-lg-6 col-9 col-md-6 gy-lg-2 gy-4 wow fadeInRight" data-wow-delay="0.3s"
+                                    data-aos-duration="1000" data-aos="fade-left">
                                     <div class="card text-center border-0 team">
                                         <div class="heart align-self-center">
                                             <i class="bi bi-database-down display-5 display-my text-primary"></i>
@@ -621,10 +636,12 @@
                 <div class="container pt-2">
                     <div class="row d-flex justify-content-center align-items-center mt-2">
                         <div class="col-12">
-                            <h2 class="fw-bold display-4 pb-3 text-center wow fadeInDown" data-wow-delay="0.5s">Skyfinch
+                            <h2 class="fw-bold display-4 pb-3 text-center wow fadeInDown" data-wow-delay="0.5s"
+                                data-aos-duration="1000" data-aos="fade-down">Skyfinch
                                 Highlights</h2>
                             <div class="row d-flex align-items-center justify-content-center">
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.2s">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.2s"
+                                    data-aos-duration="1000" data-aos="zoom-in">
                                     <div class="flower card p-2 text-center border-0">
                                         <div class="decor d-flex justify-content-center align-items-center">
                                             <div class="beat">
@@ -640,7 +657,8 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.4s">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.4s"
+                                    data-aos-duration="1000" data-aos="zoom-in">
                                     <div class="flower card p-2 text-center border-0">
                                         <div class="decor d-flex justify-content-center align-items-center">
                                             <div class="beat">
@@ -658,7 +676,8 @@
 
                                 <hr class="d-none d-md-block d-lg-none">
 
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.2s">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.2s"
+                                    data-aos-duration="1000" data-aos="zoom-in">
                                     <div class="flower card p-2 text-center border-0">
                                         <div class="decor d-flex justify-content-center align-items-center">
 
@@ -680,7 +699,8 @@
                                 <hr class="d-none d-lg-block">
 
 
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.4s">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.4s"
+                                    data-aos-duration="1000" data-aos="zoom-in">
                                     <div class="flower card p-2 text-center border-0">
                                         <div class="decor d-flex justify-content-center align-items-center">
 
@@ -701,7 +721,8 @@
                                 <hr class="d-none d-md-block d-lg-none">
 
 
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.6s">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.6s"
+                                    data-aos-duration="1000" data-aos="zoom-in">
                                     <div class="flower card p-2 text-center border-0">
                                         <div class="decor d-flex justify-content-center align-items-center">
 
@@ -719,7 +740,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.4s">
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.4s"
+                                    data-aos-duration="1000" data-aos="zoom-in">
                                     <div class="flower card p-2 text-center border-0">
                                         <div class="decor d-flex justify-content-center align-items-center">
 
@@ -747,11 +769,12 @@
                 <div class="container py-1">
                     <div class="row d-flex justify-content-center align-items-center my-2">
                         <div class="col-12">
-                            <h2 class="fw-bold display-4 pb-2 text-center wow fadeInDown" data-wow-delay="0.5s">Skyfinch
+                            <h2 class="fw-bold display-4 pb-2 text-center wow fadeInDown" data-wow-delay="0.5s"
+                                data-aos-duration="1000" data-aos="fade-down">Skyfinch
                                 Highlights</h2>
                             <div class="row d-flex align-items-center justify-content-center">
                                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4"
-                                    data-wow-delay="0.2s">
+                                    data-wow-delay="0.2s" data-aos-duration="1000" data-aos="zoom-out">
                                     <div class="card border-0 pill-bg rounded-pill">
                                         <div class="row d-flex align-items-center justify-content-center py-1">
                                             <div
@@ -773,7 +796,7 @@
                                 </div>
 
                                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4"
-                                    data-wow-delay="0.4s">
+                                    data-wow-delay="0.4s" data-aos-duration="1000" data-aos="zoom-out">
                                     <div class="card border-0 pill-bg1 rounded-pill">
                                         <div class="row d-flex align-items-center justify-content-center py-md-1">
                                             <div
@@ -795,7 +818,7 @@
                                 </div>
 
                                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4"
-                                    data-wow-delay="0.2s">
+                                    data-wow-delay="0.2s" data-aos-duration="1000" data-aos="zoom-out">
                                     <div class="card border-0 pill-bg1 rounded-pill">
                                         <div class="row d-flex align-items-center justify-content-center py-md-1">
                                             <div
@@ -817,7 +840,7 @@
                                 </div>
 
                                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4"
-                                    data-wow-delay="0.4s">
+                                    data-wow-delay="0.4s" data-aos-duration="1000" data-aos="zoom-out">
                                     <div class="card border-0 pill-bg rounded-pill">
                                         <div class="row d-lg-flex align-items-center justify-content-center py-md-1">
                                             <div
@@ -841,7 +864,7 @@
 
 
                                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4"
-                                    data-wow-delay="0.2s">
+                                    data-wow-delay="0.2s" data-aos-duration="1000" data-aos="zoom-out">
                                     <div class="card border-0 pill-bg rounded-pill">
                                         <div class="row d-flex align-items-center justify-content-center py-md-1">
                                             <div
@@ -864,7 +887,7 @@
                                 </div>
 
                                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4"
-                                    data-wow-delay="0.4s">
+                                    data-wow-delay="0.4s" data-aos-duration="1000" data-aos="zoom-out">
                                     <div class="card border-0 pill-bg1 rounded-pill">
                                         <div class="row d-flex align-items-center justify-content-center py-md-1">
                                             <div
@@ -895,17 +918,19 @@
             <!--Section 4 start-->
             <section id="sec4" class="bg-04 py-lg-0 mt-lg-1 mb-lg-1 mt-md-1 mb-md-1 pb-md-1 my-2 py-1">
                 <div class="container mt-lg-2 mb-lg-1 mt-md-1 mb-md-1 pt-lg-2 my-2 py-2">
-                    <div class="row d-flex justify-content-center align-items-center pt-lg-2 mt-lg-2 pt-md-2 mb-md-4 py-2 my-3">
+                    <div
+                        class="row d-flex justify-content-center align-items-center pt-lg-2 mt-lg-2 pt-md-2 mb-md-4 py-2 my-3">
                         <div class="col-lg-12 pb-0 mt-0 mt-lg-1 mt-md-0 mb-lg-0 mb-md-3">
-                            <div class="row d-flex align-items-center justify-content-center mt-lg-4 pt-lg-0 mt-md-1 pb-md-3">
+                            <div
+                                class="row d-flex align-items-center justify-content-center mt-lg-4 pt-lg-0 mt-md-1 pb-md-3">
                                 <div class="col-lg-3 col-6 text-center gy-3 pb-1 mt-md-0 gy-lg-3 pb-lg-2 gy-md-2 pb-md-1 wow fadeIn"
                                     data-wow-delay="0.2s">
                                     <div class="card border-0 bg-transparent text-center pop1">
                                         <div class="">
-                                            <i class="bi bi-terminal-fill display-4 text-muted"></i>
+                                            <i class="bi bi-terminal-fill display-4 text-secondary"></i>
                                         </div>
                                         <div class="p-2 pb-lg-1">
-                                            <h3 class="fw-semibold pt-1 text-muted"><span
+                                            <h3 class="fw-semibold pt-1 text-secondary"><span
                                                     class="count display-3 text-light fw-bold">20</span>+ <br> Products
                                             </h3>
                                         </div>
@@ -916,10 +941,10 @@
                                     data-wow-delay="0.3s">
                                     <div class="card border-0 bg-transparent text-center pop1">
                                         <div class="">
-                                            <i class="bi bi-file-earmark-easel-fill display-4 text-muted"></i>
+                                            <i class="bi bi-file-earmark-easel-fill display-4 text-secondary"></i>
                                         </div>
                                         <div class="p-2 pb-lg-1">
-                                            <h3 class="fw-semibold pt-1 text-muted">
+                                            <h3 class="fw-semibold pt-1 text-secondary">
                                                 <span class="count display-3 text-light fw-bold">20</span>+ <br>
                                                 Projects
                                             </h3>
@@ -927,37 +952,36 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-3 col-6 mt-lg-0 mt-5 text-center mt-md-1 pb-md-2 pb-lg-1 pb-1 gy-3 pb-md-0 gy-md-1 wow fadeIn"
+                                <div class="col-lg-3 col-6 mt-lg-0 mt-2 text-center mt-md-1 pb-md-2 pb-lg-1 pb-1 gy-3 pb-md-0 gy-md-1 wow fadeIn"
                                     data-wow-delay="0.5s">
                                     <div class="card border-0 bg-transparent text-center pop1">
                                         <div class="">
-                                            <i class="bi bi-people-fill display-3 text-muted"></i>
+                                            <i class="bi bi-people-fill display-3 text-secondary"></i>
                                         </div>
                                         <div class="p-2 pb-lg-1">
-                                            <h3 class="fw-semibold pt-1 text-muted"><span
+                                            <h3 class="fw-semibold pt-1 text-secondary"><span
                                                     class="count display-3 text-light fw-bold">200</span>+ <br>
                                                 Customers</h3>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-3 col-6 text-center mt-lg-1 mb-lg-0 pb-lg-1 mt-md-1 pb-md-2 mt-5 pb-1 gy-3 pb-md-0 gy-md-1 wow fadeIn"
+                                <div class="col-lg-3 col-6 text-center mt-lg-1 mb-lg-0 pb-lg-1 mt-md-1 pb-md-2 mt-2 pb-1 gy-3 pb-md-0 gy-md-1 wow fadeIn"
                                     data-wow-delay="0.7s">
                                     <div class="card border-0 bg-transparent text-center pop1">
                                         <div class="">
-                                            <i class="bi bi-buildings-fill display-4 text-muted"></i>
+                                            <i class="bi bi-buildings-fill display-4 text-secondary"></i>
                                         </div>
                                         <div class="p-2 pb-lg-1">
-                                            <h3 class="fw-semibold d-lg-none pt-1 text-muted"><span
+                                            <h3 class="fw-semibold d-lg-none pt-1 text-secondary"><span
                                                     class="count display-3 text-light fw-bold">10</span>+ <br>
                                                 Global Offices</h3>
-                                            <h3 class="fw-semibold pt-1 d-none d-lg-block text-muted"><span
+                                            <h3 class="fw-semibold pt-1 d-none d-lg-block text-secondary"><span
                                                     class="count display-3 text-light fw-bold">10</span>+ <br>
                                                 Global&nbsp;Offices</h3>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
 
@@ -969,24 +993,24 @@
                         <div class="col-lg-12 col-md-12 pb-1 mt-md-0 pb-md-1 pb-lg-0 mt-lg-1">
                             <div class="row d-flex align-items-center justify-content-around">
 
-                                <div class="col-lg-3 col-8 col-md-4 text-center g-lg-1 g-md-4 g-2 mx-lg-0 mx-md-0 mx-0 wow fadeInUp"
-                                    data-wow-delay="0.2s">
-                                    <div class="card overflow-hidden border-0 shadow pop2">
+                                <div class="col-lg-3 cards col-8 col-md-4 text-center g-lg-1 g-md-4 g-2 mx-lg-0 mx-md-0 mx-0"
+                                    data-aos-duration="1000" data-aos="flip-right">
+                                    <div class="card cards__inner overflow-hidden border-0 shadow pop2">
                                         <div class="icon-back py-lg-3 py-lg-4 py-2">
                                             <i class="fa-sharp fa-solid fa-gear text-secondary fa-3x"></i>
                                         </div>
                                         <div class="p-1">
                                             <h4 class="fw-bold">Best Fit Solutions</h4>
                                             <p class="text-muted">We understand the unique challenge develop of each
-                                                business,
-                                                and accordingly, provide the best-fit solution to each client.</p>
+                                                business, and accordingly, provide the best-fit solution to each client.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-3 col-8 col-md-4 text-center g-lg-1 g-md-4 g-2 mx-lg-0 px-md-1 mx-0 wow fadeInUp"
-                                    data-wow-delay="0.5s">
-                                    <div class="card overflow-hidden border-0 shadow pop2">
+                                <div class="col-lg-3 cards col-8 col-md-4 text-center g-lg-1 g-md-4 g-2 mx-lg-0 px-md-1 mx-0"
+                                    data-aos-duration="1000" data-aos="flip-right">
+                                    <div class="card cards__inner overflow-hidden border-0 shadow pop2">
                                         <div class="icon-back py-lg-3 py-lg-4 py-2">
                                             <i class="fa-solid fa-headset text-secondary fa-3x"></i>
                                         </div>
@@ -999,9 +1023,9 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-3 col-8 col-md-4 text-center g-lg-1 g-md-4 g-2 mx-lg-0 mx-md-0 mx-0 wow fadeInUp"
-                                    data-wow-delay="0.2s">
-                                    <div class="card overflow-hidden border-0 shadow pop2">
+                                <div class="col-lg-3 cards col-8 col-md-4 text-center g-lg-1 g-md-4 g-2 mx-lg-0 mx-md-0 mx-0"
+                                    data-aos-duration="1000" data-aos="flip-right">
+                                    <div class="card cards__inner overflow-hidden border-0 shadow pop2">
                                         <div class="icon-back py-lg-3 py-lg-4 py-2">
                                             <i class="fa-sharp fa-solid fa-money-check-dollar text-secondary fa-3x"></i>
                                         </div>
@@ -1013,10 +1037,8 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -1030,10 +1052,12 @@
 
                     <div class="row d-flex justify-content-center align-items-center py-3">
 
-                        <h2 class="fw-bold display-5 mt-4 pt-4 pb-2  text-center">The MR Reporting software is an online
+                        <h2 class="fw-bold display-5 mt-4 pt-4 pb-2 text-center" data-aos-duration="1000"
+                            data-aos="fade-down">The MR Reporting software is an online
                         </h2>
 
-                        <div class="col-lg-4 wow fadeInLeft" data-wow-delay="0.4s">
+                        <div class="col-lg-4 wow fadeInLeft" data-wow-delay="0.4s" data-aos-duration="1000"
+                            data-aos="slide-up">
                             <div class="row d-flex justify-content-center align-items-center">
                                 <div class="col">
 
@@ -1047,7 +1071,7 @@
                                                     it</button>
                                                 <button id="spl1"
                                                     class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
-                                                        href="https://icons.getbootstrap.com/" target="_blanck"
+                                                        href="https://icons.getbootstrap.com/" target="_blank"
                                                         class="text-white">Call us</a></button>
                                             </div>
                                             <span class="mark"></span>
@@ -1074,7 +1098,7 @@
                                                     it</button>
                                                 <button id="spl1"
                                                     class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
-                                                        href="https://icons.getbootstrap.com/" target="_blanck"
+                                                        href="https://icons.getbootstrap.com/" target="_blank"
                                                         class="text-white">Call us</a></button>
                                             </div>
                                             <span class="mark"></span>
@@ -1097,7 +1121,7 @@
                                                     it</button>
                                                 <button id="spl1"
                                                     class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
-                                                        href="https://icons.getbootstrap.com/" target="_blanck"
+                                                        href="https://icons.getbootstrap.com/" target="_blank"
                                                         class="text-white">Call us</a></button>
                                             </div>
                                             <span class="mark"></span>
@@ -1116,7 +1140,8 @@
 
 
 
-                        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s" data-aos-duration="2000"
+                            data-aos="fade-down">
                             <div class="row d-flex justify-content-center align-items-center">
                                 <div class="col">
 
@@ -1130,7 +1155,7 @@
                                                     it</button>
                                                 <button id="spl1"
                                                     class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
-                                                        href="https://icons.getbootstrap.com/" target="_blanck"
+                                                        href="https://icons.getbootstrap.com/" target="_blank"
                                                         class="text-white">Call us</a></button>
                                             </div>
                                             <span class="mark"></span>
@@ -1153,7 +1178,7 @@
                                                     it</button>
                                                 <button id="spl1"
                                                     class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
-                                                        href="https://icons.getbootstrap.com/" target="_blanck"
+                                                        href="https://icons.getbootstrap.com/" target="_blank"
                                                         class="text-white">Call us</a></button>
                                             </div>
                                             <span class="mark"></span>
@@ -1176,7 +1201,7 @@
                                                     it</button>
                                                 <button id="spl1"
                                                     class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
-                                                        href="https://icons.getbootstrap.com/" target="_blanck"
+                                                        href="https://icons.getbootstrap.com/" target="_blank"
                                                         class="text-white">Call us</a></button>
                                             </div>
                                             <span class="mark"></span>
@@ -1191,7 +1216,7 @@
 
                                 </div>
 
-                                <d iv class="col">
+                                <div class="col">
 
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 mytooltip">
                                         <div class="col tooltip-content">
@@ -1203,7 +1228,7 @@
                                                     it</button>
                                                 <button id="spl1"
                                                     class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
-                                                        href="https://icons.getbootstrap.com/" target="_blanck"
+                                                        href="https://icons.getbootstrap.com/" target="_blank"
                                                         class="text-white">Call us</a></button>
                                             </div>
                                             <span class="mark"></span>
@@ -1226,7 +1251,7 @@
                                                     it</button>
                                                 <button id="spl1"
                                                     class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
-                                                        href="https://icons.getbootstrap.com/" target="_blanck"
+                                                        href="https://icons.getbootstrap.com/" target="_blank"
                                                         class="text-white">Call us</a></button>
                                             </div>
                                             <span class="mark"></span>
@@ -1249,7 +1274,7 @@
                                                     it</button>
                                                 <button id="spl1"
                                                     class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
-                                                        href="https://icons.getbootstrap.com/" target="_blanck"
+                                                        href="https://icons.getbootstrap.com/" target="_blank"
                                                         class="text-white">Call us</a></button>
                                             </div>
                                             <span class="mark"></span>
@@ -1262,12 +1287,13 @@
                                         </div>
                                     </div>
 
-                                </d>
+                                </div>
                             </div>
                         </div>
 
 
-                        <div class="col-lg-4 wow fadeInRight" data-wow-delay="0.4s">
+                        <div class="col-lg-4 wow fadeInRight" data-wow-delay="0.4s" data-aos-duration="1000"
+                            data-aos="slide-up">
                             <div class="row d-flex align-items-center justify-content-center">
                                 <div class="col">
 
@@ -1281,7 +1307,7 @@
                                                     it</button>
                                                 <button id="spl1"
                                                     class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
-                                                        href="https://icons.getbootstrap.com/" target="_blanck"
+                                                        href="https://icons.getbootstrap.com/" target="_blank"
                                                         class="text-white">Call us</a></button>
                                             </div>
                                             <span class="mark"></span>
@@ -1304,7 +1330,7 @@
                                                     it</button>
                                                 <button id="spl1"
                                                     class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
-                                                        href="https://icons.getbootstrap.com/" target="_blanck"
+                                                        href="https://icons.getbootstrap.com/" target="_blank"
                                                         class="text-white">Call us</a></button>
                                             </div>
                                             <span class="mark"></span>
@@ -1331,7 +1357,7 @@
                                                     it</button>
                                                 <button id="spl1"
                                                     class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
-                                                        href="https://icons.getbootstrap.com/" target="_blanck"
+                                                        href="https://icons.getbootstrap.com/" target="_blank"
                                                         class="text-white">Call us</a></button>
                                             </div>
                                             <span class="mark"></span>
@@ -1355,12 +1381,12 @@
 
 
             <!--Section 6 start-->
-            <section id="sec6" class="py-3 mt-4">
+            <section id="sec6" class="pt-lg-3 py-3 mt-4 py-md-3 mt-md-4 mt-lg-4">
                 <div class="container pt-3">
                     <div class="row d-flex justify-content-center align-items-center my-3">
 
                         <div class="sec col-12 col-sm-12 col-md-10 col-lg-10 text-center mb-3 wow fadeInDown"
-                            data-wow-delay="0.3s">
+                            data-wow-delay="0.3s" data-aos="fade-down" data-aos-duration="1000">
                             <h2 class="fw-bold display-5 pb-4 text-center">SkyFinch Makes Your Business Proud</h2>
                             <a type="button" class="my-1 btn-sm fw-bold btn btn-silver me-1 rounded-pill active1"
                                 data-filter="show1">Windows&nbsp;Application</a>
@@ -1370,7 +1396,7 @@
                                 class="my-1 btn-sm fw-bold btn btn-silver ms-1 rounded-pill">All Products</a>
                         </div>
 
-                        <div class="col-lg-12 pt-lg-2 pt-3 px-lg-0 mx-lg-0 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="col-lg-12 pt-lg-2 pt-3 px-lg-0 mx-lg-0 wow fadeInUp">
                             <div class="row d-flex justify-content-center align-items-center">
 
                                 <!-- show 1 start -->
@@ -1378,23 +1404,24 @@
 
                                     <div class="row d-flex justify-content-center align-items-center">
 
-                                        <div class="col-lg-4 col-12 animated fadeInLeft">
+                                        <div class="col-lg-4 col-12 animated fadeInLeft" data-aos-duration="1000"
+                                            data-aos="fade-right">
                                             <div class="row  d-flex justify-content-center">
                                                 <h3 class="fw-bold pb-3 text-center mt-0 mb-1">Windows Application</h3>
                                             </div>
                                             <div class="row d-flex justify-content-center">
                                                 <img src="img/india/web_app.png" alt="img-1"
-                                                    class="img-fluid d-block d-sm-block d-md-block d-lg-block winapp">
+                                                    class="img-fluid d-block d-sm-block d-md-block d-lg-block win-app">
                                             </div>
                                         </div>
-                                        <div class="col-lg-7">
+                                        <div class="col-lg-7" data-aos-duration="1000" data-aos="fade-left">
                                             <div class="row d-flex jus  tify-content-center align-items-center">
                                                 <div class="col-6 col-lg-5 mb-3 g-lg-2 g-3 mx-lg-1">
                                                     <a href="Products.html?number=1">
                                                         <div class="card text-center border-0 hov1">
                                                             <div class="card-body">
                                                                 <i class="bi bi-alexa text-danger"></i>
-                                                                <h5 class="card-title fw-bold mb-3">Profitablity
+                                                                <h5 class="card-title fw-bold mb-3">Profitability
                                                                     Analysis</h5>
                                                                 <p class="card-text text-muted">“You are not too far
                                                                     from your business, wherever you are.</p>
@@ -1446,9 +1473,7 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
-
                                 </div>
                                 <!-- show 1 end -->
 
@@ -1457,18 +1482,19 @@
 
                                     <div class="row d-flex justify-content-center align-items-center">
 
-                                        <div class="col-lg-4 col-12 animated fadeInLeft">
+                                        <div class="col-lg-4 col-12 animated fadeInLeft" data-aos-duration="1000"
+                                            data-aos="fade-right">
                                             <div class="row d-flex justify-content-center">
                                                 <h3 class="fw-bold pb-3 text-center mt-0 mb-1 py-2">Web Application</h3>
                                             </div>
                                             <div class="row d-flex justify-content-center">
-                                                <img src="img/maintenance1.jpg" alt="img-1"
+                                                <img src="img/Windows-bro.png" alt="img-1"
                                                     class="img-fluid d-block d-sm-block d-md-block d-lg-block webapp">
                                             </div>
                                         </div>
-                                        <div class="col-lg-7">
+                                        <div class="col-lg-7" data-aos-duration="1000" data-aos="fade-left">
                                             <div class="row d-flex justify-content-center align-items-center">
-                                                <div class="col-6 col-lg-5 mb-3 g-lg-1 g-3 py-lg-2 py-3 mx-lg-1">
+                                                <div class="col-6 col-lg-5 mb-3 g-lg-1 g-3 py-lg-2 py-2 mx-lg-1">
                                                     <a href="Products.html?number=2">
                                                         <div class="card text-center border-0 hov1">
                                                             <div class="card-body">
@@ -1480,7 +1506,7 @@
                                                         </div>
                                                     </a>
                                                 </div>
-                                                <div class="col-6 col-lg-5 mb-3 g-lg-1 g-3 py-lg-2 py-3 mx-lg-1">
+                                                <div class="col-6 col-lg-5 mb-3 g-lg-1 g-3 py-lg-2 py-2 mx-lg-1">
                                                     <a href="Products.html?number=2">
                                                         <div class="card text-center border-0 hov1">
                                                             <div class="card-body">
@@ -1533,12 +1559,12 @@
             <section id="sec7" class="bg-09 pt-5 pb-3">
                 <div class="container pt-2 mb-5">
                     <div class="row d-flex justify-content-center align-items-center mt-2 pb-4">
-
                         <div class="col-lg-12 divide">
                             <div class="row d-flex justify-content-center align-items-center">
                                 <h2 class="fw-bold pb-2 pb-md-5 pb-lg-1 pt-2 pb-3 text-center display-6 wow fadeInDown"
-                                    data-wow-delay="0.4s">Our Valuable Customers</h2>
-                                <div class="cus owl-carousel owl-theme pt-3">
+                                    data-wow-delay="0.4s" data-aos-duration="1000" data-aos="fade-down">Our Valuable
+                                    Customers</h2>
+                                <div class="cus owl-carousel owl-theme pt-3" data-aos-duration="1000">
                                     <div class="item">
                                         <div class="card border-0 mx-2">
                                             <img src="img/cus/1.jpg" alt="zC" class="img-fluid">
@@ -1691,14 +1717,13 @@
                                             <img src="img/cus/wordwide cargo.jpg" alt="zC" class="img-fluid">
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="row d-flex justify-content-center align-items-center mt-2">
-                                <div class="col-lg-5">
+                                <div class="col-lg-5" data-aos-duration="1000" data-aos="fade-right">
                                     <h6 class="fw-bold display-6 d-md-1 mb-4">Got A Project Or A&nbsp;Partnership
                                         In&nbsp;Mind?</h6>
                                     <div class="row d-flex align-items-center justify-content-center">
@@ -1731,35 +1756,35 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-7 pt-4 mx-lg-0 mx-3">
+                                <div class="col-lg-7 pt-4 mx-lg-0 mx-3" data-aos-duration="1000" data-aos="fade-left">
                                     <form name="cus_form" action="">
                                         <div class="row mx-lg-0 mx-3">
-                                            <div class="col-lg-6 mt-3 pb-2">
+                                            <div class="col-lg-6 mt-3 pb-2 wow fadeInRight" data-wow-delay="1.3s">
                                                 <div class="input-data">
                                                     <label for="">Enter Your Name:</label>
                                                     <input type="text" id="cus-name" required>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-6 mt-3 pb-2">
+                                            <div class="col-lg-6 mt-3 pb-2 wow fadeInRight" data-wow-delay="1.6s">
                                                 <div class="input-data">
                                                     <label for="">Your Phone Number:</label>
                                                     <input type="text" id="cus-number" maxlength="15" required>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-12 mt-3 pb-2">
+                                            <div class="col-lg-12 mt-3 pb-2 wow fadeInRight" data-wow-delay="1.9s">
                                                 <div class="input-data">
                                                     <label for="">Your E-mail:</label>
                                                     <input type="email" id="cus-mail" required>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-12 mt-3 pb-2">
+                                            <div class="col-lg-12 mt-3 pb-2 wow fadeInRight" data-wow-delay="2.1s">
                                                 <div class="input-data">
                                                     <label for="">Tell About Your Project:</label>
                                                     <input type="text" id="cus-text" required>
                                                 </div>
                                             </div>
-                                            <div
-                                                class="col-lg-12 mx-auto d-flex justify-content-center d-lg-flex justify-content-lg-start pt-3">
+                                            <div class="col-lg-12 mx-auto d-flex justify-content-center d-lg-flex justify-content-lg-start pt-3 wow fadeInUp"
+                                                data-wow-delay="2.3s">
                                                 <button type="button" class="btn btn-primary text-light"
                                                     onclick="msgButton()">Send message</button>
                                             </div>
@@ -1776,100 +1801,102 @@
 
 
             <!-- Footer Start -->
-    <div class="container-fluid scroll text-light footer mt-lg-4 pt-lg-5 mt-4 pt-4 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container pt-lg-4 mt-lg-0 mt-3 pt-4">
-            <div class="row g-lg-5 mt-lg-1 mt-1 g-md-2 g-4">
-                <div class="col-lg-4 col-12 col-md-12">
-                    <h4 class="text-white mb-4">SKYFINCH</h4>
-                    <div class="row">
-                        <div class="col-lg-2 col-md-2 col-2 px-0 d-flex justify-content-center align-items-center">
-                            <i class="fa fa-map-marker-alt mb-md-3 mb-3"></i>
+            <div class="container-fluid scroll text-light footer mt-lg-4 pt-lg-5 mt-4 pt-4 wow fadeIn"
+                data-wow-delay="0.1s">
+                <div class="container pt-lg-4 mt-lg-0 mt-3 pt-4">
+                    <div class="row g-lg-5 mt-lg-1 mt-1 g-md-2 g-4">
+                        <div class="col-lg-4 col-12 col-md-12">
+                            <h4 class="text-white mb-4">SKYFINCH</h4>
+                            <div class="row">
+                                <div class="col-lg-2 col-md-2 col-2 px-0 d-flex justify-content-center align-items-center">
+                                    <i class="fa fa-map-marker-alt mb-md-3 mb-3"></i>
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-10 px-0">
+                                    <p class="mb-2">5, Republic Street, Reddiarpalayam,
+                                        <br>Puducherry-605 010, India
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-2 px-0 d-flex justify-content-center align-items-center">
+                                    <i class="fa fa-phone-alt mb-md-2 mb-3"></i>
+                                </div>
+                                <div class="col-lg-10 col-10 px-0">
+                                    <p class="mb-2">+91 9443487210</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 col-2 px-0 d-flex justify-content-center align-items-center">
+                                    <i class="fa fa-envelope mb-md-2 mb-3"></i>
+                                </div>
+                                <div class="col-lg-10 col-10 px-0">
+                                    <p class="btn-link mb-2">info@skyfinch.com</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex pt-2">
+                                <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                                    href="https://twitter.com/Roadmaperp" target="_blank"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                                    href="https://www.facebook.com/skyfinch.roadmap" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                                    href="https://www.instagram.com/skyfinchroadmap" target="_blank"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-outline-light rounded-circle me-2"
+                                    href="https://www.linkedin.com/company/skyfinchroadmap" target="_blank"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
                         </div>
-                        <div class="col-lg-10 col-md-10 col-10 px-0">
-                            <p class="mb-2">5, Republic Street, Reddiarpalayam,
-                                <br>Puducherry-605 010, India
-                            </p>
+                        <div class="col-lg-2 col-6 mb-lg-0 mb-4 mt-5 mt-lg-5">
+                            <h4 class="text-white mb-4 w-50 border-bottom border-primary">Explore</h4>
+                            <a class="btn btn-link" href="index.html">Home</a>
+                            <a class="btn btn-link" href="service.html">Services</a>
+                            <a class="btn btn-link" href="">Product Enquiry</a>
+                            <a class="btn btn-link" href="about.html">About Us</a>
+                            <a class="btn btn-link" href="contact.html">Contact us</a>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-2 col-2 px-0 d-flex justify-content-center align-items-center">
-                            <i class="fa fa-phone-alt mb-md-2 mb-3"></i>
+                        <div class="col-lg-2 col-6 mb-lg-0 mb-4 mt-5 mt-lg-5">
+                            <h4 class="text-white mb-4 w-50 border-bottom border-primary">Discover</h4>
+                            <a class="btn btn-link" href="">Plans & Pricing</a>
+                            <a class="btn btn-link" href="">Newsletter</a>
+                            <a class="btn btn-link" href="contact.html">Contact Us</a>
+                            <a class="btn btn-link" href="">Customer&nbsp;Support</a>
+                            <a class="btn btn-link" href="">Enquiry</a>
                         </div>
-                        <div class="col-lg-10 col-10 px-0">
-                            <p class="mb-2">+91 9443487210</p>
+                        <div class="col-lg-4 col-12">
+                            <h4 class="text-white mb-4 w-25 border-width border-bottom border-primary">Newsletter</h4>
+                            <div class="position-relative w-75">
+                                <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text"
+                                    placeholder="Your email">
+                                <button type="button"
+                                    class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-2 col-2 px-0 d-flex justify-content-center align-items-center">
-                            <i class="fa fa-envelope mb-md-2 mb-3"></i>
-                        </div>
-                        <div class="col-lg-10 col-10 px-0">
-                            <p class="btn-link mb-2">info@skyfinch.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
-                            href="https://twitter.com/Roadmaperp" target="_blank"><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
-                            href="https://www.facebook.com/skyfinch.roadmap" target="_blank"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
-                            href="https://www.instagram.com/skyfinchroadmap" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
-                            href="https://www.linkedin.com/company/skyfinchroadmap" target="_blank"><i
-                                class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-2 col-6 mb-lg-0 mb-4 mt-5 mt-lg-5">
-                    <h4 class="text-white mb-4 w-50 border-bottom border-primary">Explore</h4>
-                    <a class="btn btn-link" href="index.html">Home</a>
-                    <a class="btn btn-link" href="about.html">About Us</a>
-                    <a class="btn btn-link" href="">Product Enquiry</a>
-                    <a class="btn btn-link" href="service.html">Services</a>
-                    <a class="btn btn-link" href="contact.html">Contact us</a>
-                </div>
-                <div class="col-lg-2 col-6 mb-lg-0 mb-4 mt-5 mt-lg-5">
-                    <h4 class="text-white mb-4 w-50 border-bottom border-primary">Discover</h4>
-                    <a class="btn btn-link" href="">Plans & Pricing</a>
-                    <a class="btn btn-link" href="">Newsletter</a>
-                    <a class="btn btn-link" href="contact.html">Contact Us</a>
-                    <a class="btn btn-link" href="">Customer&nbsp;Support</a>
-                    <a class="btn btn-link" href="">Enquiry</a>
-                </div>
-                <div class="col-lg-4 col-12">
-                    <h4 class="text-white mb-4 w-25 border-width border-bottom border-primary">Newsletter</h4>
-                    <div class="position-relative w-75">
-                        <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text"
-                            placeholder="Your email">
-                        <button type="button"
-                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+
+                <!-- Copyright Start -->
+                <div class="row mt-5 pt-5 d-flex align-items-end justify-content-center">
+                    <div class="row pt-5 mt-5 pb-lg-0 mb-lg-0">
+                        <div class="col-md-12 col-lg-12 d-flex align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-5 pt-5 mt-5 pb-lg-0 mb-lg-0">
+                            Copyright &copy; Skyfinch 2023. All rights reserved. Designed By Skyfinch.
+                        </div>
                     </div>
                 </div>
+                <!-- Copyright End -->
             </div>
-        </div>
-
-        <!-- Copyright Start -->
-        <div class="row mt-5 pt-5 d-flex align-items-end justify-content-center">
-            <div class="row pt-5 mt-5 pb-lg-0 mb-lg-0">
-                <div class="col-md-12 col-lg-12 d-flex align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-5 pt-5 mt-5 pb-lg-0 mb-lg-0">
-                    Copyright &copy; Skyfinch 2023. All rights reserved. Designed By Skyfinch.
-                </div>
-            </div>
-        </div>
-        <!-- Copyright End -->
-    </div>
-    <!-- Footer End -->
+            <!-- Footer End -->
 
 
 
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top wow fadeInDown"
-        data-wow-delay="3.5s"><i class="bi bi-arrow-up"></i></a>
+            <!-- Back to Top -->
+            <a href="#" class="btn btn-lg b-2-top btn-lg-square rounded-circle back-to-top wow fadeInDown"
+                data-wow-delay="3.5s" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip" data-bs-title="back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
             <!-- JavaScript Libraries -->
@@ -1882,6 +1909,7 @@
             <script src="lib/counterup/counterup.min.js"></script>
             <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.js"></script>
             <script src="js/tooltip.js"></script>
+            <script src="js/3Dcards-02.js"></script>
 
 
             <!-- Scroll effects -->
@@ -1902,5 +1930,6 @@
             <!-- Smooth scroll -->
             <!-- Template Javascript -->
             <script src="js/main.js"></script>
+</body>
 
 </html>

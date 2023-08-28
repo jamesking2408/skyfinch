@@ -37,6 +37,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/aos.css">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -65,7 +66,7 @@
     <!-- Start chat box Design  -->
     <span class="tooltip-text" style="visibility: hidden;">I'm Skyfinch</span>
 
-    <button class="chatbot-toggler wow fadeInUp" data-wow-delay="2.2s">
+    <button title="" class="chatbot-toggler wow fadeInDown" data-wow-delay="2.2s" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="chat-tooltip" data-bs-title="Hi! I'm Help you.👋">
         <span class="material-symbols-outlined">mode_comment</span>
         <span class="material-symbols-outlined">close</span>
     </button>
@@ -107,7 +108,7 @@
     <!-- Submit worng alert box -->
     <div class="container-sub">
         <div class="sub-popup1" id="pop1">
-            <img src="img/wrong.png" alt="">
+            <img src="img/wrong.png" class="wrong" alt="">
             <h2 class="display-5" style="color: rgb(219, 17, 17);"></h2>
             <p class="fw-semibold"></p>
             <button type="button" class="exit1 fs-5 fw-bolder" onclick="closePopup1()">OK<span><img src="img/thumbs.png"
@@ -135,7 +136,8 @@
         <nav class="navbar pt-1 mt-2 pt-lg-0 mt-lg-0 navbar-expand-lg navbar-light py-lg-0 px-lg-5 bg-white wow fadeIn"
             data-wow-delay="1.1s">
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-                <h1 class="display-5 text-primary m-0 wow fadeIn" data-wow-delay="1.5s" id="logo">SkyFinch</h1>
+                <h1 class="display-6 text-primary m-0" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-custom-class="custom-tooltip" data-bs-title="SkyFinch">SkyFinch</h1>
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse">
@@ -158,15 +160,21 @@
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <div class="d-none d-lg-flex ms-2">
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
-                        <small class="fab fa-facebook-f text-primary"></small>
+                <div class=" d-lg-flex d-grid ms-lg-2 ms-md-2 ms-2 gap-2 my-lg-2">
+                    <a class="btn btn-outline-primary btn-sm-square rounded-circle ms-lg-1 ms-3"
+                        href="https://www.facebook.com/skyfinch.roadmap" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip" data-bs-title="Facebook" target="_blank">
+                        <i class="fab fa-facebook-f "></i>
                     </a>
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
-                        <small class="fab fa-twitter text-primary"></small>
+                    <a class="btn btn-outline-primary btn-sm-square rounded-circle ms-lg-1 ms-3"
+                        href="https://twitter.com/Roadmaperp" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip" data-bs-title="Twitter" target="_blank">
+                        <i class="fab fa-twitter"></i>
                     </a>
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
-                        <small class="fab fa-linkedin-in text-primary"></small>
+                    <a class="btn btn-outline-primary btn-sm-square rounded-circle ms-lg-1 ms-3"
+                        href="https://www.linkedin.com/company/skyfinchroadmap" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-custom-class="custom-tooltip" data-bs-title="LinkedIn" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>  
                     </a>
                 </div>
             </div>
@@ -177,8 +185,8 @@
 
     <!-- Page Header Start -->
 
-    <section class="container-fluid pt-lg-3 mt-lg-4 mt-0 pt-0"> <!--New header page (update)-->
-        <div class="container1 bg mt-4 pt-5 mb-5 wow fadeInUp" data-wow-delay="1.2s">
+    <section class="container-fluid pt-lg-4 mt-lg-4 mt-0 pt-0"> <!--New header page (update)-->
+        <div class="container1 bg mt-lg-4 pt-lg-4 mt-1 pt-1 mb-3 wow fadeInUp" data-wow-delay="1.2s">
             <div class="row px-2 service-border wow fadeInUp" data-wow-delay="1.5s">
                 <h1 class="display-3 wow fadeInDown" data-wow-delay="2.1s">SERVICES</h1>
                 <nav aria-label="breadcrumb">
@@ -194,16 +202,17 @@
 
 
     <!-- Service Start -->
-    <section class="container-fluid pt-1 mt-2 pt-lg-4 mt-lg-5 pt-4 mt-5">
+    <section class="container-fluid pt-1 mt-2 pt-lg-4 mt-lg-5 pt-4 mt-2">
         <div class="container-fluid service pt-lg-4 mt-lg-4 pt-1 mt-2">
             <div class="container">
                 <div class="text-center mx-auto mt-lg-4 mt-1 mb-lg-3 g-lg-4 gy-4 wow fadeInLeft" data-wow-delay="0.1s"
-                    style="max-width: 600px;">
+                    data-aos-duration="1000" data-aos="fade-right" style="max-width: 600px;">
                     <p class="d-inline-block border rounded text-primary fw-semi-bold py-0 px-1">Our Services</p>
                     <h2 class="display-5 mb-2">Awesome Financial Services For Business</h2>
                 </div>
                 <div class="row g-lg-3 gy-5 mt-lg-0 mt-2">
-                    <div class="col-lg-4 wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="col-lg-4 wow fadeInLeft" data-wow-delay="0.3s" data-aos-duration="1000"
+                        data-aos="fade-right">
                         <div class="nav nav-pills g-2 d-flex justify-content-around w-100 h-75 me-2">
                             <button
                                 class="nav-link bar-clor g-2 w-100 d-flex align-items-center text-start border p-2 mb-2 active"
@@ -232,15 +241,18 @@
                             <div class="tab-pane fade show active" id="tab-pane-1">
                                 <div class="row g-lg-4 g-md-4 g-2">
                                     <div class="col-12 col-md-6 col-lg-6 wow fadeInRight" data-wow-delay=".8s"
-                                        style="min-height: 350px;">
+                                        data-aos-duration="1000" data-aos="fade-left" style="min-height: 350px;">
                                         <div class="position-relative h-75">
                                             <img class="position-absolute rounded w-100 h-100"
                                                 src="img/india/ser-shake.jpg" style="object-fit: cover;" alt="">
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-6 col-lg-6 wow fadeInRight" data-wow-delay=".6s">
-                                        <h3 class="mb-lg-3 mb-md-3 mb-1">25 Years Of Experience In Financial Support</h3>
-                                        <p class="mb-lg-3 mb-md-3 mb-1">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                                    <div class="col-12 col-md-6 col-lg-6 wow fadeInRight" data-wow-delay=".6s"
+                                        data-aos-duration="1000" data-aos="fade-left">
+                                        <h3 class="mb-lg-3 mb-md-3 mb-1">25 Years Of Experience In Financial Support
+                                        </h3>
+                                        <p class="mb-lg-3 mb-md-3 mb-1">Tempor erat elitr rebum at clita. Diam dolor
+                                            diam ipsum sit.
                                             Aliqu diam amet diam et eos.</p>
                                         <div class="row g-2">
                                             <div class="col-8 col-md-6 col-lg-6">
@@ -258,15 +270,18 @@
                             <div class="tab-pane fade" id="tab-pane-2">
                                 <div class="row g-4">
                                     <div class="col-md-6 col-lg-6 wow fadeInRight" data-wow-delay=".8s"
-                                        style="min-height: 350px;">
-                                        <div class="position-relative h-100">
+                                        data-aos-duration="1000" data-aos="fade-left" style="min-height: 350px;">
+                                        <div class="position-relative h-75">
                                             <img class="position-absolute rounded w-100 h-100"
                                                 src="img/india/ser-shake1.jpg" style="object-fit: cover;" alt="">
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-6 col-lg-6 wow fadeInRight" data-wow-delay=".6s">
-                                        <h3 class="mb-lg-3 mb-md-3 mb-1">25 Years Of Experience In Financial Support</h3>
-                                        <p class="mb-lg-3 mb-md-3 mb-1">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                                    <div class="col-12 col-md-6 col-lg-6 wow fadeInRight" data-wow-delay=".6s"
+                                        data-aos-duration="1000" data-aos="fade-left">
+                                        <h3 class="mb-lg-3 mb-md-3 mb-1">25 Years Of Experience In Financial Support
+                                        </h3>
+                                        <p class="mb-lg-3 mb-md-3 mb-1">Tempor erat elitr rebum at clita. Diam dolor
+                                            diam ipsum sit.
                                             Aliqu diam amet diam et eos.</p>
                                         <div class="row g-2">
                                             <div class="col-8 col-md-6 col-lg-6">
@@ -284,15 +299,18 @@
                             <div class="tab-pane fade" id="tab-pane-3">
                                 <div class="row g-4">
                                     <div class="col-md-6 col-lg-6 wow fadeInRight" data-wow-delay=".8s"
-                                        style="min-height: 350px;">
+                                        data-aos-duration="1000" data-aos="fade-left" style="min-height: 350px;">
                                         <div class="position-relative h-75">
                                             <img class="position-absolute rounded w-100 h-100"
                                                 src="img/india/ser-shake2.jpg" style="object-fit: cover;" alt="">
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-6 col-lg-6 wow fadeInRight" data-wow-delay=".6s">
-                                        <h3 class="mb-lg-3 mb-md-3 mb-1">25 Years Of Experience In Financial Support</h3>
-                                        <p class="mb-lg-3 mb-md-3 mb-1">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                                    <div class="col-12 col-md-6 col-lg-6 wow fadeInRight" data-wow-delay=".6s"
+                                        data-aos-duration="1000" data-aos="fade-left">
+                                        <h3 class="mb-lg-3 mb-md-3 mb-1">25 Years Of Experience In Financial Support
+                                        </h3>
+                                        <p class="mb-lg-3 mb-md-3 mb-1">Tempor erat elitr rebum at clita. Diam dolor
+                                            diam ipsum sit.
                                             Aliqu diam amet diam et eos.</p>
                                         <div class="row g-2">
                                             <div class="col-8 col-md-6 col-lg-6">
@@ -310,15 +328,18 @@
                             <div class="tab-pane fade" id="tab-pane-4">
                                 <div class="row g-4">
                                     <div class="col-md-6 col-lg-6 wow fadeInRight" data-wow-delay=".8s"
-                                        style="min-height: 350px;">
+                                        data-aos-duration="1000" data-aos="fade-left" style="min-height: 350px;">
                                         <div class="position-relative h-75">
                                             <img class="position-absolute rounded w-100 h-100"
                                                 src="img/india/ser-shake3.jpeg" style="object-fit:cover;" alt="">
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-6 col-lg-6 wow fadeInRight" data-wow-delay=".6s">
-                                        <h3 class="mb-lg-3 mb-md-3 mb-1">25 Years Of Experience In Financial Support</h3>
-                                        <p class="mb-lg-3 mb-md-3 mb-1">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                                    <div class="col-12 col-md-6 col-lg-6 wow fadeInRight" data-wow-delay=".6s"
+                                        data-aos-duration="1000" data-aos="fade-left">
+                                        <h3 class="mb-lg-3 mb-md-3 mb-1">25 Years Of Experience In Financial Support
+                                        </h3>
+                                        <p class="mb-lg-3 mb-md-3 mb-1">Tempor erat elitr rebum at clita. Diam dolor
+                                            diam ipsum sit.
                                             Aliqu diam amet diam et eos.</p>
                                         <div class="row g-2">
                                             <div class="col-8 col-md-6 col-lg-6">
@@ -347,46 +368,47 @@
         <div class="container-fluid mt-5 py-1">
             <div class="container d-flex justify-content-center pt-2 mt-5 mb-sm-3">
                 <div class="row">
-                    <div class="col-lg-12 callback bg-white d-flex justify-content-center mt-2 mt-lg-5 pt-lg-4 mb-lg-3 pb-lg-2 px-4">
-                        <div class="px-lg-2 px-md-2 py-lg-3 py-md-3 mx-lg-4 mx-md-5 px-0 wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="text-center mt-3 mx-auto wow fadeInUp" data-wow-delay="1.2s">
-                                <p class="d-inline-block border rounded text-primary fw-semi-bold px-3">Get In
-                                    Touch
+                    <div
+                        class="col-lg-12 callback bg-white d-flex justify-content-center mt-2 mt-lg-5 pt-lg-4 mb-lg-3 pb-lg-2 px-4">
+                        <div class="px-lg-2 px-md-2 py-lg-3 py-md-3 mx-lg-4 mx-md-5 px-0 wow fadeInUp"
+                            data-wow-delay="0.5s" data-aos-duration="1000" data-aos="slide-up">
+                            <div class="text-center mt-3 mx-auto fadeInUp">
+                                <p class="d-inline-block border rounded text-primary fw-semi-bold px-3">
+                                    Get In Touch
                                 </p>
                                 <h2 class="display-5 display-my mb-3">Request A Call-Back</h2>
                             </div>
                             <form name="callus" action="">
                                 <div class="row gy-3">
-                                    <div class="col-12 col-md-6 col-lg-6">
+                                    <div class="col-12 col-md-6 col-lg-6" data-aos-duration="1000"
+                                        data-aos="fade-right">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control"
-                                                style="text-transform: uppercase;" id="na" placeholder="Your Name"
-                                                aria-label=".form-control-sm example">
+                                            <input type="text" class="form-control" style="text-transform: uppercase;"
+                                                id="na" placeholder="Your Name" aria-label=".form-control-sm example">
                                             <label for="name">Your Name</label>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-6 col-lg-6">
+                                    <div class="col-12 col-md-6 col-lg-6" data-aos-duration="1000" data-aos="fade-left">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="Id"
-                                                placeholder="Your Email">
+                                            <input type="email" class="form-control" id="Id" placeholder="Your Email">
                                             <label for="mail">Your Email</label>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-6 col-lg-6">
+                                    <div class="col-12 col-md-6 col-lg-6" data-aos-duration="1000"
+                                        data-aos="fade-right">
                                         <div class="form-floating">
                                             <input type="text" class="form-control" id="mob" maxlength="15"
                                                 placeholder="Your Mobile">
                                             <label for="mobile">Your Mobile</label>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-6 col-lg-6">
+                                    <div class="col-12 col-md-6 col-lg-6" data-aos-duration="1000" data-aos="fade-left">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="sub"
-                                                placeholder="Subject">
+                                            <input type="text" class="form-control" id="sub" placeholder="Subject">
                                             <label for="subject">Subject</label>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-12 col-lg-12">
+                                    <div class="col-12 col-md-12 col-lg-12" data-aos-duration="1000" data-aos="fade-up">
                                         <div class="form-floating">
                                             <textarea class="form-control form-control-sm"
                                                 placeholder="Leave a message here" id="msg"
@@ -394,7 +416,8 @@
                                             <label for="msg" class="form-label">Message here..</label>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-12 col-lg-6 text-center mx-auto pt-1 mb-3">
+                                    <div class="col-12 col-md-12 col-lg-6 text-center mx-auto pt-1 mb-3"
+                                        data-aos-duration="2000" data-aos="slide-up">
                                         <button type="button" class="btn btn-primary text-light" id="callBack">Submit
                                             now</button>
                                     </div>
@@ -409,8 +432,8 @@
     <!-- Callback End -->
 
 
-     <!-- Footer Start -->
-     <div class="container-fluid scroll text-light footer mt-lg-4 pt-lg-5 mt-4 pt-4 wow fadeIn" data-wow-delay="0.1s">
+    <!-- Footer Start -->
+    <div class="container-fluid scroll text-light footer mt-lg-4 pt-lg-5 mt-4 pt-4 wow fadeIn" data-wow-delay="0.1s">
         <div class="container pt-lg-4 mt-lg-0 mt-3 pt-4">
             <div class="row g-lg-5 mt-lg-1 mt-1 g-md-2 g-4">
                 <div class="col-lg-4 col-12 col-md-12">
@@ -441,11 +464,10 @@
                             <p class="btn-link mb-2">info@skyfinch.com</p>
                         </div>
                     </div>
-                    
+
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-light rounded-circle me-2"
-                            href="https://twitter.com/Roadmaperp" target="_blank"><i
-                                class="fab fa-twitter"></i></a>
+                            href="https://twitter.com/Roadmaperp" target="_blank"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-outline-light rounded-circle me-2"
                             href="https://www.facebook.com/skyfinch.roadmap" target="_blank"><i
                                 class="fab fa-facebook-f"></i></a>
@@ -460,9 +482,9 @@
                 <div class="col-lg-2 col-6 mb-lg-0 mb-4 mt-5 mt-lg-5">
                     <h4 class="text-white mb-4 w-50 border-bottom border-primary">Explore</h4>
                     <a class="btn btn-link" href="index.html">Home</a>
-                    <a class="btn btn-link" href="about.html">About Us</a>
-                    <a class="btn btn-link" href="">Product Enquiry</a>
                     <a class="btn btn-link" href="service.html">Services</a>
+                    <a class="btn btn-link" href="">Product Enquiry</a>
+                    <a class="btn btn-link" href="about.html">About Us</a>
                     <a class="btn btn-link" href="contact.html">Contact us</a>
                 </div>
                 <div class="col-lg-2 col-6 mb-lg-0 mb-4 mt-5 mt-lg-5">
@@ -488,7 +510,8 @@
         <!-- Copyright Start -->
         <div class="row mt-5 pt-5 d-flex align-items-end justify-content-center">
             <div class="row pt-5 mt-5 pb-lg-0 mb-lg-0">
-                <div class="col-md-12 col-lg-12 d-flex align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-5 pt-5 mt-5 pb-lg-0 mb-lg-0">
+                <div
+                    class="col-md-12 col-lg-12 d-flex align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-5 pt-5 mt-5 pb-lg-0 mb-lg-0">
                     Copyright &copy; Skyfinch 2023. All rights reserved. Designed By Skyfinch.
                 </div>
             </div>
@@ -499,8 +522,9 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top wow fadeInDown"
-        data-wow-delay="3.5s"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg b-2-top btn-lg-square rounded-circle back-to-top wow fadeInDown"
+                data-wow-delay="3.5s" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip" data-bs-title="back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
@@ -511,9 +535,9 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.js"></script>
 
     <!-- Scroll effects -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script>
         AOS.init();
