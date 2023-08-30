@@ -21,6 +21,26 @@
     };
     spinner();
 
+    //  TESTIMONIALS CAROUSEL HOOK
+    $('#customers-testimonials').owlCarousel({
+        loop: true,
+        center: true,
+        margin:-38,		           
+        dots:true,
+        autoplayTimeout: 5000,
+        smartSpeed: 450,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          1170: {
+            items: 3
+          }
+        }
+    });
 
     // Initiate the wowjs
     new WOW().init();
@@ -70,56 +90,6 @@
         $('.sec a').removeClass('active1');
         $(this).addClass('active1');
     })
-    //section change end
-
-    // Fixed Navbar
-    // New navbar when I scroll down it will be go up
-    window.onscroll = function () { scrollFunction() };
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
-            document.getElementById("nav1").style.padding = "2px 8px";
-            document.getElementById("logo").style.fontSize = "30px";
-        } else {
-            document.getElementById("nav1").style.padding = "12px 10px";
-            document.getElementById("logo").style.fontSize = "50px";
-        }
-    }
-    //When scroll down nav bar bottom line increase
-    // $(document).ready(function(){
-    //     $(window).on("scroll",function(){
-    //     var wn = $(window).scrollTop();
-    //     if(wn > 40){
-    //         $("#nav1").css("border-bottom","thin rgb(0,0,0)");
-    //         $("#nav1").css("background","rgb(0,0,0)");
-    //         $("#nav1").css("transition-duration","0.8s");
-    //     }
-    //     else{
-    //         $("#nav1").css("border-bottom","thin solid rgb(186, 187, 189)");
-    //         $("#nav1").css("background","rgba(0,0,0,0)");
-    //         $("#nav1").css("transition-duration","1s");     
-    //     }
-    //   });
-    // });
-
-
-    //     $(window).scroll(function() {
-    //         if ($(window).width() < 992) {
-    //             if ($(this).scrollTop() > 45) {
-    //                 $('.fixed-top').addClass('bg-white shadow');
-    //             } else {
-    //                 $('.fixed-top').removeClass('bg-white shadow');
-    //             }
-    //         } else {
-    //             if ($(this).scrollTop() > 45) {
-    //                 $('.fixed-top').addClass('bg-white shadow').css('top', 0);
-    //             } else {
-    //                 $('.fixed-top').removeClass('bg-white shadow').css('top', 0);
-    //             }
-    //         }
-    //     });
-
-
 
 
     //<!-- update Section Scroll effects -->

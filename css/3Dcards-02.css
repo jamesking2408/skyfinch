@@ -1,36 +1,40 @@
 @media (min-width:300px) and (max-width:500px) {
     .cards {
         position: absolute;
-        width: 100%;
+        width: 80%;
         height: 240px;
         transition: all 400ms ease;
     }
 
     
     .cards:hover:not(.active).left {
-        transform: translateX(-20%) rotate(-3deg) scale(0.9);
+        transform: translateX(-20%) rotate(-5deg) scale(0.9);
     }
     
     .cards:hover:not(.active).right {
-        transform: translateX(20%) rotate(3deg) scale(0.9);
+        transform: translateX(20%) rotate(5deg) scale(0.9);
     }
     
     .cards.left {
-        transform: translateX(-50%) scale(0.9);
-        width: 290px;
         left: 0;
+        transform: translateX(-50%) scale(0.9);
+        transition-duration: 0.9s;
+        /* width: 290px;
+        left: 0;*/
     }
     
     .cards.right {
-        transform: translateX(50%) scale(0.9);
-        width: 290px;
         right: 0;
+        transform: translateX(50%) scale(0.9);
+        transition-duration: 0.9s;
+        /* width: 290px;
+        right: 0;*/
     }
     
     .cards.active {
         z-index: 5;
         position: relative;
-        width: 280px;
+        width: 95%;
         height: 240px;
     }
     
