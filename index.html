@@ -29,11 +29,18 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/3Dcards-02.css">
+    <link rel="stylesheet" href="css/cus-hook.css">
+    <link rel="stylesheet" href="css/stack-cards.css">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -58,7 +65,8 @@
 
     <!-- Start chat box Design  -->
 
-    <button title="" class="chatbot-toggler wow fadeInDown" data-wow-delay="2.2s" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="chat-tooltip" data-bs-title="Hi! I'm Help you.👋">
+    <button title="" class="chatbot-toggler wow fadeInDown" data-wow-delay="2.2s" data-bs-toggle="tooltip"
+        data-bs-placement="left" data-bs-custom-class="chat-tooltip" data-bs-title="Hi! I'm Help you.👋">
         <span class="material-symbols-outlined">mode_comment</span>
         <span class="material-symbols-outlined">close</span>
     </button>
@@ -115,10 +123,10 @@
 
     <!-- Navbar Start -->
     <div class="container-fluid fixed-top m-0 p-0 wow fadeIn" data-wow-delay="0.8s">
-        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn bg-white" data-wow-delay="0.9s">
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-4 wow fadeIn bg-white" data-wow-delay="0.9s">
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
                 <h1 class="display-6 text-primary m-0" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                data-bs-custom-class="custom-tooltip" data-bs-title="SkyFinch">SkyFinch</h1>
+                    data-bs-custom-class="custom-tooltip" data-bs-title="SkyFinch">SkyFinch</h1>
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse">
@@ -129,7 +137,6 @@
                     <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="service.html" class="nav-item nav-link">Service</a>
                     <div class="nav-item dropdown">
-                        <!-- This is show toggle arrow >> -->
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Solutions</a>
                         <div class="dropdown-menu border-light m-0">
                             <div class="submenu d-lg-block  align-items-sm-start">
@@ -165,8 +172,9 @@
 
                 <div class=" d-lg-flex d-grid ms-lg-2 ms-md-2 ms-2 gap-2">
                     <a class="btn btn-outline-primary btn-sm-square rounded-circle ms-lg-1 ms-3"
-                        href="https://www.facebook.com/skyfinch.roadmap" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        data-bs-custom-class="custom-tooltip" data-bs-title="Facebook" target="_blank">
+                        href="https://www.facebook.com/skyfinch.roadmap" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Facebook"
+                        target="_blank">
                         <span><i class="fab fa-facebook-f"></i></span>
                     </a>
                     <a class="btn btn-outline-primary btn-sm-square rounded-circle ms-lg-1 ms-3"
@@ -175,8 +183,9 @@
                         <i class="fab fa-twitter"></i>
                     </a>
                     <a class="btn btn-outline-primary btn-sm-square rounded-circle ms-lg-1 ms-3"
-                        href="https://www.linkedin.com/company/skyfinchroadmap" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        data-bs-custom-class="custom-tooltip" data-bs-title="LinkedIn" target="_blank">
+                        href="https://www.linkedin.com/company/skyfinchroadmap" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="LinkedIn"
+                        target="_blank">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                 </div>
@@ -194,11 +203,12 @@
 
                     <!-- The form -->
 
-                    <div class="container3">
+                    <div class="container1">
                         <div class="row wow fadeInDown" data-wow-delay="1.9s" id="forms">
                             <button class="btn shadow fw-bold btn-light btn-lg-square rounded-circle ms-3"
-                                id="show_form"><img src="img/contact.png" class="shake-little" data-bs-toggle="tooltip" data-bs-placement="right"
-                                data-bs-custom-class="contact-tooltip" data-bs-title="Contact Me!" alt="contactMe"></button>
+                                id="show_form"><img src="img/contact.png" class="shake-little" data-bs-toggle="tooltip"
+                                    data-bs-placement="right" data-bs-custom-class="contact-tooltip"
+                                    data-bs-title="Contact Me!" alt="contactMe"></button>
                         </div>
 
                         <div class="container d-flex justify-content-center align-items-center form-popup">
@@ -250,7 +260,6 @@
                                 document.querySelector("show_form").style.display = "none";
                             })
                         </script>
-
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item container2 active">
@@ -459,7 +468,7 @@
                                 width="500px" height="600px">
                         </div>
                         <div class="col-lg-8 py-lg-5 py-1">
-                            <div class="row d-flex align-items-center justify-content-center g-1 g-lg-2 g-md-4">
+                            <div class="row d-lg-flex d-flex align-items-center justify-content-center g-1 g-lg-2 g-md-4">
                                 <div class="col-lg-6 col-md-6 pt-3 mt-3 gy-lg-5 g-2 wow fadeInUp" data-wow-delay="0.2s"
                                     data-aos-duration="1000" data-aos="fade-up">
                                     <div class="card p-1 border-0 bg-pink py-1">
@@ -520,10 +529,11 @@
                                 <div class="col-lg-6 col-md-6 pt-3 mt-3 gy-lg-3 gy-2 wow fadeInUp" data-wow-delay="0.2s"
                                     data-aos-duration="1000" data-aos="fade-up">
                                     <div class="card p-1 border-0 bg-pink py-1">
-                                        <div class="row d-flex align-items-center justify-content-center text-primary team1">
+                                        <div
+                                            class="row d-flex align-items-center justify-content-center text-primary team1">
                                             <div class="col-2 col-lg-3">
                                                 <div class="heart1">
-                                                       <i class="bi bi-database-down display-my display-6"></i>
+                                                    <i class="bi bi-database-down display-my display-6"></i>
                                                 </div>
                                             </div>
                                             <div class="col-10 col-lg-9 ps-3">
@@ -570,7 +580,7 @@
                         <div class="col-lg-6 col-12 pt-lg-2 mt-lg-4 gy-lg-3 pb-lg-1 mb-lg-3" data-aos-duration="1000"
                             data-aos="fade-left">
                             <div
-                                class="row d-flex mt-lg-3 mt-md-3 mt-2 mb-lg-0 mb-md-4 mb-4 align-items-center justify-content-center">
+                                class="row d-none d-md-flex d-lg-flex mt-lg-3 mt-md-3 mt-2 mb-lg-0 mb-md-4 mb-4 align-items-center justify-content-center">
 
                                 <div class="col-lg-6 col-9 col-md-6 gy-lg-3 gy-4 wow fadeInRight" data-wow-delay="0.6s"
                                     data-aos-duration="2000" data-aos="fade-left">
@@ -624,6 +634,63 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Section 2 responsive page view -->
+                            <div id="customers-testimonials" class="owl-carousel row d-flex d-md-none d-lg-none mt-lg-3 mt-md-3 mt-2  align-items-center justify-content-center">
+
+                                <div class="item shadow-lg col-lg-6 col-9 col-md-6 wow fadeInRight"
+                                    data-wow-delay="0.6s" data-aos-duration="2000" data-aos="fade-left">
+                                    <div class="card text-center border-0 team">
+                                        <div class="heart align-self-center">
+                                            <i class="bi bi-arrow-down-up display-5 display-my text-primary"></i>
+                                        </div>
+                                        <h5 class="fw-bold pb-1">Online Application</h5>
+                                        <p class="text-muted">We develop business-specific Online Applications to
+                                            empower business stakeholders to make business transactions from anywhere at
+                                            any time.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item shadow-lg col-lg-6 col-9 col-md-6 wow fadeInRight"
+                                    data-wow-delay="0.3s" data-aos-duration="1000" data-aos="fade-left">
+                                    <div class="card text-center border-0 team">
+                                        <div class="heart align-self-center">
+                                            <i class="bi bi-wifi-off display-5 display-my text-primary"></i>
+                                        </div>
+                                        <h5 class="fw-bold pb-1">Offline Application</h5>
+                                        <p class="text-muted">Skyfinch’s Offline Applications are state of the art
+                                            solutions built to digitally integrate and selectively automate the workflow
+                                            of any type of trade.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="item shadow-lg col-lg-6 col-9 col-md-6 wow fadeInRight"
+                                    data-wow-delay="0.6s" data-aos-duration="2000" data-aos="fade-left">
+                                    <div class="card text-center border-0 team">
+                                        <div class="heart align-self-center">
+                                            <i class="bi bi-phone-flip display-5 display-my text-primary"></i>
+                                        </div>
+                                        <h5 class="fw-bold pb-1">Mobile Application</h5>
+                                        <p class="text-muted p-0">Our expertise in improvising with technology is the
+                                            ultimate solution to modernize and extend the reach out of businesses
+                                            through Mobile Apps.</p>
+                                    </div>
+                                </div>
+                                <div class="item shadow-lg col-lg-6 col-9 col-md-6 wow fadeInRight"
+                                    data-wow-delay="0.3s" data-aos-duration="1000" data-aos="fade-left">
+                                    <div class="card text-center border-0 team">
+                                        <div class="heart align-self-center">
+                                            <i class="bi bi-database-down display-5 display-my text-primary"></i>
+                                        </div>
+                                        <h5 class="fw-bold pb-1">Database Management</h5>
+                                        <p class="text-muted">We are technically sound to efficiently handle Data
+                                            migration, Data Integration, and Database Administration activities for all
+                                            business purposes.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -680,11 +747,9 @@
                                     data-aos-duration="1000" data-aos="zoom-in">
                                     <div class="flower card p-2 text-center border-0">
                                         <div class="decor d-flex justify-content-center align-items-center">
-
                                             <div class="beat">
                                                 <i class="bi bi-nut display-6"></i>
                                             </div>
-
                                         </div>
                                         <h4 class="fw-semibold py-2">Versatile Solutions</h4>
                                         <p class="text-muted">Skyfinch’s flexible software can be easily customized to
@@ -694,11 +759,7 @@
                                         </div>
                                     </div>
                                 </div>
-
-
                                 <hr class="d-none d-lg-block">
-
-
                                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.4s"
                                     data-aos-duration="1000" data-aos="zoom-in">
                                     <div class="flower card p-2 text-center border-0">
@@ -990,11 +1051,10 @@
                                 Choose Us</h2>
                         </div>
 
-                        <div class="col-lg-12 col-md-12 pb-1 mt-md-0 pb-md-1 pb-lg-0 mt-lg-1">
+                        <div class="col-lg-12 col-md-12 pb-1 mt-md-0 pb-md-1 pb-lg-0 mt-lg-1 mx-lg-0 mx-md-0 mx-5 px-lg-0 px-md-0 px-5">
                             <div class="row d-flex align-items-center justify-content-around">
 
-                                <div class="col-lg-3 cards col-8 col-md-4 text-center g-lg-1 g-md-4 g-2 mx-lg-0 mx-md-0 mx-0"
-                                    data-aos-duration="1000" data-aos="flip-right">
+                                <div class="col-lg-3 cards col-8 col-md-4 text-center g-lg-1 g-md-4 g-2 mx-lg-0 mx-md-0 mx-0" data-aos-duration="1000" data-aos="flip-right">
                                     <div class="card cards__inner overflow-hidden border-0 shadow pop2">
                                         <div class="icon-back py-lg-3 py-lg-4 py-2">
                                             <i class="fa-sharp fa-solid fa-gear text-secondary fa-3x"></i>
@@ -1031,11 +1091,18 @@
                                         </div>
                                         <div class="p-1">
                                             <h4 class="fw-bold">Proven Credibility</h4>
-                                            <p class="text-muted">We adopt proven practices right from the beginning
-                                                till the final handover and strive to increase our customers’ business
+                                            <p class="text-muted">We adopt proven practices right from the beginning till the final handover and strive to increase our customers’ business
                                                 productivity.</p>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="d-lg-none d-md-none d-flex justify-content-center mt-lg-0 pt-lg-0 pt-3 gap-2 mb-lg-0 mb-0">
+                                <div class="arr1 px-3" data-aos-duration="1000" data-aos="fade-right" id="leftButton">
+                                    <i class="fa-solid fa-arrow-left-long fw-bold"></i>
+                                </div>
+                                <div class="arr2 px-3" data-aos-duration="1000" data-aos="fade-left" id="rightButton">
+                                    <i class="fa-solid fa-arrow-left-long fa-rotate-180 fw-bold"></i>
                                 </div>
                             </div>
                         </div>
@@ -1046,9 +1113,9 @@
 
 
 
-            <!--Section 5 start-->
-            <section id="sec5" class="bg-09 mt-5 pb-2">
-                <div class="container pt-2 mt-4">
+             <!--Section 5 start-->
+             <section id="sec5" class="bg-09 mt-lg-5 pb-lg-2 mt-4 pb-2">
+                <div class="container pt-lg-2 mt-lg-4 pt-1 mt-3">
 
                     <div class="row d-flex justify-content-center align-items-center py-3">
 
@@ -1059,7 +1126,7 @@
                         <div class="col-lg-4 wow fadeInLeft" data-wow-delay="0.4s" data-aos-duration="1000"
                             data-aos="slide-up">
                             <div class="row d-flex justify-content-center align-items-center">
-                                <div class="col">
+                                <div class="col-6" style="padding-right:0;">
 
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 mytooltip">
                                         <div class="col tooltip-content">
@@ -1079,15 +1146,14 @@
                                         <div class="card text-center dump1 cr-bk">
                                             <div class="card-body">
                                                 <i class="bi bi-x-diamond text-primary"></i>
-                                                <h5 class="card-title fw-bold">Materials</h5>
+                                                <h6 class="card-title fw-bold">Materials</h6>
                                             </div>
                                         </div>
                                     </div>
 
                                 </div>
 
-                                <div class="col">
-
+                                <div class="col-6" style="padding-left:0;">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 mytooltip">
                                         <div class="col tooltip-content">
                                             <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -1106,8 +1172,8 @@
                                         <div class="card text-center dump1 cr-bk">
                                             <div class="card-body">
                                                 <i class="bi bi-window-stack text-primary"></i>
-                                                <h5 class="card-title fw-bold">Tractability</h5>
-                                            </div>
+                                                <h6 class="card-title fw-bold">Tractability</h6>
+                                            </div>  
                                         </div>
                                     </div>
 
@@ -1129,7 +1195,7 @@
                                         <div class="card text-center dump1 cr-bk">
                                             <div class="card-body">
                                                 <i class="bi bi-view-list text-primary"></i>
-                                                <h5 class="card-title fw-bold">Bin</h5>
+                                                <h6 class="card-title fw-bold">Bin</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -1143,7 +1209,7 @@
                         <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s" data-aos-duration="2000"
                             data-aos="fade-down">
                             <div class="row d-flex justify-content-center align-items-center">
-                                <div class="col">
+                                <div class="col" style="padding-right:0;">
 
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 mytooltip">
                                         <div class="col tooltip-content">
@@ -1163,7 +1229,7 @@
                                         <div class="card text-center dump1 cr-bk">
                                             <div class="card-body">
                                                 <i class="bi bi-ubuntu text-primary"></i>
-                                                <h5 class="card-title fw-bold">Inventory</h5>
+                                                <h6 class="card-title fw-bold">Inventory</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -1186,7 +1252,7 @@
                                         <div class="card text-center dump1 cr-bk">
                                             <div class="card-body">
                                                 <i class="bi bi-tv text-primary"></i>
-                                                <h5 class="card-title fw-bold">Warehouse</h5>
+                                                <h6 class="card-title fw-bold">Warehouse</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -1209,14 +1275,14 @@
                                         <div class="card text-center dump1 cr-bk">
                                             <div class="card-body">
                                                 <i class="bi bi-text-paragraph text-primary"></i>
-                                                <h5 class="card-title fw-bold">Distribution</h5>
+                                                <h6 class="card-title fw-bold">Distribution</h6>
                                             </div>
                                         </div>
                                     </div>
 
                                 </div>
 
-                                <div class="col">
+                                <div class="col" style="padding-left:0;">
 
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 mytooltip">
                                         <div class="col tooltip-content">
@@ -1236,7 +1302,7 @@
                                         <div class="card text-center dump1 cr-bk">
                                             <div class="card-body">
                                                 <i class="bi bi-tags text-primary"></i>
-                                                <h5 class="card-title fw-bold">Bill</h5>
+                                                <h6 class="card-title fw-bold">Bill</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -1259,7 +1325,7 @@
                                         <div class="card text-center dump1 cr-bk">
                                             <div class="card-body">
                                                 <i class="bi bi-stickies text-primary"></i>
-                                                <h5 class="card-title fw-bold">Quality</h5>
+                                                <h6 class="card-title fw-bold">Quality</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -1282,7 +1348,7 @@
                                         <div class="card text-center dump1 cr-bk">
                                             <div class="card-body">
                                                 <i class="bi bi-soundwave text-primary"></i>
-                                                <h5 class="card-title fw-bold">Life-Cycle</h5>
+                                                <h6 class="card-title fw-bold">Life-Cycle</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -1295,7 +1361,7 @@
                         <div class="col-lg-4 wow fadeInRight" data-wow-delay="0.4s" data-aos-duration="1000"
                             data-aos="slide-up">
                             <div class="row d-flex align-items-center justify-content-center">
-                                <div class="col">
+                                <div class="col" style="padding-right:0;">
 
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 mytooltip">
                                         <div class="col tooltip-content">
@@ -1315,7 +1381,7 @@
                                         <div class="card text-center dump1 cr-bk">
                                             <div class="card-body">
                                                 <i class="bi bi-motherboard text-primary"></i>
-                                                <h5 class="card-title fw-bold">Hardware</h5>
+                                                <h6 class="card-title fw-bold">Hardware</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -1338,14 +1404,14 @@
                                         <div class="card text-center dump1 cr-bk">
                                             <div class="card-body">
                                                 <i class="bi bi-snow text-primary"></i>
-                                                <h5 class="card-title fw-bold">Data Loss</h5>
+                                                <h6 class="card-title fw-bold">Data Loss</h6>
                                             </div>
                                         </div>
                                     </div>
 
                                 </div>
 
-                                <div class="col">
+                                <div class="col" style="padding-left:0;">
 
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 mytooltip">
                                         <div class="col tooltip-content">
@@ -1365,7 +1431,7 @@
                                         <div class="card text-center dump1 cr-bk">
                                             <div class="card-body">
                                                 <i class="bi bi-slack text-primary"></i>
-                                                <h5 class="card-title fw-bold">Accounting</h5>
+                                                <h6 class="card-title fw-bold">Accounting</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -1556,11 +1622,11 @@
 
 
             <!--Section 7 start-->
-            <section id="sec7" class="bg-09 pt-5 pb-3">
+            <section id="sec7" class="bg-09 pt-lg-4 pb-lg-2 pt-4 pb-3">
                 <div class="container pt-2 mb-5">
                     <div class="row d-flex justify-content-center align-items-center mt-2 pb-4">
                         <div class="col-lg-12 divide">
-                            <div class="row d-flex justify-content-center align-items-center">
+                            <div class="row mt-lg-2 mt-0 d-flex justify-content-center align-items-center">
                                 <h2 class="fw-bold pb-2 pb-md-5 pb-lg-1 pt-2 pb-3 text-center display-6 wow fadeInDown"
                                     data-wow-delay="0.4s" data-aos-duration="1000" data-aos="fade-down">Our Valuable
                                     Customers</h2>
@@ -1808,7 +1874,8 @@
                         <div class="col-lg-4 col-12 col-md-12">
                             <h4 class="text-white mb-4">SKYFINCH</h4>
                             <div class="row">
-                                <div class="col-lg-2 col-md-2 col-2 px-0 d-flex justify-content-center align-items-center">
+                                <div
+                                    class="col-lg-2 col-md-2 col-2 px-0 d-flex justify-content-center align-items-center">
                                     <i class="fa fa-map-marker-alt mb-md-3 mb-3"></i>
                                 </div>
                                 <div class="col-lg-10 col-md-10 col-10 px-0">
@@ -1868,10 +1935,10 @@
                         <div class="col-lg-4 col-12">
                             <h4 class="text-white mb-4 w-25 border-width border-bottom border-primary">Newsletter</h4>
                             <div class="position-relative w-75">
-                                <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text"
+                                <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5 py-4" type="text"
                                     placeholder="Your email">
                                 <button type="button"
-                                    class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                                    class="btn btn-primary py-2 position-absolute top-0 end-0 mt-1 me-2">SignUp</button>
                             </div>
                         </div>
                     </div>
@@ -1880,7 +1947,8 @@
                 <!-- Copyright Start -->
                 <div class="row mt-5 pt-5 d-flex align-items-end justify-content-center">
                     <div class="row pt-5 mt-5 pb-lg-0 mb-lg-0">
-                        <div class="col-md-12 col-lg-12 d-flex align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-5 pt-5 mt-5 pb-lg-0 mb-lg-0">
+                        <div
+                            class="col-md-12 col-lg-12 d-flex align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-5 pt-5 mt-5 pb-lg-0 mb-lg-0">
                             Copyright &copy; Skyfinch 2023. All rights reserved. Designed By Skyfinch.
                         </div>
                     </div>
@@ -1900,6 +1968,8 @@
 
 
             <!-- JavaScript Libraries -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
             <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
             <script src="js/bootstrap.bundle.min.js"></script>
             <script src="lib/wow/wow.min.js"></script>
@@ -1910,6 +1980,8 @@
             <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.js"></script>
             <script src="js/tooltip.js"></script>
             <script src="js/3Dcards-02.js"></script>
+            <script src="js/stack-cards.js"></script>
+            
 
 
             <!-- Scroll effects -->
