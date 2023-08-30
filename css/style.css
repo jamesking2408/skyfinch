@@ -227,24 +227,15 @@ body {
     --bs-tooltip-border-color: var(--primary);
     --bs-tooltip-border-width: 1px;
     --bs-tooltip-border-radius:.5rem;
-    --bs-tooltip-padding:.8rem;
+    --bs-tooltip-padding:1rem;
     --bs-tooltip-font-size:.95rem;
     --bs-tooltip-opacity: 1;
-    --bs-tooltip-max-width: 200px;
-    --bs-tooltip-arrow-color: var(--primary);
-    --bs-tooltip-arrow-border-color: transparent;
-    --bs-tooltip-arrow-width: 15px;
+    --bs-tooltip-arrow-color: rgba(3, 86, 240, 0.975); 
   }
 
 .chat-tooltip {
-    --bs-tooltip-bg:#0356f0;
-    --bs-tooltip-color: #fff;
-    --bs-tooltip-border-color: #fff;
-    --bs-tooltip-border-width: 1px;
-    --bs-tooltip-border-radius:.5rem;
-    --bs-tooltip-padding:.8rem;
-    --bs-tooltip-font-size:1rem;
-    --bs-tooltip-font-weight:2rem;
+    --bs-tooltip-bg:rgba(3, 86, 240, 0.975);
+    --bs-tooltip-color: var(--light);
 }
 .contact-tooltip {
     --bs-tooltip-bg:rgba(25, 162, 253, 0.973);
@@ -434,6 +425,7 @@ input[type=number]::-webkit-outer-spin-button {
 .bg {
     background-image: url(../img/india/servicehead.jpeg);
     width: 100vw;
+    height: 520px;
     padding-bottom: 480px;
     background-position: center;
     background-size: cover;
@@ -1277,12 +1269,14 @@ h6,
 #show_form {
     margin-bottom: 12px;
 }
-
+#show_form:hover {
+    background-color: #f1f1f1;
+}
 
 #show_form img {
     width: 50px;
     /* orange to blue converted */
-    filter: saturate(100%) sepia(10%) hue-rotate(180deg) contrast(250%) brightness(100%);
+    /* filter: saturate(100%) sepia(10%) hue-rotate(180deg) contrast(250%) brightness(100%); */
 }
 
 
@@ -1552,12 +1546,12 @@ h6,
     background-image: linear-gradient(#000B1C, #000B1C);
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 100% 40%;
+    background-size: 100% 32%;
 }
 
-@media (min-width: 358px) and (max-width: 550px) {
+@media (min-width: 300px) and (max-width: 550px) {
     .bg-04 {
-        background-size: 100% 32%;
+        background-size: 100% 50%;
     }
 }
 

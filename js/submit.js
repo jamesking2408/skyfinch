@@ -9,22 +9,22 @@ function openPopup() {
     const ph = document.querySelector("#form-number").value;
     const filter = /^([a-z0-9_\.\-]{3,20})+\@(([a-z\-])+\.)+([a-z]{2,4})+$/;
     if ((mail == "") || (ph == "")) {
-        document.querySelector(".sub-popup1 h2").innerHTML = "☹ SORRY!";
+        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
         document.querySelector(".sub-popup1 p").innerHTML = "Please enter your Valid Details!";
         popup1.classList.add("open-popup");
     }
     else if ((ph.length !== 10) && (!filter.test(mail))) {
-        document.querySelector(".sub-popup1 h2").innerHTML = "☹ SORRY!";
+        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
         document.querySelector(".sub-popup1 p").innerHTML = "Check your Phone number and Mail-ID!";
         popup1.classList.add("open-popup");
     }
     else if (ph.length !== 10) {
-        document.querySelector(".sub-popup1 h2").innerHTML = "☹ SORRY!";
+        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
         document.querySelector(".sub-popup1 p").innerHTML = "Check your Phone Number!";
         popup1.classList.add("open-popup");
     }
     else if (!filter.test(mail)) {
-        document.querySelector(".sub-popup1 h2").innerHTML = "☹ SORRY!";
+        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
         document.querySelector(".sub-popup1 p").innerHTML = "Check your Mail ID!";
         popup1.classList.add("open-popup");
     }
@@ -44,32 +44,32 @@ function msgButton() {
     const mail = document.querySelector("#cus-mail").value;
     const txt = document.querySelector("#cus-text").value;
     if((cus_name == "")||(num == "")||(mail == "")||(txt == "")||(txt.length = "")){
-        document.querySelector(".sub-popup1 h2").innerHTML = "☹ SORRY!";
+        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
         document.querySelector(".sub-popup1 p").innerHTML = "Check your All Fields!";
         popup1.classList.add("open-popup");
     }
     else if (cus_name == "") {
-        document.querySelector(".sub-popup1 h2").innerHTML = "☹ SORRY!";
+        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
         document.querySelector(".sub-popup1 p").innerHTML = "Check your Name please!!!";
         popup1.classList.add("open-popup");
     }
     else if (num == "") {
-        document.querySelector(".sub-popup1 h2").innerHTML = "☹ SORRY!";
+        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
         document.querySelector(".sub-popup1 p").innerHTML = "Check your Number please!!!";
         popup1.classList.add("open-popup");
     }
     else if (mail == "") {
-        document.querySelector(".sub-popup1 h2").innerHTML = "☹ SORRY!";
+        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
         document.querySelector(".sub-popup1 p").innerHTML = "Check your Mail-ID please!!!";
         popup1.classList.add("open-popup");
     }
     else if (txt == "") {
-        document.querySelector(".sub-popup1 h2").innerHTML = "☹ SORRY!";
+        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
         document.querySelector(".sub-popup1 p").innerHTML = "Please Fill out message field!!!";
         popup1.classList.add("open-popup");
     }
     else if (txt.length < 100) {
-        document.querySelector(".sub-popup1 h2").innerHTML = "☹ SORRY!";
+        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
         document.querySelector(".sub-popup1 p").innerHTML = "Please Fill out message field more than 100 letters!!!";
         popup1.classList.add("open-popup");
     }
@@ -93,32 +93,32 @@ document.querySelector("#callBack").addEventListener("click", function () {
     let filter = /^([a-z0-9_\.\-]{3,20})+\@(([a-z\-])+\.)+([a-z]{2,4})+$/;
 
     if((name1=="")||(mob=="")||(mail=="")||(sub=="")||(txt=="")){
-        document.querySelector(".sub-popup1 h2").innerHTML = "☹ SORRY!";
+        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
         document.querySelector(".sub-popup1 p").innerHTML = "Check your ALL field!";
         popup1.classList.add("open-popup");
     }
     else if(name1==""){
-        document.querySelector(".sub-popup1 h2").innerHTML = "☹ SORRY!";
+        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
         document.querySelector(".sub-popup1 p").innerHTML = "Check your Name field!";
         popup1.classList.add("open-popup");
     }
     else if(!filter.test(mail)){
-        document.querySelector(".sub-popup1 h2").innerHTML = "☹ SORRY!";
+        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
         document.querySelector(".sub-popup1 p").innerHTML = "Check your mail field!";
         popup1.classList.add("open-popup");
     }
     else if((mob=="")||(mob.length>10)||(mob.length<10)){
-        document.querySelector(".sub-popup1 h2").innerHTML = "☹ SORRY!";
+        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
         document.querySelector(".sub-popup1 p").innerHTML = "Check your mobile field!";
         popup1.classList.add("open-popup");
     }
     else if(sub==""){
-        document.querySelector(".sub-popup1 h2").innerHTML = "☹ SORRY!";
+        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
         document.querySelector(".sub-popup1 p").innerHTML = "Check your Subject field!";
         popup1.classList.add("open-popup");
     }
     else if(txt==""){
-        document.querySelector(".sub-popup1 h2").innerHTML = "☹ SORRY!";
+        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
         document.querySelector(".sub-popup1 p").innerHTML = "Check your Subject field!";
         popup1.classList.add("open-popup");
     }
@@ -139,22 +139,22 @@ function contact_sub() {
     let filter = /^([a-z0-9_\.\-]{3,20})+\@(([a-z\-])+\.)+([a-z]{2,4})+$/;
 
     if((na=="")||(id=="")||(sub=="")||(msg=="")){
-        document.querySelector(".sub-popup1 h2").innerHTML = "☹ SORRY!";
+        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
         document.querySelector(".sub-popup1 p").innerHTML = "Check your ALL field!";
         popup1.classList.add("open-popup");
     }
     else if(!filter.test(id)){
-        document.querySelector(".sub-popup1 h2").innerHTML = "☹ SORRY!";
+        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
         document.querySelector(".sub-popup1 p").innerHTML = "Check your mail field!";
         popup1.classList.add("open-popup");
     }
     else if(sub==""){
-        document.querySelector(".sub-popup1 h2").innerHTML = "☹ SORRY!";
+        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
         document.querySelector(".sub-popup1 p").innerHTML = "Check your Subject field!";
         popup1.classList.add("open-popup");
     }
     else if(msg==""){
-        document.querySelector(".sub-popup1 h2").innerHTML = "☹ SORRY!";
+        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
         document.querySelector(".sub-popup1 p").innerHTML = "Check your Subject field!";
         popup1.classList.add("open-popup");
     }
