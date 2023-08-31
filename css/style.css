@@ -5,10 +5,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
-
+ /* Target the body element */
 body {
-    overflow-y:scroll;
-    overflow-x: hidden;
+    /* Internet Explorer 10+ */
+    -ms-overflow-style: none;
+
+    /* Firefox */
+    scrollbar-width: none;
+}
+
+/* Target scrollbar in Webkit browsers (Safari and Chrome) */
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .show-chatbot .chatbot-toggler span:first-child,
@@ -843,7 +851,7 @@ h6,
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    width:max-content;
+    width:280px;
     margin-top: -34px;
     margin-left: 160px;
     border-radius: 10px;
@@ -892,9 +900,12 @@ h6,
 }
 
 .submenu:hover .dropbtn1 .arrow {
+    background-image: url(../img/arrow_right.svg);
     color: var(--primary);
     font-size: larger;
 }
+
+
 
 
 /* ///////////////////////////////////////////////////////////// */
@@ -1719,7 +1730,6 @@ h6,
 }
 
 .tooltip-content button a {
-    text-decoration: none;
     color: white;
 }
 

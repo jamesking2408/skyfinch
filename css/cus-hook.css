@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500&display=swap');
 
 @media (min-width:300px) and (max-width:500px) {
-	
+	.owl-carousel .item .card, .owl-carousel .item {
+		border-radius: 12px 12px 15px 15px;
+	}
 	#customers-testimonials .item {
 		text-align: center;
 		margin-top: 30px;
@@ -15,7 +17,6 @@
 		-webkit-transition: all 0.3s ease-in-out;
 		-moz-transition: all 0.3s ease-in-out;
 		transition: all 0.3s ease-in-out;
-		background-color: #FFF;
 		border-radius: 3px;
 	}
 	#customers-testimonials .owl-item.active.center .item {
