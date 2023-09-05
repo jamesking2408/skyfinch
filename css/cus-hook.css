@@ -27,7 +27,7 @@
 	}
 
 	#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span, #customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
-		background: #0784fa;
+		background: #355EFC;
 		transform: translate3d(0px, -50%, 0px) scale(0.6);
 	}
 	#customers-testimonials.owl-carousel .owl-dots {

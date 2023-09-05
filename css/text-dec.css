@@ -1,5 +1,5 @@
 .text-dec a {
-    background-image: linear-gradient(to right, #0a4fe4, #0a4fe4 50%, rgb(97, 98, 104) 50%);
+    background-image: linear-gradient(to right, #355EFC, #0a4fe4 50%, rgb(97, 98, 104) 50%);
     background-size: 200% 100%;
     background-position: -100%;
     display: inline-block;
@@ -14,7 +14,7 @@
 
 .text-dec a:before {
     content: '';
-    background: #0a4fe4;
+    background: #355EFC;
     display: block;
     position: absolute;
     bottom: -1px;
@@ -34,7 +34,7 @@
 
 
 .selected {
-    background-image: linear-gradient(to right, #0a4fe4, #0a4fe4 50%, #0a4fe4 50%) !important;
+    background-image: linear-gradient(to right, #355EFC, #355EFC 50%, #0a4fe4 50%) !important;
     background-position: 0;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
