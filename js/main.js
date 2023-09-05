@@ -138,8 +138,9 @@
 
 
     // Back to top button
+        // Index page
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
+        if ($(this).scrollTop() > 0) {
             $('.back-to-top').fadeIn('slow');
         } else {
             $('.back-to-top').fadeOut('slow');
@@ -150,6 +151,20 @@
         return false;
     });
 
+        // Other pages
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+            $('.page-top').fadeIn('slow');
+        } else {
+            $('.page-top').fadeOut('slow');
+        }
+    });
+    $('.page-top').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 120, 'easeInOutExpo');
+        return false;
+    });
+    
+    // End of back to top button
 
     // Facts counter
     $('.count').counterUp({
@@ -278,7 +293,7 @@
                 botResponse = "business professionals having more than 20 years of experience in various business domains. Since its establishment in the year 2004 at Puducherry, India";
             }
             else if ((userMessage.toLowerCase() === 'what are the service in skyfinch?') || (userMessage.toLowerCase() === 'service') || (userMessage.toLowerCase() === 'service?')) {
-                botResponse = "✔ Software development <br>✔ Web Application <br>✔ Mobile Application development<br>✔ Email<br>✔ SMS <br>✔ Payment Integration.</br>";
+                botResponse = "🔹 Software development <br>🔹 Web Application <br>🔹 Mobile Application development<br>🔹 Email<br>🔹 SMS <br>🔹 Payment Integration.</br>";
             }
             else if ((userMessage.toLowerCase() === 'contact') || (userMessage.toLowerCase() === "contact details?") || (userMessage.toLowerCase() === "contact details") || (userMessage.toLowerCase() === "how can i contact you?")) {
                 botResponse = "<b>Address :</b> No.5, Republic Street, Reddiarpalayam, Puducherry -605 010, India. <br> <b> Ph :</b> +91 413-4207 333, 94425 90611, 94434 83240, 94899 18298 <br> <b>E-mail :</b> info@skyfinch.com";
