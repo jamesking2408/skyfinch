@@ -48,32 +48,30 @@
 
     //<!-- pop up -->
     $(".mytooltip").hover(
-        function (e) {
+        function(e) {
             $(this).find('.tooltip-content').delay(2000).fadeIn();
             $(this).find('.tooltip-content').hover(
-                function (e) {
+                function(e) {
                     $('.tooltip-content').stop(true);
-                },
-                function (e) {
+                },          
+                function(e) {
                     $('.tooltip-content').hide();
                     $('.tooltip-content').stop();
                 }
             );
             $(this).find('.tooltip-content').delay(4000).fadeOut();
         },
-        function (e) {
+        function(e) {
             $('.tooltip-content').stop();
             $('.tooltip-content').hide();
         }
     );
 
-    $('#spl1, #spl2').click(function () {
+    $('#spl1, #spl2').click(function() {
         $('.tooltip-content').hide();
     });
     //<!-- pop up end-->
-
-
-
+    
     //section change start
     // Filter
     $('.sec a').click(function () {

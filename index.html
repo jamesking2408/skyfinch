@@ -26,14 +26,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     <!-- Libraries Stylesheet -->
+    
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -123,12 +122,14 @@
 
     <!-- Navbar Start -->
     <div class="container-fluid fixed-top m-0 p-0 wow fadeIn" data-wow-delay="0.8s">
-        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-4 wow fadeIn bg-white" data-wow-delay="0.9s">
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-1 px-lg-4 wow fadeIn bg-white" data-wow-delay="0.9s">
             <a href="index.html" class="navbar-brand ms-0 ms-lg-0">
                 <img src="img/cloud.png" alt="" class="r-cloud wow slideInLeft" data-wow-delay="1.2s">
                 <img src="img/cloud.png" alt="" class="l-cloud wow slideInRight" data-wow-delay="1s">
-                <b class="display-6 cloud" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                    data-bs-custom-class="custom-tooltip" data-bs-title="SkyFinch">SkyFinch</b>
+                <b class="display-6 cloud">SkyFinch
+                    <h6 class="me-0 p-0">Solution to Success</h6>
+                </b>
+                <!-- <img src="img/skyfinch-logo.png" alt="logo" class="w-25 wow slideInLeft" data-wow-delay="0.9s"> -->
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse">
@@ -145,11 +146,11 @@
                                 <button class="dropbtn1 w-100 p-0">Application
                                     <span class="arrow"></span></button>
                                 <div class="dropdown-content1 text-dec px-2 py-2">
-                                    <a href="#">POS</a><br>
-                                    <a href="#">Hotel management system</a><br>
-                                    <a href="#">Restaurant management system</a><br>
-                                    <a href="#">Smart-Skyfinch</a><br>
-                                    <a href="#">Visitor management system</a><br>
+                                    <a href="sales.html">POS</a><br>
+                                    <a href="hms.html">Hotel management system</a><br>
+                                    <a href="rms.html">Restaurant management system</a><br>
+                                    <a href="ssfinch.html">Smart-Skyfinch</a><br>
+                                    <a href="vms.html">Visitor management system</a><br>
                                 </div>
                             </div>
                             <br class="d-lg-none d-sm-block">
@@ -157,20 +158,22 @@
                                 <button class="dropbtn1 w-100 p-0">Web
                                     <span class="arrow1"></span></button>
                                 <div class="dropdown-content1 text-dec px-2 py-2">
-                                    <a href="#">CRM</a><br>
-                                    <a href="#">Corporate Travel Management<br>
-                                        <a href="#">Fleet management system</a><br>
-                                        <a href="#">Event management system</a><br>
-                                        <a href="#">PayRoll</a><br>
-                                        <a href="#">Sales and Service</a><br>
+                                    <a href="crm.html">CRM</a><br>
+                                    <a href="ctm.html">Corporate Travel Management<br>
+                                    <a href="fms.html">Fleet management system</a><br>
+                                    <a href="ems.html">Event management system</a><br>
+                                    <a href="payroll.html">PayRoll</a><br>
+                                    <a href="s&s.html">Sales and Service</a><br>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <a href="about.html" class="nav-item nav-link">About Us</a>
-                    <a href="contact.html" class="nav-item nav-link">Contact
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-
+                <div class="d-flex justify-content-center align-items-center" style="height: 30px;">
+                    <div class="vr text-dark" style="width: 2.5px;"></div>
+                </div>
                 <div class=" d-lg-flex d-grid ms-lg-2 ms-md-2 ms-2 gap-2">
                     <a class="btn btn-outline-primary btn-sm-square rounded-circle ms-lg-1 ms-3"
                         href="https://www.facebook.com/skyfinch.roadmap" data-bs-toggle="tooltip"
@@ -189,6 +192,18 @@
                         target="_blank">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
+
+                    <!-- Dark & light mode settings -->
+
+                    <!-- <div class = "form-check form-switch mx-4">
+                        <input class="form-check-input p-2" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked onclick="fun()"/>
+                    </div>
+                    <script>
+                        function fun() {
+                            var element = document.body;
+                            element.dataset.bsTheme = element.dataset.bsTheme == "light" ? "dark" : "light";
+                        }
+                    </script> -->
                 </div>
             </div>
         </nav>
@@ -270,7 +285,8 @@
                                 <div class="container mt-lg-0 mt-md-0 mt-5">
                                     <div class="row justify-content-start">
                                         <div class="col-lg-7" style="padding-bottom: 80px; ">
-                                            <p class="d-inline-block border shadow border-muted rounded text-primary fw-bold py-lg-1 px-lg-3 mb-lg-1 pb-lg-1 mb-md-1 pb-md-1 animated slideInDown">
+                                            <p
+                                                class="d-inline-block border shadow border-muted rounded text-primary fw-bold py-lg-1 px-lg-3 mb-lg-1 pb-lg-1 mb-md-1 pb-md-1 animated slideInDown">
                                                 Empowering Businesses</p>
                                             <h1 class="display-3 mb-lg-2 pb-lg-1 mb-md-2 pb-md-1 animated slideInDown">
                                                 Scalable Platforms To Tackle
@@ -459,7 +475,7 @@
             </section>
 
 
-            <section id="" class="bg-01 pt-lg-2 pt-1 mt-lg-3 mt-5 pb-lg-2 pb-3 mb-lg-3 mb-3">
+            <section id="sec03" class="bg-01 pt-lg-2 pt-1 mt-lg-3 mt-5 pb-lg-2 pb-3 mb-lg-3 mb-3">
                 <div class="container">
                     <div class="row d-flex justify-content-center align-items-center">
                         <h2 class="fw-bold display-4 pt-lg-1 mt-lg-2 text-center wow fadeInDown" data-wow-delay="0.5s"
@@ -470,11 +486,13 @@
                                 width="500px" height="600px">
                         </div>
                         <div class="col-lg-8 pt-lg-1 pb-lg-5 py-1">
-                            <div class="row d-lg-flex d-flex align-items-center justify-content-center g-1 g-lg-2 g-md-4">
+                            <div
+                                class="row d-lg-flex d-flex align-items-center justify-content-center g-1 g-lg-2 g-md-4">
                                 <div class="col-lg-6 col-md-6 pt-3 mt-3 gy-lg-5 g-2 wow fadeInUp" data-wow-delay="0.2s"
                                     data-aos-duration="1000" data-aos="fade-up">
                                     <div class="card p-1 border-0 bg-pink py-1">
-                                        <div class="row d-flex align-items-center justify-content-center text-primary team1">
+                                        <div
+                                            class="row d-flex align-items-center justify-content-center text-primary team1">
                                             <div class="col-2 col-lg-3">
                                                 <div class="heart1">
                                                     <i class="bi bi-arrow-down-up display-my display-6"></i>
@@ -492,7 +510,8 @@
                                 <div class="col-lg-6 col-md-6 pt-3 mt-3 gy-lg-5 gy-2 wow fadeInUp" data-wow-delay="0.2s"
                                     data-aos-duration="1000" data-aos="fade-up">
                                     <div class="card p-1 border-0 bg-pink py-1">
-                                        <div class="row d-flex align-items-center justify-content-center text-primary team1">
+                                        <div
+                                            class="row d-flex align-items-center justify-content-center text-primary team1">
                                             <div class="col-2 col-lg-3">
                                                 <div class="heart1">
                                                     <i class="bi bi-wifi-off display-my display-6"></i>
@@ -989,62 +1008,63 @@
                         class="row d-flex justify-content-center align-items-center pt-lg-2 mt-lg-2 pt-md-2 mb-md-4 py-2 my-3">
                         <div class="col-lg-12 pb-0 mt-0 mt-lg-1 mt-md-0 mb-lg-0 mb-md-3">
                             <div
-                                class="row d-flex align-items-center justify-content-center mt-lg-4 pt-lg-0 mt-md-1 pb-md-3">
-                                <div class="col-lg-3 col-6 text-center gy-3 pb-1 mt-md-0 gy-lg-3 pb-lg-2 gy-md-2 pb-md-1 wow fadeIn"
-                                    data-wow-delay="0.2s">
+                                class="row d-flex align-items-center justify-content-center mt-lg-5 pt-lg-0 mt-md-1 pb-md-2">
+                                <div class="col-lg-3 col-6 text-center mt-md-0 pb-1 gy-3 gy-lg-3 pb-lg-0 wow fadeIn"
+                                    data-wow-delay="0.3s">
                                     <div class="card border-0 bg-transparent text-center pop1">
                                         <div class="">
                                             <i class="bi bi-terminal-fill display-4 text-secondary"></i>
                                         </div>
-                                        <div class="p-2 pb-lg-1">
-                                            <h3 class="fw-semibold pt-1 text-secondary"><span
-                                                    class="count display-3 text-light fw-bold">20</span>+ <br> Products
+                                        <div class="px-2 py-0 pb-lg-1">
+                                            <h3 class="fw-semibold pt-0 text-secondary mb-0"><span
+                                                    class="count display-3 text-light fw-bold my-0">20</span>+ <br>
+                                                Products
                                             </h3>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-3 col-6 text-center mt-md-0 pb-1 gy-3 gy-lg-3 pb-lg-2 wow fadeIn"
+                                <div class="col-lg-3 col-6 text-center mt-md-0 pb-1 gy-3 gy-lg-3 pb-lg-0 wow fadeIn"
                                     data-wow-delay="0.3s">
                                     <div class="card border-0 bg-transparent text-center pop1">
                                         <div class="">
                                             <i class="bi bi-file-earmark-easel-fill display-4 text-secondary"></i>
                                         </div>
-                                        <div class="p-2 pb-lg-1">
-                                            <h3 class="fw-semibold pt-1 text-secondary">
-                                                <span class="count display-3 text-light fw-bold">20</span>+ <br>
+                                        <div class="px-2 py-0 pb-lg-1">
+                                            <h3 class="fw-semibold pt-0 text-secondary mb-0">
+                                                <span class="count display-3 text-light fw-bold my-0">20</span>+ <br>
                                                 Projects
                                             </h3>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-3 col-6 mt-lg-0 mt-2 text-center mt-md-1 pb-md-2 pb-lg-1 pb-1 gy-3 pb-md-0 gy-md-1 wow fadeIn"
+                                <div class="col-lg-3 col-6 mt-lg-0 mt-2 text-center mt-md-1 pb-md-2 pb-lg-2 pb-1 gy-3 pb-md-0 gy-md-1 wow fadeIn"
                                     data-wow-delay="0.5s">
                                     <div class="card border-0 bg-transparent text-center pop1">
                                         <div class="">
                                             <i class="bi bi-people-fill display-3 text-secondary"></i>
                                         </div>
-                                        <div class="p-2 pb-lg-1">
-                                            <h3 class="fw-semibold pt-1 text-secondary"><span
+                                        <div class="px-2 py-0 pb-lg-1">
+                                            <h3 class="fw-semibold pt-0 text-secondary mb-0"><span
                                                     class="count display-3 text-light fw-bold">200</span>+ <br>
                                                 Customers</h3>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-3 col-6 text-center mt-lg-1 mb-lg-0 pb-lg-1 mt-md-1 pb-md-2 mt-2 pb-1 gy-3 pb-md-0 gy-md-1 wow fadeIn"
-                                    data-wow-delay="0.7s">
+                                <div class="col-lg-3 col-6 text-center mt-md-0 pb-1 gy-3 gy-lg-3 pb-lg-0 wow fadeIn"
+                                    data-wow-delay="0.3s">
                                     <div class="card border-0 bg-transparent text-center pop1">
                                         <div class="">
                                             <i class="bi bi-buildings-fill display-4 text-secondary"></i>
                                         </div>
-                                        <div class="p-2 pb-lg-1">
-                                            <h3 class="fw-semibold d-lg-none pt-1 text-secondary"><span
-                                                    class="count display-3 text-light fw-bold">10</span>+ <br>
+                                        <div class="px-2 py-0 pb-lg-1">
+                                            <h3 class="fw-semibold d-lg-none pt-1 text-secondary mb-0"><span
+                                                    class="count display-3 text-light fw-bold my-0">10</span>+ <br>
                                                 Global Offices</h3>
-                                            <h3 class="fw-semibold pt-1 d-none d-lg-block text-secondary"><span
-                                                    class="count display-3 text-light fw-bold">10</span>+ <br>
+                                            <h3 class="fw-semibold pt-0 d-none d-lg-block text-secondary mb-0"><span
+                                                    class="count display-3 text-light fw-bold my-0">10</span>+ <br>
                                                 Global&nbsp;Offices</h3>
                                         </div>
                                     </div>
@@ -1141,14 +1161,13 @@
                                         <div class="col tooltip-content">
                                             <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Fugit fuga perferendis eveniet doloribus?</p>
-                                            <div>
-                                                <button id="spl1"
-                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1">Got
-                                                    it</button>
-                                                <button id="spl1"
-                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
+                                            <div class="d-block">
+                                                <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1"><a
                                                         href="https://icons.getbootstrap.com/" target="_blank"
-                                                        class="text-white">Call us</a></button>
+                                                        class="">Call us</a></button>
+                                                <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1"><a
+                                                        href="https://icons.getbootstrap.com/" target="_blank"
+                                                        class="">Call us</a></button>
                                             </div>
                                             <span class="mark"></span>
                                         </div>
@@ -1167,13 +1186,12 @@
                                             <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Fugit fuga perferendis eveniet doloribus?</p>
                                             <div>
-                                                <button id="spl1"
-                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1">Got
-                                                    it</button>
-                                                <button id="spl1"
-                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
+                                                <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1"><a
                                                         href="https://icons.getbootstrap.com/" target="_blank"
-                                                        class="text-white">Call us</a></button>
+                                                        class="">Call us</a></button>
+                                                <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1"><a
+                                                        href="https://icons.getbootstrap.com/" target="_blank"
+                                                        class="">Call us</a></button>
                                             </div>
                                             <span class="mark"></span>
                                         </div>
@@ -1190,13 +1208,12 @@
                                             <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Fugit fuga perferendis eveniet doloribus?</p>
                                             <div>
-                                                <button id="spl1"
-                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1">Got
-                                                    it</button>
-                                                <button id="spl1"
-                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
+                                                <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1"><a
                                                         href="https://icons.getbootstrap.com/" target="_blank"
-                                                        class="text-white">Call us</a></button>
+                                                        class="">Call us</a></button>
+                                                <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1"><a
+                                                        href="https://icons.getbootstrap.com/" target="_blank"
+                                                        class="">Call us</a></button>
                                             </div>
                                             <span class="mark"></span>
                                         </div>
@@ -1223,13 +1240,12 @@
                                             <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Fugit fuga perferendis eveniet doloribus?</p>
                                             <div>
-                                                <button id="spl1"
-                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1">Got
-                                                    it</button>
-                                                <button id="spl1"
-                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
+                                                <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1"><a
                                                         href="https://icons.getbootstrap.com/" target="_blank"
-                                                        class="text-white">Call us</a></button>
+                                                        class="">Call us</a></button>
+                                                <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1"><a
+                                                        href="https://icons.getbootstrap.com/" target="_blank"
+                                                        class="">Call us</a></button>
                                             </div>
                                             <span class="mark"></span>
                                         </div>
@@ -1246,13 +1262,12 @@
                                             <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Fugit fuga perferendis eveniet doloribus?</p>
                                             <div>
-                                                <button id="spl1"
-                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1">Got
-                                                    it</button>
-                                                <button id="spl1"
-                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
+                                                <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1"><a
                                                         href="https://icons.getbootstrap.com/" target="_blank"
-                                                        class="text-white">Call us</a></button>
+                                                        class="">Call us</a></button>
+                                                <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1"><a
+                                                        href="https://icons.getbootstrap.com/" target="_blank"
+                                                        class="">Call us</a></button>
                                             </div>
                                             <span class="mark"></span>
                                         </div>
@@ -1269,13 +1284,12 @@
                                             <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Fugit fuga perferendis eveniet doloribus?</p>
                                             <div>
-                                                <button id="spl1"
-                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1">Got
-                                                    it</button>
-                                                <button id="spl1"
-                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
+                                                <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1"><a
                                                         href="https://icons.getbootstrap.com/" target="_blank"
-                                                        class="text-white">Call us</a></button>
+                                                        class="">Call us</a></button>
+                                                <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1"><a
+                                                        href="https://icons.getbootstrap.com/" target="_blank"
+                                                        class="">Call us</a></button>
                                             </div>
                                             <span class="mark"></span>
                                         </div>
@@ -1296,13 +1310,12 @@
                                             <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Fugit fuga perferendis eveniet doloribus?</p>
                                             <div>
-                                                <button id="spl1"
-                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1">Got
-                                                    it</button>
-                                                <button id="spl1"
-                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
+                                                <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1"><a
                                                         href="https://icons.getbootstrap.com/" target="_blank"
-                                                        class="text-white">Call us</a></button>
+                                                        class="">Call us</a></button>
+                                                <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1"><a
+                                                        href="https://icons.getbootstrap.com/" target="_blank"
+                                                        class="">Call us</a></button>
                                             </div>
                                             <span class="mark"></span>
                                         </div>
@@ -1319,13 +1332,12 @@
                                             <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Fugit fuga perferendis eveniet doloribus?</p>
                                             <div>
-                                                <button id="spl1"
-                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1">Got
-                                                    it</button>
-                                                <button id="spl1"
-                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
+                                                <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1"><a
                                                         href="https://icons.getbootstrap.com/" target="_blank"
-                                                        class="text-white">Call us</a></button>
+                                                        class="">Call us</a></button>
+                                                <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1"><a
+                                                        href="https://icons.getbootstrap.com/" target="_blank"
+                                                        class="">Call us</a></button>
                                             </div>
                                             <span class="mark"></span>
                                         </div>
@@ -1342,13 +1354,12 @@
                                             <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Fugit fuga perferendis eveniet doloribus?</p>
                                             <div>
-                                                <button id="spl1"
-                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1">Got
-                                                    it</button>
-                                                <button id="spl1"
-                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
+                                                <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1"><a
                                                         href="https://icons.getbootstrap.com/" target="_blank"
-                                                        class="text-white">Call us</a></button>
+                                                        class="">Call us</a></button>
+                                                <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1"><a
+                                                        href="https://icons.getbootstrap.com/" target="_blank"
+                                                        class="">Call us</a></button>
                                             </div>
                                             <span class="mark"></span>
                                         </div>
@@ -1375,13 +1386,12 @@
                                             <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Fugit fuga perferendis eveniet doloribus?</p>
                                             <div>
-                                                <button id="spl1"
-                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1">Got
-                                                    it</button>
-                                                <button id="spl1"
-                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
+                                                <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1"><a
                                                         href="https://icons.getbootstrap.com/" target="_blank"
-                                                        class="text-white">Call us</a></button>
+                                                        class="">Call us</a></button>
+                                                <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1"><a
+                                                        href="https://icons.getbootstrap.com/" target="_blank"
+                                                        class="">Call us</a></button>
                                             </div>
                                             <span class="mark"></span>
                                         </div>
@@ -1398,13 +1408,12 @@
                                             <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Fugit fuga perferendis eveniet doloribus?</p>
                                             <div>
-                                                <button id="spl1"
-                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1">Got
-                                                    it</button>
-                                                <button id="spl1"
-                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
+                                                <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1"><a
                                                         href="https://icons.getbootstrap.com/" target="_blank"
-                                                        class="text-white">Call us</a></button>
+                                                        class="">Call us</a></button>
+                                                <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1"><a
+                                                        href="https://icons.getbootstrap.com/" target="_blank"
+                                                        class="">Call us</a></button>
                                             </div>
                                             <span class="mark"></span>
                                         </div>
@@ -1425,13 +1434,12 @@
                                             <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                 Fugit fuga perferendis eveniet doloribus?</p>
                                             <div>
-                                                <button id="spl1"
-                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1">Got
-                                                    it</button>
-                                                <button id="spl1"
-                                                    class="btn btn-sm fw-bold rounded-pill btn-dark mx-1"><a
+                                                <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1"><a
                                                         href="https://icons.getbootstrap.com/" target="_blank"
-                                                        class="text-white">Call us</a></button>
+                                                        class="">Call us</a></button>
+                                                <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1"><a
+                                                        href="https://icons.getbootstrap.com/" target="_blank"
+                                                        class="">Call us</a></button>
                                             </div>
                                             <span class="mark"></span>
                                         </div>
@@ -1491,7 +1499,8 @@
                                                     class="img-fluid d-block d-sm-block d-md-block d-lg-block win-app">
                                             </div>
                                         </div>
-                                        <div class="col-lg-7 animated fadeInRight" data-aos-duration="1000" data-aos="fade-left">
+                                        <div class="col-lg-7 animated fadeInRight" data-aos-duration="1000"
+                                            data-aos="fade-left">
                                             <div class="row d-flex justify-content-center align-items-center">
                                                 <div class="col-6 col-lg-5 mb-3 g-lg-2 g-3 mx-lg-1">
                                                     <a href="Products.html?number=1">
@@ -1592,7 +1601,7 @@
                                                         </div>
                                                     </a>
                                                 </div>
-                                                <div class="col-6 col-lg-5 mb-3 g-lg-1 g-3 py-lg-2 py-3 mx-lg-1">
+                                                <div class="col-6 col-lg-5 mb-3 g-lg-2 g-3 mx-lg-1">
                                                     <a href="Products.html?number=2">
                                                         <div class="card text-center border-0 hov1">
                                                             <div class="card-body">
@@ -1604,7 +1613,7 @@
                                                         </div>
                                                     </a>
                                                 </div>
-                                                <div class="col-6 col-lg-5 mb-3 g-lg-1 g-3 py-lg-2 py-3 mx-lg-1">
+                                                <div class="col-6 col-lg-5 mb-3 g-lg-2 g-3 mx-lg-1">
                                                     <a href="Products.html?number=2">
                                                         <div class="card text-center border-0 hov1">
                                                             <div class="card-body">
@@ -2101,7 +2110,7 @@
 
             <!-- Back to Top -->
             <a href="#" class="btn btn-lg b-2-top btn-lg-square rounded-circle back-to-top wow fadeInDown"
-                data-wow-delay="3.5s" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-wow-delay="2.4s" data-bs-toggle="tooltip" data-bs-placement="top"
                 data-bs-custom-class="custom-tooltip" data-bs-title="back-to-top"><img src="img/right-arrow.png"
                     alt=""></a>
 

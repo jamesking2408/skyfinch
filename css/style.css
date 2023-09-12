@@ -268,7 +268,7 @@ body::-webkit-scrollbar {
 
 .container1 {
     margin-top: 0%;
-    width: 100vw;
+    width: 100%;
 }
 
 .container2 {
@@ -278,7 +278,7 @@ body::-webkit-scrollbar {
 @media (min-width:300px) and (max-width:850px) {
     .container1 {
         margin-top: 0;
-        width: 100vw;
+        width: 100%;
     }
 
     .container2, .container2 img{
@@ -433,9 +433,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* Start Service header change */
 
-.bg {
+.service-bg {
     background-image: url(../img/india/servicehead.jpeg);
-    width: 100vw;
+    width: 100%;
     height: 520px;
     padding-bottom: 480px;
     background-position: center;
@@ -543,7 +543,7 @@ input[type=number]::-webkit-outer-spin-button {
     background-image: url(../img/contact.jpg);
     width: 100%;
     padding-bottom: 485px;
-    background-position: center;
+    background-position: right center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 8px;
@@ -707,12 +707,11 @@ a {
     right: 33px;
     right: 35px;
     bottom: 100px;
-    width: 50px;
+    width: 80px;
     display: none;
     justify-content: center;
     align-items: center;
     color: #fff;
-    background: #355EFC;
     border: none;
     outline: none;
     cursor: pointer;
@@ -722,21 +721,24 @@ a {
 
 }
 .page-top img {
-    width: 30px;
-    height: 30px;
+    width: 100px;
+    height: 50px;
+    padding: 10px 10px;
+    background: #355EFC;
+    border-radius: 50%;
     transform: rotate(270deg);
     transition: transform 0.3s ease-in-out;
 }
+
 .page-top:hover img {
-    width: 32px;
-    height: 33px;
+    background: #ffffff;
+    
 }
 
 
-.b-2-top:hover, .page-top:hover  {
+.b-2-top:hover  {
     color: #355EFC;
-    background: #fff;
-    border: 1px solid #0670fc;
+    background:#FFFFFF;
 }
 
 
@@ -974,15 +976,21 @@ h6,
     transform: translate(500%, 0%);
 }
 
+.cloud h6 {
+    position: absolute; 
+    top: 32px; 
+    left: 62px; 
+    font-size: 9.8px;
+}
 
 b.cloud {
     position: absolute;
     bottom: 0;
-    top: 0;
-    transform: translate(30%, 30%);
+    top: 14px!important;
+    left: 72px;
     color: white!important;
-    height: 40px;
-    font-size: 33px;
+    height: 37px;
+    font-size: 31px;
     font-family: 'Black Ops One', cursive;
 }
 .r-cloud {
@@ -990,8 +998,8 @@ b.cloud {
     bottom: 0;
     top: 0;
     transform: translate(5%, 10%);
-    width:250px; 
-    height:55px;
+    width:240px; 
+    height:60px;
     transform: perspective(2cm);
 }
 .l-cloud {
@@ -999,26 +1007,31 @@ b.cloud {
     bottom: 0;
     top: 0;
     transform: translate(5%, 10%);
-    width: 250px;
+    width: 240px;
     height:55px;
     transform: perspective(4cm);
 }
 @media (min-width:300px) and (max-width:500px) {
+    .cloud h6 {
+        top: 25px;
+        left: 42px;
+        font-size: 7.2px;
+    }
     b.cloud {
-        margin-left: 1.695rem;
-        position: relative;
+        top: 3px;
+        left: 29px;
         font-size: 23px;
     }
     .r-cloud {
         transform: translate(-10%, 1%);
-        width: 150px;
-        height: 50px;
+        width: 160px;
+        height: 55px;
         transform: perspective(1cm);
     }
     .l-cloud {
         transform: translate(10, 5%);
-        width:150px;
-        height: 42px;
+        width:165px;
+        height: 50px;
         transform: perspective(2cm);
     }
 }
@@ -1138,13 +1151,9 @@ b.cloud {
 
 #abt1 {
     color: var(--primary);
+    font-size: medium;
 }
 
-#abt1:hover {
-    background-color: var(--primary);
-    color: white;
-    border: 1px solid white;
-}
 
 #abt {
     margin-bottom: 400px;
@@ -1413,6 +1422,7 @@ b.cloud {
 }
 
 
+
 .bg-01 {
     position: relative; 
     height: 100vh;
@@ -1545,9 +1555,6 @@ b.cloud {
     position: absolute;
     width: 55px;
     height: 55px;
-    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
     border-radius: 50%;
 }
 
@@ -1761,7 +1768,7 @@ b.cloud {
     background-image: linear-gradient(#000B1C, #000B1C);
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 100% 40%;
+    background-size: 100% 41.58%;
 }
 
 @media (min-width: 300px) and (max-width: 550px) {
@@ -1778,17 +1785,17 @@ b.cloud {
 
 
 /* section 4 end */
-.pop1:hover {
-    letter-spacing: 0.5px;
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-    -webkit-transform: scale(1.05);
+/* .pop1:hover {
+    letter-spacing: 0.2px;
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
 }
 
 .pop1 {
     -o-transition: 0.5s;
     transition: 0.5s;
-}
+} */
 
 .pop2:hover {
     -ms-transform: scale(0.95);
@@ -1925,6 +1932,24 @@ b.cloud {
     font-size: 13px;
     display: none;
 }
+.tooltip-content1 {
+    position: absolute;
+    z-index: 9999;
+    width: 100px!important;
+    background-image: linear-gradient(to bottom, #0268ec, #106fed, #1d76ed, #297ded, #3484ed, #3d89ee, #458eee, #4d93ef, #5498f1, #5a9cf3, #61a1f4, #67a5f6);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    color: #FFFFFF;
+    -ms-transform: translateY(-55px) translateX(-20%);
+    transform: translateY(-55px) translateX(-20%);
+    -webkit-transform: translateY(-55px) translateX(-20%);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    display: none;
+}
 
 .mark {
     background-color: transparent;
@@ -1933,7 +1958,7 @@ b.cloud {
     -ms-transform: translateY(10px) translateX(-5px);
     transform: translateY(10px) translateX(-5px);
     -webkit-transform: translateY(10px) translateX(-5px);
-    border-color: rgba(47, 0, 255, 0.09) transparent transparent transparent;
+    border-color: #9b85fd96 transparent transparent transparent;
     border-style: solid;
     border-width: 12px 12px 0px 12px;
     height: 0px;
@@ -1941,13 +1966,36 @@ b.cloud {
     position: absolute;
     padding: 0;
 }
-
-.tooltip-content button a {
-    color: white;
+.mark1 {
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    -ms-transform: translateY(10px) translateX(-10px);
+    transform: translateY(10px) translateX(-10px);
+    -webkit-transform: translateY(10px) translateX(-10px);
+    border-color: #3484ed transparent transparent transparent;
+    border-style: solid;
+    border-width: 10px 10px 0px 10px;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    padding: 0;
+}
+.tooltip-content button {
+    background-color: #000;
+    padding: 4px 5px;
+    border-radius: 8px;
+    transition: color 0.5s;
+    & a {
+        color: white!important;
+    }
 }
 
-.tooltip-content button a:hover {
-    color: black;
+.tooltip-content button:hover {
+    background-color: #FFFFFF;
+    & a {
+        color: black!important;
+    }
 }
 
 
@@ -2002,7 +2050,6 @@ b.cloud {
         background-size: auto;
         background-position: center center;
     }
-
     .show1 img.win-app {
         width: 250px;
         height: 250px;
@@ -2058,7 +2105,7 @@ b.cloud {
 }
 .show3 img{
     width: 300px;
-    height: 450px;
+    height: 400px;
 }
 
 .show3 .card {
@@ -2125,14 +2172,7 @@ b.cloud {
 
 /* section 7 start */
 
-.divide h1 {
-    background: #1C00F5;
-    background: -webkit-repeating-linear-gradient(to right, #1C00F5 0%, #4D70E2 62%, #0A99FF 100%);
-    background: -moz-repeating-linear-gradient(to right, #1C00F5 0%, #4D70E2 62%, #0A99FF 100%);
-    background: repeating-linear-gradient(to right, #1C00F5 0%, #4D70E2 62%, #0A99FF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 
 #sec7 .container {
     background: rgba(255,255,255,0.5);
@@ -2154,12 +2194,12 @@ b.cloud {
     position: relative;
 }
 
-.input-data>input {
+.input-data>input, .input-data>select {
     height: 100%;
     width: 100%;
     border: none;
     background-color: transparent;
-    border-bottom: 2px solid rgb(0, 1, 51);
+    border-bottom: 2px solid #000133;
     outline: none;
     font-size: 18px;
     font-weight: 400;
@@ -2177,6 +2217,9 @@ b.cloud {
     color: rgb(8, 0, 83);
     font-size: 18px;
     font-weight: bold;
+}
+.input-data>select:focus {
+    border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 .bk-col1 {
@@ -2265,7 +2308,7 @@ b.cloud {
     }
 }
 
-@media (min-width: 350px) and (max-width: 550px) {
+@media (min-width: 300px) and (max-width: 550px) {
     .callback {
         width: 320px;
         border-radius: 15px;
@@ -2285,6 +2328,21 @@ b.cloud {
 
 /* contact page start  */
 
+/* point of sales */
 
+#smp-bg {
+    background-image: url(../img/smp-bg.svg);
+    background-repeat: no-repeat;
+    background-position: 30% 30%!important;
+    background-size: cover;
+}
+.caption-bg {
+    background-color: #00000083;
+    color: var(--dark)!important;
+    margin-top: 250px;
+    padding: 20px 0px;
+    font-size: 100px;
+    font-family: cursive;
+}
 
 /* Manual CSS end*/

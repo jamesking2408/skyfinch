@@ -43,7 +43,7 @@ function msgButton() {
     const num = document.querySelector("#cus-number").value;
     const mail = document.querySelector("#cus-mail").value;
     const txt = document.querySelector("#cus-text").value;
-    if((cus_name == "")||(num == "")||(mail == "")||(txt == "")||(txt.length = "")){
+    if((cus_name == "")||(num == "")||(mail == "")||(txt == "")||(txt.length<30)){
         document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
         document.querySelector(".sub-popup1 p").innerHTML = "Check your All Fields!";
         popup1.classList.add("open-popup");
@@ -68,7 +68,7 @@ function msgButton() {
         document.querySelector(".sub-popup1 p").innerHTML = "Please Fill out message field!!!";
         popup1.classList.add("open-popup");
     }
-    else if (txt.length < 100) {
+    else if (txt.length < 30) {
         document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
         document.querySelector(".sub-popup1 p").innerHTML = "Please Fill out message field more than 100 letters!!!";
         popup1.classList.add("open-popup");
@@ -168,8 +168,8 @@ function contact_sub() {
 
 function closePopup() {
     popup.classList.remove("open-popup");
-    document.open_form.reset();
     document.cus_form.reset();
+    document.open_form.reset();
 }
 
 function closePopup0() {
