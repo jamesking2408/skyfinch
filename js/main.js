@@ -200,11 +200,41 @@
         owl.trigger('stop.owl.autoplay')
     })
     //<!-- OwlCarousel script end -->
+    document.querySelector("#myBtn").addEventListener("click", function() {
+        var dots = $("#dots");
+        var moreText = $("#more");
+        var btnText = $("#myBtn");
+      
+        if (dots.css("display") === "none") {
+          dots.css("display", "inline");
+          btnText.text("Read more");
+          moreText.css("display", "none");
+        } else {
+          dots.css("display", "none");
+          btnText.text("Read less");
+          moreText.css("display", "inline");
+        }
+    })
 
-
-
-
-
+    document.addEventListener('DOMContentLoaded', function() {
+        var selectElement = document.querySelector('.form-select');
+        var tabContent = document.querySelectorAll('.tab-pane');
+      
+        selectElement.addEventListener('change', function() {
+          var selectedValue = this.value;
+      
+          tabContent.forEach(function(tab) {
+            tab.classList.remove('show', 'active');
+          });
+      
+          var selectedTab = document.getElementById(selectedValue);
+      
+          if (selectedTab) {
+            selectedTab.classList.add('show', 'active');
+          }
+        });
+      });
+      
     //////////////////////////////////////////////////////////////////////////////////////////////////
 
     //<!-- Chat BOX JS Start -->

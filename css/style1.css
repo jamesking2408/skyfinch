@@ -10,12 +10,15 @@
     background-repeat: no-repeat;
     border-radius: 8px;
 }
+#more {
+    display: none;
+}
 .border-pos {
     position: absolute;
-    margin-left: 40px;
     width:min-content!important;
     left: 0;
     bottom: 0;
+    margin-left: 40px;
     margin-bottom: 50px;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
@@ -53,6 +56,22 @@
     background-image: linear-gradient(to top, #040405, #060517, #090522, #0a042d, #080438, #060540, #060648, #070550, #080658, #0b075f, #0d0767, #10086f);
 }
 
+@media (min-width:300px) and (max-width:550px){
+    /* point of sales responsive */
+    .border-pos {
+        display: inline-block;
+        width: 230px!important;
+        margin-left: 40px;
+        margin-bottom: 280px;
+    }
+    .border-pos h1, .border-pos nav ~ li {
+        font-size: calc(1.634rem)!important;
+    }
+    .bg-12 {
+        height: 800px;
+    }
+}
+
 /* Add indicator arrow for the active tab */
 @media (min-width: 992px) {
     .nav-pills-custom .nav-link::before {
@@ -74,6 +93,22 @@
 }
 
     /* Product Enquiry Button Start */
+
+    @media (min-width:300px) and (max-width:500px) {
+        .container.btn-pq a.button{
+            width: 230px!important;
+            padding: 5px!important;
+        }
+        .btn-pq .button {
+            display: inline-block;
+            margin-left: -21.95rem!important;
+            margin-bottom: 16rem!important;
+        }
+        .btn-pq a.button {
+            font-size: 1.105rem;
+        }
+    }
+
     .btn-pq .button {
         position:absolute;
         left: 0;
@@ -239,7 +274,12 @@
         font-size: 40px;
     }
     /* Special End */
-
+    @media (min-width:300px) and (max-width:500px) {
+        div.team-item, .team-item .card {
+            width: 150px;
+            height: 180px;
+        }
+    }
     .btn-pop {
         color: #000133;
         border: 2px solid #000133;
@@ -291,7 +331,29 @@
     border: 2px solid rgba(255, 255, 255, 0.25);
     transition: transform .3s;
 }
-
+@media (min-width:300px) and (max-width:500px) {
+    .img-hms {
+        height: 390px!important;
+    }
+    .bg-00 .container.facts {
+        height: 110px;
+    }
+    .bg-00 .container.facts h5 {
+        font-size: 1.225rem!important;
+    }
+    .border-rms{
+        display: inline-block;
+        width: 230px!important;
+        margin-left: 40px!important;
+        margin-bottom: 260px!important;
+    }
+    .border-rms h1 {
+        font-size: 1.105rem;
+    }
+    .li-rms {
+        font-size: 0.805rem!important;
+    }
+}
 
 
 /* Hotel management systems End */

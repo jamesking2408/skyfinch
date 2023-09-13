@@ -191,3 +191,13 @@
   #item-3:checked ~ .player #test {
     transform: translateY(-80px);
   }
+
+  @media (min-width:300px) and (max-width:500px) {
+    .bg-00 {
+      height: 400px;
+    }
+    .bg-00 .container {
+      width: 280px;
+      height: 250px;
+    }
+  }

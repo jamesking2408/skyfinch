@@ -332,10 +332,10 @@ body::-webkit-scrollbar {
 
 .boder-blur {
     position: absolute;
-    margin-left: 40px;
     width: 30%;
     left: 0;
     bottom: 0;
+    margin-left: 40px;
     margin-bottom: 50px;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
@@ -347,10 +347,10 @@ body::-webkit-scrollbar {
 
 .boder-blur:hover {
     position: absolute;
-    margin-left: 40px;
     width: 30%;
     left: 0;
     bottom: 0;
+    margin-left: 40px;
     margin-bottom: 50px;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.596);
@@ -366,11 +366,8 @@ body::-webkit-scrollbar {
 
 @media (min-width:300px) and (max-width:550px) {
     .img-abt {
-        top: 0;
-        left: 0;
-        bottom: 0;
         max-width: 100%!important;
-        height: 300px;
+        height: 390px;
     }
 
     .boder-blur h1,
@@ -380,14 +377,16 @@ body::-webkit-scrollbar {
     }
 
     .boder-blur {
+        display: inline-block;
         width: 55%;
-        margin-bottom: 435px;
+        margin-bottom: 335px;
     }
 
     .boder-blur:hover {
         width: 55%;
-        margin-bottom: 435px;
+        margin-bottom: 335px;
     }
+
     .abt-icon {
         font-size: x-small;
     }
@@ -446,17 +445,28 @@ input[type=number]::-webkit-outer-spin-button {
 
 .service-border {
     position: absolute;
-    margin-left: 40px;
     width: 25%;
     left: 0;
     bottom: 0;
-    margin-bottom: 50px;
+    margin-left: 3rem;
+    margin-bottom: 4rem;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(19px);
     border: 2px solid rgba(255, 255, 255, 0.25);
     transition: transform .2s;
+}
+.service-border:hover {
+    background: rgba(255, 255, 255, 0.596);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.767);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .in-border {
@@ -472,24 +482,7 @@ input[type=number]::-webkit-outer-spin-button {
     transition: transform .2s;
 }
 
-.service-border:hover {
-    position: absolute;
-    margin-left: 40px;
-    width: 25%;
-    left: 0;
-    bottom: 0;
-    margin-bottom: 50px;
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.596);
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, 0.767);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-}
+
 
 @media (min-width:550px) and (max-width:850px) {
     .bg {
@@ -510,6 +503,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media (min-width:300px) and (max-width:550px) {
+    .service-bg {
+        object-fit: none;
+        height: 520px;
+        background-position: 40% 50%;
+    }
     .bg {
         max-width: 100%!important;
         height: 300px;
@@ -523,13 +521,14 @@ input[type=number]::-webkit-outer-spin-button {
         font-weight: 100;
     }
     .service-border {
+        display: inline-block;
         width: 50%;
-        margin-bottom: 450px;
+        margin-bottom: 12rem;
     }
 
     .service-border:hover {
         width: 50%;
-        margin-bottom: 450px;
+        margin-bottom: 12rem;
     }
 }
 
@@ -586,7 +585,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media (min-width:300px) and (max-width:550px) {
     .contact_bg {
-        height: 310px;
+        height: 390px;
         padding: 0;
     }
     .contact-border h1,
@@ -595,13 +594,14 @@ input[type=number]::-webkit-outer-spin-button {
         font-weight: 100;
     }
     .contact-border {
+        display: inline-block;
         width: 50%;
-        margin-bottom: 440px;
+        margin-bottom: 350px;
     }
     
     .contact-border:hover {
         width: 50%;
-        margin-bottom: 440px;
+        margin-bottom: 350px;
     }
 }
 
@@ -704,7 +704,6 @@ a {
 /* Other pages back to top */
 .page-top {
     position: fixed;
-    right: 33px;
     right: 35px;
     bottom: 100px;
     width: 80px;
@@ -748,8 +747,13 @@ a {
     .back-to-top{
         right: 25px;
     }
-    
+    .page-top {
+        right: 25px;
+        bottom: 100px;
+    }
 }
+
+
 /* Back-to-top End */
 
 h1,
