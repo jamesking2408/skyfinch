@@ -194,7 +194,7 @@
 
   @media (min-width:300px) and (max-width:500px) {
     .bg-00 {
-      height: 400px;
+      height: inherit;
     }
     .bg-00 .container {
       width: 280px;

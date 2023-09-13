@@ -490,6 +490,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
     
     .service-border {
+        display: -moz-inline-stack!important;
         margin-left: 40px;
         width: 35%;
         bottom: 655px;
@@ -521,14 +522,14 @@ input[type=number]::-webkit-outer-spin-button {
         font-weight: 100;
     }
     .service-border {
-        display: inline-block;
+        display: -moz-inline-stack!important;
         width: 50%;
-        margin-bottom: 12rem;
+        margin-bottom: 14rem;
     }
 
     .service-border:hover {
         width: 50%;
-        margin-bottom: 12rem;
+        margin-bottom: 14rem;
     }
 }
 
@@ -594,7 +595,7 @@ input[type=number]::-webkit-outer-spin-button {
         font-weight: 100;
     }
     .contact-border {
-        display: inline-block;
+        display: -moz-inline-stack!important;
         width: 50%;
         margin-bottom: 350px;
     }
