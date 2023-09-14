@@ -26,12 +26,19 @@
         rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     <!-- Libraries Stylesheet -->
+    
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -45,13 +52,6 @@
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <!-- <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
-    </div> -->
-
-    <!-- Spinner Start -->
 
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -116,9 +116,8 @@
                 <b class="display-6 cloud">SkyFinch
                     <h6 class="me-0 p-0">Solution to Success</h6>
                 </b>
-                <!-- <img src="img/skyfinch-logo.png" alt="logo" class="w-25 wow slideInLeft" data-wow-delay="0.9s"> -->
             </a>
-            <div class="nav-icons d-lg-none d-md-block d-block d-flex ms-5 gap-1 wow fadeInDown
+            <div class="nav-icons d-lg-none d-md-none d-block d-flex ms-5 gap-1 wow fadeInDown
             " data-wow-delay="1.5s">
                 <a class="btn btn-primary btn-sm-square rounded-circle ms-1"
                     href="https://www.facebook.com/skyfinch.roadmap" data-bs-toggle="tooltip"
@@ -178,7 +177,7 @@
                     <a href="about.html" class="nav-item nav-link">About Us</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <div class="d-flex justify-content-center align-items-center" style="height: 30px;">
+                <div class="d-lg-flex d-none justify-content-lg-center align-items-lg-center" style="height: 30px;">
                     <div class="vr text-dark" style="width: 2.5px;"></div>
                 </div>
                 <div class=" d-lg-flex d-md-none d-none d-grid ms-lg-2 ms-md-2 ms-2 gap-2">
@@ -245,7 +244,6 @@
                     <div class="col-lg-6 col-md-12 mt-lg-0 mt-1 mb-3 wow fadeInUp" data-wow-delay="0.5s" data-aos-duration="1000"
                         data-aos="fade-down">
                         <p id="abt1" class="d-inline-block border rounded fw-semi-bold mt-1 pt-0 px-2 pb-0">Overview</p>
-                        <!-- <h2 class="display-5 mb-md-4 mb-lg-2">We Help Our Clients To Grow Their Business</h2> -->
                         <p class="">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Skyfinch Sales & Service module gives total visibility into the entire business process and maximizes the performance efficiency. The tracking and monitoring facility of the module accounts for each and every spare purchased, replaced, and sold. The software is the best-fit solution for computer showrooms, automobile showrooms, CCTV shops, electronics repair shops, water purifier shops, two wheeler showrooms, car service showrooms, and more.
                         </p>
@@ -311,7 +309,21 @@
             </div>
         </div>
     </div>
+    <!-- Add left and right buttons -->
+  <div class="container-fluid pt-0 pb-3">
+      <div class="row d-lg-none d-md-none d-block" style="margin-top: -25px;"> 
+          <div class="d-flex justify-content-center mt-lg-0 pt-lg-0 py-1 gap-2 mb-lg-0 mb-0">
+              <div class="btn btn-outline-primary py-1" data-aos-duration="1000" data-aos="fade-right" id="left-button">
+                  <i class="fa-solid fa-arrow-left-long fw-bold"></i>
+              </div>
+              <div class="btn btn-outline-primary py-1" data-aos-duration="1000" data-aos="fade-left" id="right-button">
+                  <i class="fa-solid fa-arrow-left-long fa-rotate-180 fw-bold"></i>
+              </div>
+          </div>
+      </div>
+  </div>
 </section>
+<!-- Click image change background -->
 <script>
     document.querySelectorAll('input').forEach(function (input) {
         input.addEventListener('change', function () {
@@ -750,7 +762,7 @@
     </section>
 
 
-    <!-- Team Start -->
+<!-- Team Start -->
     <section class="bg-11 pt-lg-2 pb-lg-0 pt-4 pb-1">
         <div class="container-xxl mt-lg-1 pt-lg-2 mt-md-4 py-md-2 mt-4 py-3">
             <div class="container pt-2 mt-3 mb-1">
@@ -980,9 +992,9 @@
             </div>
         </div>
     </section>
-    <!-- Team End -->
+<!-- Team End -->
 
-    <!-- Footer Start -->
+<!-- Footer Start -->
     <div class="container-fluid scroll text-light footer mt-lg-4 pt-lg-5 mt-4 pt-4 wow fadeIn" data-wow-delay="0.1s">
         <div class="container pt-lg-4 mt-lg-0 mt-3 pt-4">
             <div class="row g-lg-5 mt-lg-1 mt-1 g-md-2 g-4">
@@ -1048,16 +1060,16 @@
                 <div class="col-lg-4 col-12">
                     <h4 class="text-white mb-4 w-25 border-width border-bottom border-primary">Newsletter</h4>
                     <div class="position-relative w-75">
-                        <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text"
+                        <input class="form-control bg-white border-0 w-100 py-4 ps-4 pe-5" type="text"
                             placeholder="Your email">
                         <button type="button"
-                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-1 me-2">SignUp</button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Copyright Start -->
+<!-- Copyright Start -->
         <div class="row mt-5 pt-5 d-flex align-items-end justify-content-center">
             <div class="row pt-5 mt-5 pb-lg-0 mb-lg-0">
                 <div
@@ -1066,11 +1078,11 @@
                 </div>
             </div>
         </div>
-        <!-- Copyright End -->
+<!-- Copyright End -->
     </div>
-    <!-- Footer End -->
+<!-- Footer End -->
 
-    <!-- Back to Top -->
+<!-- Back to Top -->
     <a href="#" class="btn btn-lg page-top btn-lg-square rounded-circle wow fadeInDown" data-wow-delay="3.5s"
         data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
         data-bs-title="back-to-top"><img src="img/right-arrow.png" alt=""></a>
@@ -1099,8 +1111,6 @@
 
     <!-- Smooth scroll -->
     <script src="js/SmoothScroll.min.js"></script>
-
-
 
     <!-- Template Javascript -->
     <script src="js/chatbox.js"></script>
