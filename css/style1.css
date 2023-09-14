@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
 /* Point of sales start */
 .img-pos {
-    background-image:radial-gradient(ellipse, #0000, #a8a3a377),
-    linear-gradient(0deg, #0000, rgba(29, 28, 28, 0.467)),url(../img/pos-bg.jpg);
+    background-image:radial-gradient(ellipse, #0000, #ddd7d72f),
+    linear-gradient(0deg, #0000, #ddd7d777),url(../img/pos-bg.jpg);
     width: 100%;
     height: 80%;
     padding-bottom: 480px;
@@ -321,8 +321,7 @@
 /* Hotel management systems start */
 
 .img-hms {
-    background-image:radial-gradient(ellipse, #0000, #0007),
-    linear-gradient(0deg, #0000, #0007),url(../img/hotel-recp.png), radial-gradient(circle, #ebc092, #fdc6b1, #ffd0cf, #ffdee8, #fbedf8, #fbedf8, #fbedf8, #fbedf8, #ffdee8, #ffd0cf, #fdc6b1, #ebc092);
+    background-image:radial-gradient(ellipse, #0000, #ddd7d777),url(../img/hotel-recp.png), radial-gradient(circle, #ebc092, #fdc6b1, #ffd0cf, #ffdee8, #fbedf8, #fbedf8, #fbedf8, #fbedf8, #ffdee8, #ffd0cf, #fdc6b1, #ebc092);
     width: 100%;
     padding-bottom: 480px;
     background-position: center;
@@ -388,7 +387,7 @@
 
 /* Restaurant management systems Start */
 .img-rms {
-    background-image:radial-gradient(ellipse, #0000, #0007),
+    background-image:radial-gradient(ellipse, #0000, #ddd7d777),
     linear-gradient(0deg, #0000, #0007),url(../img/restaurant-bg.jpg);
     width: 100%;
     padding-bottom: 480px;
@@ -451,8 +450,8 @@
 
 /* Smart Skyfinch Start */
 .img-ssfinch {
-    background-image:radial-gradient(ellipse, #0000, #0007),
-    linear-gradient(0deg, #0000, #0007),url(../img/smart-bg.jpg);
+    background-image:radial-gradient(ellipse, #0000, #ddd7d777),
+    linear-gradient(0deg, #0000, #ddd7d777),url(../img/smart-bg.jpg);
     width: 100%;
     height: 80%;
     padding-bottom: 480px;

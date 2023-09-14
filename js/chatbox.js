@@ -122,3 +122,23 @@
 
 
     //<!-- Chat BOX JS End -->
+
+    // <!-- shuffle button start -->
+  // JavaScript to handle button clicks
+  document.getElementById('lbt').addEventListener('click', function() {
+    let checkedItem = document.querySelector('.cards1 input:checked');
+    let prevItem = checkedItem.previousElementSibling;
+    if (prevItem) {
+      checkedItem.checked = false;
+      prevItem.checked = true;
+    }
+  });
+
+  document.getElementById('rbt').addEventListener('click', function() {
+    let checkedItem = document.querySelector('.cards1 input:checked');
+    let nextItem = checkedItem.nextElementSibling;
+    if (nextItem) {
+      checkedItem.checked = false;
+      nextItem.checked = true;
+    }
+  });

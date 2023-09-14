@@ -1845,6 +1845,11 @@ b.cloud {
     }
 }
 
+@media (min-width:330px) and (max-width:850px) {
+    .nav-icons {
+        margin-right: -90px;
+    }
+}
 
 
 /*  section 5 End */

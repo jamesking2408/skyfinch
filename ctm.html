@@ -26,12 +26,18 @@
         rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     <!-- Libraries Stylesheet -->
+    
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -118,7 +124,27 @@
                 </b>
                 <!-- <img src="img/skyfinch-logo.png" alt="logo" class="w-25 wow slideInLeft" data-wow-delay="0.9s"> -->
             </a>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+            <div class="nav-icons d-lg-none d-md-block d-block d-flex ms-5 gap-1 wow fadeInDown
+            " data-wow-delay="1.5s">
+                <a class="btn btn-primary btn-sm-square rounded-circle ms-1"
+                    href="https://www.facebook.com/skyfinch.roadmap" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Facebook"
+                    target="_blank">
+                    <span><i class="fab fa-facebook-f"></i></span>
+                </a>
+                <a class="btn btn-primary btn-sm-square rounded-circle ms-1"
+                    href="https://twitter.com/Roadmaperp" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-custom-class="custom-tooltip" data-bs-title="Twitter" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="btn btn-primary btn-sm-square rounded-circle ms-1"
+                    href="https://www.linkedin.com/company/skyfinchroadmap" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="LinkedIn"
+                    target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <button type="button" class="navbar-toggler me-2" data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -161,7 +187,7 @@
                 <div class="d-flex justify-content-center align-items-center" style="height: 30px;">
                     <div class="vr text-dark" style="width: 2.5px;"></div>
                 </div>
-                <div class=" d-lg-flex d-grid ms-lg-2 ms-md-2 ms-2 gap-2">
+                <div class=" d-lg-flex d-md-none d-none d-grid ms-lg-2 ms-md-2 ms-2 gap-2">
                     <a class="btn btn-outline-primary btn-sm-square rounded-circle ms-lg-1 ms-3"
                         href="https://www.facebook.com/skyfinch.roadmap" data-bs-toggle="tooltip"
                         data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Facebook"
@@ -196,7 +222,8 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb mb-1 wow fadeInLeft" data-wow-delay="2.8s">
                         <li class="li-ctm1 breadcrumb-item fw-bold"><a class="li-ctm" href="index.html">Home</a></li>
-                        <li class="li-ctm breadcrumb-item fw-bold active" aria-current="page">Corporate Management System</li>
+                        <li class="li-ctm breadcrumb-item fw-bold active" aria-current="page">Corporate Management
+                            System</li>
                     </ol>
                 </nav>
             </div>
@@ -222,8 +249,8 @@
         <div class="container-xxl mt-1 pt-1 mt-lg-1 pt-lg-1">
             <div class="container mt-1 pt-1 mt-lg-2 pt-lg-1">
                 <div class="row g-5 align-items-end pt-2 mt-1 pt-lg-5 mt-lg-5">
-                    <div class="col-lg-6 col-md-12  mb-3 wow fadeInUp" data-wow-delay="0.5s" data-aos-duration="1000"
-                        data-aos="fade-down">
+                    <div class="col-lg-6 col-md-12 mt-lg-0 mt-1 mb-3 wow fadeInUp" data-wow-delay="0.5s"
+                        data-aos-duration="1000" data-aos="fade-down">
                         <p id="abt1" class="d-inline-block border rounded fw-semi-bold mt-1 pt-0 px-2 pb-0">Overview</p>
                         <!-- <h2 class="display-5 mb-md-4 mb-lg-2">We Help Our Clients To Grow Their Business</h2> -->
                         <p class="fs-6">
@@ -299,6 +326,18 @@
                             </div>
                         </label>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid pt-0 pb-3">
+            <div class="row d-lg-none d-md-none d-block" style="margin-top: -50px;"> 
+                <div class="d-flex justify-content-center mt-lg-0 pt-lg-0 pt-1 gap-2 mb-lg-0 mb-0">
+                    <button class="btn btn-outline-primary" data-aos-duration="1000" data-aos="fade-right" id="lbt">
+                        <i class="fa-solid fa-arrow-left-long fw-bold"></i>
+                    </button>
+                    <button class="btn btn-outline-primary" data-aos-duration="1000" data-aos="fade-left" id="rbt">
+                        <i class="fa-solid fa-arrow-left-long fa-rotate-180 fw-bold"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -384,7 +423,7 @@
 
 
 
-    
+
                 <!-- Responsive page add new column start -->
                 <div class="col-12 d-lg-none d-md-none d-block mt-0 mb-3 ms-3 w-75 wow fadeInLeft" data-wow-delay="0.6s"
                     data-aos="fade-right" data-aos-duration="1000">
@@ -407,10 +446,10 @@
                     </div>
                 </div>
                 <!-- Responsive page add new column End -->
-    
-    
-                <div class="col-lg-9 col-md-9 col-12 pb-lg-0 pb-5 wow fadeInRight" data-wow-delay="0.6s" data-aos="fade-left"
-                    data-aos-duration="1000">
+
+
+                <div class="col-lg-9 col-md-9 col-12 pb-lg-0 pb-5 wow fadeInRight" data-wow-delay="0.6s"
+                    data-aos="fade-left" data-aos-duration="1000">
                     <!-- Tabs content -->
                     <div class="tab-content shadow rounded bg-white" id="v-pills-tabContent"
                         style="height: fit-content;">
@@ -421,53 +460,53 @@
                             aria-labelledby="v-pills-billing-tab">
                             <h4 class="display-6 font-italic mb-4">Billing Management</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-    
+
                                 &#x2713; Quick and easy Billing powered by Barcode scanning, smart name
                                 searching, and item code searching facilities.
                                 <br>
-    
+
                                 &#x2713;Complete Iconographic interface simplifies operability and enhances
                                 user-experience through easily understandable visual elements.
                                 <br>
-    
+
                                 &#x2713; Error-free billing actuated by the facility to easily rectify wrong
                                 entries, and the action audit capabilities.
                                 <br>
-    
+
                                 &#x2713; The scope to create multiple price lists and accept payments in
                                 different payment modes improves customer experience.
                                 <br>
-    
+
                                 &#x2713; Facility to make easy purchase entries prompts apt supplier
                                 payments, thereby maintaining stress-free external relationships.
                             </p>
                         </div>
-    
+
                         <div class="tab-pane px-3 fade p-2" id="v-pills-Purchase" role="tabpanel"
                             aria-labelledby="v-pills-Purchase-tab">
                             <h4 class="display-6 font-italic mb-3">Purchase Management</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-    
+
                                 &#x2713;POS enhances the agility of Purchase management by simplifying and
                                 rendering the Inward Entry procedure free of hassles.
                                 <br>
-    
+
                                 &#x2713;Accurate product costing is actuated by the modules capacity to build
                                 buying level product cost upon the Landing Price.
                                 <br>
-    
+
                                 &#x2713; The system is programmable to automatically project selling price
                                 updates according to any change attributed to marked price.
                                 <br>
-    
+
                                 &#x2713; Level of Stock is automatically updated as when Goods Inward are
                                 verified and accounted for in the system.
                                 <br>
-    
+
                                 &#x2713; The module's integration with inventory captures a clear vector of
                                 purchases and stock to accurately forecast the Profit/Gross margin.
                                 <br>
-    
+
                                 &#x2713; Provision to assign distributor-wise formula enables to arrive at
                                 efficient and reasonable distributor margins.
                             </p>
@@ -476,33 +515,33 @@
                             aria-labelledby="v-pills-Inventory-tab">
                             <h4 class="display-6 font-italic mb-4">Inventory Management</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-    
+
                                 &#x2713; The tenacity of the module to accommodate more than 100,000 Stock
                                 Keeping Units (SKUs), enables the effortless and efficient management of large
                                 inventories with diverse product categories.
                                 <br>
-    
+
                                 &#x2713;The system is customizable to design the categories and
                                 sub-categories of the Inventory to have a better understanding and visibility through
                                 personalized screens.
                                 <br>
-    
+
                                 &#x2713; Any change in the category level of products can be easily
                                 incorporated into the solution.
                                 <br>
-    
+
                                 &#x2713; The module offers clear visibility of the rolled up totals for any
                                 category level of the Inventory.
                                 <br>
-    
+
                                 &#x2713; The Dynamic Drill Down view presents a vivid picture of the
                                 Inventory status.
                                 <br>
-    
+
                                 &#x2713; Actual Vs Estimated stock audits can be conducted at any time to
                                 easily and quickly find if there are discrepancies.
                                 <br>
-    
+
                                 &#x2713; Support of excel files while doing stock audits is a great
                                 advantage.
                         </div>
@@ -510,23 +549,23 @@
                             aria-labelledby="v-pills-Customer-tab">
                             <h4 class="display-6 font-italic mb-4">Customer Management</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-    
+
                                 &#x2713; Simple steps to create Customer Record enhances user-experience.
                                 <br>
-    
+
                                 &#x2713; Segmenting Customers based on various categories gives clarity in
                                 choosing the most effective area of focus for campaigns and reap maximum benefits.
                                 <br>
-    
+
                                 &#x2713; Tracking and maintaining customers' transaction level with the
                                 business empowers to assign customer-specific Credit Limits.
                                 <br>
-    
+
                                 &#x2713; The facility to track and monitor Receivables pending from customers
                                 presents customer-wise payment aging notifications, sends SMSs/emails regarding the dues
                                 to customers, and amicably enables the recovery of all pending payments.
                                 <br>
-    
+
                                 &#x2713; The module comes with the faculty to handle time-bound package
                                 deals, Offers, Schemes, and customer-specific appropriation/deduction of Loyalty Bonus
                                 points.
@@ -535,28 +574,28 @@
                             aria-labelledby="v-pills-Supplier-tab">
                             <h4 class="display-6 font-italic mb-4">Supplier Management</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-    
+
                                 &#x2713; Skyfinch offers customized solutions to suit the supplier
                                 relationship process requirements of any business. These solutions digitize and
                                 streamline the process of:
                                 <br>
-    
+
                                 &#x2713; Skyfinch offers customized solutions to suit the supplier
                                 relationship process requirements of any business. These solutions digitize and
                                 streamline the process of:.
                                 <br>
-    
+
                                 &#x2713; Managing supplier performance.
                                 <br>
-    
+
                                 &#x2713; Implementing technologies, processes, policies, and procedures to
                                 support the purchasing process.
                                 <br>
-    
+
                                 &#x2713; Developing and maintaining relationship with suppliers towards
                                 healthy prospects.
                                 <br>
-    
+
                                 &#x2713; Generating cost-effective forecasts/theories to meet any kind of
                                 supply and demand scenario.
                         </div>
@@ -564,37 +603,37 @@
                             aria-labelledby="v-pills-Reorder-tab">
                             <h4 class="display-6 font-italic mb-4">Reorder/Replenishment</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-    
+
                                 &#x2713; Reorder/Replenishment notifications are raised to designated
                                 personnel based on:
                                 <br>
-    
+
                                 &#x2713;Min/Max sales range for any particular date in the previous year(s).
                                 <br>
-    
+
                                 &#x2713; Sales for a particular period (days, month, years) from the past.
                                 <br>
-    
+
                                 &#x2713; Reorder Level specifications.
                                 <br>
-    
+
                                 &#x2713; Lead times.
                                 <br>
-    
+
                                 &#x2713; Fall in the prescribed safety-stock-level of any given product.
                         </div>
                         <div class="tab-pane px-3 fade p-2" id="v-pills-Barcode" role="tabpanel"
                             aria-labelledby="v-pills-Barcode-tab">
                             <h4 class="display-6 font-italic mb-4">Barcode Stickers</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-    
+
                                 &#x2713; Facilitates the designing and printing of barcode's indigenously.
                                 <br>
-    
+
                                 &#x2713; Enables the generation of stickers using normal laser printer or ink
                                 jet printer with the liberty of choosing desired logo and design.
                                 <br>
-    
+
                                 &#x2713; The system supports dedicated sticker printers, printing A4 size
                                 sticker sheets, and partial sheet printing.
                         </div>
@@ -602,52 +641,52 @@
                             aria-labelledby="v-pills-Loyalty-tab">
                             <h4 class="display-6 font-italic mb-4">Loyalty Management</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-    
+
                                 &#x2713; Efficient tracking & monitoring of Inventory, Accounting, and Sales
                                 enable successful handling of Loyalty bonus schemes.
                                 <br>
-    
+
                                 &#x2713;The system is capacitated to support any Loyalty Scheme like, buy one
                                 get one free, item-wise/Invoice-wise discounts, on the spot or last minute discounts for
                                 privileged customers, Discount Coupons, etc.
                                 <br>
-    
+
                                 &#x2713; The highlight of issuing discount coupons lies in the solution's
                                 faculty to:.
                                 <br>
-    
+
                                 &#x2713; print/email /SMS discount coupons in customized designs.
                                 <br>
-    
+
                                 &#x2713; Make Customer specific Coupons.
                                 <br>
-    
+
                                 &#x2713; Assign validity date range/usage limit to Coupons.
                                 <br>
-    
+
                                 &#x2713; Create News Paper/Handout Coupons.
                         </div>
                         <div class="tab-pane px-3 fade p-2" id="v-pills-Tax" role="tabpanel"
                             aria-labelledby="v-pills-Tax-tab">
                             <h4 class="display-6 font-italic mb-4">Tax Management</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-    
+
                                 &#x2713; Simple yet perfect tax definition empowers the accurate
                                 appropriation of GST components in a user-friendly fashion.
                                 <br>
-    
+
                                 &#x2713; The flexibility of the system gives scope to enter and alter tax
                                 details for accuracy even during Invoice level.
                                 <br>
-    
+
                                 &#x2713; Customized taxation module enables the assigning of taxes at
                                 multiple levels for the same product depending on the type of sale.
                                 <br>
-    
+
                                 &#x2713; Comprehensive solution enables handling all attributes of taxation
                                 like, GST, SGST, CGST, IGST/UGST.
                                 <br>
-    
+
                                 &#x2713; The scalability of the software is robust enough to accommodate all
                                 futuristic governmental shifts in taxation procedures.
                         </div>
@@ -655,17 +694,17 @@
                             aria-labelledby="v-pills-SMS-tab">
                             <h4 class="display-6 font-italic mb-4">SMS Support</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-    
+
                                 &#x2713; The system's provision to facilitate the sending of
                                 invoices/receipts to clients in SMS mode renders the procedure paperless. Ability to
                                 support the same in any regional language is a great advantage.
                                 <br>
-    
+
                                 &#x2713; Business stakeholders can receive periodical SMS reports on
                                 inventory status, daily sales, key accounting data, etc, and gain remote access to
                                 business data even through the use of a basic dongle.
                                 <br>
-    
+
                                 &#x2713; Skyfinch integrates the SMS gateway provider with the any business
                                 using HTTP API.
                         </div>
@@ -673,21 +712,21 @@
                             aria-labelledby="v-pills-GST-tab">
                             <h4 class="display-6 font-italic mb-4">Financial control with GST</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-    
+
                                 &#x2713; All System required accounts are Auto Generated.
                                 <br>
-    
+
                                 &#x2713; You can create any number of additional Financial Accounts.
                                 <br>
-    
+
                                 &#x2713; Simplified import and export functionality eases the integration of
                                 all accounts and transactions in Tally with Skyfinch's accounting platform.
                                 <br>
-    
+
                                 &#x2713; The flexibility of the solution provides the scope to view financial
                                 reports from multiple perspectives.
                                 <br>
-    
+
                                 &#x2713; The solution capacitates the viewing of Composite Ledgers, and
                                 empowers business stakeholders to enjoy a robust Cash Register management system.
                         </div>
@@ -695,41 +734,41 @@
                             aria-labelledby="v-pills-Analytical-tab">
                             <h4 class="display-6 font-italic mb-4">Analytical Reports</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-    
+
                                 &#x2713; Skyfinch's business-specific customized solution, through
                                 multi-level data analytics empowers business owners and decision makers to have key
                                 business reports on:
                                 <br>
-    
+
                                 &#x2713; The products that top the sales scenario.
                                 <br>
-    
+
                                 &#x2713; Fast moving items.
                                 <br>
-    
+
                                 &#x2713; Dump stock & dead stock.
                                 <br>
-    
+
                                 &#x2713; Peak of business rush hour for effective and efficient staff
                                 management.
                                 <br>
-    
+
                                 &#x2713; Daily sales statistics, sales returns, stock items and short stocks.
                         </div>
                         <div class="tab-pane px-3 fade p-2" id="v-pills-User" role="tabpanel"
                             aria-labelledby="v-pills-User-tab">
                             <h4 class="display-6 font-italic mb-4">User control Management</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-    
+
                                 &#x2713; Provision to assign computer system-specific grant/limit of access
                                 to business data restricts users from accessing data beyond the necessity of their
                                 professional scope.
                                 <br>
-    
+
                                 &#x2713; Ability to create login IDs, user groups, functionality groups, and
                                 capture Action History help to manage access rights effectively.
                                 <br>
-    
+
                                 &#x2713; The power to determine role-specific access to specific areas of the
                                 application and the tenacity to create additional passwords give total control over data
                                 security.
