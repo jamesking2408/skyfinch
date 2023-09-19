@@ -125,8 +125,8 @@
                 </b>
                 <!-- <img src="img/skyfinch-logo.png" alt="logo" class="w-25 wow slideInLeft" data-wow-delay="0.9s"> -->
             </a>
-            <div class="nav-icons d-lg-none d-md-block d-block d-flex ms-5 gap-1 wow fadeInDown
-            " data-wow-delay="1.5s">
+            <div class="nav-icons d-lg-none d-md-flex d-flex ms-5 gap-1 wow fadeInLeft
+            " data-wow-delay="1.7s">
                 <a class="btn btn-primary btn-sm-square rounded-circle ms-1"
                     href="https://www.facebook.com/skyfinch.roadmap" data-bs-toggle="tooltip"
                     data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Facebook"
@@ -157,7 +157,7 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Solutions</a>
                         <div class="dropdown-menu border-light m-0 p-0">
                             <div class="submenu w-100 px-3 py-0">
-                                <button class="dropbtn1 w-100 p-0">Application
+                                <button class="dropbtn1 w-100 p-1">Application
                                     <span class="arrow"></span></button>
                                 <div class="dropdown-content1 text-dec px-2 py-2">
                                     <a href="sales.html">POS</a>
@@ -169,7 +169,7 @@
                             </div>
                             <br class="d-lg-none d-sm-block">
                             <div class="submenu w-100 px-3 py-0">
-                                <button class="dropbtn1 w-100 p-0">Web
+                                <button class="dropbtn1 w-100 p-1">Web
                                     <span class="arrow1"></span></button>
                                 <div class="dropdown-content1 text-dec px-2 py-2">
                                     <a href="crm.html">CRM</a>
@@ -345,432 +345,220 @@
 <!-- Image section End -->
 
 <section class="container-fluid bg-12 pt-1 mb-0 pb-0">
-    <div class="container mt-1 pt-4">
-
-        <div class="row mt-3 pt-2 pb-0">
-            <div class="col-md-3 d-lg-block d-md-block d-none wow fadeInLeft" data-wow-delay="0.6s"
+    <div class="container mt-1 pt-5">
+        <div class="row mt-3 pt-lg-4 pb-0">
+            <div class="col-lg-4 col-md-3 col-3 d-lg-block d-md-block d-none wow fadeInLeft" data-wow-delay="0.6s"
                     data-aos="fade-right" data-aos-duration="1000">
                 <!-- Tabs nav -->
                 <div class="nav flex-column nav-pills nav-pills-custom " id="v-pills-tab" role="tablist"
                     aria-orientation="vertical">
-                    <a class="nav-link mb-1 p-1 shadow active" id="v-pills-billing-tab" data-bs-toggle="pill"
-                        href="#v-pills-billing" role="tab" aria-controls="v-pills-billing" aria-selected="true">
+                    <a class="nav-link mb-1 p-1 shadow active" id="v-pills-Employee-tab" data-bs-toggle="pill"
+                        href="#v-pills-Employee" role="tab" aria-controls="v-pills-Employee" aria-selected="true">
                         <i class="fa fa-bars ms-1 me-3"></i>
-                        <span class="font-weight-bold small text-uppercase">Billing Management</span></a>
+                        <span class="font-weight-bold small text-uppercase">Employee Management</span></a>
 
-                    <a class="nav-link mb-1 p-1 shadow" id="v-pills-Purchase-tab" data-bs-toggle="pill"
-                        href="#v-pills-Purchase" role="tab" aria-controls="v-pills-Purchase" aria-selected="false">
+                    <a class="nav-link mb-1 p-1 shadow" id="v-pills-policies-tab" data-bs-toggle="pill"
+                        href="#v-pills-policies" role="tab" aria-controls="v-pills-policies" aria-selected="false">
                         <i class="fa fa-bars ms-1 me-3"></i>
-                        <span class="font-weight-bold small text-uppercase">Purchase Management</span></a>
+                        <span class="font-weight-bold small text-uppercase">Fully customizable leave policies</span></a>
 
-                    <a class="nav-link mb-1 p-1 shadow" id="v-pills-Inventory-tab" data-bs-toggle="pill"
-                        href="#v-pills-Inventory" role="tab" aria-controls="v-pills-Inventory"
+                    <a class="nav-link mb-1 p-1 shadow" id="v-pills-Holiday-tab" data-bs-toggle="pill"
+                        href="#v-pills-Holiday" role="tab" aria-controls="v-pills-Holiday"
                         aria-selected="false">
                         <i class="fa fa-bars ms-1 me-3"></i>
-                        <span class="font-weight-bold small text-uppercase">Inventory Management</span></a>
+                        <span class="font-weight-bold small text-uppercase">Holiday lists</span></a>
 
-                    <a class="nav-link mb-1 p-1 shadow" id="v-pills-Customer-tab" data-bs-toggle="pill"
-                        href="#v-pills-Customer" role="tab" aria-controls="v-pills-Customer" aria-selected="false">
+                    <a class="nav-link mb-1 p-1 shadow" id="v-pills-Attendance-tab" data-bs-toggle="pill"
+                        href="#v-pills-Attendance" role="tab" aria-controls="v-pills-Attendance" aria-selected="false">
                         <i class="fa fa-bars ms-1 me-3"></i>
-                        <span class="font-weight-bold small text-uppercase">Customer Management</span></a>
-                    <a class="nav-link mb-1 p-1 shadow" id="v-pills-Supplier-tab" data-bs-toggle="pill"
-                        href="#v-pills-Supplier" role="tab" aria-controls="v-pills-Supplier" aria-selected="false">
+                        <span class="font-weight-bold small text-uppercase">Attendance capture from varied sources</span></a>
+                    <a class="nav-link mb-1 p-1 shadow" id="v-pills-salary-tab" data-bs-toggle="pill"
+                        href="#v-pills-salary" role="tab" aria-controls="v-pills-salary" aria-selected="false">
                         <i class="fa fa-bars ms-1 me-3"></i>
-                        <span class="font-weight-bold small text-uppercase">Supplier Management</span></a>
-                    <a class="nav-link mb-1 p-1 shadow" id="v-pills-Reorder-tab" data-bs-toggle="pill"
-                        href="#v-pills-Reorder" role="tab" aria-controls="v-pills-Reorder" aria-selected="false">
+                        <span class="font-weight-bold small text-uppercase">Configurable salary structure</span></a>
+                    <a class="nav-link mb-1 p-1 shadow" id="v-pills-Complete-tab" data-bs-toggle="pill"
+                        href="#v-pills-Complete" role="tab" aria-controls="v-pills-Complete" aria-selected="false">
                         <i class="fa fa-bars ms-1 me-3"></i>
-                        <span class="font-weight-bold small text-uppercase">Reorder/Replenishment</span></a>
-                    <a class="nav-link mb-1 p-1 shadow" id="v-pills-Barcode-tab" data-bs-toggle="pill"
-                        href="#v-pills-Barcode" role="tab" aria-controls="v-pills-Barcode" aria-selected="false">
+                        <span class="font-weight-bold small text-uppercase">Complete payroll processing</span></a>
+                    <a class="nav-link mb-1 p-1 shadow" id="v-pills-payroll-tab" data-bs-toggle="pill"
+                        href="#v-pills-payroll" role="tab" aria-controls="v-pills-payroll" aria-selected="false">
                         <i class="fa fa-bars ms-1 me-3"></i>
-                        <span class="font-weight-bold small text-uppercase">Barcode Stickers</span></a>
-                    <a class="nav-link mb-1 p-1 shadow" id="v-pills-Loyalty-tab" data-bs-toggle="pill"
-                        href="#v-pills-Loyalty" role="tab" aria-controls="v-pills-Loyalty" aria-selected="false">
+                        <span class="font-weight-bold small text-uppercase">Automated payroll inputs and pay slips</span></a>
+                    <a class="nav-link mb-1 p-1 shadow" id="v-pills-Statutory-tab" data-bs-toggle="pill"
+                        href="#v-pills-Statutory" role="tab" aria-controls="v-pills-Statutory" aria-selected="false">
                         <i class="fa fa-bars ms-1 me-3"></i>
-                        <span class="font-weight-bold small text-uppercase">Loyalty Management</span></a>
-                    <a class="nav-link mb-1 p-1 shadow" id="v-pills-Tax-tab" data-bs-toggle="pill"
-                        href="#v-pills-Tax" role="tab" aria-controls="v-pills-Tax" aria-selected="false">
+                        <span class="font-weight-bold small text-uppercase">Statutory compliance</span></a>
+                    <a class="nav-link mb-1 p-1 shadow" id="v-pills-ESS-tab" data-bs-toggle="pill"
+                        href="#v-pills-ESS" role="tab" aria-controls="v-pills-ESS" aria-selected="false">
                         <i class="fa fa-bars ms-1 me-3"></i>
-                        <span class="font-weight-bold small text-uppercase">Tax Management</span></a>
-                    <a class="nav-link mb-1 p-1 shadow" id="v-pills-SMS-tab" data-bs-toggle="pill"
-                        href="#v-pills-SMS" role="tab" aria-controls="v-pills-SMS" aria-selected="false">
+                        <span class="font-weight-bold small text-uppercase">ESS portal - Payroll</span></a>
+                    <a class="nav-link mb-1 p-1 shadow" id="v-pills-Mobile-tab" data-bs-toggle="pill"
+                        href="#v-pills-Mobile" role="tab" aria-controls="v-pills-Mobile" aria-selected="false">
                         <i class="fa fa-bars ms-1 me-3"></i>
-                        <span class="font-weight-bold small text-uppercase">SMS Support</span></a>
-                    <a class="nav-link mb-1 p-1 shadow" id="v-pills-GST-tab" data-bs-toggle="pill"
-                        href="#v-pills-GST" role="tab" aria-controls="v-pills-GST" aria-selected="false">
-                        <i class="fa fa-bars ms-1 me-3"></i>
-                        <span class="font-weight-bold small text-uppercase">Financial control with GST</span></a>
-                    <a class="nav-link mb-1 p-1 shadow" id="v-pills-Analytical-tab" data-bs-toggle="pill"
-                        href="#v-pills-Analytical" role="tab" aria-controls="v-pills-Analytical"
-                        aria-selected="false">
-                        <i class="fa fa-bars ms-1 me-3"></i>
-                        <span class="font-weight-bold small text-uppercase">Analytical Reports</span></a>
-                    <a class="nav-link mb-1 p-1 shadow" id="v-pills-User-tab" data-bs-toggle="pill"
-                        href="#v-pills-User" role="tab" aria-controls="v-pills-User" aria-selected="false">
-                        <i class="fa fa-bars ms-1 me-3"></i>
-                        <span class="font-weight-bold small text-uppercase">User control Management</span></a>
+                        <span class="font-weight-bold small text-uppercase">Mobile app for employees and managers</span></a>
                 </div>
             </div>
 
 
 
 
-                <!-- Responsive page add new column start -->
-                <div class="col-12 d-lg-none d-md-none d-block mt-0 mb-3 ms-3 w-75 wow fadeInLeft" data-wow-delay="0.6s"
-                    data-aos="fade-right" data-aos-duration="1000">
-                    <div class="row ms-5 mb-3 d-flex justify-content-center">
-                        <select class="form-select">
-                            <option value="v-pills-billing" selected>Billing Management</option>
-                            <option value="v-pills-Purchase">Purchase Management</option>
-                            <option value="v-pills-Inventory">Inventory Management</option>
-                            <option value="v-pills-Customer">Customer Management</option>
-                            <option value="v-pills-Supplier">Supplier Management</option>
-                            <option value="v-pills-Reorder">Reorder/Replenishment</option>
-                            <option value="v-pills-Barcode">Barcode Stickers</option>
-                            <option value="v-pills-Loyalty">Loyalty Management</option>
-                            <option value="v-pills-Tax">Tax Management</option>
-                            <option value="v-pills-SMS">SMS Support</option>
-                            <option value="v-pills-GST">Financial control with GST</option>
-                            <option value="v-pills-Analytical">Analytical Reports</option>
-                            <option value="v-pills-User">User control Management</option>
-                        </select>
-                    </div>
+            <!-- Responsive page add new column start -->
+            <div class="col-12 d-lg-none d-md-none d-block mt-0 mb-3 ms-3 w-75 wow fadeInLeft" data-wow-delay="0.6s"
+                data-aos="fade-right" data-aos-duration="1000">
+                <div class="row ms-5 mb-3 d-flex justify-content-center">
+                    <select class="form-select">
+                        <option value="v-pills-Employee" selected>Employee Management</option>
+                        <option value="v-pills-policies">Fully customizable leave policies</option>
+                        <option value="v-pills-Holiday">Holiday lists</option>
+                        <option value="v-pills-Attendance">Attendance capture from varied sources</option>
+                        <option value="v-pills-salary">Configurable salary structure</option>
+                        <option value="v-pills-Complete">Complete payroll processing</option>
+                        <option value="v-pills-payroll">Automated payroll inputs and pay slips</option>
+                        <option value="v-pills-Statutory">Statutory compliance</option>
+                        <option value="v-pills-ESS">ESS portal - Payroll</option>
+                        <option value="v-pills-Mobile">Mobile app for employees and managers</option>
+                    </select>
                 </div>
-                <!-- Responsive page add new column End -->
+            </div>
+            <!-- Responsive page add new column End -->
 
 
-                <div class="col-lg-9 col-md-9 col-12 pb-lg-0 pb-5 wow fadeInRight" data-wow-delay="0.6s"
+            <div class="col-lg-8 col-md-9 col-12 pb-lg-0 pb-5 wow fadeInRight" data-wow-delay="0.6s"
                     data-aos="fade-left" data-aos-duration="1000">
-                    <!-- Tabs content -->
-                    <div class="tab-content shadow rounded bg-white" id="v-pills-tabContent"
-                        style="height: fit-content;">
-                        <div class="d-flex justify-content-center text-center p-0">
-                            <h5 class="display-5 font-italic mb-2 p-0">Module</h5>
-                        </div>
-                        <div class="tab-pane px-3 fade show active p-2" id="v-pills-billing" role="tabpanel"
-                            aria-labelledby="v-pills-billing-tab">
-                            <h4 class="display-6 font-italic mb-4">Billing Management</h4>
-                            <p class="font-italic fs-6 text-muted mb-2">
-
-                                &#x2713; Quick and easy Billing powered by Barcode scanning, smart name
-                                searching, and item code searching facilities.
-                                <br>
-
-                                &#x2713;Complete Iconographic interface simplifies operability and enhances
-                                user-experience through easily understandable visual elements.
-                                <br>
-
-                                &#x2713; Error-free billing actuated by the facility to easily rectify wrong
-                                entries, and the action audit capabilities.
-                                <br>
-
-                                &#x2713; The scope to create multiple price lists and accept payments in
-                                different payment modes improves customer experience.
-                                <br>
-
-                                &#x2713; Facility to make easy purchase entries prompts apt supplier
-                                payments, thereby maintaining stress-free external relationships.
-                            </p>
-                        </div>
-
-                        <div class="tab-pane px-3 fade p-2" id="v-pills-Purchase" role="tabpanel"
-                            aria-labelledby="v-pills-Purchase-tab">
-                            <h4 class="display-6 font-italic mb-3">Purchase Management</h4>
-                            <p class="font-italic fs-6 text-muted mb-2">
-
-                                &#x2713;POS enhances the agility of Purchase management by simplifying and
-                                rendering the Inward Entry procedure free of hassles.
-                                <br>
-
-                                &#x2713;Accurate product costing is actuated by the modules capacity to build
-                                buying level product cost upon the Landing Price.
-                                <br>
-
-                                &#x2713; The system is programmable to automatically project selling price
-                                updates according to any change attributed to marked price.
-                                <br>
-
-                                &#x2713; Level of Stock is automatically updated as when Goods Inward are
-                                verified and accounted for in the system.
-                                <br>
-
-                                &#x2713; The module's integration with inventory captures a clear vector of
-                                purchases and stock to accurately forecast the Profit/Gross margin.
-                                <br>
-
-                                &#x2713; Provision to assign distributor-wise formula enables to arrive at
-                                efficient and reasonable distributor margins.
-                            </p>
-                        </div>
-                        <div class="tab-pane px-3 fade p-2" id="v-pills-Inventory" role="tabpanel"
-                            aria-labelledby="v-pills-Inventory-tab">
-                            <h4 class="display-6 font-italic mb-4">Inventory Management</h4>
-                            <p class="font-italic fs-6 text-muted mb-2">
-
-                                &#x2713; The tenacity of the module to accommodate more than 100,000 Stock
-                                Keeping Units (SKUs), enables the effortless and efficient management of large
-                                inventories with diverse product categories.
-                                <br>
-
-                                &#x2713;The system is customizable to design the categories and
-                                sub-categories of the Inventory to have a better understanding and visibility through
-                                personalized screens.
-                                <br>
-
-                                &#x2713; Any change in the category level of products can be easily
-                                incorporated into the solution.
-                                <br>
-
-                                &#x2713; The module offers clear visibility of the rolled up totals for any
-                                category level of the Inventory.
-                                <br>
-
-                                &#x2713; The Dynamic Drill Down view presents a vivid picture of the
-                                Inventory status.
-                                <br>
-
-                                &#x2713; Actual Vs Estimated stock audits can be conducted at any time to
-                                easily and quickly find if there are discrepancies.
-                                <br>
-
-                                &#x2713; Support of excel files while doing stock audits is a great
-                                advantage.
-                        </div>
-                        <div class="tab-pane px-3 fade p-2" id="v-pills-Customer" role="tabpanel"
-                            aria-labelledby="v-pills-Customer-tab">
-                            <h4 class="display-6 font-italic mb-4">Customer Management</h4>
-                            <p class="font-italic fs-6 text-muted mb-2">
-
-                                &#x2713; Simple steps to create Customer Record enhances user-experience.
-                                <br>
-
-                                &#x2713; Segmenting Customers based on various categories gives clarity in
-                                choosing the most effective area of focus for campaigns and reap maximum benefits.
-                                <br>
-
-                                &#x2713; Tracking and maintaining customers' transaction level with the
-                                business empowers to assign customer-specific Credit Limits.
-                                <br>
-
-                                &#x2713; The facility to track and monitor Receivables pending from customers
-                                presents customer-wise payment aging notifications, sends SMSs/emails regarding the dues
-                                to customers, and amicably enables the recovery of all pending payments.
-                                <br>
-
-                                &#x2713; The module comes with the faculty to handle time-bound package
-                                deals, Offers, Schemes, and customer-specific appropriation/deduction of Loyalty Bonus
-                                points.
-                        </div>
-                        <div class="tab-pane px-3 fade p-2" id="v-pills-Supplier" role="tabpanel"
-                            aria-labelledby="v-pills-Supplier-tab">
-                            <h4 class="display-6 font-italic mb-4">Supplier Management</h4>
-                            <p class="font-italic fs-6 text-muted mb-2">
-
-                                &#x2713; Skyfinch offers customized solutions to suit the supplier
-                                relationship process requirements of any business. These solutions digitize and
-                                streamline the process of:
-                                <br>
-
-                                &#x2713; Skyfinch offers customized solutions to suit the supplier
-                                relationship process requirements of any business. These solutions digitize and
-                                streamline the process of:.
-                                <br>
-
-                                &#x2713; Managing supplier performance.
-                                <br>
-
-                                &#x2713; Implementing technologies, processes, policies, and procedures to
-                                support the purchasing process.
-                                <br>
-
-                                &#x2713; Developing and maintaining relationship with suppliers towards
-                                healthy prospects.
-                                <br>
-
-                                &#x2713; Generating cost-effective forecasts/theories to meet any kind of
-                                supply and demand scenario.
-                        </div>
-                        <div class="tab-pane px-3 fade p-2" id="v-pills-Reorder" role="tabpanel"
-                            aria-labelledby="v-pills-Reorder-tab">
-                            <h4 class="display-6 font-italic mb-4">Reorder/Replenishment</h4>
-                            <p class="font-italic fs-6 text-muted mb-2">
-
-                                &#x2713; Reorder/Replenishment notifications are raised to designated
-                                personnel based on:
-                                <br>
-
-                                &#x2713;Min/Max sales range for any particular date in the previous year(s).
-                                <br>
-
-                                &#x2713; Sales for a particular period (days, month, years) from the past.
-                                <br>
-
-                                &#x2713; Reorder Level specifications.
-                                <br>
-
-                                &#x2713; Lead times.
-                                <br>
-
-                                &#x2713; Fall in the prescribed safety-stock-level of any given product.
-                        </div>
-                        <div class="tab-pane px-3 fade p-2" id="v-pills-Barcode" role="tabpanel"
-                            aria-labelledby="v-pills-Barcode-tab">
-                            <h4 class="display-6 font-italic mb-4">Barcode Stickers</h4>
-                            <p class="font-italic fs-6 text-muted mb-2">
-
-                                &#x2713; Facilitates the designing and printing of barcode's indigenously.
-                                <br>
-
-                                &#x2713; Enables the generation of stickers using normal laser printer or ink
-                                jet printer with the liberty of choosing desired logo and design.
-                                <br>
-
-                                &#x2713; The system supports dedicated sticker printers, printing A4 size
-                                sticker sheets, and partial sheet printing.
-                        </div>
-                        <div class="tab-pane px-3 fade p-2" id="v-pills-Loyalty" role="tabpanel"
-                            aria-labelledby="v-pills-Loyalty-tab">
-                            <h4 class="display-6 font-italic mb-4">Loyalty Management</h4>
-                            <p class="font-italic fs-6 text-muted mb-2">
-
-                                &#x2713; Efficient tracking & monitoring of Inventory, Accounting, and Sales
-                                enable successful handling of Loyalty bonus schemes.
-                                <br>
-
-                                &#x2713;The system is capacitated to support any Loyalty Scheme like, buy one
-                                get one free, item-wise/Invoice-wise discounts, on the spot or last minute discounts for
-                                privileged customers, Discount Coupons, etc.
-                                <br>
-
-                                &#x2713; The highlight of issuing discount coupons lies in the solution's
-                                faculty to:.
-                                <br>
-
-                                &#x2713; print/email /SMS discount coupons in customized designs.
-                                <br>
-
-                                &#x2713; Make Customer specific Coupons.
-                                <br>
-
-                                &#x2713; Assign validity date range/usage limit to Coupons.
-                                <br>
-
-                                &#x2713; Create News Paper/Handout Coupons.
-                        </div>
-                        <div class="tab-pane px-3 fade p-2" id="v-pills-Tax" role="tabpanel"
-                            aria-labelledby="v-pills-Tax-tab">
-                            <h4 class="display-6 font-italic mb-4">Tax Management</h4>
-                            <p class="font-italic fs-6 text-muted mb-2">
-
-                                &#x2713; Simple yet perfect tax definition empowers the accurate
-                                appropriation of GST components in a user-friendly fashion.
-                                <br>
-
-                                &#x2713; The flexibility of the system gives scope to enter and alter tax
-                                details for accuracy even during Invoice level.
-                                <br>
-
-                                &#x2713; Customized taxation module enables the assigning of taxes at
-                                multiple levels for the same product depending on the type of sale.
-                                <br>
-
-                                &#x2713; Comprehensive solution enables handling all attributes of taxation
-                                like, GST, SGST, CGST, IGST/UGST.
-                                <br>
-
-                                &#x2713; The scalability of the software is robust enough to accommodate all
-                                futuristic governmental shifts in taxation procedures.
-                        </div>
-                        <div class="tab-pane px-3 fade p-2" id="v-pills-SMS" role="tabpanel"
-                            aria-labelledby="v-pills-SMS-tab">
-                            <h4 class="display-6 font-italic mb-4">SMS Support</h4>
-                            <p class="font-italic fs-6 text-muted mb-2">
-
-                                &#x2713; The system's provision to facilitate the sending of
-                                invoices/receipts to clients in SMS mode renders the procedure paperless. Ability to
-                                support the same in any regional language is a great advantage.
-                                <br>
-
-                                &#x2713; Business stakeholders can receive periodical SMS reports on
-                                inventory status, daily sales, key accounting data, etc, and gain remote access to
-                                business data even through the use of a basic dongle.
-                                <br>
-
-                                &#x2713; Skyfinch integrates the SMS gateway provider with the any business
-                                using HTTP API.
-                        </div>
-                        <div class="tab-pane px-3 fade p-2" id="v-pills-GST" role="tabpanel"
-                            aria-labelledby="v-pills-GST-tab">
-                            <h4 class="display-6 font-italic mb-4">Financial control with GST</h4>
-                            <p class="font-italic fs-6 text-muted mb-2">
-
-                                &#x2713; All System required accounts are Auto Generated.
-                                <br>
-
-                                &#x2713; You can create any number of additional Financial Accounts.
-                                <br>
-
-                                &#x2713; Simplified import and export functionality eases the integration of
-                                all accounts and transactions in Tally with Skyfinch's accounting platform.
-                                <br>
-
-                                &#x2713; The flexibility of the solution provides the scope to view financial
-                                reports from multiple perspectives.
-                                <br>
-
-                                &#x2713; The solution capacitates the viewing of Composite Ledgers, and
-                                empowers business stakeholders to enjoy a robust Cash Register management system.
-                        </div>
-                        <div class="tab-pane px-3 fade p-2" id="v-pills-Analytical" role="tabpanel"
-                            aria-labelledby="v-pills-Analytical-tab">
-                            <h4 class="display-6 font-italic mb-4">Analytical Reports</h4>
-                            <p class="font-italic fs-6 text-muted mb-2">
-
-                                &#x2713; Skyfinch's business-specific customized solution, through
-                                multi-level data analytics empowers business owners and decision makers to have key
-                                business reports on:
-                                <br>
-
-                                &#x2713; The products that top the sales scenario.
-                                <br>
-
-                                &#x2713; Fast moving items.
-                                <br>
-
-                                &#x2713; Dump stock & dead stock.
-                                <br>
-
-                                &#x2713; Peak of business rush hour for effective and efficient staff
-                                management.
-                                <br>
-
-                                &#x2713; Daily sales statistics, sales returns, stock items and short stocks.
-                        </div>
-                        <div class="tab-pane px-3 fade p-2" id="v-pills-User" role="tabpanel"
-                            aria-labelledby="v-pills-User-tab">
-                            <h4 class="display-6 font-italic mb-4">User control Management</h4>
-                            <p class="font-italic fs-6 text-muted mb-2">
-
-                                &#x2713; Provision to assign computer system-specific grant/limit of access
-                                to business data restricts users from accessing data beyond the necessity of their
-                                professional scope.
-                                <br>
-
-                                &#x2713; Ability to create login IDs, user groups, functionality groups, and
-                                capture Action History help to manage access rights effectively.
-                                <br>
-
-                                &#x2713; The power to determine role-specific access to specific areas of the
-                                application and the tenacity to create additional passwords give total control over data
-                                security.
-                        </div>
+                <!-- Tabs content -->
+                <div class="tab-content shadow rounded bg-white" id="v-pills-tabContent"
+                    style="height: fit-content;">
+                    <div class="d-flex justify-content-center text-center p-0">
+                        <h5 class="display-5 font-italic mb-2 p-0">Module</h5>
+                    </div>
+                    <div class="tab-pane px-3 fade show active p-2" id="v-pills-Employee" role="tabpanel"
+                        aria-labelledby="v-pills-Employee-tab">
+                        <h4 class="display-6 font-italic mb-4">Employee Management</h4>
+                        <p class="font-italic fs-6 text-muted mb-2">
+
+                            &#x2713; Skyfinch's robust software platform enables users to simultaneously access and work on multiple levels and layers of data like 20+ employee-data types, reporting hierarchy with organization chart, employee directory, etc. <br>
+                            &#x2713; Facility to track and monitor company assets used by employees, enables anytime access to the all information about the assets. This is helpful especially when an employee is promoted or transferred, or resigns<br>
+                            &#x2713; The system is built to accommodate more than 30 lifecycle events of each employee and generates automated Reminders & Alerts like birthday/anniversary greetings, welcome note to new recruits, etc.
+                        </p>
+                    </div>
+
+                    <div class="tab-pane px-3 fade p-2" id="v-pills-policies" role="tabpanel"
+                        aria-labelledby="v-pills-policies-tab">
+                        <h4 class="display-6 font-italic mb-3">Fully customizable leave policies</h4>
+                        <p class="font-italic fs-6 text-muted mb-2">
+
+                            &#x2713; The HR & Payroll module comes with a range of built-in leave policies. Companies without a specific leave policy can choose from that range, the policy that suits the best and be digitally benefited<br>
+                            &#x2713; The system allows the company-policy-specific customized configuration of granting/denying leave, leave availing restrictions, week end policies, leave pro rating, leave year end processing, etc<br>
+                            &#x2713; Skyfinch gives unlimited scope for defining any number of leave types like, earned leave, sick leave, casual leave, maternity leave, marriage leave, etc, and assign exclusive policies for each kind of leave
+                        </p>
+                    </div>
+                    <div class="tab-pane px-3 fade p-2" id="v-pills-Holiday" role="tabpanel"
+                        aria-labelledby="v-pills-Holiday-tab">
+                        <h4 class="display-6 font-italic mb-4">Holiday lists</h4>
+                        <p class="font-italic fs-6 text-muted mb-2">
+
+                            &#x2713; The module is flexible to allow the definition of branch-wise state-specific and/or country-specific holiday policies for companies with branches across national and/or international borders<br>
+                            &#x2713; The solution come with the provision of selecting and adding Restricted Holidays (optional holidays) and set rules for these holidays according to the company leave policy
+                            &#x2713; Company's holiday list, including both general and restricted holidays can be easily prepared and published<br>
+                            &#x2713; The Employee Self Service (ESS) portal completely shifts the responsibility of applying for leave and its approval/rejection, and comp-off granting/denying activities to respective employees and concerned managers
+                        </p>
+                    </div>
+                    <div class="tab-pane px-3 fade p-2" id="v-pills-Attendance" role="tabpanel"
+                        aria-labelledby="v-pills-Attendance-tab">
+                        <h4 class="display-6 font-italic mb-4">Attendance capture from varied sourcest</h4>
+                        <p class="font-italic fs-6 text-muted mb-2">
+
+                            &#x2713; The Skyfinch attendance management software captures real-time attendance data from all relevant sources and seamlessly integrates the same with the payroll module<br>
+                            &#x2713; Assigning specific login IP address for each employee within the office intranet allows employees to mark their attendance, while still ruling out the possibility of any misuse<br>
+                            &#x2713; The latest Geo Mark feature allows employees to mark their attendance within the predefined coordinates set for the office premises or from on-site client locations using Skyfinch Mobile App<br>
+                            &#x2713; Managers can assign or change the shifts of their team members through the ease of the ESS portal<br>
+                            &#x2713; Attendance regularization can be done through the ESS portal by employees themselves. This will trigger a notification to the manager and the manager can review and approve or disapprove regularization requests in real time.
+                    </div>
+                    <div class="tab-pane px-3 fade p-2" id="v-pills-salary" role="tabpanel"
+                        aria-labelledby="v-pills-salary-tab">
+                        <h4 class="display-6 font-italic mb-4">Configurable salary structure</h4>
+                        <p class="font-italic fs-6 text-muted mb-2">
+
+                            &#x2713;  Skyfinch HR & Payroll module's in-built payroll calculator is flexible to handle any type of salary structure <br>    
+                            &#x2713; The solution is highly customizable to generate accurate payroll based on company-specific salary structure, specifications, statutory requirements, and employment category for each and every employee<br>
+                            &#x2713; he robustness of the system can accommodate any number of standard as well as highly specific salary components in its repository and create salary structures designed to align with all the industry-specific and statutory norms of any business
+                    </div>
+                    <div class="tab-pane px-3 fade p-2" id="v-pills-Automate" role="tabpanel"
+                        aria-labelledby="v-pills-Automate-tab">
+                        <h4 class="display-6 font-italic mb-4">Automate reimbursements, loans and advances</h4>
+                        <p class="font-italic fs-6 text-muted mb-2">
+
+                            &#x2713; In addition to accommodating all payroll requisites Skyfinch HR & Payroll module also enables the furnishing of reimbursements, loans and advances for the benefit of employees. Such beneficial aspects facilitated by the module are:<br>
+                            &#x2713; Extensive reimbursement configurations
+                            &#x2713; Monthly/ annual entitlements<br>
+                            &#x2713; Claims processing with limit checking<br>
+                            &#x2713; Providing loans with multiple repayment and interest options<br>
+                            &#x2713; Pausing loan deductions for a specified period<br>
+                            &#x2713; Automatic closure on completion of repayment<br>
+                            &#x2713; utomatic calculation of perquisites<br>
+                    </div>
+                    <div class="tab-pane px-3 fade p-2" id="v-pills-Complete" role="tabpanel"
+                        aria-labelledby="v-pills-Complete-tab">
+                        <h4 class="display-6 font-italic mb-4">Complete payroll processing</h4>
+                        <p class="font-italic fs-6 text-muted mb-2">
+
+                            &#x2713; Skyfinch's integrated solution for HR & Payroll automatically calculates and generates accurate payrolls for each employee at the very click of a button as per the pre-defined data and formula registered in the system<br>
+                            &#x2713; The solution ensures the accuracy of Payroll through its faculty to verify each payroll by comparing current and previous month's payroll and by facilitating the customization of salary register and payroll statements
+                    </div>
+                    <div class="tab-pane px-3 fade p-2" id="v-pills-payroll" role="tabpanel"
+                        aria-labelledby="v-pills-payroll-tab">
+                        <h4 class="display-6 font-italic mb-4">Automated payroll inputs and pay slips</h4>
+                        <p class="font-italic fs-6 text-muted mb-2">
+
+                            &#x2713; Skyfinch payroll software, through its integration with the leave and attendance details of employees, seamlessly transfers vital data automatically into the process of payroll generation thereby enabling:<br>
+                            &#x2713; Access and select multiple pay-slip formats<br>
+                            &#x2713; Process increment components into present salary structure<br>
+                            &#x2713; Process one-time payment and deductions<br>
+                            &#x2713; Calculate and automate full and final settlements<br>
+                            &#x2713; Calculate LOP and LOP reversals
+                    </div>
+                    <div class="tab-pane px-3 fade p-2" id="v-pills-Statutory" role="tabpanel"
+                        aria-labelledby="v-pills-Statutory-tab">
+                        <h4 class="display-6 font-italic mb-4">Statutory compliance</h4>
+                        <p class="font-italic fs-6 text-muted mb-2">
+
+                            &#x2713; The solution is built to absolutely comply with all statutory requirements and is flexible to accommodate all updates essential for incorporating the necessities that may arise out of all statutory nuances or amendments<br>
+                            &#x2713; The following are some of the aspects that the Skyfinch Payroll system provides to ensure the compliance of Payroll with statutory requisites:<br>
+                            &#x2713; Monthly ESI computation and Statement generation<br>
+                            &#x2713; Gratuity Appropriation<br>
+                            &#x2713; PT with all state-specific rules built in<br>
+                            &#x2713; Total TDS calculations and online filing of TDS returns<br>
+                            &#x2713; Bonus calculations<br>
+                            &#x2713; Reporting Labor Welfare Fund calculation and deductions<br>
+                            &#x2713; Monthly EPF Statement<br>
+                            &#x2713; PF calculation and ECR File Generation<br>
+                    </div>
+                    <div class="tab-pane px-3 fade p-2" id="v-pills-ESS" role="tabpanel"
+                        aria-labelledby="v-pills-ESS-tab">
+                        <h4 class="display-6 font-italic mb-4">ESS portal - Payroll</h4>
+                        <p class="font-italic fs-6 text-muted mb-2">
+
+                            &#x2713; The Skyfinch Employee Self-service portal gives the scope to view pay-slips, Reimbursement claims, total earnings statements, Reimbursement/ PF/ YTD statements; and loan details like installments paid, balance payable, etc<br>
+                            &#x2713; The system also gives the provision to compare income tax plans and load the best tax-saving plan for payroll consideration; and to submit final IT Proof Of Investments and FBP, reimbursement claims, IT declaration and POI
+                    </div>
+                    <div class="tab-pane px-3 fade p-2" id="v-pills-Mobile" role="tabpanel"
+                        aria-labelledby="v-pills-Mobile-tab">
+                        <h4 class="display-6 font-italic mb-4">Mobile app for employees and managers</h4>
+                        <p class="font-italic fs-6 text-muted mb-2">
+
+                            &#x2713; Skyfinch Mobile App for employees and managers brings the concerned HR and payroll related details on to the smart phone device of each employee, thereby enabling them to:<br>
+                            &#x2713; View, upload and update information pertaining to income tax, tax-saving plans, deductions, etc; and<br>
+                            &#x2713; View pay-slips, total earnings/ PF/ YTD statements<br>
+                            &#x2713; The solution's Mobile App facility for managers empowers them to:<br>
+                            &#x2713; Approve/reject leave requests of team members with a single tap on their smart phone device<br>
+                            &#x2713; View category-wise leave balances, holiday details, and all leave related information of team members<br>
+                            &#x2713; Monitor the presence of team members by means of the Geo Mark Attendance Marking feature, which automatically signs-in/signs-out employees the moment they enter/exit the location coordinates that can be predefined for unlimited number of office locations, on-site/customer locations, vendor premises, etc.<br>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
+    </div>
+</section>
 
    <!-- Team Start -->
    <section class="bg-11 pt-lg-2 pb-lg-0 pt-4 pb-1">

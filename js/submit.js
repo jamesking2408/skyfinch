@@ -130,7 +130,9 @@ document.querySelector("#callBack").addEventListener("click", function () {
     }
 });
 
-function contact_sub() {
+
+function contact_sub(){
+    
     const na = document.querySelector("#na").value;
     const id = document.querySelector("#id").value;
     const sub = document.querySelector("#sub").value;

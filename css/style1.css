@@ -53,9 +53,82 @@
 }
 
 
-.bg-12 {
-    background-image: linear-gradient(to top, #040405, #060517, #090522, #0a042d, #080438, #060540, #060648, #070550, #080658, #0b075f, #0d0767, #10086f);
-}
+    .bg-12 {
+        background-image: linear-gradient(to top, #040405, #060517, #090522, #0a042d, #080438, #060540, #060648, #070550, #080658, #0b075f, #0d0767, #10086f);
+    }
+    .bg-12 .row {
+        margin-top: 50px!important;
+    }
+    @media (min-width:300px) and (max-width:900px) {
+        .bg-12 .row {
+            margin-top: 0px!important;
+        }
+    }
+
+    .bg-12 .tab-content {
+        height: 470px!important;
+        overflow-y:scroll;
+        overflow-x: hidden;
+    }
+    .bg-12 .tab-content:hover {
+        overflow-y:scroll;
+    }
+    .bg-12 div.nav {
+        display: flex!important;
+        flex-wrap:nowrap;
+        row-gap: 3px;
+        height: 470px!important;
+        overflow-y:scroll!important;
+        overflow-x: hidden;
+        padding: 10px 10px 10px 10px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.842);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.25);
+    }
+    
+    /* width */
+    .bg-12 div.nav::-webkit-scrollbar {
+    width: 10px!important;
+    }
+    /* Track */
+    .bg-12 div.nav::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #7270700a!important; 
+    border-radius: 10px!important;
+    }
+
+    /* Handle */
+    .bg-12 div.nav::-webkit-scrollbar-thumb {
+    background: #c0bcbc!important; 
+    border-radius: 2px!important;
+    }
+        
+    /* Handle on hover */
+    .bg-12 div.nav::-webkit-scrollbar-thumb:active {
+    background: #414040!important; 
+    }
+
+    /* width */
+    .tab-content::-webkit-scrollbar {
+    width: 10px;
+    }
+    /* Track */
+    .tab-content::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #79767650; 
+    border-radius: 10px;
+    }
+
+    /* Handle */
+    .tab-content::-webkit-scrollbar-thumb {
+    background: #c0bcbc; 
+    border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    .tab-content::-webkit-scrollbar-thumb:active {
+    background: #414040; 
+    }
 
 @media (min-width:300px) and (max-width:550px){
     /* point of sales responsive */
@@ -74,9 +147,6 @@
     }
     .li-pos, li>.li-pos {
         font-size: 0.705rem!important;
-    }
-    li.li-pos1 {
-        margin-top: -7px!important;
     }
 
 }
@@ -333,7 +403,7 @@
 .border-hms {
     position: absolute;
     margin-left: 40px;
-    width: fit-content!important;
+    width: min-content!important;
     left: 0;
     bottom: 0;
     margin-bottom: 50px;
@@ -376,9 +446,6 @@
     }
     .li-hms, li>.li-hms {
         font-size: 0.605rem!important;
-    }
-    li.li-hms1 {
-        margin-top: -7px!important;
     }
 }
 
@@ -502,9 +569,6 @@
     .li-ssfinch, li>.li-ssfinch {
         font-size: 0.605rem!important;
     }
-    li.li-ssfinch1 {
-        margin-top: -7px!important;
-    }
 }
 /* Smart Skyfinch End */
 
@@ -562,9 +626,6 @@
     }
     .li-vms, li>.li-vms {
         font-size: 0.605rem!important;
-    }
-    li.li-vms1 {
-        margin-top: -7px!important;
     }
 }
 /* Visitor Management system End */
@@ -629,9 +690,6 @@
     .li-crm, li>.li-crm {
         font-size: 0.605rem!important;
     }
-    li.li-crm1 {
-        margin-top: -7px!important;
-    }
 }
 /* CRM End */
 
@@ -694,9 +752,6 @@
     }
     .li-ctm, li>.li-ctm {
         font-size: 0.605rem!important;
-    }
-    li.li-ctm1 {
-        margin-top: -7px!important;
     }
 }
 /* CTM End */
@@ -761,9 +816,6 @@
     .li-fms, li>.li-fms {
         font-size: 0.605rem!important;
     }
-    li.li-fms1 {
-        margin-top: -7px!important;
-    }
 }
 /* FMS End */
 
@@ -826,9 +878,6 @@
     }
     .li-ems, li>.li-ems {
         font-size: 0.605rem!important;
-    }
-    li.li-ems1 {
-        margin-top: -7px!important;
     }
 }
 /* EMS End */
@@ -898,9 +947,6 @@
     .li-pms, li>.li-pms {
         font-size: 0.605rem!important;
     }
-    li.li-pms1 {
-        margin-top: -7px!important;
-    }
     .card1 .img-pay {
         width: 300px!important; 
         height: 165px!important;
@@ -969,9 +1015,7 @@
     .li-sales, li>.li-sales {
         font-size: 0.605rem!important;
     }
-    li.li-sales1 {
-        margin-top: -7px!important;
-    }
+    
 }
 /* sales and Services End */
 
@@ -1036,8 +1080,6 @@
     .li-penq, li>.li-penq {
         font-size: 0.605rem!important;
     }
-    li.li-penq1 {
-        margin-top: -7px!important;
-    }
+
 }
 /* Product Enquiry End */

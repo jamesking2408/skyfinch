@@ -29,7 +29,7 @@
             if ($('#spinner').length > 0) {
                 $('#spinner').removeClass('show');
             }
-        }, 1000);
+        }, 500);
     };
     spinner();
 
@@ -176,6 +176,8 @@
     
     // End of back to top button
 
+
+
     // Facts counter
     $('.count').counterUp({
         delay: 10,
@@ -227,9 +229,8 @@
           moreText.css("display", "inline");
         }
     })
-
-    
-      
     //////////////////////////////////////////////////////////////////////////////////////////////////
+    
+
 
 })(jQuery);
