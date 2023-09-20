@@ -1083,3 +1083,12 @@
 
 }
 /* Product Enquiry End */
+
+/* 404 page */
+
+.bg-404 {
+    background-image: radial-gradient(circle, #fbfbfb, #ebecf9, #d8def8, #bfd1f7, #a1c6f6, #8dbff6, #77b8f6, #5ab2f6, #4dadf8, #3fa8fb, #30a3fd, #1e9eff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+}
