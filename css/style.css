@@ -8,14 +8,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 /* Target the body element */
-body {
+html,body {
     /* Internet Explorer 10+ */
     -ms-overflow-style: none;
 
     /* Firefox */
     scrollbar-width: none;
-    margin: 0;
-    padding: 0;
 }
 
 /* Target scrollbar in Webkit browsers (Safari and Chrome) */
@@ -214,7 +212,7 @@ input[data-autocompleted] {
     visibility: visible;
 }
 
-@media (max-width:590px) {
+@media (max-width:767px) {
     .chatbot-toggler {
         right: 23px;
         bottom: 45px;
@@ -290,15 +288,15 @@ input[data-autocompleted] {
     height: 560px;
 }
 
-@media (min-width:200px) and (max-width:850px) {
+@media (min-width:200px) and (max-width:950px) {
     .container1 {
-        margin: 0;
+        margin-top: 0;
         width: 100%;
     }
 
     .container2,
     .container2 img {
-        margin: 0;
+        margin-top: 0;
         width: 100%;
         height: 445px;
     }
@@ -415,7 +413,7 @@ input[data-autocompleted] {
     }
 }
 
-@media (min-width:510px) and (max-width:850px) {
+@media (min-width:510px) and (max-width:950px) {
     .mx-6 {
         margin-left: 6rem !important;
         margin-right: 6rem !important;
@@ -511,7 +509,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 
-@media (min-width:550px) and (max-width:850px) {
+@media (min-width:550px) and (max-width:950px) {
     .bg {
         height: 580px;
     }
@@ -530,7 +528,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
-@media (min-width:300px) and (max-width:550px) {
+@media (min-width:200px) and (max-width:950px) {
     .service-bg {
         object-fit: none;
         height: 520px;
@@ -615,7 +613,7 @@ input[type=number]::-webkit-outer-spin-button {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
-@media (min-width:300px) and (max-width:550px) {
+@media (min-width:200px) and (max-width:550px) {
     .contact_bg {
         height: 390px;
         padding: 0;
@@ -640,7 +638,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
-@media (min-width:550px) and (max-width:850px) {
+@media (min-width:550px) and (max-width:950px) {
     .contact_bg {
         height: 520px;
     }
@@ -783,7 +781,7 @@ a {
 
 /* responsive page */
 
-@media (min-width:300px) and (max-width:550px) {
+@media (min-width:200px) and (max-width:550px) {
     .back-to-top {
         right: 25px;
     }
@@ -966,7 +964,7 @@ h6,
     }
 }
 
-@media (min-width:300px) and (max-width:500px) {
+@media (min-width:200px) and (max-width:500px) {
     .dropdown-content1 {
         margin-top: -35px;
         margin-left: 108px !important;
@@ -1069,7 +1067,7 @@ b.cloud {
     transform: perspective(4cm);
 }
 
-@media (min-width:300px) and (max-width:500px) {
+@media (min-width:200px) and (max-width:500px) {
     .cloud h6 {
         top: 25px;
         left: 42px;
@@ -1305,7 +1303,7 @@ b.cloud {
     margin-right: 8rem !important;
 }
 
-@media (min-width: 300px) and (max-width:550px) {
+@media (min-width: 200px) and (max-width:550px) {
     .w-md-50 {
         width: 42% !important;
     }
@@ -1384,7 +1382,7 @@ b.cloud {
 }
 
 
-@media (min-width: 550px) and (max-width: 810px) {
+@media (min-width: 550px) and (max-width: 950px) {
     .main {
         background-color: #dde8ee;
         bottom: 8.5%;
@@ -1412,7 +1410,7 @@ b.cloud {
     }
 }
 
-@media (min-width: 300px) and (max-width:550px) {
+@media (max-width:767px) {
     .main {
         position: fixed;
         background-color: #dde8ee;
@@ -1433,7 +1431,7 @@ b.cloud {
 
     #forms {
         position: fixed;
-        bottom: 8.5%;
+        bottom: 8% !important;
         left: 83% !important;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         border-radius: 15px;
@@ -1555,7 +1553,7 @@ b.cloud {
 }
 
 
-@media (min-width:300px) and (max-width:580px) {
+@media (min-width:200px) and (max-width:580px) {
     .bg-01 {
         height: 69.68rem !important;
     }
@@ -1734,7 +1732,7 @@ b.cloud {
     z-index: -1;
 }
 
-@media (min-width:300px) and (max-width:580px) {
+@media (min-width:200px) and (max-width:580px) {
     .bg-05 {
         height: 99.85rem !important;
     }
@@ -1768,7 +1766,7 @@ b.cloud {
     z-index: -1;
 }
 
-@media (min-width:300px) and (max-width:580px) {
+@media (min-width:200px) and (max-width:580px) {
     .bg-5 {
         height: 103.85rem !important;
     }
@@ -1922,13 +1920,13 @@ b.cloud {
     height: 180px;
 }
 
-@media (min-width: 300px) and (max-width: 550px) {
+@media (min-width: 200px) and (max-width: 550px) {
     .bg-04 {
         background-size: 100% 50%;
     }
 }
 
-@media (min-width: 550px) and (max-width: 810px) {
+@media (min-width: 550px) and (max-width: 950px) {
     .bg-04 {
         background-size: 100% 48%;
     }
@@ -1970,13 +1968,13 @@ b.cloud {
     transition: 0.5s;
 }
 
-@media (min-width: 550px) and (max-width: 810px) {
+@media (min-width: 550px) and (max-width: 950px) {
     .pop3 {
         width: 550px;
     }
 }
 
-@media (min-width:300px) and (max-width:500px) {
+@media (min-width:200px) and (max-width:500px) {
 
     .arr1,
     .arr2 {
@@ -1996,7 +1994,7 @@ b.cloud {
     }
 }
 
-@media (min-width:330px) and (max-width:850px) {
+@media (min-width:200px) and (max-width:950px) {
     .nav-icons {
         margin-right: -90px;
     }
@@ -2491,7 +2489,7 @@ b.cloud {
     border-radius: 80px;
 }
 
-@media (min-width: 550px) and (max-width: 810px) {
+@media (min-width: 550px) and (max-width: 950px) {
     .callback {
         width: 630px;
         border-radius: 15px;
@@ -2499,7 +2497,7 @@ b.cloud {
     }
 }
 
-@media (min-width: 300px) and (max-width: 550px) {
+@media (min-width: 200px) and (max-width: 550px) {
     .callback {
         width: 320px;
         border-radius: 15px;
