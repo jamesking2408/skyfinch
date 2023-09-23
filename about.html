@@ -142,12 +142,14 @@
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="service.html" class="nav-item nav-link">Service</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Solutions</a>
+                        <a href="#" class="nav-link dropdown-toggle" id="solutionsDropdown">Solutions</a>
                         <div class="dropdown-menu border-light m-0 p-0">
+                            <!-- Add IDs to buttons for easier targeting -->
                             <div class="submenu w-100 px-3 py-0">
-                                <button class="dropbtn1 w-100 p-1">Application
-                                    <span class="arrow"></span></button>
-                                <div class="dropdown-content1 text-dec px-2 py-2">
+                                <button class="dropbtn1 w-100 p-1" id="applicationBtn">Application
+                                    <span class="arrow"></span>
+                                </button>
+                                <div class="dropdown-content1 application text-dec px-2 py-2">
                                     <a href="sales.html">POS</a>
                                     <a href="hms.html">Hotel management system</a>
                                     <a href="rms.html">Restaurant management system</a>
@@ -157,9 +159,10 @@
                             </div>
                             <br class="d-lg-none d-sm-block">
                             <div class="submenu w-100 px-3 py-0">
-                                <button class="dropbtn1 w-100 p-1">Web
-                                    <span class="arrow1"></span></button>
-                                <div class="dropdown-content1 text-dec px-2 py-2">
+                                <button class="dropbtn1 w-100 p-1" id="webBtn">Web
+                                    <span class="arrow1"></span>
+                                </button>
+                                <div class="dropdown-content1 web text-dec px-2 py-2">
                                     <a href="crm.html">CRM</a>
                                     <a href="ctm.html">Corporate Travel Management</a>
                                     <a href="fms.html">Fleet management system</a>

@@ -1,8 +1,6 @@
 (function ($) {
     "use strict";
 
-
-
     // <!-- Change select option method -->
     
     $(document).ready(function() {

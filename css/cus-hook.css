@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500&display=swap');
 
-@media (max-width:767px) {
+@media (min-width:300px) and (max-width:500px) {
 	.owl-carousel .item .card, .owl-carousel .item {
 		border-radius: 12px 12px 15px 15px;
 	}
@@ -25,9 +25,7 @@
 		-webkit-transform: scale3d(1.0, 1.0, 1);
 		transform: scale3d(1.0, 1.0, 1);
 	}
-	#customers-testimonials .owl-item.active.center .item .card {
-		width: 250px !important;
-	}
+
 	#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span, #customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
 		background: #355EFC;
 		transform: translate3d(0px, -50%, 0px) scale(0.6);

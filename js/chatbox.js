@@ -166,6 +166,7 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
  
+
 document.addEventListener('DOMContentLoaded', function () {
 
     // Toggle dropdown on click
@@ -215,3 +216,4 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
