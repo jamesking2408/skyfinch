@@ -57,7 +57,10 @@
         background-image: linear-gradient(to top, #040405, #060517, #090522, #0a042d, #080438, #060540, #060648, #070550, #080658, #0b075f, #0d0767, #10086f);
     }
     .bg-12 .row {
-        margin-top: 50px!important;
+        margin-top: 80px!important;
+    } 
+    .bg-12 .row .tab-row1 {
+        height: 370px !important;
     }
     @media (min-width:300px) and (max-width:900px) {
         .bg-12 .row {
@@ -353,11 +356,18 @@
     .hov2 .card-body i {
         font-size: 40px;
     }
+    .team-item .card{
+        width: 280px !important;
+        height: 275px !important;
+    }
+    .team-item .card .card-body {
+        padding-bottom: 5px !important;
+    }
     /* Special End */
     @media (min-width:300px) and (max-width:500px) {
         div.team-item, .team-item .card {
-            width: 150px;
-            height: 180px;
+            width: 150px !important;
+            height: 180px !important;
         }
         .all-team3 {
             margin-left: 88px!important;

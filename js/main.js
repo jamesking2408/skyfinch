@@ -1,6 +1,8 @@
 (function ($) {
     "use strict";
 
+
+
     // <!-- Change select option method -->
     
     $(document).ready(function() {
@@ -29,7 +31,7 @@
             if ($('#spinner').length > 0) {
                 $('#spinner').removeClass('show');
             }
-        }, 500);
+        }, 1500);
     };
     spinner();
 

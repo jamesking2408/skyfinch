@@ -166,3 +166,52 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
  
+document.addEventListener('DOMContentLoaded', function () {
+
+    // Toggle dropdown on click
+    var solutionsDropdown = document.getElementById('solutionsDropdown');
+    solutionsDropdown.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var dropdownMenu = this.nextElementSibling;
+        dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+    });
+
+    // Toggle dropdown submenu on button click
+    var applicationBtn = document.getElementById('applicationBtn');
+    var webBtn = document.getElementById('webBtn');
+    var applicationContent = document.querySelector('.dropdown-content1.application');
+    var webContent = document.querySelector('.dropdown-content1.web');
+
+    function toggleDropdownContent(e, content) {
+        e.preventDefault();
+        e.stopPropagation();
+        content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+    }
+
+    applicationBtn.addEventListener('click', function (e) {
+        toggleDropdownContent(e, applicationContent);
+        webContent.style.display = 'none';
+    });
+
+    webBtn.addEventListener('click', function (e) {
+        toggleDropdownContent(e, webContent);
+        applicationContent.style.display = 'none';
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function (e) {
+        var target = e.target;
+        if (!target.closest('.navbar-nav .nav-item.dropdown')) {
+            var dropdownMenus = document.querySelectorAll('.navbar-nav .nav-item.dropdown .dropdown-menu');
+            dropdownMenus.forEach(function (menu) {
+                menu.style.display = 'none';
+            });
+        }
+        if (!target.closest('.dropdown-content1')) {
+            document.querySelectorAll('.dropdown-content1').forEach(function (content) {
+                content.style.display = 'none';
+            });
+        }
+    });
+});

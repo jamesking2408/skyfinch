@@ -14,7 +14,7 @@ function msgButton() {
     const sales = document.querySelector("#cus-ss").value;
     const txt = document.querySelector("#cus-text").value;
 
-    if((cus_name == "")&&(num == "")&&(mail == "")&&(campy == "")&&(job == "")&&(cont == "")&&(work == "")&&(sales == "")&&(txt == "")&&(txt.length < 30)){
+    if((cus_name == "")||(num == "")||(mail == "")||(campy == "")||(job == "")||(cont == "")||(work == "")||(sales == "")||(txt == "")||(txt.length < 30)){
         document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
         document.querySelector(".sub-popup1 p").innerHTML = "Check your All Fields!";
         popup1.classList.add("open-popup");
@@ -83,5 +83,6 @@ function closePopup() {
 }
 function closePopup1() {
     popup1.classList.remove("open-popup");
+    document.cus_form.reset();
 }
 
