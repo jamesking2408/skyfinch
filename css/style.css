@@ -304,7 +304,7 @@ input[data-autocompleted] {
     .container2,
     .container2 img {
         margin-top: 0;
-        width: 10%;
+        width: 100vw;
         height: 445px;
     }
 
@@ -999,7 +999,7 @@ h6,
     display: flex;
     justify-content: start;
     align-items: center;
-    width: 100%;
+    width: 100vw;
 }
 
 .submenu:hover .dropbtn1,
