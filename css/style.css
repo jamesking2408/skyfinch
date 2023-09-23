@@ -8,7 +8,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 /* Target the body element */
-html,body {
+@media (min-width:767px) {
+    html,body {
+        margin: 0 !important;
+        padding: 0 !important;
+    }    
+}
+
+body {
     /* Internet Explorer 10+ */
     -ms-overflow-style: none;
 
