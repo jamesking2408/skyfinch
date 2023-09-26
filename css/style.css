@@ -8,19 +8,13 @@
 
 /* Target the body element */
 html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-body {
-    /* Internet Explorer 10+ */
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
     -ms-overflow-style: none;
-
-    /* Firefox */
     scrollbar-width: none;
 }
-
 /* Target scrollbar in Webkit browsers (Safari and Chrome) */
 body::-webkit-scrollbar {
     display: none;
@@ -60,7 +54,7 @@ input[data-autocompleted] {
     cursor: pointer;
     border-radius: 50%;
     transition: all .2s ease;
-    z-index: 9999;
+    z-index: 99;
 
 }
 
@@ -100,7 +94,7 @@ input[data-autocompleted] {
     -moz-box-shadow: 1px 1px 10px 5px #5e95e7;
     box-shadow: 1px 1px 10px 5px #5e95e7;
     transition: all .1s ease;
-    z-index: 9999;
+    z-index: 99999;
 }
 
 .show-chatbot .chatbot {
@@ -219,13 +213,13 @@ input[data-autocompleted] {
 
 @media (max-width:590px) {
     .chatbot-toggler {
-        right: 23px;
-        bottom: 45px;
+        right: 10%;
+        bottom: 4%;
     }
 
     .chatbot {
-        right: 65px;
-        bottom: 80px;
+        right: 18%;
+        bottom: 9%;
         height: 368px;
         width: 240px;
     }
@@ -285,7 +279,7 @@ input[data-autocompleted] {
 
 .container1 {
     margin-top: 0%;
-    width: 100%;
+    width: 100vw !important;
 }
 
 .container2 {
@@ -296,13 +290,13 @@ input[data-autocompleted] {
 @media (min-width:300px) and (max-width:850px) {
     .container1 {
         margin-top: 0;
-        width: 100%;
+        width: 100vw !important;
     }
 
     .container2,
     .container2 img {
         margin-top: 0;
-        width: 100%;
+        width: 100vw;
         height: 445px;
     }
 
@@ -393,7 +387,7 @@ input[data-autocompleted] {
 @media (min-width:300px) and (max-width:550px) {
     .img-abt {
         max-width: 100% !important;
-        height: 390px;
+        height: 420px !important;
     }
 
     .boder-blur h1,
@@ -405,12 +399,12 @@ input[data-autocompleted] {
     .boder-blur {
         display: inline-block;
         width: 55%;
-        margin-bottom: 335px;
+        left: 10% !important;
+        bottom: 50% !important;
     }
 
     .boder-blur:hover {
         width: 55%;
-        margin-bottom: 335px;
     }
 
     .abt-icon {
@@ -522,8 +516,8 @@ input[type=number]::-webkit-outer-spin-button {
     .service-border {
         display: -moz-inline-stack !important;
         margin-left: 40px;
-        width: 35%;
-        bottom: 655px;
+        left: 10% !important;
+        bottom: 40% !important;
     }
 
     .service-border:hover {
@@ -544,8 +538,11 @@ input[type=number]::-webkit-outer-spin-button {
         max-width: 100% !important;
         height: 300px;
     }
-
+    .vw-nav {
+        width: 100vw !important;
+    }
     .container1 {
+        width: 100vw;
         padding: 0;
     }
 
@@ -558,12 +555,12 @@ input[type=number]::-webkit-outer-spin-button {
     .service-border {
         display: -moz-inline-stack !important;
         width: 50%;
-        margin-bottom: 14rem;
+        left: 10% !important;
+        bottom: 40% !important;
     }
 
     .service-border:hover {
         width: 50%;
-        margin-bottom: 14rem;
     }
 }
 
@@ -620,7 +617,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media (min-width:300px) and (max-width:550px) {
     .contact_bg {
-        height: 390px;
+        height: 450px;
         padding: 0;
     }
 
@@ -633,12 +630,12 @@ input[type=number]::-webkit-outer-spin-button {
     .contact-border {
         display: -moz-inline-stack !important;
         width: 50%;
-        margin-bottom: 350px;
+        left: 10% !important;
+        bottom: 50% !important;
     }
 
     .contact-border:hover {
         width: 50%;
-        margin-bottom: 350px;
     }
 }
 
@@ -788,12 +785,15 @@ a {
 
 @media (min-width:300px) and (max-width:550px) {
     .back-to-top {
-        right: 25px;
+        right: 10% !important;
     }
-
+    .b-2-top {
+        right: 10% !important;
+        bottom: 20% !important;
+    }
     .page-top {
-        right: 25px;
-        bottom: 100px;
+        right: 10% !important;
+        bottom: 12% !important;
     }
 }
 
@@ -973,6 +973,7 @@ h6,
         margin-top: -35px;
         margin-left: 108px !important;
         width: 180px;
+        z-index: 99;
     }
 }
 
@@ -1389,7 +1390,7 @@ b.cloud {
     }
 
     .bg-02 img {
-        width: 400px;
+        width: 400px !important;
     }
 
     .display-my {
@@ -1412,8 +1413,8 @@ b.cloud {
     .main {
         position: fixed;
         background-color: #dde8ee;
-        bottom: 18.5% !important;
-        left: 15.85%;
+        bottom: 16.5% !important;
+        left: 35.85%;
         width: min(100%, 238px);
         border: 1px solid rgb(10, 79, 228);
         -webkit-box-shadow: 0 0 21px 22px #298ffd;
@@ -1422,15 +1423,17 @@ b.cloud {
         border-radius: 35px 35px 35px 25px;
         z-index: 99999;
     }
-
+    .h-crus {
+        height: 500px !important;
+    }
     .bg-02 img {
         width: 290px;
     }
 
     #forms {
         position: fixed;
-        bottom: 8.5%;
-        left: 83% !important;
+        bottom: 7.5% !important;
+        left: 82% !important;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         border-radius: 15px;
         z-index: 99;
@@ -1506,8 +1509,8 @@ b.cloud {
 
 #forms {
     position: fixed;
-    bottom: 8.5%;
-    left: 93.6%;
+    bottom: 9.5%;
+    left: 94.8%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 15px;
     z-index: 99;
@@ -1992,7 +1995,7 @@ b.cloud {
     }
 }
 
-@media (max-width:767px) {
+@media (max-width:867px) {
     .nav-icons {
         margin-right: -90px;
     }

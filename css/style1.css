@@ -138,15 +138,15 @@
     .border-pos {
         display: -moz-inline-stack;
         width: 200px!important;
-        margin-left: 40px;
-        margin-bottom: 280px;
+        left: 10% !important;
+        bottom: 40% !important;
     }
     .border-pos h1 {
         font-size: 1.505rem;
     }
     .bg-12 {
         position: relative;
-        height:inherit;
+        height:600px;
     }
     .li-pos, li>.li-pos {
         font-size: 0.705rem!important;
@@ -183,8 +183,8 @@
         }
         .btn-pq .button {
             display: -moz-inline-stack;
-            margin-left: -21.95rem!important;
-            margin-bottom: 16rem!important;
+            left: -20rem!important;
+            bottom: 25rem!important;
         }
         .btn-pq a.button {
             font-size: 1.105rem;
@@ -447,8 +447,8 @@
     .border-hms{
         display: -moz-inline-stack!important;
         width: 230px!important;
-        margin-left: 40px!important;
-        margin-bottom: 260px!important;
+        left: 10% !important;
+        bottom: 40% !important;
     }
     .border-hms h1 {
         font-size: 0.905rem;
@@ -508,8 +508,8 @@
     .border-rms{
         display: -moz-inline-stack!important;
         width: 250px!important;
-        margin-left: 40px!important;
-        margin-bottom: 260px!important;
+        left: 10% !important;
+        bottom: 40% !important;
     }
     .border-rms h1 {
         font-size: 0.895rem;
@@ -568,8 +568,8 @@
     .border-ssfinch{
         display: -moz-inline-stack!important;
         width: 170px!important;
-        margin-left: 40px!important;
-        margin-bottom: 260px!important;
+        left: 10% !important;
+        bottom: 40% !important;
     }
     .border-ssfinch h1 {
         font-size: 0.895rem;
@@ -625,8 +625,8 @@
         display: -moz-inline-stack!important;
         width: 220px!important;
         height: 60px;
-        margin-left: 40px!important;
-        margin-bottom: 260px!important;
+        left: 10% !important;
+        bottom: 40% !important;
     }
     .border-vms h1 {
         font-size: 0.895rem;
@@ -688,8 +688,8 @@
         display: -moz-inline-stack!important;
         width: 220px!important;
         height: 60px;
-        margin-left: 40px!important;
-        margin-bottom: 260px!important;
+        left: 10% !important;
+        bottom: 40% !important;
     }
     .border-crm h1 {
         font-size: 0.895rem;
@@ -751,8 +751,8 @@
         display: -moz-inline-stack!important;
         width: 240px!important;
         height: 60px;
-        margin-left: 40px!important;
-        margin-bottom: 260px!important;
+        left: 10% !important;
+        bottom: 40% !important;
     }
     .border-ctm h1 {
         font-size: 0.895rem;
@@ -814,8 +814,8 @@
         display: -moz-inline-stack!important;
         width: 240px!important;
         height: 60px;
-        margin-left: 40px!important;
-        margin-bottom: 260px!important;
+        left: 10% !important;
+        bottom: 40% !important;
     }
     .border-fms h1 {
         font-size: 0.895rem;
@@ -877,8 +877,8 @@
         display: -moz-inline-stack!important;
         width: 240px!important;
         height: 60px;
-        margin-left: 40px!important;
-        margin-bottom: 260px!important;
+        left: 10% !important;
+        bottom: 40% !important;
     }
     .border-ems h1 {
         font-size: 0.895rem;
@@ -945,8 +945,8 @@
         display: -moz-inline-stack!important;
         width: 240px!important;
         height: 60px;
-        margin-left: 40px!important;
-        margin-bottom: 260px!important;
+        left: 10% !important;
+        bottom: 40% !important;
     }
     .border-pms h1 {
         font-size: 0.895rem;
@@ -1013,8 +1013,8 @@
         display: -moz-inline-stack!important;
         width: 240px!important;
         height: 60px;
-        margin-left: 40px!important;
-        margin-bottom: 260px!important;
+        left: 10% !important;
+        bottom: 40% !important;
     }
     .border-sales h1 {
         font-size: 0.895rem;
@@ -1078,8 +1078,8 @@
         display: -moz-inline-stack!important;
         width: 240px!important;
         height: 60px;
-        margin-left: 40px!important;
-        margin-bottom: 260px!important;
+        left: 10% !important;
+        bottom: 40% !important;
     }
     .border-penq h1 {
         font-size: 0.895rem;
