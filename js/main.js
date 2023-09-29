@@ -214,7 +214,7 @@
         owl.trigger('stop.owl.autoplay')
     })
     //<!-- OwlCarousel script end -->
-    document.querySelector("#myBtn").addEventListener("click", function() {
+    $("#myBtn").click(function() {
         var dots = $("#dots");
         var moreText = $("#more");
         var btnText = $("#myBtn");

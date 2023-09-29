@@ -82,8 +82,7 @@ function msgButton() {
 }
 
 // Details are Request form in service page
-
-document.querySelector("#callBack").addEventListener("click", function () {
+function callBack() {
     let name1 = document.querySelector("#na").value;
     let mail = document.querySelector("#Id").value;
     let mob = document.querySelector("#mob").value;
@@ -128,7 +127,7 @@ document.querySelector("#callBack").addEventListener("click", function () {
         console.log("\t\t\t REQUEST FORM DETAILS"+"\n Name : " + name1 + " " + "\n Phone Number: " + mob + " " + "\n Mail ID: " + mail + " " + "\n Subject: " + sub+ " " + "\n Project Details: " + txt);
         popup.classList.add("open-popup");
     }
-});
+}
 
 
 function contact_sub(){
@@ -188,3 +187,4 @@ function closePopup2() {
 function closePopup3() {
     popup1.classList.remove("open-popup");
 }
+

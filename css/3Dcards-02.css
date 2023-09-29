@@ -16,7 +16,7 @@
     
     .cards.left {
         left: 0;
-        transform: translateX(-50%) scale(0.9);
+        transform: translateX(-5%) scale(0.9);
         transition-duration: 0.9s;
         /* width: 290px;
         left: 0;*/
@@ -24,7 +24,7 @@
     
     .cards.right {
         right: 0;
-        transform: translateX(50%) scale(0.9);
+        transform: translateX(5%) scale(0.9);
         transition-duration: 0.9s;
         /* width: 290px;
         right: 0;*/

@@ -2,11 +2,32 @@
 
 /* import google font poppins */
 
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap'); */
+@import url('./googleWebFonts/blackOps.css');
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('googleWebFonts/poppins.css');
 
 /* Target the body element */
+.top-bar.bg-blue {
+    background: #418CFD;
+}
+.top-bar .fa {
+    color: #1e375f;
+    font-size: 13px;
+}
+.top-bar medium {
+    font-family: 'Black Ops One', cursive;
+    background: #418CFD;
+    background: -webkit-linear-gradient(to bottom, #418CFD 0%, #FFFFFF 20%);
+    background: -moz-linear-gradient(to bottom, #418CFD 0%, #FFFFFF 20%);
+    background: linear-gradient(to bottom, #418CFD 0%, #FFFFFF 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    font-size: 13px;
+    font-weight: 10px;
+    letter-spacing: 0.568px;
+}
 html, body {
     width: 100% !important;
     height: 100% !important;
@@ -952,7 +973,7 @@ h6,
     display: none;
     position: absolute;
     background-color: #ffffff;
-    width: 280px;
+    width: 300px;
     margin-top: -30px;
     margin-left: 140px;
     border-radius: 10px;
@@ -1556,7 +1577,7 @@ b.cloud {
 
 @media (min-width:300px) and (max-width:580px) {
     .bg-01 {
-        height: 69.68rem !important;
+        height: inherit !important;
     }
 
     .bg-01::before {
@@ -1592,7 +1613,7 @@ b.cloud {
     background-image: url(../img/bg8.jpg);
     background-position: top;
     background-repeat: no-repeat;
-    height: 250px;
+    height: inherit;
     background-size: 100% 55px;
     transition: .5s !important;
     border: 1px solid transparent !important;
@@ -1769,7 +1790,7 @@ b.cloud {
 
 @media (min-width:300px) and (max-width:580px) {
     .bg-5 {
-        height: 103.85rem !important;
+        height: inherit !important;
     }
 }
 
@@ -1848,7 +1869,7 @@ b.cloud {
 
 @media (max-width: 992px) {
     .bg-5 .container {
-        padding-bottom: 200px !important;
+        width: inherit !important;
     }
     /* col-6 represent this style */
     .col-bg5 {
@@ -1997,7 +2018,7 @@ b.cloud {
 
 @media (max-width:867px) {
     .nav-icons {
-        margin-right: -90px;
+        margin-right: -100px;
     }
     .nav-icons a {
         font-size: 10px !important;
@@ -2032,7 +2053,7 @@ b.cloud {
 @media (min-width:300px) and (max-width:550px) {
     .bg-09 {
         width: 100%;
-        height: 81.79rem;
+        height: inherit;
         object-fit: none;
         background-size: auto;
         background-position: center center;
@@ -2091,7 +2112,7 @@ b.cloud {
 
 .tooltip-content {
     position: absolute;
-    z-index: 9999;
+    z-index: 9999 !important;
     width: 240px;
     background-image: -o-linear-gradient(rgba(47, 0, 255, 0.09) 100%, rgba(47, 0, 255, 0.09) 100%);
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(47, 0, 255, 0.09)), to(rgba(47, 0, 255, 0.09)));
@@ -2099,9 +2120,9 @@ b.cloud {
     -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
     color: black;
-    -ms-transform: translateY(-120px) translateX(-19%);
-    transform: translateY(-120px) translateX(-19%);
-    -webkit-transform: translateY(-120px) translateX(-19%);
+    -ms-transform: translateY(-80px) translateX(-25%);
+    transform: translateY(-80px) translateX(-25%);
+    -webkit-transform: translateY(-80px) translateX(-25%);
     border-radius: 50px;
     -webkit-border-radius: 50px;
     text-align: center;
@@ -2228,7 +2249,7 @@ b.cloud {
 @media (min-width: 300px) and (max-width: 550px) {
     .bg-06 {
         width: 100%;
-        height: 88.79rem;
+        height: inherit;
         object-fit: none;
         background-size: auto;
         background-position: center center;
@@ -2435,6 +2456,9 @@ b.cloud {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 150%;
+}
+.sec-bg-team {
+    height: inherit !important;
 }
 
 .v360 i {

@@ -10,7 +10,7 @@
 		margin-bottom: 50px;
 		margin-left: 40px;
 		padding: 0;
-		height: 250px;
+		height: inherit;
 		opacity: .2;
 		-webkit-transform: scale3d(0.8, 0.8, 1);
 		transform: scale3d(0.8, 0.8, 1);
