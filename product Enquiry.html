@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="js/AnimationOnScroll/package/dist/aos.css">
     <link rel="stylesheet" href="css/text-dec.css">
-    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/sub_style.css">
     <link rel="stylesheet" href="css/submit.css">
 
     <!-- Template Stylesheet -->
@@ -109,17 +109,17 @@
 
     <!-- Navbar Start -->
     <div class="container-fluid vw-nav fixed-top m-0 p-0 wow fadeIn" data-wow-delay="0.8s">
-        <div class="top-bar row gx-0 rounded pb-lg-0 align-items-center d-lg-flex d-md-flex d-none bg-blue wow fadeIn">
+        <div class="top-bar row gx-0 pb-lg-0 align-items-center d-lg-flex d-md-flex d-none bg-blue wow fadeIn">
             <div class="col-lg-6 col-md-8 text-start">
-                <medium class="ms-lg-2"><i class="fa fa-map-marker-alt me-lg-2">
+                <medium class="ms-lg-2"><i id="top-icons" class="fa fa-map-marker-alt me-lg-2">
                     </i>5, Republic Street, Reddiarpalayam, Puducherry-605010, India</medium>
-                <medium class="ms-lg-3 ms-0"><i class="fa fa-clock me-lg-2 me-0">
+                <medium class="ms-lg-3 ms-0"><i id="top-icons" class="fa fa-clock me-lg-2 me-0">
                     </i>9.00 am - 6.30 pm</medium>
             </div>
             <div class="col-lg-6 col-md-4 text-end pe-lg-3">
-                <medium class=""><i class="fa fa-envelope me-lg-2 me-0"></i>info&#x40;skyfinch.com
+                <medium class=""><i id="top-icons" class="fa fa-envelope me-lg-2 me-0"></i>info&#x40;skyfinch.com
                 </medium>
-                <medium class="ps-lg-1 ps-0"><i class="fa fa-phone-alt me-lg-2 me-0"></i>+91 9443487210</medium>
+                <medium class="ps-lg-1 ps-0"><i id="top-icons" class="fa fa-phone-alt me-lg-2 me-0"></i>+91 9443487210</medium>
             </div>
         </div>
 
@@ -132,28 +132,27 @@
                 </b>
                 <!-- <img src="img/skyfinch-logo.png" alt="logo" class="w-25 wow slideInLeft" data-wow-delay="0.9s"> -->
             </a>
-            <div class="nav-icons d-lg-none d-md-flex d-flex ms-5 gap-1 wow fadeInDown
-            " data-wow-delay="1.5s">
-                <a class="btn btn-primary btn-sm-square rounded-circle ms-1"
-                    href="https://www.facebook.com/skyfinch.roadmap" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                    data-bs-custom-class="custom-tooltip" data-bs-title="Facebook" target="_blank">
-                    <span><i class="fab fa-facebook-f"></i></span>
+            <div class="nav-icons d-lg-none d-md-flex d-flex ms-4 gap-1 wow fadeInDown
+            " data-wow-delay="1.9s">
+                <a class="btn ms-1" href="https://www.facebook.com/skyfinch.roadmap" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Facebook"
+                    target="_blank">
+                    <img class="img-icons" src="img/socialMedia/facebook_icon.png" alt="facebook">
                 </a>
-                <a class="btn btn-primary btn-sm-square rounded-circle ms-1" href="https://twitter.com/Roadmaperp"
-                    data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
-                    data-bs-title="Twitter" target="_blank">
-                    <i class="fa-brands fa-x-twitter"></i>
+                <a class="btn ms-1" href="https://twitter.com/Roadmaperp" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Twitter"
+                    target="_blank">
+                    <img class="img-icons" src="img/socialMedia/twitter.png" alt="twitter">
                 </a>
-                <a class="btn btn-primary btn-sm-square rounded-circle ms-1"
-                    href="https://www.instagram.com/skyfinchroadmap" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                    data-bs-custom-class="custom-tooltip" data-bs-title="Instagram" target="_blank">
-                    <i class="fab fa-instagram"></i>
+                <a class="btn ms-1" href="https://www.instagram.com/skyfinchroadmap" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Instagram"
+                    target="_blank">
+                    <img class="img-icons" src="img/socialMedia/instagram.png" alt="instagram">
                 </a>
-                <a class="btn btn-primary btn-sm-square rounded-circle ms-1"
-                    href="https://www.linkedin.com/company/skyfinchroadmap" data-bs-toggle="tooltip"
+                <a class="btn ms-1" href="https://www.linkedin.com/company/skyfinchroadmap" data-bs-toggle="tooltip"
                     data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="LinkedIn"
                     target="_blank">
-                    <i class="fab fa-linkedin-in"></i>
+                    <img class="img-icons" src="img/socialMedia/linkedin_icon.png" alt="linkedin">
                 </a>
             </div>
             <button type="button" class="navbar-toggler me-2" data-bs-toggle="collapse"
@@ -203,29 +202,26 @@
                     style="height: 30px;">
                     <div class="vr text-dark" style="width: 2.5px;"></div>
                 </div>
-                <div class=" d-lg-flex d-md-none d-none d-grid ms-lg-2 ms-md-2 ms-2 gap-2">
-                    <a class="btn btn-outline-primary btn-sm-square rounded-circle ms-lg-1 ms-3"
-                        href="https://www.facebook.com/skyfinch.roadmap" data-bs-toggle="tooltip"
-                        data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Facebook"
-                        target="_blank">
-                        <span><i class="fab fa-facebook-f"></i></span>
+                <div class=" d-lg-inline-block d-md-none d-none d-grid ms-lg-2 ms-md-2 ms-2">
+                    <a class="btn ms-lg-2 ms-3 p-0" href="https://www.facebook.com/skyfinch.roadmap"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
+                        data-bs-title="Facebook" target="_blank">
+                        <img class="img-icons1" src="img/socialMedia/facebook_icon.png" alt="">
                     </a>
-                    <a class="btn btn-outline-primary btn-sm-square rounded-circle ms-lg-1 ms-3"
-                        href="https://twitter.com/Roadmaperp" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        data-bs-custom-class="custom-tooltip" data-bs-title="Twitter" target="_blank">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                    <a class="btn btn-outline-primary btn-sm-square rounded-circle ms-1"
-                        href="https://www.instagram.com/skyfinchroadmap" data-bs-toggle="tooltip"
-                        data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Instagram"
+                    <a class="btn ms-lg-2 ms-3 p-0" href="https://twitter.com/Roadmaperp" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Twitter"
                         target="_blank">
-                        <i class="fab fa-instagram"></i>
+                        <img class="img-icons" src="img/socialMedia/twitter.png" alt="">
                     </a>
-                    <a class="btn btn-outline-primary btn-sm-square rounded-circle ms-lg-1 ms-3"
-                        href="https://www.linkedin.com/company/skyfinchroadmap" data-bs-toggle="tooltip"
-                        data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="LinkedIn"
-                        target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
+                    <a class="btn ms-lg-2 ms-1 p-0" href="https://www.instagram.com/skyfinchroadmap"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
+                        data-bs-title="Instagram" target="_blank">
+                        <img class="img-icons" src="img/socialMedia/instagram.png" alt="">
+                    </a>
+                    <a class="btn ms-lg-3 ms-3 p-0" href="https://www.linkedin.com/company/skyfinchroadmap"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
+                        data-bs-title="LinkedIn" target="_blank">
+                        <img class="img-icons1" src="img/socialMedia/linkedin_icon.png" alt="">
                     </a>
                 </div>
             </div>
@@ -383,6 +379,78 @@
     </section>
     <!-- Section 2 end-->
 
+    <!--Sec3 start-->
+    <section id="sec8" class="bg-0 pt-lg-4 scroll">
+        <div class="container pt-lg-3 pt-md-3 pt-2 pb-lg-0 pb-md-2 pb-3 mt-lg-3 mt-md-0 mt-0">
+
+            <div class="row d-flex justify-content-center align-items-center pb-1 pt-3">
+
+                <div class="col-lg-12 center pb-4 mt-3 pt-2">
+                    <b class="display-6 fw-bold fs-2 pb-0 tx-co center">Choose The Right Plan For Your Business</b>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-8 col-12 gy-4 gy-lg-0" data-aos-duration="1500" data-aos="fade-up">
+                    <div class="card h-card border-none off">
+                        <div class="offer center px-5 fw-bold position-absolute">Save 40%</div>
+                        <div class="card-body p-2 tx-co card-bg1 py-3">
+                            <h5 class="center p-25 fw-bold">STANDARD</h5>
+                            <h2 class="center p-50 fw-bold pt-2" style="padding-left: 60px;">29.99<span class="p-15">/ Per Month</span></h2>
+                            <hr>
+                            <ul class="pt-0" style="padding-left: 45px;">
+                                <li class="nt text-muted">Unlimited updates & Projects</li>
+                                <li class="nt text-muted">Custom Permissions</li>
+                                <li class="nt text-muted">Custom Features</li>
+                                <li class="nt text-muted">Custom Permissions</li>
+                                <li class="nt text-muted">Custom Features</li>
+                            </ul>
+                            <div class="center pt-1"><a href="#" class="btn btn-purple btn-md btn-hover fw-bold mb-1 rounded-pill">Choose Plan</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-8 col-12 gy-4 gy-lg-0" data-aos-duration="1500" data-aos="fade-up">
+                    <div class="card h-card border-none off">
+                        <div class="offer1 center px-5 fw-bold position-absolute">Save 40%</div>
+                        <div class="card-body p-2 text-white card-bg2 py-3">
+                            <h5 class="center p-25 ps-2 text-white fw-bold">PROFESSIONAL <sup class="text-warning p-25">&#9733;</sup></h5>
+                            <b class="center p-50 text-white fw-bold pt-2" style="padding-left: 60px;">69.00<span class="p-15">/ 3 Month</span></b>
+                            <hr>
+                            <ul class="pt-0" style="padding-left: 45px;">
+                                <li class="nt1">Unlimited updates & Projects</li>
+                                <li class="nt1">Custom Permissions</li>
+                                <li class="nt1">Custom Features</li>
+                                <li class="nt1">Custom Permissions</li>
+                                <li class="nt1">Custom Features</li>
+                            </ul>
+                            <div class="center pt-1"><a href="#" class="btn nav-btn-c2 btn-md fw-bold mb-1 rounded-pill">Choose Plan</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-8 col-12 gy-4 gy-lg-0" data-aos-duration="1500" data-aos="fade-up">
+                    <div class="card h-card border-none off">
+                        <div class="offer center px-5 fw-bold position-absolute">Save 40%</div>
+                        <div class="card-body p-2 tx-co card-bg1 py-3">
+                            <h5 class="center p-25 fw-bold">PREMIUM</h5>
+                            <h2 class="center p-50 fw-bold pt-2" style="padding-left: 60px;">99.00<span class="p-15">/ 12 Month</span></h2>
+                            <hr>
+                            <ul class="pt-0" style="padding-left: 45px;">
+                                <li class="nt text-muted">Unlimited updates & Projects</li>
+                                <li class="nt text-muted">Custom Permissions</li>
+                                <li class="nt text-muted">Custom Features</li>
+                                <li class="nt text-muted">Custom Permissions</li>
+                                <li class="nt text-muted">Custom Features</li>
+                            </ul>
+                            <div class="center pt-1"><a href="#" class="btn btn-purple btn-md btn-hover fw-bold mb-1 rounded-pill">Choose Plan</a></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!--Sec3 end-->
 
     <!-- Team Start -->
     <section class="bg-11 pt-lg-2 pb-lg-0 pt-4 pb-1">
@@ -391,9 +459,7 @@
                 <div class="row d-flex justify-content-center align-items-center mt-3 mb-0 py-0">
                     <div class="col-lg-12 divide">
                         <div class="row mt-lg-0 mt-0 d-flex justify-content-center align-items-center">
-                            <h3 class="fw-bold pb-2 pb-md-5 pb-lg-1 mt-lg-4 pt-2 pb-3 text-center display-4 wow fadeInDown"
-                                data-wow-delay="0.4s" >Our Valuable
-                                Customers</h3>
+                            <b class="fw-bold pb-2 pb-md-5 pb-lg-1 mt-lg-4 pt-2 pb-3 text-center display-5 wow fadeInDown" data-wow-delay="0.4s" >Our Valuable Customers</b>
                             <div class="cus owl-carousel owl-theme pt-1">
                                 <div class="item">
                                     <div class="card border-0 mx-2">
@@ -613,93 +679,104 @@
     </section>
     <!-- Team End -->
 
-    <!-- Footer Start -->
-    <div class="container-fluid scroll text-light footer mt-lg-0 pt-lg-5 mt-0 pt-4 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container pt-lg-4 mt-lg-0 mt-3 pt-4">
-            <div class="row g-lg-5 mt-lg-1 mt-1 g-md-2 g-4">
-                <div class="col-lg-4 col-12 col-md-12">
-                    <h4 class="text-white mb-4">SKYFINCH</h4>
-                    <div class="row">
-                        <div class="col-lg-2 col-md-2 col-2 px-0 d-flex justify-content-center align-items-center">
-                            <i class="fa fa-map-marker-alt mb-md-3 mb-3"></i>
+        <!-- Footer Start -->
+        <section class="container-fluid scroll text-light footer mt-lg-0 pt-lg-5 mt-0 pt-4 wow fadeIn"
+            data-wow-delay="0.1s">
+            <div class="container pt-lg-4 mt-lg-0 mt-3 pt-4">
+                <div class="row g-lg-5 mt-lg-1 mt-1 g-md-2 g-4">
+                    <div class="col-lg-4 col-12 col-md-12">
+                        <h6 class="mb-4 cloud">SKYFINCH</h6>
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-2 px-0 d-flex justify-content-center align-items-center">
+                                <i class="fa fa-map-marker-alt mb-md-3 mb-3"></i>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-10 px-0">
+                                <p class="mb-2">5, Republic Street, Reddiarpalayam,
+                                    <br>Puducherry-605 010, India
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-lg-10 col-md-10 col-10 px-0">
-                            <p class="mb-2">5, Republic Street, Reddiarpalayam,
-                                <br>Puducherry-605 010, India
-                            </p>
+                        <div class="row">
+                            <div class="col-lg-2 col-2 px-0 d-flex justify-content-center align-items-center">
+                                <i class="fa fa-phone-alt mb-md-2 mb-3"></i>
+                            </div>
+                            <div class="col-lg-10 col-10 px-0">
+                                <p class="mb-2">+91 9443487210</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2 col-2 px-0 d-flex justify-content-center align-items-center">
+                                <i class="fa fa-envelope mb-md-2 mb-3"></i>
+                            </div>
+                            <div class="col-lg-10 col-10 px-0">
+                                <p class="btn-link text-light mb-2">info@skyfinch.com</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-2 col-2 px-0 d-flex justify-content-center align-items-center">
-                            <i class="fa fa-phone-alt mb-md-2 mb-3"></i>
-                        </div>
-                        <div class="col-lg-10 col-10 px-0">
-                            <p class="mb-2">+91 9443487210</p>
-                        </div>
+                    <div class="col-lg-2 col-6 mb-lg-0 mb-4 mt-5 mt-lg-5">
+                        <h4 class="text-white mb-4 w-50 border-bottom border-primary">Explore</h4>
+                        <a class="btn btn-link" href="index.html">Home</a>
+                        <a class="btn btn-link" href="service.html">Services</a>
+                        <a class="btn btn-link" href="">Product Enquiry</a>
+                        <a class="btn btn-link" href="about.html">About Us</a>
+                        <a class="btn btn-link" href="contact.html">Contact us</a>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-2 col-2 px-0 d-flex justify-content-center align-items-center">
-                            <i class="fa fa-envelope mb-md-2 mb-3"></i>
-                        </div>
-                        <div class="col-lg-10 col-10 px-0">
-                            <p class="btn-link mb-2">info@skyfinch.com</p>
-                        </div>
+                    <div class="col-lg-2 col-6 mb-lg-0 mb-4 mt-5 mt-lg-5">
+                        <h4 class="text-white mb-4 w-50 border-bottom border-primary">Discover</h4>
+                        <a class="btn btn-link" href="">Plans & Pricing</a>
+                        <a class="btn btn-link" href="">Newsletter</a>
+                        <a class="btn btn-link" href="contact.html">Contact Us</a>
+                        <a class="btn btn-link" href="">Customer&nbsp;Support
+                            <a class="btn btn-link" href="">Enquiry</a>
                     </div>
-
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
-                            href="https://twitter.com/Roadmaperp" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
-                            href="https://www.facebook.com/skyfinch.roadmap" target="_blank"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
-                            href="https://www.instagram.com/skyfinchroadmap" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-2"
-                            href="https://www.linkedin.com/company/skyfinchroadmap" target="_blank"><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-6 mb-lg-0 mb-4 mt-5 mt-lg-5">
-                    <h4 class="text-white mb-4 w-50 border-bottom border-primary">Explore</h4>
-                    <a class="btn btn-link" href="index.html">Home</a>
-                    <a class="btn btn-link" href="service.html">Services</a>
-                    <a class="btn btn-link" href="">Product Enquiry</a>
-                    <a class="btn btn-link" href="about.html">About Us</a>
-                    <a class="btn btn-link" href="contact.html">Contact us</a>
-                </div>
-                <div class="col-lg-2 col-6 mb-lg-0 mb-4 mt-5 mt-lg-5">
-                    <h4 class="text-white mb-4 w-50 border-bottom border-primary">Discover</h4>
-                    <a class="btn btn-link" href="">Plans & Pricing</a>
-                    <a class="btn btn-link" href="">Newsletter</a>
-                    <a class="btn btn-link" href="contact.html">Contact Us</a>
-                    <a class="btn btn-link" href="">Customer&nbsp;Support</a>
-                    <a class="btn btn-link" href="">Enquiry</a>
-                </div>
-                <div class="col-lg-4 col-12">
-                    <h4 class="text-white mb-4 w-25 border-width border-bottom border-primary">Newsletter</h4>
-                    <div class="position-relative w-75">
-                        <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text"
-                            placeholder="Your email">
-                        <button type="button"
-                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    <div class="col-lg-4 col-12">
+                        <h4 class="text-white mb-4 w-25 border-width border-bottom border-primary">Newsletter</h4>
+                        <div class="position-relative w-75">
+                            <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5 py-lg-3" type="text"
+                                placeholder="Your email">
+                            <button type="button"
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-1 me-2">SignUp</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Copyright Start -->
-        <div class="row mt-5 pt-5 d-flex align-items-end justify-content-center">
-            <div class="row pt-5 mt-5 pb-lg-0 mb-lg-0">
-                <div
-                    class="col-md-12 col-lg-12 d-flex align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-5 pt-5 mt-5 pb-lg-0 mb-lg-0">
-                    Copyright &copy; Skyfinch 2023. All rights reserved. Designed By Skyfinch.
+            <!-- Copyright Start -->
+            <div class="row mt-3 pt-3 mb-0 pb-0 d-flex align-items-end justify-content-center">
+                <div class="row Copyright pt-5 mt-lg-2 pt-lg-2 mt-5 pb-lg-0 mb-lg-0">
+                    <div class="d-flex align-items-end justify-content-center mt-lg-5 pt-5 mt-5 pb-lg-0 mb-lg-0">
+                        <a class="btn btn-square rounded-circle me-2"
+                            href="https://www.facebook.com/skyfinch.roadmap" target="_blank">
+                            <img class="img-icons2" src="img/socialMedia/facebook_icon.png" alt="">
+                        </a>
+                        <a class="btn btn-square rounded-circle me-2" href="https://twitter.com/Roadmaperp"
+                            target="_blank">
+                            <img class="img-icons2" src="img/socialMedia/twitter-.jfif" alt="">
+                        </a>
+                        <a class="btn btn-square rounded-circle me-2"
+                            href="https://www.instagram.com/skyfinchroadmap" target="_blank">
+                            <img class="img-icons2" src="img/socialMedia/instagram.png" alt="">
+                        </a>
+                        <a class="btn btn-square rounded-circle me-2"
+                            href="https://www.linkedin.com/company/skyfinchroadmap" target="_blank">
+                            <img class="img-icons2" src="img/socialMedia/linkedin_icon.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-12 col-lg-12 col d-flex flex-wrap align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-2 pt-2 mt-3 pb-lg-0 mb-lg-0">
+                        <a class="foo-policy" href="">Anti-spam&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a> 
+                        <a class="foo-policy" href="">Terms&nbsp;of&nbsp;Service<span>&nbsp;&VerticalLine;&nbsp;</span></a>
+                        <a class="foo-policy" href="">Privacy&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
+                        <a class="foo-policy" href="">Cookie&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
+                        <a class="foo-policy" href="">Abuse&nbsp;Policy</a>
+                    </div>
+                    <div class="col-md-12 col-lg-12 d-flex align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-1 mt-1 pt-lg-1 pt-1">
+                        &copy; Skyfinch 2023. All rights reserved. Designed By Skyfinch.
+                    </div> 
                 </div>
             </div>
-        </div>
-        <!-- Copyright End -->
-    </div>
-    <!-- Footer End -->
+            <!-- Copyright End -->
+        </section>
+        <!-- Footer End -->
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg page-top btn-lg-square rounded-circle wow fadeInDown" data-wow-delay="0.5s"
