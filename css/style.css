@@ -2,9 +2,8 @@
 
 /* import google font poppins */
 @import url('./googleWebFonts/blackOps.css');
-
 @import url('googleWebFonts/poppins.css');
-
+@import url('googleWebFonts/Lalezar.css');
 @import url('fontawesome-6.4.2/webfonts/fa-brands-400.ttf');
 
 /* Target the body element */
@@ -18,10 +17,10 @@
 }
 
 .top-bar medium {
-    font-family: 'Black Ops One', cursive;
-    font-size: 13px;
-    font-weight: 10px;
-    letter-spacing: 0.568px;
+    font-family: 'Lalezar', serif;
+    font-size: 15px;
+    font-weight: 9px;
+    letter-spacing: 0.368px;
 }
 
 .img-icons {
@@ -42,6 +41,7 @@
 .img-icons1:hover {
     transform: scale(1.2);
 }
+
 .img-icons2 {
     width: 30px !important;
     transition: transform .4s;
@@ -50,9 +50,11 @@
 .img-icons2:hover {
     transform: scale(1.2);
 }
+
 @media (max-width:867px) {
     .nav-icons {
-        margin-right: -100px;
+        margin-right: -80px;
+        margin-top: -20px;
     }
 
     .nav-icons a {
@@ -66,7 +68,7 @@
     }
 
     .img-icons {
-        width: 20px;
+        width: 25px;
     }
 
     .img-icons1 {
@@ -74,14 +76,17 @@
     }
 }
 
-html,
-body {
-    width: 100% !important;
-    height: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+@media (min-width:300px) and (max-width:850px) {
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scrollbar-width: none;
+    }
 }
 
 /* Target scrollbar in Webkit browsers (Safari and Chrome) */
@@ -312,12 +317,13 @@ input[data-autocompleted] {
 /* End chat box design  */
 .bg-03 {
     transition: background 0.4s ease-in;
-    background: rgb(194,234,247);
-    background: -moz-linear-gradient(85deg, rgba(194,234,247,1) 0%, rgba(134,219,246,1) 50%, rgba(76,204,245,0.8911939775910365) 100%);
-    background: -webkit-linear-gradient(85deg, rgba(194,234,247,1) 0%, rgba(134,219,246,1) 50%, rgba(76,204,245,0.8911939775910365) 100%);
-    background: linear-gradient(85deg, rgba(194,234,247,1) 0%, rgba(134,219,246,1) 50%, rgba(76,204,245,0.8911939775910365) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c2eaf7",endColorstr="#4cccf5",GradientType=1);
- }
+    background: rgb(194, 234, 247);
+    background: -moz-linear-gradient(85deg, rgba(194, 234, 247, 1) 0%, rgba(134, 219, 246, 1) 50%, rgba(76, 204, 245, 0.8911939775910365) 100%);
+    background: -webkit-linear-gradient(85deg, rgba(194, 234, 247, 1) 0%, rgba(134, 219, 246, 1) 50%, rgba(76, 204, 245, 0.8911939775910365) 100%);
+    background: linear-gradient(85deg, rgba(194, 234, 247, 1) 0%, rgba(134, 219, 246, 1) 50%, rgba(76, 204, 245, 0.8911939775910365) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c2eaf7", endColorstr="#4cccf5", GradientType=1);
+}
+
 .custom-tooltip {
     --bs-tooltip-bg: rgba(3, 86, 240, 0.975);
     --bs-tooltip-color: var(--light);
@@ -473,10 +479,13 @@ input[data-autocompleted] {
     }
 
     .boder-blur {
-        display: inline-block;
+        position: relative;
+        display: flex;
+        top: 0;
+        left: 0;
+        transform: translateY(20rem);
         width: 55%;
-        left: 10% !important;
-        bottom: 50% !important;
+
     }
 
     .boder-blur:hover {
@@ -633,8 +642,8 @@ input[type=number]::-webkit-outer-spin-button {
     .service-border {
         display: -moz-inline-stack !important;
         width: 50%;
-        left: 10% !important;
-        bottom: 40% !important;
+        left: 1.25rem !important;
+        bottom: 19.5rem !important;
     }
 
     .service-border:hover {
@@ -706,10 +715,12 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .contact-border {
-        display: -moz-inline-stack !important;
-        width: 50%;
-        left: 10% !important;
-        bottom: 50% !important;
+        position: relative;
+        display: flex;
+        top: 0;
+        left: 0;
+        transform: translateY(20rem);
+        width: 55%;
     }
 
     .contact-border:hover {
@@ -1015,7 +1026,7 @@ h6,
 /* dropdown new update */
 .dropbtn1 {
     background-color: white;
-    color: grey;
+    color: rgb(0, 0, 0);
     font-weight: 500;
     font-size: 15.98px;
     border: none;
@@ -1042,18 +1053,26 @@ h6,
 
 @media (min-width:550px) and (max-width:1150px) {
     .dropdown-content1 {
-        margin-top: -35px;
-        margin-left: 108px !important;
-        width: max-content;
+        position: relative;
+        width: inherit;
     }
 }
 
 @media (min-width:300px) and (max-width:500px) {
     .dropdown-content1 {
-        margin-top: -35px;
-        margin-left: 108px !important;
-        width: 180px;
+        position: relative;
+        width: inherit;
+        margin-top: -10px;
+        margin-left: 30px;
+        border-radius: 0px;
+        background-color: transparent;
+        box-shadow: 0px;
         z-index: 99;
+    }
+
+    .dropdown-content1 a {
+        font-weight: 400;
+        font-size: 16.8px;
     }
 }
 
@@ -1107,6 +1126,18 @@ h6,
 .submenu:hover .dropbtn1 .arrow1 {
     left: 0;
     transform: translate(500%, 0%);
+}
+
+@media (min-width:300px) and (max-width:850px) {
+    .submenu:hover .dropbtn1 .arrow {
+        margin-left: 10px;
+        transform: rotate(90deg);
+    }
+
+    .submenu:hover .dropbtn1 .arrow1 {
+        margin-left: 60px;
+        transform: rotate(90deg);
+    }
 }
 
 .cloud h6 {
@@ -1285,6 +1316,39 @@ b.cloud {
         height: 100%;
         object-fit: cover;
     }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        margin-top: 40px;
+        width: 2rem;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .caro-caption {
+        padding-left: 30px;
+        padding-right: 25px;
+    }
+
+    .top-slide1 {
+        margin-top: -40px;
+    }
+
+    .mid-slide1 {
+        margin-top: 50px;
+    }
+
+    .mid-slide2 {
+        padding-top: 40px;
+    }
+
+    .mid-slide3 {
+        padding-top: 50px;
+    }
 }
 
 
@@ -1317,6 +1381,7 @@ b.cloud {
     color: #FFFFFF;
     font-family: 'Black Ops One', cursive;
 }
+
 .footer .btn.btn-link {
     display: block;
     margin-bottom: 5px;
@@ -1770,7 +1835,7 @@ b.cloud {
 }
 
 .bg-pink {
-    background-image: url(../img/blue.png),  linear-gradient(to left top, #f2d5c1, #f3d4be, #f5d3bb, #f6d1b7, #f7d0b4, #f6ceb1, #f5cbad, #f4c9aa, #f1c5a5, #eec1a1, #eabd9c, #e7b998);
+    background-image: url(../img/blue.png), linear-gradient(to left top, #f2d5c1, #f3d4be, #f5d3bb, #f6d1b7, #f7d0b4, #f6ceb1, #f5cbad, #f4c9aa, #f1c5a5, #eec1a1, #eabd9c, #e7b998);
     background-position: 10px 35px, center;
     background-repeat: no-repeat;
     background-size: 22% 65%, cover;
@@ -1968,6 +2033,16 @@ b.cloud {
         text-align: center;
     }
 
+    .flower h4 {
+        margin-top: 10px;
+    }
+
+    .pill-bg p,
+    .pill-bg1 p {
+        padding: 0px 15px;
+        height: 85px;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -2122,6 +2197,11 @@ b.cloud {
         background-size: auto;
         background-position: center center;
     }
+
+    .bg-09 .bg9-row {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
 }
 
 
@@ -2172,6 +2252,12 @@ b.cloud {
     color: #ff5e14 !important;
 }
 
+@media (min-width:300px) and (max-width:750px) {
+    .mat-alig {
+        display: grid;
+        place-items: center;
+    }
+}
 
 /* TRY pop */
 
@@ -2263,6 +2349,14 @@ b.cloud {
 
     & a {
         color: black !important;
+    }
+}
+
+@media (min-width:300px) and (max-width:850px) {
+    .tooltip-content {
+        -ms-transform: translateY(-80px) translateX(0%);
+        transform: translateY(-80px) translateX(0%);
+        -webkit-transform: translateY(-80px) translateX(0%);
     }
 }
 
@@ -2446,9 +2540,15 @@ b.cloud {
 
 /* section 7 start */
 
-
-
 #sec7 .container {
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+}
+
+#land-sec .container {
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);

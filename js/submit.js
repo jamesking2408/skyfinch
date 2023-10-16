@@ -188,3 +188,23 @@ function closePopup3() {
     popup1.classList.remove("open-popup");
 }
 
+
+// Product Enquiry form automatically fill plan price
+
+function choosePlan(planName, planPrice) {
+    localStorage.setItem('selectedPlanName', planName);
+    localStorage.setItem('selectedPlanPrice', planPrice);
+}
+document.addEventListener('DOMContentLoaded', function() {
+    var selectedPlanName = localStorage.getItem('selectedPlanName');
+    var selectedPlanPrice = localStorage.getItem('selectedPlanPrice');
+
+    if (selectedPlanName && selectedPlanPrice) {
+        document.getElementById('cus-price').value = selectedPlanPrice;
+        document.getElementById('cus-ss').value = selectedPlanName;
+    }
+});
+function resetFormProduct() {
+    document.cus_form.reset();
+}
+

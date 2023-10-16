@@ -41,14 +41,14 @@
 		outline: none;
 	}
 	#customers-testimonials.owl-carousel .owl-dots .owl-dot span {
-		background: rgb(255, 255, 255);
+		background: rgb(109, 107, 107);
 		display: inline-block;
-		height: 20px;
+		height: 30px;
 		margin: 0 2px 5px;
 		transform: translate3d(0px, -50%, 0px) scale(0.3);
 		transform-origin: 50% 50% 0;
 		transition: all 250ms ease-out 0s;
-		width: 20px;
+		width: 30px;
 		border-radius: 100%;
 	}
 

@@ -9,27 +9,27 @@
     .cards:hover:not(.active).left {
         transform: translateX(-20%) rotate(-5deg) scale(0.9);
     }
-    
+
     .cards:hover:not(.active).right {
         transform: translateX(20%) rotate(5deg) scale(0.9);
     }
-    
+
     .cards.left {
         left: 0;
-        transform: translateX(-5%) scale(0.9);
+        transform: translateX(-1%) scale(0.9);
         transition-duration: 0.9s;
         /* width: 290px;
         left: 0;*/
     }
-    
+
     .cards.right {
         right: 0;
-        transform: translateX(5%) scale(0.9);
+        transform: translateX(1%) scale(0.9);
         transition-duration: 0.9s;
         /* width: 290px;
         right: 0;*/
     }
-    
+
     .cards.active {
         z-index: 5;
         position: relative;
@@ -37,16 +37,19 @@
         width: 100%;
         height: 240px;
     }
-    
+
     .cards__inner {
         position: relative;
-    }  
+    }
+
     .cards__inner i {
         font-size: 40px;
     }
+
     .cards__inner h4 {
         font-size: 20px;
-    } 
+    }
+
     .cards__inner p {
         padding: 0px 5px 0px;
         font-size: 13px;

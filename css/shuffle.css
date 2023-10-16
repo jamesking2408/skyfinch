@@ -99,19 +99,22 @@
       height: max-content !important;
     }
     .bg-00 .container {
-      width: 280px;
-      height: 220px;
+      width: 320px;
+      height: 280px;
+      left: 0;
+      bottom: 0;
+      transform: translateX(-4%);
     }
     #item-1:checked ~ .cards1 #song-4,
     #item-2:checked ~ .cards1 #song-1,
     #item-3:checked ~ .cards1 #song-2,
     #item-4:checked ~ .cards1 #song-3{
-      transform: translatex(-30%) scale(0.8);
+      transform: translatex(-20%) scale(0.8);
     }
     #item-1:checked ~ .cards1 #song-2,
     #item-2:checked ~ .cards1 #song-3,
     #item-3:checked ~ .cards1 #song-4,
     #item-4:checked ~ .cards1 #song-1{
-      transform: translatex(30%) scale(0.8);
+      transform: translatex(20%) scale(0.8);
     }
   }
