@@ -1093,10 +1093,6 @@
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
-.card1 .img-pay {
-    width: 600px !important;
-    height: 350px !important;
-}
 
 @media (min-width:300px) and (max-width:500px) {
     .img-pms {
@@ -1131,11 +1127,6 @@
     }
     .li-pms1 {
         margin-top: -6px !important;
-    }
-
-    .card1 .img-pay {
-        width: 300px !important;
-        height: 165px !important;
     }
 }
 

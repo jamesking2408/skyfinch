@@ -287,19 +287,18 @@ input[data-autocompleted] {
 
 @media (max-width:590px) {
     .chatbot-toggler {
-        right: 10%;
+        right: 5%;
         bottom: 4%;
     }
 
     .chatbot {
-        right: 18%;
+        right: 13%;
         bottom: 9%;
         height: 368px;
         width: 240px;
     }
 
     .chatbot header h2 {
-
         margin-left: 50px;
         margin-right: 50px;
     }
@@ -368,6 +367,31 @@ input[data-autocompleted] {
     margin-top: auto;
     height: 560px;
 }
+
+/* Button index landing page */ 
+
+.ind-btn-warning, .ind-btn-primary {
+    transition: background-color 2.9s ease-in-out, color 2.9s ease-in-out;
+    cursor: pointer;
+  }
+  .ind-btn-warning {
+    background-color: #ffc107;
+    color: #000;
+  }
+  .ind-btn-primary {
+    background-color: #0d6efd;
+    color: #FFFFFF;
+  }
+  .ind-btn-primary:hover {
+    background-color: hsl(45, 100%, 51%);
+    color: #000;
+  }
+
+  .ind-btn-warning:hover {
+    background-color: hsl(216, 98%, 52%);
+    color: #FFFFFF;
+  }
+
 
 @media (min-width:300px) and (max-width:850px) {
     .container1 {
@@ -805,7 +829,7 @@ a {
     cursor: pointer;
     border-radius: 50%;
     transition: all .2s ease;
-    z-index: 9999;
+    z-index: 99;
 }
 
 .back-to-top img {
@@ -844,7 +868,7 @@ a {
     cursor: pointer;
     border-radius: 50%;
     transition: all .2s ease;
-    z-index: 9999;
+    z-index: 99;
 
 }
 
@@ -874,16 +898,16 @@ a {
 
 @media (min-width:300px) and (max-width:550px) {
     .back-to-top {
-        right: 10% !important;
+        right: 6% !important;
     }
 
     .b-2-top {
-        right: 10% !important;
-        bottom: 20% !important;
+        right: 6% !important;
+        bottom: 21% !important;
     }
 
     .page-top {
-        right: 10% !important;
+        right: 6% !important;
         bottom: 12% !important;
     }
 }
@@ -1303,7 +1327,6 @@ b.cloud {
 .carousel-control-next-icon {
     border-radius: 3rem 0 0 3rem;
 }
-
 @media (max-width: 768px) {
     #header-carousel .carousel-item {
         position: relative;
@@ -1332,6 +1355,10 @@ b.cloud {
     .caro-caption {
         padding-left: 30px;
         padding-right: 25px;
+        padding-bottom: 0px;
+    }
+    .carousel-item img {
+        height: 500px !important;
     }
 
     .top-slide1 {
@@ -1539,7 +1566,7 @@ b.cloud {
     .main {
         background-color: #dde8ee;
         bottom: 8.5%;
-        left: 6.5%;
+        left: 4.5% !important;
         width: min(100%, 338px);
     }
 
@@ -1568,7 +1595,7 @@ b.cloud {
         position: fixed;
         background-color: #dde8ee;
         bottom: 16.5% !important;
-        left: 35.85%;
+        left: 29.85%;
         width: min(100%, 238px);
         border: 1px solid rgb(10, 79, 228);
         -webkit-box-shadow: 0 0 21px 22px #298ffd;
@@ -1588,8 +1615,8 @@ b.cloud {
 
     #forms {
         position: fixed;
-        bottom: 7.5% !important;
-        left: 82% !important;
+        bottom: 7% !important;
+        left: 85% !important;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         border-radius: 15px;
         z-index: 99;

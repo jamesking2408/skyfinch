@@ -29,7 +29,8 @@
     <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="css/csshake.min.css">
     <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css"/>
-    <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css"/>    
+    <link rel="stylesheet" href="css/zoom-InOut.css">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -104,7 +105,7 @@
             </div>
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-4 wow fadeIn bg-white" data-wow-delay="0.9s">
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 py-md-2 py-2 px-lg-4 wow fadeIn bg-white" data-wow-delay="0.9s">
             <a href="index.html" class="navbar-brand ms-0 ms-lg-0">
                 <img src="img/cloud.png" alt="" class="r-cloud wow slideInLeft" data-wow-delay="1.2s">
                 <img src="img/cloud.png" alt="" class="l-cloud wow slideInRight" data-wow-delay="1s">
@@ -278,7 +279,7 @@
     <!-- Image section Start -->
     <section class="container1 bg-00">
         <div class="container-fluid mt-lg-4 py-lg-3 my-md-2 py-md-2 mt-0 py-1">
-            <div class="container1 facts mt-lg-5 mb-lg-0 pt-lg-5 mt-3 mt-md-2 mb-1 py-md-2 py-1">
+            <div class="row facts mt-lg-5 mb-lg-0 pt-lg-5 mt-3 mt-md-2 mb-1 py-md-2 py-1">
                 <div class="row d-flex justify-content-center text-center wow fadeInDown" data-wow-delay="0.2s"
                     data-aos-duration="1000" data-aos="fade-down">
                     <h5 class="fs-2 mt-lg-4 mb-md-4 mb-lg-1">Multi-faceted Fleet Management solution to&nbsp;handle all
@@ -296,25 +297,25 @@
                     <input type="radio" name="slider" id="item-4">
                     <div class="cards1">
                         <label class="card bg-transparent border-0 card1 song" for="item-1" id="song-1">
-                            <img src="img/fms/fms1.png" alt="img1">
+                            <img class="toZoom" src="img/fms/fms1.png" alt="img1">
                             <div class="d-inline-block justify-content-center text-center mt-2">
                                 <h5 class="" style="font-family: 'Black Ops One', cursive;">Dashboard</h5>
                             </div>
                         </label>
                         <label class="card bg-transparent border-0 card1 song" for="item-2" id="song-2">
-                            <img src="img/fms/fms2.png" alt="img2">
+                            <img class="toZoom" src="img/fms/fms2.png" alt="img2">
                             <div class="d-inline-block justify-content-center text-center mt-2">
                                 <h5 class="" style="font-family: 'Black Ops One', cursive;">Business Entity</h5>
                             </div>
                         </label>
                         <label class="card bg-transparent border-0 card1 song" for="item-3" id="song-3">
-                            <img src="img/fms/fms3.png" alt="img3">
+                            <img class="toZoom" src="img/fms/fms3.png" alt="img3">
                             <div class="d-inline-block justify-content-center text-center mt-2">
                                 <h5 class="" style="font-family: 'Black Ops One', cursive;">Trip Log</h5>
                             </div>
                         </label>
                         <label class="card bg-transparent border-0 card1 song" for="item-4" id="song-4">
-                            <img src="img/fms/fms4.png" alt="img4">
+                            <img class="toZoom" src="img/fms/fms4.png" alt="img4">
                             <div class="d-inline-block justify-content-center text-center mt-2">
                                 <h5 class="" style="font-family: 'Black Ops One', cursive;">Service Maintenance</h5>
                             </div>
@@ -322,6 +323,19 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="idMyModal modal">
+            <span class="close">&times;</span>
+            <img class="modal-content">
+        </div><div class="idMyModal modal">
+            <span class="close">&times;</span>
+            <img class="modal-content">
+        </div><div class="idMyModal modal">
+            <span class="close">&times;</span>
+            <img class="modal-content">
+        </div><div class="idMyModal modal">
+            <span class="close">&times;</span>
+            <img class="modal-content">
         </div>
         <!-- Add left and right buttons -->
       <div class="container-fluid pt-0 pb-3">
@@ -958,6 +972,7 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="js/AnimationOnScroll/package/dist/aos.js"></script>
     <script src="css/malihu-custom-scrollbar-plugin-3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/zoom-InOut.js"></script>
 
     <!-- Scroll effects -->
     <script>
