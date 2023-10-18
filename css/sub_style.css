@@ -92,6 +92,9 @@
     .img-pos{
         height: 390px;
     }
+    .bg-12 .row .tab-pane {
+        height: 405px !important;
+    }
 }
 
 .bg-12 div.nav {
@@ -151,10 +154,10 @@
         width: 220px !important;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0%) translateY(590%);
+        transform: translateX(-10%) translateY(590%);
     }
     .border-pos:hover {
-        transform: translateX(0%) translateY(590%);
+        transform: translateX(-10%) translateY(590%);
     }
     .border-pos h1 {
         font-size: 1.505rem;
@@ -199,20 +202,54 @@
 
 @media (min-width:300px) and (max-width:500px) {
     .container.btn-pq a.button {
-        width: 230px !important;
+        width: fit-content !important;
         padding: 5px !important;
     }
 
-    .btn-pq .button {
+    .btn-pq  .button {
         position: relative;
         display: flex;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(40%) translateY(-1350%) !important;
+        transform: translateX(40%) translateY(-950%) !important;
     }
 
     .btn-pq a.button {
-        font-size: 1.105rem;
+        align-items: center;
+        width: fit-content;
+        text-align: center;
+        font-size: 0.905rem;
+    }
+    .button span:nth-child(1) {
+        left: -40px;
+    }
+    
+    .button:hover span:nth-child(1) {
+        left: 40%;
+    }
+    
+    .button span:nth-child(3) {
+        right: -40px;
+    }
+    
+    .button:hover span:nth-child(3) {
+        right: 40%;
+    }
+    
+    .button span:nth-child(2) {
+        top: -40px;
+    }
+    
+    .button:hover span:nth-child(2) {
+        top: 40%;
+    }
+    
+    .button span:nth-child(4) {
+        bottom: -40px;
+    }
+    
+    .button:hover span:nth-child(4) {
+        bottom: 40%;
     }
 }
 
@@ -478,7 +515,7 @@
 
 @media (min-width:300px) and (max-width:500px) {
     .img-hms {
-        height: 390px !important;
+        height: 370px !important;
     }
 
     .bg-00 .container1.facts h5 {
@@ -491,10 +528,10 @@
         width: 230px ;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0%) translateY(590%);
+        transform: translateX(-10%) translateY(650%);
     }
     .border-hms:hover {
-        transform: translateX(0%) translateY(590%);
+        transform: translateX(-10%) translateY(650%);
     }
 
     .border-hms h1 {
@@ -564,11 +601,11 @@
         display: flex;
         width: 290px !important;
         bottom: 0 !important;
-        transform: translateX(0%) translateY(580%);
+        transform: translateX(-10%) translateY(580%);
         transform: transform 0.5s;
     }
     .border-rms:hover {
-        transform: translateX(0%) translateY(580%) scale(1.01);
+        transform: translateX(-10%) translateY(580%) scale(1.01);
     }
 
     .border-rms h1 {
@@ -640,10 +677,10 @@
         width: 170px !important;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0%) translateY(600%);
+        transform: translateX(-10%) translateY(600%);
     }
     .border-ssfinch:hover {
-        transform: translateX(0%) translateY(600%);   
+        transform: translateX(-10%) translateY(600%);   
     }
 
     .border-ssfinch h1 {
@@ -714,10 +751,10 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0%) translateY(650%);
+        transform: translateX(-10%) translateY(650%);
     }
     .border-vms:hover {
-        transform: translateX(0%) translateY(650%);
+        transform: translateX(-10%) translateY(650%);
     }
 
     .border-vms h1 {
@@ -792,11 +829,11 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0%) translateY(650%);
+        transform: translateX(-10%) translateY(650%);
     }
 
     .border-crm:hover {
-        transform: translateX(0%) translateY(650%);
+        transform: translateX(-10%) translateY(650%);
     }
 
     .border-crm h1 {
@@ -872,7 +909,7 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0%) translateY(650%);
+        transform: translateX(-10%) translateY(650%);
     }
 
     .border-ctm h1 {
@@ -948,10 +985,10 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0%) translateY(650%);
+        transform: translateX(-10%) translateY(650%);
     }
     .border-fms:hover {
-        transform: translateX(0%) translateY(650%);
+        transform: translateX(-10%) translateY(650%);
     }
 
     .border-fms h1 {
@@ -1027,10 +1064,10 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0%) translateY(650%);
+        transform: translateX(-10%) translateY(650%);
     }
     .border-ems:hover {
-        transform: translateX(0%) translateY(650%);
+        transform: translateX(-10%) translateY(650%);
     }
 
     .border-ems h1 {
@@ -1108,10 +1145,10 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0%) translateY(650%);
+        transform: translateX(-10%) translateY(650%);
     }
     .border-pms:hover {
-        transform: translateX(0%) translateY(650%);
+        transform: translateX(-10%) translateY(650%);
     }
 
     .border-pms h1 {
@@ -1188,10 +1225,10 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0%) translateY(650%);
+        transform: translateX(-10%) translateY(650%);
     }
     .border-sales:hover {
-        transform: translateX(0%) translateY(650%);
+        transform: translateX(-10%) translateY(650%);
     }
     .border-sales h1 {
         font-size: 0.995rem;
@@ -1220,7 +1257,15 @@
     background-repeat: no-repeat;
     margin-top: 50px !important;
 }
-
+@media (min-width:300px) and (max-width:500px) {
+    #land-sec {
+        margin-top: 0px !important;
+    }    
+    #land-sec .container {
+        border-radius: 0px;
+        border: 0px solid rgba(255, 255, 255, 0.25);
+    }
+}
 .pt-70 {
     padding-top: 70px;
 }
@@ -1385,3 +1430,23 @@ ul>.nt1 {
 }
 
 /* Module slider Start */
+
+@media (min-width:300px) and (max-width:700px) {
+    .swiper-button-next:after, .swiper-button-prev:after{
+        font-size: 20px !important;
+        background-color: #ffffff;
+        padding: 15px;
+        border-radius: 50%;
+    }
+    .swiper-button-prev {
+        bottom: 50%;
+        transform: translate(250%, 480%);
+    }
+    .swiper-button-next{
+        bottom: 50%;
+        transform: translate(-250%, 480%);
+    }
+    .swiper-pagination {
+        bottom: -1%;
+    }
+}

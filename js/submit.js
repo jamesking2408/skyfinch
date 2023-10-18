@@ -208,3 +208,11 @@ function resetFormProduct() {
     document.cus_form.reset();
 }
 
+// Dropdown section while click they will close
+
+// document.querySelector("#solutionsDropdown").addEventListener('click', function(){
+//     var view = document.querySelector(".submenu");
+//     if(view.classList.contains('is_active')){
+//       view.classList.remove('is_active');
+//       } 
+//   });
