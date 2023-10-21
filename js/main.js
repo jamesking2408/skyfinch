@@ -2,13 +2,13 @@
     "use strict";
 
     // <!-- Change select option method -->
-    
-    $(document).ready(function() {
-        $('.form-select').on('change', function() {
+
+    $(document).ready(function () {
+        $('.form-select').on('change', function () {
             var selectedValue = $(this).val();
-    
+
             $('.tab-pane').removeClass('show active');
-            
+
             $('#' + selectedValue).addClass('show active');
         });
     });
@@ -37,20 +37,20 @@
     $('#customers-testimonials').owlCarousel({
         loop: true,
         center: true,
-        margin:-38,		           
-        dots:true,
+        margin: -38,
+        dots: true,
         autoplayTimeout: 5000,
         smartSpeed: 450,
         responsive: {
-          0: {
-            items: 1
-          },
-          768: {
-            items: 2
-          },
-          1170: {
-            items: 3
-          }
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            1170: {
+                items: 3
+            }
         }
     });
 
@@ -60,30 +60,30 @@
 
     //<!-- pop up -->
     $(".mytooltip").hover(
-        function(e) {
+        function (e) {
             $(this).find('.tooltip-content').delay(2000).fadeIn();
             $(this).find('.tooltip-content').hover(
-                function(e) {
+                function (e) {
                     $('.tooltip-content').stop(true);
-                },          
-                function(e) {
+                },
+                function (e) {
                     $('.tooltip-content').hide();
                     $('.tooltip-content').stop();
                 }
             );
             $(this).find('.tooltip-content').delay(4000).fadeOut();
         },
-        function(e) {
+        function (e) {
             $('.tooltip-content').stop();
             $('.tooltip-content').hide();
         }
     );
 
-    $('#spl1, #spl2').click(function() {
+    $('#spl1, #spl2').click(function () {
         $('.tooltip-content').hide();
     });
     //<!-- pop up end-->
-    
+
     //section change start
     // Filter
     $('.sec a').click(function () {
@@ -148,7 +148,7 @@
 
 
     // Back to top button
-        // Index page
+    // Index page
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
             $('.back-to-top').fadeIn('slow');
@@ -161,7 +161,7 @@
         return false;
     });
 
-        // Other pages
+    // Other pages
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
             $('.page-top').fadeIn('slow');
@@ -173,7 +173,7 @@
         $('html, body').animate({ scrollTop: 0 }, 120, 'easeInOutExpo');
         return false;
     });
-    
+
     // End of back to top button
 
 
@@ -214,23 +214,52 @@
         owl.trigger('stop.owl.autoplay')
     })
     //<!-- OwlCarousel script end -->
-    $("#myBtn").click(function() {
+    $("#myBtn").click(function () {
         var dots = $("#dots");
         var moreText = $("#more");
         var btnText = $("#myBtn");
-      
+
         if (dots.css("display") === "none") {
-          dots.css("display", "inline");
-          btnText.text("Read more");
-          moreText.css("display", "none");
+            dots.css("display", "inline");
+            btnText.text("Read more");
+            moreText.css("display", "none");
         } else {
-          dots.css("display", "none");
-          btnText.text("Read less");
-          moreText.css("display", "inline");
+            dots.css("display", "none");
+            btnText.text("Read less");
+            moreText.css("display", "inline");
         }
     })
+
+
     //////////////////////////////////////////////////////////////////////////////////////////////////
     
+    // Search box start
+
+    var exampleModal = $("#exampleModal"),
+        exampleModalClose = $(".modal-header input");
+
+    exampleModal.on("shown.bs.modal", function () {
+        document.activeElement.blur();
+        exampleModalClose.focus();
+    });
+    $("#searchButton").click(function () {
+        var showing = $('.modal-backdrop');
+        var showing1 = $('.modal');
+        var modal_body = $('.modal-body .content');
+        $('#searchbar').click(function () {
+            modal_body.show();
+        });
+        showing.show();
+        showing1.show();
+        modal_body.hide();
+    });
+
+    $(".searchLink").click(function () {
+        var fade = $('.modal-backdrop');
+        var fade1 = $('.modal');
+        fade.hide();
+        fade1.hide();
+    });
 
 
 })(jQuery);
