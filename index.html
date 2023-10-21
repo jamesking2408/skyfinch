@@ -26,6 +26,8 @@
     <link rel="stylesheet" type="text/css" type="text/css" href="css/csshake.min.css">
     <link rel="stylesheet" type="text/css" href="css/owl-carousel/owl.carousel.min.css" />
     <link rel="stylesheet" type="text/css" href="css/owl-carousel/owl.theme.default.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap_css.css">
+    <link rel="stylesheet" type="text/css" href="css/malihu-custom-scrollbar-plugin-3.1.5/jquery.mCustomScrollbar.css">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -108,6 +110,7 @@
     </div>
     <!-- Submit wrong alert box -->
 
+
     <!-- The form -->
     <div class="container-fluid ">
         <div class="row wow fadeIn" data-wow-delay="1.8s" id="forms">
@@ -168,6 +171,98 @@
         </script>
     </div>
 
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content mt-35">
+                <div class="modal-header">
+                    <form class="searchForm">
+                        <div class="col-12 p-1 bg-light rounded rounded-pill shadow-sm mb-2">
+                            <div class="input-group">
+                                <input type="search" id="searchbar"
+                                    class="form-control border-0 rounded rounded-pill bg-light"
+                                    onkeyup="searchContent()" placeholder="Searching skyfinch..."
+                                    aria-describedby="button-addon1" autocomplete="off" />
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-body px-4 py-4 overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar"
+                    data-mcs-theme="dark">
+                    <ul class="list-unstyled">
+                        <li class="content mb-3">
+                            <a href="index.html" class="btn btn-outline-primary border-0 w-100 text-start searchLink" >Home | SkyFinch</a>
+
+                        </li>
+                        <li class="content mb-3">
+                            <a href="#sec1" class="btn btn-outline-primary border-0 w-100 text-start searchLink" >Why Choose should join us</a>
+
+                        </li>
+                        <li class="content mb-3">
+                            <a href="#sec2" class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Skyfinch Teams
+                            </a>
+
+                        </li>
+                        <li class="content mb-3">
+                            <a href="#sec03" class="btn btn-outline-primary border-0  w-100 text-start searchLink">Skyfinch
+                                Applications</a>
+
+                        </li>
+                        <li class="content mb-3">
+                            <a href="#sec2" class="btn btn-outline-primary border-0  w-100 text-start searchLink">Skyfinch Team |
+                                Application</a>
+
+                        </li>
+                        <li class="content mb-3">
+                            <a href="#sec3" class="btn btn-outline-primary border-0  w-100 text-start searchLink">Skyfinch Highlights |
+                                Part 1</a>
+
+                        </li>
+                        <li class="content mb-3">
+                            <a href="#sec3" class="btn btn-outline-primary border-0 w-100 text-start searchLink">Skyfinch Highlights |
+                                Part 2</a>
+
+                        </li>
+                        <li class="content mb-3">
+                            <a href="#sec4" class="btn btn-outline-primary border-0 w-100 text-start searchLink">Why choose us | Our
+                                projects, product, customer and Global office</a>
+
+                        </li>
+                        <li class="content mb-3">
+                            <a href="#sec5" class="btn btn-outline-primary border-0 w-100 text-start searchLink">The MR Reporting
+                                software is an Online</a>
+
+                        </li>
+                        <li class="content mb-3">
+                            <a href="#sec6" class="btn btn-outline-primary border-0 w-100 text-start searchLink">Skyfinch makes your
+                                Business Proud | Application | Window | All products</a>
+
+                        </li>
+                        <li class="content mb-3">
+                            <a href="#sec7" class="btn btn-outline-primary border-0  w-100 text-start searchLink">Our valuable Customer | Got A Project Or A Partnership In Mind? | contact Us</a>
+                        </li>
+                        <li class="content mb-3">
+                            <a href="#sec13" class="btn btn-outline-primary border-0  w-100 text-start searchLink">Footer | Social media's | Address</a>
+
+                        </li>
+                        <li class="content mb-3">
+                            <a href="service.html#tab-sec" class="btn btn-outline-primary border-0 w-100 text-start searchLink">Awesome Financial Services For Business</a>
+                            
+                        </li>
+                        <li class="content mb-3">
+                            <a href="service.html#req-call" class="btn btn-outline-primary border-0 w-100 text-start searchLink">Request A Call-Back | Get In Touch</a>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Navbar Start -->
     <div class="container-fluid vw-nav fixed-top m-0 p-0 wow fadeIn" data-wow-delay="0.8s">
         <div class="top-bar row gx-0 pb-lg-0 align-items-center d-lg-flex d-md-flex d-none bg-blue wow fadeIn">
@@ -193,8 +288,7 @@
                     <h6 class="me-0 p-0">Solution to Success</h6>
                 </b>
             </a>
-            <div class="nav-icons d-lg-none d-md-flex d-flex ms-4 gap-1 wow fadeInDown
-            " data-wow-delay="1.9s">
+            <div class="nav-icons d-lg-none d-md-flex d-flex ms-4 gap-1 wow fadeInDown" data-wow-delay="1.9s">
                 <a class="btn ms-1" href="https://www.facebook.com/skyfinch.roadmap" data-bs-toggle="tooltip"
                     data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Facebook"
                     target="_blank">
@@ -220,8 +314,17 @@
                 data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse me-5" id="navbarCollapse">
+
+            <div class="collapse navbar-collapse me-2" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a class="p-0 pb-0 me-4 d-flex justify-content-center align-items-center">
+                        <button id="searchButton" type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+                            <span class="row">
+                                <i class="col-1 fa fa-search"></i>
+                                <h6 class="col-10 p-0 m-0">Search...</h6>
+                            </span>
+                        </button>
+                    </a>
                     <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="service.html" class="nav-item nav-link">Service</a>
                     <div class="nav-item dropdown">
@@ -305,11 +408,9 @@
                                 <div class="container mt-lg-0 mt-md-0 mt-5">
                                     <div class="row justify-content-start">
                                         <div class="col-lg-7 caro-caption">
-                                            <p
-                                                class="d-inline-block border shadow border-muted rounded text-primary fw-bold py-lg-1 px-lg-3 mb-lg-1 pb-lg-1 mb-md-1 pb-md-1 mb-5 animated slideInDown">
+                                            <p class="d-inline-block border shadow border-muted rounded text-primary fw-bold py-lg-1 px-lg-3 mb-lg-1 pb-lg-1 mb-md-1 pb-md-1 mb-5 animated slideInDown">
                                                 Empowering Businesses</p>
-                                            <h1
-                                                class="display-3 mb-lg-2 pb-lg-1 mb-md-2 pb-md-1 top-slide1 animated slideInDown">
+                                            <h1 class="display-3 mb-lg-2 pb-lg-1 mb-md-2 pb-md-1 top-slide1 animated slideInDown">
                                                 Scalable Platforms To Tackle All Market Conditions
                                             </h1>
                                             <p class="text-dark fw-semibold mid-slide1"
@@ -384,13 +485,11 @@
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                        data-bs-slide="prev">
+                    <button class="carousel-control-prev" data-bs-target="#header-carousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                        data-bs-slide="next">
+                    <button class="carousel-control-next" data-bs-target="#header-carousel" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -402,7 +501,7 @@
 
         <!--Section 1 start-->
         <section id="sec1" class="container1 bg-03 container-fluid pt-lg-2 pt-md-1 pb-lg-0 pb-md-3 pb-3">
-            <div class="container my-lg-3 py-lg-4 py-md-2">
+            <div class="container my-lg-3 py-lg-3 py-md-2">
                 <div class="row order gy-lg-5 pt-lg-5 pt-0 d-flex justify-content-center align-items-center ">
                     <div class="col-lg-4 col-12 order-item1 wow fadeInDown" data-wow-delay="0.4s"
                         data-aos-duration="1000" data-aos="fade-down">
@@ -747,7 +846,7 @@
                             Highlights</h4>
                         <div class="row d-flex align-items-center bg-transparent justify-content-center">
                             <div class="col-12 col-sm-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s"
-                                data-aos-duration="1000" data-aos="fade-up">
+                                data-aos-duration="1000" data-aos="zoom-in">
                                 <div class="flower card p-2 bg-transparent text-center border-0">
                                     <div class="decor d-flex justify-content-center align-items-center">
                                         <div class="beat">
@@ -764,7 +863,7 @@
                             </div>
 
                             <div class="col-12 col-sm-12 bg-transparent col-md-6 col-lg-4 wow fadeIn"
-                                data-wow-delay="0.2s" data-aos-duration="1000" data-aos="fade-up">
+                                data-wow-delay="0.2s" data-aos-duration="1000" data-aos="zoom-in">
                                 <div class="flower card bg-transparent p-2 text-center border-0">
                                     <div class="decor d-flex justify-content-center align-items-center">
                                         <div class="beat">
@@ -783,7 +882,7 @@
                             <hr class="d-none d-md-block d-lg-none">
 
                             <div class="col-12 col-sm-12 bg-transparent col-md-6 col-lg-4 wow fadeIn"
-                                data-wow-delay="0.3s" data-aos-duration="1000" data-aos="fade-up">
+                                data-wow-delay="0.3s" data-aos-duration="1000" data-aos="zoom-in">
                                 <div class="flower card bg-transparent p-2 text-center border-0">
                                     <div class="decor d-flex justify-content-center align-items-center">
                                         <div class="beat">
@@ -801,7 +900,7 @@
                             </div>
                             <hr class="d-none d-lg-block">
                             <div class="col-12 col-sm-12 bg-transparent col-md-6 col-lg-4 wow fadeIn"
-                                data-wow-delay="0.4s" data-aos-duration="1000" data-aos="fade-up">
+                                data-wow-delay="0.4s" data-aos-duration="1000" data-aos="zoom-int">
                                 <div class="flower card bg-transparent p-2 text-center border-0">
                                     <div class="decor d-flex justify-content-center align-items-center">
 
@@ -823,7 +922,7 @@
 
 
                             <div class="col-12 col-sm-12 bg-transparent col-md-6 col-lg-4 wow fadeIn"
-                                data-wow-delay="0.5s" data-aos-duration="1000" data-aos="fade-up">
+                                data-wow-delay="0.5s" data-aos-duration="1000" data-aos="zoom-int">
                                 <div class="flower bg-transparent card p-2 text-center border-0">
                                     <div class="decor d-flex justify-content-center align-items-center">
 
@@ -842,7 +941,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-sm-12 bg-transparent col-md-6 col-lg-4 wow fadeIn"
-                                data-wow-delay="0.6s" data-aos-duration="1000" data-aos="fade-up">
+                                data-wow-delay="0.6s" data-aos-duration="1000" data-aos="zoom-int">
                                 <div class="flower card bg-transparent p-2 text-center border-0">
                                     <div class="decor d-flex justify-content-center align-items-center">
 
@@ -876,7 +975,7 @@
                             Highlights</h4>
                         <div class="row d-flex align-items-center justify-content-center">
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4" data-wow-delay="0.2s"
-                                data-aos-duration="1000" data-aos="fade-up">
+                                data-aos-duration="1000" data-aos="zoom-in">
                                 <div class="card border-0 pill-bg rounded-pill">
                                     <div class="row d-flex align-items-center justify-content-center py-1">
                                         <div
@@ -898,7 +997,7 @@
                             </div>
 
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4" data-wow-delay="0.4s"
-                                data-aos-duration="1000" data-aos="fade-up">
+                                data-aos-duration="1000" data-aos="zoom-in">
                                 <div class="card border-0 pill-bg1 rounded-pill">
                                     <div class="row d-flex align-items-center justify-content-center py-md-1">
                                         <div
@@ -920,7 +1019,7 @@
                             </div>
 
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4" data-wow-delay="0.2s"
-                                data-aos-duration="1000" data-aos="fade-up">
+                                data-aos-duration="1000" data-aos="zoom-in">
                                 <div class="card border-0 pill-bg1 rounded-pill">
                                     <div class="row d-flex align-items-center justify-content-center py-md-1">
                                         <div
@@ -942,7 +1041,7 @@
                             </div>
 
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4" data-wow-delay="0.4s"
-                                data-aos-duration="1000" data-aos="fade-up">
+                                data-aos-duration="1000" data-aos="zoom-in">
                                 <div class="card border-0 pill-bg rounded-pill">
                                     <div class="row d-lg-flex align-items-center justify-content-center py-md-1">
                                         <div
@@ -966,7 +1065,7 @@
 
 
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4" data-wow-delay="0.2s"
-                                data-aos-duration="1000" data-aos="fade-up">
+                                data-aos-duration="1000" data-aos="zoom-in">
                                 <div class="card border-0 pill-bg rounded-pill">
                                     <div class="row d-flex align-items-center justify-content-center py-md-1">
                                         <div
@@ -989,7 +1088,7 @@
                             </div>
 
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4" data-wow-delay="0.4s"
-                                data-aos-duration="1000" data-aos="fade-up">
+                                data-aos-duration="1000" data-aos="zoom-in">
                                 <div class="card border-0 pill-bg1 rounded-pill">
                                     <div class="row d-flex align-items-center justify-content-center py-md-1">
                                         <div
@@ -1782,7 +1881,7 @@
 
         <!--Section 7 start-->
         <section id="sec7" class="container1 bg-10 pt-lg-4 pb-lg-1 pt-4 pb-1">
-            <div class="container-fluid mt-5 pt-2 mb-1">
+            <div id="part-proud" class="container-fluid mt-5 pt-2 mb-1">
                 <div class="row d-flex justify-content-center align-items-center mt-1 pb-0">
                     <div class="col-lg-12 divide">
                         <div class="row mt-lg-0 mt-0 d-flex justify-content-center align-items-center">
@@ -2041,7 +2140,7 @@
 
 
         <!-- Footer Start -->
-        <section class="container-fluid scroll text-light footer mt-lg-0 pt-lg-5 mt-0 pt-4 wow fadeIn"
+        <section id="sec13" class="container-fluid scroll text-light footer mt-lg-0 pt-lg-5 mt-0 pt-4 wow fadeIn"
             data-wow-delay="0.1s">
             <div class="container pt-lg-4 mt-lg-0 mt-3 pt-4">
                 <div class="row g-lg-5 mt-lg-1 mt-1 g-md-2 g-4">
@@ -2162,7 +2261,8 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="js/AnimationOnScroll/package/dist/aos.js"></script>
     <script src="js/3Dcards-02.js"></script>
-
+    <script src="css/malihu-custom-scrollbar-plugin-3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/searchBar.js"></script>
     <!-- Scroll effects -->
     <script>
         AOS.init();
