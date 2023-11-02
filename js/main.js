@@ -131,7 +131,7 @@
     function screenCheck() {
         var deviceAgent = navigator.userAgent.toLowerCase();
         var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
-        if (agentID || $(window).width() <= 1124) {
+        if (agentID || $(window).width() <= 1110) {
             // its mobile screen
             $.scrollify.destroy();
             $('section').removeClass('scroll').removeAttr('style');
@@ -142,7 +142,7 @@
             applyScroll();
             $.scrollify.enable();
         }
-    }
+    }    
 
     //end of scroll effects
 
@@ -176,8 +176,6 @@
 
     // End of back to top button
 
-
-
     // Facts counter
     $('.count').counterUp({
         delay: 10,
@@ -188,6 +186,7 @@
     //<!-- OwlCarousel script start -->     
     var owl = $('.cus');
     owl.owlCarousel({
+        rtl:false,
         items: 5,
         autoplay: true,
         slideTransition: 'linear',
@@ -213,7 +212,34 @@
     $('.stop').on('click', function () {
         owl.trigger('stop.owl.autoplay')
     })
+
+    // change direction OwlCarousel
+    var owl1 = $('.cus1');
+    owl1.owlCarousel({
+        rtl:true,
+        items: 5,
+        autoplay: true,
+        slideTransition: 'linear',
+        autoplayTimeout: 6000,
+        autoplaySpeed: 6000,
+        loop: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 5
+            }
+        }
+    });
+
+
     //<!-- OwlCarousel script end -->
+
     $("#myBtn").click(function () {
         var dots = $("#dots");
         var moreText = $("#more");
@@ -229,10 +255,50 @@
             moreText.css("display", "inline");
         }
     })
-
+	/* ---------------------------------------------
+            Isotope js Starts
+         --------------------------------------------- */
+         $(window).on('load', function() {
+            $('.portfolio-filter ul li').on('click', function() {
+                $('.portfolio-filter ul li').removeClass('active');
+                $(this).addClass('active');
+    
+                var data = $(this).attr('data-filter');
+                $workGrid.isotope({
+                    filter: data
+                });
+            });
+    
+            if (document.getElementById('portfolio')) {
+                var $workGrid = $('.portfolio-grid').isotope({
+                    itemSelector: '.all',
+                    percentPosition: true,
+                    masonry: {
+                        columnWidth: '.all'
+                    }
+                });
+            }
+        });
+    
+        /*----------------------------------------------------*/
+        /* Start Magnific Pop Up
+        /*----------------------------------------------------*/
+        if ($('.img-gal').length > 0) {
+            $('.img-gal').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        }
+        /*----------------------------------------------------*/
+        /*  End  Magnific Pop Up
+        /*----------------------------------------------------*/
+    
+        
 
     //////////////////////////////////////////////////////////////////////////////////////////////////
-    
+
     // Search box start
 
     var exampleModal = $("#exampleModal"),

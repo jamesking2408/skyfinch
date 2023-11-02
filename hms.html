@@ -52,8 +52,16 @@
 
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <img src="img/Ajax-loader.gif" style="width: 200px;
-    height: 200px;" alt="Loading..." />
+        <div class="dot-spinner">
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+        </div>
     </div>
 
     <!-- Spinner End -->
@@ -84,10 +92,117 @@
             <span id="send-btn" class="material-symbols-outlined">send</span>
         </div>
     </div>
-
-
-
     <!-- End chat box Design  -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content mt-35">
+                <div class="modal-header">
+                    <form class="searchForm">
+                        <div class="col-12 p-1 bg-light rounded rounded-pill shadow-sm mb-2">
+                            <div class="input-group">
+                                <input type="search" id="searchbar"
+                                    class="form-control border-0 rounded rounded-pill bg-light"
+                                    onkeyup="searchContent()" placeholder="Searching skyfinch..."
+                                    aria-describedby="button-addon1" autocomplete="off" />
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-body px-4 py-4 overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar"
+                    data-mcs-theme="dark">
+                    <ul class="list-unstyled">
+                        <li class="content mb-3">
+                            <a href="index.html#home_skyfinch"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home | SkyFinch</a>
+
+                        </li>
+                        <li class="content mb-3">
+                            <a href="#sec1" class="btn btn-outline-primary border-0 w-100 text-start searchLink">Why
+                                Choose should join us</a>
+
+                        </li>
+                        <li class="content mb-3">
+                            <a href="#sec2" class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Skyfinch Teams
+                            </a>
+
+                        </li>
+                        <li class="content mb-3">
+                            <a href="#sec03"
+                                class="btn btn-outline-primary border-0  w-100 text-start searchLink">Skyfinch
+                                Applications</a>
+
+                        </li>
+                        <li class="content mb-3">
+                            <a href="#sec2"
+                                class="btn btn-outline-primary border-0  w-100 text-start searchLink">Skyfinch Team |
+                                Application</a>
+
+                        </li>
+                        <li class="content mb-3">
+                            <a href="#sec3"
+                                class="btn btn-outline-primary border-0  w-100 text-start searchLink">Skyfinch
+                                Highlights |
+                                Part 1</a>
+
+                        </li>
+                        <li class="content mb-3">
+                            <a href="#sec3"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Skyfinch Highlights
+                                |
+                                Part 2</a>
+
+                        </li>
+                        <li class="content mb-3">
+                            <a href="#sec4" class="btn btn-outline-primary border-0 w-100 text-start searchLink">Why
+                                choose us | Our
+                                projects, product, customer and Global office</a>
+
+                        </li>
+                        <li class="content mb-3">
+                            <a href="#sec5" class="btn btn-outline-primary border-0 w-100 text-start searchLink">The MR
+                                Reporting
+                                software is an Online</a>
+
+                        </li>
+                        <li class="content mb-3">
+                            <a href="#sec6"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Skyfinch makes your
+                                Business Proud | Application | Window | All products</a>
+
+                        </li>
+                        <li class="content mb-3">
+                            <a href="#sec7" class="btn btn-outline-primary border-0  w-100 text-start searchLink">Our
+                                valuable Customer | Got A Project Or A Partnership In Mind?</a>
+
+                        </li>
+                        <li class="content mb-3">
+                            <a href="#sec13"
+                                class="btn btn-outline-primary border-0  w-100 text-start searchLink">Footer | Social
+                                media's | Address</a>
+
+                        </li>
+                        <li class="content mb-3">
+                            <a href="service.html#tab-sec"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Awesome Financial
+                                Services For Business</a>
+
+                        </li>
+                        <li class="content mb-3">
+                            <a href="#req-call"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Request A Call-Back
+                                | Get In Touch</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Navbar Start -->
@@ -146,6 +261,15 @@
             </button>
             <div class="collapse navbar-collapse me-5" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a class="p-0 pb-0 me-4 d-flex justify-content-center align-items-center">
+                        <button id="searchButton" type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+                            <span class="row">
+                                <i class="col-1 fa fa-search"></i>
+                                <h6 class="col-10 p-0 m-0">Search...</h6>
+                            </span>
+                        </button>
+                    </a>
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="service.html" class="nav-item nav-link">Service</a>
                     <div class="nav-item dropdown">
@@ -217,7 +341,7 @@
 
     <!-- Page Header Start -->
 
-    <section class="container1 pt-lg-4 mt-lg-2"> <!--New header page (update)-->
+    <section id="hotel_land" class="container1 pt-lg-4 mt-lg-2"> <!--New header page (update)-->
         <div class="container-fluid img-hms mt-2 pt-1 mb-0 mt-lg-4 pt-lg-5 mb-lg-0 wow fadeInUp" data-wow-delay="1.2s">
             <div class="row px-2 border-hms pb-1 wow fadeInUp" data-wow-delay="1.5s">
                 <h1 class="display-3 text-uppercase wow fadeInDown" data-wow-delay="2.1s">
@@ -281,13 +405,13 @@
 
 
     <!-- Image section Start -->
-    <section class="bg-00">
+    <section id="hms_image" class="bg-00">
         <div class="container-fluid mt-lg-0 py-lg-3 my-md-2 py-md-2 my-0 py-1">
             <div class="row facts mt-lg-4 mb-lg-0 pt-lg-5 mt-2 mt-md-2 mb-1 py-md-2 py-1">
                 <div class="row d-flex justify-content-center align-items-center p-0 m-0 text-center wow fadeInUp"
                     data-wow-delay="0.5s" data-aos-duration="1000" data-aos="fade-up">
                     <h5 class="display-6 mt-lg-4 mb-md-4 mb-lg-0">
-                        The End to End Digital Solution for the Workflow of All Hotel Types
+                        The End to End Digital Solution for the Workflow of All types Hotel
                     </h5>
                 </div>
             </div>
@@ -329,21 +453,21 @@
                 </div>
             </div>
         </div>
-        <div class="idMyModal modal">
+        <div class="idMyModal modal1">
             <span class="close">&times;</span>
-            <img class="modal-content">
+            <img class="modal-content1">
         </div>
-        <div class="idMyModal modal">
+        <div class="idMyModal modal1">
             <span class="close">&times;</span>
-            <img class="modal-content">
+            <img class="modal-content1">
         </div>
-        <div class="idMyModal modal">
+        <div class="idMyModal modal1">
             <span class="close">&times;</span>
-            <img class="modal-content">
+            <img class="modal-content1">
         </div>
-        <div class="idMyModal modal">
+        <div class="idMyModal modal1">
             <span class="close">&times;</span>
-            <img class="modal-content">
+            <img class="modal-content1">
         </div>
         <!-- Add left and right buttons -->
         <div class="container-fluid pt-0 pb-3">
@@ -369,7 +493,7 @@
 
     <!-- Image section End -->
 
-    <section class="container-fluid bg-12 pt-1 mb-0 pb-0">
+    <section id="tab-sec" class="container-fluid bg-12 pt-1 mb-0 pb-0">
         <div class="container mt-lg-1 pt-lg-5 mt-1 pt-1">
 
             <div class="row mt-3 pt-lg-4 pb-0">
@@ -423,8 +547,8 @@
                     </div>
                 </div>
 
-                <div class="col-lg-8 col-md-9 col-12 pb-lg-0 pb-5 d-lg-block d-md-block d-none wow fadeInRight" data-wow-delay="0.6s"
-                    data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-lg-8 col-md-9 col-12 pb-lg-0 pb-5 d-lg-block d-md-block d-none wow fadeInRight"
+                    data-wow-delay="0.6s" data-aos="fade-up" data-aos-duration="1000">
                     <!-- Tabs content -->
                     <div class="d-flex justify-content-center align-items-center shadow rounded-top bg-white p-0">
                         <h5 class="display-5 font-italic mb-2 mx-5 text-center">Modules</h5>
@@ -1209,44 +1333,63 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 font-italic mb-4">Report</h4>
                                         <ul class="list-unstyled">
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Skyfinch HMS software
+                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Skyfinch HMS
+                                                software
                                                 enables hotel owners and decision makers to
-                                                handle all market situations by making agile and accurate business decisions
+                                                handle all market situations by making agile and accurate business
+                                                decisions
                                                 with the
-                                                help of the multi-level real-time reporting capability of the system. The key
+                                                help of the multi-level real-time reporting capability of the system.
+                                                The key
                                                 reports
                                                 generated by the solution are:</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Cost centre-wise reports
+                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Cost centre-wise
+                                                reports
                                                 based on inputs from POS system for
                                                 restaurant, Cafe, laundry, travel desk, etc;</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Detailed up-to-the-minute
+                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Detailed
+                                                up-to-the-minute
                                                 House Status reports;</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Reports on total room
+                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Reports on total
+                                                room
                                                 revenue, average room rate, RevPAR;</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Corporate Direct Billing
+                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Corporate Direct
+                                                Billing
                                                 Ledger and Ageing reports;</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Prior day, current month to
+                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Prior day, current
+                                                month to
                                                 date and current year to date;</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> House count report;</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Statistical history and
+                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> House count report;
+                                            </li>
+                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Statistical history
+                                                and
                                                 forecast;</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Rooms availability/Occupancy
+                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Rooms
+                                                availability/Occupancy
                                                 %;</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> No shows, cancellations
+                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> No shows,
+                                                cancellations
                                                 report;</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Report on rate variations &
+                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Report on rate
+                                                variations &
                                                 discounts offered;</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Travel agent commission;
+                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Travel agent
+                                                commission;
                                             </li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Detailed charge & payment
+                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Detailed charge &
+                                                payment
                                                 journal;</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Reservations, check-ins,
+                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Reservations,
+                                                check-ins,
                                                 check-outs report;</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Average guest stay duration;
+                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Average guest stay
+                                                duration;
                                             </li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Balances by not due, due,
+                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Balances by not due,
+                                                due,
                                                 overdue and total; and</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Report on payments received
+                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Report on payments
+                                                received
                                                 through various payment modes like
                                                 cash, cheque, Credit/Debit card, Travelers Cheque, etc.</li>
                                         </ul>
@@ -1331,8 +1474,7 @@
                         <div class="offer center px-5 fw-bold position-absolute">Save 40%</div>
                         <div class="card-body p-2 tx-co card-bg1 py-3">
                             <h5 class="center p-25 fw-bold">PREMIUM</h5>
-                            <h2 class="center p-50 fw-bold pt-2" style="padding-left: 60px;">99.00<span class="p-15">/
-                                    12 Month</span></h2>
+                            <h2 class="center p-50 fw-bold pt-2" style="padding-left: 60px;">99.00<span class="p-15">/12 Month</span></h2>
                             <hr>
                             <ul class="pt-0" style="padding-left: 45px;">
                                 <li class="nt text-muted">Unlimited updates & Projects</li>
@@ -1344,8 +1486,7 @@
                             <div class="center pt-1">
                                 <a href="product Enquiry.html"
                                     class="btn btn-purple btn-md btn-hover fw-bold mb-1 rounded-pill"
-                                    onclick="choosePlan('Hotel Management System', 'PREMIUM - 99.99 /per month')">Choose
-                                    Plan</a>
+                                    onclick="choosePlan('Hotel Management System', 'PREMIUM - 99.99 /per month')">Choose Plan</a>
                             </div>
                         </div>
                     </div>
@@ -1647,11 +1788,10 @@
                 </div>
                 <div
                     class="col-md-12 col-lg-12 col d-flex flex-wrap align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-2 pt-2 mt-3 pb-lg-0 mb-lg-0">
-                    <a class="foo-policy" href="">Anti-spam&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
-                    <a class="foo-policy" href="">Terms&nbsp;of&nbsp;Service<span>&nbsp;&VerticalLine;&nbsp;</span></a>
-                    <a class="foo-policy" href="">Privacy&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
-                    <a class="foo-policy" href="">Cookie&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
-                    <a class="foo-policy" href="">Abuse&nbsp;Policy</a>
+                    <a class="foo-policy" href="anti_spam.html">Anti-spam&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
+                    <a class="foo-policy" href="#">Terms&nbsp;of&nbsp;Service<span>&nbsp;&VerticalLine;&nbsp;</span></a>
+                    <a class="foo-policy" href="privacy_policy.html">Privacy&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
+                    <a class="foo-policy" href="confidentality_policy.html">Confidentiality&nbsp;Policy</a>
                 </div>
                 <div
                     class="col-md-12 col-lg-12 d-flex align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-1 mt-1 pt-lg-1 pt-1">
@@ -1681,6 +1821,7 @@
     <script src="css/malihu-custom-scrollbar-plugin-3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/zoom-InOut.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/searchBar.js"></script>
 
     <script>
         var swiper = new Swiper(".mySwiper", {

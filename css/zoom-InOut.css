@@ -9,10 +9,10 @@
     opacity: 0.7;
   }
 
-  .modal {
+  .modal1 {
     display: none;
     position: fixed;
-    z-index: 9999;
+    z-index: 99999999;
     left: 0;
     top: 0;
     width: 100%;
@@ -22,7 +22,7 @@
     background-color: rgba(0, 0, 0, 0.9);
   }
 
-  .modal-content {
+  .modal-content1 {
     display: block;
     margin-top: 200px;
     width: 100%;
@@ -34,9 +34,8 @@
     text-align: center;
   }
 
-  .modal-content img {
+  .modal-content1 img {
     max-width: 100%;
-    height: auto;
   }
 
   .close {
@@ -56,3 +55,4 @@
     cursor: pointer;
   }
 }
+

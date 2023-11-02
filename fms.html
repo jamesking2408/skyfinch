@@ -48,11 +48,18 @@
 <body>
 
     <!-- Spinner Start -->
-
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <img src="img/Ajax-loader.gif" style="width: 200px;
-    height: 200px;" alt="Loading..." />
+        <div class="dot-spinner">
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+        </div>
     </div>
 
     <!-- Spinner End -->
@@ -146,6 +153,14 @@
             </button>
             <div class="collapse navbar-collapse me-5" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a class="p-0 pb-0 me-4 d-flex justify-content-center align-items-center">
+                        <button id="searchButton" type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+                            <span class="row">
+                                <i class="col-1 fa fa-search"></i>
+                                <h6 class="col-10 p-0 m-0">Search...</h6>
+                            </span>
+                        </button>
+                    </a>
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="service.html" class="nav-item nav-link">Service</a>
                     <div class="nav-item dropdown">
@@ -329,21 +344,21 @@
                 </div>
             </div>
         </div>
-        <div class="idMyModal modal">
+        <div class="idMyModal modal1">
             <span class="close">&times;</span>
-            <img class="modal-content">
+            <img class="modal-content1">
         </div>
-        <div class="idMyModal modal">
+        <div class="idMyModal modal1">
             <span class="close">&times;</span>
-            <img class="modal-content">
+            <img class="modal-content1">
         </div>
-        <div class="idMyModal modal">
+        <div class="idMyModal modal1">
             <span class="close">&times;</span>
-            <img class="modal-content">
+            <img class="modal-content1">
         </div>
-        <div class="idMyModal modal">
+        <div class="idMyModal modal1">
             <span class="close">&times;</span>
-            <img class="modal-content">
+            <img class="modal-content1">
         </div>
         <!-- Add left and right buttons -->
         <div class="container-fluid pt-0 pb-3">
@@ -1274,11 +1289,10 @@
                 </div>
                 <div
                     class="col-md-12 col-lg-12 col d-flex flex-wrap align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-2 pt-2 mt-3 pb-lg-0 mb-lg-0">
-                    <a class="foo-policy" href="">Anti-spam&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
-                    <a class="foo-policy" href="">Terms&nbsp;of&nbsp;Service<span>&nbsp;&VerticalLine;&nbsp;</span></a>
-                    <a class="foo-policy" href="">Privacy&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
-                    <a class="foo-policy" href="">Cookie&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
-                    <a class="foo-policy" href="">Abuse&nbsp;Policy</a>
+                    <a class="foo-policy" href="anti_spam.html">Anti-spam&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
+                    <a class="foo-policy" href="#">Terms&nbsp;of&nbsp;Service<span>&nbsp;&VerticalLine;&nbsp;</span></a>
+                    <a class="foo-policy" href="privacy_policy.html">Privacy&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
+                    <a class="foo-policy" href="confidentality_policy.html">Confidentiality&nbsp;Policy</a>
                 </div>
                 <div
                     class="col-md-12 col-lg-12 d-flex align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-1 mt-1 pt-lg-1 pt-1">

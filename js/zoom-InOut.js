@@ -1,7 +1,7 @@
-if (screen.width < 600) {
+if (screen.width < 700) {
   const modal = document.getElementsByClassName('idMyModal');
   const img = document.getElementsByClassName('toZoom');
-  const modalImg = document.getElementsByClassName('modal-content');
+  const modalImg = document.getElementsByClassName('modal-content1');
   for ( let i = 0; i < img.length; i++ ) {
     img[i].onclick = function () {
       modal[i].style.display = "block";

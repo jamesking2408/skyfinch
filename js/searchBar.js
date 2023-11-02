@@ -2,21 +2,117 @@
 // Auto focus will locate main.js page
 // focus input field
 
-function searchContent() {
+function jumpToService(sectionId) {
+    const url = new URL('/service.html', window.location.origin);
+    const link = `${url}#${sectionId}`;
+    window.location.href = link;
+}
+function jumpToAbout(sectionId) {
+    const url = new URL('/about.html', window.location.origin);
+    const link = `${url}#${sectionId}`;
+    window.location.href = link;
+}
+function jumpToContact(sectionId) {
+    const url = new URL('/contact.html', window.location.origin);
+    const link = `${url}#${sectionId}`;
+    window.location.href = link;
+}
+function jumpToSales(sectionId) {
+    const url = new URL('/sales.html', window.location.origin);
+    const link = `${url}#${sectionId}`;
+    window.location.href = link;
+}
+function jumpToHms(sectionId) {
+    const url = new URL('/hms.html', window.location.origin);
+    const link = `${url}#${sectionId}`;
+    window.location.href = link;
+}
+function jumpToRms(sectionId) {
+    const url = new URL('/rms.html', window.location.origin);
+    const link = `${url}#${sectionId}`;
+    window.location.href = link;
+}
+function jumpToSsfinch(sectionId) {
+    const url = new URL('/ssfinch.html', window.location.origin);
+    const link = `${url}#${sectionId}`;
+    window.location.href = link;
+}
+function jumpToVms(sectionId) {
+    const url = new URL('/vms.html', window.location.origin);
+    const link = `${url}#${sectionId}`;
+    window.location.href = link;
+}
 
+
+function searchContent() {
     let input = document.getElementById('searchbar').value;
     input = input.toLowerCase();
     let x = document.getElementsByClassName('content');
 
-    for (i = 0; i < x.length; i++) {
+    for (let i = 0; i < x.length; i++) {
         if (!x[i].innerHTML.toLowerCase().includes(input)) {
             x[i].style.display = "none";
-        }
-        else {
+        } else {
             x[i].style.display = "list-item";
         }
     }
 }
+
+let currentResult = 0;
+
+function highlightResult(resultIndex) {
+    let x = document.getElementsByClassName('content');
+    for (let i = 0; i < x.length; i++) {
+        x[i].classList.remove("highlighted");
+    }
+    x[resultIndex].classList.add("highlighted");
+}
+
+let timeout;
+function debounce(func, wait) {
+    clearTimeout(timeout);
+    timeout = setTimeout(func, wait);
+}
+
+document.getElementById('searchbar').addEventListener('input', function() {
+    currentResult = 0;
+    debounce(searchContent, 300);
+});
+
+document.getElementById('searchbar').addEventListener('keydown', function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        searchContent();
+    } else if (event.key === "ArrowDown") {
+        event.preventDefault();
+        navigateResults(1);
+    } else if (event.key === "ArrowUp") {
+        event.preventDefault();
+        navigateResults(-1);
+    }
+});
+
+function navigateResults(direction) {
+    let x = document.getElementsByClassName('content');
+
+    if (x.length > 0) {
+        x[currentResult].classList.remove("highlighted");
+
+        currentResult += direction;
+
+        if (currentResult < 0) {
+            currentResult = x.length - 1;
+        } else if (currentResult >= x.length) {
+            currentResult = 0;
+        }
+
+        x[currentResult].classList.add("highlighted");
+    }
+}
+
+
+
+
 
 
 
