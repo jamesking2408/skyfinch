@@ -102,12 +102,12 @@
                 <medium class="ms-lg-2"><i id="top-icons" class="fa fa-map-marker-alt me-lg-2">
                     </i>5, Republic Street, Reddiarpalayam, Puducherry-605010, India</medium>
                 <medium class="ms-lg-3 ms-0"><i id="top-icons" class="fa fa-clock me-lg-2 me-0">
-                    </i>9.00 am - 6.30 pm</medium>
+                    </i>9.00 am - 6.30 pm (IST)</medium>
             </div>
             <div class="col-lg-6 col-md-4 text-end pe-lg-3">
                 <medium class=""><i id="top-icons" class="fa fa-envelope me-lg-2 me-0"></i>info&#x40;skyfinch.com
                 </medium>
-                <medium class="ps-lg-1 ps-0"><i id="top-icons" class="fa fa-phone-alt me-lg-2 me-0"></i>+91 9443487210
+                <medium class="ps-lg-1 ps-0"><i id="top-icons" class="fa fa-phone me-lg-2 me-0"></i>+91 9443487210
                 </medium>
             </div>
         </div>
@@ -151,14 +151,15 @@
             </button>
             <div class="collapse navbar-collapse me-5" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a class="p-0 pb-0 me-4 d-flex justify-content-center align-items-center">
-                        <button id="searchButton" type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+                    <!-- <a class="p-0 pb-0 me-4 d-flex justify-content-center align-items-center">
+                        <button id="searchButton" type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" data-bs-whatever="@mdo">
                             <span class="row">
                                 <i class="col-1 fa fa-search"></i>
                                 <h6 class="col-10 p-0 m-0">Search...</h6>
                             </span>
                         </button>
-                    </a>
+                    </a> -->
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="service.html" class="nav-item nav-link">Services</a>
                     <div class="nav-item dropdown">
@@ -188,12 +189,27 @@
                                     <a href="fms.html">Fleet Management System</a>
                                     <a href="ems.html">Event Management System</a>
                                     <a href="payroll.html">PayRoll Management System</a>
-                                    <a href="s&s.html">Sales and Services System</a>
+                                    <a href="sands.html">Sales and Services System</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a href="about.html" class="nav-item nav-link">About Us</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="solutionsDropdown1">Company</a>
+
+                        <div class="dropdown-menu border-light m-0 p-0">
+                            <!-- Add IDs to buttons for easier targeting -->
+                            <div class="submenu w-100 px-3 py-0">
+                                <a href="about.html" class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="abt_btn">About Us
+                                </a>
+                            </div>
+                            <br class="d-lg-none d-sm-block">
+                            <div class="submenu w-100 px-3 py-0">
+                                <a href="profile.html" class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="pro_btn">Profile
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="d-lg-flex d-none justify-content-lg-center align-items-lg-center" style="height: 30px;">
@@ -457,8 +473,8 @@
                     </div>
                 </div>
 
-                <div class="col-lg-8 col-md-9 col-12 d-lg-block d-md-block d-none pb-lg-0 pb-5 wow fadeInRight" data-wow-delay="0.6s"
-                    data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-lg-8 col-md-9 col-12 d-lg-block d-md-block d-none pb-lg-0 pb-5 wow fadeInRight"
+                    data-wow-delay="0.6s" data-aos="fade-up" data-aos-duration="1000">
                     <!-- Tabs content -->
                     <div class="d-flex justify-content-center align-items-center shadow rounded-top bg-white p-0">
                         <h5 class="display-5 font-italic mb-2 mx-5 text-center">Modules</h5>
@@ -777,78 +793,114 @@
                         <div class="swiper mySwiper" style="height: inherit;">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <div class="tab-pane bg-white rounded overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar px-3 fade show p-2">
+                                    <div
+                                        class="tab-pane bg-white rounded overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar px-3 fade show p-2">
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">Sales Management</h4>
                                             <ul class="list-unstyled">
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Quick and easy Billing
-                                                    powered by Barcode scanning, smart name searching, and item code searching
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Quick and easy
+                                                    Billing
+                                                    powered by Barcode scanning, smart name searching, and item code
+                                                    searching
                                                     facilities</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Complete Iconographic
-                                                    interface simplifies operability and enhances user-experience through easily
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Complete
+                                                    Iconographic
+                                                    interface simplifies operability and enhances user-experience
+                                                    through easily
                                                     understandable visual elements</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Error-free billing actuated
-                                                    by the facility to easily rectify wrong entries, and the action audit
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Error-free
+                                                    billing actuated
+                                                    by the facility to easily rectify wrong entries, and the action
+                                                    audit
                                                     capabilities</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The scope to create multiple
-                                                    price lists and accept payments in different payment modes improves customer
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The scope to
+                                                    create multiple
+                                                    price lists and accept payments in different payment modes improves
+                                                    customer
                                                     experience </li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Facility to make easy
-                                                    purchase entries prompts apt supplier payments, thereby maintaining stress-free
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Facility to make
+                                                    easy
+                                                    purchase entries prompts apt supplier payments, thereby maintaining
+                                                    stress-free
                                                     external relationships</li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="tab-pane bg-white rounded overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar px-3 show fade p-2">
+                                    <div
+                                        class="tab-pane bg-white rounded overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar px-3 show fade p-2">
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-3">Purchase Management</h4>
                                             <ul class="list-unstyled">
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> POS enhances the agility of
-                                                    Purchase management by simplifying and rendering the Inward Entry procedure free
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> POS enhances the
+                                                    agility of
+                                                    Purchase management by simplifying and rendering the Inward Entry
+                                                    procedure free
                                                     of hassles</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Accurate product costing is
-                                                    actuated by the modules capacity to build buying level product cost upon the
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Accurate product
+                                                    costing is
+                                                    actuated by the modules capacity to build buying level product cost
+                                                    upon the
                                                     Landing Price</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The system is programmable
-                                                    to automatically project selling price updates according to any change
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The system is
+                                                    programmable
+                                                    to automatically project selling price updates according to any
+                                                    change
                                                     attributed to marked price</li>
                                                 <li><i class="bi bi-check-all d-inline-block fs-4"></i>Level of Stock is
-                                                    automatically updated as when Goods Inward are verified and accounted for in the
+                                                    automatically updated as when Goods Inward are verified and
+                                                    accounted for in the
                                                     system</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The module's integration
-                                                    with inventory captures a clear vector of purchases and stock to accurately
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The module's
+                                                    integration
+                                                    with inventory captures a clear vector of purchases and stock to
+                                                    accurately
                                                     forecast the Profit/Gross margin</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Provision to assign
-                                                    distributor-wise formula enables to arrive at efficient and reasonable
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Provision to
+                                                    assign
+                                                    distributor-wise formula enables to arrive at efficient and
+                                                    reasonable
                                                     distributor margins</li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="tab-pane bg-white rounded overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar px-3 show fade p-2">
+                                    <div
+                                        class="tab-pane bg-white rounded overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar px-3 show fade p-2">
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">Inventory Management</h4>
                                             <ul class="list-unstyled">
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The tenacity of the module
-                                                    to accommodate more than 100,000 Stock Keeping Units (SKUs), enables the
-                                                    effortless and efficient management of large inventories with diverse product
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The tenacity of
+                                                    the module
+                                                    to accommodate more than 100,000 Stock Keeping Units (SKUs), enables
+                                                    the
+                                                    effortless and efficient management of large inventories with
+                                                    diverse product
                                                     categories</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The system is customizable
-                                                    to design the categories and sub-categories of the Inventory to have a better
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The system is
+                                                    customizable
+                                                    to design the categories and sub-categories of the Inventory to have
+                                                    a better
                                                     understanding and visibility through personalized screens</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Any change in the category
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Any change in
+                                                    the category
                                                     level of products can be easily incorporated into the solution</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The module offers clear
-                                                    visibility of the rolled up totals for any category level of the Inventory</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The Dynamic Drill Down view
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The module
+                                                    offers clear
+                                                    visibility of the rolled up totals for any category level of the
+                                                    Inventory</li>
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The Dynamic
+                                                    Drill Down view
                                                     presents a vivid picture of the Inventory status</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Actual Vs Estimated stock
-                                                    audits can be conducted at any time to easily and quickly find if there are
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Actual Vs
+                                                    Estimated stock
+                                                    audits can be conducted at any time to easily and quickly find if
+                                                    there are
                                                     discrepancies</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Support of excel files while
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Support of excel
+                                                    files while
                                                     doing stock audits is a great advantage</li>
                                             </ul>
                                         </div>
@@ -860,21 +912,30 @@
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">Customer Management</h4>
                                             <ul class="list-unstyled">
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Simple steps to create
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Simple steps to
+                                                    create
                                                     Customer Record enhances user-experience</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Segmenting Customers based
-                                                    on various categories gives clarity in choosing the most effective area of focus
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Segmenting
+                                                    Customers based
+                                                    on various categories gives clarity in choosing the most effective
+                                                    area of focus
                                                     for campaigns and reap maximum benefits</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Tracking and maintaining
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Tracking and
+                                                    maintaining
                                                     customers transaction level with the business empowers to assign
                                                     customer-specific Credit Limits</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The facility to track and
-                                                    monitor Receivables pending from customers presents customer-wise payment aging
-                                                    notifications, sends SMSs/emails regarding the dues to customers, and amicably
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The facility to
+                                                    track and
+                                                    monitor Receivables pending from customers presents customer-wise
+                                                    payment aging
+                                                    notifications, sends SMSs/emails regarding the dues to customers,
+                                                    and amicably
                                                     enables the recovery of all pending payments</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i>The module comes with the
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i>The module comes
+                                                    with the
                                                     faculty to handle time-bound package deals, Offers, Schemes, and
-                                                    customer-specific appropriation/deduction of Loyalty Bonus points</li>
+                                                    customer-specific appropriation/deduction of Loyalty Bonus points
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -885,20 +946,31 @@
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">Supplier Management</h4>
                                             <ul class="list-unstyled">
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Skyfinch offers customized
-                                                    solutions to suit the supplier relationship process requirements of any
-                                                    business. These solutions digitize and streamline the process of:</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> identifying, sourcing,
-                                                    contracting, and procuring the required goods/services from qualified suppliers
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Skyfinch offers
+                                                    customized
+                                                    solutions to suit the supplier relationship process requirements of
+                                                    any
+                                                    business. These solutions digitize and streamline the process of:
                                                 </li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> managing supplier
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> identifying,
+                                                    sourcing,
+                                                    contracting, and procuring the required goods/services from
+                                                    qualified suppliers
+                                                </li>
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> managing
+                                                    supplier
                                                     performance</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> implementing technologies,
-                                                    processes, policies, and procedures to support the purchasing process</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> developing and maintaining
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> implementing
+                                                    technologies,
+                                                    processes, policies, and procedures to support the purchasing
+                                                    process</li>
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> developing and
+                                                    maintaining
                                                     relationship with suppliers towards healthy prospects</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> generating cost-effective
-                                                    forecasts/theories to meet any kind of supply and demand scenario</li>
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> generating
+                                                    cost-effective
+                                                    forecasts/theories to meet any kind of supply and demand scenario
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -936,16 +1008,21 @@
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">Reorder/Replenishment</h4>
                                             <ul class="list-unstyled">
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Reorder/Replenishment
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i>
+                                                    Reorder/Replenishment
                                                     notifications are raised to designated personnel based on:</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Min/Max sales range for any
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Min/Max sales
+                                                    range for any
                                                     particular date in the previous year(s)</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Sales for a particular
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Sales for a
+                                                    particular
                                                     period (days, month, years) from the past</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Reorder Level specifications
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Reorder Level
+                                                    specifications
                                                 </li>
                                                 <li><i class="bi bi-check-all d-inline-block fs-4"></i> Lead times</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Fall in the prescribed
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Fall in the
+                                                    prescribed
                                                     safety-stock-level of any given product</li>
                                             </ul>
                                         </div>
@@ -957,13 +1034,18 @@
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">Barcode Stickers</h4>
                                             <ul class="list-unstyled">
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Facilitates the designing
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Facilitates the
+                                                    designing
                                                     and printing of barcodes indigenously</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Enables the generation of
-                                                    stickers using normal laser printer or ink jet printer with the liberty of
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Enables the
+                                                    generation of
+                                                    stickers using normal laser printer or ink jet printer with the
+                                                    liberty of
                                                     choosing desired logo and design</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The system supports
-                                                    dedicated sticker printers, printing A4 size sticker sheets, and partial sheet
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The system
+                                                    supports
+                                                    dedicated sticker printers, printing A4 size sticker sheets, and
+                                                    partial sheet
                                                     printing</li>
                                             </ul>
                                         </div>
@@ -975,22 +1057,33 @@
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">Quality Management</h4>
                                             <ul class="list-unstyled">
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The facility to track the
-                                                    materials from Purchases, Subcontract, Shop Floor, and Sales Return at QC,
-                                                    status of materials pending inspection can be spotted and appropriate action can
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The facility to
+                                                    track the
+                                                    materials from Purchases, Subcontract, Shop Floor, and Sales Return
+                                                    at QC,
+                                                    status of materials pending inspection can be spotted and
+                                                    appropriate action can
                                                     be taken</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Efficient defect analysis is
-                                                    actuated by assigning defect codes to defective products and digitally tagging
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Efficient defect
+                                                    analysis is
+                                                    actuated by assigning defect codes to defective products and
+                                                    digitally tagging
                                                     them with the details of defect</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Pareto analysis on attribute
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Pareto analysis
+                                                    on attribute
                                                     data & quality related variable charts enable better preparation and
                                                     improvements in decision making for future changes</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> BSystem generated quality
-                                                    related variable charts, and non-conformance/ monthly inspection status reports
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> BSystem
+                                                    generated quality
+                                                    related variable charts, and non-conformance/ monthly inspection
+                                                    status reports
                                                     help to improve the Quality Check parameters</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The efficiency of Quality
-                                                    Management process is enhanced by the ability to track and monitor QC history
-                                                    data, open NCR items, and calibration gauge due & MSA study due records.</li>
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The efficiency
+                                                    of Quality
+                                                    Management process is enhanced by the ability to track and monitor
+                                                    QC history
+                                                    data, open NCR items, and calibration gauge due & MSA study due
+                                                    records.</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1001,14 +1094,21 @@
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">SMS Support</h4>
                                             <ul class="list-unstyled">
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The module enables the
-                                                    sending of invoices and receipts to customers through SMS, the highlight being
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The module
+                                                    enables the
+                                                    sending of invoices and receipts to customers through SMS, the
+                                                    highlight being
                                                     the possibility of sending them in the regional language.</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The system is capacitated to
-                                                    generate reports on Daily Sales, Stock position, Cash Register balance, etc for
-                                                    any predefined periodical time span and send them as SMSs to business
-                                                    stakeholders, who can access them even over simple dongle connection</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Skyfinch integrates the SMS
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The system is
+                                                    capacitated to
+                                                    generate reports on Daily Sales, Stock position, Cash Register
+                                                    balance, etc for
+                                                    any predefined periodical time span and send them as SMSs to
+                                                    business
+                                                    stakeholders, who can access them even over simple dongle connection
+                                                </li>
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Skyfinch
+                                                    integrates the SMS
                                                     gateway provider with the any business using HTTP API</li>
                                             </ul>
                                         </div>
@@ -1020,16 +1120,23 @@
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">Tax Management</h4>
                                             <ul class="list-unstyled">
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The module is flexible to
-                                                    allow the application/rectification of taxes or addition of taxes anywhere
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The module is
+                                                    flexible to
+                                                    allow the application/rectification of taxes or addition of taxes
+                                                    anywhere
                                                     between making Purchase Entry to running the Bill</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> If there is need to collect
-                                                    more than one tax, custom tax structures can be easily designed to assign
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> If there is need
+                                                    to collect
+                                                    more than one tax, custom tax structures can be easily designed to
+                                                    assign
                                                     appropriate tax(s) to items</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Easy manageability of GST,
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Easy
+                                                    manageability of GST,
                                                     SGST, CGST, IGST/UGST</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The software design is
-                                                    scalable to accommodate all future governmental changes that might be attributed
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The software
+                                                    design is
+                                                    scalable to accommodate all future governmental changes that might
+                                                    be attributed
                                                     to the existing system</li>
                                             </ul>
                                         </div>
@@ -1041,18 +1148,26 @@
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">Financial control with GST</h4>
                                             <ul class="list-unstyled">
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The system automatically
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The system
+                                                    automatically
                                                     generates all the GST components as per statutory requisites</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The solution gives scope for
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The solution
+                                                    gives scope for
                                                     the creation of as many Financial Accounts as required</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Simplified import and export
-                                                    functionality eases the integration of all accounts and transactions in Tally
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Simplified
+                                                    import and export
+                                                    functionality eases the integration of all accounts and transactions
+                                                    in Tally
                                                     with Skyfinch's accounting platform</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The flexibility of the
-                                                    solution provides the scope to view financial reports from multiple perspectives
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The flexibility
+                                                    of the
+                                                    solution provides the scope to view financial reports from multiple
+                                                    perspectives
                                                 </li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The solution capacitates the
-                                                    viewing of Composite Ledgers, and empowers business stakeholders to enjoy a
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The solution
+                                                    capacitates the
+                                                    viewing of Composite Ledgers, and empowers business stakeholders to
+                                                    enjoy a
                                                     robust Cash Register management system</li>
                                             </ul>
                                         </div>
@@ -1064,15 +1179,22 @@
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">User control Management</h4>
                                             <ul class="list-unstyled">
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Provision to assign computer
-                                                    system-specific grant/limit of access to business data restricts users from
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Provision to
+                                                    assign computer
+                                                    system-specific grant/limit of access to business data restricts
+                                                    users from
                                                     accessing data beyond the necessity of their professional scope</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Ability to create login IDs,
-                                                    user groups, functionality groups, and capture Action History help to manage
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Ability to
+                                                    create login IDs,
+                                                    user groups, functionality groups, and capture Action History help
+                                                    to manage
                                                     access rights effectively</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The power to determine
-                                                    role-specific access to specific areas of the application and the tenacity to
-                                                    create additional passwords give total control over data security</li>
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The power to
+                                                    determine
+                                                    role-specific access to specific areas of the application and the
+                                                    tenacity to
+                                                    create additional passwords give total control over data security
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1083,16 +1205,23 @@
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">Analytical Reports</h4>
                                             <ul class="list-unstyled">
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Skyfinch's business-specific
-                                                    customized solution, through multi-level data analytics empowers business owners
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Skyfinch's
+                                                    business-specific
+                                                    customized solution, through multi-level data analytics empowers
+                                                    business owners
                                                     and decision makers to have key business reports on:</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The products that top the
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> The products
+                                                    that top the
                                                     sales scenario </li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Fast moving items</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Dump stock & dead stock/p>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Peak of business rush hour
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Fast moving
+                                                    items</li>
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Dump stock &
+                                                    dead stock/p>
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Peak of business
+                                                    rush hour
                                                     for effective and efficient staff management</li>
-                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Daily sales statistics,
+                                                <li><i class="bi bi-check-all d-inline-block fs-4"></i> Daily sales
+                                                    statistics,
                                                     sales returns, stock items and short stocks</li>
                                             </ul>
                                             </p>
@@ -1114,10 +1243,10 @@
             </div>
     </section>
     <!-- Modules start -->
-    <section id="sec8" class="bg-0 pt-lg-4 scroll">
-        <div class="container pt-lg-3 pt-md-3 pt-2 pb-lg-0 pb-md-2 pb-3 mt-lg-3 mt-md-0 mt-0">
+    <section id="sec8" class="bg-0 pt-lg-4">
+        <div class="container pt-lg-5 pt-md-3 pt-2 pb-lg-0 pb-md-2 pb-3 mt-lg-0 mt-md-0 mt-0">
 
-            <div class="row d-flex justify-content-center align-items-center pb-1 pt-3">
+            <div class="row d-flex justify-content-center align-items-center pb-1 pt-2 pb-lg-0 pt-lg-0">
 
                 <div class="col-lg-12 center pb-4 mt-3 pt-2">
                     <b class="display-6 fw-bold fs-2 pb-0 tx-co center">Choose The Right Plan For Your Business</b>
@@ -1207,7 +1336,7 @@
                 <div class="row d-flex justify-content-center align-items-center mt-3 mb-0 py-0">
                     <div class="col-lg-12 divide">
                         <div class="row mt-lg-0 mt-0 d-flex justify-content-center align-items-center">
-                            <h3 class="fw-bold pb-2 pb-md-5 pb-lg-1 mt-lg-4 pt-lg-3 pt-2 pb-3 text-center display-5 wow fadeInDown"
+                            <h3 class="fw-bold pb-2 pb-md-5 pb-lg-1 mt-lg-4 pt-lg-2 pt-2 pb-3 text-center display-5 wow fadeInDown"
                                 data-wow-delay="0.4s" data-aos-duration="1000" data-aos="fade-up">Our Valuable
                                 Customers</h3>
                             <div class="cus owl-carousel owl-theme pt-1" data-aos-duration="1000">
@@ -1373,31 +1502,31 @@
                     data-aos-duration="1000" data-aos="fade-up" style="max-width: 600px;">
                     <h1 class="display-6 mb-lg-0 mb-3">Exclusive Team</h1>
                 </div>
-                <div class="row d-flex justify-content-center">
-                    <div class="team-item col-lg-4 col-md-4 col-6 mt-lg-1 mt-2 me-lg-0 me-1 ps-0 wow fadeInUp"
-                        data-wow-delay="0.1s" data-aos-duration="1000" data-aos="fade-up">
+                <div class="row d-flex justify-content-center ">
+                    <div class="d-flex justify-content-center align-items-center col-lg-4 col-md-6 col-6 mt-lg-1 mt-2 wow fadeInUp"
+                        data-wow-delay="0.1s" data-aos-duration="1000" data-aos="fade-down">
                         <div class="card hov2">
                             <img class="card-body rounded" src="img/india/aboutus2.jpg" alt="">
-                            <div class="team-text d-flex justify-content-center">
-                                <h5 class="mb-0 py-2 px-1">ERP</h5>
+                            <div class="d-flex justify-content-center">
+                                <h5 class="mb-0 pb-2">ERP</h4>
                             </div>
                         </div>
                     </div>
-                    <div class="team-item ms-lg-0 col-lg-4 col-md-4 col-6 mt-lg-1 mt-2 wow fadeInUp"
+                    <div class="d-flex justify-content-center align-items-center col-lg-4 col-md-6 col-6 mt-lg-1 mt-2 wow fadeInUp"
                         data-wow-delay="0.3s" data-aos-duration="1000" data-aos="fade-up">
                         <div class="card hov2">
                             <img class="card-body rounded" src="img/india/team-new1.jpg" alt="">
-                            <div class="team-text d-flex justify-content-center">
-                                <h5 class="mb-0 py-2 px-1">DOT NET</h5>
+                            <div class="d-flex justify-content-center">
+                                <h5 class="mb-0 pb-2">DOT NET</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="team-item col-lg-4 col-md-6 col-12 mt-lg-1 mt-2 d-lg-block wow fadeInUp"
+                    <div class="d-flex justify-content-center align-items-center col-lg-4 col-md-12 col-12 mt-lg-1 mt-4 wow fadeInUp"
                         data-wow-delay="0.5s" data-aos-duration="1000" data-aos="fade-up">
                         <div class="card hov2">
                             <img class="card-body rounded" src="img/india/team-new2.jpg" alt="">
-                            <div class="team-text d-flex justify-content-center">
-                                <h5 class="mb-0 py-2 px-1">SUPPORT TEAM</h5>
+                            <div class="d-flex justify-content-center">
+                                <h5 class="mb-0 pb-2">Support Team</h5>
                             </div>
                         </div>
                     </div>
@@ -1408,12 +1537,12 @@
     <!-- Team End -->
 
     <!-- Footer Start -->
-    <section class="container-fluid scroll text-light footer mt-lg-0 pt-lg-5 mt-0 pt-4 wow fadeIn"
+    <section id="sec13" class="container-fluid scroll text-light footer mt-lg-0 pt-lg-5 mt-0 pt-4 wow fadeIn"
         data-wow-delay="0.1s">
-        <div class="container pt-lg-4 mt-lg-0 mt-3 pt-4">
-            <div class="row g-lg-5 mt-lg-1 mt-1 g-md-2 g-4">
+        <div class="container pt-lg-5 mt-lg-0 mt-3 pt-4">
+            <div class="row d-flex justify-content-around g-lg-5 mt-lg-1 mt-1 g-md-2 g-4">
                 <div class="col-lg-4 col-12 col-md-12">
-                    <h6 class="mb-4 cloud">SKYFINCH</h6>
+                    <h6 class="mb-4 cloud">SkyFinch</h6>
                     <div class="row">
                         <div class="col-lg-2 col-md-2 col-2 px-0 d-flex justify-content-center align-items-center">
                             <i class="fa fa-map-marker-alt mb-md-3 mb-3"></i>
@@ -1426,7 +1555,7 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-2 col-2 px-0 d-flex justify-content-center align-items-center">
-                            <i class="fa fa-phone-alt mb-md-2 mb-3"></i>
+                            <i class="fa fa-phone mb-md-2 mb-3"></i>
                         </div>
                         <div class="col-lg-10 col-10 px-0">
                             <p class="mb-2">+91 9443487210</p>
@@ -1445,26 +1574,21 @@
                     <h4 class="text-white mb-4 w-50 border-bottom border-primary">Explore</h4>
                     <a class="btn btn-link" href="index.html">Home</a>
                     <a class="btn btn-link" href="service.html">Services</a>
-                    <a class="btn btn-link" href="">Product Enquiry</a>
                     <a class="btn btn-link" href="about.html">About Us</a>
-                    <a class="btn btn-link" href="contact.html">Contact us</a>
+                    <a class="btn btn-link" href="profile.html">Profile</a>
                 </div>
                 <div class="col-lg-2 col-6 mb-lg-0 mb-4 mt-5 mt-lg-5">
                     <h4 class="text-white mb-4 w-50 border-bottom border-primary">Discover</h4>
-                    <a class="btn btn-link" href="">Plans & Pricing</a>
-                    <a class="btn btn-link" href="">Newsletter</a>
-                    <a class="btn btn-link" href="contact.html">Contact Us</a>
-                    <a class="btn btn-link" href="">Customer&nbsp;Support
-                        <a class="btn btn-link" href="">Enquiry</a>
+                    <a class="btn btn-link" href="pl_pr.html">Plans & Pricing</a>
+                    <a class="btn btn-link" href="product Enquiry.html">Product Enquiry</a>
+                    <a class="btn btn-link" href="contact.html">Contact us</a>
                 </div>
-                <div class="col-lg-4 col-12">
-                    <h4 class="text-white mb-4 w-25 border-width border-bottom border-primary">Newsletter</h4>
-                    <div class="position-relative w-75">
-                        <input class="form-control bg-white border-0 w-100 py-2 ps-4 pe-5 py-lg-2" type="text"
-                            placeholder="Your email">
-                        <button type="button"
-                            class="btn btn-primary py-lg-1 py-1 position-absolute top-0 end-0 mt-1 me-2">SignUp</button>
-                    </div>
+                <div id="polices" class="col-lg-3 col-6 mb-lg-0 mb-4 ms-0 ms-lg-2 mt-5 mt-lg-5">
+                    <h4 class="text-white mb-4 w-25 border-bottom border-primary">Policies</h4>
+                    <a class="btn btn-link" href="anti_spam.html">Anti-spam&nbsp;Policy</a>
+                    <a class="btn btn-link" href="confidentality_policy.html">Terms of Service</a>
+                    <a class="btn btn-link" href="privacy_policy.html">Privacy&nbsp;Policy</a>
+                    <a class="btn btn-link" href="confidentality_policy.html">Confidentiality&nbsp;Policy</a>
                 </div>
             </div>
         </div>
@@ -1491,14 +1615,17 @@
                 </div>
                 <div
                     class="col-md-12 col-lg-12 col d-flex flex-wrap align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-2 pt-2 mt-3 pb-lg-0 mb-lg-0">
-                    <a class="foo-policy" href="anti_spam.html">Anti-spam&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
-                    <a class="foo-policy" href="#">Terms&nbsp;of&nbsp;Service<span>&nbsp;&VerticalLine;&nbsp;</span></a>
-                    <a class="foo-policy" href="privacy_policy.html">Privacy&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
+                    <a class="foo-policy"
+                        href="anti_spam.html">Anti-spam&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
+                    <a class="foo-policy"
+                        href="confidentality_policy.html">Terms&nbsp;of&nbsp;Service<span>&nbsp;&VerticalLine;&nbsp;</span></a>
+                    <a class="foo-policy"
+                        href="privacy_policy.html">Privacy&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
                     <a class="foo-policy" href="confidentality_policy.html">Confidentiality&nbsp;Policy</a>
                 </div>
                 <div
                     class="col-md-12 col-lg-12 d-flex align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-1 mt-1 pt-lg-1 pt-1">
-                    &copy; Skyfinch 2023. All rights reserved. Designed By Skyfinch.
+                    &copy; Skyfinch 2023. All rights reserved. Designed by Skyfinch.
                 </div>
             </div>
         </div>

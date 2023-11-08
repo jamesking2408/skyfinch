@@ -33,7 +33,8 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="js/AnimationOnScroll/package/dist/aos.css">
     <link rel="stylesheet" type="text/css" href="css/3Dcards-02.css">
-    <link rel="stylesheet" type="text/css" href="css/cus-hook.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/cus-hook.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
 
     <!-- Template Stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -48,18 +49,18 @@
 <body>
     <!-- Spinner Start -->
     <div id="spinner"
-    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-    <div class="dot-spinner">
-        <div class="dot-spinner__dot"></div>
-        <div class="dot-spinner__dot"></div>
-        <div class="dot-spinner__dot"></div>
-        <div class="dot-spinner__dot"></div>
-        <div class="dot-spinner__dot"></div>
-        <div class="dot-spinner__dot"></div>
-        <div class="dot-spinner__dot"></div>
-        <div class="dot-spinner__dot"></div>
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="dot-spinner">
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+            <div class="dot-spinner__dot"></div>
+        </div>
     </div>
-</div>
     <!-- Spinner End -->
 
 
@@ -113,7 +114,8 @@
             <img src="img/wrong.png" class="wrong" alt="">
             <h2 class="display-5" style="color: rgb(219, 17, 17);"></h2>
             <p class="fw-semibold"></p>
-            <button type="button" class="exit1 fs-5 fw-bolder" onclick="closePopup1()">OK<span><img src="img/thumbs.png" alt="thumbs" style="width: 25px;"></span></button>
+            <button type="button" class="exit1 fs-5 fw-bolder" onclick="closePopup1()">OK<span><img src="img/thumbs.png"
+                        alt="thumbs" style="width: 25px;"></span></button>
         </div>
     </div>
     <!-- Submit wrong alert box -->
@@ -165,18 +167,6 @@
                 </form>
             </div>
         </div>
-
-        <script>
-            document.querySelector("#hide_form").addEventListener("click", function () {
-                document.querySelector("#myForm").style.display = "none";
-                document.querySelector("show_form").style.display = "block";
-            })
-            document.querySelector("#show_form").addEventListener("click", function () {
-                document.open_form.reset();
-                document.querySelector("#myForm").style.display = "block";
-                document.querySelector("show_form").style.display = "none";
-            })
-        </script>
     </div>
 
 
@@ -523,12 +513,12 @@
                 <medium class="ms-lg-2"><i id="top-icons" class="fa fa-map-marker-alt me-lg-2">
                     </i>5, Republic Street, Reddiarpalayam, Puducherry-605010, India</medium>
                 <medium class="ms-lg-3 ms-0"><i id="top-icons" class="fa fa-clock me-lg-2 me-0">
-                    </i>9.00 am - 6.30 pm</medium>
+                    </i>9.00 am - 6.30 pm (IST)</medium>
             </div>
             <div class="col-lg-6 col-md-4 text-end pe-lg-3">
                 <medium class=""><i id="top-icons" class="fa fa-envelope me-lg-2 me-0"></i>info&#x40;skyfinch.com
                 </medium>
-                <medium class="ps-lg-1 ps-0"><i id="top-icons" class="fa fa-phone-alt me-lg-2 me-0"></i>+91 9443487210
+                <medium class="ps-lg-1 ps-0"><i id="top-icons" class="fa fa-phone me-lg-2 me-0"></i>+91 9443487210
                 </medium>
             </div>
         </div>
@@ -570,7 +560,7 @@
 
             <div class="collapse navbar-collapse me-2" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a class="p-0 pb-0 me-4 d-flex justify-content-center align-items-center">
+                    <!-- <a class="p-0 pb-0 me-4 d-flex justify-content-center align-items-center">
                         <button id="searchButton" type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
                             data-bs-target="#exampleModal" data-bs-whatever="@mdo">
                             <span class="row">
@@ -578,9 +568,9 @@
                                 <h6 class="col-10 p-0 m-0">Search...</h6>
                             </span>
                         </button>
-                    </a>
+                    </a> -->
                     <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="service.html" class="nav-item nav-link">Service</a>
+                    <a href="service.html" class="nav-item nav-link">Services</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" id="solutionsDropdown">Solutions</a>
 
@@ -606,15 +596,30 @@
                                 <div class="dropdown-content1 web text-dec px-lg-2 py-lg-2 py-3">
                                     <a href="crm.html">CRM</a><br>
                                     <a href="ctm.html">Travel Management System<br>
-                                        <a href="fms.html">Fleet Management System</a><br>
-                                        <a href="ems.html">Event Management System</a><br>
-                                        <a href="payroll.html">PayRoll Management System</a><br>
-                                        <a href="s&s.html">Sales and Service System</a><br>
+                                    <a href="fms.html">Fleet Management System</a><br>
+                                    <a href="ems.html">Event Management System</a><br>
+                                    <a href="payroll.html">PayRoll Management System</a><br>
+                                    <a href="sands.html">Sales and Service System</a><br>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a href="about.html" class="nav-item nav-link">About Us</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="solutionsDropdown1">Company</a>
+
+                        <div class="dropdown-menu border-light m-0 p-0">
+                            <!-- Add IDs to buttons for easier targeting -->
+                            <div class="submenu w-100 px-3 py-0">
+                                <a href="about.html" class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="abt_btn">About Us
+                                </a>
+                            </div>
+                            <br class="d-lg-none d-sm-block">
+                            <div class="submenu w-100 px-3 py-0">
+                                <a href="profile.html" class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="pro_btn">Profile
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="d-lg-flex d-none justify-content-lg-center align-items-lg-center" style="height: 30px;">
@@ -654,7 +659,6 @@
             data-wow-delay="1.8s">
             <div class="container1 mt-lg-0">
                 <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
 
                     <div class="carousel-inner">
                         <div class="carousel-item container2 active">
@@ -758,65 +762,65 @@
 
         <!--Section 1 start-->
         <section id="sec1" class="container1 bg-03 container-fluid pt-lg-2 pt-md-1 pb-lg-0 pb-md-3 pb-3">
-            <div class="container my-lg-3 py-lg-3 py-md-2">
+            <div class="container mt-lg-3 py-lg-3 py-md-2">
                 <div class="row order gy-lg-5 pt-lg-5 pt-0 d-flex justify-content-center align-items-center ">
-                    <div class="col-lg-4 col-12 order-item1 wow fadeInDown" data-wow-delay="0.4s"
-                        data-aos-duration="1000" data-aos="fade-down">
-                        <div class="row d-flex align-items-center justify-content-center">
-                            <div class="col-12 col-md-6 col-lg-12 gy-2">
-                                <div class="card p-lg-2 p-1 text-center border-0 shadow dump">
-                                    <div class="beat1">
-                                        <i class="bi bi-receipt display-my display-4"></i>
-                                    </div>
-                                    <h4 class="fw-bold pb-lg-1 pt-lg-1 pt-0 pb-1">GST Ready Billing</h4>
-                                    <p class="text-muted mb-lg-0 mb-1">All Skyfinch solutions that deal with sales
-                                        and billing/invoicing are assigned built-in features to meet all GST’s
-                                        requirements.</p>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-12 gy-3">
-                                <div class="card p-lg-2 p-1 text-center border-0 shadow dump">
-                                    <div class="beat1">
-                                        <i class="bi bi-award display-my display-4"></i>
-                                    </div>
-                                    <h4 class="fw-bold pb-lg-1 pt-lg-1 pt-0 pb-1">Best Practices</h4>
-                                    <p class="text-muted mb-lg-0 mb-1">To name one, Skyfinch employs CASE tools to
-                                        plan and
-                                        design data model; Application Development; and implementation cycles.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-12 order-item2 col-sm-12 col-lg-4 col-md-8 pt-2 mt-2 pb-md-3 text-center wow fadeInDown"
                         data-wow-delay="0.3s" data-aos-duration="1000" data-aos="slide-up">
                         <h2 class="fw-bold display-6 pb-4 pt-4">Why you should Join Us</h2>
                         <img src="img/cur03.png" alt="" class="img-fluid" style="height: 250px;">
-                        <a href="about.html" class="btn btn-primary py-2 my-3 px-3 animated slideInUp">Learn
-                            More</a>
+
                     </div>
-                    <div class="col-lg-4 order-item3 col-12 wow fadeInUp" data-wow-delay="0.3s" data-aos-duration="1000"
-                        data-aos="fade-up">
+                    <div class="col-lg-8 col-12 order-item1 wow fadeInDown" data-wow-delay="0.4s"
+                        data-aos-duration="1000" data-aos="fade-down">
                         <div class="row d-flex align-items-center justify-content-center">
-                            <div class="col-12 col-md-6 col-lg-12 gy-3">
-                                <div class="card p-lg-2 p-1 text-center border-0 shadow dump">
-                                    <div class="beat1">
-                                        <i class="bi bi-arrow-repeat display-my display-4"></i>
-                                    </div>
-                                    <h4 class="fw-bold pb-lg-1 pt-lg-1 pt-0 pb-1">Routine Maintenance</h4>
-                                    <p class="text-muted mb-lg-0 mb-1">Skyfinch's support team handles on-site and
-                                        off-site
-                                        modifications, enhancements, and documentation in a hassle-free manner.</p>
+                            <div class="col-12 col-md-6 col-lg-6 gy-2">
+                                <div class="card py-lg-2 p-1 text-start border-0 hov1 shadow ">
+                                    <h4 class="fw-bold pb-lg-1 pt-lg-1 pt-0 pb-1 ps-2"><span class=""></span>GST
+                                        Ready Billing<div class="main_divider"></div>
+                                    </h4>
+                                    <p class="text-muted px-2 mb-lg-0 mb-1">
+                                        All Skyfinch solutions that deal with sales
+                                        and billing/invoicing are assigned built-in features to meet all GST’s
+                                        requirements.
+                                    </p>
                                 </div>
                             </div>
-                            <div class="col-lg-12 col-md-6 col-lg-12 gy-3">
-                                <div class="card p-lg-2 p-1 text-center border-0 shadow dump">
-                                    <div class="beat1">
-                                        <i class="bi bi-clock-history display-my display-4"></i>
-                                    </div>
-                                    <h4 class="fw-bold pb-lg-1 pt-lg-1 pt-0 pb-1">Time Savings</h4>
-                                    <p class="text-muted mb-lg-0 mb-1">“Have regular hours for work and play; make
-                                        each day both useful, pleasant and prove that you understand the worth of
-                                        time.”</p>
+                            <div class="col-12 col-md-6 col-lg-6 gy-2">
+                                <div class="card py-lg-2 p-1 text-start border-0 hov1 shadow ">
+                                    <h4 class="fw-bold pb-lg-1 pt-lg-1 pt-0 pb-1 ps-2"><span class=""></span>Best
+                                        Practices<div class="main_divider"></div>
+                                    </h4>
+                                    <p class="text-muted px-2 mb-lg-0 mb-1">To name one,
+                                        Skyfinch employs CASE tools to plan and design data model, Application
+                                        Development and implementation cycles.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-6 gy-2">
+                                <div class="card py-lg-2 p-1 text-start border-0 hov1 shadow ">
+                                    <h4 class="fw-bold pb-lg-1 pt-lg-1 pt-0 pb-1 ps-2">
+                                        <span class=""></span>Routine Maintenance<div class="main_divider">
+                                        </div>
+                                    </h4>
+                                    <p class="text-muted px-2 mb-lg-0 mb-1">
+                                        Skyfinch's support team handles on-site and
+                                        off-site modifications, enhancements, and documentation in a hassle-free
+                                        manner.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-6 gy-2">
+                                <div class="card py-lg-2 p-1 text-start border-0 hov1 shadow ">
+                                    <h4 class="fw-bold pb-lg-1 pt-lg-1 pt-0 pb-1 ps-2">
+                                        <span class=""></span>Time Savings<div class="main_divider"></div>
+                                    </h4>
+                                    <p class="text-muted px-2 mb-lg-0 mb-1">
+                                        “Have regular hours for work and play; make
+                                        each day both useful, pleasant and prove that you understand the worth
+                                        of time.”
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -862,83 +866,59 @@
                     </div>
                     <div class="col-lg-4 col-sm-12 pt-lg-0 pt-2 mt-lg-0 mt-1 justify-content-center wow fadeInDown"
                         data-wow-delay="0.3s" data-aos-duration="1000" data-aos="fade-down" style="z-index: 1;">
-                        <img src="img/dev-01.png" alt="" class="dev-01 img-fluid rounded d-none d-lg-flex">
+                        <img src="img/sky_appli_index.svg" alt="" class="dev-01 img-fluid rounded d-none d-lg-flex">
                     </div>
                     <div class="col-lg-8 pt-lg-1 pb-lg-3 py-1 mt-lg-0 mt-1">
                         <div class="row d-lg-flex d-flex align-items-center justify-content-center g-1 g-lg-2 g-md-4">
                             <div class="col-lg-6 col-md-6 pt-3 mt-3 gy-lg-5 g-2 wow fadeInUp" data-wow-delay="0.2s"
                                 data-aos-duration="1000" data-aos="fade-up">
-                                <div class="card p-1 border-0 bg-pink py-1">
+                                <div class="card p-1 border-0 py-1">
                                     <div
-                                        class="row d-flex align-items-center justify-content-center text-primary team1">
-                                        <div class="col-2 col-lg-3">
-                                            <div class="heart1">
-                                                <i class="bi bi-arrow-down-up display-my display-6"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-10 col-lg-9 ps-3">
-                                            <h5 class="fw-bold pb-1 pt-1">Online Application</h5>
-                                            <p class="text-muted">We develop business-specific Online Applications
-                                                to empower business stakeholders to make business transactions from
-                                                anywhere at any time.</p>
-                                        </div>
+                                        class="row d-flex align-items-center justify-content-center text-primary team1 px-3">
+                                        <h5 class="fw-bold pb-1 pt-1">Online Application<div class="main_divider"></div>
+                                        </h5>
+                                        <p class="text-muted">We develop business-specific Online Applications
+                                            to empower business stakeholders to make business transactions from
+                                            anywhere at any time.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 pt-3 mt-3 gy-lg-5 gy-2 wow fadeInUp" data-wow-delay="0.2s"
                                 data-aos-duration="1000" data-aos="fade-up">
-                                <div class="card p-1 border-0 bg-pink py-1">
+                                <div class="card p-1 border-0 py-1">
                                     <div
-                                        class="row d-flex align-items-center justify-content-center text-primary team1">
-                                        <div class="col-2 col-lg-3">
-                                            <div class="heart1">
-                                                <i class="bi bi-wifi-off display-my display-6"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-10 col-lg-9 ps-3">
-                                            <h5 class="fw-bold pb-1">Offline Application</h5>
-                                            <p class="text-muted">Skyfinch’s Offline Applications are state of the
-                                                art solutions built to digitally integrate and selectively automate
-                                                the workflow of any type of trade.</p>
-                                        </div>
+                                        class="row d-flex align-items-center justify-content-center text-primary team1 px-3">
+                                        <h5 class="fw-bold pb-1">Offline Application<div class="main_divider"></div>
+                                        </h5>
+                                        <p class="text-muted">Skyfinch’s Offline Applications are state of the
+                                            art solutions built to digitally integrate and selectively automate
+                                            the workflow of any type of trade.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 pt-3 mt-3 gy-lg-3 gy-2 wow fadeInUp" data-wow-delay="0.2s"
                                 data-aos-duration="1000" data-aos="fade-up">
-                                <div class="card p-1 border-0 bg-pink py-1">
+                                <div class="card p-1 border-0 py-1">
                                     <div
-                                        class="row d-flex align-items-center justify-content-center text-primary team1">
-                                        <div class="col-2 col-lg-3">
-                                            <div class="heart1">
-                                                <i class="bi bi-phone-flip display-my display-6"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-10 col-lg-9 ps-3">
-                                            <h5 class="fw-bold py-1">Mobile Application</h5>
-                                            <p class="text-muted">Our expertise in improvising with technology is
-                                                the Data ultimate solution to modernize and extend the reach out of
-                                                businesses through Mobile Apps.</p>
-                                        </div>
+                                        class="row d-flex align-items-center justify-content-center text-primary team1 px-3">
+                                        <h5 class="fw-bold py-1">Mobile Application<div class="main_divider"></div>
+                                        </h5>
+                                        <p class="text-muted">Our expertise in improvising with technology is
+                                            the Data ultimate solution to modernize and extend the reach out of
+                                            businesses through Mobile Apps.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 pt-3 mt-3 gy-lg-3 gy-2 wow fadeInUp" data-wow-delay="0.2s"
                                 data-aos-duration="1000" data-aos="fade-up">
-                                <div class="card p-1 border-0 bg-pink py-1">
+                                <div class="card p-1 border-0 py-1">
                                     <div
-                                        class="row d-flex align-items-center justify-content-center text-primary team1">
-                                        <div class="col-2 col-lg-3">
-                                            <div class="heart1">
-                                                <i class="bi bi-database-down display-my display-6"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-10 col-lg-9 ps-3">
-                                            <h5 class="fw-bold py-1">Database Management</h5>
-                                            <p class="text-muted">We are technically sound to efficiently handle
-                                                Data migration, Data Integration, and Database Administration
-                                                activities for all business purposes.</p>
-                                        </div>
+                                        class="row d-flex align-items-center justify-content-center text-primary team1 px-3">
+                                        <h5 class="fw-bold py-1">Database Management<div class="main_divider"></div>
+                                        </h5>
+                                        <p class="text-muted">We are technically sound to efficiently handle
+                                            Data migration, Data Integration, and Database Administration
+                                            activities for all business purposes.</p>
                                     </div>
                                 </div>
                             </div>
@@ -1031,59 +1011,77 @@
                         </div>
 
                         <!-- Section 2 responsive page view -->
-                        <div id="customers-testimonials"
-                            class="owl-carousel row d-flex d-md-none d-lg-none mt-lg-3 mt-md-3 mt-2 align-items-center justify-content-center">
+                        <div
+                            class="row d-block d-md-none d-lg-none mt-lg-3 mt-md-3 mt-2 mb-lg-0 mb-md-4 mb-4 align-items-center justify-content-center">
 
-                            <div class="item col-lg-6 col-9 col-md-6 wow fadeInUp" data-wow-delay="0.6s"
-                                data-aos-duration="2000" data-aos="fade-up">
-                                <div class="card text-center border-0 team">
-                                    <div class="heart align-self-center">
-                                        <i class="bi bi-arrow-down-up display-5 display-my text-primary"></i>
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="col-lg-6 col-12 col-md-12 gy-lg-3 gy-4 pt-lg-1 wow fadeInUp"
+                                            data-wow-delay="0.6s" data-aos-duration="2000" data-aos="fade-up">
+                                            <div class="card text-center border-0 team">
+                                                <div class="heart align-self-center">
+                                                    <i
+                                                        class="bi bi-arrow-down-up display-5 display-my text-primary"></i>
+                                                </div>
+                                                <h5 class="fw-bold pb-1">Online Application</h5>
+                                                <p class="text-muted">We develop business-specific Online Applications
+                                                    to empower business stakeholders to make business transactions from
+                                                    anywhere at any time.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <h5 class="fw-bold pb-1">Online Application</h5>
-                                    <p class="text-muted px-2">We develop business-specific Online Applications to
-                                        empower business stakeholders to make business transactions from anywhere at
-                                        any time.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="item col-lg-6 col-9 col-md-6 wow fadeInUp" data-wow-delay="0.3s"
-                                data-aos-duration="1000" data-aos="fade-up">
-                                <div class="card text-center border-0 team">
-                                    <div class="heart align-self-center">
-                                        <i class="bi bi-wifi-off display-5 display-my text-primary"></i>
+                                    <div class="swiper-slide">
+                                        <div class="col-lg-6 col-12 col-md-12 gy-lg-3 gy-4 pt-lg-1 wow fadeInUp"
+                                            data-wow-delay="0.3s" data-aos-duration="1000" data-aos="fade-up">
+                                            <div class="card text-center border-0 team">
+                                                <div class="heart align-self-center">
+                                                    <i class="bi bi-wifi-off display-5 display-my text-primary"></i>
+                                                </div>
+                                                <h5 class="fw-bold pb-1">Offline Application</h5>
+                                                <p class="text-muted">Skyfinch’s Offline Applications are state of the
+                                                    art solutions built to digitally integrate and selectively automate
+                                                    the workflow of any type of trade.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <h5 class="fw-bold pb-1">Offline Application</h5>
-                                    <p class="text-muted px-3">Skyfinch’s Offline Applications are state of the art
-                                        solutions built to digitally integrate and selectively automate the workflow
-                                        of any type of trade.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="item col-lg-6 col-9 col-md-6 wow fadeInUp" data-wow-delay="0.6s"
-                                data-aos-duration="2000" data-aos="fade-up">
-                                <div class="card text-center border-0 team">
-                                    <div class="heart align-self-center">
-                                        <i class="bi bi-phone-flip display-5 display-my text-primary"></i>
+                                    <div class="swiper-slide">
+                                        <div class="col-lg-6 col-12 col-md-12 gy-lg-2 gy-4 wow fadeInUp"
+                                            data-wow-delay="0.6s" data-aos-duration="2000" data-aos="fade-up">
+                                            <div class="card text-center border-0 team">
+                                                <div class="heart align-self-center">
+                                                    <i class="bi bi-phone-flip display-5 display-my text-primary"></i>
+                                                </div>
+                                                <h5 class="fw-bold pb-1">Mobile Application</h5>
+                                                <p class="text-muted p-0">Our expertise in improvising with technology
+                                                    is the ultimate solution to modernize and extend the reach out of
+                                                    businesses through Mobile Apps.</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <h5 class="fw-bold pb-1">Mobile Application</h5>
-                                    <p class="text-muted px-2">Our expertise in improvising with technology is the
-                                        ultimate solution to modernize and extend the reach out of businesses
-                                        through Mobile Apps.</p>
-                                </div>
-                            </div>
-                            <div class="item col-lg-6 col-9 col-md-6 wow fadeInUp" data-wow-delay="0.3s"
-                                data-aos-duration="1000" data-aos="fade-up">
-                                <div class="card text-center border-0 team">
-                                    <div class="heart align-self-center">
-                                        <i class="bi bi-database-down display-5 display-my text-primary"></i>
+                                    <div class="swiper-slide">
+                                        <div class="col-lg-6 col-12 col-md-12 gy-lg-2 gy-4 wow fadeInUp"
+                                            data-wow-delay="0.3s" data-aos-duration="1000" data-aos="fade-up">
+                                            <div class="card text-center border-0 team">
+                                                <div class="heart align-self-center">
+                                                    <i
+                                                        class="bi bi-database-down display-5 display-my text-primary"></i>
+                                                </div>
+                                                <h5 class="fw-bold pb-1">Database Management</h5>
+                                                <p class="text-muted">We are technically sound to efficiently handle
+                                                    Data
+                                                    migration, Data Integration, and Database Administration activities
+                                                    for
+                                                    all
+                                                    business purposes.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <h5 class="fw-bold pb-1">Database Management</h5>
-                                    <p class="text-muted px-2">We are technically sound to efficiently handle Data
-                                        migration, Data Integration, and Database Administration activities for all
-                                        business purposes.
-                                    </p>
                                 </div>
+                                <div class="swiper-pagination"></div>
                             </div>
                         </div>
                     </div>
@@ -1099,7 +1097,7 @@
                 <div class="row d-flex justify-content-center align-items-center mt-1 mt-lg-5 pt-lg-3 pt-1">
                     <div class="col-12">
                         <h4 class="fw-bold display-4 pb-3 mt-lg-0 mt-3 pb-lg-0 text-center wow fadeInDown"
-                            data-wow-delay="0.5s" data-aos-duration="1000" data-aos="fade-down">Skyfinch
+                            data-wow-delay="0.5s" data-aos-duration="1000" data-aos="fade-up">Skyfinch
                             Highlights</h4>
                         <div class="row d-flex align-items-center bg-transparent justify-content-center">
                             <div class="col-12 col-sm-12 col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s"
@@ -1228,7 +1226,7 @@
                 <div class="row d-flex justify-content-center align-items-center mt-2 mt-lg-5 pt-0 pt-lg-3">
                     <div class="col-12">
                         <h4 class="fw-bold display-4 pb-2 pb-lg-0 text-center wow fadeInDown" data-wow-delay="0.5s"
-                            data-aos-duration="1000" data-aos="fade-down">Skyfinch
+                            data-aos-duration="1000" data-aos="fade-up">Skyfinch
                             Highlights</h4>
                         <div class="row d-flex align-items-center justify-content-center">
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4" data-wow-delay="0.2s"
@@ -1446,67 +1444,132 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-12 col-12 col-md-12 mt-md-1 pt-md-1 mt-lg-1 mt-1 pt-1 pt-lg-0 mb-lg-0">
+                    <div
+                        class="col-lg-12 col-12 col-md-12 mt-md-1 pt-md-1 mt-lg-1 mt-1 pt-1 mt-md-1 pt-md-1 pt-lg-0 mb-lg-0">
                         <h2 class="fw-bold display-6 mt-lg-1 pt-lg-0 mt-md-1 pt-md-0 mt-1 pt-1 text-center">Why
                             Choose Us</h2>
                     </div>
 
                     <div
-                        class="col-lg-12 col-md-12 pb-1 mt-md-0 pb-md-1 pb-lg-0 mt-lg-1 mx-lg-0 mx-md-0 mx-5 px-lg-0 px-md-0 px-5">
+                        class="d-none d-md-none d-lg-flex col-lg-12 col-md-12 pb-1 mt-md-0 pb-md-1 pb-lg-0 mt-lg-1 mx-lg-0 mx-md-0 mx-5 px-lg-0 px-md-0 px-5">
                         <div class="row d-flex align-items-center justify-content-around">
 
-                            <div class="col-lg-3 cards col-8 col-md-4 text-center g-lg-1 g-md-4 g-2 mx-lg-0 mx-md-0 mx-0"
+                            <div class="col-lg-3 col-8 col-md-4 text-center g-lg-1 g-md-4 g-2 mx-lg-0 mx-md-0 mx-0"
                                 data-aos-duration="1000" data-aos="flip-right">
-                                <div class="card cards__inner overflow-hidden border-0 shadow pop2 ">
+                                <div class="card overflow-hidden border-0 shadow pop2 ">
                                     <div class="icon-back py-lg-3 py-2">
                                         <i class="fa-sharp fa-solid fa-gear text-secondary fa-3x"></i>
                                     </div>
                                     <div class="p-1">
                                         <h4 class="fw-bold">Best Fit Solutions</h4>
-                                        <p class="text-muted">We understand the unique challenge develop of each
+                                        <p class="text-muted text-justify">We understand the unique challenge develop of
+                                            each
                                             business, and accordingly, provide the best-fit solution to each client.
                                         </p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 cards col-8 col-md-4 text-center g-lg-1 g-md-4 g-2 mx-lg-0 px-md-1 mx-0"
+                            <div class="col-lg-3 col-8 col-md-4 text-center g-lg-1 g-md-4 g-2 mx-lg-0 px-md-1 mx-0"
                                 data-aos-duration="1000" data-aos="flip-right">
-                                <div class="card cards__inner overflow-hidden border-0 shadow pop2">
+                                <div class="card overflow-hidden border-0 shadow pop2">
                                     <div class="icon-back py-lg-3 py-2">
                                         <i class="fa-solid fa-headset text-secondary fa-3x"></i>
                                     </div>
                                     <div class="p-1">
                                         <h4 class="fw-bold">Customer Support</h4>
-                                        <p class="text-muted">We go beyond the normal and develop an ‘Association’
+                                        <p class="text-muted text-justify">We go beyond the normal and develop an
+                                            ‘Association’
                                             with our clients to ensure that they are all set in the path of growth.
                                         </p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-lg-3 cards col-8 col-md-4 text-center g-lg-1 g-md-4 g-2 mx-lg-0 mx-md-0 mx-0"
+                            <div class="col-lg-3 col-8 col-md-4 text-center g-lg-1 g-md-4 g-2 mx-lg-0 mx-md-0 mx-0"
                                 data-aos-duration="1000" data-aos="flip-right">
-                                <div class="card cards__inner overflow-hidden border-0 shadow pop2">
+                                <div class="card overflow-hidden border-0 shadow pop2">
                                     <div class="icon-back py-lg-3 py-2">
                                         <i class="fa-sharp fa-solid fa-money-check-dollar text-secondary fa-3x"></i>
                                     </div>
                                     <div class="p-1">
                                         <h4 class="fw-bold">Proven Credibility</h4>
-                                        <p class="text-muted">We adopt proven practices right from the beginning
+                                        <p class="text-muted text-justify">We adopt proven practices right from the
+                                            beginning
                                             till the final handover and our customers’ business
                                             productivity.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div
-                            class="d-lg-none d-md-none d-flex justify-content-center mt-lg-0 pt-lg-0 pt-1 gap-2 mb-lg-0 mb-0">
-                            <div class="arr1 px-3" data-aos-duration="1000" data-aos="fade-down" id="leftButton">
-                                <i class="fa-solid fa-arrow-left-long fw-bold"></i>
-                            </div>
-                            <div class="arr2 px-3" data-aos-duration="1000" data-aos="fade-up" id="rightButton">
-                                <i class="fa-solid fa-arrow-left-long fa-rotate-180 fw-bold"></i>
+                    </div>
+
+                    <!-- Responsive cards section 4 -->
+                    <div id="swiper_box"
+                        class="d-block d-md-block d-lg-none col-lg-12 col-md-12 pb-1 mt-md-0 pb-md-1 pb-lg-0 mt-lg-1 mx-lg-0 mx-md-0 mx-5 px-lg-0 px-md-0 px-5">
+                        <div class="row d-flex align-items-center justify-content-around">
+                            <div class="swiper mySwiper2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="col-lg-3 col-12 col-md-12 text-center g-lg-1 g-md-4 g-2 mx-lg-0 mx-md-0 mx-0"
+                                            data-aos-duration="1000" data-aos="flip-right">
+                                            <div class="card overflow-hidden border-0 shadow pop2 ">
+                                                <div class="icon-back py-lg-3 py-2">
+                                                    <i class="fa-sharp fa-solid fa-gear text-secondary fa-3x"></i>
+                                                </div>
+                                                <div class="p-1">
+                                                    <h4 class="fw-bold">Best Fit Solutions</h4>
+                                                    <p class="text-muted text-justify">We understand the unique
+                                                        challenge develop of
+                                                        each
+                                                        business, and accordingly, provide the best-fit solution to each
+                                                        client.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="col-lg-3 col-12 col-md-12 text-center g-lg-1 g-md-4 g-2 mx-lg-0 px-md-1 mx-0"
+                                            data-aos-duration="1000" data-aos="flip-right">
+                                            <div class="card overflow-hidden border-0 shadow pop2">
+                                                <div class="icon-back py-lg-3 py-2">
+                                                    <i class="fa-solid fa-headset text-secondary fa-3x"></i>
+                                                </div>
+                                                <div class="p-1">
+                                                    <h4 class="fw-bold">Customer Support</h4>
+                                                    <p class="text-muted text-justify">We go beyond the normal and
+                                                        develop an
+                                                        ‘Association’
+                                                        with our clients to ensure that they are all set in the path of
+                                                        growth.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="col-lg-3 col-12 col-md-12 text-center g-lg-1 g-md-4 g-2 mx-lg-0 mx-md-0 mx-0"
+                                            data-aos-duration="1000" data-aos="flip-right">
+                                            <div class="card overflow-hidden border-0 shadow pop2">
+                                                <div class="icon-back py-lg-3 py-2">
+                                                    <i
+                                                        class="fa-sharp fa-solid fa-money-check-dollar text-secondary fa-3x"></i>
+                                                </div>
+                                                <div class="p-1">
+                                                    <h4 class="fw-bold">Proven Credibility</h4>
+                                                    <p class="text-muted text-justify">We adopt proven practices right
+                                                        from the
+                                                        beginning
+                                                        till the final handover and our customers’ business
+                                                        productivity.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
                             </div>
                         </div>
                     </div>
@@ -2399,8 +2462,8 @@
         <!-- Footer Start -->
         <section id="sec13" class="container-fluid scroll text-light footer mt-lg-0 pt-lg-5 mt-0 pt-4 wow fadeIn"
             data-wow-delay="0.1s">
-            <div class="container pt-lg-4 mt-lg-0 mt-3 pt-4">
-                <div class="row g-lg-5 mt-lg-1 mt-1 g-md-2 g-4">
+            <div class="container pt-lg-5 mt-lg-0 mt-3 pt-4">
+                <div class="row d-flex justify-content-around g-lg-5 mt-lg-1 mt-1 g-md-2 g-4">
                     <div class="col-lg-4 col-12 col-md-12">
                         <h6 class="mb-4 cloud">SkyFinch</h6>
                         <div class="row">
@@ -2415,7 +2478,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-2 col-2 px-0 d-flex justify-content-center align-items-center">
-                                <i class="fa fa-phone-alt mb-md-2 mb-3"></i>
+                                <i class="fa fa-phone mb-md-2 mb-3"></i>
                             </div>
                             <div class="col-lg-10 col-10 px-0">
                                 <p class="mb-2">+91 9443487210</p>
@@ -2434,26 +2497,21 @@
                         <h4 class="text-white mb-4 w-50 border-bottom border-primary">Explore</h4>
                         <a class="btn btn-link" href="index.html">Home</a>
                         <a class="btn btn-link" href="service.html">Services</a>
-                        <a class="btn btn-link" href="">Product Enquiry</a>
                         <a class="btn btn-link" href="about.html">About Us</a>
-                        <a class="btn btn-link" href="contact.html">Contact us</a>
+                        <a class="btn btn-link" href="profile.html">Profile</a>
                     </div>
                     <div class="col-lg-2 col-6 mb-lg-0 mb-4 mt-5 mt-lg-5">
                         <h4 class="text-white mb-4 w-50 border-bottom border-primary">Discover</h4>
-                        <a class="btn btn-link" href="">Plans & Pricing</a>
-                        <a class="btn btn-link" href="">Newsletter</a>
-                        <a class="btn btn-link" href="contact.html">Contact Us</a>
-                        <a class="btn btn-link" href="">Customer&nbsp;Support
-                            <a class="btn btn-link" href="">Enquiry</a>
+                        <a class="btn btn-link" href="pl_pr.html">Plans & Pricing</a>
+                        <a class="btn btn-link" href="product Enquiry.html">Product Enquiry</a>
+                        <a class="btn btn-link" href="contact.html">Contact us</a>
                     </div>
-                    <div class="col-lg-4 col-12">
-                        <h4 class="text-white mb-4 w-25 border-width border-bottom border-primary">Newsletter</h4>
-                        <div class="position-relative w-75">
-                            <input class="form-control bg-white border-0 w-100 py-2 ps-4 pe-5 py-lg-2" type="text"
-                                placeholder="Your email">
-                            <button type="button"
-                                class="btn btn-primary py-lg-1 py-1 position-absolute top-0 end-0 mt-1 me-2">SignUp</button>
-                        </div>
+                    <div id="polices" class="col-lg-3 col-6 mb-lg-0 mb-4 ms-0 ms-lg-2 mt-5 mt-lg-5">
+                        <h4 class="text-white mb-4 w-25 border-bottom border-primary">Policies</h4>
+                        <a class="btn btn-link" href="anti_spam.html">Anti-spam&nbsp;Policy</a>
+                        <a class="btn btn-link" href="confidentality_policy.html">Terms of Service</a>
+                        <a class="btn btn-link" href="privacy_policy.html">Privacy&nbsp;Policy</a>
+                        <a class="btn btn-link" href="confidentality_policy.html">Confidentiality&nbsp;Policy</a>
                     </div>
                 </div>
             </div>
@@ -2484,14 +2542,14 @@
                         <a class="foo-policy"
                             href="anti_spam.html">Anti-spam&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
                         <a class="foo-policy"
-                            href="#">Terms&nbsp;of&nbsp;Service<span>&nbsp;&VerticalLine;&nbsp;</span></a>
+                            href="confidentality_policy.html">Terms&nbsp;of&nbsp;Service<span>&nbsp;&VerticalLine;&nbsp;</span></a>
                         <a class="foo-policy"
                             href="privacy_policy.html">Privacy&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
                         <a class="foo-policy" href="confidentality_policy.html">Confidentiality&nbsp;Policy</a>
                     </div>
                     <div
                         class="col-md-12 col-lg-12 d-flex align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-1 mt-1 pt-lg-1 pt-1">
-                        &copy; Skyfinch 2023. All rights reserved. Designed By Skyfinch.
+                        &copy; Skyfinch 2023. All rights reserved. Designed by Skyfinch.
                     </div>
                 </div>
             </div>
@@ -2521,9 +2579,41 @@
     <script src="js/3Dcards-02.js"></script>
     <script src="css/malihu-custom-scrollbar-plugin-3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/searchBar.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <!-- Scroll effects -->
     <script>
         AOS.init();
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            grabCursor: true,
+            loop: true,
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    origin: "left center",
+                    translate: ["-5%", 0, -200],
+                    rotate: [0, 100, 0],
+                },
+                next: {
+                    origin: "right center",
+                    translate: ["5%", 0, -200],
+                    rotate: [0, -100, 0],
+                },
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
     </script>
     <!-- Scroll effects -->
 

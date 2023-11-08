@@ -142,7 +142,7 @@
             applyScroll();
             $.scrollify.enable();
         }
-    }    
+    }
 
     //end of scroll effects
 
@@ -183,10 +183,10 @@
     });
 
 
-    //<!-- OwlCarousel script start -->     
+    //<!-- OwlCarousel script start -->
     var owl = $('.cus');
     owl.owlCarousel({
-        rtl:false,
+        rtl: false,
         items: 5,
         autoplay: true,
         slideTransition: 'linear',
@@ -216,7 +216,7 @@
     // change direction OwlCarousel
     var owl1 = $('.cus1');
     owl1.owlCarousel({
-        rtl:true,
+        rtl: true,
         items: 5,
         autoplay: true,
         slideTransition: 'linear',
@@ -255,47 +255,58 @@
             moreText.css("display", "inline");
         }
     })
-	/* ---------------------------------------------
+    /* ---------------------------------------------
             Isotope js Starts
          --------------------------------------------- */
-         $(window).on('load', function() {
-            $('.portfolio-filter ul li').on('click', function() {
-                $('.portfolio-filter ul li').removeClass('active');
-                $(this).addClass('active');
-    
-                var data = $(this).attr('data-filter');
-                $workGrid.isotope({
-                    filter: data
-                });
+    $(window).on('load', function () {
+        $('.portfolio-filter ul li').on('click', function () {
+            $('.portfolio-filter ul li').removeClass('active');
+            $(this).addClass('active');
+
+            var data = $(this).attr('data-filter');
+            $workGrid.isotope({
+                filter: data
             });
-    
-            if (document.getElementById('portfolio')) {
-                var $workGrid = $('.portfolio-grid').isotope({
-                    itemSelector: '.all',
-                    percentPosition: true,
-                    masonry: {
-                        columnWidth: '.all'
-                    }
-                });
-            }
         });
-    
-        /*----------------------------------------------------*/
-        /* Start Magnific Pop Up
-        /*----------------------------------------------------*/
-        if ($('.img-gal').length > 0) {
-            $('.img-gal').magnificPopup({
-                type: 'image',
-                gallery: {
-                    enabled: true
+
+        $('.portfolio-filter ul li.filter_tab1').on('click', function () {
+            $('hr.hr-blurry').addClass('act_tab');
+            $('.portfolio-filter ul li.filter_tab').on('click', function () {
+                $('hr.hr-blurry').removeClass('act_tab');
+            });
+        });
+
+
+
+        if (document.getElementById('portfolio')) {
+            var $workGrid = $('.portfolio-grid').isotope({
+                itemSelector: '.all',
+                percentPosition: true,
+                masonry: {
+                    columnWidth: '.all'
                 }
             });
         }
-        /*----------------------------------------------------*/
-        /*  End  Magnific Pop Up
-        /*----------------------------------------------------*/
-    
-        
+    });
+
+
+
+    /*----------------------------------------------------*/
+    /* Start Magnific Pop Up
+    /*----------------------------------------------------*/
+    if ($('.img-gal').length > 0) {
+        $('.img-gal').magnificPopup({
+            type: 'image',
+            gallery: {
+                enabled: true
+            }
+        });
+    }
+    /*----------------------------------------------------*/
+    /*  End  Magnific Pop Up
+    /*----------------------------------------------------*/
+
+
 
     //////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -325,6 +336,68 @@
         var fade1 = $('.modal');
         fade.hide();
         fade1.hide();
+    });
+
+    // Dropdown toggle start
+
+    // Toggle dropdown on click
+    var solutionsDropdown = document.getElementById('solutionsDropdown');
+    var solutionsDropdown1 = document.getElementById('solutionsDropdown1');
+    solutionsDropdown.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var dropdownMenu = this.nextElementSibling;
+        dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+    });
+
+    solutionsDropdown1.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var dropdownMenu = this.nextElementSibling;
+        dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+    });
+    // Toggle dropdown submenu on button click
+    var applicationBtn = document.getElementById('applicationBtn');
+    var webBtn = document.getElementById('webBtn');
+    var applicationContent = document.querySelector('.dropdown-content1.application');
+    var webContent = document.querySelector('.dropdown-content1.web');
+
+    function toggleDropdownContent(e, content) {
+        e.preventDefault();
+        e.stopPropagation();
+        content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+    }
+
+    applicationBtn.addEventListener('click', function (e) {
+        toggleDropdownContent(e, applicationContent);
+        webContent.style.display = 'none';
+    });
+
+    webBtn.addEventListener('click', function (e) {
+        toggleDropdownContent(e, webContent);
+        applicationContent.style.display = 'none';
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function (e) {
+        var target = e.target;
+        if (!target.closest('.navbar-nav .nav-item.dropdown')) {
+            var dropdownMenus = document.querySelectorAll('.navbar-nav .nav-item.dropdown .dropdown-menu');
+            dropdownMenus.forEach(function (menu) {
+                menu.style.display = 'none';
+            });
+        }
+        if (!target.closest('.dropdown-content1')) {
+            document.querySelectorAll('.dropdown-content1').forEach(function (content) {
+                content.style.display = 'none';
+            });
+        }
+        if (!target.closest('#navbarCollapse')) {
+            var mainNav = document.querySelector('#navbarCollapse');
+            if(mainNav.classList.contains('show')){
+                mainNav.classList.remove('show')
+            }
+        }
     });
 
 

@@ -1,4 +1,4 @@
-
+document.addEventListener('DOMContentLoaded', function () {
     //<!-- Chat BOX JS Start -->
 
 
@@ -43,7 +43,7 @@
         // console.log(userMessage);
         if (!userMessage) return;
 
-        // Append the user's message to the chatbox 
+        // Append the user's message to the chatbox
         chatbox.appendChild(createChatLi(userMessage, "outgoing"));
         chatbox.scrollTo(0, chatbox.scrollHeight);
 
@@ -103,6 +103,13 @@
 
     }
 
+    // Add this function to check if the click is outside the chatbox
+    const handleClickOutsideChatbox = (event) => {
+        if (!chatbox.contains(event.target) && !chatbotToggler.contains(event.target)) {
+            document.body.classList.remove("show-chatbot");
+        }
+    }
+
     // Function to handle Enter key press
     const handleKeyPress = (event) => {
         if (event.keyCode === 13) {
@@ -113,70 +120,40 @@
 
     sendChatBtn.addEventListener("click", handleChat)
 
+    // Add an event listener to the document to handle clicks
+    document.addEventListener("click", handleClickOutsideChatbox);
+
     chatbotToggler.addEventListener("click", function () {
         document.body.classList.toggle("show-chatbot");
     });
 
-
     chatInput.addEventListener("keypress", handleKeyPress);
-
 
     //<!-- Chat BOX JS End -->
 
+    //<!-- Contact Button Start -->
 
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
- 
-
-document.addEventListener('DOMContentLoaded', function () {
-
-    // Toggle dropdown on click
-    var solutionsDropdown = document.getElementById('solutionsDropdown');
-    solutionsDropdown.addEventListener('click', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        var dropdownMenu = this.nextElementSibling;
-        dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+    document.querySelector("#hide_form").addEventListener("click", function (event) {
+        event.stopPropagation(); // Prevent the click event from propagating to the document body
+        document.querySelector("#myForm").style.display = "none";
+        document.querySelector("#show_form").style.display = "block";
     });
 
-    // Toggle dropdown submenu on button click
-    var applicationBtn = document.getElementById('applicationBtn');
-    var webBtn = document.getElementById('webBtn');
-    var applicationContent = document.querySelector('.dropdown-content1.application');
-    var webContent = document.querySelector('.dropdown-content1.web');
-
-    function toggleDropdownContent(e, content) {
-        e.preventDefault();
-        e.stopPropagation();
-        content.style.display = (content.style.display === 'block') ? 'none' : 'block';
-    }
-
-    applicationBtn.addEventListener('click', function (e) {
-        toggleDropdownContent(e, applicationContent);
-        webContent.style.display = 'none';
+    document.body.addEventListener("click", function () {
+        document.querySelector("#myForm").style.display = "none";
+        document.querySelector("#show_form").style.display = "block";
     });
 
-    webBtn.addEventListener('click', function (e) {
-        toggleDropdownContent(e, webContent);
-        applicationContent.style.display = 'none';
+    document.querySelector("#show_form").addEventListener("click", function (event) {
+        event.stopPropagation(); // Prevent the click event from propagating to the document body
+        document.open_form.reset();
+        document.querySelector("#myForm").style.display = "block";
+        document.querySelector("#show_form").style.display = "none";
     });
 
-    // Close dropdowns when clicking outside
-    document.addEventListener('click', function (e) {
-        var target = e.target;
-        if (!target.closest('.navbar-nav .nav-item.dropdown')) {
-            var dropdownMenus = document.querySelectorAll('.navbar-nav .nav-item.dropdown .dropdown-menu');
-            dropdownMenus.forEach(function (menu) {
-                menu.style.display = 'none';
-            });
-        }
-        if (!target.closest('.dropdown-content1')) {
-            document.querySelectorAll('.dropdown-content1').forEach(function (content) {
-                content.style.display = 'none';
-            });
-        }
-    });
-      
+    //<!-- Contact Button End -->
+
+
 });
 
 

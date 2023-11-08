@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500&display=swap');
+@import url('../fonts/mulish.css');
 
 @media (min-width:300px) and (max-width:500px) {
 	.owl-carousel .item .card, .owl-carousel .item {
@@ -53,4 +53,11 @@
 	}
 
 
+}
+@media (min-width:300px) and (max-width:500px) {
+	#customers-testimonials .item,
+	.owl-carousel .item .card {
+		height: 225px !important;
+		min-height: 225px !important;
+	}
 }
