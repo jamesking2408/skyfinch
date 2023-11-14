@@ -434,7 +434,7 @@ input[data-autocompleted] {
 
 }
 
-@media (max-width:699px) {
+@media screen and (max-width:1024px) {
     .container2 {
         margin-top: 20px;
         height: 645px;
@@ -453,26 +453,33 @@ input[data-autocompleted] {
     }
 
     .order .order-item1 {
-        order: 2;
+        order: 2 !important;
     }
 
     .order .order-item2 {
-        order: 1;
+        order: 1 !important;
     }
 
     .order .order-item3 {
-        order: 3;
+        order: 3 !important;
     }
+
+    .order .order-item4 {
+        order: 4 !important;
+    }
+
 }
+
 
 /* start change about us header */
 
 @media (min-width:300px) and (max-width:549px) {
     .card.hov2 {
-        width:150px !important;
+        width: 150px !important;
         height: auto;
     }
 }
+
 @media (min-width:551px) and (max-width:999px) {
 
     .container1 {
@@ -480,11 +487,13 @@ input[data-autocompleted] {
         width: 100% !important;
         /* height: 100% !important; */
     }
+
     .card.hov2 {
-        width:200px !important;
+        width: 200px !important;
         height: auto;
     }
 }
+
 .img-abt {
     background-image: url(../img/aboutus1.jpg);
     width: 100%;
@@ -943,7 +952,7 @@ a {
 
     .page-top {
         right: 6% !important;
-        bottom: 12% !important;
+        bottom: 24vw !important;
     }
 }
 
@@ -1270,9 +1279,8 @@ b.cloud {
         transform: perspective(2cm);
     }
 }
-@media (min-width:700px) and (max-width:00px){
 
-}
+@media (min-width:700px) and (max-width:00px) {}
 
 /* ///////////////////////////////////////////////////////////// */
 .fixed-top {
@@ -1622,6 +1630,10 @@ b.cloud {
     width: 450px;
 }
 
+.bg-02 .card.team {
+    min-height: 240px;
+}
+
 
 @media (min-width: 550px) and (max-width: 999px) {
     .main {
@@ -1657,12 +1669,14 @@ b.cloud {
         max-height: 300px !important;
         padding: 30px 10px !important;
     }
+
     #sec2 .mySwiper .swiper-pagination {
         position: absolute;
         bottom: 0;
         transform: translateY(-10px);
     }
-    #sec2 .swiper-pagination-clickable .swiper-pagination-bullet{
+
+    #sec2 .swiper-pagination-clickable .swiper-pagination-bullet {
         width: 10px !important;
         height: 10px !important;
     }
@@ -1674,12 +1688,14 @@ b.cloud {
         max-height: 300px !important;
         margin-top: 30px !important;
     }
+
     #sec2 .mySwiper .swiper-pagination {
         position: absolute;
         bottom: 0;
         transform: translateY(-10px);
     }
-    #sec2 .swiper-pagination-clickable .swiper-pagination-bullet{
+
+    #sec2 .swiper-pagination-clickable .swiper-pagination-bullet {
         width: 15px !important;
         height: 15px !important;
     }
@@ -1776,10 +1792,12 @@ b.cloud {
         margin: 2px;
     }
 }
+
 @media (min-width: 605px) and (max-width:999px) {
     #sec1 .container {
         transform: translate(-60%, 0) !important;
     }
+
     #forms {
         bottom: 21.5% !important;
         left: 90% !important;
@@ -1922,7 +1940,8 @@ b.cloud {
 }
 
 .heart i {
-    font-size: 1.685rem;
+    font-size: 1.585rem;
+    padding-bottom: 33px;
 }
 
 .team:hover {
@@ -2026,6 +2045,19 @@ b.cloud {
     background-position: center;
 }
 
+.bg-02 .smt_img {
+    width: 25vw !important;
+}
+
+@media screen and (max-width:767px) {
+    .bg-02 .smt_img {
+        width: 55vw !important;
+    }
+
+    .bg-02 .card.team {
+        min-height: 210px;
+    }
+}
 
 
 
@@ -2261,8 +2293,9 @@ b.cloud {
     .bg-04 {
         background-size: 100% 55%;
     }
+
     #swiper_box .swiper-button-prev {
-        position: relative ;
+        position: relative;
         bottom: 0 !important;
         left: 0 !important;
         transform: translate(125px, 24px);
@@ -2272,8 +2305,9 @@ b.cloud {
         color: var(--dark);
         border-radius: 50% !important;
     }
+
     #swiper_box .swiper-button-next {
-        position: relative ;
+        position: relative;
         bottom: 0 !important;
         right: 0 !important;
         transform: translate(182px, -4px);
@@ -2283,9 +2317,10 @@ b.cloud {
         color: var(--dark);
         border-radius: 50% !important;
     }
+
     #swiper_box .swiper-button-next:focus,
     #swiper_box .swiper-button-prev:focus {
-        background-color:var(--dark);
+        background-color: var(--dark);
         color: white;
     }
 
@@ -2301,8 +2336,9 @@ b.cloud {
     .bg-04 {
         background-size: 100% 60%;
     }
+
     #swiper_box .swiper-button-prev {
-        position: relative ;
+        position: relative;
         bottom: 0 !important;
         left: 0 !important;
         transform: translate(180px, 24px);
@@ -2312,8 +2348,9 @@ b.cloud {
         color: var(--dark);
         border-radius: 50% !important;
     }
+
     #swiper_box .swiper-button-next {
-        position: relative ;
+        position: relative;
         bottom: 0 !important;
         right: 0 !important;
         transform: translate(255px, -4px);
@@ -2323,9 +2360,10 @@ b.cloud {
         color: var(--dark);
         border-radius: 50% !important;
     }
+
     #swiper_box .swiper-button-next:focus,
     #swiper_box .swiper-button-prev:focus {
-        background-color:var(--dark);
+        background-color: var(--dark);
         color: white;
     }
 
@@ -2495,16 +2533,17 @@ b.cloud {
 .tooltip-content {
     position: absolute;
     z-index: 9999 !important;
-    width: 240px;
+    min-width: 240px;
+    width: 400px !important;
     background-image: -o-linear-gradient(rgba(47, 0, 255, 0.09) 100%, rgba(47, 0, 255, 0.09) 100%);
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(47, 0, 255, 0.09)), to(rgba(47, 0, 255, 0.09)));
     background-image: linear-gradient(rgba(47, 0, 255, 0.09) 100%, rgba(47, 0, 255, 0.09) 100%);
     -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
     color: black;
-    -ms-transform: translateY(-80px) translateX(-25%);
-    transform: translateY(-80px) translateX(-25%);
-    -webkit-transform: translateY(-80px) translateX(-25%);
+    -ms-transform: translateY(-90px) translateX(-35%);
+    transform: translateY(-90px) translateX(-35%);
+    -webkit-transform: translateY(-90px) translateX(-35%);
     border-radius: 50px;
     -webkit-border-radius: 50px;
     text-align: center;
@@ -2585,9 +2624,9 @@ b.cloud {
 
 @media (min-width:300px) and (max-width:850px) {
     .tooltip-content {
-        -ms-transform: translateY(-80px) translateX(0%);
-        transform: translateY(-80px) translateX(0%);
-        -webkit-transform: translateY(-80px) translateX(0%);
+        -ms-transform: translateY(-90px) translateX(0%);
+        transform: translateY(-90px) translateX(0%);
+        -webkit-transform: translateY(-90px) translateX(0%);
     }
 }
 
@@ -2656,7 +2695,8 @@ b.cloud {
     }
 
 }
-@media (min-width: 554px) and (max-width: 999px){
+
+@media (min-width: 554px) and (max-width: 999px) {
     .bg-06 {
         height: fit-content;
     }
@@ -2724,7 +2764,7 @@ b.cloud {
 
 .show3 .card {
     width: 170px;
-    height: 200px;
+    min-height: 180px;
 }
 
 .active1 {
@@ -2800,18 +2840,21 @@ b.cloud {
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 20px;
 }
+
 @media (min-width:300px) and (max-width:549px) {
     #sec7 .container {
         margin-top: 20px;
         margin-bottom: 20px;
     }
 }
+
 @media (min-width:551px) and (max-width:999px) {
     #sec7 .container {
         margin-top: 20px;
         margin-bottom: 20px;
     }
 }
+
 #land-sec .container {
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(10px);

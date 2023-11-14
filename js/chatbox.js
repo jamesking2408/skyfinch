@@ -148,7 +148,6 @@ document.addEventListener('DOMContentLoaded', function () {
         event.stopPropagation(); // Prevent the click event from propagating to the document body
         document.open_form.reset();
         document.querySelector("#myForm").style.display = "block";
-        document.querySelector("#show_form").style.display = "none";
     });
 
     //<!-- Contact Button End -->

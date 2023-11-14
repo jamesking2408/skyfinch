@@ -112,7 +112,8 @@
     </div>
     <!-- Submit wrong alert box -->
 
-    <!-- Modal -->
+
+    <!-- Search Modal Start-->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content mt-35">
@@ -134,74 +135,63 @@
                     data-mcs-theme="dark">
                     <ul class="list-unstyled">
                         <li class="content mb-3">
-                            <a href="index.html#home_skyfinch"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home | SkyFinch</a>
+                            <button onclick="jumpToMain('home_skyfinch')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
+                                SkyFinch</button>
 
                         </li>
                         <li class="content mb-3">
-                            <a href="#sec1" class="btn btn-outline-primary border-0 w-100 text-start searchLink">Why
-                                Choose should join us</a>
+                            <button onclick="jumpToMain('sec1')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Why
+                                Choose should join us</button>
 
                         </li>
                         <li class="content mb-3">
-                            <a href="#sec2" class="btn btn-outline-primary border-0 w-100 text-start searchLink">
-                                Skyfinch Teams
-                            </a>
-
-                        </li>
-                        <li class="content mb-3">
-                            <a href="#sec03"
-                                class="btn btn-outline-primary border-0  w-100 text-start searchLink">Skyfinch
-                                Applications</a>
-
-                        </li>
-                        <li class="content mb-3">
-                            <a href="#sec2"
+                            <button onclick="jumpToMain('sec2')"
                                 class="btn btn-outline-primary border-0  w-100 text-start searchLink">Skyfinch Team |
-                                Application</a>
+                                Applications</button>
 
                         </li>
                         <li class="content mb-3">
-                            <a href="#sec3"
-                                class="btn btn-outline-primary border-0  w-100 text-start searchLink">Skyfinch
-                                Highlights |
-                                Part 1</a>
+                            <button onclick="jumpToMain('sec2_1')"
+                                class="btn btn-outline-primary border-0  w-100 text-start searchLink">Skyfinch Team |
+                                Applications</button>
 
                         </li>
                         <li class="content mb-3">
-                            <a href="#sec3"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Skyfinch Highlights
-                                |
-                                Part 2</a>
+                            <button onclick="jumpToMain('sec3')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Skyfinch
+                                Highlights</button>
 
                         </li>
                         <li class="content mb-3">
-                            <a href="#sec4" class="btn btn-outline-primary border-0 w-100 text-start searchLink">Why
+                            <button onclick="jumpToMain('sec4')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Why
                                 choose us | Our
-                                projects, product, customer and Global office</a>
+                                projects, product, customer and Global office</button>
 
                         </li>
                         <li class="content mb-3">
-                            <a href="#sec5" class="btn btn-outline-primary border-0 w-100 text-start searchLink">The MR
-                                Reporting
-                                software is an Online</a>
+                            <button onclick="jumpToMain('sec5')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">The MR
+                                Reporting software is an Online</button>
 
                         </li>
                         <li class="content mb-3">
-                            <a href="#sec6"
+                            <button onclick="jumpToMain('sec6')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Skyfinch makes your
-                                Business Proud | Application | Window | All products</a>
+                                Business Proud | Application | Window | All products</button>
 
                         </li>
                         <li class="content mb-3">
-                            <a href="#sec7" class="btn btn-outline-primary border-0  w-100 text-start searchLink">Our
-                                valuable Customer | Got A Project Or A Partnership In Mind?</a>
-
+                            <button onclick="jumpToMain('sec7')"
+                                class="btn btn-outline-primary border-0  w-100 text-start searchLink">Our
+                                valuable Customer | Got A Project Or A Partnership In Mind? | contact Us</button>
                         </li>
                         <li class="content mb-3">
-                            <a href="#sec13"
+                            <button onclick="jumpToMain('sec13')"
                                 class="btn btn-outline-primary border-0  w-100 text-start searchLink">Footer | Social
-                                media's | Address</a>
+                                media's | Address</button>
 
                         </li>
                         <li class="content mb-3">
@@ -224,9 +214,380 @@
 
                         </li>
                         <li class="content mb-3">
-                            <button onclick="jumpToService('service_foot')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Service | Footer
-                                Section</button>
+                            <button onclick="jumpToAbout('about_land')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">About |
+                                Home</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToAbout('about_view')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">We Help Our Clients
+                                To Grow Their Business | About Us</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToAbout('about_Awards')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Our relevant
+                                Achivements | Awards | 24/7 Available</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToAbout('about_Teams')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Exclusive Teams |
+                                About Us</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToContact('contact_land')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Contact Us |
+                                Home</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToContact('contact_form')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Contact Us | Forms
+                                | If You Have Any Query, Please Contact Us</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToSales('sales_land')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
+                                Point of Sales | POS</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToSales('abt-wave')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Sales Overview |
+                                Point of Sales | POS</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToSales('sales_image')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">POS - The Complete
+                                Accounting Solution for All Sales Activities | Points of Sales</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToSales('tab-sec')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">POS | Sales |
+                                Module`s</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToSales('sec8')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">POS | Sales |
+                                Choose The Right Plan For Your Business | Plan and Price</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToHms('hotel_land')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
+                                Hotel Management System</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToHms('abt-wave')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
+                                Hotel Management System | HMS</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToHms('hms_image')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">HMS - The End to
+                                End Digital Solution for the Workflow of All types Hotel | Hotel Management
+                                System</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToHms('tab-sec')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">HMS | Hotel |
+                                Module`s</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToHms('sec8')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">HMS | Hotel |
+                                Choose The Right Plan For Your Business | Plan and Price</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToRms('Restaurant_land')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
+                                Restaurant Management System</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToRms('abt-wave')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
+                                Restaurant Management System | HMS</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToRms('rms_image')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">RMS - Complete
+                                Solution for Quick & Error-Free Restaurant Sales Process | Restaurant Management
+                                System</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToRms('tab-sec')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">RMS | Restaurant |
+                                Module`s</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToRms('sec8')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">RMS | Restaurant |
+                                Choose The Right Plan For Your Business | Plan and Price</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToSsfinch('smart_land')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
+                                Smart-SkyFinch Management System</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToSsfinch('abt-wave')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
+                                Smart-SkyFinch Management System | SMS</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToSsfinch('ssfinch_image')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">SMS - The Smart
+                                Choice for Total Digital Solution for All Business Processes | Smart-SkyFinch Management
+                                System</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToSsfinch('tab-sec')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">SMS |
+                                Smart-SkyFinch | Module`s</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToSsfinch('sec8')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">SMS |
+                                Smart-SkyFinch |
+                                Choose The Right Plan For Your Business | Plan and Price</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToVms('vms_land')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
+                                Visitor's Management System</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToVms('abt-wave')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
+                                Visitor's Management System | VMS</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToVms('vms_image')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">VMS - Complete
+                                control over Visitor Management in the best of Business Interests | Visitor's Management
+                                System</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToVms('tab-sec')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">VMS | Visitor's |
+                                Module`s</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToVms('sec8')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">VMS | Visitor's |
+                                Choose The Right Plan For Your Business | Plan and Price</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToCrm('crm_land')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
+                                CRM</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToCrm('abt-wave')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
+                                Hotel Management System | HMS</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToCrm('crm_image')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">CRM - The End to
+                                End Digital Solution for the Workflow of All types Hotel</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToCrm('tab-sec')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">CRM |
+                                Module`s</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToCrm('sec8')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">CRM | Choose The
+                                Right Plan For Your Business | Plan and Price</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToCtm('ctm_land')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
+                                Transport Management System | TMS</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToCtm('abt-wave')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
+                                Transport Management System | TMS</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToCtm('ctm_image')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">TMS - The End to
+                                End Digital Solution for the Workflow of All types Hotel</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToCtm('tab-sec')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">TMS |
+                                Module`s</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToCtm('sec8')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">TMS | Choose The
+                                Right Plan For Your Business | Plan and Price</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToEms('ems_land')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
+                                Events Management System | EMS</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToEms('abt-wave')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
+                                Events Management System | EMS</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToEms('ems_image')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">EMS - The End to
+                                End Digital Solution for the Workflow of All types Hotel</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToEms('tab-sec')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">EMS |
+                                Module`s</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToEms('sec8')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">EMS | Choose The
+                                Right Plan For Your Business | Plan and Price</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToFms('fms_land')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
+                                Events Management System</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToFms('abt-wave')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
+                                Fleet Management System | FMS</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToFms('fms_image')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">FMS - Complete
+                                control over Fleet Management in the best of Business Interests | Fleet Management
+                                System</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToFms('tab-sec')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">FMS | Fleet
+                                Management System | Module`s</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToFms('sec8')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">FMS | Fleet
+                                Management System | Choose The Right Plan For Your Business | Plan and Price</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToPms('pms_land')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
+                                Payroll Management System</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToPms('abt-wave')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
+                                Payroll Management System | PMS</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToPms('pms_image')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Payroll - Complete
+                                control over Payroll Management in the best of Business Interests | Payroll Management
+                                System</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToPms('tab-sec')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">PMS | Payroll |
+                                Module`s</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToPms('sec8')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">PMS | Payroll |
+                                Choose The Right Plan For Your Business | Plan and Price</button>
+
+                        </li>
+
+                        <li class="content mb-3">
+                            <button onclick="jumpToSs('ss_land')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
+                                Sales and Services Management System</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToSs('abt-wave')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
+                                Sales and Services Management System </button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToSs('ss_image')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Sales and Services
+                                - Complete
+                                control over Sales and Services Management in the best of Business Interests | Sales and
+                                Services Management
+                                System</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToSs('tab-sec')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Sales and Services
+                                Management System | Module`s</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToSs('sec8')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Sales and Services
+                                Management System | Choose The Right Plan For Your Business | Plan and Price</button>
 
                         </li>
                     </ul>
@@ -234,6 +595,7 @@
             </div>
         </div>
     </div>
+    <!-- Search Modal Start-->
 
 
 
@@ -291,7 +653,7 @@
             </button>
             <div class="collapse navbar-collapse me-5" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <!-- <a class="p-0 pb-0 me-4 d-flex justify-content-center align-items-center">
+                    <a class="p-0 pb-0 me-4 d-flex justify-content-center align-items-center">
                         <button id="searchButton" type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
                             data-bs-target="#exampleModal" data-bs-whatever="@mdo">
                             <span class="row">
@@ -299,7 +661,7 @@
                                 <h6 class="col-10 p-0 m-0">Search...</h6>
                             </span>
                         </button>
-                    </a> -->
+                    </a>
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="service.html" class="nav-item nav-link active">Services</a>
                     <div class="nav-item dropdown">
@@ -690,8 +1052,8 @@
                 </div>
                 <div class="col-lg-2 col-6 mb-lg-0 mb-4 mt-5 mt-lg-5">
                     <h4 class="text-white mb-4 w-50 border-bottom border-primary">Discover</h4>
-                    <a class="btn btn-link" href="pl_pr.html">Plans & Pricing</a>
-                    <a class="btn btn-link" href="product Enquiry.html">Product Enquiry</a>
+                    <a class="btn btn-link" href="products.html">Products</a>
+                    <a class="btn btn-link" href="product Enquiry.html" onclick="choosePlan('', '')">Product Enquiry</a>
                     <a class="btn btn-link" href="contact.html">Contact us</a>
                 </div>
                 <div id="polices" class="col-lg-3 col-6 mb-lg-0 mb-4 ms-0 ms-lg-2 mt-5 mt-lg-5">

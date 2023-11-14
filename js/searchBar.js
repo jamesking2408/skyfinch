@@ -1,7 +1,11 @@
-// JavaScript code 
+// JavaScript code
 // Auto focus will locate main.js page
 // focus input field
-
+function jumpToMain(sectionId) {
+    const url = new URL('/index.html', window.location.origin);
+    const link = `${url}#${sectionId}`;
+    window.location.href = link;
+}
 function jumpToService(sectionId) {
     const url = new URL('/service.html', window.location.origin);
     const link = `${url}#${sectionId}`;
@@ -42,8 +46,36 @@ function jumpToVms(sectionId) {
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
-
-
+function jumpToCrm(sectionId) {
+    const url = new URL('/crm.html', window.location.origin);
+    const link = `${url}#${sectionId}`;
+    window.location.href = link;
+}
+function jumpToCtm(sectionId) {
+    const url = new URL('/ctm.html', window.location.origin);
+    const link = `${url}#${sectionId}`;
+    window.location.href = link;
+}
+function jumpToEms(sectionId) {
+    const url = new URL('/ems.html', window.location.origin);
+    const link = `${url}#${sectionId}`;
+    window.location.href = link;
+}
+function jumpToFms(sectionId) {
+    const url = new URL('/fms.html', window.location.origin);
+    const link = `${url}#${sectionId}`;
+    window.location.href = link;
+}
+function jumpToPms(sectionId) {
+    const url = new URL('/payroll.html', window.location.origin);
+    const link = `${url}#${sectionId}`;
+    window.location.href = link;
+}
+function jumpToSs(sectionId) {
+    const url = new URL('/sands.html', window.location.origin);
+    const link = `${url}#${sectionId}`;
+    window.location.href = link;
+}
 function searchContent() {
     let input = document.getElementById('searchbar').value;
     input = input.toLowerCase();
@@ -74,12 +106,12 @@ function debounce(func, wait) {
     timeout = setTimeout(func, wait);
 }
 
-document.getElementById('searchbar').addEventListener('input', function() {
+document.getElementById('searchbar').addEventListener('input', function () {
     currentResult = 0;
     debounce(searchContent, 300);
 });
 
-document.getElementById('searchbar').addEventListener('keydown', function(event) {
+document.getElementById('searchbar').addEventListener('keydown', function (event) {
     if (event.key === "Enter") {
         event.preventDefault();
         searchContent();

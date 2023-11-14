@@ -106,6 +106,17 @@
 
     $(document).ready(function () {
         screenCheck();
+        $('.searchLink').on("click", function () {
+            var isScreenCheck = screenCheck();
+
+            if (isScreenCheck) {
+                isScreenCheck.disable();
+
+                $(window).on('scroll', function () {
+                    isScreenCheck.enable();
+                });
+            }
+        });
     });
 
     $(window).on('resize', function () {
@@ -118,7 +129,7 @@
             sectionName: 'section-name',
             // standardScrollElements: 'section',
             easing: 'easeOutExpo',
-            scrollSpeed: 200,
+            scrollSpeed: 400,
             offset: 0,
             scrollbars: true,
             setHeights: true,
@@ -190,7 +201,7 @@
         items: 5,
         autoplay: true,
         slideTransition: 'linear',
-        autoplayTimeout: 6000,
+        autoplayTimeout: 4000,
         autoplaySpeed: 6000,
         loop: true,
         dots: false,
@@ -220,7 +231,7 @@
         items: 5,
         autoplay: true,
         slideTransition: 'linear',
-        autoplayTimeout: 6000,
+        autoplayTimeout: 4000,
         autoplaySpeed: 6000,
         loop: true,
         dots: false,
@@ -394,8 +405,8 @@
         }
         if (!target.closest('#navbarCollapse')) {
             var mainNav = document.querySelector('#navbarCollapse');
-            if(mainNav.classList.contains('show')){
-                mainNav.classList.remove('show')
+            if (mainNav.classList.contains('show')) {
+                mainNav.classList.remove('show');
             }
         }
     });

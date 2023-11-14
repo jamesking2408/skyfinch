@@ -1326,7 +1326,7 @@ a.text-dark:focus {
   position: relative;
   top: 0;
   left: 0;
-  transform: translate(10px, -55px);
+  transform: translate(20px, -55px);
 }
 
 #profile_sec2 .hist_3 {
@@ -1334,10 +1334,10 @@ a.text-dark:focus {
   position: relative;
   top: 0;
   left: 0;
-  transform: translate(20px, -85px);
+  transform: translate(30px, -45px);
 }
 
-@media (min-width:300px) and (max-width:700px) {
+@media (min-width:300px) and (max-width:999px) {
 
   #profile_sec2 .hist_1,
   #profile_sec2 .hist_2,
@@ -1350,6 +1350,14 @@ a.text-dark:focus {
 
   #profile_sec2 {
     height: 900px !important;
+  }
+
+  #profile_sec2 .leg_btn_nxt {
+    transform: translate(-130px, 302px);
+  }
+
+  #profile_sec2 .leg_btn_prev {
+    transform: translate(130px, 302px);
   }
 }
 
@@ -2913,17 +2921,21 @@ ul.cloud a:hover::before {
   #profile_sec2_2 {
     height: 600px;
   }
+
   #profile_sec2_2::before {
     height: 110% !important;
   }
+
   #profile_sec2_2 img {
     width: 350px;
   }
 }
+
 @media (min-width:555px) and (max-width:999px) {
   #profile_sec2_2::before {
     height: 600px;
   }
+
   #profile_sec2_2 {
     height: 80%;
   }
@@ -3138,3 +3150,89 @@ ul.cloud a:hover::before {
 }
 
 /* End Portfolio Area css
+
+/* Start
+/* Product pages Start */
+section#product_land {
+  background-image: url(../img/products.png);
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+.title-box {
+  height: 400px;
+}
+
+@media (min-width:300px) and (max-width:500px) {
+  .img-pdt {
+    width: 100%;
+    height: 390px;
+    background-position: 55% 100% !important;
+  }
+
+  .border-pdt {
+    position: relative;
+    display: flex;
+    width: 260px !important;
+    height: 60px;
+    left: 0 !important;
+    bottom: 0 !important;
+    transform: translateX(-10%) translateY(650%);
+  }
+
+  .border-pdt:hover {
+    transform: translateX(-10%) translateY(650%);
+  }
+
+  .border-pdt h1 {
+    font-size: 0.995rem;
+    font-weight: 100;
+    padding-top: 5px;
+    padding-right: 3px;
+  }
+
+  .li-pdt,
+  li>.li-pdt {
+    font-size: 0.605rem !important;
+  }
+
+  .li-pdt1 {
+    margin-top: -6px !important;
+  }
+}
+
+@media (min-width:504px) and (max-width:999px) {
+  .border-pdt {
+    position: relative;
+    display: flex;
+    width: 300px;
+    left: 0 !important;
+    bottom: 0 !important;
+    transform: translateX(-10%) translateY(630%);
+  }
+
+  .border-pdt:hover {
+    transform: translateX(-10%) translateY(630%);
+  }
+
+  .border-pdt h1 {
+    font-size: 1.505rem;
+    padding-top: 5px;
+  }
+
+  .li-pdt,
+  li>.li-pdt {
+    font-size: 0.905rem !important;
+  }
+
+  li.li-pdt1 {
+    margin-top: -6px !important;
+  }
+}
+
+/* Product Pages End */
+/* End
