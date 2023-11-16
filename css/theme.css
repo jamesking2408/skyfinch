@@ -1515,7 +1515,7 @@ a.text-dark:focus {
 }
 
 #land_profile {
-  background-image: url(/img/land_profile.jpg);
+  background-image: url(../img/land_profile.jpg);
   position: relative;
   background-position: center center;
   background-size: cover;
