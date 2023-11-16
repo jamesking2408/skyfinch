@@ -1544,7 +1544,7 @@ a.text-dark:focus {
   margin-bottom: 16px;
   height: 320px;
   /* background-color: #ffffff; */
-  background-image: url(/img/pro_land_image.png);
+  background-image: url(../img/pro_land_image.png);
   background-size: cover;
   background-position: center;
   color: #9890d6;
