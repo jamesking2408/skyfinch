@@ -100,7 +100,7 @@ input:-webkit-autofill:focus {
 }
 
 input[data-autocompleted] {
-    background-color: transparent !important;
+    background-color: white !important;
 }
 
 .show-chatbot .chatbot-toggler span:first-child,
@@ -235,7 +235,7 @@ input[data-autocompleted] {
     color: #fff;
     padding: 0 15px;
     margin-bottom: 0;
-    border-radius: 20px 20px 0 20px;
+    border-radius: 20px 0px 20px 20px;
     background-color: rgba(63, 143, 248, 0.849);
 
 }
@@ -269,6 +269,7 @@ input[data-autocompleted] {
     padding-bottom: 10px;
     margin-bottom: 5px;
     overflow: hidden;
+    background: #fff;
 }
 
 .chat-input span {
@@ -376,6 +377,9 @@ input[data-autocompleted] {
 .ind-btn-orange {
     transition: background-color 2.9s ease-in-out, color 2.9s ease-in-out;
     cursor: pointer;
+}
+.ind-text-warning {
+    color: #F97B1B;
 }
 
 .ind-btn-orange {
@@ -1294,6 +1298,14 @@ b.cloud {
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
+    transition: transform 0.3s;
+    /* Add a smooth transition for the transform property */
+}
+
+/* Hover effect */
+.navbar .dropdown-toggle:hover:focus::after {
+    transform: translateY(2px) rotate(-360deg);
+    /* Adjust the value based on how much you want the icon to move up */
 }
 
 .navbar .navbar-nav .nav-link {
@@ -1634,6 +1646,14 @@ b.cloud {
     min-height: 240px;
 }
 
+#sec2_1 .swiper .swiper-pagination {
+    bottom: 0px;
+}
+
+#sec2_1 .swiper .swiper-pagination-bullet {
+    width: 11px;
+    height: 11px;
+}
 
 @media (min-width: 550px) and (max-width: 999px) {
     .main {
@@ -2541,9 +2561,9 @@ b.cloud {
     -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
     color: black;
-    -ms-transform: translateY(-90px) translateX(-35%);
-    transform: translateY(-90px) translateX(-35%);
-    -webkit-transform: translateY(-90px) translateX(-35%);
+    -ms-transform: translateY(-90px) translateX(0);
+    transform: translateY(-90px) translateX(0);
+    -webkit-transform: translateY(-90px) translateX(0);
     border-radius: 50px;
     -webkit-border-radius: 50px;
     text-align: center;
@@ -2622,14 +2642,22 @@ b.cloud {
     }
 }
 
-@media (min-width:300px) and (max-width:850px) {
+@media screen and (max-width:767px) {
     .tooltip-content {
-        -ms-transform: translateY(-90px) translateX(0%);
-        transform: translateY(-90px) translateX(0%);
-        -webkit-transform: translateY(-90px) translateX(0%);
+        max-width: 180px;
+        -ms-transform: translateY(-80px) translateX(15px);
+        transform: translateY(-80px) translateX(15px);
+        -webkit-transform: translateY(-80px) translateX(15px);
     }
-}
 
+    .tooltip-content.tooltip-s-content {
+        max-width: 180px;
+        -ms-transform: translateY(-105px) translateX(-23px);
+        transform: translateY(-105px) translateX(-23px);
+        -webkit-transform: translateY(-105px) translateX(-23px);
+    }
+
+}
 
 /* TRY pop */
 
@@ -3078,8 +3106,21 @@ b.cloud {
 }
 
 .collapse #searchButton {
+    display: none;
     width: 15vw;
     border-radius: 25px 25px;
+}
+
+@media screen and (max-width:767px) {
+
+    html,
+    body {
+        scroll-behavior: smooth !important;
+    }
+
+    .collapse #searchButton {
+        display: block;
+    }
 }
 
 .collapse #searchButton .fa-search {

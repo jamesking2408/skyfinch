@@ -167,7 +167,7 @@
 }
 
 .bg-anti {
-  background-image: url(/img/policy-pg.png);
+  background-image: url(../img/policy-pg.png);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -204,7 +204,7 @@
 }
 
 .bg-anti-spam {
-  background-image: url(/img/conf-img.png);
+  background-image: url(../img/conf-img.png);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -216,7 +216,7 @@
 
 } */
 .policy_tab_cp {
-  background-image: url(/img/img-grd.jpg);
+  background-image: url(../img/img-grd.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -225,7 +225,7 @@
 }
 
 .bg-spam {
-  background-image: url(/img/bg-anti-spam.png);
+  background-image: url(../img/bg-anti-spam.png);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;

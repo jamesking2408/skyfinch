@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // console.log(userMessage);
         if (!userMessage) return;
 
+        document.querySelector(".chat-input textarea").focus();
         // Append the user's message to the chatbox
         chatbox.appendChild(createChatLi(userMessage, "outgoing"));
         chatbox.scrollTo(0, chatbox.scrollHeight);
@@ -104,8 +105,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Add this function to check if the click is outside the chatbox
-    const handleClickOutsideChatbox = (event) => {
-        if (!chatbox.contains(event.target) && !chatbotToggler.contains(event.target)) {
+    const handleClickOutsideChatbot = (event) => {
+        const isTextarea = event.target === chatInput;
+        const isHeader = event.target.closest('header');
+
+        if (!chatbox.contains(event.target) && !chatbotToggler.contains(event.target) && !isTextarea && !isHeader) {
             document.body.classList.remove("show-chatbot");
         }
     }
@@ -120,14 +124,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     sendChatBtn.addEventListener("click", handleChat)
 
+    chatInput.addEventListener("keypress", handleKeyPress);
+
     // Add an event listener to the document to handle clicks
-    document.addEventListener("click", handleClickOutsideChatbox);
+    document.addEventListener("click", handleClickOutsideChatbot);
 
     chatbotToggler.addEventListener("click", function () {
         document.body.classList.toggle("show-chatbot");
+        chatInput.focus();
     });
 
-    chatInput.addEventListener("keypress", handleKeyPress);
 
     //<!-- Chat BOX JS End -->
 

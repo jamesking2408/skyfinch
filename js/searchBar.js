@@ -76,6 +76,26 @@ function jumpToSs(sectionId) {
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
+function jumpToProfile(sectionId) {
+    const url = new URL('/profile.html', window.location.origin);
+    const link = `${url}#${sectionId}`;
+    window.location.href = link;
+}
+function jumpToPp(sectionId) {
+    const url = new URL('/privacy_policy.html', window.location.origin);
+    const link = `${url}#${sectionId}`;
+    window.location.href = link;
+}
+function jumpToAp(sectionId) {
+    const url = new URL('/confidentality_policy.html', window.location.origin);
+    const link = `${url}#${sectionId}`;
+    window.location.href = link;
+}
+function jumpToCp(sectionId) {
+    const url = new URL('/anti_spam.html', window.location.origin);
+    const link = `${url}#${sectionId}`;
+    window.location.href = link;
+}
 function searchContent() {
     let input = document.getElementById('searchbar').value;
     input = input.toLowerCase();

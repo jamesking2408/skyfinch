@@ -54,63 +54,7 @@
             <div class="dot-spinner__dot"></div>
         </div>
     </div>
-
     <!-- Spinner End -->
-
-    <!-- Start chat box Design  -->
-    <span class="tooltip-text" style="visibility: hidden;">I’m Skyfinch</span>
-
-    <button title="" class="chatbot-toggler wow fadeInDown" data-wow-delay="2.2s" data-bs-toggle="tooltip"
-        data-bs-placement="left" data-bs-custom-class="chat-tooltip" data-bs-title="Hi! I'm Help you.👋">
-        <span class="material-symbols-outlined">mode_comment</span>
-        <span class="material-symbols-outlined">close</span>
-    </button>
-
-    <div class="chatbot">
-        <header>
-            <h2 class="text-light">CHATBOT</h2>
-            <span class="material-symbols-outlined">close</span>
-        </header>
-        <ul class="chatbox">
-            <li class="chat incoming">
-                <span class="material-symbols-outlined">🤖</span>
-                <p>Hi <br>I’m SkyFinch 👋 <br> If you need any help?<br> Type: 'Help'</p>
-            </li>
-            <li class="chat outgoing">
-
-            </li>
-        </ul>
-        <div class="chat-input">
-            <textarea placeholder="Type here...." required></textarea>
-            <span id="send-btn" class="material-symbols-outlined">send</span>
-        </div>
-    </div>
-    <!-- End chat box Design  -->
-
-    <!-- Submit alert box -->
-    <div class="container-sub">
-        <div class="sub-popup" id="pop">
-            <img src="img/404-tick.png" alt="">
-            <h2 class="display-5" style="color: rgb(1, 1, 68);"></h2>
-            <p class="fw-semibold">. </p>
-
-            <button type="button" class="exit fs-5 fw-bolder" onclick="closePopup0()">OK<span><img src="img/thumbs.png"
-                        alt="thumbs" style="width: 25px; margin-top: -2px;"></span></button>
-        </div>
-    </div>
-    <!-- Submit alert box -->
-
-    <!-- Submit wrong alert box -->
-    <div class="container-sub">
-        <div class="sub-popup1" id="pop1">
-            <img src="img/wrong.png" class="wrong" alt="">
-            <h2 class="display-5" style="color: rgb(219, 17, 17);"></h2>
-            <p class="fw-semibold"></p>
-            <button type="button" class="exit1 fs-5 fw-bolder" onclick="closePopup1()">OK<span><img src="img/thumbs.png"
-                        alt="thumbs" style="width: 25px; margin-top: -2px;"></span></button>
-        </div>
-    </div>
-    <!-- Submit wrong alert box -->
 
 
     <!-- Search Modal Start-->
@@ -121,10 +65,10 @@
                     <form class="searchForm">
                         <div class="col-12 p-1 bg-light rounded rounded-pill shadow-sm mb-2">
                             <div class="input-group">
-                                <input type="search" id="searchbar"
+                                <input type="text" id="searchbar" name="searchbar"
                                     class="form-control border-0 rounded rounded-pill bg-light"
-                                    onkeyup="searchContent()" placeholder="Searching skyfinch..."
-                                    aria-describedby="button-addon1" autocomplete="off" />
+                                    onkeyup="searchContent()" aria-describedby="button-addon1" autocomplete="off" />
+
                             </div>
                         </div>
                     </form>
@@ -147,13 +91,13 @@
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToMain('sec2')"
-                                class="btn btn-outline-primary border-0  w-100 text-start searchLink">Skyfinch Team |
-                                Applications</button>
+                                class="btn btn-outline-primary border-0  w-100 text-start searchLink">Skyfinch Teams
+                            </button>
 
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToMain('sec2_1')"
-                                class="btn btn-outline-primary border-0  w-100 text-start searchLink">Skyfinch Team |
+                                class="btn btn-outline-primary border-0  w-100 text-start searchLink">Skyfinch |
                                 Applications</button>
 
                         </li>
@@ -571,10 +515,8 @@
                         <li class="content mb-3">
                             <button onclick="jumpToSs('ss_image')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Sales and Services
-                                - Complete
-                                control over Sales and Services Management in the best of Business Interests | Sales and
-                                Services Management
-                                System</button>
+                                - Complete control over Sales and Services Management in the best of Business Interests
+                                | Sales and Services Management System</button>
 
                         </li>
                         <li class="content mb-3">
@@ -589,12 +531,145 @@
                                 Management System | Choose The Right Plan For Your Business | Plan and Price</button>
 
                         </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToProfile('land_profile')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">SkyFinch | Profile
+                                - Home</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToProfile('profile_sec2_1')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Profile | About
+                                SkyFinch | Traits | Roadmap’s</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToProfile('profile_sec2_2')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Profile | SkyFinch
+                                Technologies</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToProfile('profile_sec2_3')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Profile | About
+                                SkyFinch Products</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToProfile('profile_sec2_4')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Profile | Our
+                                Products</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToProfile('profile_sec2_5')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Profile | IT
+                                Services</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToProfile('profile_sec2')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Profile | SkyFinch
+                                Legacy</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToPp('bg-anti')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Privacy Policy |
+                                Home</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToPp('policy_tab')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Privacy Policy |
+                                Secure data Policy</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToAp('bg-anti')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Anti-Spam Policy |
+                                Home</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToAp('policy_tab')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Anti-Spam Policy |
+                                Secure data Policy</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToCp('bg-anti')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Confidentiality
+                                Policy | Home</button>
+
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToCp('policy_tab')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Confidentiality
+                                Policy | Secure data Policy</button>
+
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Search Modal Start-->
+    <!-- Search Modal End-->
+
+    <!-- Start chat box Design  -->
+    <span class="tooltip-text" style="visibility: hidden;">I’m Skyfinch</span>
+
+    <button title="" class="chatbot-toggler wow fadeInDown" data-wow-delay="2.2s" data-bs-toggle="tooltip"
+        data-bs-placement="left" data-bs-custom-class="chat-tooltip" data-bs-title="Hi! I'm Help you.👋">
+        <span class="material-symbols-outlined">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+    </button>
+
+    <div class="chatbot">
+        <header>
+            <h2 class="text-light">CHATBOT</h2>
+            <span class="material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">🤖</span>
+                <p>Hi <br>I’m SkyFinch 👋 <br> If you need any help?<br> Type: 'Help'</p>
+            </li>
+            <li class="chat outgoing">
+
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea placeholder="Type here...." required></textarea>
+            <span id="send-btn" class="material-symbols-outlined">send</span>
+        </div>
+    </div>
+    <!-- End chat box Design  -->
+
+    <!-- Submit alert box -->
+    <div class="container-sub">
+        <div class="sub-popup" id="pop">
+            <img src="img/404-tick.png" alt="">
+            <h2 class="display-5" style="color: rgb(1, 1, 68);"></h2>
+            <p class="fw-semibold">. </p>
+
+            <button type="button" class="exit fs-5 fw-bolder" onclick="closePopup0()">OK<span><img src="img/thumbs.png"
+                        alt="thumbs" style="width: 25px; margin-top: -2px;"></span></button>
+        </div>
+    </div>
+    <!-- Submit alert box -->
+
+    <!-- Submit wrong alert box -->
+    <div class="container-sub">
+        <div class="sub-popup1" id="pop1">
+            <img src="img/wrong.png" class="wrong" alt="">
+            <h2 class="display-5" style="color: rgb(219, 17, 17);"></h2>
+            <p class="fw-semibold"></p>
+            <button type="button" class="exit1 fs-5 fw-bolder" onclick="closePopup1()">OK<span><img src="img/thumbs.png"
+                        alt="thumbs" style="width: 25px; margin-top: -2px;"></span></button>
+        </div>
+    </div>
+    <!-- Submit wrong alert box -->
 
 
 
@@ -608,9 +683,12 @@
                     </i>9.00 am - 6.30 pm (IST)</medium>
             </div>
             <div class="col-lg-6 col-md-4 text-end pe-lg-3">
-                <medium class=""><i id="top-icons" class="fa fa-envelope me-lg-2 me-0"></i>info&#x40;skyfinch.com
+                <medium class=""><i id="top-icons" class="fa fa-envelope me-lg-2 me-0"></i><a class="text-dark"
+                        href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@skyfinch.com" target="_blank"
+                        rel="noopener noreferrer">info&#x40;skyfinch.com</a>
                 </medium>
-                <medium class="ps-lg-1 ps-0"><i id="top-icons" class="fa fa-phone me-lg-2 me-0"></i>+91 9443487210
+                <medium class="ps-lg-1 ps-0"><i id="top-icons" class="fa fa-phone me-lg-2 me-0"></i><a class="text-dark"
+                        href="tel:+91 9443487210">+91 9443487210</a>
                 </medium>
             </div>
         </div>

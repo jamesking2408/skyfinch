@@ -1415,7 +1415,7 @@ a.text-dark:focus {
 }
 
 .bg-image {
-  background-image: url(/dist/assets/img/bg_pattern.svg);
+  background-image: url(../img/bg_pattern.svg);
   position: relative;
   background-position: center center;
   background-size: cover;
