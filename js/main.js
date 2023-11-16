@@ -106,17 +106,6 @@
 
     $(document).ready(function () {
         screenCheck();
-        $('.searchLink').on("click", function () {
-            var isScreenCheck = screenCheck();
-
-            if (isScreenCheck) {
-                isScreenCheck.disable();
-
-                $(window).on('scroll', function () {
-                    isScreenCheck.enable();
-                });
-            }
-        });
     });
 
     $(window).on('resize', function () {
@@ -125,24 +114,29 @@
 
     function applyScroll() {
         $.scrollify({
-            section: '.scroll',
-            sectionName: 'section-name',
-            // standardScrollElements: 'section',
-            easing: 'easeOutExpo',
-            scrollSpeed: 400,
+            section: "section",
+            sectionName: "section-name",
+            interstitialSection: "",
+            easing: "easeOutExpo",
+            scrollSpeed: 700,
             offset: 0,
             scrollbars: true,
+            standardScrollElements: "",
             setHeights: true,
             overflowScroll: true,
             updateHash: false,
             touchScroll: true,
+            before: function () { },
+            after: function () { },
+            afterResize: function () { },
+            afterRender: function () { }
         });
     }
 
     function screenCheck() {
         var deviceAgent = navigator.userAgent.toLowerCase();
         var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
-        if (agentID || $(window).width() <= 1110) {
+        if (agentID || $(window).width() <= 1114) {
             // its mobile screen
             $.scrollify.destroy();
             $('section').removeClass('scroll').removeAttr('style');

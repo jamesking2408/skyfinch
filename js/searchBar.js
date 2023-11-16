@@ -8,8 +8,8 @@ function jumpToMain(sectionId) {
 }
 function jumpToService(sectionId) {
     const url = new URL('/service.html', window.location.origin);
-    const link = `${url}#${sectionId}`;
-    window.location.href = link;
+    url.hash = '#' + sectionId;
+    window.location.href = url.href;
 }
 function jumpToAbout(sectionId) {
     const url = new URL('/about.html', window.location.origin);

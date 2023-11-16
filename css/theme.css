@@ -1334,7 +1334,7 @@ a.text-dark:focus {
   position: relative;
   top: 0;
   left: 0;
-  transform: translate(30px, -45px);
+  transform: translate(30px, -85px);
 }
 
 @media (min-width:300px) and (max-width:999px) {
@@ -1612,6 +1612,10 @@ a.text-dark:focus {
 
 #profile_sec2_1 .abt_img_prof {
   width: 350px;
+}
+
+#profile_sec2_1 .swiper-pagination-bullet-active {
+  background-color: #854fee;
 }
 
 .subhead {
