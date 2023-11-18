@@ -105,11 +105,15 @@
     //<!-- update Section Scroll effects -->
 
     $(document).ready(function () {
-        screenCheck();
+        setTimeout(() => {
+            screenCheck();
+        }, 1000);
     });
 
     $(window).on('resize', function () {
-        screenCheck();
+        setTimeout(() => {
+            screenCheck();
+        }, 1800);
     });
 
     function applyScroll() {

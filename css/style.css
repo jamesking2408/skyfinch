@@ -374,12 +374,17 @@ input[data-autocompleted] {
 .ind-btn-warning,
 .ind-btn-primary,
 .ind-btn-danger,
-.ind-btn-orange {
+.ind-btn-orange,
+.ind-btn-green {
     transition: background-color 2.9s ease-in-out, color 2.9s ease-in-out;
     cursor: pointer;
 }
 .ind-text-warning {
     color: #F97B1B;
+}
+.ind-btn-green {
+    color: #FFFFFF;
+    background-color: hsl(216, 98%, 52%);
 }
 
 .ind-btn-orange {
@@ -401,7 +406,10 @@ input[data-autocompleted] {
     background-color: #0d6efd;
     color: #FFFFFF;
 }
-
+.ind-btn-green:hover {
+    color: #000;
+    background-color: #05f0c9;
+}
 .ind-btn-orange:hover {
     background-color: hsl(216, 98%, 52%);
     color: #FFFFFF;
@@ -1223,6 +1231,7 @@ h6,
     top: 30px;
     left: 62px;
     font-size: 9.5px;
+    color: black;
 }
 
 b.cloud {
@@ -3087,6 +3096,10 @@ b.cloud {
 /* Manual CSS end*/
 
 /* Search box Start */
+#searchButton span h6 {
+    font-family: 'Aclonica';
+    font-size: 18px;
+}
 
 #exampleModal .searchForm {
     width: 100%;
@@ -3106,7 +3119,7 @@ b.cloud {
 }
 
 .collapse #searchButton {
-    display: none;
+    /* display: none; */
     width: 15vw;
     border-radius: 25px 25px;
 }

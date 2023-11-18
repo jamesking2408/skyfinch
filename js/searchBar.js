@@ -96,6 +96,11 @@ function jumpToCp(sectionId) {
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
+function jumpToTerm(sectionId) {
+    const url = new URL('/term_use.html', window.location.origin);
+    const link = `${url}#${sectionId}`;
+    window.location.href = link;
+}
 function searchContent() {
     let input = document.getElementById('searchbar').value;
     input = input.toLowerCase();
