@@ -1,4 +1,4 @@
-@media (min-width:300px) and (max-width:700px) {
+@media (min-width:300px) and (max-width:425px) {
   .toZoom {
     border-radius: 5px;
     cursor: pointer;
@@ -55,4 +55,3 @@
     cursor: pointer;
   }
 }
-

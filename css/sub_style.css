@@ -5,7 +5,7 @@
     background-image: radial-gradient(ellipse, #0000, #ddd7d72f),
         linear-gradient(0deg, #0000, #ddd7d777), url(../img/pos-bg.jpg);
     width: 100%;
-    height: 400px !important;
+    height: inherit !important;
     padding-bottom: 480px;
     background-position: center;
     background-size: cover;
@@ -27,7 +27,10 @@
         background-position: 50% 50%;
     }
 
-    #sales_land.container1,
+    #sales_land {
+        height: 450px;
+    }
+
     .img-pos {
         height: inherit;
     }
@@ -38,7 +41,10 @@
         background-position: 50% 50%;
     }
 
-    #sales_land.container1,
+    #sales_land {
+        height: 450px;
+    }
+
     .img-pos {
         height: inherit;
     }
@@ -49,7 +55,10 @@
         background-position: 50% 50%;
     }
 
-    #sales_land.container1,
+    #sales_land {
+        height: 450px;
+    }
+
     .img-pos {
         height: inherit;
     }
@@ -64,8 +73,8 @@
     #abt-wave img {
         left: 0;
         bottom: 0;
-        transform: translateX(8rem) translateY(-2rem);
-        width: 500px;
+        transform: translateX(3rem) translateY(-2rem);
+        width: 400px;
     }
 
     #abt-wave .container {
@@ -260,6 +269,7 @@
     #crm_image .facts {
         margin-top: 10px !important;
     }
+
     #ctm_image .container-fluid {
         margin-top: 0px !important;
         padding-top: 0px !important;
@@ -270,6 +280,7 @@
     #ctm_image .facts {
         margin-top: 10px !important;
     }
+
     #ems_image .container-fluid {
         margin-top: 0px !important;
         padding-top: 0px !important;
@@ -280,6 +291,7 @@
     #ems_image .facts {
         margin-top: 10px !important;
     }
+
     #fms_image .container-fluid {
         margin-top: 0px !important;
         padding-top: 0px !important;
@@ -290,6 +302,7 @@
     #fms_image .facts {
         margin-top: 10px !important;
     }
+
     #pms_image .container-fluid {
         margin-top: 0px !important;
         padding-top: 0px !important;
@@ -300,6 +313,7 @@
     #pms_image .facts {
         margin-top: 10px !important;
     }
+
     #ss_image .container-fluid {
         margin-top: 0px !important;
         padding-top: 0px !important;
@@ -320,7 +334,7 @@
     }
 }
 
-@media (min-width:1025px) and (max-width:1440px) {
+@media (min-width:1025px) and (max-width:1366px) {
 
     #sales_image .container-fluid,
     #sales_image .container {
@@ -330,6 +344,23 @@
         transform: translateY(0.8rem);
     }
 }
+
+@media (min-width:1367px) and (max-width:1440px) {
+
+    #sales_image .container-fluid,
+    #sales_image .container {
+        margin-top: 0px !important;
+        padding-top: 0px !important;
+        top: 0;
+        transform: translateY(0.8rem);
+    }
+
+    .img-pos {
+        height: inherit !important;
+    }
+
+}
+
 
 /* @media (min-width:1025px) and (max-width:1440px) {
     #abt-wave {
@@ -639,7 +670,32 @@
 
 }
 
-@media (min-width:500px) and (max-width:768px) {
+@media (min-width:500px) and (max-width:601px) {
+    .bg-12 {
+        position: relative;
+        height: 730px;
+    }
+
+    /* point of sales responsive */
+    .border-pos {
+        position: relative;
+        display: flex;
+        width: 22rem !important;
+        left: 0 !important;
+        bottom: 0 !important;
+        transform: translateX(1.5rem) translateY(23rem) !important;
+    }
+
+    .border-pos:hover {
+        transform: translateX(1.5rem) translateY(23rem) !important;
+    }
+
+    .border-pos h1 {
+        font-size: 2.505rem;
+    }
+}
+
+@media (min-width:602px) and (max-width:768px) {
     .bg-12 {
         position: relative;
         height: 630px;
@@ -881,7 +937,60 @@
     }
 }
 
-@media (min-width:504px) and (max-width:768px) {
+@media (min-width:504px) and (max-width:601px) {
+    .btn-pq {
+        position: relative;
+    }
+
+    .container.btn-pq a.button {
+        padding: 10px !important;
+        height: 55px;
+        font-size: 1.09rem;
+        font-weight: bolder;
+    }
+
+    .btn-pq .button {
+        position: absolute;
+        height: 55px;
+        top: 0;
+        left: 0;
+        transform: translate(10rem, 7rem) !important;
+    }
+
+    .button span:nth-child(1) {
+        left: -40px;
+    }
+
+    .button:hover span:nth-child(1) {
+        left: 40%;
+    }
+
+    .button span:nth-child(3) {
+        right: -40px;
+    }
+
+    .button:hover span:nth-child(3) {
+        right: 40%;
+    }
+
+    .button span:nth-child(2) {
+        top: -40px;
+    }
+
+    .button:hover span:nth-child(2) {
+        top: 40%;
+    }
+
+    .button span:nth-child(4) {
+        bottom: -40px;
+    }
+
+    .button:hover span:nth-child(4) {
+        bottom: 40%;
+    }
+}
+
+@media (min-width:602px) and (max-width:768px) {
     .btn-pq {
         position: relative;
     }
@@ -933,7 +1042,6 @@
         bottom: 40%;
     }
 }
-
 
 @media (min-width:769px) and (max-width:1024px) {
     .btn-pq {
@@ -1096,7 +1204,86 @@
 }
 
 /* Other Products Pages Button */
-@media (min-width:500px) and (max-width:768px) {
+@media (min-width:500px) and (max-width:601px) {
+    #hotel_land .btn-pq .button {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translate(10rem, 15rem) !important;
+    }
+
+    #Restaurant_land .btn-pq .button {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translate(10rem, 12rem) !important;
+    }
+
+    #smart_land .btn-pq .button {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translate(10rem, 12rem) !important;
+    }
+
+    #vms_land .btn-pq .button {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translate(10rem, 12rem) !important;
+    }
+
+    #vms_land .btn-pq .button {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translate(10rem, 12rem) !important;
+    }
+
+    #crm_land .btn-pq .button {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translate(10rem, 12rem) !important;
+    }
+
+    #ctm_land .btn-pq .button {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translate(10rem, 12rem) !important;
+    }
+
+    #ems_land .btn-pq .button {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translate(10rem, 12rem) !important;
+    }
+
+    #fms_land .btn-pq .button {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translate(10rem, 12rem) !important;
+    }
+
+    #pms_land .btn-pq .button {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translate(10rem, 12rem) !important;
+    }
+
+    #ss_land .btn-pq .button {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translate(10rem, 12rem) !important;
+    }
+}
+
+@media (min-width:602px) and (max-width:768px) {
     #hotel_land .btn-pq .button {
         position: absolute;
         left: 0;
@@ -1145,18 +1332,21 @@
         bottom: 0;
         transform: translate(15rem, 12rem) !important;
     }
+
     #fms_land .btn-pq .button {
         position: absolute;
         left: 0;
         bottom: 0;
         transform: translate(15rem, 12rem) !important;
     }
+
     #pms_land .btn-pq .button {
         position: absolute;
         left: 0;
         bottom: 0;
         transform: translate(15rem, 12rem) !important;
     }
+
     #ss_land .btn-pq .button {
         position: absolute;
         left: 0;
@@ -1640,14 +1830,14 @@
         transform: rotate(319deg) translateX(-45px) translateY(-27px) !important;
     }
 
-    #sec8 .container {
+    #sec8 .container-fluid {
         position: relative;
         top: 0;
         transform: translateY(1rem);
     }
 }
 
-@media (min-width:1024px) and (max-width:1440px) {
+@media (min-width:1024px) and (max-width:1366px) {
     #module_card .card {
         width: 380px !important;
     }
@@ -1663,6 +1853,24 @@
         transform: translateY(0.5rem);
         padding-bottom: 20px !important;
     }
+}
+
+@media (min-width:1367px) and (max-width:1440px) {
+    #module_card .card {
+        width: 380px !important;
+    }
+
+    #module_card .card-bg2 h5 {
+        margin-left: 33px;
+        font-size: 20px;
+    }
+
+    #sec8 .container-fluid {
+        position: relative;
+        top: 0;
+        transform: translateY(2.8rem);
+    }
+
 }
 
 /* Point of sales End */
@@ -1788,18 +1996,64 @@ section.bg-00 {
     }
 }
 
-@media (min-width:501px) and (max-width:768px) {
+@media (min-width:501px) and (max-width:601px) {
+    #hotel_land {
+        position: relative;
+        height: 550px;
+    }
+
+    .img-hms {
+        height: inherit;
+    }
 
     .border-hms {
         position: absolute;
         width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(1rem) translateY(-1rem) !important;
+        transform: translateX(0rem) translateY(1rem) !important;
     }
 
     .border-hms:hover {
-        transform: translateX(1rem) translateY(-1rem);
+        transform: translateX(0rem) translateY(-22rem);
+    }
+
+    .border-hms h1 {
+        font-size: 1.905rem;
+        padding-top: 5px;
+    }
+
+    .li-hms,
+    li>.li-hms {
+        font-size: 0.905rem !important;
+    }
+
+    li.li-hms1 {
+        margin-top: -6px !important;
+    }
+}
+
+@media (min-width:602px) and (max-width:768px) {
+
+    #hotel_land {
+        position: relative;
+        height: 550px;
+    }
+
+    .img-hms {
+        height: inherit;
+    }
+
+    .border-hms {
+        position: absolute;
+        width: 350px;
+        left: 0 !important;
+        bottom: 0 !important;
+        transform: translateX(0rem) translateY(1rem) !important;
+    }
+
+    .border-hms:hover {
+        transform: translateX(0rem) translateY(1rem);
     }
 
     .border-hms h1 {
@@ -1893,21 +2147,73 @@ section.bg-00 {
     }
 }
 
-@media (min-width:500px) and (max-width:768px) {
+@media (min-width:500px) and (max-width:601px) {
+
+    #Restaurant_land {
+        position: relative;
+        height: 75%;
+    }
+
+    .img-rms {
+        height: inherit !important;
+    }
+
     .border-rms {
         position: absolute;
-        width: 350px !important;
+        width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-1rem) translateY(-1rem) !important;
+        transform: translateX(0rem) translateY(1rem) !important;
     }
 
     .border-rms:hover {
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(0rem) translateY(1rem);
     }
 
     .border-rms h1 {
-        font-size: 1.105rem;
+        font-size: 1.505rem;
+        padding-top: 5px;
+    }
+
+    .img-rms {
+        height: 400px !important;
+    }
+
+    .li-rms,
+    li>.li-rms {
+        font-size: 0.905rem !important;
+    }
+
+    li.li-rms1 {
+        margin-top: -4px !important;
+    }
+}
+
+@media (min-width:602px) and (max-width:768px) {
+
+    #Restaurant_land {
+        position: relative;
+        height: 75%;
+    }
+
+    .img-rms {
+        height: inherit !important;
+    }
+
+    .border-rms {
+        position: absolute;
+        width: 350px;
+        left: 0 !important;
+        bottom: 0 !important;
+        transform: translateX(0rem) translateY(1rem) !important;
+    }
+
+    .border-rms:hover {
+        transform: translateX(0rem) translateY(1rem);
+    }
+
+    .border-rms h1 {
+        font-size: 1.905rem;
         padding-top: 5px;
     }
 
@@ -2169,17 +2475,64 @@ section.bg-00 {
     }
 }
 
-@media (min-width:500px) and (max-width:768px) {
+@media (min-width:500px) and (max-width:601px) {
+
+    #smart_land {
+        position: relative;
+        height: 75%;
+    }
+
+    .img-ssfinch {
+        height: inherit !important;
+    }
+
     .border-ssfinch {
         position: absolute;
-        width: 23rem !important;
+        width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-1rem) translateY(-1rem) !important;
+        transform: translateX(0rem) translateY(1rem) !important;
     }
 
     .border-ssfinch:hover {
-        transform: translateX(-1rem) translateY(-1rem) !important;
+        transform: translateX(0rem) translateY(1rem);
+    }
+
+    .border-ssfinch h1 {
+        font-size: 1.505rem;
+        padding-top: 5px;
+    }
+
+    .li-ssfinch,
+    li>.li-ssfinch {
+        font-size: 0.905rem !important;
+    }
+
+    li.li-ssfinch1 {
+        margin-top: -6px !important;
+    }
+}
+
+@media (min-width:602px) and (max-width:768px) {
+    #smart_land {
+        position: relative;
+        height: 75%;
+    }
+
+    .img-ssfinch {
+        height: inherit !important;
+    }
+
+    .border-ssfinch {
+        position: absolute;
+        width: 350px;
+        left: 0 !important;
+        bottom: 0 !important;
+        transform: translateX(0rem) translateY(1rem) !important;
+    }
+
+    .border-ssfinch:hover {
+        transform: translateX(0rem) translateY(1rem);
     }
 
     .border-ssfinch h1 {
@@ -2431,7 +2784,45 @@ section.bg-00 {
     }
 }
 
-@media (min-width:500px) and (max-width:768px) {
+@media (min-width:500px) and (max-width:601px) {
+
+    #vms_land {
+        position: relative;
+        height: 75%;
+    }
+
+    .img-vms {
+        height: inherit !important;
+    }
+
+    .border-vms {
+        position: absolute;
+        width: 350px;
+        left: 0 !important;
+        bottom: 0 !important;
+        transform: translateX(0rem) translateY(1rem) !important;
+    }
+
+    .border-vms:hover {
+        transform: translateX(0rem) translateY(1rem);
+    }
+
+    .border-vms h1 {
+        font-size: 1.505rem;
+        padding-top: 5px;
+    }
+
+    .li-vms,
+    li>.li-vms {
+        font-size: 0.905rem !important;
+    }
+
+    li.li-vms1 {
+        margin-top: -4px !important;
+    }
+}
+
+@media (min-width:602px) and (max-width:768px) {
     .border-vms {
         position: absolute;
         width: min-content !important;
@@ -2697,7 +3088,45 @@ section.bg-00 {
     }
 }
 
-@media (min-width:500px) and (max-width:768px) {
+@media (min-width:500px) and (max-width:601px) {
+
+    #crm_land {
+        position: relative;
+        height: 75%;
+    }
+
+    .img-crm {
+        height: inherit !important;
+    }
+
+    .border-crm {
+        position: absolute;
+        width: 350px;
+        left: 0 !important;
+        bottom: 0 !important;
+        transform: translateX(0rem) translateY(1rem) !important;
+    }
+
+    .border-crm:hover {
+        transform: translateX(0rem) translateY(1rem);
+    }
+
+    .border-crm h1 {
+        font-size: 2.505rem !important;
+        padding-top: 5px;
+    }
+
+    .li-crm,
+    li>.li-crm {
+        font-size: 0.905rem !important;
+    }
+
+    li.li-crm1 {
+        margin-top: -4px !important;
+    }
+}
+
+@media (min-width:602px) and (max-width:768px) {
     .border-crm {
         position: absolute;
         width: 350px;
@@ -2952,17 +3381,63 @@ section.bg-00 {
     }
 }
 
-@media (min-width:500px) and (max-width:768px) {
+@media (min-width:500px) and (max-width:601px) {
+    #ctm_land {
+        position: relative;
+        height: 75%;
+    }
+
+    .img-ctm {
+        height: inherit !important;
+    }
+
     .border-ctm {
         position: absolute;
-        width: min-content;
+        width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(0rem) translateY(1rem) !important;
     }
 
     .border-ctm:hover {
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(0rem) translateY(1rem);
+    }
+
+    .border-ctm h1 {
+        font-size: 1.05rem;
+        padding-top: 5px;
+    }
+
+    .li-ctm,
+    li>.li-ctm {
+        font-size: 0.905rem !important;
+    }
+
+    li.li-ctm1 {
+        margin-top: -4px !important;
+    }
+}
+
+@media (min-width:602px) and (max-width:768px) {
+    #ctm_land {
+        position: relative;
+        height: 75%;
+    }
+
+    .img-ctm {
+        height: inherit !important;
+    }
+
+    .border-ctm {
+        position: absolute;
+        width: 350px;
+        left: 0 !important;
+        bottom: 0 !important;
+        transform: translateX(0rem) translateY(1rem) !important;
+    }
+
+    .border-ctm:hover {
+        transform: translateX(0rem) translateY(1rem);
     }
 
     .border-ctm h1 {
@@ -3219,16 +3694,63 @@ section.bg-00 {
     }
 }
 
-@media (min-width:500px) and (max-width:768px) {
+@media (min-width:500px) and (max-width:601px) {
+    #fms_land {
+        position: relative;
+        height: 75%;
+    }
+
+    .img-fms {
+        height: inherit !important;
+    }
+
     .border-fms {
         position: absolute;
+        width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(0rem) translateY(1rem) !important;
     }
 
     .border-fms:hover {
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(0rem) translateY(1rem);
+    }
+
+    .border-fms h1 {
+        font-size: 1.505rem;
+        padding-top: 5px;
+    }
+
+    .li-fms,
+    li>.li-fms {
+        font-size: 0.905rem !important;
+    }
+
+    li.li-fms1 {
+        margin-top: -4px !important;
+    }
+}
+
+@media (min-width:602px) and (max-width:768px) {
+    #fms_land {
+        position: relative;
+        height: 75%;
+    }
+
+    .img-fms {
+        height: inherit !important;
+    }
+
+    .border-fms {
+        position: absolute;
+        width: 350px;
+        left: 0 !important;
+        bottom: 0 !important;
+        transform: translateX(0rem) translateY(1rem) !important;
+    }
+
+    .border-fms:hover {
+        transform: translateX(0rem) translateY(1rem);
     }
 
     .border-fms h1 {
@@ -3482,16 +4004,63 @@ section.bg-00 {
     }
 }
 
-@media (min-width:500px) and (max-width:768px) {
+@media (min-width:500px) and (max-width:601px) {
+    #ems_land {
+        position: relative;
+        height: 75%;
+    }
+
+    .img-ems {
+        height: inherit !important;
+    }
+
     .border-ems {
         position: absolute;
+        width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(0rem) translateY(1rem) !important;
     }
 
     .border-ems:hover {
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(0rem) translateY(1rem);
+    }
+
+    .border-ems h1 {
+        font-size: 1.505rem;
+        padding-top: 5px;
+    }
+
+    .li-ems,
+    li>.li-ems {
+        font-size: 0.905rem !important;
+    }
+
+    li.li-ems1 {
+        margin-top: -4px !important;
+    }
+}
+
+@media (min-width:602px) and (max-width:768px) {
+    #ems_land {
+        position: relative;
+        height: 75%;
+    }
+
+    .img-ems {
+        height: inherit !important;
+    }
+
+    .border-ems {
+        position: absolute;
+        width: 350px;
+        left: 0 !important;
+        bottom: 0 !important;
+        transform: translateX(0rem) translateY(1rem) !important;
+    }
+
+    .border-ems:hover {
+        transform: translateX(0rem) translateY(1rem);
     }
 
     .border-ems h1 {
@@ -3746,16 +4315,63 @@ section.bg-00 {
     }
 }
 
-@media (min-width:500px) and (max-width:768px) {
+@media (min-width:500px) and (max-width:601px) {
+    #pms_land {
+        position: relative;
+        height: 75%;
+    }
+
+    .img-pms {
+        height: inherit !important;
+    }
+
     .border-pms {
         position: absolute;
+        width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(0rem) translateY(1rem) !important;
     }
 
     .border-pms:hover {
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(0rem) translateY(1rem);
+    }
+
+    .border-pms h1 {
+        font-size: 1.505rem;
+        padding-top: 5px;
+    }
+
+    .li-pms,
+    li>.li-pms {
+        font-size: 0.905rem !important;
+    }
+
+    li.li-pms1 {
+        margin-top: -4px !important;
+    }
+}
+
+@media (min-width:602px) and (max-width:768px) {
+    #pms_land {
+        position: relative;
+        height: 75%;
+    }
+
+    .img-pms {
+        height: inherit !important;
+    }
+
+    .border-pms {
+        position: absolute;
+        width: 350px;
+        left: 0 !important;
+        bottom: 0 !important;
+        transform: translateX(0rem) translateY(1rem) !important;
+    }
+
+    .border-pms:hover {
+        transform: translateX(0rem) translateY(1rem);
     }
 
     .border-pms h1 {
@@ -4010,16 +4626,63 @@ section.bg-00 {
     }
 }
 
-@media (min-width:500px) and (max-width:768px) {
+@media (min-width:500px) and (max-width:601px) {
+    #ss_land {
+        position: relative;
+        height: 75%;
+    }
+
+    .img-sales {
+        height: inherit !important;
+    }
+
     .border-sales {
         position: absolute;
+        width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(0rem) translateY(1rem) !important;
     }
 
     .border-sales:hover {
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(0rem) translateY(1rem);
+    }
+
+    .border-sales h1 {
+        font-size: 1.505rem;
+        padding-top: 5px;
+    }
+
+    .li-sales,
+    li>.li-sales {
+        font-size: 0.905rem !important;
+    }
+
+    li.li-sales1 {
+        margin-top: -4px !important;
+    }
+}
+
+@media (min-width:602px) and (max-width:768px) {
+    #ss_land {
+        position: relative;
+        height: 75%;
+    }
+
+    .img-sales {
+        height: inherit !important;
+    }
+
+    .border-sales {
+        position: absolute;
+        width: 350px;
+        left: 0 !important;
+        bottom: 0 !important;
+        transform: translateX(0rem) translateY(1rem) !important;
+    }
+
+    .border-sales:hover {
+        transform: translateX(0rem) translateY(1rem);
     }
 
     .border-sales h1 {
@@ -4117,6 +4780,7 @@ section.bg-00 {
         margin-top: -4px !important;
     }
 }
+
 /* sales and Services End */
 
 /* Product Enquiry Start */
@@ -4334,7 +4998,40 @@ ul>.nt1 {
 
 }
 
-@media (min-width:500px) and (max-width:768px) {
+@media (min-width:500px) and (max-width:601px) {
+    .bg-0 {
+        height: 100rem !important;
+    }
+
+    .img-penq {
+        width: 100%;
+        height: 100% !important;
+        background-position: 55% 100% !important;
+    }
+
+    .border-penq {
+        display: -moz-inline-stack !important;
+        width: 240px !important;
+        height: 60px;
+        left: 10% !important;
+        bottom: 40% !important;
+    }
+
+    .border-penq h1 {
+        font-size: 0.895rem;
+        font-weight: 100;
+        padding-top: 5px;
+        padding-right: 3px;
+    }
+
+    .li-penq,
+    li>.li-penq {
+        font-size: 0.605rem !important;
+    }
+
+}
+
+@media (min-width:602px) and (max-width:768px) {
     .bg-0 {
         height: 70rem !important;
     }
@@ -4417,7 +5114,7 @@ ul>.nt1 {
     }
 
     .bg-11 {
-        height: 40rem !important;
+        height: 100% !important;
     }
 }
 
