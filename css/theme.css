@@ -1361,25 +1361,17 @@ a.text-dark:focus {
   }
 }
 
-@media (min-width:500px) and (max-width:601px) {
+@media (min-width:500px) and (max-width:768px) {
 
-  #profile_sec2 .hist_1 {
-    max-width: 500px !important;
-    min-height: 400px !important;
+  #profile_sec2 .hist_1,
+  #profile_sec2 .hist_2,
+  #profile_sec2 .hist_3 {
+    width: 100% !important;
     top: 0 !important;
     left: 0 !important;
     transform: translate(-10px, -30px) !important;
   }
 
-  #profile_sec2 .hist_2,
-  #profile_sec2 .hist_3 {
-    max-width: 500px !important;
-    min-height: 400px !important;
-    top: 0 !important;
-    left: 0 !important;
-    transform: translate(35px, -30px) !important;
-  }
-
   #profile_sec2 {
     height: 900px !important;
   }
@@ -1393,37 +1385,6 @@ a.text-dark:focus {
   }
 }
 
-@media (min-width:602px) and (max-width:768px) {
-
-  #profile_sec2 .hist_1 {
-    max-width: 700px !important;
-    min-height: 400px !important;
-    top: 0 !important;
-    left: 0 !important;
-    transform: translate(110px, -30px) !important;
-  }
-
-  #profile_sec2 .hist_2,
-  #profile_sec2 .hist_3 {
-    max-width: 700px !important;
-    min-height: 400px !important;
-    top: 0 !important;
-    left: 0 !important;
-    transform: translate(110px, -30px) !important;
-  }
-
-  #profile_sec2 {
-    height: 900px !important;
-  }
-
-  #profile_sec2 .leg_btn_nxt {
-    transform: translate(0px, -100px);
-  }
-
-  #profile_sec2 .leg_btn_prev {
-    transform: translate(0px, -90px);
-  }
-}
 
 #profile_sec2 .swiper-button-next:hover,
 #profile_sec2 .swiper-button-prev:hover {
@@ -1577,28 +1538,6 @@ a.text-dark:focus {
     margin-bottom: 30px !important;
   }
 }
-@media (min-width:1367px) and (max-width:1440px) {
-  #land_profile .page-banner {
-    position: relative;
-    top: 0;
-    transform: translateY(3rem);
-  }
-  #profile_sec2_1 .container {
-    position: relative;
-    top: 0;
-    transform: translateY(3rem);
-  }
-  #profile_sec2_3 .container {
-    position: relative;
-    top: 0;
-    transform: translateY(3rem);
-  }
-  #profile_sec2_4 .container-fluid {
-    position: relative;
-    top: 0;
-    transform: translateY(3rem);
-  }
-}
 
 #land_profile {
   background-image: url(../img/land_profile.jpg);
@@ -1617,23 +1556,9 @@ a.text-dark:focus {
   overflow: hidden;
 }
 
-@media only screen and (max-width:499px) {
+@media (min-width:300px) and (max-width:500px) {
   .page-section {
     margin-top: 25px;
-  }
-
-}
-
-@media (min-width:500px) and (max-width:601px) {
-  .page-section {
-    margin-top: 0px;
-  }
-
-}
-
-@media (min-width:602px) and (max-width:768px) {
-  .page-section {
-    margin-top: 0px;
   }
 
 }
@@ -1755,15 +1680,6 @@ a.text-dark:focus {
 @media (min-width:300px) and (max-width:700px) {
   #profile_sec2_1 .swiper-pagination {
     bottom: 0% !important;
-  }
-}
-@media (min-width:1367px) and (max-width:1440px) {
-  #profile_sec2_1 .swiper-pagination {
-    bottom: 0% !important;
-  }
-  #profile_sec2_1 .page-section,
-  #profile_sec2_5 .page-section {
-    height: inherit;
   }
 }
 
@@ -2157,7 +2073,6 @@ a.text-dark:focus {
 
 .banner-info {
   padding: 0;
-  height: inherit;
   background-color: #5439F8;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -3041,11 +2956,11 @@ ul.cloud a:hover::before {
 
 @media (min-width:300px) and (max-width:550px) {
   #profile_sec2_2 {
-    height: 100%;
+    height: 600px;
   }
 
   #profile_sec2_2::before {
-    height: inherit !important;
+    height: 110% !important;
   }
 
   #profile_sec2_2 img {
@@ -3053,45 +2968,13 @@ ul.cloud a:hover::before {
   }
 }
 
-@media (min-width:551px) and (max-width:601px) {
+@media (min-width:555px) and (max-width:999px) {
   #profile_sec2_2::before {
-    height: inherit !;
+    height: 600px;
   }
 
   #profile_sec2_2 {
-    height: 55%;
-  }
-
-  #profile_sec2_2 .container {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: translateX(1rem) translateY(0.8rem);
-  }
-
-  #profile_sec2_1 .swiper-pagination {
-    bottom: 2% !important;
-  }
-}
-
-@media (min-width:602px) and (max-width:768px) {
-  #profile_sec2_2::before {
-    height: inherit !;
-  }
-
-  #profile_sec2_2 {
-    height: 55%;
-  }
-
-  #profile_sec2_2 .container {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: translateX(3rem) translateY(0.8rem);
-  }
-
-  #profile_sec2_1 .swiper-pagination {
-    bottom: 2% !important;
+    height: 80%;
   }
 }
 
