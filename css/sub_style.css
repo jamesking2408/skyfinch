@@ -1871,6 +1871,11 @@
         transform: translateY(2.8rem);
     }
 
+    .bg-11 .container-fluid {
+        position: relative;
+        top: 0;
+        transform: translateY(3rem);
+    }
 }
 
 /* Point of sales End */

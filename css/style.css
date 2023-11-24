@@ -523,9 +523,9 @@ input[data-autocompleted] {
     transform: translateX(-50%);
 }
 
-/* .container-vw {
+.container-vw {
     width: 100vw;
-} */
+}
 
 .container1 {
     margin-top: 0%;
@@ -1223,6 +1223,12 @@ input[type=number]::-webkit-outer-spin-button {
         position: relative;
     }
 
+    #sec13 #cpy-ryt {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateX(8rem) translateY(0rem);
+    }
 }
 
 @media (min-width:1025px) and (max-width:1366px) {
@@ -2509,6 +2515,39 @@ b.cloud {
         position: relative !important;
         left: -25% !important;
     }
+}
+
+@media (min-width: 769px) and (max-width:1024px) {
+    .w-md-50 {
+        width: 42% !important;
+    }
+
+    #polices {
+        position: relative !important;
+        left: -25% !important;
+    }
+}
+
+@media (min-width: 1025px) and (max-width:1366px) {
+    .w-md-50 {
+        width: 42% !important;
+    }
+
+    /* #polices {
+        position: relative !important;
+        left: -25% !important;
+    } */
+}
+
+@media (min-width: 1367px) and (max-width:1440px) {
+    .w-md-50 {
+        width: 42% !important;
+    }
+
+    /* #polices {
+        position: relative !important;
+        left: -25% !important;
+    } */
 }
 
 /* Manual CSS Start*/
