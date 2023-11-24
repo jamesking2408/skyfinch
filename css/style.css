@@ -523,9 +523,9 @@ input[data-autocompleted] {
     transform: translateX(-50%);
 }
 
-.container-vw {
+/* .container-vw {
     width: 100vw;
-}
+} */
 
 .container1 {
     margin-top: 0%;
@@ -2655,9 +2655,7 @@ b.cloud {
         height: 15px !important;
     }
 }
-.container-vw #sec1 {
-    position: relative !important;
-}
+
 @media only screen and (max-width:320px) {
     .main {
         position: fixed;
