@@ -540,6 +540,7 @@ input[data-autocompleted] {
 #home_skyfinch {
     position: relative;
 }
+
 @media (min-width:1024px) and (max-width:1367px) {
     #home_skyfinch .container2 {
         margin-top: auto;
@@ -3055,6 +3056,10 @@ b.cloud {
     width: 50px;
     /* orange to blue converted */
     /* filter: saturate(100%) sepia(10%) hue-rotate(180deg) contrast(250%) brightness(100%); */
+}
+
+#sec1.bg-03 {
+    position: relative !important;
 }
 
 #sec1 .container {
