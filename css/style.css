@@ -537,6 +537,9 @@ input[data-autocompleted] {
     height: 560px;
 }
 
+#home_skyfinch {
+    position: relative;
+}
 @media (min-width:1024px) and (max-width:1367px) {
     #home_skyfinch .container2 {
         margin-top: auto;

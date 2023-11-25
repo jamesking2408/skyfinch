@@ -756,6 +756,78 @@
 
 }
 
+@media (min-width:1025px) and (max-width:1366px) {
+
+    /* point of sales responsive */
+    .border-pos {
+        position: relative;
+        display: flex;
+        width: 35rem !important;
+        left: 0 !important;
+        bottom: 0 !important;
+        transform: translateX(1.5rem) translateY(24rem) !important;
+    }
+
+    .border-pos:hover {
+        transform: translateX(1.5rem) translateY(24rem) !important;
+    }
+
+    .border-pos h1 {
+        font-size: 3.505rem;
+    }
+
+    .bg-12 {
+        position: relative;
+        height: 600px;
+    }
+
+    .li-pos,
+    li>.li-pos {
+        font-size: 1.005rem !important;
+    }
+
+    li.li-pos1 {
+        margin-top: -1.5px !important;
+    }
+
+}
+
+@media (min-width:1367px) and (max-width:1440px) {
+
+    /* point of sales responsive */
+    .border-pos {
+        position: relative;
+        display: flex;
+        width: 35rem !important;
+        left: 0 !important;
+        bottom: 0 !important;
+        transform: translateX(1.5rem) translateY(28rem) !important;
+    }
+
+    .border-pos:hover {
+        transform: translateX(1.5rem) translateY(28rem) !important;
+    }
+
+    .border-pos h1 {
+        font-size: 3.505rem;
+    }
+
+    .bg-12 {
+        position: relative;
+        height: 600px;
+    }
+
+    .li-pos,
+    li>.li-pos {
+        font-size: 1.005rem !important;
+    }
+
+    li.li-pos1 {
+        margin-top: -1.5px !important;
+    }
+
+}
+
 /* Add indicator arrow for the active tab */
 @media (min-width: 992px) {
     .nav-pills-custom .nav-link::before {
