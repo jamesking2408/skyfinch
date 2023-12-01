@@ -137,27 +137,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //<!-- Chat BOX JS End -->
 
-    //<!-- Contact Button Start -->
-
-    document.querySelector("#hide_form").addEventListener("click", function (event) {
-        event.stopPropagation(); // Prevent the click event from propagating to the document body
-        document.querySelector("#myForm").style.display = "none";
-        document.querySelector("#show_form").style.display = "block";
-    });
-
-    document.body.addEventListener("click", function () {
-        document.querySelector("#myForm").style.display = "none";
-        document.querySelector("#show_form").style.display = "block";
-    });
-
-    document.querySelector("#show_form").addEventListener("click", function (event) {
-        event.stopPropagation(); // Prevent the click event from propagating to the document body
-        document.open_form.reset();
-        document.querySelector("#myForm").style.display = "block";
-    });
-
-    //<!-- Contact Button End -->
-
 
 });
 

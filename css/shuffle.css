@@ -171,7 +171,7 @@ input[type=radio] {
   }
 }
 
-@media (min-width:426px) and (max-width:601px) {
+@media (min-width:426px) and (max-width:602px) {
   .bg-00 {
     height: max-content !important;
   }
@@ -186,26 +186,26 @@ input[type=radio] {
 
   /* Payroll Images */
   .card1 .img-pay {
-    width: 355px !important;
-    height: 255px !important;
+    width: 365px !important;
+    height: 210px !important;
   }
 
   #item-1:checked~.cards1 #song-4,
   #item-2:checked~.cards1 #song-1,
   #item-3:checked~.cards1 #song-2,
   #item-4:checked~.cards1 #song-3 {
-    transform: translatex(-30%) scale(0.8);
+    transform: translatex(-30%) scale(0.8) !important;
   }
 
   #item-1:checked~.cards1 #song-2,
   #item-2:checked~.cards1 #song-3,
   #item-3:checked~.cards1 #song-4,
   #item-4:checked~.cards1 #song-1 {
-    transform: translatex(30%) scale(0.8);
+    transform: translatex(30%) scale(0.8) !important;
   }
 }
 
-@media (min-width:602px) and (max-width:768px) {
+@media (min-width:603px) and (max-width:768px) {
   .bg-00 {
     height: max-content !important;
   }
@@ -222,5 +222,11 @@ input[type=radio] {
   .card1 .img-pay {
     width: 355px !important;
     height: 255px !important;
+  }
+}
+
+@media (min-width:500px) and (max-width:1440px) {
+  .modal1 {
+    display: none;
   }
 }
