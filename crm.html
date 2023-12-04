@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>SkyFinch | CRM</title>
@@ -8,46 +7,37 @@
     <meta http-equiv="Cache-Control" content="max-age=31536000, immutable">
     <meta content="" name="keywords">
     <meta content="" name="description">
-
-
     <!-- css animate -->
-    <link rel="stylesheet" href="animte-new/dist/magic.min.css">
-    <link rel="stylesheet" href="animte-new/assets/scss/magic_effects/_twisterInDown.scss">
-
+    <link rel="stylesheet" type="text/css" href="animte-new/dist/magic.min.css">
+    <link rel="stylesheet" type="text/css" href="animte-new/assets/scss/magic_effects/_twisterInDown.scss">
     <!-- Favicon -->
     <link rel="icon" href="img/logo-sky.png" type="image/x-icon" sizes="32x32" />
-
     <!-- Google Web Fonts -->
-    <link rel="stylesheet" href="css/googleWebFonts/fonts.css">
-    <link rel="stylesheet" href="css/googleWebFonts/all-fonts.css">
-
+    <link rel="stylesheet" type="text/css" href="css/googleWebFonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/googleWebFonts/all-fonts.css">
     <!-- Icon Font Stylesheet -->
-    <link rel="stylesheet" href="css/fontawesome-6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap-icons.css">
-
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-6.4.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-icons.css">
     <!-- Libraries Stylesheet -->
-    <link rel="stylesheet" href="lib/animate/animate.min.css">
-    <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="css/csshake.min.css">
-    <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="css/zoom-InOut.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-
+    <link rel="stylesheet" type="text/css" href="css/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl-carousel/owl.theme.default.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/zoom-InOut.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
     <!-- Customized Bootstrap Stylesheet -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="js/AnimationOnScroll/package/dist/aos.css">
-    <link rel="stylesheet" href="css/text-dec.css">
-    <link rel="stylesheet" href="css/sub_style.css">
-    <link rel="stylesheet" href="css/shuffle.css">
-    <link rel="stylesheet" href="css/malihu-custom-scrollbar-plugin-3.1.5/jquery.mCustomScrollbar.css">
-
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="js/AnimationOnScroll/package/dist/aos.css">
+    <link rel="stylesheet" type="text/css" href="css/text-dec.css">
+    <link rel="stylesheet" type="text/css" href="css/sub_style.css">
+    <link rel="stylesheet" type="text/css" href="css/shuffle.css">
+    <link rel="stylesheet" type="text/css" href="css/malihu-custom-scrollbar-plugin-3.1.5/jquery.mCustomScrollbar.css">
     <!-- Template Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive_styles.css">
 </head>
-
 <body>
-
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -63,7 +53,6 @@
         </div>
     </div>
     <!-- Spinner End -->
-
     <!-- Search Modal Start-->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -75,12 +64,10 @@
                                 <input type="text" id="searchbar" name="searchbar"
                                     class="form-control border-0 rounded rounded-pill bg-light"
                                     onkeyup="searchContent()" aria-describedby="button-addon1" autocomplete="off" />
-
                             </div>
                         </div>
                     </form>
                 </div>
-
                 <div class="modal-body px-4 py-4 overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar"
                     data-mcs-theme="dark">
                     <ul class="list-unstyled">
@@ -88,50 +75,42 @@
                             <button onclick="jumpToMain('home_skyfinch')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
                                 SkyFinch</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToMain('sec1')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Why
                                 Choose should join us</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToMain('sec2')"
                                 class="btn btn-outline-primary border-0  w-100 text-start searchLink">Skyfinch Teams
                             </button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToMain('sec2_1')"
                                 class="btn btn-outline-primary border-0  w-100 text-start searchLink">Skyfinch |
                                 Applications</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToMain('sec3')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Skyfinch
                                 Highlights</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToMain('sec4')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Why
                                 choose us | Our
                                 projects, product, customer and Global office</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToMain('sec5')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">The MR
                                 Reporting software is an Online</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToMain('sec6')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Skyfinch makes your
                                 Business Proud | Application | Window | All products</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToMain('sec7')"
@@ -142,491 +121,409 @@
                             <button onclick="jumpToMain('sec13')"
                                 class="btn btn-outline-primary border-0  w-100 text-start searchLink">Footer | Social
                                 media's | Address</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToService('tab-sec')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Awesome Financial
                                 Services For Business</button>
-
                         </li>
-
                         <li class="content mb-3">
                             <button onclick="jumpToService('req-call')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Request
                                 A Call-Back | Get In Touch</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToService('service_land')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Service |
                                 Home</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToAbout('about_land')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">About |
                                 Home</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToAbout('about_view')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">We Help Our Clients
                                 To Grow Their Business | About Us</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToAbout('about_Awards')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Our relevant
                                 Achivements | Awards | 24/7 Available</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToAbout('about_Teams')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Exclusive Teams |
                                 About Us</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToContact('contact_land')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Contact Us |
                                 Home</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToContact('contact_form')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Contact Us | Forms
                                 | If You Have Any Query, Please Contact Us</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSales('sales_land')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
                                 Point of Sales | POS</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSales('abt-wave')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Sales Overview |
                                 Point of Sales | POS</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSales('sales_image')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">POS - The Complete
                                 Accounting Solution for All Sales Activities | Points of Sales</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSales('tab-sec')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">POS | Sales |
                                 Module`s</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSales('sec8')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">POS | Sales |
                                 Choose The Right Plan For Your Business | Plan and Price</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToHms('hotel_land')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
                                 Hotel Management System</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToHms('abt-wave')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
                                 Hotel Management System | HMS</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToHms('hms_image')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">HMS - The End to
                                 End Digital Solution for the Workflow of All types Hotel | Hotel Management
                                 System</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToHms('tab-sec')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">HMS | Hotel |
                                 Module`s</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToHms('sec8')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">HMS | Hotel |
                                 Choose The Right Plan For Your Business | Plan and Price</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToRms('Restaurant_land')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
                                 Restaurant Management System</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToRms('abt-wave')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
                                 Restaurant Management System | HMS</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToRms('rms_image')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">RMS - Complete
                                 Solution for Quick & Error-Free Restaurant Sales Process | Restaurant Management
                                 System</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToRms('tab-sec')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">RMS | Restaurant |
                                 Module`s</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToRms('sec8')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">RMS | Restaurant |
                                 Choose The Right Plan For Your Business | Plan and Price</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSsfinch('smart_land')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
                                 Smart-SkyFinch Management System</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSsfinch('abt-wave')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
                                 Smart-SkyFinch Management System | SMS</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSsfinch('ssfinch_image')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">SMS - The Smart
                                 Choice for Total Digital Solution for All Business Processes | Smart-SkyFinch Management
                                 System</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSsfinch('tab-sec')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">SMS |
                                 Smart-SkyFinch | Module`s</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSsfinch('sec8')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">SMS |
                                 Smart-SkyFinch |
                                 Choose The Right Plan For Your Business | Plan and Price</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToVms('vms_land')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
                                 Visitor's Management System</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToVms('abt-wave')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
                                 Visitor's Management System | VMS</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToVms('vms_image')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">VMS - Complete
                                 control over Visitor Management in the best of Business Interests | Visitor's Management
                                 System</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToVms('tab-sec')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">VMS | Visitor's |
                                 Module`s</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToVms('sec8')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">VMS | Visitor's |
                                 Choose The Right Plan For Your Business | Plan and Price</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToCrm('crm_land')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
                                 CRM</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToCrm('abt-wave')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
                                 Hotel Management System | HMS</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToCrm('crm_image')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">CRM - The End to
                                 End Digital Solution for the Workflow of All types Hotel</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToCrm('tab-sec')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">CRM |
                                 Module`s</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToCrm('sec8')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">CRM | Choose The
                                 Right Plan For Your Business | Plan and Price</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToCtm('ctm_land')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
                                 Transport Management System | TMS</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToCtm('abt-wave')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
                                 Transport Management System | TMS</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToCtm('ctm_image')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">TMS - The End to
                                 End Digital Solution for the Workflow of All types Hotel</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToCtm('tab-sec')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">TMS |
                                 Module`s</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToCtm('sec8')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">TMS | Choose The
                                 Right Plan For Your Business | Plan and Price</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToEms('ems_land')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
                                 Events Management System | EMS</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToEms('abt-wave')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
                                 Events Management System | EMS</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToEms('ems_image')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">EMS - The End to
                                 End Digital Solution for the Workflow of All types Hotel</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToEms('tab-sec')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">EMS |
                                 Module`s</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToEms('sec8')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">EMS | Choose The
                                 Right Plan For Your Business | Plan and Price</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToFms('fms_land')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
                                 Events Management System</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToFms('abt-wave')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
                                 Fleet Management System | FMS</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToFms('fms_image')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">FMS - Complete
                                 control over Fleet Management in the best of Business Interests | Fleet Management
                                 System</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToFms('tab-sec')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">FMS | Fleet
                                 Management System | Module`s</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToFms('sec8')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">FMS | Fleet
                                 Management System | Choose The Right Plan For Your Business | Plan and Price</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToPms('pms_land')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
                                 Payroll Management System</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToPms('abt-wave')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
                                 Payroll Management System | PMS</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToPms('pms_image')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Payroll - Complete
                                 control over Payroll Management in the best of Business Interests | Payroll Management
                                 System</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToPms('tab-sec')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">PMS | Payroll |
                                 Module`s</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToPms('sec8')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">PMS | Payroll |
                                 Choose The Right Plan For Your Business | Plan and Price</button>
-
                         </li>
-
                         <li class="content mb-3">
                             <button onclick="jumpToSs('ss_land')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
                                 Sales and Services Management System</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSs('abt-wave')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
                                 Sales and Services Management System </button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSs('ss_image')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Sales and Services
                                 - Complete control over Sales and Services Management in the best of Business Interests
                                 | Sales and Services Management System</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSs('tab-sec')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Sales and Services
                                 Management System | Module`s</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSs('sec8')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Sales and Services
                                 Management System | Choose The Right Plan For Your Business | Plan and Price</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToProfile('land_profile')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">SkyFinch | Profile
                                 - Home</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToProfile('profile_sec2_1')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Profile | About
                                 SkyFinch | Traits | Roadmap’s</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToProfile('profile_sec2_2')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Profile | SkyFinch
                                 Technologies</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToProfile('profile_sec2_3')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Profile | About
                                 SkyFinch Products</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToProfile('profile_sec2_4')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Profile | Our
                                 Products</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToProfile('profile_sec2_5')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Profile | IT
                                 Services</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToProfile('profile_sec2')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Profile | SkyFinch
                                 Legacy</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToPp('bg-anti')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Privacy Policy |
                                 Home</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToPp('policy_tab')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Privacy Policy |
                                 Secure data Policy</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToAp('bg-anti')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Anti-Spam Policy |
                                 Home</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToAp('policy_tab')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Anti-Spam Policy |
                                 Secure data Policy</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToCp('bg-anti')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Confidentiality
                                 Policy | Home</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToCp('policy_tab')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Confidentiality
                                 Policy | Secure data Policy</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToTerm('bg-terms')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Terms of Use |
                                 Home</button>
-
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToTerm('terms_tab')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">Terms of Use |
                                 Secure data Policy</button>
-
                         </li>v
                     </ul>
                 </div>
@@ -634,8 +531,6 @@
         </div>
     </div>
     <!-- Search Modal End-->
-
-
     <!-- Start chat box Design  -->
     <span class="tooltip-text" style="visibility: hidden;">I'm Skyfinch</span>
     <button title="" class="chatbot-toggler wow fadeInDown" data-wow-delay="2.2s" data-bs-toggle="tooltip"
@@ -643,7 +538,6 @@
         <span class="material-symbols-outlined">mode_comment</span>
         <span class="material-symbols-outlined">close</span>
     </button>
-
     <div class="chatbot">
         <header>
             <h2 class="text-light">CHATBOT</h2>
@@ -655,7 +549,6 @@
                 <p>Hi <br> I'm SkyFinch 👋 <br> If you need any help?<br> Type: 'Help'</p>
             </li>
             <li class="chat outgoing">
-
             </li>
         </ul>
         <div class="chat-input">
@@ -663,12 +556,7 @@
             <span id="send-btn" class="material-symbols-outlined">send</span>
         </div>
     </div>
-
-
-
     <!-- End chat box Design  -->
-
-
     <!-- Navbar Start -->
     <div class="container-fluid vw-nav fixed-top m-0 p-0 wow fadeIn" data-wow-delay="0.8s">
         <div class="top-bar row gx-2 pb-lg-0 align-items-center d-lg-flex d-md-flex d-none bg-blue wow fadeIn">
@@ -724,7 +612,6 @@
                 data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse me-2" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <!-- Search Bar start -->
@@ -775,7 +662,6 @@
                     </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" id="solutionsDropdown1">Company</a>
-
                         <div class="dropdown-menu border-light m-0 p-0">
                             <!-- Add IDs to buttons for easier targeting -->
                             <div class="submenu w-100 px-3 py-0">
@@ -820,10 +706,7 @@
         </nav>
     </div>
     <!-- Navbar End -->
-
-
     <!-- Page Header Start -->
-
     <section id="crm_land" class="container1 pt-lg-4 mt-lg-2"> <!--New header page (update)-->
         <div class="container-fluid img-crm mt-2 pt-1 mb-0 mt-lg-4 pt-lg-5 mb-lg-0 wow fadeInUp" data-wow-delay="1.2s">
             <div class="row px-2 border-crm pb-1 wow fadeInUp" data-wow-delay="1.5s">
@@ -850,8 +733,6 @@
         </div>
     </section>
     <!-- Page Header End -->
-
-
     <!-- About Start -->
     <section id="abt-wave" class="container1 pb-3">
         <div class="container-fluid mt-0 pt-1 mt-lg-1 pt-lg-1">
@@ -883,8 +764,6 @@
         </div>
     </section>
     <!-- About End -->
-
-
     <!-- Image section Start -->
     <section id="crm_image" class="container1 bg-00">
         <div class="container-fluid mt-lg-0 py-lg-3 my-md-2 py-md-2 my-0 py-1">
@@ -973,11 +852,9 @@
         });
     </script>
     <!-- Image section End -->
-
     <!-- Tab Section start -->
     <section id="tab-sec" class="container-fluid bg-12 pt-1 mb-0 pb-0">
         <div class="container mt-lg-1 pt-lg-5 mt-1 pt-1">
-
             <div class="row mt-lg-3 pt-lg-5 mt-2 pt-2 pb-0">
                 <div class="col-lg-4 col-md-5 col-3 d-lg-block d-md-block d-none wow fadeInLeft" data-wow-delay="0.6s"
                     data-aos="fade-up" data-aos-duration="1000">
@@ -989,17 +866,14 @@
                             <i class="fa fa-bars ms-1 me-3"></i>
                             <span
                                 class="font-weight-bold small text-uppercase">Distributors/Retailers/Salesman</span></a>
-
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-SKU-tab" data-bs-toggle="pill"
                             href="#v-pills-SKU" role="tab" aria-controls="v-pills-SKU" aria-selected="false">
                             <i class="fa fa-bars ms-1 me-3"></i>
                             <span class="font-weight-bold small text-uppercase">Product / SKU</span></a>
-
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Order-tab" data-bs-toggle="pill"
                             href="#v-pills-Order" role="tab" aria-controls="v-pills-Order" aria-selected="false">
                             <i class="fa fa-bars ms-1 me-3"></i>
                             <span class="font-weight-bold small text-uppercase">Order Management</span></a>
-
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Stock-tab" data-bs-toggle="pill"
                             href="#v-pills-Stock" role="tab" aria-controls="v-pills-Stock" aria-selected="false">
                             <i class="fa fa-bars ms-1 me-3"></i>
@@ -1053,8 +927,6 @@
                             <span class="font-weight-bold small text-uppercase">Reports and Analytic</span></a>
                     </div>
                 </div>
-
-
                 <div class="col-lg-8 col-md-7 col-12 d-lg-block d-md-block d-none pb-lg-0 pb-5 wow fadeInRight"
                     data-wow-delay="0.6s" data-aos="fade-up" data-aos-duration="1000">
                     <!-- Tabs content -->
@@ -1085,7 +957,6 @@
                                 </ul>
                             </div>
                         </div>
-
                         <div class="tab-pane overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar px-3 fade p-2"
                             id="v-pills-SKU" role="tabpanel" aria-labelledby="v-pills-SKU-tab">
                             <div class="font-italic fs-6 text-muted mb-2">
@@ -1201,26 +1072,20 @@
                             id="v-pills-Location" role="tabpanel" aria-labelledby="v-pills-Location-tab">
                             <h4 class="display-6 font-italic mb-4">Location Tracking</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-
                                 <i class="bi bi-check-all d-inline-block fs-4"></i> Reorder/Replenishment notifications
                                 are raised to designated
                                 personnel based on:
                                 <br>
-
                                 <i class="bi bi-check-all d-inline-block fs-4"></i>Min/Max sales range for any
                                 particular date in the previous year(s).
                                 <br>
-
                                 <i class="bi bi-check-all d-inline-block fs-4"></i> Sales for a particular period (days,
                                 month, years) from the past.
                                 <br>
-
                                 <i class="bi bi-check-all d-inline-block fs-4"></i> Reorder Level specifications.
                                 <br>
-
                                 <i class="bi bi-check-all d-inline-block fs-4"></i> Lead times.
                                 <br>
-
                                 <i class="bi bi-check-all d-inline-block fs-4"></i> Fall in the prescribed
                                 safety-stock-level of any given product.
                             </p>
@@ -1229,81 +1094,65 @@
                             id="v-pills-Attendance" role="tabpanel" aria-labelledby="v-pills-Attendance-tab">
                             <h4 class="display-6 font-italic mb-4">Attendance</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-
                                 <i class="bi bi-check-all d-inline-block fs-4"></i> Facilitates the designing and
                                 printing of barcode's indigenously.
                                 <br>
-
                                 <i class="bi bi-check-all d-inline-block fs-4"></i> Enables the generation of stickers
                                 using normal laser printer or ink
                                 jet printer with the liberty of choosing desired logo and design.
                                 <br>
-
                                 <i class="bi bi-check-all d-inline-block fs-4"></i> The system supports dedicated
                                 sticker printers, printing A4 size
                                 sticker sheets, and partial sheet printing.
                             </p>
-
                         </div>
                         <div class="tab-pane overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar px-3 fade p-2"
                             id="v-pills-Sales" role="tabpanel" aria-labelledby="v-pills-Sales-tab">
                             <h4 class="display-6 font-italic mb-4">Sales/Damage Returns</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-
                                 <i class="bi bi-check-all d-inline-block fs-4"></i> Efficient tracking & monitoring of
                                 Inventory, Accounting, and Sales
                                 enable successful handling of Loyalty bonus schemes.
                                 <br>
-
                                 <i class="bi bi-check-all d-inline-block fs-4"></i>The system is capacitated to support
                                 any Loyalty Scheme like, buy one
                                 get one free, item-wise/Invoice-wise discounts, on the spot or last minute discounts for
                                 privileged customers, Discount Coupons, etc.
                                 <br>
-
                                 <i class="bi bi-check-all d-inline-block fs-4"></i> The highlight of issuing discount
                                 coupons lies in the solution's
                                 faculty to:.
                                 <br>
-
                                 <i class="bi bi-check-all d-inline-block fs-4"></i> print/email /SMS discount coupons in
                                 customized designs.
                                 <br>
-
                                 <i class="bi bi-check-all d-inline-block fs-4"></i> Make Customer specific Coupons.
                                 <br>
-
                                 <i class="bi bi-check-all d-inline-block fs-4"></i> Assign validity date range/usage
                                 limit to Coupons.
                                 <br>
-
                                 <i class="bi bi-check-all d-inline-block fs-4"></i> Create News Paper/Handout Coupons.
                         </div>
                         <div class="tab-pane overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar px-3 fade p-2"
                             id="v-pills-Photo" role="tabpanel" aria-labelledby="v-pills-Photo-tab">
                             <h4 class="display-6 font-italic mb-4">Photo Upload</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-
                                 <i class="bi bi-check-all d-inline-block fs-4"></i> Simple yet perfect tax definition
                                 empowers the accurate
                                 appropriation of GST components in a user-friendly fashion.
                                 <br>
-
                                 <i class="bi bi-check-all d-inline-block fs-4"></i> The flexibility of the system gives
                                 scope to enter and alter tax
                                 details for accuracy even during Invoice level.
                                 <br>
-
                                 <i class="bi bi-check-all d-inline-block fs-4"></i> Customized taxation module enables
                                 the assigning of taxes at
                                 multiple levels for the same product depending on the type of sale.
                                 <br>
-
                                 <i class="bi bi-check-all d-inline-block fs-4"></i> Comprehensive solution enables
                                 handling all attributes of taxation
                                 like, GST, SGST, CGST, IGST/UGST.
                                 <br>
-
                                 <i class="bi bi-check-all d-inline-block fs-4"></i> The scalability of the software is
                                 robust enough to accommodate all
                                 futuristic governmental shifts in taxation procedures.
@@ -1631,30 +1480,24 @@
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">Location Tracking</h4>
                                             <p class="font-italic fs-6 text-muted mb-2">
-
                                                 <i class="bi bi-check-all d-inline-block fs-4"></i>
                                                 Reorder/Replenishment notifications
                                                 are raised to designated
                                                 personnel based on:
                                                 <br>
-
                                                 <i class="bi bi-check-all d-inline-block fs-4"></i>Min/Max sales range
                                                 for any
                                                 particular date in the previous year(s).
                                                 <br>
-
                                                 <i class="bi bi-check-all d-inline-block fs-4"></i> Sales for a
                                                 particular period (days,
                                                 month, years) from the past.
                                                 <br>
-
                                                 <i class="bi bi-check-all d-inline-block fs-4"></i> Reorder Level
                                                 specifications.
                                                 <br>
-
                                                 <i class="bi bi-check-all d-inline-block fs-4"></i> Lead times.
                                                 <br>
-
                                                 <i class="bi bi-check-all d-inline-block fs-4"></i> Fall in the
                                                 prescribed
                                                 safety-stock-level of any given product.
@@ -1691,13 +1534,11 @@
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">Sales/Damage Returns</h4>
                                             <p class="font-italic fs-6 text-muted mb-2">
-
                                                 <i class="bi bi-check-all d-inline-block fs-4"></i> Efficient tracking &
                                                 monitoring of
                                                 Inventory, Accounting, and Sales
                                                 enable successful handling of Loyalty bonus schemes.
                                                 <br>
-
                                                 <i class="bi bi-check-all d-inline-block fs-4"></i>The system is
                                                 capacitated to support
                                                 any Loyalty Scheme like, buy one
@@ -1705,27 +1546,22 @@
                                                 minute discounts for
                                                 privileged customers, Discount Coupons, etc.
                                                 <br>
-
                                                 <i class="bi bi-check-all d-inline-block fs-4"></i> The highlight of
                                                 issuing discount
                                                 coupons lies in the solution's
                                                 faculty to:.
                                                 <br>
-
                                                 <i class="bi bi-check-all d-inline-block fs-4"></i> print/email /SMS
                                                 discount coupons in
                                                 customized designs.
                                                 <br>
-
                                                 <i class="bi bi-check-all d-inline-block fs-4"></i> Make Customer
                                                 specific Coupons.
                                                 <br>
-
                                                 <i class="bi bi-check-all d-inline-block fs-4"></i> Assign validity date
                                                 range/usage
                                                 limit to Coupons.
                                                 <br>
-
                                                 <i class="bi bi-check-all d-inline-block fs-4"></i> Create News
                                                 Paper/Handout Coupons.
                                             </p>
@@ -1743,25 +1579,21 @@
                                                 empowers the accurate
                                                 appropriation of GST components in a user-friendly fashion.
                                                 <br>
-
                                                 <i class="bi bi-check-all d-inline-block fs-4"></i> The flexibility of
                                                 the system gives
                                                 scope to enter and alter tax
                                                 details for accuracy even during Invoice level.
                                                 <br>
-
                                                 <i class="bi bi-check-all d-inline-block fs-4"></i> Customized taxation
                                                 module enables
                                                 the assigning of taxes at
                                                 multiple levels for the same product depending on the type of sale.
                                                 <br>
-
                                                 <i class="bi bi-check-all d-inline-block fs-4"></i> Comprehensive
                                                 solution enables
                                                 handling all attributes of taxation
                                                 like, GST, SGST, CGST, IGST/UGST.
                                                 <br>
-
                                                 <i class="bi bi-check-all d-inline-block fs-4"></i> The scalability of
                                                 the software is
                                                 robust enough to accommodate all
@@ -1950,7 +1782,6 @@
                             <div class="swiper-pagination mb-2"></div>
                         </div>
                         <!-- End Swiper Wrapper -->
-
                         <!-- Pagination -->
                         <div class="swiper-testimonials-pagination"></div>
                     </div>
@@ -1959,17 +1790,13 @@
             </div>
     </section>
     <!-- Tab Section end -->
-
     <!-- Modules start -->
     <section id="sec8" class="bg-0 pt-lg-4">
         <div class="container pt-lg-5 pt-md-3 pt-2 pb-lg-0 pb-md-2 pb-3 mt-lg-0 mt-md-0 mt-0">
-
             <div class="row d-flex justify-content-center align-items-center pb-1 pt-2 pb-lg-0 pt-lg-0">
-
                 <div class="col-lg-12 center pb-4 mt-3 pt-2">
                     <b class="display-6 fw-bold fs-2 pb-0 tx-co center">Choose The Right Plan For Your Business</b>
                 </div>
-
                 <div class="col-lg-4 col-md-6 col-sm-8 col-12 gy-4 gy-lg-0" data-aos-duration="1500" data-aos="fade-up">
                     <div class="card h-card border-none off">
                         <div class="offer center px-5 fw-bold position-absolute">Save 40%</div>
@@ -1992,7 +1819,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-4 col-md-6 col-sm-8 col-12 gy-4 gy-lg-0" data-aos-duration="1500" data-aos="fade-up">
                     <div class="card h-card border-none off">
                         <div class="offer1 center px-5 fw-bold position-absolute">Save 40%</div>
@@ -2015,7 +1841,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-4 col-md-6 col-sm-8 col-12 gy-4 gy-lg-0" data-aos-duration="1500" data-aos="fade-up">
                     <div class="card h-card border-none off">
                         <div class="offer center px-5 fw-bold position-absolute">Save 40%</div>
@@ -2038,13 +1863,10 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </section>
     <!-- Modules end -->
-
     <!-- Team Start -->
     <section class="bg-11 pt-lg-2 pb-lg-0 pt-4 pb-1">
         <div class="container-fluid mt-lg-1 pt-lg-2 mt-md-4 mb-md-4 py-md-2 mt-4 py-3">
@@ -2106,7 +1928,6 @@
                                         <img src="img/cus/lakshmi jewellery.jpg" alt="zC" class="img-fluid">
                                     </div>
                                 </div>
-
                                 <div class="item">
                                     <div class="card border-0 mx-2">
                                         <img src="img/cus/life-cell.jpg" alt="zC" class="img-fluid">
@@ -2157,7 +1978,6 @@
                                         <img src="img/cus/prabu studio.jpg" alt="zC" class="img-fluid">
                                     </div>
                                 </div>
-
                                 <div class="item">
                                     <div class="card border-0 mx-2">
                                         <img src="img/cus/rainbow.jpg" alt="zC" class="img-fluid">
@@ -2252,8 +2072,6 @@
         </div>
     </section>
     <!-- Team End -->
-
-
     <!-- Footer Start -->
     <section id="sec13" class="container-fluid scroll text-light footer mt-lg-0 pt-lg-5 mt-0 pt-4 wow fadeIn"
         data-wow-delay="0.1s">
@@ -2317,7 +2135,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Copyright Start -->
         <div id="cpy-ryt" class="row mt-3 pt-3 mb-0 pb-0 d-flex align-items-end justify-content-center">
             <div class="row Copyright pt-5 mt-lg-2 pt-lg-2 mt-5 pb-lg-0 mb-lg-0">
@@ -2357,13 +2174,10 @@
         <!-- Copyright End -->
     </section>
     <!-- Footer End -->
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg page-top btn-lg-square rounded-circle wow fadeInDown" data-wow-delay="3.5s"
         data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
         data-bs-title="back-to-top"><img src="img/right-arrow.png" alt=""></a>
-
-
     <!-- JavaScript Libraries -->
     <script src="js/Jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -2390,26 +2204,20 @@
             },
         });
     </script>
-
     <!-- Scroll effects -->
     <script>
         AOS.init();
     </script>
     <!-- Scroll effects -->
-
     <!-- Section Scroll effects -->
     <script src="js/Scrollify/jquery.scrollify.js"></script>
     <!-- Section Scroll effects -->
-
     <!-- Submit javascript -->
     <script src="js/submit.js"></script>
-
     <!-- Shuffle button only responsive pages -->
     <script src="js/shuffle-btn.js"></script>
-
     <!-- Template Javascript -->
     <script src="js/chatbox.js"></script>
     <script src="js/main.js"></script>
 </body>
-
 </html>

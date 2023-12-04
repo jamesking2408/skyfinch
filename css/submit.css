@@ -4,7 +4,7 @@
     top: 0;
 }
 
-@media (min-width:501px) and (max-width:850px){
+@media (min-width:501px) and (max-width:850px) {
     .container-sub {
         margin-left: 12rem;
     }
@@ -14,41 +14,50 @@
 @media (min-width:300px) and (max-width:500px) {
     .container-sub {
         margin-left: -1rem;
-    }    
+    }
+
     .sub-popup>img {
-        margin-top: -60px!important;
+        margin-top: -60px !important;
         width: 50px;
         margin-left: 8px;
     }
-    .sub-popup>h2{
-        margin-top: -1rem!important;
+
+    .sub-popup>h2 {
+        margin-top: -1rem !important;
         margin: 0px 0px 0px;
     }
-    .sub-popup>p{
+
+    .sub-popup>p {
         margin-bottom: 0;
-        margin-top: 0.5rem!important;
+        margin-top: 0.5rem !important;
     }
+
     .sub-popup {
-        width: 280px!important;
+        width: 280px !important;
         height: 180px;
         padding: 2px 3px;
     }
+
     .sub-popup1 {
-        width: 280px!important;
+        width: 280px !important;
         height: 180px;
         padding: 10px 5px;
     }
+
     .sub-popup1>p {
         padding: 2px 2px 8px;
     }
+
     .exit1 {
-        margin-top:-10px!important;
+        margin-top: -10px !important;
     }
+
     .sub-popup1 p {
-        margin-bottom:0!important;
+        margin-bottom: 0 !important;
     }
+
     .exit {
-        margin-top:0px!important;
+        margin-top: 0px !important;
     }
 }
 
@@ -91,9 +100,9 @@
 .open-popup {
     position: fixed;
     visibility: visible;
-    margin-left: 195px;
-    top: 42%;
-    transform: translate(-50%, -50%) scale(1);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .sub-popup img {
@@ -133,7 +142,7 @@
     line-height: 10px;
     margin-bottom: 15px;
     border: none;
-    color: #fff;    
+    color: #fff;
     border-radius: 5px;
     background: rgb(224, 14, 14);
 }

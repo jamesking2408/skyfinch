@@ -1,4 +1,4 @@
-if (screen.width < 499) {
+if (screen.width < 425) {
   const modal = document.getElementsByClassName('idMyModal');
   const img = document.getElementsByClassName('toZoom');
   const modalImg = document.getElementsByClassName('modal-content1');

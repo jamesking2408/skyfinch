@@ -1,15 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
     //<!-- Chat BOX JS Start -->
-
-
     const chatInput = document.querySelector(".chat-input textarea");
     const sendChatBtn = document.querySelector(".chat-input span");
     const chatbox = document.querySelector(".chatbox");
     const chatbotToggler = document.querySelector(".chatbot-toggler");
-
-
     let userMessage;
-
     const responses = [
         "How can I help you?Type:'Help'",
         "Please ask me something else.Type:'Help'",
@@ -19,9 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
         "I'm your friend! feel free ask me...",
         "If you need any help?Type:'Help'"
     ];
-
-
-
     const createChatLi = (message, className) => {
         // Create a chat <li> element with passed message and className
         const chatli = document.createElement("li");
@@ -30,24 +22,18 @@ document.addEventListener('DOMContentLoaded', function () {
         chatli.innerHTML = chatContent;
         return chatli;
     }
-
     const getRandomResponse = () => {
         const randomIndex = Math.floor(Math.random() * responses.length);
         return responses[randomIndex];
     }
-
-
-
     const handleChat = () => {
         userMessage = chatInput.value.trim();
         // console.log(userMessage);
         if (!userMessage) return;
-
         document.querySelector(".chat-input textarea").focus();
         // Append the user's message to the chatbox
         chatbox.appendChild(createChatLi(userMessage, "outgoing"));
         chatbox.scrollTo(0, chatbox.scrollHeight);
-
         setTimeout(() => {
             let botResponse;
             if ((userMessage.toLowerCase() === "hi") || (userMessage.toLowerCase() === "hi skyfinch")) {
@@ -92,28 +78,22 @@ document.addEventListener('DOMContentLoaded', function () {
             else {
                 botResponse = getRandomResponse();
             }
-
             // message thinking while waiting for the response
             const incomingChatLi = createChatLi(botResponse, "incoming");
             chatbox.appendChild(incomingChatLi);
             chatbox.scrollTo(0, chatbox.scrollHeight);
         }, 2000);
-
         // Clear the input after sending the message
         chatInput.value = '';
-
     }
-
     // Add this function to check if the click is outside the chatbox
     const handleClickOutsideChatbot = (event) => {
         const isTextarea = event.target === chatInput;
         const isHeader = event.target.closest('header');
-
         if (!chatbox.contains(event.target) && !chatbotToggler.contains(event.target) && !isTextarea && !isHeader) {
             document.body.classList.remove("show-chatbot");
         }
     }
-
     // Function to handle Enter key press
     const handleKeyPress = (event) => {
         if (event.keyCode === 13) {
@@ -121,23 +101,13 @@ document.addEventListener('DOMContentLoaded', function () {
             handleChat();
         }
     }
-
     sendChatBtn.addEventListener("click", handleChat)
-
     chatInput.addEventListener("keypress", handleKeyPress);
-
     // Add an event listener to the document to handle clicks
     document.addEventListener("click", handleClickOutsideChatbot);
-
     chatbotToggler.addEventListener("click", function () {
         document.body.classList.toggle("show-chatbot");
         chatInput.focus();
     });
-
-
     //<!-- Chat BOX JS End -->
-
-
 });
-
-
