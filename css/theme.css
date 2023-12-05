@@ -1170,7 +1170,6 @@ a.text-dark:focus {
   margin-top: 16px;
   margin-bottom: 16px;
   height: 320px;
-  /* background-color: #ffffff; */
   background-image: url(../img/pro_land_image.png);
   background-size: cover;
   background-position: center;
@@ -1415,7 +1414,6 @@ a.text-dark:focus {
 .swiper-slide .col-12 {
   text-align: center;
   font-size: 18px;
-  /* background: #fff; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1439,7 +1437,6 @@ a.text-dark:focus {
   border-radius: 50%;
   text-align: center;
   background-color: #e1ddfdda;
-  /* fill: #6C55F9 !important; */
   font-size: 24px;
   box-shadow: 0 2px 4px rgba(95, 92, 120, 0.16);
 }
@@ -1554,9 +1551,6 @@ a.text-dark:focus {
   background-color: #5439F8;
   color: rgba(255, 255, 255, 0.8);
 }
-/* .banner-info .wrap {
-  padding: 50px 0;
-} */
 .banner-info .title-section {
   color: #fff;
 }
@@ -2204,16 +2198,6 @@ ul.cloud a:hover::before {
   top: 85% !important;
   width: 90% !important;
 }
-/* #portfolio::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url(/img/profile/bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 .portfolio-grid .col-lg-2 {
   display: flex;
   justify-content: center;
@@ -2221,7 +2205,6 @@ ul.cloud a:hover::before {
 .portfolio-grid .card {
   display: flex;
   justify-content: center;
-  /* background-color: #854fee; */
 }
 .portfolio_area .filters ul {
   padding-left: 0;
@@ -2252,7 +2235,6 @@ ul.cloud a:hover::before {
   margin-top: 3px;
 }
 .portfolio_box .short_info h4 {
-  /* text-transform: uppercase; */
   color: #1d1c1c;
   font-size: 14px;
   font-weight: bold !important;
