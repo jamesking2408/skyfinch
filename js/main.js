@@ -119,10 +119,10 @@
     function applyScroll() {
         $.scrollify({
             section: "section",
-            sectionName: "section-name",
+            // sectionName: "section-name",
             interstitialSection: "",
             easing: "easeOutExpo",
-            scrollSpeed: 700,
+            scrollSpeed: 400,
             offset: 0,
             scrollbars: true,
             standardScrollElements: "",

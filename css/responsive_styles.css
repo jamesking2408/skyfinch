@@ -4614,7 +4614,7 @@
     }
 
     .bg-04 {
-        background-size: 100% 60%;
+        background-size: 100% 55%;
     }
 
     #swiper_box {
@@ -7289,7 +7289,10 @@
     }
 
     #sec1 .container {
-        transform: translate(-50%, 0%) !important;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-55%, 0%) !important;
     }
 
     #forms {
@@ -7373,7 +7376,7 @@
     }
 
     #profile_sec2_2 {
-        height: 75%;
+        height: auto;
     }
 
     #profile_sec2_2 .container {
@@ -7392,7 +7395,7 @@
     }
 
     #profile_sec2 {
-        height: 75% !important;
+        height: auto !important;
     }
 
     #product_land {
@@ -8101,11 +8104,37 @@
         height: inherit !important;
     }
 
+    #sec2_1 .container-fluid {
+        transform: translateX(0) translateY(1rem);
+    }
+
+    #sec4 {
+        background-size: 100% 45%;
+    }
+
     #sec4 .container {
         position: relative !important;
         top: 0;
         left: 0;
-        transform: translateX(0) translateY(5rem) !important;
+        transform: translateX(0) translateY(1rem) !important;
+    }
+
+    #sec5 .container {
+        transform: translateX(0) translateY(1rem) !important;
+    }
+
+    #sec6 .container {
+        position: relative !important;
+        top: 0;
+        left: 0;
+        transform: translateX(0) translateY(1rem) !important;
+    }
+
+    #sec7 .container {
+        position: relative !important;
+        top: 0;
+        left: 0;
+        transform: translateX(0) translateY(1rem) !important;
     }
 
     #service_land {
@@ -8125,7 +8154,7 @@
     }
 
     .card.hov2 img.card-body {
-        height: inherit !important;
+        height: 260px !important;
     }
 
     .img-abt {
@@ -8241,6 +8270,19 @@
         padding-right: 5px;
     }
 
+    #profile_sec2 {
+        position: relative;
+        height: 100vh !important;
+    }
+
+    #profile_sec2 .container-fluid {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 5%);
+
+    }
+
     /* Sub_pages responsive Start */
     #abt-wave .container {
         position: relative !important;
@@ -8344,7 +8386,7 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        transform: translate(30rem, 10rem) !important;
+        transform: translate(30rem, 7rem) !important;
     }
 
     #module_card .card-bg2 h5 {
