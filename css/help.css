@@ -32,6 +32,7 @@
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
 }
+
 /*---------------------------------------
   HERO
 -----------------------------------------*/
@@ -42,21 +43,25 @@
   padding-top: 150px;
   padding-bottom: 150px;
 }
+
 .hero-section .input-group {
   background-color: var(--white-color);
   border-radius: var(--border-radius-large);
   padding: 10px 15px;
 }
+
 .hero-section .input-group-text {
   background-color: transparent;
   border: 0;
 }
+
 .hero-section input[type="search"] {
   border: 0;
   box-shadow: none;
   margin-bottom: 0;
   padding-left: 0;
 }
+
 .hero-section button[type="submit"] {
   background-color: var(--primary-color);
   border: 0;
@@ -64,6 +69,7 @@
   color: var(--white-color);
   max-width: 150px;
 }
+
 /*---------------------------------------
   CUSTOM FORM
 -----------------------------------------*/
@@ -76,9 +82,11 @@
   padding-left: 20px;
   outline: none;
 }
+
 .form-floating>label {
   padding-left: 20px;
 }
+
 .custom-form button[type="submit"] {
   background: var(--custom-btn-bg-color);
   border: none;
@@ -90,40 +98,49 @@
   transition: all 0.3s;
   margin-bottom: 0;
 }
+
 .custom-form button[type="submit"]:hover,
 .custom-form button[type="submit"]:focus {
   background: var(--custom-btn-bg-hover-color);
   border-color: transparent;
 }
+
 /*---------------------------------------
   FAQs
 -----------------------------------------*/
 .faq-section .accordion-item {
   border: 0;
 }
+
 .faq-section .accordion-button {
   font-size: var(--h6-font-size);
   font-weight: var(--font-weight-semibold);
 }
+
 .faq-section .accordion-item:first-of-type .accordion-button {
   border-radius: var(--border-radius-large);
 }
+
 .faq-section .accordion-button:not(.collapsed) {
   border-radius: var(--border-radius-large);
   box-shadow: none;
   color: var(--primary-color);
 }
+
 .faq-section .accordion-body {
   color: var(--p-color);
   font-size: var(--btn-font-size);
   line-height: 40px;
 }
+
 .accordion-button1::after {
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus-circle' viewBox='0 0 16 16'><path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/></svg>");
 }
+
 .accordion-button1:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash-circle' viewBox='0 0 16 16'><path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/></svg>");
 }
+
 .accordion {
   --bs-accordion-active-bg: var(--white-color);
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);

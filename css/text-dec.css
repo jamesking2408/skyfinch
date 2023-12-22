@@ -8,9 +8,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.5s ease-in-out;
-    font-weight:500;
+    font-weight: 500;
     font-size: 18px;
 }
+
 .text-dec a:before {
     content: '';
     background: #355EFC;
@@ -22,12 +23,15 @@
     height: 2px;
     transition: all 0.4s ease-in-out;
 }
+
 .text-dec a:hover {
     background-position: 0;
 }
+
 .text-dec a:hover::before {
     width: 100%;
 }
+
 .selected {
     background-image: linear-gradient(to right, #355EFC, #355EFC 50%, #0a4fe4 50%) !important;
     background-position: 0;
@@ -36,6 +40,7 @@
     font-weight: bold;
     font-size: 20px;
 }
+
 @media only screen and (max-width:768px) {
     .text-dec a {
         font-weight: 400;

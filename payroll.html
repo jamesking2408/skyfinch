@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>SkyFinch | Payroll Management System</title>
@@ -36,20 +37,12 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive_styles.css">
 </head>
+
 <body>
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="dot-spinner">
-            <div class="dot-spinner__dot"></div>
-            <div class="dot-spinner__dot"></div>
-            <div class="dot-spinner__dot"></div>
-            <div class="dot-spinner__dot"></div>
-            <div class="dot-spinner__dot"></div>
-            <div class="dot-spinner__dot"></div>
-            <div class="dot-spinner__dot"></div>
-            <div class="dot-spinner__dot"></div>
-        </div>
+        <img src="./img/cloud_spin.gif" alt="" width="250px">
     </div>
     <!-- Spinner End -->
     <!-- Search Modal Start-->
@@ -72,457 +65,560 @@
                     <ul class="list-unstyled">
                         <li class="content mb-3">
                             <button onclick="jumpToMain('home_skyfinch')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
-                                SkyFinch</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Home | SkyFinch
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToMain('sec1')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Why
-                                Choose should join us</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Why Choose should join us
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToMain('sec2')"
-                                class="btn btn-outline-primary border-0  w-100 text-start searchLink">Skyfinch Teams
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Skyfinch Teams
                             </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToMain('sec2_1')"
-                                class="btn btn-outline-primary border-0  w-100 text-start searchLink">Skyfinch |
-                                Applications</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Skyfinch | Applications
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToMain('sec3')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Skyfinch
-                                Highlights</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Skyfinch Highlights
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToMain('sec4')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Why
-                                choose us | Our
-                                projects, product, customer and Global office</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Why choose us | Our projects, product, customer and Global
+                                office
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToMain('sec5')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">The MR
-                                Reporting software is an Online</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                The MR Reporting software is an Online
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToMain('sec6')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Skyfinch makes your
-                                Business Proud | Application | Window | All products</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Skyfinch makes your Business Proud | Application | Window |
+                                All products
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToMain('sec7')"
-                                class="btn btn-outline-primary border-0  w-100 text-start searchLink">Our
-                                valuable Customer | Got A Project Or A Partnership In Mind? | contact Us</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Our valuable Customer | Got A Project Or A Partnership In
+                                Mind? | contact Us
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToMain('sec13')"
-                                class="btn btn-outline-primary border-0  w-100 text-start searchLink">Footer | Social
-                                media's | Address</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Footer | Social media's | Address
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToService('tab-sec')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Awesome Financial
-                                Services For Business</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Awesome Financial Services For Business
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToService('req-call')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Request
-                                A Call-Back | Get In Touch</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Request A Call-Back | Get In Touch
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToService('service_land')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Service |
-                                Home</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Service | Home
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToAbout('about_land')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">About |
-                                Home</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                About | Home
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToAbout('about_view')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">We Help Our Clients
-                                To Grow Their Business | About Us</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                We Help Our Clients To Grow Their Business | About Us
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToAbout('about_Awards')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Our relevant
-                                Achivements | Awards | 24/7 Available</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Our relevant Achievements | Awards | 24/7 Available
+                            </button>
+                        </li>
+                        <li class="content mb-3">
+                            <button onclick="jumpToAbout('about_no1')"
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">The Number #1
+                                Product & Service Company | About Us
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToAbout('about_Teams')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Exclusive Teams |
-                                About Us</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Exclusive Teams | About Us
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToContact('contact_land')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Contact Us |
-                                Home</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Contact Us | Home
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToContact('contact_form')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Contact Us | Forms
-                                | If You Have Any Query, Please Contact Us</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Contact Us | Forms | If You Have Any Query, Please Contact Us
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSales('sales_land')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
-                                Point of Sales | POS</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Home | Point of Sales | POS
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSales('abt-wave')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Sales Overview |
-                                Point of Sales | POS</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Overview | Point of Sales | POS
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSales('sales_image')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">POS - The Complete
-                                Accounting Solution for All Sales Activities | Points of Sales</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                POS - The Complete Accounting Solution for All Sales
+                                Activities | Points of Sales
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSales('tab-sec')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">POS | Sales |
-                                Module`s</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                POS | Sales | Module`s
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSales('sec8')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">POS | Sales |
-                                Choose The Right Plan For Your Business | Plan and Price</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                POS | Sales | Choose The Right Plan For Your Business | Plan
+                                and Price
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToHms('hotel_land')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
-                                Hotel Management System</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Home | Hotel Management System
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToHms('abt-wave')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
-                                Hotel Management System | HMS</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Overview | Hotel Management System | HMS
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToHms('hms_image')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">HMS - The End to
-                                End Digital Solution for the Workflow of All types Hotel | Hotel Management
-                                System</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                HMS - The End to End Digital Solution for the Workflow of All
+                                types Hotel | Hotel Management System
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToHms('tab-sec')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">HMS | Hotel |
-                                Module`s</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                HMS | Hotel | Module`s
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToHms('sec8')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">HMS | Hotel |
-                                Choose The Right Plan For Your Business | Plan and Price</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                HMS | Hotel | Choose The Right Plan For Your Business | Plan
+                                and Price
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToRms('Restaurant_land')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
-                                Restaurant Management System</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Home | Restaurant Management System
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToRms('abt-wave')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
-                                Restaurant Management System | HMS</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Overview | Restaurant Management System | RMS
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToRms('rms_image')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">RMS - Complete
-                                Solution for Quick & Error-Free Restaurant Sales Process | Restaurant Management
-                                System</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                RMS - Complete Solution for Quick & Error-Free Restaurant
+                                Sales Process | Restaurant Management System
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToRms('tab-sec')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">RMS | Restaurant |
-                                Module`s</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                RMS | Restaurant | Module`s
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToRms('sec8')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">RMS | Restaurant |
-                                Choose The Right Plan For Your Business | Plan and Price</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                RMS | Restaurant | Choose The Right Plan For Your Business |
+                                Plan and Price
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSsfinch('smart_land')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
-                                Smart-SkyFinch Management System</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Home | Smart-SkyFinch Management System
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSsfinch('abt-wave')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
-                                Smart-SkyFinch Management System | SMS</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Overview | Smart-SkyFinch Management System | SMS
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSsfinch('ssfinch_image')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">SMS - The Smart
-                                Choice for Total Digital Solution for All Business Processes | Smart-SkyFinch Management
-                                System</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                SMS - The Smart Choice for Total Digital Solution for All
+                                Business Processes | Smart-SkyFinch Management System
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSsfinch('tab-sec')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">SMS |
-                                Smart-SkyFinch | Module`s</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                SMS | Smart-SkyFinch | Module`s
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSsfinch('sec8')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">SMS |
-                                Smart-SkyFinch |
-                                Choose The Right Plan For Your Business | Plan and Price</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                SMS | Smart-SkyFinch | Choose The Right Plan For Your Business
+                                | Plan and Price
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToVms('vms_land')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
-                                Visitor's Management System</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Home | Visitor's Management System
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToVms('abt-wave')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
-                                Visitor's Management System | VMS</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Overview | Visitor's Management System | VMS
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToVms('vms_image')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">VMS - Complete
-                                control over Visitor Management in the best of Business Interests | Visitor's Management
-                                System</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                VMS - Complete control over Visitor Management in the best of
+                                Business Interests | Visitor's Management System
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToVms('tab-sec')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">VMS | Visitor's |
-                                Module`s</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                VMS | Visitor's | Module`s
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToVms('sec8')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">VMS | Visitor's |
-                                Choose The Right Plan For Your Business | Plan and Price</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                VMS | Visitor's | Choose The Right Plan For Your Business |
+                                Plan and Price
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToCrm('crm_land')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
-                                CRM</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Home | CRM
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToCrm('abt-wave')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
-                                Hotel Management System | HMS</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Overview | CRM
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToCrm('crm_image')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">CRM - The End to
-                                End Digital Solution for the Workflow of All types Hotel</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                CRM - Absolute, Real-time Visibility Powered CRM Automation
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToCrm('tab-sec')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">CRM |
-                                Module`s</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                CRM | Module`s
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToCrm('sec8')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">CRM | Choose The
-                                Right Plan For Your Business | Plan and Price</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                CRM | Choose The Right Plan For Your Business | Plan and Price
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToCtm('ctm_land')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
-                                Transport Management System | TMS</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Home | Transport Management System | TMS
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToCtm('abt-wave')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
-                                Transport Management System | TMS</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Overview | Transport Management System | TMS
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToCtm('ctm_image')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">TMS - The End to
-                                End Digital Solution for the Workflow of All types Hotel</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                TMS - Digital Platform to Streamline and Control Corporate Travel Process & Budget
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToCtm('tab-sec')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">TMS |
-                                Module`s</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                TMS | Module`s
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToCtm('sec8')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">TMS | Choose The
-                                Right Plan For Your Business | Plan and Price</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                TMS | Choose The Right Plan For Your Business | Plan and Price
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToEms('ems_land')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
-                                Events Management System | EMS</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Home | Events Management System | EMS
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToEms('abt-wave')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
-                                Events Management System | EMS</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Overview | Events Management System | EMS
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToEms('ems_image')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">EMS - The End to
-                                End Digital Solution for the Workflow of All types Hotel</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                EMS - Robust Solution to Scale the Workflow of Any Event | Events Management System
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToEms('tab-sec')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">EMS |
-                                Module`s</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                EMS | Module`s
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToEms('sec8')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">EMS | Choose The
-                                Right Plan For Your Business | Plan and Price</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                EMS | Choose The Right Plan For Your Business | Plan and Price
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToFms('fms_land')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
-                                Events Management System</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Home | Fleet Management System
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToFms('abt-wave')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
-                                Fleet Management System | FMS</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Overview | Fleet Management System | FMS
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToFms('fms_image')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">FMS - Complete
-                                control over Fleet Management in the best of Business Interests | Fleet Management
-                                System</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                FMS - Complete control over Fleet Management in the best of
+                                Business Interests | Fleet Management System
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToFms('tab-sec')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">FMS | Fleet
-                                Management System | Module`s</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                FMS | Module`s
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToFms('sec8')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">FMS | Fleet
-                                Management System | Choose The Right Plan For Your Business | Plan and Price</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                FMS | Choose The Right Plan For Your Business | Plan and Price
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToPms('pms_land')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
-                                Payroll Management System</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Home | Payroll Management System
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToPms('abt-wave')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
-                                Payroll Management System | PMS</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Overview | Payroll Management System | PMS
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToPms('pms_image')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Payroll - Complete
-                                control over Payroll Management in the best of Business Interests | Payroll Management
-                                System</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Payroll - Complete control over Payroll Management in the best
+                                of Business Interests | Payroll Management System
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToPms('tab-sec')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">PMS | Payroll |
-                                Module`s</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                PMS | Payroll | Module`s
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToPms('sec8')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">PMS | Payroll |
-                                Choose The Right Plan For Your Business | Plan and Price</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                PMS | Payroll | Choose The Right Plan For Your Business | Plan and Price
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSs('ss_land')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Home |
-                                Sales and Services Management System</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Home | Sales and Services Management System
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSs('abt-wave')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Overview |
-                                Sales and Services Management System </button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Overview | Sales and Services Management System
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSs('ss_image')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Sales and Services
-                                - Complete control over Sales and Services Management in the best of Business Interests
-                                | Sales and Services Management System</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Sales and Services - Complete control over Sales and Services
+                                Management in the best of Business Interests
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSs('tab-sec')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Sales and Services
-                                Management System | Module`s</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Sales and Services Management System | Module`s
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToSs('sec8')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Sales and Services
-                                Management System | Choose The Right Plan For Your Business | Plan and Price</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Sales and Services Management System | Choose The Right Plan
+                                For Your Business | Plan and Price
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToProfile('land_profile')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">SkyFinch | Profile
-                                - Home</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Profile | SkyFinch - Home
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToProfile('profile_sec2_1')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Profile | About
-                                SkyFinch | Traits | Roadmap’s</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Profile | About SkyFinch | Traits | About Roadmap’s
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToProfile('profile_sec2_2')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Profile | SkyFinch
-                                Technologies</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Profile | SkyFinch Technologies
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToProfile('profile_sec2_3')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Profile | About
-                                SkyFinch Products</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Profile | About SkyFinch Products
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToProfile('profile_sec2_4')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Profile | Our
-                                Products</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Profile | Our Products
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToProfile('profile_sec2_5')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Profile | IT
-                                Services</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Profile | IT Services
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToProfile('profile_sec2')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Profile | SkyFinch
-                                Legacy</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Profile | SkyFinch Legacy
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToPp('bg-anti')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Privacy Policy |
-                                Home</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Privacy Policy | Home
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToPp('policy_tab')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Privacy Policy |
-                                Secure data Policy</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Privacy Policy | Secure data Policy
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToAp('bg-anti')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Anti-Spam Policy |
-                                Home</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Anti-Spam Policy | Home
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToAp('policy_tab')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Anti-Spam Policy |
-                                Secure data Policy</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Anti-Spam Policy | Secure data Policy
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToCp('bg-anti')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Confidentiality
-                                Policy | Home</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Confidentiality Policy | Home
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToCp('policy_tab')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Confidentiality
-                                Policy | Secure data Policy</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Confidentiality Policy | Secure data Policy
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToTerm('bg-terms')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Terms of Use |
-                                Home</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Terms of Use | Home
+                            </button>
                         </li>
                         <li class="content mb-3">
                             <button onclick="jumpToTerm('terms_tab')"
-                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">Terms of Use |
-                                Secure data Policy</button>
+                                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                                Terms of Use | Secure data Policy
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -741,8 +837,8 @@
                 <div class="row g-5 align-items-center pt-2 mt-1 pt-lg-4 mt-lg-5">
                     <div class="col-lg-6 col-md-12 mt-lg-0 mt-5 mb-3 wow fadeInUp" data-wow-delay="0.5s"
                         data-aos-duration="1000" data-aos="fade-up">
-                        <p id="abt1" class="d-inline-block border bg-white rounded fw-semi-bold mt-1 pt-0 px-2 pb-0">
-                            Overview</p>
+                        <h3 id="" class="d-inline-block rounded fw-semi-bold mt-lg-1 mt-md-2 mt-4 pt-0 px-2 pb-0">
+                            Overview</h3>
                         <p class="">
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A Payroll Management System is a software solution that
                             automates the process of paying employees in an organization. It encompasses tasks like
@@ -784,9 +880,11 @@
                     <input type="radio" name="slider" id="item-2">
                     <input type="radio" name="slider" id="item-3">
                     <input type="radio" name="slider" id="item-4">
+                    <input type="radio" name="slider" id="item-5">
+                    <input type="radio" name="slider" id="item-6">
                     <div class="cards1">
                         <label class="card bg-transparent border-0 card1 song" for="item-1" id="song-1">
-                            <img class="toZoom" src="img/payroll/Payroll1.jpg" alt="img1">
+                            <img class="toZoom img-pay" src="img/payroll/Payroll1.jpg" alt="img1">
                             <div class="d-inline-block justify-content-center text-center mt-2">
                                 <h5 class="" style="font-family: 'Black Ops One', cursive;">Assign Counter</h5>
                             </div>
@@ -798,7 +896,7 @@
                             </div>
                         </label>
                         <label class="card bg-transparent border-0 card1 song" for="item-3" id="song-3">
-                            <img class="toZoom" src="img/payroll/Payroll3.png" alt="img3">
+                            <img class="toZoom img-pay" src="img/payroll/Payroll3.png" alt="img3">
                             <div class="d-inline-block justify-content-center text-center mt-2">
                                 <h5 class="" style="font-family: 'Black Ops One', cursive;">Sales</h5>
                             </div>
@@ -807,6 +905,18 @@
                             <img class="toZoom img-pay" src="img/payroll/Payroll4.png" alt="img4">
                             <div class="d-inline-block justify-content-center text-center mt-2">
                                 <h5 class="" style="font-family: 'Black Ops One', cursive;">Stock</h5>
+                            </div>
+                        </label>
+                        <label class="card bg-transparent border-0 card1 song" for="item-5" id="song-5">
+                            <img class="toZoom img-pay" src="img/payroll/Payroll3.png" alt="img3">
+                            <div class="d-inline-block justify-content-center text-center mt-2">
+                                <h5 class="" style="font-family: 'Black Ops One', cursive;">Sales</h5>
+                            </div>
+                        </label>
+                        <label class="card bg-transparent border-0 card1 song" for="item-6" id="song-6">
+                            <img class="toZoom img-pay" src="img/payroll/Payroll2.png" alt="img4">
+                            <div class="d-inline-block justify-content-center text-center mt-2">
+                                <h5 class="" style="font-family: 'Black Ops One', cursive;">Purchase</h5>
                             </div>
                         </label>
                     </div>
@@ -830,15 +940,13 @@
             <img class="modal-content1">
         </div>
         <!-- Add left and right buttons -->
-        <div class="container-fluid pt-0 pb-3">
-            <div class="row d-lg-none d-md-none d-block" style="margin-top: -30px;">
-                <div class="d-flex justify-content-center mt-lg-0 pt-lg-0 py-1 gap-2 mb-lg-0 mb-0">
-                    <div class="btn btn-outline-primary py-1" data-aos-duration="1000" data-aos="fade-up"
-                        id="left-button">
+        <div class="container1 pt-0 pb-3">
+            <div class="row d-lg-none d-md-none d-block">
+                <div class="d-flex justify-content-center mt-lg-0 pt-lg-0 pt-0 gap-2 mb-lg-0 mb-0">
+                    <div class="btn btn-outline-primary" id="left-button">
                         <i class="fa-solid fa-arrow-left-long fw-bold"></i>
                     </div>
-                    <div class="btn btn-outline-primary py-1" data-aos-duration="1000" data-aos="fade-up"
-                        id="right-button">
+                    <div class="btn btn-outline-primary" id="right-button">
                         <i class="fa-solid fa-arrow-left-long fa-rotate-180 fw-bold"></i>
                     </div>
                 </div>
@@ -853,10 +961,10 @@
         });
     </script>
     <!-- Image section End -->
-    <!-- Tab section start -->
-    <section id="tab-sec" class="container-fluid bg-12 pt-1 mb-0 pb-0">
+    <!-- Tab Content -->
+    <section id="tab-sec" class="container1 container-fluid bg-12 pt-1 mb-0 pb-0">
         <div class="container mt-lg-1 pt-lg-5 mt-1 pt-1">
-            <div class="row mt-lg-3 pt-lg-4 mt-0 pt-0 pb-0">
+            <div class="row mt-3 mt-lg-2 pt-lg-4 pb-0">
                 <div class="col-lg-4 col-md-5 col-3 d-lg-block d-md-block d-none wow fadeInLeft" data-wow-delay="0.6s"
                     data-aos="fade-up" data-aos-duration="1000">
                     <!-- Tabs nav -->
@@ -864,50 +972,122 @@
                         role="tablist" aria-orientation="vertical" data-mcs-theme="dark">
                         <a class="nav-link mb-1 p-1 shadow active" id="v-pills-Employee-tab" data-bs-toggle="pill"
                             href="#v-pills-Employee" role="tab" aria-controls="v-pills-Employee" aria-selected="true">
-                            <i class="fa fa-bars ms-1 me-3"></i>
-                            <span class="font-weight-bold small text-uppercase">Employee Management</span></a>
+                            <div class="row rt_cont p-0 m-0">
+                                <div class="col-1 p-0 m-0">
+                                    <i class="fa fa-bars ms-1 me-3"></i>
+                                </div>
+                                <div class="col-11 p-0 m-0">
+                                    <span class="font-weight-bold small text-uppercase">Employee Management</span>
+                                </div>
+                            </div>
+                        </a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-policies-tab" data-bs-toggle="pill"
                             href="#v-pills-policies" role="tab" aria-controls="v-pills-policies" aria-selected="false">
-                            <i class="fa fa-bars ms-1 me-3"></i>
-                            <span class="font-weight-bold small text-uppercase">Fully customizable leave
-                                policies</span></a>
+                            <div class="row rt_cont p-0 m-0">
+                                <div class="col-1 p-0 m-0">
+                                    <i class="fa fa-bars ms-1 me-3"></i>
+                                </div>
+                                <div class="col-11 p-0 m-0">
+                                    <span class="font-weight-bold small text-uppercase">Fully customizable leave
+                                        policies</span>
+                                </div>
+                            </div>
+                        </a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Holiday-tab" data-bs-toggle="pill"
                             href="#v-pills-Holiday" role="tab" aria-controls="v-pills-Holiday" aria-selected="false">
-                            <i class="fa fa-bars ms-1 me-3"></i>
-                            <span class="font-weight-bold small text-uppercase">Holiday lists</span></a>
+                            <div class="row rt_cont p-0 m-0">
+                                <div class="col-1 p-0 m-0">
+                                    <i class="fa fa-bars ms-1 me-3"></i>
+                                </div>
+                                <div class="col-11 p-0 m-0">
+                                    <span class="font-weight-bold small text-uppercase">Holiday lists</span>
+                                </div>
+                            </div>
+                        </a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Attendance-tab" data-bs-toggle="pill"
                             href="#v-pills-Attendance" role="tab" aria-controls="v-pills-Attendance"
                             aria-selected="false">
-                            <i class="fa fa-bars ms-1 me-3"></i>
-                            <span class="font-weight-bold small text-uppercase">Attendance capture from varied
-                                sources</span></a>
+                            <div class="row rt_cont p-0 m-0 align-items-center">
+                                <div class="col-1 p-0 m-0">
+                                    <i class="fa fa-bars ms-1 me-3"></i>
+                                </div>
+                                <div class="col-11 p-0 m-0">
+                                    <span class="font-weight-bold small text-uppercase">Attendance capture from varied
+                                        sources</span>
+                                </div>
+                            </div>
+                        </a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-salary-tab" data-bs-toggle="pill"
                             href="#v-pills-salary" role="tab" aria-controls="v-pills-salary" aria-selected="false">
-                            <i class="fa fa-bars ms-1 me-3"></i>
-                            <span class="font-weight-bold small text-uppercase">Configurable salary structure</span></a>
+                            <div class="row rt_cont p-0 m-0">
+                                <div class="col-1 p-0 m-0">
+                                    <i class="fa fa-bars ms-1 me-3"></i>
+                                </div>
+                                <div class="col-11 p-0 m-0">
+                                    <span class="font-weight-bold small text-uppercase">Configurable salary
+                                        structure</span>
+                                </div>
+                            </div>
+                        </a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Complete-tab" data-bs-toggle="pill"
                             href="#v-pills-Complete" role="tab" aria-controls="v-pills-Complete" aria-selected="false">
-                            <i class="fa fa-bars ms-1 me-3"></i>
-                            <span class="font-weight-bold small text-uppercase">Complete payroll processing</span></a>
+                            <div class="row rt_cont p-0 m-0">
+                                <div class="col-1 p-0 m-0">
+                                    <i class="fa fa-bars ms-1 me-3"></i>
+                                </div>
+                                <div class="col-11 p-0 m-0">
+                                    <span class="font-weight-bold small text-uppercase">Complete payroll
+                                        processing</span>
+                                </div>
+                            </div>
+                        </a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-payroll-tab" data-bs-toggle="pill"
                             href="#v-pills-payroll" role="tab" aria-controls="v-pills-payroll" aria-selected="false">
-                            <i class="fa fa-bars ms-1 me-3"></i>
-                            <span class="font-weight-bold small text-uppercase">Automated payroll inputs and pay
-                                slips</span></a>
+                            <div class="row rt_cont p-0 m-0">
+                                <div class="col-1 p-0 m-0">
+                                    <i class="fa fa-bars ms-1 me-3"></i>
+                                </div>
+                                <div class="col-11 p-0 m-0">
+                                    <span class="font-weight-bold small text-uppercase">Automated payroll inputs and pay
+                                        slips</span>
+                                </div>
+                            </div>
+                        </a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Statutory-tab" data-bs-toggle="pill"
                             href="#v-pills-Statutory" role="tab" aria-controls="v-pills-Statutory"
                             aria-selected="false">
-                            <i class="fa fa-bars ms-1 me-3"></i>
-                            <span class="font-weight-bold small text-uppercase">Statutory compliance</span></a>
+                            <div class="row rt_cont p-0 m-0">
+                                <div class="col-1 p-0 m-0">
+                                    <i class="fa fa-bars ms-1 me-3"></i>
+                                </div>
+                                <div class="col-11 p-0 m-0">
+                                    <span class="font-weight-bold small text-uppercase">Statutory compliance</span>
+                                </div>
+                            </div>
+                        </a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-ESS-tab" data-bs-toggle="pill"
                             href="#v-pills-ESS" role="tab" aria-controls="v-pills-ESS" aria-selected="false">
-                            <i class="fa fa-bars ms-1 me-3"></i>
-                            <span class="font-weight-bold small text-uppercase">ESS portal - Payroll</span></a>
+                            <div class="row rt_cont p-0 m-0">
+                                <div class="col-1 p-0 m-0">
+                                    <i class="fa fa-bars ms-1 me-3"></i>
+                                </div>
+                                <div class="col-11 p-0 m-0">
+                                    <span class="font-weight-bold small text-uppercase">ESS portal - Payroll</span>
+                                </div>
+                            </div>
+                        </a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Mobile-tab" data-bs-toggle="pill"
                             href="#v-pills-Mobile" role="tab" aria-controls="v-pills-Mobile" aria-selected="false">
-                            <i class="fa fa-bars ms-1 me-3"></i>
-                            <span class="font-weight-bold small text-uppercase">Mobile app for employees and
-                                managers</span></a>
+                            <div class="row rt_cont p-0 m-0 align-items-center">
+                                <div class="col-1 p-0 m-0">
+                                    <i class="fa fa-bars ms-1 me-3"></i>
+                                </div>
+                                <div class="col-11 p-0 m-0">
+                                    <span class="font-weight-bold small text-uppercase">Mobile app for employees and
+                                        managers</span>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-7 col-12 pb-lg-0 pb-5 d-lg-block d-md-block d-none wow fadeInRight"
@@ -922,15 +1102,18 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Employee Management</h4>
                                 <ul class="list-unstyled">
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Skyfinch's robust software
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Skyfinch's robust software
                                         platform enables users to simultaneously access and work on multiple levels and
                                         layers of data like 20+ employee-data types, reporting hierarchy with
                                         organization chart, employee directory, etc.</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Facility to track and
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Facility to track and
                                         monitor company assets used by employees, enables anytime access to the all
                                         information about the assets. This is helpful especially when an employee is
                                         promoted or transferred, or resigns</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> The system is built to
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> The system is built to
                                         accommodate more than 30 lifecycle events of each employee and generates
                                         automated Reminders & Alerts like birthday/anniversary greetings, welcome note
                                         to new recruits, etc.</li>
@@ -942,15 +1125,18 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-3">Fully customizable leave policies</h4>
                                 <ul class="list-unstyled">
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> The HR & Payroll module
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> The HR & Payroll module
                                         comes with a range of built-in leave policies. Companies without a specific
                                         leave policy can choose from that range, the policy that suits the best and be
                                         digitally benefited</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> The system allows the
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> The system allows the
                                         company-policy-specific customized configuration of granting/denying leave,
                                         leave availing restrictions, week end policies, leave pro rating, leave year end
                                         processing, etc</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Skyfinch gives unlimited
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Skyfinch gives unlimited
                                         scope for defining any number of leave types like, earned leave, sick leave,
                                         casual leave, maternity leave, marriage leave, etc, and assign exclusive
                                         policies for each kind of leave</li>
@@ -962,17 +1148,21 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Holiday lists</h4>
                                 <ul class="list-unstyled">
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> The module is flexible to
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> The module is flexible to
                                         allow the definition of branch-wise state-specific and/or country-specific
                                         holiday policies for companies with branches across national and/or
                                         international borders</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> The solution come with the
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> The solution come with the
                                         provision of selecting and adding Restricted Holidays (optional holidays) and
                                         set rules for these holidays according to the company leave policy</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Company's holiday list,
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Company's holiday list,
                                         including both general and restricted holidays can be easily prepared and
                                         published</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> The Employee Self Service
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> The Employee Self Service
                                         (ESS) portal completely shifts the responsibility of applying for leave and its
                                         approval/rejection, and comp-off granting/denying activities to respective
                                         employees and concerned managers</li>
@@ -984,19 +1174,24 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Attendance capture from varied sourcest</h4>
                                 <ul class="list-unstyled">
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> The Skyfinch attendance
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> The Skyfinch attendance
                                         management software captures real-time attendance data from all relevant sources
                                         and seamlessly integrates the same with the payroll module</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Assigning specific login IP
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Assigning specific login IP
                                         address for each employee within the office intranet allows employees to mark
                                         their attendance, while still ruling out the possibility of any misuse</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> The latest Geo Mark feature
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> The latest Geo Mark feature
                                         allows employees to mark their attendance within the predefined coordinates set
                                         for the office premises or from on-site client locations using Skyfinch Mobile
                                         App</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Managers can assign or
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Managers can assign or
                                         change the shifts of their team members through the ease of the ESS portal</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Attendance regularization
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Attendance regularization
                                         can be done through the ESS portal by employees themselves. This will trigger a
                                         notification to the manager and the manager can review and approve or disapprove
                                         regularization requests in real time.</li>
@@ -1008,14 +1203,17 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Configurable salary structure</h4>
                                 <ul class="list-unstyled">
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Skyfinch HR & Payroll
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Skyfinch HR & Payroll
                                         module's in-built payroll calculator is flexible to handle any type of salary
                                         structure</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> The solution is highly
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> The solution is highly
                                         customizable to generate accurate payroll based on company-specific salary
                                         structure, specifications, statutory requirements, and employment category for
                                         each and every employee</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> he robustness of the system
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> he robustness of the system
                                         can accommodate any number of standard as well as highly specific salary
                                         components in its repository and create salary structures designed to align with
                                         all the industry-specific and statutory norms of any business</li>
@@ -1027,23 +1225,31 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Automate reimbursements, loans and advances</h4>
                                 <ul class="list-unstyled">
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> In addition to accommodating
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> In addition to accommodating
                                         all payroll requisites Skyfinch HR & Payroll module also enables the furnishing
                                         of reimbursements, loans and advances for the benefit of employees. Such
                                         beneficial aspects facilitated by the module are:</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Extensive reimbursement
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Extensive reimbursement
                                         configurations</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Monthly/ annual entitlements
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Monthly/ annual entitlements
                                     </li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Claims processing with limit
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Claims processing with limit
                                         checking</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Providing loans with
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Providing loans with
                                         multiple repayment and interest options</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Pausing loan deductions for
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Pausing loan deductions for
                                         a specified period</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Automatic closure on
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Automatic closure on
                                         completion of repayment</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> utomatic calculation of
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> utomatic calculation of
                                         perquisites</li>
                                 </ul>
                             </div>
@@ -1053,11 +1259,13 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Complete payroll processing</h4>
                                 <ul class="list-unstyled">
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Skyfinch's integrated
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Skyfinch's integrated
                                         solution for HR & Payroll automatically calculates and generates accurate
                                         payrolls for each employee at the very click of a button as per the pre-defined
                                         data and formula registered in the system</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> The solution ensures the
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> The solution ensures the
                                         accuracy of Payroll through its faculty to verify each payroll by comparing
                                         current and previous month's payroll and by facilitating the customization of
                                         salary register and payroll statements</li>
@@ -1069,19 +1277,25 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Automated payroll inputs and pay slips</h4>
                                 <ul class="list-unstyled">
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Skyfinch payroll software,
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Skyfinch payroll software,
                                         through its integration with the leave and attendance details of employees,
                                         seamlessly transfers vital data automatically into the process of payroll
                                         generation thereby enabling:</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Access and select multiple
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Access and select multiple
                                         pay-slip formats</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Process increment components
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Process increment components
                                         into present salary structure</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Process one-time payment and
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Process one-time payment and
                                         deductions</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Calculate and automate full
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Calculate and automate full
                                         and final settlements</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Calculate LOP and LOP
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Calculate LOP and LOP
                                         reversals</li>
                                 </ul>
                             </div>
@@ -1091,25 +1305,35 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Statutory compliance</h4>
                                 <ul class="list-unstyled">
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> The solution is built to
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> The solution is built to
                                         absolutely comply with all statutory requirements and is flexible to accommodate
                                         all updates essential for incorporating the necessities that may arise out of
                                         all statutory nuances or amendments</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> The following are some of
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> The following are some of
                                         the aspects that the Skyfinch Payroll system provides to ensure the compliance
                                         of Payroll with statutory requisites:</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Monthly ESI computation and
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Monthly ESI computation and
                                         Statement generation</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Gratuity Appropriation</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> PT with all state-specific
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Gratuity Appropriation</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> PT with all state-specific
                                         rules built in</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Total TDS calculations and
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Total TDS calculations and
                                         online filing of TDS returns</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Bonus calculations</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Reporting Labor Welfare Fund
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Bonus calculations</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Reporting Labor Welfare Fund
                                         calculation and deductions</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Monthly EPF Statement</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> PF calculation and ECR File
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Monthly EPF Statement</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> PF calculation and ECR File
                                         Generation</li>
                                 </ul>
                             </div>
@@ -1119,11 +1343,13 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">ESS portal - Payroll</h4>
                                 <ul class="list-unstyled">
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> The Skyfinch Employee
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> The Skyfinch Employee
                                         Self-service portal gives the scope to view pay-slips, Reimbursement claims,
                                         total earnings statements, Reimbursement/ PF/ YTD statements; and loan details
                                         like installments paid, balance payable, etc</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> The system also gives the
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> The system also gives the
                                         provision to compare income tax plans and load the best tax-saving plan for
                                         payroll consideration; and to submit final IT Proof Of Investments and FBP,
                                         reimbursement claims, IT declaration and POI</li>
@@ -1135,22 +1361,29 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Mobile app for employees and managers</h4>
                                 <ul class="list-unstyled">
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Skyfinch Mobile App for
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Skyfinch Mobile App for
                                         employees and managers brings the concerned HR and payroll related details on to
                                         the smart phone device of each employee, thereby enabling them to:</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> View, upload and update
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> View, upload and update
                                         information pertaining to income tax, tax-saving plans, deductions, etc; and
                                     </li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> View pay-slips, total
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> View pay-slips, total
                                         earnings/ PF/ YTD statements</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> The solution's Mobile App
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> The solution's Mobile App
                                         facility for managers empowers them to:</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Approve/reject leave
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Approve/reject leave
                                         requests of team members with a single tap on their smart phone device</li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> View category-wise leave
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> View category-wise leave
                                         balances, holiday details, and all leave related information of team members
                                     </li>
-                                    <li><i class="bi bi-check-all d-inline-block fs-4"></i> Monitor the presence of team
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt=""></span> Monitor the presence of team
                                         members by means of the Geo Mark Attendance Marking feature, which automatically
                                         signs-in/signs-out employees the moment they enter/exit the location coordinates
                                         that can be predefined for unlimited number of office locations,
@@ -1177,20 +1410,23 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 font-italic mb-4">Employee Management</h4>
                                         <ul class="list-unstyled">
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Skyfinch's robust
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Skyfinch's robust
                                                 software
                                                 platform enables users to simultaneously access and work on multiple
                                                 levels and
                                                 layers of data like 20+ employee-data types, reporting hierarchy with
                                                 organization chart, employee directory, etc.</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Facility to track
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Facility to track
                                                 and
                                                 monitor company assets used by employees, enables anytime access to the
                                                 all
                                                 information about the assets. This is helpful especially when an
                                                 employee is
                                                 promoted or transferred, or resigns</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> The system is built
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> The system is built
                                                 to
                                                 accommodate more than 30 lifecycle events of each employee and generates
                                                 automated Reminders & Alerts like birthday/anniversary greetings,
@@ -1206,21 +1442,24 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 font-italic mb-3">Fully customizable leave policies</h4>
                                         <ul class="list-unstyled">
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> The HR & Payroll
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> The HR & Payroll
                                                 module
                                                 comes with a range of built-in leave policies. Companies without a
                                                 specific
                                                 leave policy can choose from that range, the policy that suits the best
                                                 and be
                                                 digitally benefited</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> The system allows
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> The system allows
                                                 the
                                                 company-policy-specific customized configuration of granting/denying
                                                 leave,
                                                 leave availing restrictions, week end policies, leave pro rating, leave
                                                 year end
                                                 processing, etc</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Skyfinch gives
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Skyfinch gives
                                                 unlimited
                                                 scope for defining any number of leave types like, earned leave, sick
                                                 leave,
@@ -1236,23 +1475,27 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 font-italic mb-4">Holiday lists</h4>
                                         <ul class="list-unstyled">
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> The module is
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> The module is
                                                 flexible to
                                                 allow the definition of branch-wise state-specific and/or
                                                 country-specific
                                                 holiday policies for companies with branches across national and/or
                                                 international borders</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> The solution come
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> The solution come
                                                 with the
                                                 provision of selecting and adding Restricted Holidays (optional
                                                 holidays) and
                                                 set rules for these holidays according to the company leave policy</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Company's holiday
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Company's holiday
                                                 list,
                                                 including both general and restricted holidays can be easily prepared
                                                 and
                                                 published</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> The Employee Self
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> The Employee Self
                                                 Service
                                                 (ESS) portal completely shifts the responsibility of applying for leave
                                                 and its
@@ -1270,29 +1513,34 @@
                                         <h4 class="display-6 font-italic mb-4">Attendance capture from varied sourcest
                                         </h4>
                                         <ul class="list-unstyled">
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> The Skyfinch
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> The Skyfinch
                                                 attendance
                                                 management software captures real-time attendance data from all relevant
                                                 sources
                                                 and seamlessly integrates the same with the payroll module</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Assigning specific
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Assigning specific
                                                 login IP
                                                 address for each employee within the office intranet allows employees to
                                                 mark
                                                 their attendance, while still ruling out the possibility of any misuse
                                             </li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> The latest Geo Mark
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> The latest Geo Mark
                                                 feature
                                                 allows employees to mark their attendance within the predefined
                                                 coordinates set
                                                 for the office premises or from on-site client locations using Skyfinch
                                                 Mobile
                                                 App</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Managers can assign
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Managers can assign
                                                 or
                                                 change the shifts of their team members through the ease of the ESS
                                                 portal</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Attendance
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Attendance
                                                 regularization
                                                 can be done through the ESS portal by employees themselves. This will
                                                 trigger a
@@ -1309,19 +1557,22 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 font-italic mb-4">Configurable salary structure</h4>
                                         <ul class="list-unstyled">
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Skyfinch HR &
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Skyfinch HR &
                                                 Payroll
                                                 module's in-built payroll calculator is flexible to handle any type of
                                                 salary
                                                 structure</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> The solution is
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> The solution is
                                                 highly
                                                 customizable to generate accurate payroll based on company-specific
                                                 salary
                                                 structure, specifications, statutory requirements, and employment
                                                 category for
                                                 each and every employee</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> he robustness of the
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> he robustness of the
                                                 system
                                                 can accommodate any number of standard as well as highly specific salary
                                                 components in its repository and create salary structures designed to
@@ -1338,29 +1589,37 @@
                                         <h4 class="display-6 font-italic mb-4">Automate reimbursements, loans and
                                             advances</h4>
                                         <ul class="list-unstyled">
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> In addition to
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> In addition to
                                                 accommodating
                                                 all payroll requisites Skyfinch HR & Payroll module also enables the
                                                 furnishing
                                                 of reimbursements, loans and advances for the benefit of employees. Such
                                                 beneficial aspects facilitated by the module are:</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Extensive
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Extensive
                                                 reimbursement
                                                 configurations</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Monthly/ annual
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Monthly/ annual
                                                 entitlements
                                             </li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Claims processing
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Claims processing
                                                 with limit
                                                 checking</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Providing loans with
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Providing loans with
                                                 multiple repayment and interest options</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Pausing loan
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Pausing loan
                                                 deductions for
                                                 a specified period</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Automatic closure on
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Automatic closure on
                                                 completion of repayment</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> utomatic calculation
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> utomatic calculation
                                                 of
                                                 perquisites</li>
                                         </ul>
@@ -1373,14 +1632,16 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 font-italic mb-4">Complete payroll processing</h4>
                                         <ul class="list-unstyled">
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Skyfinch's
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Skyfinch's
                                                 integrated
                                                 solution for HR & Payroll automatically calculates and generates
                                                 accurate
                                                 payrolls for each employee at the very click of a button as per the
                                                 pre-defined
                                                 data and formula registered in the system</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> The solution ensures
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> The solution ensures
                                                 the
                                                 accuracy of Payroll through its faculty to verify each payroll by
                                                 comparing
@@ -1398,26 +1659,32 @@
                                         <h4 class="display-6 font-italic mb-4">Automated payroll inputs and pay slips
                                         </h4>
                                         <ul class="list-unstyled">
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Skyfinch payroll
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Skyfinch payroll
                                                 software,
                                                 through its integration with the leave and attendance details of
                                                 employees,
                                                 seamlessly transfers vital data automatically into the process of
                                                 payroll
                                                 generation thereby enabling:</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Access and select
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Access and select
                                                 multiple
                                                 pay-slip formats</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Process increment
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Process increment
                                                 components
                                                 into present salary structure</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Process one-time
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Process one-time
                                                 payment and
                                                 deductions</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Calculate and
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Calculate and
                                                 automate full
                                                 and final settlements</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Calculate LOP and
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Calculate LOP and
                                                 LOP
                                                 reversals</li>
                                         </ul>
@@ -1430,37 +1697,47 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 font-italic mb-4">Statutory compliance</h4>
                                         <ul class="list-unstyled">
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> The solution is
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> The solution is
                                                 built to
                                                 absolutely comply with all statutory requirements and is flexible to
                                                 accommodate
                                                 all updates essential for incorporating the necessities that may arise
                                                 out of
                                                 all statutory nuances or amendments</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> The following are
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> The following are
                                                 some of
                                                 the aspects that the Skyfinch Payroll system provides to ensure the
                                                 compliance
                                                 of Payroll with statutory requisites:</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Monthly ESI
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Monthly ESI
                                                 computation and
                                                 Statement generation</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Gratuity
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Gratuity
                                                 Appropriation</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> PT with all
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> PT with all
                                                 state-specific
                                                 rules built in</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Total TDS
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Total TDS
                                                 calculations and
                                                 online filing of TDS returns</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Bonus calculations
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Bonus calculations
                                             </li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Reporting Labor
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Reporting Labor
                                                 Welfare Fund
                                                 calculation and deductions</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Monthly EPF
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Monthly EPF
                                                 Statement</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> PF calculation and
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> PF calculation and
                                                 ECR File
                                                 Generation</li>
                                         </ul>
@@ -1473,14 +1750,16 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 font-italic mb-4">ESS portal - Payroll</h4>
                                         <ul class="list-unstyled">
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> The Skyfinch
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> The Skyfinch
                                                 Employee
                                                 Self-service portal gives the scope to view pay-slips, Reimbursement
                                                 claims,
                                                 total earnings statements, Reimbursement/ PF/ YTD statements; and loan
                                                 details
                                                 like installments paid, balance payable, etc</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> The system also
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> The system also
                                                 gives the
                                                 provision to compare income tax plans and load the best tax-saving plan
                                                 for
@@ -1498,31 +1777,38 @@
                                         <h4 class="display-6 font-italic mb-4">Mobile app for employees and managers
                                         </h4>
                                         <ul class="list-unstyled">
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Skyfinch Mobile App
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Skyfinch Mobile App
                                                 for
                                                 employees and managers brings the concerned HR and payroll related
                                                 details on to
                                                 the smart phone device of each employee, thereby enabling them to:</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> View, upload and
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> View, upload and
                                                 update
                                                 information pertaining to income tax, tax-saving plans, deductions, etc;
                                                 and
                                             </li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> View pay-slips,
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> View pay-slips,
                                                 total
                                                 earnings/ PF/ YTD statements</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> The solution's
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> The solution's
                                                 Mobile App
                                                 facility for managers empowers them to:</li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Approve/reject leave
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Approve/reject leave
                                                 requests of team members with a single tap on their smart phone device
                                             </li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> View category-wise
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> View category-wise
                                                 leave
                                                 balances, holiday details, and all leave related information of team
                                                 members
                                             </li>
-                                            <li><i class="bi bi-check-all d-inline-block fs-4"></i> Monitor the presence
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""></span> Monitor the presence
                                                 of team
                                                 members by means of the Geo Mark Attendance Marking feature, which
                                                 automatically
@@ -1549,77 +1835,88 @@
     </section>
     <!-- Tab section end -->
     <!-- Modules start -->
-    <section id="sec8" class="bg-0 pt-lg-4">
-        <div class="container pt-lg-5 pt-md-3 pt-2 pb-lg-0 pb-md-2 pb-3 mt-lg-0 mt-md-0 mt-0">
+    <section id="sec8" class="container1 bg-0 pt-lg-4">
+        <div class="container-fluid pt-lg-5 pt-md-3 pt-2 pb-lg-0 pb-md-2 pb-3 mt-lg-0 mt-md-0 mt-0">
             <div class="row d-flex justify-content-center align-items-center pb-1 pt-2 pb-lg-0 pt-lg-0">
                 <div class="col-lg-12 center pb-4 mt-3 pt-2">
-                    <b class="display-6 fw-bold fs-2 pb-0 tx-co center">Choose The Right Plan For Your Business</b>
+                    <h3 class="display-5 fw-bold fs-2 pb-0 tx-co center">Choose The Right Plan For Your
+                        Business
+                    </h3>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-8 col-12 gy-4 gy-lg-0" data-aos-duration="1500" data-aos="fade-up">
-                    <div class="card h-card border-none off">
-                        <div class="offer center px-5 fw-bold position-absolute">Save 40%</div>
-                        <div class="card-body p-2 tx-co card-bg1 py-3">
-                            <h5 class="center p-25 fw-bold">STANDARD</h5>
-                            <h2 class="center p-50 fw-bold pt-2" style="padding-left: 60px;">29.99<span class="p-15">/
-                                    Per Month</span></h2>
-                            <hr>
-                            <ul class="pt-0" style="padding-left: 45px;">
-                                <li class="nt text-muted">Unlimited updates & Projects</li>
-                                <li class="nt text-muted">Custom Permissions</li>
-                                <li class="nt text-muted">Custom Features</li>
-                                <li class="nt text-muted">Custom Permissions</li>
-                                <li class="nt text-muted">Custom Features</li>
-                            </ul>
-                            <div class="center pt-1"><a href="product Enquiry.html"
-                                    class="btn btn-purple btn-md btn-hover fw-bold mb-1 rounded-pill"
-                                    onclick="choosePlan('Payroll Management System', 'STANDARD - 29.99 /per month')">Choose
-                                    Plan</a>
+                <div class="row d-flex justify-content-center align-items-center" id="module_card">
+                    <div id="card"
+                        class="col-lg-4 col-md-6 col-12 d-flex justify-content-center align-items-center gy-4 gy-lg-0"
+                        data-aos-duration="1000" data-aos="fade-up">
+                        <div class="card h-card border-none off">
+                            <div class="offer center px-5 fw-bold position-absolute">Save 40%</div>
+                            <div class="card-body p-2 tx-co card-bg1 py-3">
+                                <h5 class="center p-25 fw-bold">STANDARD</h5>
+                                <b class="center p-50 fw-bold pt-2" style="padding-left: 60px;">29.99<span
+                                        class="p-15">/Per Month</span></b>
+                                <hr>
+                                <ul class="pt-0" style="padding-left: 45px;">
+                                    <li class="nt text-muted">Unlimited updates & Projects</li>
+                                    <li class="nt text-muted">Custom Permissions</li>
+                                    <li class="nt text-muted">Custom Features</li>
+                                    <li class="nt text-muted">Custom Permissions</li>
+                                    <li class="nt text-muted">Custom Features</li>
+                                </ul>
+                                <div class="center pt-1">
+                                    <a href="product Enquiry.html" class="btn1 card-btn1 fw-bold mb-1 rounded-pill"
+                                        onclick="choosePlan('Payroll Management System', 'STANDARD - 29.99 /per month')">Choose
+                                        Plan</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8 col-12 gy-4 gy-lg-0" data-aos-duration="1500" data-aos="fade-up">
-                    <div class="card h-card border-none off">
-                        <div class="offer1 center px-5 fw-bold position-absolute">Save 40%</div>
-                        <div class="card-body p-2 text-white card-bg2 py-3">
-                            <h5 class="center p-25 ps-2 text-white fw-bold">PROFESSIONAL <sup
-                                    class="text-warning p-25">&#9733;</sup></h5>
-                            <b class="center p-50 text-white fw-bold pt-2" style="padding-left: 60px;">69.00<span
-                                    class="p-15">/ 3 Month</span></b>
-                            <hr>
-                            <ul class="pt-0" style="padding-left: 45px;">
-                                <li class="nt1">Unlimited updates & Projects</li>
-                                <li class="nt1">Custom Permissions</li>
-                                <li class="nt1">Custom Features</li>
-                                <li class="nt1">Custom Permissions</li>
-                                <li class="nt1">Custom Features</li>
-                            </ul>
-                            <div class="center pt-1"><a href="product Enquiry.html"
-                                    class="btn nav-btn-c2 btn-md fw-bold mb-1 rounded-pill"
-                                    onclick="choosePlan('Payroll Management System', 'PROFESSIONAL - 69.99 /per month')">Choose
-                                    Plan</a></div>
+                    <div id="card"
+                        class="col-lg-4 col-md-6 col-12 d-flex justify-content-center align-items-center gy-4 gy-lg-0"
+                        data-aos-duration="1000" data-aos="fade-up">
+                        <div class="card h-card border-none off">
+                            <div class="offer1 center px-5 fw-bold position-absolute">Save 40%</div>
+                            <div class="card-body p-2 text-white card-bg2 py-3">
+                                <h5 class="center p-25 ps-2 text-white fw-bold">PROFESSIONAL<sup
+                                        class="text-warning p-25">&#9733;</sup></h5>
+                                <b class="center p-50 text-white fw-bold pt-2" style="padding-left: 60px;">69.00<span
+                                        class="p-15">/ 3 Month</span></b>
+                                <hr>
+                                <ul class="pt-0" style="padding-left: 45px;">
+                                    <li class="nt1">Unlimited updates & Projects</li>
+                                    <li class="nt1">Custom Permissions</li>
+                                    <li class="nt1">Custom Features</li>
+                                    <li class="nt1">Custom Permissions</li>
+                                    <li class="nt1">Custom Features</li>
+                                </ul>
+                                <div class="center pt-1">
+                                    <a href="product Enquiry.html" class="btn2 card-btn2 fw-bold mb-1 rounded-pill"
+                                        onclick="choosePlan('Payroll Management System', 'PROFESSIONAL - 69.99 /per month')">Choose
+                                        Plan</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8 col-12 gy-4 gy-lg-0" data-aos-duration="1500" data-aos="fade-up">
-                    <div class="card h-card border-none off">
-                        <div class="offer center px-5 fw-bold position-absolute">Save 40%</div>
-                        <div class="card-body p-2 tx-co card-bg1 py-3">
-                            <h5 class="center p-25 fw-bold">PREMIUM</h5>
-                            <h2 class="center p-50 fw-bold pt-2" style="padding-left: 60px;">99.00<span class="p-15">/
-                                    12 Month</span></h2>
-                            <hr>
-                            <ul class="pt-0" style="padding-left: 45px;">
-                                <li class="nt text-muted">Unlimited updates & Projects</li>
-                                <li class="nt text-muted">Custom Permissions</li>
-                                <li class="nt text-muted">Custom Features</li>
-                                <li class="nt text-muted">Custom Permissions</li>
-                                <li class="nt text-muted">Custom Features</li>
-                            </ul>
-                            <div class="center pt-1"><a href="product Enquiry.html"
-                                    class="btn btn-purple btn-md btn-hover fw-bold mb-1 rounded-pill"
-                                    onclick="choosePlan('Payroll Management System', 'PREMIUM - 99.99 /per month')">Choose
-                                    Plan</a>
+                    <div id="card"
+                        class="cards_dot col-lg-4 col-md-12 col-12 d-flex justify-content-center align-items-center gy-4 gy-lg-0"
+                        data-aos-duration="1000" data-aos="fade-up">
+                        <div class="card h-card border-none off">
+                            <div class="offer center px-5 fw-bold position-absolute">Save 40%</div>
+                            <div class="card-body p-2 tx-co card-bg1 py-3">
+                                <h5 class="center p-25 fw-bold">PREMIUM</h5>
+                                <b class="center p-50 fw-bold pt-2" style="padding-left: 60px;">99.00<span
+                                        class="p-15">/12 Month</span></b>
+                                <hr>
+                                <ul class="pt-0" style="padding-left: 45px;">
+                                    <li class="nt text-muted">Unlimited updates & Projects</li>
+                                    <li class="nt text-muted">Custom Permissions</li>
+                                    <li class="nt text-muted">Custom Features</li>
+                                    <li class="nt text-muted">Custom Permissions</li>
+                                    <li class="nt text-muted">Custom Features</li>
+                                </ul>
+                                <div class="center pt-1">
+                                    <a href="product Enquiry.html" class="btn1 card-btn1 fw-bold mb-1 rounded-pill"
+                                        onclick="choosePlan('Payroll Management System', 'PREMIUM - 99.99 /per month')">Choose
+                                        Plan</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1629,15 +1926,15 @@
     </section>
     <!-- Modules end -->
     <!-- Team Start -->
-    <section class="bg-11 pt-lg-2 pb-lg-0 pt-4 pb-1">
+    <section id="about_Teams" class="container1 bg-11 pt-lg-2 pb-lg-0 pt-4 pb-1">
         <div class="container-fluid mt-lg-1 pt-lg-2 mt-md-4 py-md-2 mt-4 py-3">
             <div class="container pt-0 mt-2 mb-0">
                 <div class="row d-flex justify-content-center align-items-center mt-3 mb-0 py-0">
                     <div class="col-lg-12 divide">
                         <div class="row mt-lg-0 mt-0 d-flex justify-content-center align-items-center">
-                            <h3 class="fw-bold pb-2 pb-md-5 pb-lg-1 mt-lg-4 pt-lg-2 pt-2 pb-3 text-center display-5 wow fadeInDown"
+                            <h5 class="fw-bold pb-md-5 pb-lg-1 mt-lg-4 pt-lg-2 pt-2 pb-3 text-center display-5 wow fadeInDown"
                                 data-wow-delay="0.4s" data-aos-duration="1000" data-aos="fade-up">Our Valuable
-                                Customers</h3>
+                                Customers</h5>
                             <div class="cus owl-carousel owl-theme pt-1" data-aos-duration="1000">
                                 <div class="item">
                                     <div class="card border-0 mx-2">
@@ -1795,7 +2092,7 @@
                 </div>
             </div>
             <div class="container pt-lg-1 mt-lg-1 pt-md-5 mt-md-2 pt-2 mt-2">
-                <div class="text-center mx-auto mb-lg-3 py-lg-2 wow fadeInUp" data-wow-delay="0.1s"
+                <div class="text-center mx-auto mb-lg-1 py-lg-0 wow fadeInUp" data-wow-delay="0.1s"
                     data-aos-duration="1000" data-aos="fade-up" style="max-width: 600px;">
                     <h1 class="display-6 mb-lg-0 mb-3">Exclusive Team</h1>
                 </div>
@@ -1805,7 +2102,7 @@
                         <div class="card hov2">
                             <img class="card-body rounded" src="img/india/aboutus2.jpg" alt="">
                             <div class="d-flex justify-content-center">
-                                <h5 class="mb-0 pb-2">ERP</h4>
+                                <h6 class="mb-0 pb-2">ERP</h6>
                             </div>
                         </div>
                     </div>
@@ -1814,7 +2111,7 @@
                         <div class="card hov2">
                             <img class="card-body rounded" src="img/india/team-new1.jpg" alt="">
                             <div class="d-flex justify-content-center">
-                                <h5 class="mb-0 pb-2">DOT NET</h5>
+                                <h6 class="mb-0 pb-2">DOT NET</h6>
                             </div>
                         </div>
                     </div>
@@ -1823,13 +2120,12 @@
                         <div class="card hov2">
                             <img class="card-body rounded" src="img/india/team-new2.jpg" alt="">
                             <div class="d-flex justify-content-center">
-                                <h5 class="mb-0 pb-2 text-uppercase">Support Team</h5>
+                                <h6 class="mb-0 pb-2 text-uppercase">Support Team</h6>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
     <!-- Team End -->
@@ -1956,6 +2252,7 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
             loop: true,
+            slidesPerView: 1,
             pagination: {
                 el: ".swiper-pagination",
                 type: "fraction",
@@ -1967,13 +2264,11 @@
         });
     </script>
     <!-- Scroll effects -->
+    <script src="js/Scrollify/jquery.scrollify.js"></script>
     <script>
         AOS.init();
     </script>
     <!-- Scroll effects -->
-    <!-- Section Scroll effects -->
-    <script src="js/Scrollify/jquery.scrollify.js"></script>
-    <!-- Section Scroll effects -->
     <!-- Submit javascript -->
     <script src="js/submit.js"></script>
     <!-- Shuffle button only responsive pages -->
@@ -1982,4 +2277,5 @@
     <script src="js/chatbox.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>

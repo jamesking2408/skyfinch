@@ -23,17 +23,21 @@
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
+
     // Spinner
-    var spinner = function () {
-        setTimeout(function () {
+    var spinner = function() {
+        setTimeout(function() {
             if ($('#spinner').length > 0) {
                 $('#spinner').removeClass('show');
             }
-        }, 1500);
+        }, 2000);
     };
     spinner();
 
     //  TESTIMONIALS CAROUSEL HOOK
+    $(document).ready(function () {
+        $('.owl-carousel').owlCarousel();
+    });
     $('#customers-testimonials').owlCarousel({
         loop: true,
         center: true,
@@ -119,15 +123,16 @@
     function applyScroll() {
         $.scrollify({
             section: "section",
-            // sectionName: "section-name",
+            sectionName: "section-name",
             interstitialSection: "",
             easing: "easeOutExpo",
-            scrollSpeed: 400,
+            scrollSpeed: 1000,
             offset: 0,
             scrollbars: true,
-            standardScrollElements: "",
+            target: "html,body",
+            standardScrollElements: false,
             setHeights: true,
-            overflowScroll: true,
+            overflowScroll: false,
             updateHash: false,
             touchScroll: true,
             before: function () { },
@@ -166,7 +171,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({ scrollTop: 0 }, 120, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 10 }, 10, 'easeInOutExpo');
         return false;
     });
 
@@ -179,10 +184,9 @@
         }
     });
     $('.page-top').click(function () {
-        $('html, body').animate({ scrollTop: 0 }, 120, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 10 }, 10, 'easeInOutExpo');
         return false;
     });
-
     // End of back to top button
 
     // Facts counter
@@ -194,6 +198,85 @@
 
     //<!-- OwlCarousel script start -->
     var owl = $('.cus');
+    owl.owlCarousel({
+        rtl: false,
+        items: 5,
+        autoplay: true,
+        slideTransition: 'linear',
+        // autoplayTimeout: 4000,
+        // autoplaySpeed: 6000,
+        nav: false,
+        loop: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 6
+            }
+        }
+    });
+    // $('.play').on('click', function () {
+    //     owl.trigger('play.owl.autoplay', [10])
+    // })
+    // $('.stop').on('click', function () {
+    //     owl.trigger('stop.owl.autoplay')
+    // })
+
+    // change direction OwlCarousel
+    var owl1 = $('.cus1');
+    owl1.owlCarousel({
+        rtl: true,
+        items: 5,
+        autoplay: true,
+        slideTransition: 'linear',
+        // autoplayTimeout: 4000,
+        // autoplaySpeed: 6000,
+        nav: false,
+        loop: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 6
+            }
+        }
+    });
+
+    // Profile carousel
+    var owl = $('.cus_profile_l');
+    owl.owlCarousel({
+        rtl: true,
+        items: 5,
+        autoplay: true,
+        slideTransition: 'linear',
+        autoplayTimeout: 4000,
+        autoplaySpeed: 6000,
+        loop: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 6
+            }
+        }
+    });
+
+    var owl = $('.cus_profile_r');
     owl.owlCarousel({
         rtl: false,
         items: 5,
@@ -211,44 +294,13 @@
                 items: 3
             },
             1000: {
-                items: 5
-            }
-        }
-    });
-    $('.play').on('click', function () {
-        owl.trigger('play.owl.autoplay', [10])
-    })
-    $('.stop').on('click', function () {
-        owl.trigger('stop.owl.autoplay')
-    })
-
-    // change direction OwlCarousel
-    var owl1 = $('.cus1');
-    owl1.owlCarousel({
-        rtl: true,
-        items: 5,
-        autoplay: true,
-        slideTransition: 'linear',
-        autoplayTimeout: 4000,
-        autoplaySpeed: 6000,
-        loop: true,
-        dots: false,
-        responsive: {
-            0: {
-                items: 2
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 5
+                items: 6
             }
         }
     });
 
 
     //<!-- OwlCarousel script end -->
-
     $("#myBtn").click(function () {
         var dots = $("#dots");
         var moreText = $("#more");
@@ -267,38 +319,6 @@
     /* ---------------------------------------------
             Isotope js Starts
          --------------------------------------------- */
-    $(window).on('load', function () {
-        $('.portfolio-filter ul li').on('click', function () {
-            $('.portfolio-filter ul li').removeClass('active');
-            $(this).addClass('active');
-
-            var data = $(this).attr('data-filter');
-            $workGrid.isotope({
-                filter: data
-            });
-        });
-
-        $('.portfolio-filter ul li.filter_tab1').on('click', function () {
-            $('hr.hr-blurry').addClass('act_tab');
-            $('.portfolio-filter ul li.filter_tab').on('click', function () {
-                $('hr.hr-blurry').removeClass('act_tab');
-            });
-        });
-
-
-
-        if (document.getElementById('portfolio')) {
-            var $workGrid = $('.portfolio-grid').isotope({
-                itemSelector: '.all',
-                percentPosition: true,
-                masonry: {
-                    columnWidth: '.all'
-                }
-            });
-        }
-    });
-
-
 
     /*----------------------------------------------------*/
     /* Start Magnific Pop Up

@@ -817,11 +817,11 @@
     .border-pos {
         position: relative;
         width: 220px !important;
-        transform: translateX(1.5rem) translateY(23rem);
+        transform: translateX(1.5rem) translateY(23rem) !important;
     }
 
     .border-pos:hover {
-        transform: translateX(1.5rem) translateY(23rem);
+        transform: translateX(1.5rem) translateY(22.5rem) !important;
     }
 
     .border-pos h1 {
@@ -917,6 +917,16 @@
         padding-left: 19px !important;
     }
 
+    #module_card #card::before {
+        right: 60px;
+    }
+
+    #module_card #card:active::before,
+    #module_card #card:hover::before {
+        right: 0px;
+        bottom: -15px;
+    }
+
     .offer1,
     .offer {
         transform: rotate(319deg) translateX(-45px) translateY(-27px) !important;
@@ -931,15 +941,15 @@
     }
 
     .border-hms {
-        position: absolute;
+        position: relative;
         width: 230px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-1rem) translateY(-1rem) !important;
+        transform: translateX(1.5rem) translateY(23rem) !important;
     }
 
     .border-hms:hover {
-        transform: translateX(1rem) translateY(-1rem);
+        transform: translateX(1.5rem) translateY(22.5rem) !important;
     }
 
     .border-hms h1 {
@@ -965,12 +975,12 @@
         display: flex;
         width: 290px !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(580%);
+        transform: translateX(1.5rem) translateY(23rem) !important;
         transform: transform 0.5s;
     }
 
     .border-rms:hover {
-        transform: translateX(-10%) translateY(580%) scale(1.01);
+        transform: translateX(1.5rem) translateY(22.5rem) !important;
     }
 
     .border-rms h1 {
@@ -998,11 +1008,11 @@
         width: 170px !important;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(600%);
+        transform: translateX(1.5rem) translateY(23rem) !important;
     }
 
     .border-ssfinch:hover {
-        transform: translateX(-10%) translateY(600%);
+        transform: translateX(1.5rem) translateY(22.5rem) !important;
     }
 
     .border-ssfinch h1 {
@@ -1031,11 +1041,11 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1.5rem) translateY(23rem) !important;
     }
 
     .border-vms:hover {
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1.5rem) translateY(22.5rem) !important;
     }
 
     .border-vms h1 {
@@ -1066,11 +1076,11 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1.5rem) translateY(23rem) !important;
     }
 
     .border-crm:hover {
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1.5rem) translateY(22.5rem) !important;
     }
 
     .border-crm h1 {
@@ -1101,7 +1111,7 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1.5rem) translateY(23rem) !important;
     }
 
     .border-ctm h1 {
@@ -1132,11 +1142,11 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1.5rem) translateY(23rem) !important;
     }
 
     .border-fms:hover {
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1.5rem) translateY(22.5rem) !important;
     }
 
     .border-fms h1 {
@@ -1167,11 +1177,11 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1.5rem) translateY(23rem) !important;
     }
 
     .border-ems:hover {
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1.5rem) translateY(22.5rem) !important;
     }
 
     .border-ems h1 {
@@ -1202,11 +1212,11 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1.5rem) translateY(23rem) !important;
     }
 
     .border-pms:hover {
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1.5rem) translateY(22.5rem) !important;
     }
 
     .border-pms h1 {
@@ -1237,11 +1247,11 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1.5rem) translateY(23rem) !important;
     }
 
     .border-sales:hover {
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1.5rem) translateY(22.5rem) !important;
     }
 
     .border-sales h1 {
@@ -2301,6 +2311,16 @@
         padding-left: 19px !important;
     }
 
+    #module_card #card::before {
+        right: 60px;
+    }
+
+    #module_card #card:active::before,
+    #module_card #card:hover::before {
+        right: 10px;
+        bottom: -20px;
+    }
+
     .offer1,
     .offer {
         transform: rotate(319deg) translateX(-45px) translateY(-27px) !important;
@@ -2319,11 +2339,11 @@
         width: 250px !important;
         bottom: 0 !important;
         left: 0 !important;
-        transform: translateX(-1rem) translateY(30rem) !important;
+        transform: translateX(1rem) translateY(25rem)!important;
     }
 
     .border-hms:hover {
-        transform: translateX(-1rem) translateY(30rem) !important;
+        transform: translateX(1rem) translateY(24.5rem)!important;
     }
 
     .border-hms h1 {
@@ -2349,12 +2369,12 @@
         display: flex;
         width: 290px !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(580%);
+        transform: translateX(1rem) translateY(25rem)!important;
         transform: transform 0.5s;
     }
 
     .border-rms:hover {
-        transform: translateX(-10%) translateY(580%) scale(1.01);
+        transform: translateX(1rem) translateY(24.5rem)!important;
     }
 
     .border-rms h1 {
@@ -2382,11 +2402,11 @@
         width: 170px !important;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(600%);
+        transform: translateX(1rem) translateY(25rem)!important;
     }
 
     .border-ssfinch:hover {
-        transform: translateX(-10%) translateY(600%);
+        transform: translateX(1rem) translateY(24.5rem)!important;
     }
 
     .border-ssfinch h1 {
@@ -2415,11 +2435,11 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(25rem)!important;
     }
 
     .border-vms:hover {
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(24.5rem)!important;
     }
 
     .border-vms h1 {
@@ -2450,11 +2470,11 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(25rem)!important;
     }
 
     .border-crm:hover {
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(24.5rem)!important;
     }
 
     .border-crm h1 {
@@ -2485,7 +2505,7 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(25rem)!important;;
     }
 
     .border-ctm h1 {
@@ -2516,11 +2536,11 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(25rem)!important;
     }
 
     .border-fms:hover {
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(24.5rem)!important;
     }
 
     .border-fms h1 {
@@ -2551,11 +2571,11 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(25rem)!important;
     }
 
     .border-ems:hover {
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(24.5rem)!important;
     }
 
     .border-ems h1 {
@@ -2586,11 +2606,11 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(25rem)!important;
     }
 
     .border-pms:hover {
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(24.5rem)!important;
     }
 
     .border-pms h1 {
@@ -2621,11 +2641,11 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(25rem)!important;
     }
 
     .border-sales:hover {
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(24.5rem)!important;
     }
 
     .border-sales h1 {
@@ -3729,6 +3749,16 @@
         padding-left: 19px !important;
     }
 
+    #module_card #card::before {
+        right: 60px;
+    }
+
+    #module_card #card:active::before,
+    #module_card #card:hover::before {
+        right: 35px;
+        bottom: -20px;
+    }
+
     .offer1,
     .offer {
         transform: rotate(319deg) translateX(-45px) translateY(-27px) !important;
@@ -3747,11 +3777,11 @@
         width: 250px !important;
         bottom: 0 !important;
         left: 0 !important;
-        transform: translateX(-1rem) translateY(30rem) !important;
+        transform: translateX(1rem) translateY(28rem) !important;
     }
 
     .border-hms:hover {
-        transform: translateX(-1rem) translateY(30rem) !important;
+        transform: translateX(1rem) translateY(27.5rem) !important;
     }
 
     .border-hms h1 {
@@ -3769,7 +3799,7 @@
     }
 
     .img-rms {
-        height: 390px !important;
+        height: 100% !important;
     }
 
     .border-rms {
@@ -3777,12 +3807,12 @@
         display: flex;
         width: 290px !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(580%);
+        transform: translateX(1rem) translateY(28rem) !important;
         transform: transform 0.5s;
     }
 
     .border-rms:hover {
-        transform: translateX(-10%) translateY(580%) scale(1.01);
+        transform: translateX(1rem) translateY(27.5rem) !important;
     }
 
     .border-rms h1 {
@@ -3810,11 +3840,11 @@
         width: 170px !important;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(600%);
+        transform: translateX(1rem) translateY(25rem) !important;
     }
 
     .border-ssfinch:hover {
-        transform: translateX(-10%) translateY(600%);
+        transform: translateX(1rem) translateY(24.5rem) !important;
     }
 
     .border-ssfinch h1 {
@@ -3843,11 +3873,11 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(25rem) !important;
     }
 
     .border-vms:hover {
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(24.5rem) !important;
     }
 
     .border-vms h1 {
@@ -3878,11 +3908,11 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(25rem)!important;
     }
 
     .border-crm:hover {
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(24.5rem)!important;
     }
 
     .border-crm h1 {
@@ -3913,7 +3943,11 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(25rem) !important;
+    }
+
+    .border-ctm:hover {
+        transform: translateX(1rem) translateY(24.5rem) !important;
     }
 
     .border-ctm h1 {
@@ -3944,11 +3978,11 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(25rem)!important;
     }
 
     .border-fms:hover {
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(24.5rem)!important;
     }
 
     .border-fms h1 {
@@ -3979,11 +4013,11 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(25rem)!important
     }
 
     .border-ems:hover {
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(24.5rem)!important
     }
 
     .border-ems h1 {
@@ -4014,11 +4048,11 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(25rem)!important
     }
 
     .border-pms:hover {
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(24.5rem)!important
     }
 
     .border-pms h1 {
@@ -4049,11 +4083,11 @@
         height: 60px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(25rem)!important
     }
 
     .border-sales:hover {
-        transform: translateX(-10%) translateY(650%);
+        transform: translateX(1rem) translateY(24.5rem)!important
     }
 
     .border-sales h1 {
@@ -4088,7 +4122,7 @@
     }
 
     .bg-0 {
-        height: 100rem !important;
+        height: 102rem !important;
     }
 
     .img-penq {
@@ -4916,8 +4950,9 @@
         transform: translateY(2rem);
     }
 
-    #sales_image.bg-00 {
-        height: 25rem !important;
+    /* Common height all product pages */
+    section.bg-00 {
+        height: 35rem !important;
     }
 
     #rms_image .container-fluid {
@@ -4927,19 +4962,11 @@
         transform: translateY(2rem);
     }
 
-    #rms_image.bg-00 {
-        height: 25rem !important;
-    }
-
     #ssfinch_image .container-fluid {
         margin-top: 0px !important;
         padding-top: 0px !important;
         top: 0;
         transform: translateY(2rem);
-    }
-
-    #ssfinch_image.bg-00 {
-        height: 25rem !important;
     }
 
     #vms_image .container-fluid {
@@ -4949,19 +4976,11 @@
         transform: translateY(2rem);
     }
 
-    #vms_image.bg-00 {
-        height: 25rem !important;
-    }
-
     #crm_image .container-fluid {
         margin-top: 0px !important;
         padding-top: 0px !important;
         top: 0;
         transform: translateY(2rem);
-    }
-
-    #crm_image.bg-00 {
-        height: 25rem !important;
     }
 
     #ctm_image .container-fluid {
@@ -4971,19 +4990,11 @@
         transform: translateY(2rem);
     }
 
-    #ctm_image.bg-00 {
-        height: 25rem !important;
-    }
-
     #ems_image .container-fluid {
         margin-top: 0px !important;
         padding-top: 0px !important;
         top: 0;
         transform: translateY(2rem);
-    }
-
-    #ems_image.bg-00 {
-        height: 25rem !important;
     }
 
     #fms_image .container-fluid {
@@ -4993,10 +5004,6 @@
         transform: translateY(2rem);
     }
 
-    #fms_image.bg-00 {
-        height: 25rem !important;
-    }
-
     #pms_image .container-fluid {
         margin-top: 0px !important;
         padding-top: 0px !important;
@@ -5004,19 +5011,11 @@
         transform: translateY(2rem);
     }
 
-    #pms_image.bg-00 {
-        height: 25rem !important;
-    }
-
     #ss_image .container-fluid {
         margin-top: 0px !important;
         padding-top: 0px !important;
         top: 0;
         transform: translateY(2rem);
-    }
-
-    #ss_image.bg-00 {
-        height: 25rem !important;
     }
 
     .bg-11 {
@@ -5115,85 +5114,31 @@
         bottom: 40%;
     }
 
-    #hotel_land .btn-pq .button {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translate(10rem, 15rem) !important;
-    }
-
-    #Restaurant_land .btn-pq .button {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translate(10rem, 12rem) !important;
-    }
-
-    #smart_land .btn-pq .button {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translate(10rem, 12rem) !important;
-    }
-
-    #vms_land .btn-pq .button {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translate(10rem, 12rem) !important;
-    }
-
-    #vms_land .btn-pq .button {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translate(10rem, 12rem) !important;
-    }
-
-    #crm_land .btn-pq .button {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translate(10rem, 12rem) !important;
-    }
-
-    #ctm_land .btn-pq .button {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translate(10rem, 12rem) !important;
-    }
-
-    #ems_land .btn-pq .button {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translate(10rem, 12rem) !important;
-    }
-
-    #fms_land .btn-pq .button {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translate(10rem, 12rem) !important;
-    }
-
-    #pms_land .btn-pq .button {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translate(10rem, 12rem) !important;
-    }
-
+    #hotel_land .btn-pq .button,
+    #Restaurant_land .btn-pq .button,
+    #smart_land .btn-pq .button,
+    #vms_land .btn-pq .button,
+    #crm_land .btn-pq .button,
+    #ctm_land .btn-pq .button,
+    #fms_land .btn-pq .button,
+    #ems_land .btn-pq .button,
+    #pms_land .btn-pq .button,
     #ss_land .btn-pq .button {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translate(10rem, 12rem) !important;
+        transform: translate(10rem, 8rem) !important;
     }
 
     #module_card .card {
         max-width: 470px !important;
+    }
+
+    #module_card #card::before {
+        right: 150px;
+    }
+
+    #module_card #card:active::before,
+    #module_card #card:hover::before {
+        right: 125px;
+        bottom: -20px;
     }
 
     #hotel_land {
@@ -5206,15 +5151,11 @@
     }
 
     .border-hms {
-        position: absolute;
-        width: 350px;
-        left: 0 !important;
-        bottom: 0 !important;
-        transform: translateX(0rem) translateY(1rem) !important;
+        transform: translateX(2rem) translateY(28rem) !important;
     }
 
     .border-hms:hover {
-        transform: translateX(0rem) translateY(-22rem);
+        transform: translateX(2rem) translateY(27.5rem) !important;
     }
 
     .border-hms h1 {
@@ -5237,15 +5178,15 @@
     }
 
     .border-rms {
-        position: absolute;
+        position: relative;
         width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0rem) translateY(1rem) !important;
+        transform: translateX(2rem) translateY(28rem) !important;
     }
 
     .border-rms:hover {
-        transform: translateX(0rem) translateY(1rem);
+        transform: translateX(2rem) translateY(27.5rem) !important;
     }
 
     .border-rms h1 {
@@ -5267,16 +5208,20 @@
         height: 75%;
     }
 
+    .img-ssfinch {
+        background-position: center;
+    }
+
     .border-ssfinch {
-        position: absolute;
+        position: relative;
         width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0rem) translateY(-3rem) !important;
+        transform: translateX(1.5rem) translateY(28rem) !important;
     }
 
     .border-ssfinch:hover {
-        transform: translateX(0rem) translateY(1rem);
+        transform: translateX(1.5rem) translateY(27.5rem) !important;
     }
 
     .border-ssfinch h1 {
@@ -5298,16 +5243,20 @@
         height: 75%;
     }
 
+    .img-vms {
+        background-position: top center;
+    }
+
     .border-vms {
-        position: absolute;
+        position: relative;
         width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0rem) translateY(1rem) !important;
+        transform: translateX(1.5rem) translateY(28rem) !important;
     }
 
     .border-vms:hover {
-        transform: translateX(0rem) translateY(1rem);
+        transform: translateX(1.5rem) translateY(27.5rem) !important;
     }
 
     .border-vms h1 {
@@ -5330,15 +5279,15 @@
     }
 
     .border-crm {
-        position: absolute;
+        position: relative;
         width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0rem) translateY(1rem) !important;
+        transform: translateX(1.5rem) translateY(28rem) !important;
     }
 
     .border-crm:hover {
-        transform: translateX(0rem) translateY(1rem);
+        transform: translateX(1.5rem) translateY(27.5rem) !important;
     }
 
     .border-crm h1 {
@@ -5361,15 +5310,15 @@
     }
 
     .border-ctm {
-        position: absolute;
+        position: relative;
         width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0rem) translateY(1rem) !important;
+        transform: translateX(1.5rem) translateY(28rem) !important;
     }
 
     .border-ctm:hover {
-        transform: translateX(0rem) translateY(1rem);
+        transform: translateX(1.5rem) translateY(27.5rem) !important;
     }
 
     .border-ctm h1 {
@@ -5392,15 +5341,15 @@
     }
 
     .border-fms {
-        position: absolute;
+        position: relative;
         width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0rem) translateY(1rem) !important;
+        transform: translateX(1.5rem) translateY(28rem) !important;
     }
 
     .border-fms:hover {
-        transform: translateX(0rem) translateY(1rem);
+        transform: translateX(1.5rem) translateY(27.5rem);
     }
 
     .border-fms h1 {
@@ -5423,15 +5372,15 @@
     }
 
     .border-ems {
-        position: absolute;
+        position: relative;
         width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0rem) translateY(1rem) !important;
+        transform: translateX(1.5rem) translateY(28rem) !important;
     }
 
     .border-ems:hover {
-        transform: translateX(0rem) translateY(1rem);
+        transform: translateX(1.5rem) translateY(27.5rem) !important;
     }
 
     .border-ems h1 {
@@ -5454,15 +5403,15 @@
     }
 
     .border-pms {
-        position: absolute;
+        position: relative;
         width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0rem) translateY(1rem) !important;
+        transform: translateX(1.5rem) translateY(28rem) !important;
     }
 
     .border-pms:hover {
-        transform: translateX(0rem) translateY(1rem);
+        transform: translateX(1.5rem) translateY(27.5rem) !important;
     }
 
     .border-pms h1 {
@@ -5485,15 +5434,15 @@
     }
 
     .border-sales {
-        position: absolute;
+        position: relative;
         width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0rem) translateY(1rem) !important;
+        transform: translateX(1.5rem) translateY(28rem) !important;
     }
 
     .border-sales:hover {
-        transform: translateX(0rem) translateY(1rem);
+        transform: translateX(1.5rem) translateY(27.5rem) !important;
     }
 
     .border-sales h1 {
@@ -6081,6 +6030,10 @@
         font-size: 20px !important;
     }
 
+    .features h5 {
+        padding-left: 15px;
+    }
+
     .pop3 {
         width: 550px;
     }
@@ -6287,6 +6240,11 @@
     }
 
     /* Sub_pages responsive Start */
+
+    #card.cards_dot {
+        width: 372px !important;
+    }
+
     .bg-00 .facts {
         margin-top: 0px !important;
     }
@@ -6305,10 +6263,6 @@
 
     #abt-wave .container {
         height: inherit;
-    }
-
-    #sales_land.container1 {
-        height: 510px !important;
     }
 
     #sales_image .container-fluid {
@@ -6449,22 +6403,6 @@
     }
 
     /* point of sales responsive */
-    .border-pos {
-        position: relative;
-        display: flex;
-        width: 22rem !important;
-        left: 0 !important;
-        bottom: 0 !important;
-        transform: translateX(1.5rem) translateY(23rem) !important;
-    }
-
-    .border-pos:hover {
-        transform: translateX(1.5rem) translateY(23rem) !important;
-    }
-
-    .border-pos h1 {
-        font-size: 2.505rem;
-    }
 
     .btn-pq {
         position: relative;
@@ -6482,7 +6420,7 @@
         height: 55px;
         top: 0;
         left: 0;
-        transform: translate(15rem, 14rem) !important;
+        transform: translate(15rem, 7rem) !important;
     }
 
     .button span:nth-child(1) {
@@ -6517,6 +6455,7 @@
         bottom: 40%;
     }
 
+    /*
     #hotel_land .btn-pq .button {
         position: absolute;
         left: 0;
@@ -6585,10 +6524,30 @@
         left: 0;
         bottom: 0;
         transform: translate(15rem, 12rem) !important;
-    }
+    } */
 
     #module_card .prem-card {
         max-width: 440px !important;
+    }
+
+    #sales_land.container1 {
+        height: 550px !important;
+    }
+
+    .border-pos {
+        position: relative;
+        width: 22rem !important;
+        left: 0 !important;
+        bottom: 0 !important;
+        transform: translateX(1.5rem) translateY(27rem) !important;
+    }
+
+    .border-pos:hover {
+        transform: translateX(1.5rem) translateY(26.5rem) !important;
+    }
+
+    .border-pos h1 {
+        font-size: 2.505rem;
     }
 
     #hotel_land {
@@ -6601,15 +6560,15 @@
     }
 
     .border-hms {
-        position: absolute;
+        position: relative;
         width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0rem) translateY(1rem) !important;
+        transform: translateX(1.5rem) translateY(27rem) !important;
     }
 
     .border-hms:hover {
-        transform: translateX(0rem) translateY(1rem);
+        transform: translateX(1.5rem) translateY(26.5rem) !important;
     }
 
     .border-hms h1 {
@@ -6628,19 +6587,19 @@
 
     #Restaurant_land {
         position: relative;
-        height: 75%;
+        height: 550px;
     }
 
     .border-rms {
-        position: absolute;
+        position: relative;
         width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0rem) translateY(1rem) !important;
+        transform: translateX(1.5rem) translateY(27rem) !important;
     }
 
     .border-rms:hover {
-        transform: translateX(0rem) translateY(1rem);
+        transform: translateX(1.5rem) translateY(26.5rem) !important;
     }
 
     .border-rms h1 {
@@ -6659,19 +6618,19 @@
 
     #smart_land {
         position: relative;
-        height: 75%;
+        height: 550px;
     }
 
     .border-ssfinch {
-        position: absolute;
+        position: relative;
         width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0rem) translateY(-2rem) !important;
+        transform: translateX(1.5rem) translateY(27rem) !important;
     }
 
     .border-ssfinch:hover {
-        transform: translateX(0rem) translateY(1rem);
+        transform: translateX(1.5rem) translateY(26.5rem) !important;
     }
 
     .border-ssfinch h1 {
@@ -6688,16 +6647,21 @@
         margin-top: -6px !important;
     }
 
+    #vms_land {
+        position: relative;
+        height: 550px;
+    }
+
     .border-vms {
-        position: absolute;
+        position: relative;
         width: min-content !important;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-1rem) translateY(-15rem);
+        transform: translateX(1.5rem) translateY(27rem) !important;
     }
 
     .border-vms:hover {
-        transform: translateX(-1rem) translateY(-15rem);
+        transform: translateX(1.5rem) translateY(26.5rem) !important;
     }
 
     .border-vms h1 {
@@ -6714,16 +6678,21 @@
         margin-top: -4px !important;
     }
 
+    #crm_land {
+        position: relative;
+        height: 550px;
+    }
+
     .border-crm {
-        position: absolute;
+        position: relative;
         width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(-1rem) translateY(-15rem);
+        transform: translateX(2rem) translateY(27rem) !important;
     }
 
     .border-crm:hover {
-        transform: translateX(-1rem) translateY(-15rem);
+        transform: translateX(2rem) translateY(26.5rem) !important;
     }
 
     .border-crm h1 {
@@ -6742,19 +6711,19 @@
 
     #ctm_land {
         position: relative;
-        height: 75%;
+        height: 550px;
     }
 
     .border-ctm {
-        position: absolute;
+        position: relative;
         width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0rem) translateY(1rem) !important;
+        transform: translateX(2rem) translateY(27rem) !important;
     }
 
     .border-ctm:hover {
-        transform: translateX(0rem) translateY(1rem);
+        transform: translateX(2rem) translateY(26.5rem) !important;
     }
 
     .border-ctm h1 {
@@ -6773,19 +6742,19 @@
 
     #fms_land {
         position: relative;
-        height: 75%;
+        height: 550px;
     }
 
     .border-fms {
-        position: absolute;
+        position: relative;
         width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0rem) translateY(1rem) !important;
+        transform: translateX(1.5rem) translateY(27rem) !important;
     }
 
     .border-fms:hover {
-        transform: translateX(0rem) translateY(1rem);
+        transform: translateX(1.5rem) translateY(26.5rem) !important;
     }
 
     .border-fms h1 {
@@ -6804,19 +6773,19 @@
 
     #ems_land {
         position: relative;
-        height: 75%;
+        height: 550px;
     }
 
     .border-ems {
-        position: absolute;
+        position: relative;
         width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0rem) translateY(1rem) !important;
+        transform: translateX(1.5rem) translateY(27rem) !important;
     }
 
     .border-ems:hover {
-        transform: translateX(0rem) translateY(1rem);
+        transform: translateX(1.5rem) translateY(26.5rem) !important;
     }
 
     .border-ems h1 {
@@ -6835,19 +6804,19 @@
 
     #pms_land {
         position: relative;
-        height: 75%;
+        height: 550px;
     }
 
     .border-pms {
-        position: absolute;
+        position: relative;
         width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0rem) translateY(1rem) !important;
+        transform: translateX(1.5rem) translateY(27rem) !important;
     }
 
     .border-pms:hover {
-        transform: translateX(0rem) translateY(1rem);
+        transform: translateX(1.5rem) translateY(26.5rem) !important;
     }
 
     .border-pms h1 {
@@ -6866,19 +6835,19 @@
 
     #ss_land {
         position: relative;
-        height: 75%;
+        height: 550px;
     }
 
     .border-sales {
-        position: absolute;
+        position: relative;
         width: 350px;
         left: 0 !important;
         bottom: 0 !important;
-        transform: translateX(0rem) translateY(1rem) !important;
+        transform: translateX(1.5rem) translateY(27rem) !important;
     }
 
     .border-sales:hover {
-        transform: translateX(0rem) translateY(1rem);
+        transform: translateX(1.5rem) translateY(26.5rem) !important;
     }
 
     .border-sales h1 {
@@ -7165,16 +7134,11 @@
     }
 
     .service-border {
-        width: min-content !important;
-        left: 50%;
-        bottom: 50%;
-        transform: translateX(-150%) translateY(220%) !important;
+        transform: translateX(2rem) translateY(30rem) !important;
     }
 
     .service-border:hover {
-        margin-left: 40px;
-        width: min-content;
-        bottom: 655px;
+        transform: translateX(2rem) translateY(29.5rem) !important;
     }
 
     .vw-nav {
@@ -7402,6 +7366,10 @@
         margin-top: 90px !important;
     }
 
+    .features h5 {
+        padding-left: 15px;
+    }
+
     .img-pdt {
         width: 100%;
         height: 390px;
@@ -7425,6 +7393,12 @@
     }
 
     /* Sub_pages responsive Start */
+    #module_card #card:active::before,
+    #module_card #card:hover::before {
+        right: -5px;
+        bottom: -25px;
+    }
+
     .bg-00 .facts {
         margin-top: 0px !important;
     }
@@ -8138,19 +8112,27 @@
     }
 
     #service_land {
-        height: 100%;
+        height: 95vh !important;
     }
 
     .service-bg {
         object-fit: none;
-        height: inherit !important;
+        height: 100% !important;
         background-position: 40% 50%;
+    }
+
+    .service-border {
+        transform: translateX(2rem) translateY(24rem) !important;
+    }
+
+    .service-border:hover {
+        transform: translateX(2rem) translateY(23.5rem) !important;
     }
 
     #tab-sec .container {
         position: relative;
         top: 0;
-        transform: translateY(2rem);
+        transform: translateY(1rem) !important;
     }
 
     .card.hov2 img.card-body {
@@ -8160,15 +8142,15 @@
     .img-abt {
         background-size: cover;
         height: inherit !important;
-        background-position: 40% 65%;
+        background-position: center bottom;
     }
 
     .boder-blur {
-        position: absolute;
-        width: 25rem;
-        left: 50%;
-        bottom: 50%;
-        transform: translateX(-160%) translateY(250%) !important;
+        transform: translateX(2rem) translateY(22rem) !important;
+    }
+
+    .boder-blur:hover {
+        transform: translateX(2rem) translateY(21.5rem) !important;
     }
 
     #sec13 {
@@ -8212,15 +8194,11 @@
     }
 
     .contact-border {
-        position: absolute;
-        width: 21rem;
-        left: 50%;
-        bottom: 50%;
-        transform: translateX(-180%) translateY(230%) !important;
+        transform: translateX(2rem) translateY(22rem) !important;
     }
 
     .contact-border:hover {
-        transform: translateX(-180%) translateY(230%) !important;
+        transform: translateX(2rem) translateY(21.5rem) !important;
     }
 
     /* Style page responsive End */
@@ -8284,33 +8262,72 @@
     }
 
     /* Sub_pages responsive Start */
+    .mySwiper2 {
+        height: 500px !important;
+    }
+
+    .mySwiper2 img {
+        height: 400px !important;
+    }
+
+    #module_card #card {
+        height: 370px;
+        position: relative;
+        top: 2rem;
+    }
+
+    #module_card #card:active::before,
+    #module_card #card:hover::before {
+        right: 50px;
+        bottom: -45px;
+    }
+
     #abt-wave .container {
         position: relative !important;
         top: 0;
         left: 0;
-        transform: translateX(3rem) translateY(3rem);
+        transform: translateX(3rem) translateY(1rem);
     }
 
-    #sales_image .container-fluid,
-    #sales_image .container {
+    .bg-00 .container-fluid {
         margin-top: 0px !important;
         padding-top: 0px !important;
         top: 0;
-        transform: translateY(4rem);
+        transform: translateY(2.5rem);
+    }
+
+    .bg-00 .container {
+        margin-top: 0px !important;
+        padding-top: 0px !important;
+        top: 0;
+        transform: translateY(2.9rem);
+    }
+
+    .bg-12 .row .tab-pane {
+        height: 350px !important;
+    }
+
+    .bg-12 .row .tab-row1 {
+        height: 415px !important;
+    }
+
+    .card-bg1,
+    .card-bg2 {
+        height: 410px !important;
+    }
+
+    ul>.nt,
+    ul>.nt1 {
+        padding-bottom: 2px !important;
     }
 
     /* point of sales responsive */
     .border-pos {
-        position: relative;
-        display: flex;
-        width: 35rem !important;
-        left: 0 !important;
-        bottom: 0 !important;
-        transform: translateX(1.5rem) translateY(25rem) !important;
+        transform: translateX(1.5rem) translateY(23rem) !important;
     }
 
     .border-pos:hover {
-        transform: translateX(1.5rem) translateY(25rem) !important;
+        transform: translateX(1.5rem) translateY(22.5rem) !important;
     }
 
     .border-pos h1 {
@@ -8386,11 +8403,15 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        transform: translate(30rem, 7rem) !important;
+        transform: translate(28rem, 1rem) !important;
     }
 
     #module_card .card-bg2 h5 {
         margin-left: 33px;
+        font-size: 20px;
+    }
+
+    #module_card .card-bg1 h5 {
         font-size: 20px;
     }
 
@@ -8401,19 +8422,42 @@
         padding-bottom: 20px !important;
     }
 
+    .bg-11 .container h1 {
+        padding: 0px !important;
+    }
+
+    .bg-11 .container h5 {
+        margin-top: 27px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .border-hms {
+        transform: translateX(1.5rem) translateY(23rem) !important;
+    }
+
+    .border-hms:hover {
+        transform: translateX(1.5rem) translateY(22.5rem) !important;
+    }
+
     .border-rms {
-        position: absolute;
-        width: min-content !important;
-        left: 0 !important;
-        bottom: 0 !important;
-        transform: translateX(-1rem) translateY(-1rem) !important;
+        transform: translateX(1.5rem) translateY(23rem) !important;
     }
 
     .border-rms:hover {
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(1.5rem) translateY(22.5rem) !important;
     }
 
-    #Restaurant_land {
+    #sales_land,
+    #Restaurant_land,
+    #hotel_land,
+    #smart_land,
+    #vms_land,
+    #crm_land,
+    #ctm_land,
+    #fms_land,
+    #ems_land,
+    #pms_land,
+    #ss_land {
         height: 95% !important;
     }
 
@@ -8427,15 +8471,11 @@
     }
 
     .border-ssfinch {
-        position: absolute;
-        width: 38rem !important;
-        left: 0 !important;
-        bottom: 0 !important;
-        transform: translateX(-1rem) translateY(-1rem) !important;
+        transform: translateX(1.5rem) translateY(23rem) !important;
     }
 
     .border-ssfinch:hover {
-        transform: translateX(-1rem) translateY(-1rem) !important;
+        transform: translateX(1.5rem) translateY(22.5rem) !important;
     }
 
     .li-ssfinch,
@@ -8448,15 +8488,11 @@
     }
 
     .border-vms {
-        position: absolute;
-        width: min-content !important;
-        left: 0 !important;
-        bottom: 0 !important;
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(1.5rem) translateY(23rem) !important;
     }
 
     .border-vms:hover {
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(1.5rem) translateY(22.5rem) !important;
     }
 
     .li-vms,
@@ -8469,15 +8505,11 @@
     }
 
     .border-crm {
-        position: absolute;
-        width: 350px;
-        left: 0 !important;
-        bottom: 0 !important;
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(1.5rem) translateY(23rem) !important;
     }
 
     .border-crm:hover {
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(1.5rem) translateY(22.5rem) !important;
     }
 
     .li-crm,
@@ -8486,19 +8518,15 @@
     }
 
     li.li-crm1 {
-        margin-top: -6px !important;
+        margin-top: -4px !important;
     }
 
     .border-ctm {
-        position: absolute;
-        width: min-content;
-        left: 0 !important;
-        bottom: 0 !important;
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(1.5rem) translateY(23rem) !important;
     }
 
     .border-ctm:hover {
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(1.5rem) translateY(22.5rem) !important;
     }
 
     .li-ctm,
@@ -8507,18 +8535,15 @@
     }
 
     li.li-ctm1 {
-        margin-top: -6px !important;
+        margin-top: -4px !important;
     }
 
     .border-fms {
-        position: absolute;
-        left: 0 !important;
-        bottom: 0 !important;
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(1.5rem) translateY(23rem) !important;
     }
 
     .border-fms:hover {
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(1.5rem) translateY(22.5rem) !important;
     }
 
     .li-fms,
@@ -8531,14 +8556,11 @@
     }
 
     .border-ems {
-        position: absolute;
-        left: 0 !important;
-        bottom: 0 !important;
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(1.5rem) translateY(23rem) !important;
     }
 
     .border-ems:hover {
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(1.5rem) translateY(22.5rem) !important;
     }
 
     .li-ems,
@@ -8551,14 +8573,11 @@
     }
 
     .border-pms {
-        position: absolute;
-        left: 0 !important;
-        bottom: 0 !important;
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(1.5rem) translateY(23rem) !important;
     }
 
     .border-pms:hover {
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(1.5rem) translateY(22.5rem) !important;
     }
 
     .li-pms,
@@ -8571,14 +8590,11 @@
     }
 
     .border-sales {
-        position: absolute;
-        left: 0 !important;
-        bottom: 0 !important;
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(1.5rem) translateY(23rem) !important;
     }
 
     .border-sales:hover {
-        transform: translateX(-1rem) translateY(-1rem);
+        transform: translateX(1.5rem) translateY(22.5rem) !important;
     }
 
     .li-sales,
@@ -8610,6 +8626,7 @@
 
     .bg-anti-spam {
         background-position: top right;
+        height: 90% !important;
     }
 
     .bg-anti-spam .top-space {
@@ -8622,6 +8639,10 @@
         z-index: 1;
     }
 
+    .bg-terms .top-space {
+        margin-top: -10px !important;
+    }
+
     .policy_img,
     .policy_img_ap,
     .policy_img_pp {
@@ -8629,9 +8650,17 @@
     }
 
     /* Privacy policy */
-    .bg-anti .top-space,
-    .bg-anti .policy_img_pp {
+    .bg-anti {
+        height: 90% !important;
+    }
+
+    .bg-anti .top-space {
         margin-top: 158px !important;
+        z-index: 1;
+    }
+
+    .bg-anti .policy_img_pp {
+        margin-top: 50px !important;
         z-index: 1;
     }
 
@@ -8647,8 +8676,10 @@
     }
 
     .bg-anti-spam .policy_img {
-        width: 400px !important;
+        width: 300px !important;
     }
+
+
 }
 
 /* Desktop Screen */
@@ -8674,12 +8705,18 @@
         padding: 1rem 0.8rem !important;
     }
 
+    #about_view .container {
+        position: relative;
+        top: 0;
+        transform: translateY(4rem);
+    }
+
     .img-abt {
         position: relative;
         height: inherit;
     }
 
-    .boder-blur {
+    /*.boder-blur {
         position: absolute;
         width: 25rem;
         left: 0 !important;
@@ -8689,7 +8726,7 @@
 
     .boder-blur:hover {
         transform: translateX(2rem) translateY(-8rem) !important;
-    }
+    } */
 
     .bg {
         height: 580px;
@@ -8712,7 +8749,7 @@
     #tab-sec .container {
         position: relative;
         top: 0;
-        transform: translateY(5rem);
+        transform: translateY(2rem);
     }
 
     #req-call .container-fluid {
@@ -8799,16 +8836,22 @@
         transform: translateX(2rem) translateY(3rem);
     }
 
-    #sales_image .container-fluid,
-    #sales_image .container {
+    .bg-00 .container-fluid {
         margin-top: 0px !important;
         padding-top: 0px !important;
         top: 0;
-        transform: translateY(6rem);
+        transform: translateY(3rem);
+    }
+
+    .bg-00 .container {
+        margin-top: 0px !important;
+        padding-top: 0px !important;
+        top: 0;
+        transform: translateY(5rem);
     }
 
     /* point of sales responsive */
-    .border-pos {
+    /* .border-pos {
         position: relative;
         display: flex;
         width: 35rem !important;
@@ -8820,21 +8863,21 @@
 
     .border-pos:hover {
         transform: translateX(1.5rem) translateY(29rem) !important;
-    }
+    } */
 
-    .border-pos h1 {
+    /* .border-pos h1 {
         font-size: 3.505rem;
-    }
+    } */
 
     .bg-12 {
         position: relative;
         height: 600px;
     }
 
-    .li-pos,
+    /* .li-pos,
     li>.li-pos {
         font-size: 1.005rem !important;
-    }
+    } */
 
     li.li-pos1 {
         margin-top: -1.5px !important;
@@ -8905,7 +8948,7 @@
         transform: translateY(2.8rem);
     }
 
-    .border-rms {
+    /* .border-rms {
         position: absolute;
         width: min-content !important;
         left: 0 !important;
@@ -8914,10 +8957,10 @@
     }
 
     .border-rms:hover {
-        transform: translateX(-1rem) translateY(-1rem);
-    }
+        transform: translateX(-1rem) translateY(-2rem);
+    } */
 
-    .border-rms h1 {
+    /* .border-rms h1 {
         font-size: 2.55rem;
         padding-top: 5px;
     }
@@ -8925,12 +8968,13 @@
     .li-rms,
     li>.li-rms {
         font-size: 0.905rem !important;
-    }
+    } */
 
     li.li-rms1 {
         margin-top: -6px !important;
     }
 
+    /*
     .border-ssfinch {
         position: absolute;
         width: 29rem !important;
@@ -8955,9 +8999,9 @@
 
     li.li-ssfinch1 {
         margin-top: -4px !important;
-    }
+    } */
 
-    .border-vms {
+    /* .border-vms {
         position: absolute;
         width: min-content !important;
         left: 0 !important;
@@ -8967,23 +9011,23 @@
 
     .border-vms:hover {
         transform: translateX(-1rem) translateY(-1rem);
-    }
+    } */
 
-    .border-vms h1 {
+    /* .border-vms h1 {
         font-size: 2.905rem;
         padding-top: 5px;
-    }
-
+    } */
+    /*
     .li-vms,
     li>.li-vms {
         font-size: 0.905rem !important;
-    }
+    } */
 
     li.li-vms1 {
         margin-top: -4px !important;
     }
 
-    .border-crm {
+    /* .border-crm {
         position: absolute;
         width: 350px;
         left: 0 !important;
@@ -8993,9 +9037,9 @@
 
     .border-crm:hover {
         transform: translateX(-1rem) translateY(-1rem);
-    }
+    } */
 
-    .border-crm h1 {
+    /* .border-crm h1 {
         font-size: 4.905rem !important;
         padding-top: 5px;
     }
@@ -9003,13 +9047,13 @@
     .li-crm,
     li>.li-crm {
         font-size: 0.905rem !important;
-    }
+    } */
 
     li.li-crm1 {
-        margin-top: -6px !important;
+        margin-top: -3px !important;
     }
 
-    .border-ctm {
+    /* .border-ctm {
         position: absolute;
         width: min-content;
         left: 0 !important;
@@ -9019,9 +9063,9 @@
 
     .border-ctm:hover {
         transform: translateX(-1rem) translateY(-1rem);
-    }
+    } */
 
-    .border-ctm h1 {
+    /* .border-ctm h1 {
         font-size: 2.505rem;
         padding-top: 5px;
     }
@@ -9029,13 +9073,13 @@
     .li-ctm,
     li>.li-ctm {
         font-size: 0.905rem !important;
-    }
+    } */
 
     li.li-ctm1 {
-        margin-top: -4px !important;
+        margin-top: -3px !important;
     }
 
-    .border-fms {
+    /* .border-fms {
         position: absolute;
         left: 0 !important;
         bottom: 0 !important;
@@ -9044,9 +9088,9 @@
 
     .border-fms:hover {
         transform: translateX(-1rem) translateY(-1rem);
-    }
+    } */
 
-    .border-fms h1 {
+    /* .border-fms h1 {
         font-size: 2.505rem;
         padding-top: 5px;
     }
@@ -9054,13 +9098,13 @@
     .li-fms,
     li>.li-fms {
         font-size: 0.905rem !important;
-    }
+    } */
 
     li.li-fms1 {
-        margin-top: -4px !important;
+        margin-top: -3px !important;
     }
 
-    .border-ems {
+    /* .border-ems {
         position: absolute;
         left: 0 !important;
         bottom: 0 !important;
@@ -9069,9 +9113,9 @@
 
     .border-ems:hover {
         transform: translateX(-1rem) translateY(-1rem);
-    }
+    } */
 
-    .border-ems h1 {
+    /* .border-ems h1 {
         font-size: 2.505rem;
         padding-top: 5px;
     }
@@ -9079,13 +9123,13 @@
     .li-ems,
     li>.li-ems {
         font-size: 0.905rem !important;
-    }
+    } */
 
     li.li-ems1 {
-        margin-top: -4px !important;
+        margin-top: -3px !important;
     }
 
-    .border-pms {
+    /* .border-pms {
         position: absolute;
         left: 0 !important;
         bottom: 0 !important;
@@ -9094,9 +9138,9 @@
 
     .border-pms:hover {
         transform: translateX(-1rem) translateY(-1rem);
-    }
+    } */
 
-    .border-pms h1 {
+    /* .border-pms h1 {
         font-size: 2.505rem;
         padding-top: 5px;
     }
@@ -9104,13 +9148,13 @@
     .li-pms,
     li>.li-pms {
         font-size: 0.905rem !important;
-    }
+    } */
 
     li.li-pms1 {
-        margin-top: -4px !important;
+        margin-top: -3px !important;
     }
 
-    .border-sales {
+    /* .border-sales {
         position: absolute;
         left: 0 !important;
         bottom: 0 !important;
@@ -9119,9 +9163,9 @@
 
     .border-sales:hover {
         transform: translateX(-1rem) translateY(-1rem);
-    }
+    } */
 
-    .border-sales h1 {
+    /* .border-sales h1 {
         font-size: 2.505rem;
         padding-top: 5px;
     }
@@ -9129,10 +9173,10 @@
     .li-sales,
     li>.li-sales {
         font-size: 0.905rem !important;
-    }
+    } */
 
     li.li-sales1 {
-        margin-top: -4px !important;
+        margin-top: -3px !important;
     }
 
     .bg-0 {
@@ -9226,7 +9270,7 @@
     }
 }
 
-/*////////////////////////////////////////////////////////////*/
+/* //////////////////////////////////////////////////////////// */
 /* Correction media query */
 @media (max-width:1024px) {
 
@@ -9395,6 +9439,10 @@
         height: 45px;
     }
 
+    .features h5 {
+        padding-left: 15px;
+    }
+
     #tab-sec .swiper-button-next {
         bottom: 50%;
         left: 50%;
@@ -9412,6 +9460,15 @@
         bottom: 0;
         left: 0;
         transform: translateX(0rem) translateY(-5rem);
+    }
+
+    .old_act_tab,
+    .old_act_tab1 {
+        display: none;
+    }
+
+    .act_tab {
+        display: none;
     }
 }
 

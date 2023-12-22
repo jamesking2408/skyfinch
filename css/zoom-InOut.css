@@ -4,9 +4,11 @@
     cursor: pointer;
     transition: 0.3s;
   }
+
   .toZoom:hover {
     opacity: 0.7;
   }
+
   .modal1 {
     display: none;
     position: fixed;
@@ -19,6 +21,7 @@
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.9);
   }
+
   .modal-content1 {
     display: block;
     margin-top: 200px;
@@ -30,9 +33,11 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
+
   .modal-content1 img {
     max-width: 100%;
   }
+
   .close {
     position: absolute;
     top: 10px;
@@ -42,6 +47,7 @@
     font-weight: bold;
     transition: 0.3s;
   }
+
   .close:hover,
   .close:focus {
     color: #bbb;

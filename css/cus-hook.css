@@ -1,9 +1,12 @@
 @import url('../fonts/mulish.css');
 
 @media (min-width:300px) and (max-width:500px) {
-	.owl-carousel .item .card, .owl-carousel .item {
+
+	.owl-carousel .item .card,
+	.owl-carousel .item {
 		border-radius: 12px 12px 15px 15px;
 	}
+
 	#customers-testimonials .item {
 		text-align: center;
 		margin-top: 30px;
@@ -19,6 +22,7 @@
 		transition: all 0.3s ease-in-out;
 		border-radius: 3px;
 	}
+
 	#customers-testimonials .owl-item.active.center .item {
 		padding: 0;
 		opacity: 1;
@@ -27,19 +31,23 @@
 		transform: scale3d(1.0, 1.0, 1);
 	}
 
-	#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span, #customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+	#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+	#customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
 		background: #355EFC;
 		transform: translate3d(0px, -50%, 0px) scale(0.6);
 	}
+
 	#customers-testimonials.owl-carousel .owl-dots {
 		display: inline-block;
 		width: 100%;
 		text-align: center;
 	}
+
 	#customers-testimonials.owl-carousel .owl-dots .owl-dot {
 		display: inline-block;
 		outline: none;
 	}
+
 	#customers-testimonials.owl-carousel .owl-dots .owl-dot span {
 		background: rgb(109, 107, 107);
 		display: inline-block;
@@ -54,7 +62,9 @@
 
 
 }
+
 @media (min-width:300px) and (max-width:500px) {
+
 	#customers-testimonials .item,
 	.owl-carousel .item .card {
 		height: 225px !important;

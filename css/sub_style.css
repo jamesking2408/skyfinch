@@ -14,9 +14,9 @@
 }
 
 #abt-wave {
-    background-image: url(../img/wave-img.jpg);
+    background-image: url(../img/wave_bottom.jpg);
     background-color: rgba(255, 255, 255, 0.5);
-    background-position: 15% 50%;
+    background-position: 40% 100%;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -34,7 +34,7 @@
     width: min-content !important;
     left: 0;
     bottom: 0;
-    transform: translateX(2rem) translateY(20rem);
+    transform: translateX(2rem) translateY(30rem);
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -44,7 +44,7 @@
 }
 
 .border-pos:hover {
-    transform: translateX(2rem) translateY(20rem) !important;
+    transform: translateX(2rem) translateY(29.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -73,15 +73,19 @@
 }
 
 .bg-12 .row {
-    margin-top: 80px !important;
+    margin-top: 2rem !important;
+}
+
+.bg-12 .rt_cont {
+    margin-top: 0 !important;
 }
 
 .bg-12 .row .tab-row1 {
-    height: 370px !important;
+    height: 515px !important;
 }
 
 .bg-12 .row .tab-pane {
-    height: 305px !important;
+    height: 450px !important;
 }
 
 .bg-12 div.nav {
@@ -92,10 +96,10 @@
     overflow: hidden !important;
     padding: 10px 10px 10px 10px;
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.842);
+    background: rgba(255, 255, 255, 0.442);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    /* border: 1px solid rgba(255, 255, 255, 0.25); */
 }
 
 .tab-content1 {
@@ -346,26 +350,159 @@
     max-height: 445px !important;
 }
 
+#module_card #card::before {
+    background-image: url(../img/card_dot.png);
+    content: "";
+    width: 171px;
+    height: 134px;
+    position: absolute;
+    right: 80px;
+    bottom: 15px;
+    z-index: -1;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s
+}
+
+#module_card #card:active::before,
+#module_card #card:hover::before {
+    right: 20px;
+    bottom: -25px;
+}
+
+.card-btn1 {
+    background: #011A41;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px 10px;
+    text-transform: uppercase
+}
+
+.card-btn2 {
+    background: #00e41e;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px 10px;
+    text-transform: uppercase
+}
+
+#module_card #card .btn1 {
+    background: #434ab8;
+    -moz-user-select: none;
+    text-transform: capitalize;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 0;
+    margin-bottom: 0;
+    padding: 20px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    z-index: 1;
+    border: 0;
+    overflow: hidden;
+    margin: 0
+}
+
+#module_card #card .btn2 {
+    background: #8aff9a;
+    -moz-user-select: none;
+    text-transform: capitalize;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 0;
+    margin-bottom: 0;
+    padding: 20px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    z-index: 1;
+    border: 0;
+    overflow: hidden;
+    margin: 0
+}
+
+#module_card #card .btn1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #011A41;
+    z-index: 1;
+    border-radius: 5px;
+    transition: transform 0.5s;
+    transition-timing-function: ease;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scaleX(0)
+}
+
+#module_card #card .btn2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #00e41e;
+    z-index: 1;
+    border-radius: 5px;
+    transition: transform 0.5s;
+    transition-timing-function: ease;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scaleX(0)
+}
+
+#module_card #card .card:hover .btn1::before {
+    transform: scaleX(1);
+    color: #fff !important;
+    z-index: -1
+}
+
+#module_card #card .card:hover .btn2 {
+    color: #fff;
+}
+
+#module_card #card .card:hover .btn2::before {
+    transform: scaleX(1);
+    color: #fff !important;
+    z-index: -1
+}
+
 /* Point of sales End */
 /* Hotel management systems start */
 .img-hms {
-    background-image: radial-gradient(ellipse, #0000, #ddd7d777), url(../img/hotel-recp.png), radial-gradient(circle, #ebc092, #fdc6b1, #ffd0cf, #ffdee8, #fbedf8, #fbedf8, #fbedf8, #fbedf8, #ffdee8, #ffd0cf, #fdc6b1, #ebc092);
+    background-image: radial-gradient(ellipse, #0000, #aaaaaa2f),
+        linear-gradient(0deg, #0000, #ddd7d777), url(../img/hotel-recp.jpg);
     width: 100%;
     height: 100%;
     padding-bottom: 480px;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     border-radius: 8px;
 }
 
 .border-hms {
-    position: absolute;
-    margin-left: 40px;
+    position: relative;
     width: min-content !important;
     left: 0;
     bottom: 0;
-    margin-bottom: 50px;
+    transform: translateX(2rem) translateY(30rem);
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -375,6 +512,7 @@
 }
 
 .border-hms:hover {
+    transform: translateX(2rem) translateY(29.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -388,6 +526,61 @@
 
 section.bg-00 {
     height: 116vh;
+}
+
+.mySwiper2 .swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySwiper2 img {
+    width: 100%;
+    height: 500px;
+}
+
+.mySwiper2 {
+    position: relative;
+    height: auto;
+    width: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-58%, -78%);
+}
+
+.mySwiper1 {
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.mySwiper1 .swiper-slide {
+    width: 10% !important;
+    height: auto;
+    opacity: 0.4;
+}
+
+.mySwiper1 .swiper-slide-thumb-active {
+    opacity: 1;
+    top: -5px !important;
+    transition: top 0.5s ease-in-out;
+}
+
+#thumb_slide {
+    position: relative;
+    top: -80px;
+    left: 20%;
+    transform: translateX() translateY();
+    max-width: 60%;
+}
+
+.mySwiper1 .swiper-slide img {
+    background-color: transparent;
+    height: 50px;
+    width: 60px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 6px 6px 1.5px #000000;
+    -moz-box-shadow: 0 6px 6px 1.5px #000000;
+    filter: drop-shadow(0 6px 6px 1.5px #000000);
 }
 
 /* Hotel management systems End */
@@ -405,12 +598,11 @@ section.bg-00 {
 }
 
 .border-rms {
-    position: absolute;
-    margin-left: 40px;
+    position: relative;
     width: min-content !important;
     left: 0;
     bottom: 0;
-    margin-bottom: 50px;
+    transform: translateX(2rem) translateY(30rem);
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -420,6 +612,7 @@ section.bg-00 {
 }
 
 .border-rms:hover {
+    transform: translateX(2rem) translateY(29.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -432,25 +625,26 @@ section.bg-00 {
 }
 
 /* Restaurant management system End */
+
 /* Smart Skyfinch Start */
 .img-ssfinch {
-    background-image: radial-gradient(ellipse, #0000, #ddd7d777),
-        linear-gradient(0deg, #0000, #ddd7d777), url(../img/smart-bg.jpg);
+    background-image: radial-gradient(ellipse, #0000, #ddd7d717),
+        linear-gradient(0deg, #0000, #ddd7d70e), url(../img/smart-bg.jpg);
     width: 100%;
     height: 100%;
     padding-bottom: 480px;
-    background-position: left top;
+    background-position: left center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 8px;
 }
 
 .border-ssfinch {
-    position: absolute;
-    margin-left: 40px;
+    position: relative;
     width: 49% !important;
     left: 0;
     bottom: 0;
+    transform: translateX(2rem) translateY(30rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -460,6 +654,7 @@ section.bg-00 {
 }
 
 .border-ssfinch:hover {
+    transform: translateX(2rem) translateY(29.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -486,12 +681,11 @@ section.bg-00 {
 }
 
 .border-vms {
-    position: absolute;
-    margin-left: 40px;
+    position: relative;
     width: min-content !important;
     left: 0;
     bottom: 0;
-    margin-bottom: 50px;
+    transform: translateX(2rem) translateY(30rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -501,6 +695,7 @@ section.bg-00 {
 }
 
 .border-vms:hover {
+    transform: translateX(2rem) translateY(29.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -528,12 +723,11 @@ section.bg-00 {
 }
 
 .border-crm {
-    position: absolute;
-    margin-left: 40px;
+    position: relative;
     width: max-content !important;
     left: 0;
     bottom: 0;
-    margin-bottom: 50px;
+    transform: translateX(2rem) translateY(30rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -543,6 +737,7 @@ section.bg-00 {
 }
 
 .border-crm:hover {
+    transform: translateX(2rem) translateY(29.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -571,12 +766,11 @@ section.bg-00 {
 }
 
 .border-ctm {
-    position: absolute;
-    margin-left: 40px;
+    position: relative;
     width: min-content !important;
     left: 0;
     bottom: 0;
-    margin-bottom: 50px;
+    transform: translateX(2rem) translateY(30rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -586,6 +780,7 @@ section.bg-00 {
 }
 
 .border-ctm:hover {
+    transform: translateX(2rem) translateY(29.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -614,12 +809,11 @@ section.bg-00 {
 }
 
 .border-fms {
-    position: absolute;
-    margin-left: 40px;
+    position: relative;
     width: min-content !important;
     left: 0;
     bottom: 0;
-    margin-bottom: 50px;
+    transform: translateX(2rem) translateY(30rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -629,6 +823,7 @@ section.bg-00 {
 }
 
 .border-fms:hover {
+    transform: translateX(2rem) translateY(29.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -657,12 +852,11 @@ section.bg-00 {
 }
 
 .border-ems {
-    position: absolute;
-    margin-left: 40px;
+    position: relative;
     width: min-content !important;
     left: 0;
     bottom: 0;
-    margin-bottom: 50px;
+    transform: translateX(2rem) translateY(30rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -672,6 +866,7 @@ section.bg-00 {
 }
 
 .border-ems:hover {
+    transform: translateX(2rem) translateY(29.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -686,26 +881,25 @@ section.bg-00 {
 /* EMS End */
 /* PMS Start */
 .img-pms {
-    background-image: radial-gradient(ellipse, #f3ebeb00, #ddd9d977),
-        linear-gradient(0deg, #f3ebeb00, #ddd9d977), url(../img/pms-bg.png);
+    background-image: radial-gradient(ellipse, #f3ebeb00, #ddd9d933),
+        linear-gradient(0deg, #f3ebeb00, #ddd9d927), url(../img/pms-bg.png);
     width: 100%;
     height: 100%;
     padding-bottom: 480px;
     top: 0;
     left: 0;
-    background-position: left center !important;
+    background-position: center !important;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 8px;
 }
 
 .border-pms {
-    position: absolute;
-    margin-left: 40px;
+    position: relative;
     width: min-content !important;
     left: 0;
     bottom: 0;
-    margin-bottom: 50px;
+    transform: translateX(2rem) translateY(30rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -715,6 +909,7 @@ section.bg-00 {
 }
 
 .border-pms:hover {
+    transform: translateX(2rem) translateY(29.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -743,12 +938,11 @@ section.bg-00 {
 }
 
 .border-sales {
-    position: absolute;
-    margin-left: 40px;
+    position: relative;
     width: min-content !important;
     left: 0;
     bottom: 0;
-    margin-bottom: 50px;
+    transform: translateX(2rem) translateY(30rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -758,6 +952,7 @@ section.bg-00 {
 }
 
 .border-sales:hover {
+    transform: translateX(2rem) translateY(29.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
