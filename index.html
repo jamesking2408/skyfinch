@@ -1,0 +1,2803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>SkyFinch | Home</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta http-equiv="Cache-Control" content="max-age=31536000, immutable">
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
+  <!-- Favicon -->
+  <link rel="icon" href="img/logo-sky.png" type="image/x-icon" sizes="32x32" />
+  <!-- Google Web Fonts -->
+  <link rel="stylesheet" type="text/css" href="css/googleWebFonts/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="css/googleWebFonts/all-fonts.css" />
+  <!-- Icon Font Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="css/fontawesome-6.4.2/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-icons.css" />
+  <!-- Libraries Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="lib/animate/animate.min.css" />
+  <link rel="stylesheet" type="text/css" href="lib/owlcarousel/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/csshake.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/owl-carousel/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/owl-carousel/owl.theme.default.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap_css.css" />
+  <link rel="stylesheet" type="text/css" href="css/malihu-custom-scrollbar-plugin-3.1.5/jquery.mCustomScrollbar.css" />
+  <!-- Customized Bootstrap Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="js/AnimationOnScroll/package/dist/aos.css" />
+  <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
+  <!-- Template Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/submit.css" />
+  <link rel="stylesheet" type="text/css" href="css/text-dec.css" />
+  <link rel="stylesheet" type="text/css" href="css/hamburgers.css" />
+  <link rel="stylesheet" type="text/css" href="css/responsive_styles.css" />
+</head>
+
+<body>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <!-- <div class="dot-spinner">
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+    </div> -->
+    <img src="./img/cloud_spin.gif" alt="" width="250px">
+  </div>
+  <!-- Spinner End -->
+  <!-- Start chat box Design  -->
+  <button title="" class="container-fluid chatbot-toggler wow fadeIn" data-wow-delay="1.8s" data-bs-toggle="tooltip"
+    data-bs-placement="left" data-bs-custom-class="chat-tooltip" data-bs-title="Hi! I'm Help you.👋">
+    <span class="material-symbols-outlined">mode_comment</span>
+    <span class="material-symbols-outlined">close</span>
+  </button>
+  <div class="chatbot">
+    <header>
+      <h2 class="text-light">CHATBOT</h2>
+      <span class="material-symbols-outlined">close</span>
+    </header>
+    <ul class="chatbox">
+      <li class="chat incoming">
+        <span class="material-symbols-outlined">🤖</span>
+        <p>
+          Hi <br />I'm SkyFinch👋 <br />
+          If you need any help?<br />
+          Type: 'Help'
+        </p>
+      </li>
+      <li class="chat outgoing"></li>
+    </ul>
+    <div class="chat-input">
+      <textarea class="bg-white" placeholder="Type here...." required></textarea>
+      <span id="send-btn" class="material-symbols-outlined">send</span>
+    </div>
+  </div>
+  <!-- End chat box Design  -->
+  <!-- Submit alert box -->
+  <div class="container-sub container-md-sub">
+    <div class="sub-popup" id="pop">
+      <img src="img/404-tick.png" alt="" />
+      <h2 class="display-5" style="color: rgb(1, 1, 68)"></h2>
+      <p class="fw-semibold">.</p>
+      <button type="button" class="exit fw-bold" onclick="closePopup()">
+        OK<span><img src="img/thumbs.png" alt="thumbs" style="width: 25px; margin-top: -8px" /></span>
+      </button>
+    </div>
+  </div>
+  <!-- Submit alert box -->
+  <!-- Submit wrong alert box -->
+  <div class="container-sub container-md-sub">
+    <div class="sub-popup1" id="pop1">
+      <img src="img/wrong.png" class="wrong" alt="" />
+      <h2 class="display-5" style="color: rgb(219, 17, 17)"></h2>
+      <p class="fw-semibold"></p>
+      <button type="button" class="exit1 fs-5 fw-bolder" onclick="closePopup1()">
+        OK<span><img src="img/thumbs.png" alt="thumbs" style="width: 25px" /></span>
+      </button>
+    </div>
+  </div>
+  <!-- Submit wrong alert box -->
+  <!-- The form -->
+  <div class="container-fluid">
+    <div class="row wow fadeIn" data-wow-delay="1.8s" id="forms">
+      <button class="btn shadow fw-bold btn-light btn-lg-square rounded-circle" id="show_form">
+        <img src="img/contact.png" class="shake-little" data-bs-toggle="tooltip" data-bs-placement="left"
+          data-bs-custom-class="contact-tooltip" data-bs-title="Contact Me!" alt="contactMe" />
+      </button>
+    </div>
+    <div class="container d-flex justify-content-center align-items-center form-popup">
+      <div class="container main shadow py-4 g-5" id="myForm">
+        <form name="open_form" action="">
+          <div class="row g-2">
+            <p class="text-end text-primary display-4 fw-bold">Contact Me!</p>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-12 g-2">
+              <label class="form-label" for="form-mail"><b>Email <span id="important">*</span> </b></label>
+              <input autocomplete="off" class="form-control" id="form-mail" type="text" placeholder="Enter Email"
+                name="email" required />
+            </div>
+            <div class="col g-2">
+              <label class="form-label" for="form-number"><b>Phone Number <span id="important">*</span></b></label>
+              <input class="form-control" id="form-number" type="text" placeholder="Enter Phone Number" name="phone"
+                maxlength="15" required />
+            </div>
+            <div class="mt-3 row d-flex justify-content-center">
+              <div class="col-4 p-1 w-50">
+                <button type="button" class="btn btn-danger w-100" id="hide_form">
+                  Close
+                </button>
+              </div>
+              <div class="col-4 p-1 w-50">
+                <button type="button" class="btn btn-success w-100" onclick="openPopup()">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Search Modal Start-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content mt-35">
+        <div class="modal-header">
+          <form class="searchForm">
+            <div class="col-12 p-1 bg-light rounded rounded-pill shadow-sm mb-2">
+              <div class="input-group">
+                <input type="text" id="searchbar" name="searchbar"
+                  class="form-control border-0 rounded rounded-pill bg-light" onkeyup="searchContent()"
+                  aria-describedby="button-addon1" autocomplete="off" />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-body px-4 py-4 overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar"
+          data-mcs-theme="dark">
+          <ul class="list-unstyled">
+            <li class="content mb-3">
+              <button onclick="jumpToMain('home_skyfinch')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Home | SkyFinch
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToMain('sec1')" class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Why Choose should join us
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToMain('sec2')" class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Skyfinch Teams
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToMain('sec2_1')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Skyfinch | Applications
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToMain('sec3')" class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Skyfinch Highlights
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToMain('sec4')" class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Why choose us | Our projects, product, customer and Global
+                office
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToMain('sec5')" class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                The MR Reporting software is an Online
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToMain('sec6')" class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Skyfinch makes your Business Proud | Application | Window |
+                All products
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToMain('sec7')" class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Our valuable Customer | Got A Project Or A Partnership In
+                Mind? | contact Us
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToMain('sec13')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Footer | Social media's | Address
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToService('tab-sec')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Awesome Financial Services For Business
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToService('req-call')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Request A Call-Back | Get In Touch
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToService('service_land')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Service | Home
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToAbout('about_land')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                About | Home
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToAbout('about_view')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                We Help Our Clients To Grow Their Business | About Us
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToAbout('about_Awards')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Our relevant Achievements | Awards | 24/7 Available
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToAbout('about_no1')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">The Number #1 Product & Service
+                Company | About Us
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToAbout('about_Teams')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Exclusive Teams | About Us
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToContact('contact_land')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Contact Us | Home
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToContact('contact_form')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Contact Us | Forms | If You Have Any Query, Please Contact Us
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToSales('sales_land')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Home | Point of Sales | POS
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToSales('abt-wave')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Overview | Point of Sales | POS
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToSales('sales_image')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                POS - The Complete Accounting Solution for All Sales
+                Activities | Points of Sales
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToSales('tab-sec')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                POS | Sales | Module`s
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToSales('sec8')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                POS | Sales | Choose The Right Plan For Your Business | Plan
+                and Price
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToHms('hotel_land')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Home | Hotel Management System
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToHms('abt-wave')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Overview | Hotel Management System | HMS
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToHms('hms_image')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                HMS - The End to End Digital Solution for the Workflow of All
+                types Hotel | Hotel Management System
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToHms('tab-sec')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                HMS | Hotel | Module`s
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToHms('sec8')" class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                HMS | Hotel | Choose The Right Plan For Your Business | Plan
+                and Price
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToRms('Restaurant_land')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Home | Restaurant Management System
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToRms('abt-wave')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Overview | Restaurant Management System | RMS
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToRms('rms_image')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                RMS - Complete Solution for Quick & Error-Free Restaurant
+                Sales Process | Restaurant Management System
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToRms('tab-sec')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                RMS | Restaurant | Module`s
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToRms('sec8')" class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                RMS | Restaurant | Choose The Right Plan For Your Business |
+                Plan and Price
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToSsfinch('smart_land')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Home | Smart-SkyFinch Management System
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToSsfinch('abt-wave')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Overview | Smart-SkyFinch Management System | SMS
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToSsfinch('ssfinch_image')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                SMS - The Smart Choice for Total Digital Solution for All
+                Business Processes | Smart-SkyFinch Management System
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToSsfinch('tab-sec')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                SMS | Smart-SkyFinch | Module`s
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToSsfinch('sec8')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                SMS | Smart-SkyFinch | Choose The Right Plan For Your Business
+                | Plan and Price
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToVms('vms_land')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Home | Visitor's Management System
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToVms('abt-wave')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Overview | Visitor's Management System | VMS
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToVms('vms_image')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                VMS - Complete control over Visitor Management in the best of
+                Business Interests | Visitor's Management System
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToVms('tab-sec')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                VMS | Visitor's | Module`s
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToVms('sec8')" class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                VMS | Visitor's | Choose The Right Plan For Your Business |
+                Plan and Price
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToCrm('crm_land')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Home | CRM
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToCrm('abt-wave')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Overview | CRM
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToCrm('crm_image')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                CRM - Absolute, Real-time Visibility Powered CRM Automation
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToCrm('tab-sec')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                CRM | Module`s
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToCrm('sec8')" class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                CRM | Choose The Right Plan For Your Business | Plan and Price
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToCtm('ctm_land')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Home | Transport Management System | TMS
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToCtm('abt-wave')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Overview | Transport Management System | TMS
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToCtm('ctm_image')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                TMS - Digital Platform to Streamline and Control Corporate Travel Process & Budget
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToCtm('tab-sec')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                TMS | Module`s
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToCtm('sec8')" class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                TMS | Choose The Right Plan For Your Business | Plan and Price
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToEms('ems_land')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Home | Events Management System | EMS
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToEms('abt-wave')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Overview | Events Management System | EMS
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToEms('ems_image')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                EMS - Robust Solution to Scale the Workflow of Any Event | Events Management System
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToEms('tab-sec')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                EMS | Module`s
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToEms('sec8')" class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                EMS | Choose The Right Plan For Your Business | Plan and Price
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToFms('fms_land')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Home | Fleet Management System
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToFms('abt-wave')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Overview | Fleet Management System | FMS
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToFms('fms_image')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                FMS - Complete control over Fleet Management in the best of
+                Business Interests | Fleet Management System
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToFms('tab-sec')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                FMS | Module`s
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToFms('sec8')" class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                FMS | Choose The Right Plan For Your Business | Plan and Price
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToPms('pms_land')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Home | Payroll Management System
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToPms('abt-wave')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Overview | Payroll Management System | PMS
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToPms('pms_image')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Payroll - Complete control over Payroll Management in the best
+                of Business Interests | Payroll Management System
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToPms('tab-sec')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                PMS | Payroll | Module`s
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToPms('sec8')" class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                PMS | Payroll | Choose The Right Plan For Your Business | Plan and Price
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToSs('ss_land')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Home | Sales and Services Management System
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToSs('abt-wave')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Overview | Sales and Services Management System
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToSs('ss_image')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Sales and Services - Complete control over Sales and Services
+                Management in the best of Business Interests
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToSs('tab-sec')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Sales and Services Management System | Module`s
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToSs('sec8')" class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Sales and Services Management System | Choose The Right Plan
+                For Your Business | Plan and Price
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToProfile('land_profile')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Profile | SkyFinch - Home
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToProfile('profile_sec2_1')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Profile | About SkyFinch | Traits | About Roadmap’s
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToProfile('profile_sec2_2')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Profile | SkyFinch Technologies
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToProfile('profile_sec2_3')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Profile | About SkyFinch Products
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToProfile('profile_sec2_4')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Profile | Our Products
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToProfile('profile_sec2_5')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Profile | IT Services
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToProfile('profile_sec2')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Profile | SkyFinch Legacy
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToPp('bg-anti')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Privacy Policy | Home
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToPp('policy_tab')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Privacy Policy | Secure data Policy
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToAp('bg-anti')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Anti-Spam Policy | Home
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToAp('policy_tab')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Anti-Spam Policy | Secure data Policy
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToCp('bg-anti')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Confidentiality Policy | Home
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToCp('policy_tab')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Confidentiality Policy | Secure data Policy
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToTerm('bg-terms')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Terms of Use | Home
+              </button>
+            </li>
+            <li class="content mb-3">
+              <button onclick="jumpToTerm('terms_tab')"
+                class="btn btn-outline-primary border-0 w-100 text-start searchLink">
+                Terms of Use | Secure data Policy
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Search Modal End-->
+  <!-- Navbar Start -->
+  <div class="container-fluid vw-nav fixed-top m-0 p-0 wow fadeIn" data-wow-delay="0.8s">
+    <div class="top-bar row gx-2 pb-lg-0 align-items-center d-lg-flex d-md-flex d-none bg-blue wow fadeIn">
+      <div class="col-lg-7 col-md-12 text-start id_con">
+        <medium class="ms-lg-2"><i id="top-icons" class="fa fa-map-marker-alt me-lg-2 me-md-2">
+          </i>5, Republic Street, Reddiarpalayam, Puducherry-605010,
+          India</medium>
+        <medium class="ms-lg-3 ms-0"><i id="top-icons" class="fa fa-clock me-lg-2 me-md-2 me-0">
+          </i>9.00 am - 6.30 pm (IST)</medium>
+      </div>
+      <div class="col-lg-5 col-md-5 text-lg-end text-md-start pe-lg-3 id_con">
+        <medium class=""><i id="top-icons" class="fa fa-envelope me-lg-2 me-md-2 me-0"></i><a class="text-dark"
+            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@skyfinch.com" target="_blank"
+            rel="noopener noreferrer">info&#x40;skyfinch.com</a>
+        </medium>
+        <medium class="ps-lg-1 ps-0"><i id="top-icons" class="fa fa-phone me-lg-2 me-md-2 me-0"></i><a class="text-dark"
+            href="tel:+91 9443487210">+91 9443487210</a>
+        </medium>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light py-lg-0 py-md-2 py-2 px-lg-4 wow fadeIn bg-white"
+      data-wow-delay="0.9s">
+      <a href="index.html" class="navbar-brand ms-0 ms-lg-0">
+        <img src="img/cloud.png" alt="" class="r-cloud wow slideInLeft" data-wow-delay="1.2s" />
+        <img src="img/cloud.png" alt="" class="l-cloud wow slideInRight" data-wow-delay="1s" />
+        <b class="display-6 cloud">SkyFinch
+          <h6 class="me-0 p-0">Solution to Success</h6>
+        </b>
+      </a>
+      <div class="nav-icons d-lg-none d-md-flex d-flex ms-4 gap-1 wow fadeInDown" data-wow-delay="1.9s">
+        <a class="btn ms-1" href="https://www.facebook.com/skyfinch.roadmap" data-bs-toggle="tooltip"
+          data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Facebook" target="_blank">
+          <img class="img-icons1" src="img/socialMedia/facebook_icon.png" alt="facebook" />
+        </a>
+        <a class="btn ms-1" href="https://twitter.com/Roadmaperp" data-bs-toggle="tooltip" data-bs-placement="bottom"
+          data-bs-custom-class="custom-tooltip" data-bs-title="Twitter" target="_blank">
+          <img class="img-icons" src="img/socialMedia/twitter.png" alt="twitter" />
+        </a>
+        <a class="btn ms-1" href="https://www.instagram.com/skyfinchroadmap" data-bs-toggle="tooltip"
+          data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Instagram" target="_blank">
+          <img class="img-icons" src="img/socialMedia/instagram.png" alt="instagram" />
+        </a>
+        <a class="btn ms-1" href="https://www.linkedin.com/company/skyfinchroadmap" data-bs-toggle="tooltip"
+          data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="LinkedIn" target="_blank">
+          <img class="img-icons" src="img/socialMedia/linkedin_icon.png" alt="linkedin" />
+        </a>
+      </div>
+      <div class="hamburger hamburger--emphatic" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse me-2" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+          <!-- Search Bar start -->
+          <a class="p-0 pb-0 me-4 d-flex justify-content-center align-items-center">
+            <button id="searchButton" type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+              data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+              <span class="row">
+                <i class="col-1 fa fa-search"></i>
+                <h6 class="col-10 p-0 m-0">Search...</h6>
+              </span>
+            </button>
+          </a>
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="service.html" class="nav-item nav-link">Services</a>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="solutionsDropdown">Solutions</a>
+            <div class="dropdown-menu border-light m-0 p-0">
+              <!-- Add IDs to buttons for easier targeting -->
+              <div class="submenu w-100 px-3 py-0">
+                <button class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="applicationBtn">
+                  Application
+                  <span class="arrow"><i class="fa-solid fa-angles-right"></i></span>
+                </button>
+                <div class="dropdown-content1 application text-dec px-lg-2 py-lg-2 py-3">
+                  <a href="sales.html">POS</a><br />
+                  <a href="hms.html">Hotel Management System</a><br />
+                  <a href="rms.html">Restaurant Management System</a><br />
+                  <a href="ssfinch.html">Smart-SkyFinch</a><br />
+                  <a href="vms.html">Visitors Management System</a><br />
+                </div>
+              </div>
+              <br class="d-lg-none d-sm-block" />
+              <div class="submenu w-100 px-3 py-0">
+                <button class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="webBtn">
+                  Web
+                  <span class="arrow1"><i class="fa-solid fa-angles-right"></i></span>
+                </button>
+                <div class="dropdown-content1 web text-dec px-lg-2 py-lg-2 py-3">
+                  <a href="crm.html">CRM</a><br />
+                  <a href="ctm.html">Travel Management System</a><br />
+                  <a href="fms.html">Fleet Management System</a><br />
+                  <a href="ems.html">Event Management System</a><br />
+                  <a href="payroll.html">PayRoll Management System</a><br />
+                  <a href="sands.html">Sales and Service System</a><br />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="solutionsDropdown1">Company</a>
+            <div class="dropdown-menu border-light m-0 p-0">
+              <!-- Add IDs to buttons for easier targeting -->
+              <div class="submenu w-100 px-3 py-0">
+                <a href="about.html" class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="abt_btn">About Us
+                </a>
+              </div>
+              <br class="d-lg-none d-sm-block" />
+              <div class="submenu w-100 px-3 py-0">
+                <a href="profile.html" class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="pro_btn">Profile
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+        <div class="d-lg-flex d-none justify-content-lg-center align-items-lg-center" style="height: 30px">
+          <div class="vr text-dark" style="width: 2.5px"></div>
+        </div>
+        <div class="d-lg-inline-block d-md-none d-none d-grid ms-lg-2 ms-md-2 ms-2">
+          <a class="btn ms-lg-2 ms-3 p-0" href="https://www.facebook.com/skyfinch.roadmap" data-bs-toggle="tooltip"
+            data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Facebook" target="_blank">
+            <img class="img-icons1" src="img/socialMedia/facebook_icon.png" alt="" />
+          </a>
+          <a class="btn ms-lg-2 ms-3 p-0" href="https://twitter.com/Roadmaperp" data-bs-toggle="tooltip"
+            data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Twitter" target="_blank">
+            <img class="img-icons" src="img/socialMedia/twitter.png" alt="" />
+          </a>
+          <a class="btn ms-lg-2 ms-1 p-0" href="https://www.instagram.com/skyfinchroadmap" data-bs-toggle="tooltip"
+            data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Instagram" target="_blank">
+            <img class="img-icons" src="img/socialMedia/instagram.png" alt="" />
+          </a>
+          <a class="btn ms-lg-3 ms-3 p-0" href="https://www.linkedin.com/company/skyfinchroadmap"
+            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
+            data-bs-title="LinkedIn" target="_blank">
+            <img class="img-icons1" src="img/socialMedia/linkedin_icon.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- Navbar End -->
+  <main class="">
+    <!-- Carousel Start -->
+    <section id="home_skyfinch" class="container-fluid ps-0 pe-0 h-crus mt-lg-2 pt-lg-5 pt-md-3 pt-2 scroll wow fadeIn"
+      data-wow-delay="1.8s">
+      <div class="container1 mt-lg-0">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#header-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item container2 active">
+              <img class="img-fluid bg-size w-100 opacity-my" src="img/india/curInd01.jpg" alt="Image" />
+              <div class="carousel-caption">
+                <div class="container mt-lg-0 mt-md-0 mt-5">
+                  <div class="row justify-content-start">
+                    <div class="col-lg-7 caro-caption">
+                      <p
+                        class="d-inline-block border shadow border-muted rounded text-primary fw-bold py-lg-1 px-lg-3 px-md-3 px-2 mb-lg-1 pb-lg-1 mb-md-1 pb-md-1 mb-5 animated slideInDown">
+                        Empowering Businesses
+                      </p>
+                      <h1 class="display-3 mb-lg-2 pb-lg-1 mb-md-2 pb-md-1 top-slide1 animated slideInDown">
+                        Scalable Platforms To Tackle All Market Conditions
+                      </h1>
+                      <p class="text-dark fw-semibold mid-slide1" style="
+                              text-shadow: -0.05px 0 black, 0 0.05px black,
+                                0.05px 0 black, 0 -0.05px black;
+                            ">
+                        The futuristic assembly of Skyfinch software meets
+                        real-time market trends and can also take on any
+                        future market disruption.
+                      </p>
+                      <a href="about.html" class="btn ind-btn-primary py-2 px-3 animated slideInUp">Learn More</a>
+                      <a href="product Enquiry.html" class="btn ind-btn-warning py-2 px-3 animated slideInUp"
+                        onclick="choosePlan('', '')">Product Enquiry</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item container2">
+              <img class="img-fluid bg-size w-100 opacity-my" src="img/india/ind04.jpg" alt="Image" />
+              <div class="carousel-caption">
+                <div class="container">
+                  <div class="row justify-content-start">
+                    <div class="col-lg-8 caro-caption mb-lg-4 mb-0">
+                      <p
+                        class="d-inline-block border shadow border-muted rounded text-primary fw-bold py-lg-1 px-lg-3 px-md-3 px-2 mb-lg-1 pb-lg-1 mb-md-1 pb-md-1 mt-5 animated slideInDown">
+                        Empowering Businesses
+                      </p>
+                      <h1 class="display-3 mb-lg-2 pb-lg-1 mb-md-2 pb-md-1 top-slide2 animated slideInDown">
+                        Get Skyfinch & Bridge Digital Transformation
+                      </h1>
+                      <p class="text-dark fw-semibold mid-slide2" style="
+                              text-shadow: -0.05px 0 black, 0 0.05px black,
+                                0.05px 0 black, 0 -0.05px black;
+                            ">
+                        Digitally Transform your business workflow with the
+                        Skyfinch range of technological solutions; and thwart
+                        all competition.
+                      </p>
+                      <a href="about.html" class="btn ind-btn-warning py-2 px-3 animated slideInDown">Learn More</a>
+                      <a href="product Enquiry.html" class="btn ind-btn-primary py-2 px-3 animated slideInDown"
+                        onclick="choosePlan('', '')">Product Enquiry</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item container2">
+              <img class="img-fluid bg-size w-100 opacity-my" src="img/india/ind01.jpg" alt="Image" />
+              <div class="carousel-caption">
+                <div class="container">
+                  <div class="row justify-content-start">
+                    <div class="col-lg-7 caro-caption">
+                      <p
+                        class="d-inline-block border shadow border-muted rounded text-primary fw-bold py-lg-1 px-lg-3 px-md-3 px-2 mb-lg-1 pb-lg-1 mb-md-1 pb-md-1 mt-5 animated slideInDown">
+                        Empowering Businesses
+                      </p>
+                      <h1 class="display-3 mb-lg-2 pb-lg-1 mb-md-2 pb-md-1 top-slide3 animated slideInDown">
+                        Flexible Solutions For All Businesses
+                      </h1>
+                      <p class="text-dark fw-semibold mid-slide3" style="
+                              text-shadow: -0.05px 0 black, 0 0.05px black,
+                                0.05px 0 black, 0 -0.05px black;">
+                        Skyfinch’s digital solutions are highly flexible and
+                        can be tailor-made to fit the unique process
+                        requirements of any type of business.
+                      </p>
+                      <a href="404.html" class="btn ind-btn-warning py-2 px-3 animated slideInDown">Request A Free
+                        Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" data-bs-target="#header-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" data-bs-target="#header-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Carousel End -->
+    <!--Section 1 start-->
+    <section id="sec1" class="container1 bg-03 container-fluid pt-lg-2 pt-md-1 pb-lg-0 pb-md-3 pb-3">
+      <div class="container mt-lg-3 py-lg-3 py-md-2">
+        <div class="row gy-lg-5 pt-lg-5 pt-0 d-flex justify-content-center align-items-center">
+          <div class="col-lg-8 col-12 one-lg one-md one-s one-sm wow fadeInDown" data-wow-delay="0.1s"
+            data-aos-duration="500" data-aos="fade-up">
+            <div class="row d-flex align-items-center justify-content-center">
+              <div class="col-12 col-md-6 col-lg-6 gy-2">
+                <div class="card py-lg-2 p-1 text-start border-0 hov1 shadow">
+                  <h4 class="fw-bold pb-lg-1 pt-lg-1 pt-0 pb-1 ps-2">
+                    <span class=""></span>GST Ready Billing
+                    <div class="main_divider"></div>
+                  </h4>
+                  <p class="text-muted px-2 mb-lg-0 mb-1">
+                    All Skyfinch solutions that deal with sales and
+                    billing/invoicing are assigned built-in features to meet
+                    all GST’s requirements.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-6 gy-2">
+                <div class="card py-lg-2 p-1 text-start border-0 hov1 shadow">
+                  <h4 class="fw-bold pb-lg-1 pt-lg-1 pt-0 pb-1 ps-2">
+                    <span class=""></span>Best Practices
+                    <div class="main_divider"></div>
+                  </h4>
+                  <p class="text-muted px-2 mb-lg-0 mb-1">
+                    To name one, Skyfinch employs CASE tools to plan and
+                    design data model, Application Development and
+                    implementation cycles.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-6 gy-2">
+                <div class="card py-lg-2 p-1 text-start border-0 hov1 shadow">
+                  <h4 class="fw-bold pb-lg-1 pt-lg-1 pt-0 pb-1 ps-2">
+                    <span class=""></span>Routine Maintenance
+                    <div class="main_divider"></div>
+                  </h4>
+                  <p class="text-muted px-2 mb-lg-0 mb-1">
+                    Skyfinch's support team handles on-site and off-site
+                    modifications, enhancements, and documentation in a
+                    hassle-free manner.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-6 gy-2">
+                <div class="card py-lg-2 p-1 text-start border-0 hov1 shadow">
+                  <h4 class="fw-bold pb-lg-1 pt-lg-1 pt-0 pb-1 ps-2">
+                    <span class=""></span>Time Savings
+                    <div class="main_divider"></div>
+                  </h4>
+                  <p class="text-muted px-2 mb-lg-0 mb-1">
+                    “Have regular hours for work and play; make each day both
+                    useful, pleasant and prove that you understand the worth
+                    of time.”
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-lg-4 col-md-8 pt-2 mt-2 pb-md-3 text-center wow fadeInDown"
+            data-wow-delay="0.1s" data-aos-duration="500" data-aos="slide-up">
+            <h2 class="fw-bold display-6 pb-4 pt-4">
+              Why you should Join Us
+            </h2>
+            <img src="img/cur03.png" alt="" class="img-fluid" style="height: 250px" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section 1 end-->
+    <!--Section 2 start-->
+    <section id="sec2" class="container1 container-fluid bg-02 py-lg-5">
+      <div class="container my-0 pb-4 mb-0 mb-lg-0">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div
+            class="col-lg-6 col-md-12 col-12 order-sm-first order-last text-center mt-2 pt-2 mt-lg-5 pt-lg-5 wow fadeInUp"
+            data-wow-delay="0.1s" data-aos-duration="500" data-aos="fade-up">
+            <img src="img/sky-teams.png" alt="" class="img-fluid rounded mt-2" width="400" />
+          </div>
+          <div class="col-lg-6 col-md-12 col-12 pb-md-1 pt-lg-5 mt-3 mt-lg-3 wow fadeInDown" data-wow-delay="0.1s"
+            data-aos-duration="500" data-aos="fade-up">
+            <h2 class="fw-bold display-5 mt-lg-4 pt-lg-5">
+              The Skyfinch Team
+            </h2>
+            <h5 class="fw-bold pb-2 pt-2">
+              Highly Qualified and Experienced
+            </h5>
+            <p class="text-muted text-justify">
+              Skyfinch’s Applications Development team is technically sound in
+              the latest version technological platforms and tools. Our
+              technical team has profound expertise to develop the Apps in
+              Android, and Apple's iOS platforms using the latest development
+              tools.
+            </p>
+            <p class="text-muted text-justify">
+              Loaded with such technical finesse Skyfinch’s expert Application
+              development professionals have repeatedly and successfully
+              brought on to the screen of any desired device, all the workflow
+              requirements pictured by our clients for their business
+              processes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sec2_1" class="container1 container-fluid bg-02 pt-lg-1 pt-1 pb-lg-0 pb-1">
+      <div class="container-fluid mt-lg-1 pt-lg-1">
+        <div id="order-row" class="row d-flex justify-content-center align-items-center mt-lg-2 pt-lg-0 pt-0">
+          <div
+            class="one-sm one-s one-md one-lg one-xl col-xl-9 col-lg-12 col-md-12 col-12 pt-lg-4 mt-lg-2 gy-lg-2 pb-lg-1 mb-lg-1"
+            data-aos-duration="500" data-aos="fade-up">
+            <div
+              class="row d-none d-md-flex d-lg-flex mt-lg-3 mt-md-3 mt-2 mb-lg-0 mb-md-4 mb-4 align-items-center justify-content-center">
+              <div class="col-lg-4 col-9 col-md-6 gy-lg-2 gy-4 pt-lg-1 wow fadeInUp" data-wow-delay="0.1s"
+                data-aos-duration="500" data-aos="fade-up">
+                <div class="card text-center border-0 team">
+                  <div class="heart align-self-center mb-1">
+                    <i class="bi bi-arrow-down-up display-5 display-my text-primary"></i>
+                  </div>
+                  <h5 class="fw-bold pb-1 mb-1">Online Applications</h5>
+                  <p class="text-muted text-justify">
+                    We develop business-specific Online Applications to
+                    empower business stakeholders to make business
+                    transactions from anywhere at any time.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-9 col-md-6 gy-lg-2 gy-4 pt-lg-1 wow fadeInUp" data-wow-delay="0.1s"
+                data-aos-duration="500" data-aos="fade-up">
+                <div class="card text-center border-0 team">
+                  <div class="heart align-self-center mb-1">
+                    <i class="bi bi-wifi-off display-5 display-my text-primary"></i>
+                  </div>
+                  <h5 class="fw-bold pb-1 mb-1">Offline Applications</h5>
+                  <p class="text-muted text-justify">
+                    Skyfinch’s Offline Applications are state of the art
+                    solutions built to digitally integrate and selectively
+                    automate the workflow of any type of trade.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-9 col-md-6 gy-lg-2 gy-4 wow fadeInUp" data-wow-delay="0.1s"
+                data-aos-duration="500" data-aos="fade-up">
+                <div class="card text-center border-0 team">
+                  <div class="heart align-self-center mb-1">
+                    <i class="bi bi-columns-gap display-5 display-my text-primary"></i>
+                  </div>
+                  <h5 class="fw-bold pb-1 mb-1">Hybrid Solutions</h5>
+                  <p class="text-muted p-0 text-justify">
+                    Skyfinch can develop and support applications in different
+                    platforms, architecture and languages. Our solutions are
+                    more flexible and can support stake holders of different
+                    regions.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-9 col-md-6 gy-lg-2 gy-4 wow fadeInUp" data-wow-delay="0.1s"
+                data-aos-duration="500" data-aos="fade-up">
+                <div class="card text-center border-0 team">
+                  <div class="heart align-self-center mb-1">
+                    <i class="bi bi-broadcast display-5 display-my text-primary"></i>
+                  </div>
+                  <h5 class="fw-bold pb-1 mb-1">Hybrid Applications</h5>
+                  <p class="text-muted text-justify">
+                    We are technically sound in synchronizing data from local
+                    environment to online cloud for integration and
+                    utilization of data across regions by different stake
+                    holders.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-9 col-md-6 gy-lg-2 gy-4 wow fadeInUp" data-wow-delay="0.1s"
+                data-aos-duration="500" data-aos="fade-up">
+                <div class="card text-center border-0 team">
+                  <div class="heart align-self-center mb-1">
+                    <i class="bi bi-phone-flip display-5 display-my text-primary"></i>
+                  </div>
+                  <h5 class="fw-bold pb-1 mb-1">Mobile Applications</h5>
+                  <p class="text-muted text-justify">
+                    Our expertise in improvising with technology is the
+                    ultimate solution to modernize and extend the reach out of
+                    businesses through Mobile Apps.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-9 col-md-6 gy-lg-2 gy-4 wow fadeInUp" data-wow-delay="0.1s"
+                data-aos-duration="500" data-aos="fade-up">
+                <div class="card text-center border-0 team">
+                  <div class="heart align-self-center mb-1">
+                    <i class="bi bi-database-down display-5 display-my text-primary"></i>
+                  </div>
+                  <h5 class="fw-bold pb-1 mb-1">Database Solutions</h5>
+                  <p class="text-muted text-justify">
+                    We are technically sound to efficiently handle Data
+                    migration, Data Integration, and Database Administration
+                    activities for all business purposes.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Section 2 responsive page view -->
+            <div id="swiper_app"
+              class="row d-flex d-md-none d-lg-none mt-lg-3 mt-md-3 mt-2 mb-lg-0 mb-md-4 mb-4 align-items-center justify-content-center">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="col-lg-6 col-12 col-md-12 gy-lg-3 gy-4 pt-lg-1 wow fadeInUp" data-wow-delay="0.1s"
+                      data-aos-duration="500" data-aos="fade-up">
+                      <div class="card text-center border-0 team">
+                        <div class="heart align-self-center">
+                          <i class="bi bi-arrow-down-up display-5 display-my text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold pb-1">Online Applications</h5>
+                        <p class="text-muted px-3">
+                          We develop business-specific Online Applications to
+                          empower business stakeholders to make business
+                          transactions from anywhere at any time.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="col-lg-6 col-12 col-md-12 gy-lg-3 gy-4 pt-lg-1 wow fadeInUp" data-wow-delay="0.1s"
+                      data-aos-duration="500" data-aos="fade-up">
+                      <div class="card text-center border-0 team">
+                        <div class="heart align-self-center">
+                          <i class="bi bi-wifi-off display-5 display-my text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold pb-1">Offline Applications</h5>
+                        <p class="text-muted px-3">
+                          Skyfinch’s Offline Applications are state of the art
+                          solutions built to digitally integrate and
+                          selectively automate the workflow of any type of
+                          trade.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="col-lg-6 col-12 col-md-12 gy-lg-2 gy-4 wow fadeInUp" data-wow-delay="0.1s"
+                      data-aos-duration="500" data-aos="fade-up">
+                      <div class="card text-center border-0 team">
+                        <div class="heart align-self-center mb-1">
+                          <i class="bi bi-broadcast display-5 display-my text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold pb-1 mb-1">Hybrid Applications</h5>
+                        <p class="text-muted px-3">
+                          We are technically sound in synchronizing data from
+                          local environment to online cloud for integration
+                          and utilization of data across regions by different
+                          stake holders.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="col-lg-6 col-12 col-md-12 gy-lg-2 gy-4 wow fadeInUp" data-wow-delay="0.1s"
+                      data-aos-duration="500" data-aos="fade-up">
+                      <div class="card text-center border-0 team">
+                        <div class="heart align-self-center mb-1">
+                          <i class="bi bi-phone-flip display-5 display-my text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold pb-1 mb-1">Mobile Applications</h5>
+                        <p class="text-muted px-3">
+                          Our expertise in improvising with technology is the
+                          ultimate solution to modernize and extend the reach
+                          out of businesses through Mobile Apps.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="col-lg-6 col-12 col-md-12 gy-lg-3 gy-4 pt-lg-1 wow fadeInUp" data-wow-delay="0.1s"
+                      data-aos-duration="500" data-aos="fade-up">
+                      <div class="card text-center border-0 team">
+                        <div class="heart align-self-center mb-1">
+                          <i class="bi bi-columns-gap display-5 display-my text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold pb-1 mb-1">Hybrid Solutions</h5>
+                        <p class="text-muted px-3">
+                          Skyfinch can develop and support applications in
+                          different platforms, architecture and languages. Our
+                          solutions are more flexible and can support stake
+                          holders of different regions.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="col-lg-6 col-12 col-md-12 gy-lg-2 gy-4 wow fadeInUp" data-wow-delay="0.1s"
+                      data-aos-duration="500" data-aos="fade-up">
+                      <div class="card text-center border-0 team">
+                        <div class="heart align-self-center mb-1">
+                          <i class="bi bi-database-down display-5 display-my text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold pb-1 mb-1">Database Solutions</h5>
+                        <p class="text-muted px-3">
+                          We are technically sound to efficiently handle Data
+                          migration, Data Integration, and Database
+                          Administration activities for all business purposes.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="two-sm two-s two-md two-lg two-xl col-xl-3 col-lg-12 col-md-12 col-12 text-center mt-2 pt-2 mt-lg-5 pt-lg-5 wow fadeInUp"
+            data-wow-delay="0.1s" data-aos-duration="500" data-aos="fade-up">
+            <h2 class="fw-bold display-4 text-center">
+              Skyfinch Applications
+            </h2>
+            <img src="img/Smart-img.png" alt="" class="img-fluid rounded mt-1 smt_img" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 2 end -->
+    <!-- Section 3 start -->
+    <section id="sec3" class="container1 container-fluid bg-5 pt-2 pt-lg-1 pb-lg-1 pb-3">
+      <div class="container pt-lg-1 py-1">
+        <div class="row d-flex justify-content-center align-items-center mt-2 mt-lg-5 pt-0 pt-lg-3">
+          <div class="col-12">
+            <h4 class="fw-bold display-4 pb-2 pb-lg-0 text-center wow fadeInDown" data-wow-delay="0.1s"
+              data-aos-duration="500" data-aos="fade-up">
+              Skyfinch Highlights
+            </h4>
+            <div class="row d-flex align-items-center justify-content-center">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4" data-wow-delay="0.1s"
+                data-aos-duration="500" data-aos="zoom-in">
+                <div class="card border-0 pill-bg rounded-pill">
+                  <div class="row d-flex align-items-center justify-content-center py-1">
+                    <div
+                      class="decor d-flex align-items-center justify-content-center col-lg-2 col-md-6 col-sm-6 py-md-3 py-3 py-lg-0">
+                      <div class="beat-second">
+                        <i class="bi bi-bounding-box h1 fs-3"></i>
+                      </div>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-12 ps-lg-4">
+                      <h4
+                        class="d-flex align-items-center justify-content-center d-lg-flex align-items-lg-center justify-content-lg-start fw-bold pb-1 pt-1">
+                        Fits All Business Sizes
+                      </h4>
+                      <p class="text-dark">
+                        Skyfinch offers Inclusive solutions like Hotel
+                        Management System as well as dedicated solutions like
+                        Restaurant Management System.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4" data-wow-delay="0.1s"
+                data-aos-duration="500" data-aos="zoom-in">
+                <div class="card border-0 pill-bg1 rounded-pill">
+                  <div class="row d-flex align-items-center justify-content-center py-md-1">
+                    <div
+                      class="decor d-flex align-items-center justify-content-center col-lg-2 col-md-6 col-sm-6 py-md-3 py-3 py-lg-0">
+                      <div class="beat-second">
+                        <i class="bi bi-bar-chart h1 fs-3"></i>
+                      </div>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-12 ps-lg-4">
+                      <h4
+                        class="d-flex align-items-center justify-content-center d-lg-flex align-items-lg-center justify-content-lg-start fw-bold pb-1 pt-1">
+                        Scalability Unlimited
+                      </h4>
+                      <p class="text-dark">
+                        The use of up-to-date software and impeccable onsite
+                        and offsite support ensures the all-time relevance of
+                        Skyfinch solutions.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4" data-wow-delay="0.1s"
+                data-aos-duration="500" data-aos="zoom-in">
+                <div class="card border-0 pill-bg1 rounded-pill">
+                  <div class="row d-flex align-items-center justify-content-center py-md-1">
+                    <div
+                      class="decor d-flex align-items-center justify-content-center col-lg-2 col-md-6 col-sm-6 py-md-3 py-3 py-lg-0">
+                      <div class="beat-second">
+                        <i class="bi bi-nut h1 fs-3"></i>
+                      </div>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-12 ps-lg-4">
+                      <h4
+                        class="d-flex align-items-center justify-content-center d-lg-flex align-items-lg-center justify-content-lg-start fw-bold pb-1 pt-1">
+                        Versatile Solutions
+                      </h4>
+                      <p class="text-dark">
+                        Skyfinch’s flexible software can be easily customized
+                        to match all types of businesses and their unique
+                        process requirements.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4" data-wow-delay="0.1s"
+                data-aos-duration="500" data-aos="zoom-in">
+                <div class="card border-0 pill-bg rounded-pill">
+                  <div class="row d-lg-flex align-items-center justify-content-center py-md-1">
+                    <div
+                      class="decor d-flex align-items-center justify-content-center col-lg-2 col-md-6 col-sm-6 py-md-3 py-3 py-lg-0">
+                      <div class="beat-second">
+                        <i class="bi bi-hand-thumbs-up h1 fs-3"></i>
+                      </div>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-12 ps-lg-4">
+                      <h4
+                        class="d-flex align-items-center justify-content-center d-lg-flex align-items-lg-center justify-content-lg-start fw-bold pb-1 pt-1">
+                        International Standards
+                      </h4>
+                      <p class="text-dark">
+                        Skyfinch caters to business needs even across
+                        geographical borders; a profound example being its
+                        Yard
+                        <br class="d-none d-xl-block" />
+                        Management System.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4" data-wow-delay="0.1s"
+                data-aos-duration="500" data-aos="zoom-in">
+                <div class="card border-0 pill-bg rounded-pill">
+                  <div class="row d-flex align-items-center justify-content-center py-md-1">
+                    <div
+                      class="decor d-flex align-items-center justify-content-center col-lg-2 col-md-6 col-sm-6 py-md-3 py-3 py-lg-0">
+                      <div class="beat-second">
+                        <i class="bi bi-bookmark-star h1 fs-3"></i>
+                      </div>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-12 ps-lg-4">
+                      <h4
+                        class="d-flex align-items-center justify-content-center d-lg-flex align-items-lg-center justify-content-lg-start fw-bold pb-1 pt-1">
+                        Best Solution For Events
+                      </h4>
+                      <p class="text-dark">
+                        Skyfinch’s Event Management System sequentially<br class="d-none d-lg-block" />
+                        streamlines event management workflows and renders it
+                        free of all stress.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 wow fadeIn gy-3 gx-4" data-wow-delay="0.1s"
+                data-aos-duration="500" data-aos="zoom-in">
+                <div class="card border-0 pill-bg1 rounded-pill">
+                  <div class="row d-flex align-items-center justify-content-center py-md-1">
+                    <div
+                      class="decor d-flex align-items-center justify-content-center col-lg-2 col-md-6 col-sm-6 py-md-3 py-3 py-lg-0">
+                      <div class="beat-second">
+                        <i class="bi bi-clipboard-pulse h1 fs-3"></i>
+                      </div>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-12 ps-lg-4">
+                      <h4
+                        class="d-flex align-items-center justify-content-center d-lg-flex align-items-lg-center justify-content-lg-start fw-bold pb-1 pt-1">
+                        The Point Of Sale Module
+                      </h4>
+                      <p class="text-dark">
+                        Skyfinch’s Point of Sale module is a state of the art
+                        solution for all businesses whenever and wherever
+                        there is a sales activity.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section 3 end-->
+    <!--Section 4 start-->
+    <section id="sec4"
+      class="container1 container-fluid bg-04 py-lg-0 mt-lg-0 mb-lg-1 mt-md-0 mb-md-1 pb-md-1 my-0 py-1">
+      <div class="container">
+        <div class="row d-flex justify-content-center align-items-center pt-70">
+          <div class="col-lg-12 pt-3">
+            <div class="row d-flex align-items-center justify-content-center pt-2">
+              <div
+                class="col-lg-3 col-md-5 col-6 text-center gy-lg-2 pt-lg-5 pb-lg-1 gy-md-2 pt-md-3 pb-md-1 gy-2 pt-2 pb-1 wow fadeIn"
+                data-wow-delay="0.1s">
+                <div class="card border-0 bg-transparent text-center pop1 mt-3">
+                  <div class="">
+                    <i class="bi bi-terminal-fill display-5 text-secondary"></i>
+                  </div>
+                  <div class="px-2 py-0 pb-lg-1">
+                    <h4 class="fw-semibold pt-0 text-secondary mb-0">
+                      <span class="count display-3 text-light fw-bold my-0">20</span>+ <br />
+                      Products
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-5 col-6 text-center pt-lg-5 pb-lg-1 gy-lg-2 pt-md-3 pb-md-1 gy-md-2 pt-2 pb-1 gy-2 wow fadeIn"
+                data-wow-delay="0.1s">
+                <div class="card border-0 bg-transparent text-center pop1 mt-3">
+                  <div class="">
+                    <i class="bi bi-file-earmark-easel-fill display-5 text-secondary"></i>
+                  </div>
+                  <div class="px-2 py-0 pb-lg-1">
+                    <h4 class="fw-semibold pt-0 text-secondary mb-0">
+                      <span class="count display-3 text-light fw-bold my-0">20</span>+ <br />
+                      Projects
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-5 col-6 text-center pt-lg-5 pb-lg-1 gy-lg-2 pt-md-3 pb-md-1 gy-md-2 pt-2 pb-1 gy-2 wow fadeIn"
+                data-wow-delay="0.1s">
+                <div class="card border-0 bg-transparent text-center pop1">
+                  <div class="">
+                    <i class="bi bi-people-fill display-3 text-secondary"></i>
+                  </div>
+                  <div class="px-2 py-0 pb-lg-2">
+                    <h4 class="fw-semibold pt-0 text-secondary mb-0">
+                      <span class="count display-4 text-light fw-bold">200</span>+ <br />
+                      Customers
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-3 col-md-5 col-6 text-center pt-lg-5 pb-lg-1 gy-lg-2 pt-md-3 pb-md-1 gy-md-2 pt-2 pb-1 gy-2 wow fadeIn"
+                data-wow-delay="0.1s">
+                <div class="card border-0 bg-transparent text-center pop1 mt-3">
+                  <div class="">
+                    <i class="bi bi-buildings-fill display-5 text-secondary"></i>
+                  </div>
+                  <div class="px-2 py-0 pb-lg-1">
+                    <h4 class="fw-semibold d-lg-none pt-1 text-secondary mb-0">
+                      <span class="count display-3 text-light fw-bold my-0">10</span>+ <br />
+                      Global Offices
+                    </h4>
+                    <h4 class="fw-semibold pt-0 d-none d-lg-block text-secondary mb-0">
+                      <span class="count display-3 text-light fw-bold my-0">10</span>+ <br />
+                      Global&nbsp;Offices
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-12 col-md-12 mt-md-1 pt-md-1 mt-lg-1 mt-1 pt-1 mt-md-1 pt-md-1 pt-lg-0 mb-lg-0">
+            <h2 class="fw-bold display-6 mt-lg-1 pt-lg-0 mt-md-1 pt-md-0 mt-1 pt-1 text-center">
+              Why Choose Us
+            </h2>
+          </div>
+          <div
+            class="d-none d-md-none d-lg-flex col-lg-12 col-md-12 pb-1 mt-md-0 pb-md-1 pb-lg-0 mt-lg-1 mx-lg-0 mx-md-0 mx-5 px-lg-0 px-md-0 px-5">
+            <div class="row d-flex align-items-center justify-content-around">
+              <div class="col-lg-3 col-8 col-md-4 text-center g-lg-1 g-md-4 g-2 mx-lg-0 mx-md-0 mx-0"
+                data-aos-duration="500" data-aos="flip-right">
+                <div class="card overflow-hidden border-0 shadow pop2">
+                  <div class="icon-back py-lg-3 py-2">
+                    <i class="fa-sharp fa-solid fa-gear text-secondary fa-3x"></i>
+                  </div>
+                  <div class="p-1">
+                    <h4 class="fw-bold">Best Fit Solutions</h4>
+                    <p class="text-muted text-justify">
+                      We understand the unique challenge develop of each
+                      business, and accordingly, provide the best-fit solution
+                      to each client.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-8 col-md-4 text-center g-lg-1 g-md-4 g-2 mx-lg-0 px-md-1 mx-0"
+                data-aos-duration="500" data-aos="flip-right">
+                <div class="card overflow-hidden border-0 shadow pop2">
+                  <div class="icon-back py-lg-3 py-2">
+                    <i class="fa-solid fa-headset text-secondary fa-3x"></i>
+                  </div>
+                  <div class="p-1">
+                    <h4 class="fw-bold">Customer Support</h4>
+                    <p class="text-muted text-justify">
+                      We go beyond the normal and develop an ‘Association’
+                      with our clients to ensure that they are all set in the
+                      path of growth.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-8 col-md-4 text-center g-lg-1 g-md-4 g-2 mx-lg-0 mx-md-0 mx-0"
+                data-aos-duration="500" data-aos="flip-right">
+                <div class="card overflow-hidden border-0 shadow pop2">
+                  <div class="icon-back py-lg-3 py-2">
+                    <i class="fa-sharp fa-solid fa-money-check-dollar text-secondary fa-3x"></i>
+                  </div>
+                  <div class="p-1">
+                    <h4 class="fw-bold">Proven Credibility</h4>
+                    <p class="text-muted text-justify">
+                      We adopt proven practices right from the beginning till
+                      the final handover and our customers’ business
+                      productivity.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Responsive cards section 4 -->
+          <div id="swiper_box"
+            class="d-block d-md-block d-lg-none col-lg-12 col-md-12 pb-1 mt-md-0 pb-md-1 pb-lg-0 mt-lg-1 mx-lg-0 mx-md-0 mx-5 px-lg-0 px-md-0 px-5">
+            <div class="row d-flex align-items-center justify-content-around">
+              <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="col-lg-3 col-12 col-md-12 text-center g-lg-1 g-md-4 g-2 mx-lg-0 mx-md-0 mx-0"
+                      data-aos-duration="500" data-aos="flip-right">
+                      <div class="card overflow-hidden border-0 shadow pop2">
+                        <div class="icon-back py-lg-3 py-2">
+                          <i class="fa-sharp fa-solid fa-gear text-secondary fa-3x"></i>
+                        </div>
+                        <div class="p-1">
+                          <h4 class="fw-bold">Best Fit Solutions</h4>
+                          <p class="text-muted text-justify">
+                            We understand the unique challenge develop of each
+                            business, and accordingly, provide the best-fit
+                            solution to each client.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="col-lg-3 col-12 col-md-12 text-center g-lg-1 g-md-4 g-2 mx-lg-0 px-md-1 mx-0"
+                      data-aos-duration="500" data-aos="flip-right">
+                      <div class="card overflow-hidden border-0 shadow pop2">
+                        <div class="icon-back py-lg-3 py-2">
+                          <i class="fa-solid fa-headset text-secondary fa-3x"></i>
+                        </div>
+                        <div class="p-1">
+                          <h4 class="fw-bold">Customer Support</h4>
+                          <p class="text-muted text-justify">
+                            We go beyond the normal and develop an
+                            ‘Association’ with our clients to ensure that they
+                            are all set in the path of growth.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="col-lg-3 col-12 col-md-12 text-center g-lg-1 g-md-4 g-2 mx-lg-0 mx-md-0 mx-0"
+                      data-aos-duration="500" data-aos="flip-right">
+                      <div class="card overflow-hidden border-0 shadow pop2">
+                        <div class="icon-back py-lg-3 py-2">
+                          <i class="fa-sharp fa-solid fa-money-check-dollar text-secondary fa-3x"></i>
+                        </div>
+                        <div class="p-1">
+                          <h4 class="fw-bold">Proven Credibility</h4>
+                          <p class="text-muted text-justify">
+                            We adopt proven practices right from the beginning
+                            till the final handover and our customers’
+                            business productivity.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section 4 end-->
+    <!--Section 5 start-->
+    <section id="sec5" class="container1 container-fluid bg-09 mt-lg-0 pb-lg-2 mt-0 pb-2">
+      <div class="container pt-lg-2 mt-lg-3 pt-1 mt-3 mb-lg-0 mb-3">
+        <div class="row bg9-row d-flex justify-content-center align-items-center py-3 py-lg-0 pt-lg-2 mt-lg-4">
+          <h4 class="fw-bold display-5 mt-4 mt-lg-2 pt-4 pt-lg-1 pb-2 text-center" data-aos-duration="500"
+            data-aos="fade-up">
+            The MR Reporting software is an online
+            <!-- (d-4,h4)Software Productivity <span class="ind-text-warning">Enhancement</span> -->
+          </h4>
+          <div class="col-lg-4 wow fadeInDown" data-wow-delay="0.1s" data-aos-duration="500" data-aos="slide-up">
+            <div class="row d-flex justify-content-center align-items-center">
+              <div class="col">
+                <div
+                  class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 d-flex justify-content-center align-items-center mytooltip">
+                  <div class="col tooltip-content">
+                    <p class="fw-bold">
+                      "Materials" mean the resources and tools, like
+                      programming languages and frameworks, used to build
+                      software.
+                    </p>
+                    <div>
+                      <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1">
+                        <a href="" target="_blank" class="">Got it</a>
+                      </button>
+                      <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1">
+                        <a href="contactUs.html" target="_blank" class="">Call Us</a>
+                      </button>
+                    </div>
+                    <span class="mark"></span>
+                  </div>
+                  <div class="card bg-transparent text-center dump1 cr-bk">
+                    <div class="card-body bg-transparent">
+                      <i class="bi bi-x-diamond text-primary display-6"></i>
+                      <h6 class="card-title fw-bold">Materials</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 d-flex justify-content-center align-items-center mytooltip">
+                  <div class="col tooltip-content tooltip-s-content">
+                    <p class="fw-bold">
+                      Tractability means a problem is manageable and can be
+                      solved efficiently within reasonable time, effort, and
+                      resources.
+                    </p>
+                    <div>
+                      <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1">
+                        <a href="" target="_blank" class="">Got it</a>
+                      </button>
+                      <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1">
+                        <a href="contactUs.html" target="_blank" class="">Call Us</a>
+                      </button>
+                    </div>
+                    <span class="mark"></span>
+                  </div>
+                  <div class="card bg-transparent text-center dump1 cr-bk">
+                    <div class="card-body bg-transparent">
+                      <i class="bi bi-window-stack text-primary display-6"></i>
+                      <h6 class="card-title fw-bold">Tractability</h6>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 d-flex justify-content-center align-items-center mytooltip">
+                  <div class="col tooltip-content tooltip-s-content">
+                    <p class="fw-bold">
+                      "Bin" can refer to a container for holding items, or in
+                      computing, a directory for storing files.
+                    </p>
+                    <div>
+                      <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1">
+                        <a href="" target="_blank" class="">Got it</a>
+                      </button>
+                      <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1">
+                        <a href="contactUs.html" target="_blank" class="">Call Us</a>
+                      </button>
+                    </div>
+                    <span class="mark"></span>
+                  </div>
+                  <div class="card bg-transparent text-center dump1 cr-bk">
+                    <div class="card-body bg-transparent">
+                      <i class="bi bi-view-list text-primary display-6"></i>
+                      <h6 class="card-title fw-bold">Bin</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s" data-aos-duration="500" data-aos="fade-up">
+            <div class="row d-flex justify-content-center align-items-center">
+              <div class="col">
+                <div
+                  class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 d-flex justify-content-center align-items-center mytooltip">
+                  <div class="col tooltip-content">
+                    <p class="fw-bold">
+                      Inventory refers to a list of items that a business or
+                      person has on hand. Managing inventory well is important
+                      for smooth business operations.
+                    </p>
+                    <div>
+                      <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1">
+                        <a href="" target="_blank" class="">Got it</a>
+                      </button>
+                      <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1">
+                        <a href="contactUs.html" target="_blank" class="">Call Us</a>
+                      </button>
+                    </div>
+                    <span class="mark"></span>
+                  </div>
+                  <div class="card bg-transparent text-center dump1 cr-bk">
+                    <div class="card-body bg-transparent">
+                      <i class="bi bi-ubuntu text-primary display-6"></i>
+                      <h6 class="card-title fw-bold">Inventory</h6>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 d-flex justify-content-center align-items-center mytooltip">
+                  <div class="col tooltip-content">
+                    <p class="fw-bold">
+                      A warehouse is a large storage facility where goods,
+                      products, or materials are kept before they are
+                      distributed or used. It serves as a hub for organizing
+                      and managing inventory in the supply chain process.
+                    </p>
+                    <div>
+                      <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1">
+                        <a href="" target="_blank" class="">Got it</a>
+                      </button>
+                      <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1">
+                        <a href="contactUs.html" target="_blank" class="">Call Us</a>
+                      </button>
+                    </div>
+                    <span class="mark"></span>
+                  </div>
+                  <div class="card bg-transparent text-center dump1 cr-bk">
+                    <div class="card-body bg-transparent">
+                      <i class="bi bi-tv text-primary display-6"></i>
+                      <h6 class="card-title fw-bold">Warehouse</h6>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 d-flex justify-content-center align-items-center mytooltip">
+                  <div class="col tooltip-content">
+                    <p class="fw-bold">
+                      Distribution involves the movement of goods from a
+                      central location, like a warehouse, to their final
+                      destinations, which can be retailers, wholesalers, or
+                      end consumers.
+                    </p>
+                    <div>
+                      <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1">
+                        <a href="" target="_blank" class="">Got it</a>
+                      </button>
+                      <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1">
+                        <a href="contactUs.html" target="_blank" class="">Call Us</a>
+                      </button>
+                    </div>
+                    <span class="mark"></span>
+                  </div>
+                  <div class="card bg-transparent text-center dump1 cr-bk">
+                    <div class="card-body bg-transparent">
+                      <i class="bi bi-text-paragraph text-primary display-6"></i>
+                      <h6 class="card-title fw-bold">Distribution</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 d-flex justify-content-center align-items-center mytooltip">
+                  <div class="col tooltip-content tooltip-s-content">
+                    <p class="fw-bold">
+                      A bill is an official document that outlines a request
+                      for payment of goods or services, detailing the
+                      quantity, price, and terms of the transaction, typically
+                      sent from a seller to a buyer.
+                    </p>
+                    <div>
+                      <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1">
+                        <a href="" target="_blank" class="">Got it</a>
+                      </button>
+                      <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1">
+                        <a href="contactUs.html" target="_blank" class="">Call Us</a>
+                      </button>
+                    </div>
+                    <span class="mark"></span>
+                  </div>
+                  <div class="card bg-transparent text-center dump1 cr-bk">
+                    <div class="card-body bg-transparent">
+                      <i class="bi bi-tags text-primary display-6"></i>
+                      <h6 class="card-title fw-bold">Bill</h6>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 d-flex justify-content-center align-items-center mytooltip">
+                  <div class="col tooltip-content tooltip-s-content">
+                    <p class="fw-bold">
+                      Quality refers to the standard of excellence or
+                      characteristics possessed by a product, service, or
+                      process, influencing its overall value and performance
+                      in relation to its intended purpose.
+                    </p>
+                    <div>
+                      <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1">
+                        <a href="" target="_blank" class="">Got it</a>
+                      </button>
+                      <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1">
+                        <a href="contactUs.html" target="_blank" class="">Call Us</a>
+                      </button>
+                    </div>
+                    <span class="mark"></span>
+                  </div>
+                  <div class="card bg-transparent text-center dump1 cr-bk">
+                    <div class="card-body bg-transparent">
+                      <i class="bi bi-stickies text-primary display-6"></i>
+                      <h6 class="card-title fw-bold">Quality</h6>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 d-flex justify-content-center align-items-center mytooltip">
+                  <div class="col tooltip-content tooltip-s-content">
+                    <p class="fw-bold">
+                      Life-cycle refers to the stages and phases that a
+                      product, project, organism, or system goes through from
+                      its inception to its eventual end, encompassing all the
+                      processes and changes it undergoes over time.
+                    </p>
+                    <div>
+                      <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1">
+                        <a href="" target="_blank" class="">Got it</a>
+                      </button>
+                      <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1">
+                        <a href="contactUs.html" target="_blank" class="">Call Us</a>
+                      </button>
+                    </div>
+                    <span class="mark"></span>
+                  </div>
+                  <div class="card bg-transparent text-center dump1 cr-bk">
+                    <div class="card-body bg-transparent">
+                      <i class="bi bi-soundwave text-primary display-6"></i>
+                      <h6 class="card-title fw-bold">Life-Cycle</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s" data-aos-duration="500" data-aos="slide-up">
+            <div class="row d-flex align-items-center justify-content-center">
+              <div class="col">
+                <div
+                  class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 d-flex justify-content-center align-items-center mytooltip">
+                  <div class="col tooltip-content">
+                    <p class="fw-bold">
+                      Hardware refers to the physical components of electronic
+                      devices, including processors, memory, storage, and
+                      input/output devices, that make up their physical
+                      structure.
+                    </p>
+                    <div>
+                      <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1">
+                        <a href="" target="_blank" class="">Got it</a>
+                      </button>
+                      <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1">
+                        <a href="contactUs.html" target="_blank" class="">Call Us</a>
+                      </button>
+                    </div>
+                    <span class="mark"></span>
+                  </div>
+                  <div class="card bg-transparent text-center dump1 cr-bk">
+                    <div class="card-body bg-transparent">
+                      <i class="bi bi-motherboard text-primary display-6"></i>
+                      <h6 class="card-title fw-bold">Hardware</h6>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 d-flex justify-content-center align-items-center mytooltip">
+                  <div class="col tooltip-content">
+                    <p class="fw-bold">
+                      Data loss is the unintended and often irreversible
+                      disappearance of digital information, caused by factors
+                      like hardware failure, human error, or cyber threats.
+                    </p>
+                    <div>
+                      <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1">
+                        <a href="" target="_blank" class="">Got it</a>
+                      </button>
+                      <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1">
+                        <a href="contactUs.html" target="_blank" class="">Call Us</a>
+                      </button>
+                    </div>
+                    <span class="mark"></span>
+                  </div>
+                  <div class="card bg-transparent text-center dump1 cr-bk">
+                    <div class="card-body bg-transparent">
+                      <i class="bi bi-snow text-primary display-6"></i>
+                      <h6 class="card-title fw-bold">Data Loss</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="col-lg-12 col-md-12 col-sm-12 col-12 mb-3 d-flex justify-content-center align-items-center mytooltip">
+                  <div class="col tooltip-content tooltip-s-content">
+                    <p class="fw-bold">
+                      Accounting is the process of recording, analyzing, and
+                      reporting financial transactions to track and manage an
+                      entity's financial health.
+                    </p>
+                    <div>
+                      <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1">
+                        <a href="" target="_blank" class="">Got it</a>
+                      </button>
+                      <button id="spl1" class="btn btn-sm fw-bold rounded-pill mx-1">
+                        <a href="contactUs.html" target="_blank" class="">Call Us</a>
+                      </button>
+                    </div>
+                    <span class="mark"></span>
+                  </div>
+                  <div class="card bg-transparent text-center dump1 cr-bk">
+                    <div class="card-body bg-transparent">
+                      <i class="bi bi-slack text-primary display-6"></i>
+                      <h6 class="card-title fw-bold">Accounting</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section 5 end-->
+    <!--Section 6 start-->
+    <section id="sec6" class="container1 bg-06 pt-lg-1 py-2 mt-0 py-md-2 py-lg-0 mt-md-0 mt-lg-0">
+      <div class="container mt-lg-4 mt-0 pt-3 pt-lg-2">
+        <div class="row d-flex justify-content-center align-items-center mt-2 mt-lg-2 mb-1 mb-lg-0">
+          <div class="row mt-lg-3">
+            <div class="sec col-12 col-sm-12 col-md-12 col-lg-12 text-center mt-lg-1 mt-0 mb-1 mb-lg-0 wow fadeInDown"
+              data-wow-delay="0.1s" data-aos="fade-up" data-aos-duration="500">
+              <h3 class="fw-bold display-6 pb-2 text-center mb-0">
+                SkyFinch Makes Your Business Proud
+              </h3>
+              <a type="button" class="my-1 btn-sm fw-bold btn btn-silver me-1 rounded-pill active1"
+                data-filter="show1">Windows&nbsp;Application</a>
+              <a type="button" class="my-1 btn-sm fw-bold btn btn-silver mx-1 rounded-pill"
+                data-filter="show2">Web&nbsp;Application</a>
+              <a type="button" class="my-0 btn-sm fw-bold btn btn-silver ms-1 rounded-pill" data-filter="show3">All
+                Application</a>
+            </div>
+          </div>
+          <div class="col-lg-12 col-12 pt-lg-1 pt-3 px-lg-0 mx-lg-0 wow fadeInUp">
+            <div class="row d-flex justify-content-center align-items-center">
+              <!-- show 1 start -->
+              <div class="col product show1">
+                <div class="row d-flex justify-content-center align-items-center">
+                  <div class="col-lg-4 col-12 animated fadeInDown" data-aos-duration="500" data-aos="fade-up">
+                    <div class="row d-flex justify-content-center">
+                      <h3 class="fw-bold pb-3 text-center mt-0 mb-1 py-2">
+                        Windows Application
+                      </h3>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                      <img src="img/online-world.svg" alt="img-1"
+                        class="img-fluid d-block d-sm-block d-md-block d-lg-block win-app" />
+                    </div>
+                  </div>
+                  <div class="col-lg-7 animated fadeInUp" data-aos-duration="500" data-aos="fade-up">
+                    <div class="row d-flex justify-content-center align-items-center">
+                      <div
+                        class="col-6 col-lg-5 mb-3 g-lg-2 py-1 g-3 mx-lg-1 d-flex justify-content-center align-items-center">
+                        <a class="d-flex justify-content-center align-items-center" href="product Enquiry.html"
+                          onclick="choosePlan('', '')">
+                          <div class="card text-center border-0 hov1">
+                            <div class="card-body p-1">
+                              <i class="bi bi-alexa text-danger"></i>
+                              <h5 class="card-title fw-bold mb-3">
+                                Profitability Analysis
+                              </h5>
+                              <p class="card-text text-muted text-justify">
+                                “Profitability analysis is the evaluation of a
+                                business's profit-making capacity in relation
+                                to its costs and expenses.
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div
+                        class="col-6 col-lg-5 mb-3 g-lg-2 py-1 g-3 mx-lg-1 d-flex justify-content-center align-items-center">
+                        <a class="d-flex justify-content-center align-items-center" href="product Enquiry.html"
+                          onclick="choosePlan('', '')">
+                          <div class="card text-center border-0 hov1">
+                            <div class="card-body p-1">
+                              <i class="bi bi-activity text-warning"></i>
+                              <h5 class="card-title fw-bold mb-3">
+                                Production Vs Sales
+                              </h5>
+                              <p class="card-text text-muted">
+                                “Production as a creating goods or services
+                                and Sales as a exchanging goods or services
+                                for money.
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div
+                        class="col-6 col-lg-5 mb-3 g-lg-2 py-1 g-3 mx-lg-1 d-flex justify-content-center align-items-center">
+                        <a class="d-flex justify-content-center align-items-center" href="product Enquiry.html"
+                          onclick="choosePlan('', '')">
+                          <div class="card text-center border-0 hov1">
+                            <div class="card-body p-1">
+                              <i class="bi bi-fingerprint text-success"></i>
+                              <h5 class="card-title fw-bold mb-3">
+                                Production Analyisis
+                              </h5>
+                              <p class="card-text text-muted">
+                                “Production Analysis as a assessing the
+                                efficiency and effectiveness of the production
+                                process.
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div
+                        class="col-6 col-lg-5 mb-3 g-lg-2 py-1 g-3 mx-lg-1 d-flex justify-content-center align-items-center">
+                        <a class="d-flex justify-content-center align-items-center" href="product Enquiry.html"
+                          onclick="choosePlan('', '')">
+                          <div class="card text-center border-0 hov1">
+                            <div class="card-body p-1">
+                              <i class="bi bi-bounding-box"></i>
+                              <h5 class="card-title fw-bold mb-3">
+                                Schedule Vs Despatches
+                              </h5>
+                              <p class="card-text text-muted">
+                                “Schedule as planned timing for activities or
+                                events and Despatches as a sending out goods
+                                or products for delivery.
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- show 1 end -->
+              <!-- show 2 start -->
+              <div class="col product show2">
+                <div class="row d-flex justify-content-center align-items-center">
+                  <div class="col-lg-4 col-12 animated fadeInDown" data-aos-duration="500" data-aos="fade-up">
+                    <div class="row d-flex justify-content-center">
+                      <h3 class="fw-bold pb-3 text-center mt-0 mb-1 py-2">
+                        Web Application
+                      </h3>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                      <img src="img/Windows-bro.png" alt="img-1"
+                        class="img-fluid d-block d-sm-block d-md-block d-lg-block webapp" />
+                    </div>
+                  </div>
+                  <div class="col-lg-7 animated fadeInUp" data-aos-duration="500" data-aos="fade-up">
+                    <div class="row d-flex justify-content-center align-items-center">
+                      <div class="col-6 col-lg-5 mb-3 g-lg-1 py-1 g-3 py-lg-2 py-2 mx-lg-1">
+                        <a class="d-flex justify-content-center align-items-center" href="product Enquiry.html"
+                          onclick="choosePlan('', '')">
+                          <div class="card text-center border-0 hov1">
+                            <div class="card-body p-1">
+                              <i class="bi bi-alexa text-success"></i>
+                              <h5 class="card-title fw-bold mb-3">
+                                Visibility
+                              </h5>
+                              <p class="card-text text-black">
+                                “Visibility refers to how easily something can
+                                be seen or perceived.
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-6 col-lg-5 mb-3 g-lg-1 py-1 g-3 py-lg-2 py-2 mx-lg-1">
+                        <a class="d-flex justify-content-center align-items-center" href="product Enquiry.html"
+                          onclick="choosePlan('', '')">
+                          <div class="card text-center border-0 hov1">
+                            <div class="card-body p-1">
+                              <i class="bi bi-activity text-danger"></i>
+                              <h5 class="card-title fw-bold mb-3">Mobile</h5>
+                              <p class="card-text text-black">
+                                “It involves ensuring a user-friendly and
+                                visually appealing experience.
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div
+                        class="col-6 col-lg-5 mb-3 g-lg-2 py-1 g-3 mx-lg-1 d-flex justify-content-center align-items-center">
+                        <a class="d-flex justify-content-center align-items-center" href="product Enquiry.html"
+                          onclick="choosePlan('', '')">
+                          <div class="card text-center border-0 hov1">
+                            <div class="card-body p-1">
+                              <i class="bi bi-fingerprint text-info"></i>
+                              <h5 class="card-title fw-bold mb-3">
+                                Web Approvals
+                              </h5>
+                              <p class="card-text text-black">
+                                “Web approval is the process of reviewing and
+                                granting authorization for actions.
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div
+                        class="col-6 col-lg-5 mb-3 g-lg-2 py-1 g-3 mx-lg-1 d-flex justify-content-center align-items-center">
+                        <a class="d-flex justify-content-center align-items-center" href="product Enquiry.html"
+                          onclick="choosePlan('', '')">
+                          <div class="card text-center border-0 hov1">
+                            <div class="card-body p-1">
+                              <i class="bi bi-bounding-box text-warning"></i>
+                              <h5 class="card-title fw-bold mb-3">DBMS</h5>
+                              <p class="card-text text-black">
+                                “DBMS is software that facilitates the
+                                organization, retrieval, and management of
+                                data in a database.
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- show 2 end -->
+              <!-- show 3 start -->
+              <div class="col product show3">
+                <div id="order-row" class="row">
+                  <div class="col-lg-4 col-12 two-sm two-s two-md two-lg">
+                    <div class="row">
+                      <div class="col-lg-6 col-6 py-0 px-1">
+                        <a class="d-flex justify-content-center align-items-center" href="product Enquiry.html"
+                          onclick="choosePlan('', '')">
+                          <div class="card text-center border-0 hov1">
+                            <div class="card-body py-0 px-1">
+                              <i class="bi bi-alexa text-danger"></i>
+                              <h5 class="card-title fw-bold mb-2">
+                                Profitability Analysis
+                              </h5>
+                              <p class="card-text text-muted">
+                                “You are not too far from your business,
+                                wherever you are.
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-lg-6 col-6 py-0 px-1">
+                        <a class="d-flex justify-content-center align-items-center" href="product Enquiry.html"
+                          onclick="choosePlan('', '')">
+                          <div class="card text-center border-0 hov1">
+                            <div class="card-body py-0 px-1">
+                              <i class="bi bi-activity text-warning"></i>
+                              <h5 class="card-title fw-bold mb-2">
+                                Production Vs Sales
+                              </h5>
+                              <p class="card-text text-muted">
+                                “You are not too far from your business,
+                                wherever you are.
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="col-lg-6 col-6 py-0 px-1">
+                        <a class="d-flex justify-content-center align-items-center" href="product Enquiry.html"
+                          onclick="choosePlan('', '')">
+                          <div class="card text-center border-0 hov1">
+                            <div class="card-body py-0 px-1">
+                              <i class="bi bi-fingerprint text-success"></i>
+                              <h5 class="card-title fw-bold mb-2">
+                                Production Analyisis
+                              </h5>
+                              <p class="card-text text-muted">
+                                “You are not too far from your business,
+                                wherever you are.
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-lg-6 col-6 py-0 px-1">
+                        <a class="d-flex justify-content-center align-items-center" href="product Enquiry.html"
+                          onclick="choosePlan('', '')">
+                          <div class="card text-center border-0 hov1">
+                            <div class="card-body py-0 px-1">
+                              <i class="bi bi-bounding-box"></i>
+                              <h5 class="card-title fw-bold mb-2">
+                                Schedule Vs Despatches
+                              </h5>
+                              <p class="card-text text-muted">
+                                “You are not too far from your business,
+                                wherever you are.
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-12 p-0 m-0">
+                    <!-- center image -->
+                    <div class="row justify-content-center align-items-center animated fadeInUp" data-aos-duration="500"
+                      data-aos="slide-up">
+                      <img src="img/software_development.gif" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-12 one-sm one-s one-md one-lg">
+                    <div class="row">
+                      <div class="col-lg-6 col-6 py-0 px-1">
+                        <a class="d-flex justify-content-center align-items-center" href="product Enquiry.html"
+                          onclick="choosePlan('', '')">
+                          <div class="card text-center border-0 hov1">
+                            <div class="card-body py-0 px-1">
+                              <i class="bi bi-alexa text-success"></i>
+                              <h5 class="card-title fw-bold mb-2">
+                                Visibility
+                              </h5>
+                              <p class="card-text text-black">
+                                “You are not too far from your business,
+                                wherever you are.
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-lg-6 col-6 py-0 px-1">
+                        <a class="d-flex justify-content-center align-items-center" href="product Enquiry.html"
+                          onclick="choosePlan('', '')">
+                          <div class="card text-center border-0 hov1">
+                            <div class="card-body py-0 px-1">
+                              <i class="bi bi-activity text-danger"></i>
+                              <h5 class="card-title fw-bold mb-2">Mobile</h5>
+                              <p class="card-text text-black">
+                                “You are not too far from your business,
+                                wherever you are.
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="col-lg-6 col-6 py-0 px-1">
+                        <a class="d-flex justify-content-center align-items-center" href="product Enquiry.html"
+                          onclick="choosePlan('', '')">
+                          <div class="card text-center border-0 hov1">
+                            <div class="card-body py-0 px-1">
+                              <i class="bi bi-fingerprint text-info"></i>
+                              <h5 class="card-title fw-bold mb-2">
+                                Web Approvals
+                              </h5>
+                              <p class="card-text text-black">
+                                “You are not too far from your business,
+                                wherever you are.
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-lg-6 col-6 py-0 px-1">
+                        <a class="d-flex justify-content-center align-items-center" href="product Enquiry.html"
+                          onclick="choosePlan('', '')">
+                          <div class="card text-center border-0 hov1">
+                            <div class="card-body py-0 px-1">
+                              <i class="bi bi-bounding-box text-warning"></i>
+                              <h5 class="card-title fw-bold mb-2">
+                                Web Approvals
+                              </h5>
+                              <p class="card-text text-black">
+                                “You are not too far from your business,
+                                wherever you are.
+                              </p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- show 3 end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section 6 end-->
+    <!--Section 7 start-->
+    <section id="sec7" class="container1 bg-10 pt-lg-4 pb-lg-1 pt-4 pb-1">
+      <div id="part-proud" class="container-fluid mt-lg-5 pt-lg-2 mb-lg-1 mt-md-2 pt-md-2 mb-md-1 mt-2 pt-2 mb-1">
+        <div class="row d-flex justify-content-center align-items-center mt-1 pb-0">
+          <div class="col-lg-12 divide">
+            <div class="row mt-lg-0 mt-0 d-flex justify-content-center align-items-center">
+              <h1 class="fw-bold pb-2 pb-md-5 pb-lg-0 pt-2 pb-3 mb-lg-0 text-center display-4 wow fadeInDown"
+                data-wow-delay="0.1s" data-aos-duration="500" data-aos="fade-up">
+                Our Valuable Customers
+              </h1>
+              <div class="cus owl-carousel owl-theme pt-2" data-aos-duration="500">
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/1.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/Ajay Travels.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/annai electronics.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/chemfab.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/clickyp.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/ghcl.png" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/jagan photos.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/kbs.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/ks.png" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/lakshmi jewellery.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/life-cell.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/mbm.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/megna.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/mr and mrs botique.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/ms.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/nds.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/new cars.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/nithin.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/nithya.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/prabu studio.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/rainbow.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/rane.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/S.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/sanguine.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/sanjay environmental.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/sivasakthi.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/st mobiles.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/tedcas.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/Thulasi.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/wordwide cargo.jpg" alt="zC" class="img-fluid" style="height: 80px" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row d-flex justify-content-center align-items-center mt-1">
+              <div class="col-lg-5" data-aos-duration="500" data-aos="fade-up">
+                <h6 class="fw-bold display-6 d-md-1 mb-4">
+                  Got A Project Or A&nbsp;Partnership In&nbsp;Mind?
+                </h6>
+                <div class="row d-flex align-items-center justify-content-center">
+                  <div class="col-lg-6 col-md-4 col-sm-5 col-auto">
+                    <div class="card border-0 bg-transparent">
+                      <div class="card-body p-1">
+                        <div class="mb-2">
+                          <img src="img/form-logo2.png" alt="" class="logo" />
+                        </div>
+                        <h5 class="card-title">Phone:</h5>
+                        <p class="card-text text-muted">
+                          +91 9443487210<br />
+                          +0413 4207333
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-4 col-sm-5 col-auto">
+                    <div class="card border-0 bg-transparent">
+                      <div class="card-body p-1">
+                        <div class="mb-2">
+                          <img src="img/form-logo1.png" alt="" class="logo" />
+                        </div>
+                        <h5 class="card-title">Email:</h5>
+                        <p class="card-text text-muted">
+                          info@skyfinch.com
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 mt-2 pt-1 mx-lg-0 mx-3" data-aos-duration="500" data-aos="fade-up">
+                <form name="cus_form" action="">
+                  <div class="row mx-lg-0 mx-3">
+                    <div class="col-lg-6 mt-1 pb-2 wow fadeInUp" data-wow-delay=".1s">
+                      <div class="input-data">
+                        <label for="cus-name">Enter Your Name:</label>
+                        <input type="text" id="cus-name" required />
+                      </div>
+                    </div>
+                    <div class="col-lg-6 mt-1 pb-2 wow fadeInUp" data-wow-delay=".2s">
+                      <div class="input-data">
+                        <label for="cus-number">Your Phone Number:</label>
+                        <input type="text" id="cus-number" maxlength="15" required />
+                      </div>
+                    </div>
+                    <div class="col-lg-12 mt-3 pb-2 wow fadeInUp" data-wow-delay=".3s">
+                      <div class="input-data">
+                        <label for="cus-mail">Your E-mail:</label>
+                        <input type="email" id="cus-mail" required />
+                      </div>
+                    </div>
+                    <div class="col-lg-12 mt-3 pb-2 wow fadeInUp" data-wow-delay=".4s">
+                      <div class="input-data">
+                        <label for="cus-text">Tell About Your Project:</label>
+                        <input type="text" id="cus-text" required />
+                      </div>
+                    </div>
+                    <div
+                      class="col-lg-12 mx-auto d-flex justify-content-center d-lg-flex justify-content-lg-start pt-3 my-3 wow fadeInUp"
+                      data-wow-delay=".5s">
+                      <button type="button" class="btn btn-primary text-light" onclick="msgButton()">
+                        Send message
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Section 5 end-->
+    <!-- Footer Start -->
+    <section id="sec13" class="container-fluid scroll text-light footer mt-lg-0 pt-lg-5 mt-0 pt-4 wow fadeIn"
+      data-wow-delay="0.1s">
+      <div class="container pt-lg-5 mt-lg-0 mt-3 pt-4">
+        <div class="row d-flex justify-content-around g-lg-5 mt-lg-1 mt-1 g-md-2 g-4">
+          <div class="col-lg-4 col-12 col-md-12">
+            <h6 class="mb-4 cloud">SkyFinch</h6>
+            <div class="row">
+              <div class="col-lg-2 col-md-2 col-2 px-0 d-flex justify-content-center align-items-center">
+                <i class="fa fa-map-marker-alt mb-md-3 mb-3"></i>
+              </div>
+              <div class="col-lg-10 col-md-10 col-10 px-0">
+                <p class="mb-2">
+                  5, Republic Street, Reddiarpalayam, <br />Puducherry-605 010,
+                  India
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-2 col-2 px-0 d-flex justify-content-center align-items-center">
+                <i class="fa fa-phone mb-md-2 mb-3"></i>
+              </div>
+              <div class="col-lg-10 col-10 px-0">
+                <p class="mb-2">+91 9443487210</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-2 col-2 px-0 d-flex justify-content-center align-items-center">
+                <i class="fa fa-envelope mb-md-2 mb-3"></i>
+              </div>
+              <div class="col-lg-10 col-10 px-0">
+                <p class="btn-link text-light mb-2">info@skyfinch.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-6 mb-lg-0 mb-4 mt-5 mt-lg-5">
+            <h4 class="text-white mb-4 w-25 border-bottom border-primary">
+              Explore
+            </h4>
+            <a class="btn btn-link" href="index.html">Home</a>
+            <a class="btn btn-link" href="service.html">Services</a>
+            <a class="btn btn-link" href="about.html">About Us</a>
+            <a class="btn btn-link" href="profile.html">Profile</a>
+          </div>
+          <div class="col-lg-2 col-6 mb-lg-0 mb-4 mt-5 mt-lg-5">
+            <h4 class="text-white mb-4 w-25 border-bottom border-primary">
+              Discover
+            </h4>
+            <a class="btn btn-link" href="products.html">Products</a>
+            <a class="btn btn-link" href="pl_pr.html" onclick="choosePlan('', '')">Product Enquiry</a>
+            <a class="btn btn-link" href="contact.html">Contact us</a>
+          </div>
+          <div id="polices" class="col-lg-3 col-6 mb-lg-0 mb-4 ms-0 ms-lg-2 mt-5 mt-lg-5">
+            <h4 class="text-white mb-4 w-25 border-bottom border-primary">
+              Policies
+            </h4>
+            <a class="btn btn-link" href="anti_spam.html">Anti-spam&nbsp;Policy</a>
+            <a class="btn btn-link" href="term_use.html">Terms of Service</a>
+            <a class="btn btn-link" href="privacy_policy.html">Privacy&nbsp;Policy</a>
+            <a class="btn btn-link" href="confidentality_policy.html">Confidentiality&nbsp;Policy</a>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright Start -->
+      <div id="cpy-ryt" class="row mt-lg-1 mt-3 pt-3 mb-0 pb-0 d-flex align-items-end justify-content-center">
+        <div class="row Copyright pt-5 mt-lg-2 pt-lg-2 mt-5 pb-lg-0 mb-lg-0">
+            <div class="d-flex align-items-end justify-content-center mt-lg-5 pt-5 mt-5 pb-lg-0 mb-lg-0">
+                <a class="btn btn-square rounded-circle me-2" href="https://www.facebook.com/skyfinch.roadmap"
+                    target="_blank">
+                    <img class="img-icons2" src="img/socialMedia/facebook_icon.png" alt="" />
+                </a>
+                <a class="btn btn-square rounded-circle me-2" href="https://twitter.com/Roadmaperp" target="_blank">
+                    <img class="img-icons2" src="img/socialMedia/twitter-.png" alt="" />
+                </a>
+                <a class="btn btn-square rounded-circle me-2" href="https://www.instagram.com/skyfinchroadmap"
+                    target="_blank">
+                    <img class="img-icons2" src="img/socialMedia/instagram.png" alt="" />
+                </a>
+                <a class="btn btn-square rounded-circle me-2"
+                    href="https://www.linkedin.com/company/skyfinchroadmap" target="_blank">
+                    <img class="img-icons2" src="img/socialMedia/linkedin_icon.png" alt="" />
+                </a>
+            </div>
+            <div
+                class="col-md-12 col-lg-12 col d-flex flex-wrap align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-2 pt-2 mt-3 pb-lg-0 mb-lg-0">
+                <a class="foo-policy"
+                    href="anti_spam.html">Anti-spam&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
+                <a class="foo-policy"
+                    href="term_use.html">Terms&nbsp;of&nbsp;Service<span>&nbsp;&VerticalLine;&nbsp;</span></a>
+                <a class="foo-policy"
+                    href="privacy_policy.html">Privacy&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
+                <a class="foo-policy" href="confidentality_policy.html">Confidentiality&nbsp;Policy</a>
+            </div>
+            <div id="foo-rights"
+                class="col-md-12 col-lg-12 d-flex align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-1 mt-1 pt-lg-1 pt-1">
+                &copy; Skyfinch 2023. All rights reserved. Designed by Skyfinch.
+            </div>
+        </div>
+    </div>
+      <!-- Copyright End -->
+    </section>
+    <!-- Footer End -->
+  </main>
+  <!-- Back to Top   back-to-top -->
+  <a href="#" id="main_top" class="btn btn-lg page-top btn-lg-square rounded-circle wow fadeInDown"
+    data-wow-delay="1.8s" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+    data-bs-title="back-to-top"><img src="img/right-arrow.png" alt="" /></a>
+  <!-- JavaScript Libraries -->
+  <script src="js/Jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="js/AnimationOnScroll/package/dist/aos.js"></script>
+  <script src="css/malihu-custom-scrollbar-plugin-3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/searchBar.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/placeholder.min.js"></script>
+  <!-- Scroll effects -->
+  <script>
+    const myCarouselElement = document.querySelector('#header-carousel')
+
+    const carousel = new bootstrap.Carousel(myCarouselElement, {
+      interval: 5000,
+      touch: false,
+      pause: ""
+    })
+    //<!-- Contact Button Start -->
+    document.querySelector("#hide_form").addEventListener("click", function (event) {
+      event.stopPropagation(); // Prevent the click event from propagating to the document body
+      document.querySelector("#myForm").style.display = "none";
+      document.querySelector("#show_form").style.display = "block";
+    });
+    document.body.addEventListener("click", function () {
+      document.querySelector("#myForm").style.display = "none";
+      document.querySelector("#show_form").style.display = "block";
+    });
+    document.querySelector("#show_form").addEventListener("click", function (event) {
+      event.stopPropagation(); // Prevent the click event from propagating to the document body
+      document.open_form.reset();
+      document.querySelector("#myForm").style.display = "block";
+    });
+    //<!-- Contact Button End -->
+    AOS.init();
+    var swiper = new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+    var swiper2 = new Swiper('.mySwiper2', {
+      grabCursor: true,
+      loop: true,
+      effect: 'creative',
+      creativeEffect: {
+        prev: {
+          shadow: true,
+          origin: 'left center',
+          translate: ['-5%', 0, -200],
+          rotate: [0, 100, 0],
+        },
+        next: {
+          origin: 'right center',
+          translate: ['5%', 0, -200],
+          rotate: [0, -100, 0],
+        },
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  <!-- Scroll effects -->
+  <!-- Section Scroll effects -->
+  <script src="js/Scrollify/jquery.scrollify.js"></script>
+  <!-- Section Scroll effects -->
+  <script src="js/submit.js"></script>
+  <!-- Smooth scroll -->
+  <!-- Template Javascript -->
+  <script src="js/chatbox.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
