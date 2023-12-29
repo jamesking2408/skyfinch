@@ -1,7 +1,7 @@
-   // <!-- shuffle button start -->
-  //  JavaScript to handle button clicks / Button click move to right or left
+// <!-- shuffle button start -->
+//  JavaScript to handle button clicks / Button click move to right or left
 
-  document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Get the radio buttons and buttons
     const radioButtons = document.querySelectorAll('input[name="slider"]');
     const leftButton = document.getElementById('left-button');
@@ -24,15 +24,33 @@
     function changeBg() {
         document.querySelector(".bg-00").classList.toggle('blue');
     }
+    // Function to handle keyboard arrow keypress
+    function handleKeyPress(event) {
+        switch (event.key) {
+            case 'ArrowLeft':
+                previousSlide();
+                changeBg();
+                break;
+            case 'ArrowRight':
+                nextSlide();
+                changeBg();
+                break;
+            default:
+                // Do nothing for other keys
+                break;
+        }
+    }
 
     // Add event listeners to the buttons
-    leftButton.addEventListener('click', function() {
+    leftButton.addEventListener('click', function () {
         previousSlide();
         changeBg();
     });
-    rightButton.addEventListener('click', function() {
+    rightButton.addEventListener('click', function () {
         nextSlide();
         changeBg();
     });
 
+    // Add event listener for keyboard arrow keypress
+    document.addEventListener('keydown', handleKeyPress);
 });

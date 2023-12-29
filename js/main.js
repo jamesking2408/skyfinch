@@ -386,6 +386,7 @@
         var dropdownMenu = this.nextElementSibling;
         dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
     });
+
     // Toggle dropdown submenu on button click
     var applicationBtn = document.getElementById('applicationBtn');
     var webBtn = document.getElementById('webBtn');
@@ -411,6 +412,7 @@
     // Close dropdowns when clicking outside
     document.addEventListener('click', function (e) {
         var target = e.target;
+
         if (!target.closest('.navbar-nav .nav-item.dropdown')) {
             var dropdownMenus = document.querySelectorAll('.navbar-nav .nav-item.dropdown .dropdown-menu');
             dropdownMenus.forEach(function (menu) {
@@ -441,15 +443,45 @@ var forEach = function (t, o, r) {
             Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
     else for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t);
 };
+// var hamburgers = document.querySelectorAll(".hamburger");
+// if (hamburgers.length > 0) {
+//     forEach(hamburgers, function (hamburger) {
+//         hamburger.addEventListener(
+//             "click",
+//             function () {
+//                 this.classList.toggle("is-active");
+//             },
+//             false
+//         );
+//     });
+// }
 var hamburgers = document.querySelectorAll(".hamburger");
+
+function closeMenu() {
+    // Iterate through each hamburger element
+    forEach(hamburgers, function (hamburger) {
+        // Check if the hamburger has the "is-active" class
+        if (hamburger.classList.contains("is-active")) {
+            // Remove the "is-active" class
+            hamburger.classList.remove("is-active");
+        }
+    });
+}
+
 if (hamburgers.length > 0) {
     forEach(hamburgers, function (hamburger) {
         hamburger.addEventListener(
             "click",
-            function () {
+            function (event) {
+                // Prevent the click event from propagating to the document
+                event.stopPropagation();
+                // Toggle the "is-active" class
                 this.classList.toggle("is-active");
             },
             false
         );
     });
+
+    // Add a click event listener to the document to close the menu when clicked outside
+    document.addEventListener("click", closeMenu);
 }
