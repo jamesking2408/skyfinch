@@ -967,7 +967,7 @@ section.bg-00 {
 /* sales and Services End */
 /* Product Enquiry Start */
 #land-sec {
-    background-image: url(/img/productEnquiry.jpg) !important;
+    background-image: url(../img/productEnquiry.jpg) !important;
     width: 100%;
     background-position: center !important;
     background-size: cover;
