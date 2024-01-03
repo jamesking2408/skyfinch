@@ -5641,6 +5641,16 @@
 @media (min-width:603px) and (max-width:768px) {
 
     /* Style page responsive start */
+    section#land-sec {
+        height: 80rem;
+    }
+
+    #land-sec .container {
+        position: relative;
+        top: 0;
+        transform: translateY(5rem);
+    }
+
     .top-bar .id_con {
         margin-left: 0.5rem;
     }
@@ -7022,6 +7032,12 @@
 @media (min-width:769px) and (max-width:1024px) {
 
     /* Style page responsive start */
+    #land-sec .container {
+        position: relative;
+        top: 0;
+        transform: translateY(-1rem);
+    }
+
     .top-bar medium {
         font-size: 12px;
         font-weight: lighter;
@@ -8098,6 +8114,12 @@
 @media (min-width:1025px) and (max-width:1366px) {
 
     /* Style page responsive start */
+    #land-sec .container {
+        position: relative;
+        top: 0;
+        transform: translateY(-1rem);
+    }
+
     #home_skyfinch .container2 {
         margin-top: auto;
         height: 577px;
@@ -9394,7 +9416,9 @@
 }
 
 @media (max-width: 991px) {
-    .hamburger {display: block !important;}
+    .hamburger {
+        display: block !important;
+    }
 
     .navbar .navbar-nav {
         margin-top: 10px;

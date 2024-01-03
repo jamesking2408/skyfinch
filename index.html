@@ -761,7 +761,7 @@
       </div>
       <div class="hamburger hamburger--emphatic" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <div class="hamburger-box">
-            <div class="hamburger-inner"></div>
+          <div class="hamburger-inner"></div>
         </div>
       </div>
       <div class="collapse navbar-collapse me-2" id="navbarCollapse">
@@ -817,13 +817,11 @@
             <div class="dropdown-menu border-light m-0 p-0">
               <!-- Add IDs to buttons for easier targeting -->
               <div class="submenu w-100 px-3 py-0">
-                <a href="about.html" class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="abt_btn">About Us
-                </a>
+                <a href="about.html" class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="abt_btn">About Us</a>
               </div>
               <br class="d-lg-none d-sm-block" />
               <div class="submenu w-100 px-3 py-0">
-                <a href="profile.html" class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="pro_btn">Profile
-                </a>
+                <a href="profile.html" class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="pro_btn">Profile</a>
               </div>
             </div>
           </div>
@@ -2580,7 +2578,7 @@
                     <div class="col-lg-6 mt-1 pb-2 wow fadeInUp" data-wow-delay=".2s">
                       <div class="input-data">
                         <label for="cus-number">Your Phone Number:</label>
-                        <input type="text" id="cus-number" maxlength="15" required />
+                        <input type="text" id="cus-number" maxlength="10" required />
                       </div>
                     </div>
                     <div class="col-lg-12 mt-3 pb-2 wow fadeInUp" data-wow-delay=".3s">
@@ -2601,6 +2599,11 @@
                       <button type="button" class="btn btn-primary text-light" onclick="msgButton()">
                         Send message
                       </button>
+                      <script>
+                        document.querySelector(".exit1").addEventListener("click", function () {
+                          document.querySelector("#cus-name").focus();
+                        })
+                      </script>
                     </div>
                   </div>
                 </form>
@@ -2677,47 +2680,48 @@
       <!-- Copyright Start -->
       <div id="cpy-ryt" class="row mt-lg-1 mt-3 pt-3 mb-0 pb-0 d-flex align-items-end justify-content-center">
         <div class="row Copyright pt-5 mt-lg-2 pt-lg-2 mt-5 pb-lg-0 mb-lg-0">
-            <div class="d-flex align-items-end justify-content-center mt-lg-5 pt-5 mt-5 pb-lg-0 mb-lg-0">
-                <a class="btn btn-square rounded-circle me-2" href="https://www.facebook.com/skyfinch.roadmap"
-                    target="_blank">
-                    <img class="img-icons2" src="img/socialMedia/facebook_icon.png" alt="" />
-                </a>
-                <a class="btn btn-square rounded-circle me-2" href="https://twitter.com/Roadmaperp" target="_blank">
-                    <img class="img-icons2" src="img/socialMedia/twitter-.png" alt="" />
-                </a>
-                <a class="btn btn-square rounded-circle me-2" href="https://www.instagram.com/skyfinchroadmap"
-                    target="_blank">
-                    <img class="img-icons2" src="img/socialMedia/instagram.png" alt="" />
-                </a>
-                <a class="btn btn-square rounded-circle me-2"
-                    href="https://www.linkedin.com/company/skyfinchroadmap" target="_blank">
-                    <img class="img-icons2" src="img/socialMedia/linkedin_icon.png" alt="" />
-                </a>
-            </div>
-            <div
-                class="col-md-12 col-lg-12 col d-flex flex-wrap align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-2 pt-2 mt-3 pb-lg-0 mb-lg-0">
-                <a class="foo-policy"
-                    href="anti_spam.html">Anti-spam&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
-                <a class="foo-policy"
-                    href="term_use.html">Terms&nbsp;of&nbsp;Service<span>&nbsp;&VerticalLine;&nbsp;</span></a>
-                <a class="foo-policy"
-                    href="privacy_policy.html">Privacy&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
-                <a class="foo-policy" href="confidentality_policy.html">Confidentiality&nbsp;Policy</a>
-            </div>
-            <div id="foo-rights"
-                class="col-md-12 col-lg-12 d-flex align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-1 mt-1 pt-lg-1 pt-1">
-                &copy; Skyfinch 2023. All rights reserved. Designed by Skyfinch.
-            </div>
+          <div class="d-flex align-items-end justify-content-center mt-lg-5 pt-5 mt-5 pb-lg-0 mb-lg-0">
+            <a class="btn btn-square rounded-circle me-2" href="https://www.facebook.com/skyfinch.roadmap"
+              target="_blank">
+              <img class="img-icons2" src="img/socialMedia/facebook_icon.png" alt="" />
+            </a>
+            <a class="btn btn-square rounded-circle me-2" href="https://twitter.com/Roadmaperp" target="_blank">
+              <img class="img-icons2" src="img/socialMedia/twitter-.png" alt="" />
+            </a>
+            <a class="btn btn-square rounded-circle me-2" href="https://www.instagram.com/skyfinchroadmap"
+              target="_blank">
+              <img class="img-icons2" src="img/socialMedia/instagram.png" alt="" />
+            </a>
+            <a class="btn btn-square rounded-circle me-2" href="https://www.linkedin.com/company/skyfinchroadmap"
+              target="_blank">
+              <img class="img-icons2" src="img/socialMedia/linkedin_icon.png" alt="" />
+            </a>
+          </div>
+          <div
+            class="col-md-12 col-lg-12 col d-flex flex-wrap align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-2 pt-2 mt-3 pb-lg-0 mb-lg-0">
+            <a class="foo-policy" href="anti_spam.html">Anti-spam&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
+            <a class="foo-policy"
+              href="term_use.html">Terms&nbsp;of&nbsp;Service<span>&nbsp;&VerticalLine;&nbsp;</span></a>
+            <a class="foo-policy"
+              href="privacy_policy.html">Privacy&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
+            <a class="foo-policy" href="confidentality_policy.html">Confidentiality&nbsp;Policy</a>
+          </div>
+          <div id="foo-rights"
+            class="col-md-12 col-lg-12 d-flex align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-1 mt-1 pt-lg-1 pt-1">
+            &copy; Skyfinch 2023. All rights reserved. Designed by Skyfinch.
+          </div>
         </div>
-    </div>
+      </div>
       <!-- Copyright End -->
     </section>
     <!-- Footer End -->
   </main>
+
   <!-- Back to Top   back-to-top -->
   <a href="#" id="main_top" class="btn btn-lg page-top btn-lg-square rounded-circle wow fadeInDown"
     data-wow-delay="1.8s" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
     data-bs-title="back-to-top"><img src="img/right-arrow.png" alt="" /></a>
+
   <!-- JavaScript Libraries -->
   <script src="js/Jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
@@ -2741,20 +2745,33 @@
       pause: ""
     })
     //<!-- Contact Button Start -->
+
+    // Hide the form when the "Hide Form" button is clicked
     document.querySelector("#hide_form").addEventListener("click", function (event) {
       event.stopPropagation(); // Prevent the click event from propagating to the document body
       document.querySelector("#myForm").style.display = "none";
       document.querySelector("#show_form").style.display = "block";
     });
-    document.body.addEventListener("click", function () {
+
+    // Hide the form when clicking anywhere on the document body
+    document.addEventListener("click", function () {
       document.querySelector("#myForm").style.display = "none";
       document.querySelector("#show_form").style.display = "block";
     });
+
+    // Show the form when the "Show Form" button is clicked
     document.querySelector("#show_form").addEventListener("click", function (event) {
       event.stopPropagation(); // Prevent the click event from propagating to the document body
       document.open_form.reset();
       document.querySelector("#myForm").style.display = "block";
+      document.querySelector("#form-mail").focus();
     });
+
+    // Prevent hiding the form when clicking inside the form
+    document.querySelector("#myForm").addEventListener("click", function (event) {
+      event.stopPropagation();
+    });
+
     //<!-- Contact Button End -->
     AOS.init();
     var swiper = new Swiper('.mySwiper', {

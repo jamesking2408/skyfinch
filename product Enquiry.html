@@ -651,8 +651,8 @@
         <div class="sub-popup" id="pop">
             <img src="img/404-tick.png" alt="">
             <h2 class="display-5" style="color: rgb(1, 1, 68);"></h2>
-            <p class="fw-semibold">. </p>
-            <button type="button" class="exit fw-bold" onclick="closePopup()">OK<span><img src="img/thumbs.png"
+            <p class="fw-semibold">. </p> <!-- onclick="closePopupPq()" -->
+            <button type="button" class="exit fw-bold">OK<span><img src="img/thumbs.png"
                         alt="thumbs" style="width: 25px; margin-top: -8px;"></span></button>
         </div>
     </div>
@@ -663,8 +663,8 @@
             <img src="img/wrong.png" class="wrong" alt="">
             <h2 class="display-5" style="color: rgb(219, 17, 17);"></h2>
             <p class="fw-semibold"></p>
-            <button type="button" class="exit1 fs-5 fw-bolder" onclick="closePopup1()">OK<span><img src="img/thumbs.png"
-                        alt="thumbs" style="width: 25px;"></span></button>
+            <button type="button" class="exit1 fs-5 fw-bolder">OK<span><img
+                        src="img/thumbs.png" alt="thumbs" style="width: 25px;"></span></button>
         </div>
     </div>
     <!-- Submit wrong alert box -->
@@ -857,7 +857,7 @@
                             </div>
                         </div>
                         <div class="col-lg-8 mt-2 pt-1 mx-lg-0 mx-3">
-                            <form name="cus_form" action="">
+                            <form name="cus_form" onsubmit="sendMail()" reset(); return false;>
                                 <div class="row mx-lg-0 mx-3">
                                     <div class="col-lg-6 mt-1 pb-2 wow fadeInRight" data-wow-delay="0.2s">
                                         <div class="input-data">
@@ -868,7 +868,7 @@
                                     <div class="col-lg-6 mt-1 pb-2 wow fadeInRight" data-wow-delay="0.2s">
                                         <div class="input-data">
                                             <label for="cus-number">Your phone number</label>
-                                            <input type="text" id="cus-number" maxlength="15" required>
+                                            <input type="text" id="cus-number" maxlength="10" required>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 mt-3 pb-2 wow fadeInRight" data-wow-delay="0.4s">
@@ -924,7 +924,7 @@
                                         <input type="reset" class="btn btn-pop me-5"
                                             onclick="resetFormProduct()"></input>
                                         <button type="button" class="btn btn-pop me-5"
-                                            onclick="msgButton()">Submit</button>
+                                            onclick="prodEnqiry()">Submit</button>
                                     </div>
                                 </div>
                             </form>
@@ -1248,15 +1248,19 @@
     <!-- JavaScript Libraries -->
     <script src="js/Jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/AnimationOnScroll/package/dist/aos.js"></script>
+    <script src="js/placeholder.min.js"></script>
+    <script src="js/searchBar.js"></script>
+    <script src="js/product-enquiry.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
-    <script src="js/AnimationOnScroll/package/dist/aos.js"></script>
-    <script src="js/placeholder.min.js"></script>
-    <script src="js/searchBar.js"></script>
+    <script src="lib/jspdf/jspdf.umd.min.js"></script>
+    <script src="lib/smtpjs/smtp.js"></script>
     <!-- Scroll effects -->
+
     <script>
         AOS.init();
     </script>
