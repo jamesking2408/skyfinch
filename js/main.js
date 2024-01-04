@@ -90,7 +90,7 @@
 
     //section change start
     // Filter
-    $('.sec a').click(function () {
+    $('.sec1 a').click(function () {
         var value = $(this).attr('data-filter');
         if (value == 'all') {
             $('.product').show();
@@ -100,9 +100,9 @@
         }
     })
 
-    $('.sec a').click(function () {
-        $('.sec a').removeClass('active1');
-        $(this).addClass('active1');
+    $('.sec1 a').click(function () {
+        $('.sec1 a').removeClass('active_tab');
+        $(this).addClass('active_tab');
     })
 
 
@@ -146,7 +146,7 @@
     function screenCheck() {
         var deviceAgent = navigator.userAgent.toLowerCase();
         var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
-        if (agentID || $(window)    .width() <= 1114) {
+        if (agentID || $(window).width() <= 1114) {
             // its mobile screen
             $.scrollify.destroy();
             $('section').removeClass('scroll').removeAttr('style');
@@ -272,7 +272,7 @@
                 items: 3
             },
             1000: {
-                items: 6
+                items: 5
             }
         }
     });
@@ -295,7 +295,7 @@
                 items: 3
             },
             1000: {
-                items: 6
+                items: 5
             }
         }
     });
@@ -432,55 +432,43 @@
         }
     });
 
+    // Navbar toggler icon
+    var forEach = function (t, o, r) {
+        if ("[object Object]" === Object.prototype.toString.call(t))
+            for (var c in t)
+                Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
+        else for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t);
+    };
+    var hamburgers = document.querySelectorAll(".hamburger");
+
+    function closeMenu() {
+        // Iterate through each hamburger element
+        forEach(hamburgers, function (hamburger) {
+            // Check if the hamburger has the "is-active" class
+            if (hamburger.classList.contains("is-active")) {
+                // Remove the "is-active" class
+                hamburger.classList.remove("is-active");
+            }
+        });
+    }
+
+    if (hamburgers.length > 0) {
+        forEach(hamburgers, function (hamburger) {
+            hamburger.addEventListener(
+                "click",
+                function (event) {
+                    // Prevent the click event from propagating to the document
+                    event.stopPropagation();
+                    // Toggle the "is-active" class
+                    this.classList.toggle("is-active");
+                },
+                false
+            );
+        });
+
+        // Add a click event listener to the document to close the menu when clicked outside
+        document.addEventListener("click", closeMenu);
+    }
 })(jQuery);
 
 
-// Navbar toggler icon
-var forEach = function (t, o, r) {
-    if ("[object Object]" === Object.prototype.toString.call(t))
-        for (var c in t)
-            Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
-    else for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t);
-};
-// var hamburgers = document.querySelectorAll(".hamburger");
-// if (hamburgers.length > 0) {
-//     forEach(hamburgers, function (hamburger) {
-//         hamburger.addEventListener(
-//             "click",
-//             function () {
-//                 this.classList.toggle("is-active");
-//             },
-//             false
-//         );
-//     });
-// }
-var hamburgers = document.querySelectorAll(".hamburger");
-
-function closeMenu() {
-    // Iterate through each hamburger element
-    forEach(hamburgers, function (hamburger) {
-        // Check if the hamburger has the "is-active" class
-        if (hamburger.classList.contains("is-active")) {
-            // Remove the "is-active" class
-            hamburger.classList.remove("is-active");
-        }
-    });
-}
-
-if (hamburgers.length > 0) {
-    forEach(hamburgers, function (hamburger) {
-        hamburger.addEventListener(
-            "click",
-            function (event) {
-                // Prevent the click event from propagating to the document
-                event.stopPropagation();
-                // Toggle the "is-active" class
-                this.classList.toggle("is-active");
-            },
-            false
-        );
-    });
-
-    // Add a click event listener to the document to close the menu when clicked outside
-    document.addEventListener("click", closeMenu);
-}

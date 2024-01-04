@@ -19,12 +19,6 @@ function prodEnqiry() {
         document.querySelector(".exit1").addEventListener("click", function () {
             document.querySelector("#cus-name").focus();
         })
-        document.addEventListener("keypress", (e) => {
-            if (e.key === "Enter") {
-                closePopupPq();
-                document.querySelector("#cus-name").focus();
-            }
-        });
     }
     else if (cus_name == "") {
         document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10p x 0px 0px 5px\"> SORRY!";
@@ -33,12 +27,6 @@ function prodEnqiry() {
         document.querySelector(".exit1").addEventListener("click", function () {
             document.querySelector("#cus-name").focus();
         })
-        document.addEventListener("keypress", (e) => {
-            if (e.key === "Enter") {
-                closePopupPq();
-                document.querySelector("#cus-name").focus();
-            }
-        });
     }
     else if ((num == "") || (!num_filter.test(num))) {
         document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
@@ -47,12 +35,6 @@ function prodEnqiry() {
         document.querySelector(".exit1").addEventListener("click", function () {
             document.querySelector("#cus-number").focus();
         })
-        document.addEventListener("keypress", (e) => {
-            if (e.key === "Enter") {
-                closePopupPq();
-                document.querySelector("#cus-number").focus();
-            }
-        });
     }
     else if ((mail == "") || (!mail_filter.test(mail))) {
         document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
@@ -61,12 +43,6 @@ function prodEnqiry() {
         document.querySelector(".exit1").addEventListener("click", function () {
             document.querySelector("#cus-mail").focus();
         })
-        document.addEventListener("keypress", (e) => {
-            if (e.key === "Enter") {
-                closePopupPq();
-                document.querySelector("#cus-mail").focus();
-            }
-        });
     }
     else if (campy == "") {
         document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
@@ -75,12 +51,6 @@ function prodEnqiry() {
         document.querySelector(".exit1").addEventListener("click", function () {
             document.querySelector("#cus-company").focus();
         })
-        document.addEventListener("keypress", (e) => {
-            if (e.key === "Enter") {
-                closePopupPq();
-                document.querySelector("#cus-company").focus();
-            }
-        });
     }
     else if (job == "") {
         document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
@@ -89,12 +59,6 @@ function prodEnqiry() {
         document.querySelector(".exit1").addEventListener("click", function () {
             document.querySelector("#cus-job").focus();
         })
-        document.addEventListener("keypress", (e) => {
-            if (e.key === "Enter") {
-                closePopupPq();
-                document.querySelector("#cus-job").focus();
-            }
-        });
     }
     else if (cont == "") {
         document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
@@ -103,12 +67,6 @@ function prodEnqiry() {
         document.querySelector(".exit1").addEventListener("click", function () {
             document.querySelector("#cus-country").focus();
         })
-        document.addEventListener("keypress", (e) => {
-            if (e.key === "Enter") {
-                closePopupPq();
-                document.querySelector("#cus-country").focus();
-            }
-        });
     }
     else if (sales == "") {
         document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
@@ -117,12 +75,6 @@ function prodEnqiry() {
         document.querySelector(".exit1").addEventListener("click", function () {
             document.querySelector("#cus-ss").focus();
         })
-        document.addEventListener("keypress", (e) => {
-            if (e.key === "Enter") {
-                closePopupPq();
-                document.querySelector("#cus-ss").focus();
-            }
-        });
     }
     else if (price == "") {
         document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
@@ -131,12 +83,6 @@ function prodEnqiry() {
         document.querySelector(".exit1").addEventListener("click", function () {
             document.querySelector("#cus-price").focus();
         })
-        document.addEventListener("keypress", (e) => {
-            if (e.key === "Enter") {
-                closePopupPq();
-                document.querySelector("#cus-price").focus();
-            }
-        });
     }
     else if (txt == "") {
         document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
@@ -145,12 +91,6 @@ function prodEnqiry() {
         document.querySelector(".exit1").addEventListener("click", function () {
             document.querySelector("#cus-text").focus();
         })
-        document.addEventListener("keypress", (e) => {
-            if (e.key === "Enter") {
-                closePopupPq();
-                document.querySelector("#cus-text").focus();
-            }
-        });
     }
     else if (txt.length < 5) {
         document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
@@ -159,38 +99,27 @@ function prodEnqiry() {
         document.querySelector(".exit1").addEventListener("click", function () {
             document.querySelector("#cus-text").focus();
         })
-        document.addEventListener("keypress", (e) => {
-            if (e.key === "Enter") {
-                closePopupPq();
-                document.querySelector("#cus-text").focus();
-            }
-        });
     }
     else {
         document.querySelector(".sub-popup h2").innerHTML = "Congrats!";
         document.querySelector(".sub-popup p").innerHTML = "Your details submitted successfully. ";
         popup.classList.add("open-popup");
-
-        document.addEventListener("keypress", (e) => {
-            if (e.key === "Enter") {
-                closePopup1Pq();
-            }
-        });
-        var body = "\t\t\t<h2>CUSTOMER DETAILS</h2>" +
-            "\n<br> Name : " + cus_name + " " +
-            "\n<br> Phone Number: " + num + " " +
-            "\n<br> Mail ID: " + mail + " " +
-            "\n<br> Company: " + campy + " " +
-            "\n<br> Job: " + job + " " +
-            "\n<br> Country: " + cont + " " +
-            "\n<br> Sales: " + sales + " " +
-            "\n<br> Price: " + price + " " +
-            "\n<br> Project Details: " + txt;
-
-        console.log(body);
+        var body = "<center><h1>SKYFINCH WEBSITE</h1></center>" +
+            "<br><center><h3>CUSTOMER DETAILS</h3></center>" +
+            "<center><table>" +
+            "  <tr><td>Name:</td><td>" + cus_name + "</td></tr>" +
+            "  <tr><td>Phone Number:</td><td>" + num + "</td></tr>" +
+            "  <tr><td>Mail ID:</td><td>" + mail + "</td></tr>" +
+            "  <tr><td>Company:</td><td>" + campy + "</td></tr>" +
+            "  <tr><td>Job:</td><td>" + job + "</td></tr>" +
+            "  <tr><td>Country:</td><td>" + cont + "</td></tr>" +
+            "  <tr><td>Sales:</td><td>" + sales + "</td></tr>" +
+            "  <tr><td>Price:</td><td>" + price + "</td></tr>" +
+            "  <tr><td>Project Details:</td><td>" + txt + "</td></tr>" +
+            "</table></center>";
         Email.send({
             SecureToken: "43b9e9f4-c4ca-4b5e-a846-c43c61f9f360",
-            To: 'jai29112024@gmail.com',
+            To: 'mktg@skyfinch.com',
             From: "sjkumarsri@gmail.com",
             Subject: cus_name,
             Body: body
@@ -211,7 +140,10 @@ function closePopupPq() {
 }
 
 function closePopup1Pq() {
-    popup1.classList.remove("open-popup");
+    var popup1 = document.querySelector(".open-popup");
+    if (popup1) {
+        popup1.classList.remove("open-popup");
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
