@@ -552,7 +552,7 @@
                             </button>
                         </li>
                         <li class="content mb-3">
-                            <button onclick="jumpToProfile('profile_sec2_4')"
+                            <button onclick="jumpToProfile('profile_sec2')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">
                                 Profile | Our Products
                             </button>
@@ -622,10 +622,10 @@
             </div>
         </div>
     </div>
-    <!-- Search Modal End-->
-    <!-- Start chat box Design  -->
+    <!-- Search Modal End -->
+    <!-- Start chat box Design -->
     <span class="tooltip-text" style="visibility: hidden">I’m Skyfinch</span>
-    <button title="" class="chatbot-toggler wow fadeInDown" data-wow-delay="1.8s" data-bs-toggle="tooltip"
+    <button title="" class="chatbot-toggler" data-bs-toggle="tooltip"
         data-bs-placement="left" data-bs-custom-class="chat-tooltip" data-bs-title="Hi! I'm Help you.👋">
         <span class="material-symbols-outlined">mode_comment</span>
         <span class="material-symbols-outlined">close</span>
@@ -639,8 +639,8 @@
             <li class="chat incoming">
                 <span class="material-symbols-outlined">🤖</span>
                 <p>
-                    Hi <br />I’m SkyFinch 👋 <br />
-                    If you need any help?<br />
+                    Hi <br/>I’m SkyFinch 👋 <br/>
+                    If you need any help?<br/>
                     Type: 'Help'
                 </p>
             </li>
@@ -677,8 +677,8 @@
     </div>
     <!-- Submit wrong alert box -->
     <!-- Navbar Start -->
-    <div class="container-fluid vw-nav fixed-top m-0 p-0 wow fadeIn" data-wow-delay="0.8s">
-        <div class="top-bar row gx-2 pb-lg-0 align-items-center d-lg-flex d-md-flex d-none bg-blue wow fadeIn">
+    <div class="container-fluid vw-nav fixed-top m-0 p-0">
+        <div class="top-bar row gx-2 pb-lg-0 align-items-center d-lg-flex d-md-flex d-none bg-blue">
             <div class="col-lg-7 col-md-12 text-start id_con">
                 <medium class="ms-lg-2"><i id="top-icons" class="fa fa-map-marker-alt me-lg-2 me-md-2">
                     </i>5, Republic Street, Reddiarpalayam, Puducherry-605010,
@@ -696,11 +696,10 @@
                 </medium>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 py-md-2 py-2 px-lg-4 wow fadeIn bg-white"
-            data-wow-delay="0.9s">
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 py-md-2 py-2 px-lg-4 bg-white">
             <a href="index.html" class="navbar-brand ms-0 ms-lg-0">
-                <img src="img/cloud.png" alt="" class="r-cloud wow slideInLeft" data-wow-delay="1.2s" />
-                <img src="img/cloud.png" alt="" class="l-cloud wow slideInRight" data-wow-delay="1s" />
+                <img src="img/cloud.png" alt="" class="r-cloud animated slideInRight" />
+                <img src="img/cloud.png" alt="" class="l-cloud animated slideInLeft" />
                 <b class="display-6 cloud">SkyFinch
                     <h6 class="me-0 p-0">Solution to Success</h6>
                 </b>
@@ -727,11 +726,6 @@
                     <img class="img-icons" src="img/socialMedia/linkedin_icon.png" alt="linkedin" />
                 </a>
             </div>
-            <!-- <button type="button" class="navbar-toggler me-2" data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-
-            </button> -->
             <div class="hamburger hamburger--emphatic" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <div class="hamburger-box">
                     <div class="hamburger-inner"></div>
@@ -835,7 +829,7 @@
         <!-- Page Header Start -->
         <section id="service_land" class="container-fluid px-0 pt-lg-4 mt-lg-2 mt-0 pt-0">
             <!--New header page (update)-->
-            <div class="container1 service-bg mt-lg-4 pt-lg-4 mt-1 pt-1 mb-3 wow fadeInUp" data-wow-delay="1.2s">
+            <div class="container1 service-bg mt-lg-4 pt-lg-4 mt-1 pt-1 mb-3">
                 <div class="row px-2 service-border wow fadeInUp" data-wow-delay="1.5s">
                     <h1 class="display-3 wow fadeInDown" data-wow-delay="1.8s">
                         SERVICES
@@ -859,7 +853,7 @@
             <div class="container-fluid service pt-lg-0 mt-lg-4 pt-1 mt-2">
                 <div class="container">
                     <div class="text-center mx-auto mt-lg-4 pt-lg-5 mt-1 mb-lg-3 g-lg-4 gy-4 wow fadeInLeft"
-                        data-wow-delay="0.1s" data-aos-duration="500" data-aos="fade-up" style="max-width: 600px">
+                        data-wow-delay="0.1s" style="max-width: 600px">
                         <p class="d-inline-block border rounded text-primary fw-semi-bold py-0 px-1 my-1 mb-0">
                             Our Services
                         </p>
@@ -872,64 +866,91 @@
                         <div class="col-lg-4 wow fadeInLeft" data-wow-delay="0.1s" data-aos-duration="500"
                             data-aos="fade-up">
                             <div class="nav nav-pills g-2 d-flex justify-content-around w-100 h-75 me-2">
-                                <button
-                                    class="nav-link bar-clor g-2 w-100 d-flex align-items-center text-start border p-2 mb-2 active"
+                                <button class="nav-link bar-clor g-2 w-100 text-start border p-2 mb-2 active"
                                     data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
-                                    <span class="m-0 h5">
-                                        <i class="fa fa-bars ms-1 me-3"></i>Software Development
-                                    </span>
+                                    <div class="row rt_cont p-0 m-0 align-items-center">
+                                        <div class="col-1 p-0 m-0 ms-1">
+                                            <i class="fa fa-bars"></i>
+                                        </div>
+                                        <div class="col-10 p-0 m-0">
+                                            <span class="m-0 h5 font-weight-bold text-uppercase">Software
+                                                Development</span>
+                                        </div>
+                                    </div>
                                 </button>
-                                <button
-                                    class="nav-link bar-clor g-2 w-100 d-flex align-items-center text-start border p-2 mb-2"
+                                <button class="nav-link bar-clor g-2 w-100 text-start border p-2 mb-2"
                                     data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
-                                    <span class="m-0 h5">
-                                        <i class="fa fa-bars ms-1 me-3"></i>Web Development
-                                    </span>
+                                    <div class="row rt_cont p-0 m-0 align-items-center">
+                                        <div class="col-1 p-0 m-0 ms-1">
+                                            <i class="fa fa-bars"></i>
+                                        </div>
+                                        <div class="col-8 p-0 m-0">
+                                            <span class="m-0 h5 font-weight-bold text-uppercase">Web Development</span>
+                                        </div>
+                                    </div>
                                 </button>
-                                <button
-                                    class="nav-link bar-clor g-2 w-100 d-flex align-items-center text-start border p-2 mb-2"
+                                <button class="nav-link bar-clor g-2 w-100 text-start border p-2 mb-2"
                                     data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
-                                    <span class="m-0 h5">
-                                        <i class="fa fa-bars ms-1 me-3"></i>Mobile Application Development
-                                    </span>
+                                    <div class="row rt_cont p-0 m-0 align-items-center">
+                                        <div class="col-1 p-0 m-0 ms-1">
+                                            <i class="fa fa-bars"></i>
+                                        </div>
+                                        <div class="col-10 p-0 m-0">
+                                            <span class="m-0 h5 font-weight-bold text-uppercase">Mobile Application
+                                                Development</span>
+                                        </div>
+                                    </div>
                                 </button>
-                                <button
-                                    class="nav-link bar-clor g-2 w-100 d-flex align-items-center text-start border p-2 mb-2"
+                                <button class="nav-link bar-clor g-2 w-100 text-start border p-2 mb-2"
                                     data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
-                                    <span class="m-0 h5">
-                                        <i class="fa fa-bars ms-1 me-3"></i>Automation Services
-                                    </span>
+                                    <div class="row rt_cont p-0 m-0 align-items-center">
+                                        <div class="col-1 p-0 m-0 ms-1">
+                                            <i class="fa fa-bars"></i>
+                                        </div>
+                                        <div class="col-10 p-0 m-0">
+                                            <span class="m-0 h5 font-weight-bold text-uppercase">Automation
+                                                Services</span>
+                                        </div>
+                                    </div>
                                 </button>
-                                <button
-                                    class="nav-link bar-clor g-2 w-100 d-flex align-items-center text-start border p-2 mb-2"
+                                <button class="nav-link bar-clor g-2 w-100 text-start border p-2 mb-2"
                                     data-bs-toggle="pill" data-bs-target="#tab-pane-5" type="button">
-                                    <span class="m-0 h5">
-                                        <i class="fa fa-bars ms-1 me-3"></i>Integration Services
-                                    </span>
+                                    <div class="row rt_cont p-0 m-0 align-items-center">
+                                        <div class="col-1 p-0 m-0 ms-1">
+                                            <i class="fa fa-bars"></i>
+                                        </div>
+                                        <div class="col-10 p-0 m-0">
+                                            <span class="m-0 h5 font-weight-bold text-uppercase">Integration
+                                                Services</span>
+                                        </div>
+                                    </div>
                                 </button>
-                                <button
-                                    class="nav-link bar-clor g-2 w-100 d-flex align-items-center text-start border p-2 mb-2"
+                                <button class="nav-link bar-clor g-2 w-100 text-start border p-2 mb-2"
                                     data-bs-toggle="pill" data-bs-target="#tab-pane-6" type="button">
-                                    <span class="m-0 h5">
-                                        <i class="fa fa-bars ms-1 me-3"></i>ML/AI and Big Data Solutions
-                                    </span>
+                                    <div class="row rt_cont p-0 m-0 align-items-center">
+                                        <div class="col-1 p-0 m-0 ms-1">
+                                            <i class="fa fa-bars"></i>
+                                        </div>
+                                        <div class="col-10 p-0 m-0">
+                                            <span class="m-0 h5 font-weight-bold text-uppercase">ML/AI and Big Data
+                                                Solutions</span>
+                                        </div>
+                                    </div>
                                 </button>
                             </div>
                         </div>
                         <div class="col-lg-8">
-                            <div class="tab-content w-100 h-75">
-                                <div class="tab-pane fade show active" id="tab-pane-1">
+                            <div class="tab-content w-100 h-75 wow fadeInRight" data-wow-delay="0.1s"
+                                data-aos-duration="500" data-aos="fade-up">
+                                <div class="tab-pane show active" id="tab-pane-1">
                                     <div class="row g-lg-4 g-md-4 g-2">
-                                        <div class="col-12 col-md-6 tabPane_img col-lg-6 wow fadeInRight"
-                                            data-wow-delay=".1s" data-aos-duration="500" data-aos="fade-up"
-                                            style="min-height: 350px">
+                                        <div class="col-12 col-md-6 tabPane_img col-lg-6" style="min-height: 350px">
                                             <div class="position-relative h-100">
                                                 <img class="position-absolute rounded w-100" src="img/soft_service.png"
                                                     alt="" />
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-6 col-lg-6 wow fadeInRight" data-wow-delay=".1s"
-                                            data-aos-duration="500" data-aos="fade-up">
+                                        <div class="col-12 col-md-6 col-lg-6">
                                             <h3 class="mb-lg-3 mb-md-3 mb-1">
                                                 SOFTWARE DEVELOPMENT
                                             </h3>
@@ -958,17 +979,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="tab-pane-2">
+                                <div class="tab-pane" id="tab-pane-2">
                                     <div class="row g-4">
-                                        <div class="col-md-6 col-lg-6 tabPane_img h-100 wow fadeInRight"
-                                            data-wow-delay=".1s" data-aos-duration="500" data-aos="fade-up">
+                                        <div class="col-md-6 col-lg-6 tabPane_img h-100 animated zoomIn">
                                             <div class="position-relative h-100">
                                                 <img class="img-fluid rounded w-100" src="img/web_services.png"
                                                     style="height: 280px !important;" alt="" />
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-6 col-lg-6 wow fadeInRight" data-wow-delay=".1s"
-                                            data-aos-duration="500" data-aos="fade-up">
+                                        <div class="col-12 col-md-6 col-lg-6 animated zoomIn">
                                             <h3 class="mb-lg-3 mb-md-3 mb-1">
                                                 WEB DEVELOPMENT
                                             </h3>
@@ -995,17 +1014,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="tab-pane-3">
+                                <div class="tab-pane" id="tab-pane-3">
                                     <div class="row g-4">
-                                        <div class="col-md-6 col-lg-6 tabPane_img h-75 wow fadeInRight"
-                                            data-wow-delay=".1s" data-aos-duration="500" data-aos="fade-up">
+                                        <div class="col-md-6 col-lg-6 tabPane_img h-75 animated zoomIn">
                                             <div class="position-relative h-75">
                                                 <img class="img-fluid rounded w-100" src="img/mob_services.png"
                                                     alt="" />
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-6 col-lg-6 wow fadeInRight" data-wow-delay=".1s"
-                                            data-aos-duration="500" data-aos="fade-up">
+                                        <div class="col-12 col-md-6 col-lg-6 animated zoomIn">
                                             <h3 class="mb-lg-3 mb-md-3 mb-1">
                                                 MOBILE APPLICATION DEVELOPMENT
                                             </h3>
@@ -1034,17 +1051,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="tab-pane-4">
+                                <div class="tab-pane" id="tab-pane-4">
                                     <div class="row g-4">
-                                        <div class="col-md-6 col-lg-6 tabPane_img wow fadeInRight" data-wow-delay=".1s"
-                                            data-aos-duration="500" data-aos="fade-up">
+                                        <div class="col-md-6 col-lg-6 tabPane_img animated zoomIn">
                                             <div class="position-relative h-100">
                                                 <img class="position-absolute rounded w-100" src="img/automation.svg"
                                                     alt="" />
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-6 col-lg-6 wow fadeInRight" data-wow-delay=".1s"
-                                            data-aos-duration="500" data-aos="fade-up">
+                                        <div class="col-12 col-md-6 col-lg-6 animated zoomIn">
                                             <h3 class="mb-lg-3 mb-md-3 mb-1">
                                                 AUTOMATION SERVICES
                                             </h3>
@@ -1073,17 +1088,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="tab-pane-5">
+                                <div class="tab-pane" id="tab-pane-5">
                                     <div class="row g-4">
-                                        <div class="col-md-6 col-lg-6 tabPane_img wow fadeInRight" data-wow-delay=".1s"
-                                            data-aos-duration="500" data-aos="fade-up">
+                                        <div class="col-md-6 col-lg-6 tabPane_img animated zoomIn">
                                             <div class="position-relative h-100">
                                                 <img class="position-absolute sms_services rounded w-100"
                                                     src="img/Intergration_services.png" alt="" />
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-6 col-lg-6 wow fadeInRight" data-wow-delay=".1s"
-                                            data-aos-duration="500" data-aos="fade-up">
+                                        <div class="col-12 col-md-6 col-lg-6 animated zoomIn">
                                             <h3 class="mb-lg-3 mb-md-3 mb-1">
                                                 INTEGRATION SERVICES
                                             </h3>
@@ -1110,17 +1123,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="tab-pane-6">
+                                <div class="tab-pane" id="tab-pane-6">
                                     <div class="row g-4">
-                                        <div class="col-md-6 col-lg-6 tabPane_img wow fadeInRight" data-wow-delay=".1s"
-                                            data-aos-duration="500" data-aos="fade-up">
+                                        <div class="col-md-6 col-lg-6 tabPane_img animated zoomIn">
                                             <div class="position-relative h-100">
                                                 <img class="position-absolute rounded w-100" src="img/ml_ai-bd.png"
                                                     alt="" />
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-6 col-lg-6 wow fadeInRight" data-wow-delay=".1s"
-                                            data-aos-duration="500" data-aos="fade-up">
+                                        <div class="col-12 col-md-6 col-lg-6 animated zoomIn">
                                             <h3 class="mb-lg-3 mb-md-3 mb-1">
                                                 ML/AI AND BIG DATA SOLUTIONS
                                             </h3>
@@ -1161,7 +1172,8 @@
             <div class="container-fluid mt-5 pt-1">
                 <div class="container d-flex justify-content-center pt-2 mt-5 mb-sm-0">
                     <div class="row">
-                        <div class="col-lg-12 callback bg-white d-flex justify-content-center mt-2 mt-lg-5 pt-lg-4 mb-lg-3 pb-lg-2 px-4">
+                        <div
+                            class="col-lg-12 callback bg-white d-flex justify-content-center mt-2 mt-lg-5 pt-lg-4 mb-lg-3 pb-lg-2 px-4">
                             <div class="px-lg-2 px-md-2 py-lg-3 py-md-3 mx-lg-4 mx-md-5 px-0 wow fadeInUp"
                                 data-wow-delay="0.1s" data-aos-duration="500" data-aos="slide-up">
                                 <div class="text-center mt-3 mx-auto fadeInUp">
@@ -1216,7 +1228,8 @@
                                                 <label for="msg" class="form-label">Message here..</label>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-12 col-lg-6 text-center d-inline-block mx-auto mt-2 mb-0 pt-1 mb-3">
+                                        <div
+                                            class="col-12 col-md-12 col-lg-6 text-center d-inline-block mx-auto mt-2 mb-0 pt-1 mb-3">
                                             <button type="button" class="btn btn-outline-primary my-0"
                                                 onclick="callBack()">
                                                 Submit now
@@ -1335,8 +1348,7 @@
     </section>
     <!-- Footer End -->
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg page-top btn-lg-square rounded-circle wow fadeInDown" data-wow-delay="1.8s"
-        data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+    <a href="#" class="btn btn-lg page-top btn-lg-square rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
         data-bs-title="back-to-top"><img src="img/right-arrow.png" alt="" /></a>
     <!-- JavaScript Libraries -->
     <script src="js/Jquery/code.jquery.com_jquery-3.7.1.min.js"></script>

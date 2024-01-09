@@ -555,7 +555,7 @@
                             </button>
                         </li>
                         <li class="content mb-3">
-                            <button onclick="jumpToProfile('profile_sec2_4')"
+                            <button onclick="jumpToProfile('profile_sec2')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">
                                 Profile | Our Products
                             </button>
@@ -628,7 +628,7 @@
     <!-- Search Modal End-->
     <!-- Start chat box Design  -->
     <span class="tooltip-text" style="visibility: hidden;">I'm Skyfinch</span>
-    <button title="" class="chatbot-toggler wow fadeInDown" data-wow-delay="2.2s" data-bs-toggle="tooltip"
+    <button title="" class="chatbot-toggler fadeInDown" data-bs-toggle="tooltip"
         data-bs-placement="left" data-bs-custom-class="chat-tooltip" data-bs-title="Hi! I'm Help you.👋">
         <span class="material-symbols-outlined">mode_comment</span>
         <span class="material-symbols-outlined">close</span>
@@ -653,8 +653,8 @@
     </div>
     <!-- End chat box Design  -->
     <!-- Navbar Start -->
-    <div class="container-fluid vw-nav fixed-top m-0 p-0 wow fadeIn" data-wow-delay="0.8s">
-        <div class="top-bar row gx-2 pb-lg-0 align-items-center d-lg-flex d-md-flex d-none bg-blue wow fadeIn">
+    <div class="container-fluid vw-nav fixed-top m-0 p-0">
+        <div class="top-bar row gx-2 pb-lg-0 align-items-center d-lg-flex d-md-flex d-none bg-blue">
             <div class="col-lg-7 col-md-12 text-start id_con">
                 <medium class="ms-lg-2"><i id="top-icons" class="fa fa-map-marker-alt me-lg-2 me-md-2">
                     </i>5, Republic Street, Reddiarpalayam, Puducherry-605010,
@@ -672,11 +672,10 @@
                 </medium>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 py-md-2 py-2 px-lg-4 wow fadeIn bg-white"
-            data-wow-delay="0.9s">
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 py-md-2 py-2 px-lg-4 bg-white">
             <a href="index.html" class="navbar-brand ms-0 ms-lg-0">
-                <img src="img/cloud.png" alt="" class="r-cloud wow slideInLeft" data-wow-delay="1.2s" />
-                <img src="img/cloud.png" alt="" class="l-cloud wow slideInRight" data-wow-delay="1s" />
+                <img src="img/cloud.png" alt="" class="r-cloud animated slideInLeft"/>
+                <img src="img/cloud.png" alt="" class="l-cloud animated slideInRight"/>
                 <b class="display-6 cloud">SkyFinch
                     <h6 class="me-0 p-0">Solution to Success</h6>
                 </b>
@@ -942,6 +941,14 @@
             <span class="close">&times;</span>
             <img class="modal-content1">
         </div>
+        <div class="idMyModal modal1">
+            <span class="close">&times;</span>
+            <img class="modal-content1">
+        </div>
+        <div class="idMyModal modal1">
+            <span class="close">&times;</span>
+            <img class="modal-content1">
+        </div>
         <!-- Add left and right buttons -->
         <div class="container1 pt-0 pb-3">
             <div class="row d-lg-none d-md-none d-block">
@@ -977,71 +984,87 @@
                         <a class="nav-link mb-1 p-1 shadow active" id="v-pills-Service-tab" data-bs-toggle="pill"
                             href="#v-pills-Service" role="tab" aria-controls="v-pills-Service" aria-selected="true">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Service Management</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>Service Management</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Purchase-tab" data-bs-toggle="pill"
                             href="#v-pills-Purchase" role="tab" aria-controls="v-pills-Purchase" aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Purchase Management</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>Purchase Management</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Inventory-tab" data-bs-toggle="pill"
                             href="#v-pills-Inventory" role="tab" aria-controls="v-pills-Inventory"
                             aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Inventory Management</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>Inventory Management</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Customer-tab" data-bs-toggle="pill"
                             href="#v-pills-Customer" role="tab" aria-controls="v-pills-Customer" aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Customer Management</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>Customer Management</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Supplier-tab" data-bs-toggle="pill"
                             href="#v-pills-Supplier" role="tab" aria-controls="v-pills-Supplier" aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Supplier Management</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>Supplier Management</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Reorder-tab" data-bs-toggle="pill"
                             href="#v-pills-Reorder" role="tab" aria-controls="v-pills-Reorder" aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Reorder/Replenishment</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>Reorder/Replenishment</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Barcode-tab" data-bs-toggle="pill"
                             href="#v-pills-Barcode" role="tab" aria-controls="v-pills-Barcode" aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Barcode Stickers</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>Barcode Stickers</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Complaint-tab" data-bs-toggle="pill"
                             href="#v-pills-Complaint" role="tab" aria-controls="v-pills-Complaint"
                             aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Complaint Management</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>Complaint Management</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-AMC-tab" data-bs-toggle="pill"
                             href="#v-pills-AMC" role="tab" aria-controls="v-pills-AMC" aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>AMC Management</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>AMC Management</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Spare-tab" data-bs-toggle="pill"
                             href="#v-pills-Spare" role="tab" aria-controls="v-pills-Spare" aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Spare Part Consumption</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>Spare Part Consumption</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Technician-tab" data-bs-toggle="pill"
                             href="#v-pills-Technician" role="tab" aria-controls="v-pills-Technician"
                             aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Technician Allocation</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>Technician Allocation</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-SMS-tab" data-bs-toggle="pill"
                             href="#v-pills-SMS" role="tab" aria-controls="v-pills-SMS" aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>SMS Support</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>SMS Support</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Tax-tab" data-bs-toggle="pill"
                             href="#v-pills-Tax" role="tab" aria-controls="v-pills-Tax" aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Tax Management</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>Tax Management</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-GST-tab" data-bs-toggle="pill"
                             href="#v-pills-GST" role="tab" aria-controls="v-pills-GST" aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Financial control with GST</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>Financial control with GST</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Analytical-tab" data-bs-toggle="pill"
                             href="#v-pills-Analytical" role="tab" aria-controls="v-pills-Analytical"
                             aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Analytical Reports</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>Analytical Reports</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-User-tab" data-bs-toggle="pill"
                             href="#v-pills-User" role="tab" aria-controls="v-pills-User" aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>User control Management</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>User control Management</span></a>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-7 col-12 pb-lg-0 pb-5 d-lg-block d-md-block d-none wow fadeInRight"
@@ -1055,197 +1078,263 @@
                             id="v-pills-Service" role="tabpanel" aria-labelledby="v-pills-Service-tab">
                             <h4 class="display-6 content-pane font-italic mb-4">Service Management</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch Service-CRM's single
-                                interface facilitates the creation of a
-                                systematic pricing quotation immediately upon receipt of complaint. Once the customer
-                                approves the quote the task can be delegated to accomplish the service in a streamlined
-                                fashion. This enhances customer satisfaction by reducing turnaround times and by
-                                increasing the efficiency of service process. <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The total integration of all the
-                                business processes involved in the service
-                                workflow gives business stakeholders to potentially: <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Identify revenue generation;<br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Evaluate inventory consumption;<br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Evaluate manpower usage; and<br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Identify quality of the product<br>
+                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch
+                                    Service-CRM's single
+                                    interface facilitates the creation of a
+                                    systematic pricing quotation immediately upon receipt of complaint. Once the
+                                    customer
+                                    approves the quote the task can be delegated to accomplish the service in a
+                                    streamlined
+                                    fashion. This enhances customer satisfaction by reducing turnaround times and by
+                                    increasing the efficiency of service process. <br>
+                                    <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The
+                                        total integration of all the
+                                        business processes involved in the service
+                                        workflow gives business stakeholders to potentially: <br>
+                                        <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Identify revenue generation;<br>
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> Evaluate inventory consumption;<br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> Evaluate manpower usage; and<br>
+                                                    <span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Identify quality of
+                                                        the product<br>
                             </p>
                         </div>
                         <div class="tab-pane overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar px-3 fade p-2"
                             id="v-pills-Purchase" role="tabpanel" aria-labelledby="v-pills-Purchase-tab">
                             <h4 class="display-6 content-pane font-italic mb-3">Purchase Management</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> POS enhances the agility of Purchase
-                                management by simplifying and rendering
-                                the Inward Entry procedure free of hassles<br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Accurate product costing is actuated
-                                by the modules capacity to build buying
-                                level product cost upon the Landing Price<br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system is programmable to
-                                automatically project selling price updates
-                                according to any change attributed to marked price<br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Level of Stock is automatically
-                                updated as when Goods Inward are verified and
-                                accounted for in the system<br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The module's integration with
-                                inventory captures a clear vector of purchases
-                                and stock to accurately forecast the Profit/Gross margin<br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Provision to assign distributor-wise
-                                formula enables to arrive at efficient and
-                                reasonable distributor margins<br>
+                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> POS
+                                    enhances the agility of Purchase
+                                    management by simplifying and rendering
+                                    the Inward Entry procedure free of hassles<br>
+                                    <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                        Accurate product costing is actuated
+                                        by the modules capacity to build buying
+                                        level product cost upon the Landing Price<br>
+                                        <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The system is programmable to
+                                            automatically project selling price updates
+                                            according to any change attributed to marked price<br>
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> Level of Stock is automatically
+                                                updated as when Goods Inward are verified and
+                                                accounted for in the system<br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The module's integration with
+                                                    inventory captures a clear vector of purchases
+                                                    and stock to accurately forecast the Profit/Gross margin<br>
+                                                    <span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Provision to assign
+                                                        distributor-wise
+                                                        formula enables to arrive at efficient and
+                                                        reasonable distributor margins<br>
                             </p>
                         </div>
                         <div class="tab-pane overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar px-3 fade p-2"
                             id="v-pills-Inventory" role="tabpanel" aria-labelledby="v-pills-Inventory-tab">
                             <h4 class="display-6 content-pane font-italic mb-4">Inventory Management</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The tenacity of the module to
-                                accommodate more than 100,000 Stock Keeping Units
-                                (SKUs), enables the effortless and efficient management of large inventories with
-                                diverse product categories<br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system is customizable to design
-                                the categories and sub-categories of the
-                                Inventory to have a better understanding and visibility through personalized screens<br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Any change in the category level of
-                                products can be easily incorporated into
-                                the solution<br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The module offers clear visibility
-                                of the rolled up totals for any category
-                                level of the Inventory<br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The Dynamic Drill Down view presents
-                                a vivid picture of the Inventory
-                                status<br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Actual Vs Estimated stock audits can
-                                be conducted at any time to easily and
-                                quickly find if there are discrepancies<br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Support of excel files while doing
-                                stock audits is a great advantage
+                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The
+                                    tenacity of the module to
+                                    accommodate more than 100,000 Stock Keeping Units
+                                    (SKUs), enables the effortless and efficient management of large inventories with
+                                    diverse product categories<br>
+                                    <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The
+                                        system is customizable to design
+                                        the categories and sub-categories of the
+                                        Inventory to have a better understanding and visibility through personalized
+                                        screens<br>
+                                        <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Any change in the category level of
+                                            products can be easily incorporated into
+                                            the solution<br>
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> The module offers clear visibility
+                                                of the rolled up totals for any category
+                                                level of the Inventory<br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The Dynamic Drill Down view presents
+                                                    a vivid picture of the Inventory
+                                                    status<br>
+                                                    <span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Actual Vs Estimated
+                                                        stock audits can
+                                                        be conducted at any time to easily and
+                                                        quickly find if there are discrepancies<br>
+                                                        <span><img src="./img/double-tick.svg"
+                                                                style="width: 40px !important;" alt=""> Support of excel
+                                                            files while doing
+                                                            stock audits is a great advantage
                             </p>
                         </div>
                         <div class="tab-pane overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar px-3 fade p-2"
                             id="v-pills-Customer" role="tabpanel" aria-labelledby="v-pills-Customer-tab">
                             <h4 class="display-6 content-pane font-italic mb-4">Customer Management</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Simple steps to create Customer
-                                Record enhances user-experience<br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Segmenting Customers based on
-                                various categories gives clarity in choosing the
-                                most effective area of focus for campaigns and reap maximum benefits<br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Tracking and maintaining customers'
-                                transaction level with the business
-                                empowers to assign customer-specific Credit Limits<br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The facility to track and monitor
-                                Receivables pending from customers presents
-                                customer-wise payment aging notifications, sends SMSs/emails regarding the dues to
-                                customers, and amicably enables the recovery of all pending payments.<br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The module comes with the faculty to
-                                handle time-bound package deals, Offers,
-                                Schemes, and customer-specific appropriation/deduction of Loyalty Bonus points
+                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Simple
+                                    steps to create Customer
+                                    Record enhances user-experience<br>
+                                    <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                        Segmenting Customers based on
+                                        various categories gives clarity in choosing the
+                                        most effective area of focus for campaigns and reap maximum benefits<br>
+                                        <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Tracking and maintaining customers'
+                                            transaction level with the business
+                                            empowers to assign customer-specific Credit Limits<br>
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> The facility to track and monitor
+                                                Receivables pending from customers presents
+                                                customer-wise payment aging notifications, sends SMSs/emails regarding
+                                                the dues to
+                                                customers, and amicably enables the recovery of all pending
+                                                payments.<br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The module comes with the faculty to
+                                                    handle time-bound package deals, Offers,
+                                                    Schemes, and customer-specific appropriation/deduction of Loyalty
+                                                    Bonus points
                             </p>
                         </div>
                         <div class="tab-pane overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar px-3 fade p-2"
                             id="v-pills-Supplier" role="tabpanel" aria-labelledby="v-pills-Supplier-tab">
                             <h4 class="display-6 content-pane font-italic mb-4">Supplier Management</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch offers customized solutions
-                                to suit the supplier relationship process
-                                requirements of any business. These solutions digitize and streamline the process of:
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Identifying, sourcing, contracting,
-                                and procuring the required goods/services
-                                from qualified suppliers
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Managing supplier performance
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Implementing technologies,
-                                processes, policies, and procedures to support the
-                                purchasing process
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Developing and maintaining
-                                relationship with suppliers towards healthy
-                                prospects
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Generating cost-effective
-                                forecasts/theories to meet any kind of supply and
-                                demand scenario
+                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch
+                                    offers customized solutions
+                                    to suit the supplier relationship process
+                                    requirements of any business. These solutions digitize and streamline the process
+                                    of:
+                                    <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                        Identifying, sourcing, contracting,
+                                        and procuring the required goods/services
+                                        from qualified suppliers
+                                        <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Managing supplier performance
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> Implementing technologies,
+                                                processes, policies, and procedures to support the
+                                                purchasing process
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> Developing and maintaining
+                                                    relationship with suppliers towards healthy
+                                                    prospects
+                                                    <span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Generating
+                                                        cost-effective
+                                                        forecasts/theories to meet any kind of supply and
+                                                        demand scenario
                             </p>
                         </div>
                         <div class="tab-pane overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar px-3 fade p-2"
                             id="v-pills-Reorder" role="tabpanel" aria-labelledby="v-pills-Reorder-tab">
                             <h4 class="display-6 content-pane font-italic mb-4">Reorder/Replenishment</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Reorder/Replenishment notifications
-                                are raised to designated
-                                personnel based on:
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">Min/Max sales range for any
-                                particular date in the previous year(s).
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Sales for a particular period (days,
-                                month, years) from the past.
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Reorder Level specifications.
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Lead times.
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Fall in the prescribed
-                                safety-stock-level of any given product.
+                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                    Reorder/Replenishment notifications
+                                    are raised to designated
+                                    personnel based on:
+                                    <br>
+                                    <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                            alt="">Min/Max sales range for any
+                                        particular date in the previous year(s).
+                                        <br>
+                                        <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Sales for a particular period (days,
+                                            month, years) from the past.
+                                            <br>
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> Reorder Level specifications.
+                                                <br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> Lead times.
+                                                    <br>
+                                                    <span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Fall in the
+                                                        prescribed
+                                                        safety-stock-level of any given product.
                             </p>
                         </div>
                         <div class="tab-pane overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar px-3 fade p-2"
                             id="v-pills-Barcode" role="tabpanel" aria-labelledby="v-pills-Barcode-tab">
                             <h4 class="display-6 content-pane font-italic mb-4">Barcode Stickers</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Facilitates the designing and
-                                printing of barcode's indigenously.
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Enables the generation of stickers
-                                using normal laser printer or ink
-                                jet printer with the liberty of choosing desired logo and design.
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system supports dedicated
-                                sticker printers, printing A4 size
-                                sticker sheets, and partial sheet printing.
+                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                    Facilitates the designing and
+                                    printing of barcode's indigenously.
+                                    <br>
+                                    <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                        Enables the generation of stickers
+                                        using normal laser printer or ink
+                                        jet printer with the liberty of choosing desired logo and design.
+                                        <br>
+                                        <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The system supports dedicated
+                                            sticker printers, printing A4 size
+                                            sticker sheets, and partial sheet printing.
                             </p>
                         </div>
                         <div class="tab-pane overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar px-3 fade p-2"
                             id="v-pills-Complaint" role="tabpanel" aria-labelledby="v-pills-Complaint-tab">
                             <h4 class="display-6 content-pane font-italic mb-4">Complaint Management</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> One of the key aspects in sales and
-                                service that maximizes customer
-                                satisfaction is Complaints Management. This plays a very important role in the retention
-                                and expansion of client-base. Skyfinch's Complaint Management module actuates the
-                                efficient and comprehensive tracking and monitoring of the service process and provides
-                                the scope to rectify discrepancies and constantly enhance efficiency of service by
-                                facilitating:
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">Generation of complaint ticket
-                                number;
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Tracking of Activities;
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Simple escalation procedure;
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Analysis of the nature of
-                                discrepancies;
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Accurate resolutions through
-                                time-tested reports; and
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Initiating AMC procedures based on
-                                warranty status.
+                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> One of
+                                    the key aspects in sales and
+                                    service that maximizes customer
+                                    satisfaction is Complaints Management. This plays a very important role in the
+                                    retention
+                                    and expansion of client-base. Skyfinch's Complaint Management module actuates the
+                                    efficient and comprehensive tracking and monitoring of the service process and
+                                    provides
+                                    the scope to rectify discrepancies and constantly enhance efficiency of service by
+                                    facilitating:
+                                    <br>
+                                    <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                            alt="">Generation of complaint ticket
+                                        number;
+                                        <br>
+                                        <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Tracking of Activities;
+                                            <br>
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> Simple escalation procedure;
+                                                <br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> Analysis of the nature of
+                                                    discrepancies;
+                                                    <br>
+                                                    <span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Accurate resolutions
+                                                        through
+                                                        time-tested reports; and
+                                                        <br>
+                                                        <span><img src="./img/double-tick.svg"
+                                                                style="width: 40px !important;" alt=""> Initiating AMC
+                                                            procedures based on
+                                                            warranty status.
                             </p>
                         </div>
                         <div class="tab-pane overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar px-3 fade p-2"
                             id="v-pills-AMC" role="tabpanel" aria-labelledby="v-pills-AMC-tab">
                             <h4 class="display-6 content-pane font-italic mb-4">AMC Management</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The solution provides a clear
-                                picture of the sales, warranty, and AMC scenario
-                                and raises notifications for Preventive Maintenance Schedule (PMS) visits
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The module ensures the increase in
-                                service revenue, while also enhancing
-                                customer's confidence in the Product
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system generates Annual
-                                Maintenance Contract proposals by tracking the
-                                warranty and AMC expiry dates
+                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The
+                                    solution provides a clear
+                                    picture of the sales, warranty, and AMC scenario
+                                    and raises notifications for Preventive Maintenance Schedule (PMS) visits
+                                    <br>
+                                    <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The
+                                        module ensures the increase in
+                                        service revenue, while also enhancing
+                                        customer's confidence in the Product
+                                        <br>
+                                        <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The system generates Annual
+                                            Maintenance Contract proposals by tracking the
+                                            warranty and AMC expiry dates
                             </p>
                         </div>
                         <div class="tab-pane overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar px-3 fade p-2"
@@ -1253,140 +1342,171 @@
                             <h4 class="display-6 content-pane font-italic mb-4">Spare Part Consumption</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
                                 <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
-                                The system helps to increase revenue from spare parts sales by accounting for each and
-                                every spare part purchased and sold
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The facility to generate assign
-                                unique codes to spares gives clear visibility
-                                to track and monitor the consumption and warranty/AMC details of spare parts
-                                <br>
+                                    The system helps to increase revenue from spare parts sales by accounting for each
+                                    and
+                                    every spare part purchased and sold
+                                    <br>
+                                    <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The
+                                        facility to generate assign
+                                        unique codes to spares gives clear visibility
+                                        to track and monitor the consumption and warranty/AMC details of spare parts
+                                        <br>
                             </p>
                         </div>
                         <div class="tab-pane overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar px-3 fade p-2"
                             id="v-pills-Technician" role="tabpanel" aria-labelledby="v-pills-Technician-tab">
                             <h4 class="display-6 content-pane font-italic mb-4">Technician Allocation</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Based on the nature of complaint and
-                                the equipment type the system prompts the
-                                allocation of the appropriate Technician for any given job
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The Technician Allocation facility
-                                rules out logjams by seamlessly scheduling
-                                the job works and by sequentially delegating the work in a logical pattern
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The solution prioritizes jobs based
-                                on customer-type and customer-request and
-                                ensures maximum customer satisfaction
+                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Based on
+                                    the nature of complaint and
+                                    the equipment type the system prompts the
+                                    allocation of the appropriate Technician for any given job
+                                    <br>
+                                    <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The
+                                        Technician Allocation facility
+                                        rules out logjams by seamlessly scheduling
+                                        the job works and by sequentially delegating the work in a logical pattern
+                                        <br>
+                                        <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The solution prioritizes jobs based
+                                            on customer-type and customer-request and
+                                            ensures maximum customer satisfaction
                             </p>
                         </div>
                         <div class="tab-pane overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar px-3 fade p-2"
                             id="v-pills-SMS" role="tabpanel" aria-labelledby="v-pills-SMS-tab">
                             <h4 class="display-6 content-pane font-italic mb-4">SMS Support</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system's provision to facilitate
-                                the sending of
-                                invoices/receipts to clients in SMS mode renders the procedure paperless. Ability to
-                                support the same in any regional language is a great advantage.
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Business stakeholders can receive
-                                periodical SMS reports on
-                                inventory status, daily sales, key accounting data, etc, and gain remote access to
-                                business data even through the use of a basic dongle.
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch integrates the SMS gateway
-                                provider with the any business
-                                using HTTP API.
+                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The
+                                    system's provision to facilitate
+                                    the sending of
+                                    invoices/receipts to clients in SMS mode renders the procedure paperless. Ability to
+                                    support the same in any regional language is a great advantage.
+                                    <br>
+                                    <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                        Business stakeholders can receive
+                                        periodical SMS reports on
+                                        inventory status, daily sales, key accounting data, etc, and gain remote access
+                                        to
+                                        business data even through the use of a basic dongle.
+                                        <br>
+                                        <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Skyfinch integrates the SMS gateway
+                                            provider with the any business
+                                            using HTTP API.
                             </p>
                         </div>
                         <div class="tab-pane overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar px-3 fade p-2"
                             id="v-pills-Tax" role="tabpanel" aria-labelledby="v-pills-Tax-tab">
                             <h4 class="display-6 content-pane font-italic mb-4">Tax Management</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Simple yet perfect tax definition
-                                empowers the accurate
-                                appropriation of GST components in a user-friendly fashion.
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The flexibility of the system gives
-                                scope to enter and alter tax
-                                details for accuracy even during Invoice level.
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Customized taxation module enables
-                                the assigning of taxes at
-                                multiple levels for the same product depending on the type of sale.
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Comprehensive solution enables
-                                handling all attributes of taxation
-                                like, GST, SGST, CGST, IGST/UGST.
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The scalability of the software is
-                                robust enough to accommodate all
-                                futuristic governmental shifts in taxation procedures.
+                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Simple
+                                    yet perfect tax definition
+                                    empowers the accurate
+                                    appropriation of GST components in a user-friendly fashion.
+                                    <br>
+                                    <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The
+                                        flexibility of the system gives
+                                        scope to enter and alter tax
+                                        details for accuracy even during Invoice level.
+                                        <br>
+                                        <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Customized taxation module enables
+                                            the assigning of taxes at
+                                            multiple levels for the same product depending on the type of sale.
+                                            <br>
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> Comprehensive solution enables
+                                                handling all attributes of taxation
+                                                like, GST, SGST, CGST, IGST/UGST.
+                                                <br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The scalability of the software is
+                                                    robust enough to accommodate all
+                                                    futuristic governmental shifts in taxation procedures.
                             </p>
                         </div>
                         <div class="tab-pane overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar px-3 fade p-2"
                             id="v-pills-GST" role="tabpanel" aria-labelledby="v-pills-GST-tab">
                             <h4 class="display-6 content-pane font-italic mb-4">Financial control with GST</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> All System required accounts are
-                                Auto Generated.
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> You can create any number of
-                                additional Financial Accounts.
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Simplified import and export
-                                functionality eases the integration of
-                                all accounts and transactions in Tally with Skyfinch's accounting platform.
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The flexibility of the solution
-                                provides the scope to view financial
-                                reports from multiple perspectives.
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The solution capacitates the viewing
-                                of Composite Ledgers, and
-                                empowers business stakeholders to enjoy a robust Cash Register management system.
+                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> All
+                                    System required accounts are
+                                    Auto Generated.
+                                    <br>
+                                    <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> You
+                                        can create any number of
+                                        additional Financial Accounts.
+                                        <br>
+                                        <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Simplified import and export
+                                            functionality eases the integration of
+                                            all accounts and transactions in Tally with Skyfinch's accounting platform.
+                                            <br>
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> The flexibility of the solution
+                                                provides the scope to view financial
+                                                reports from multiple perspectives.
+                                                <br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The solution capacitates the viewing
+                                                    of Composite Ledgers, and
+                                                    empowers business stakeholders to enjoy a robust Cash Register
+                                                    management system.
                             </p>
                         </div>
                         <div class="tab-pane overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar px-3 fade p-2"
                             id="v-pills-Analytical" role="tabpanel" aria-labelledby="v-pills-Analytical-tab">
                             <h4 class="display-6 content-pane font-italic mb-4">Analytical Reports</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch's business-specific
-                                customized solution, through
-                                multi-level data analytics empowers business owners and decision makers to have key
-                                business reports on:
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The products that top the sales
-                                scenario.
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Fast moving items.
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Dump stock & dead stock.
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Peak of business rush hour for
-                                effective and efficient staff
-                                management.
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Daily sales statistics, sales
-                                returns, stock items and short stocks.
+                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                    Skyfinch's business-specific
+                                    customized solution, through
+                                    multi-level data analytics empowers business owners and decision makers to have key
+                                    business reports on:
+                                    <br>
+                                    <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The
+                                        products that top the sales
+                                        scenario.
+                                        <br>
+                                        <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Fast moving items.
+                                            <br>
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> Dump stock & dead stock.
+                                                <br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> Peak of business rush hour for
+                                                    effective and efficient staff
+                                                    management.
+                                                    <br>
+                                                    <span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Daily sales
+                                                        statistics, sales
+                                                        returns, stock items and short stocks.
                             </p>
                         </div>
                         <div class="tab-pane overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar px-3 fade p-2"
                             id="v-pills-User" role="tabpanel" aria-labelledby="v-pills-User-tab">
                             <h4 class="display-6 content-pane font-italic mb-4">User control Management</h4>
                             <p class="font-italic fs-6 text-muted mb-2">
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Provision to assign computer
-                                system-specific grant/limit of access
-                                to business data restricts users from accessing data beyond the necessity of their
-                                professional scope.
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Ability to create login IDs, user
-                                groups, functionality groups, and
-                                capture Action History help to manage access rights effectively.
-                                <br>
-                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The power to determine role-specific
-                                access to specific areas of the
-                                application and the tenacity to create additional passwords give total control over data
-                                security.
+                                <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Provision
+                                    to assign computer
+                                    system-specific grant/limit of access
+                                    to business data restricts users from accessing data beyond the necessity of their
+                                    professional scope.
+                                    <br>
+                                    <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                        Ability to create login IDs, user
+                                        groups, functionality groups, and
+                                        capture Action History help to manage access rights effectively.
+                                        <br>
+                                        <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The power to determine role-specific
+                                            access to specific areas of the
+                                            application and the tenacity to create additional passwords give total
+                                            control over data
+                                            security.
                             </p>
                         </div>
                     </div>
@@ -1408,28 +1528,40 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 content-pane font-italic mb-4">Service Management</h4>
                                         <p class="font-italic fs-6 text-muted mb-2">
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch Service-CRM's
-                                            single
-                                            interface facilitates the creation of a
-                                            systematic pricing quotation immediately upon receipt of complaint. Once the
-                                            customer
-                                            approves the quote the task can be delegated to accomplish the service in a
-                                            streamlined
-                                            fashion. This enhances customer satisfaction by reducing turnaround times
-                                            and by
-                                            increasing the efficiency of service process. <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The total integration of
-                                            all the
-                                            business processes involved in the service
-                                            workflow gives business stakeholders to potentially: <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Identify revenue
-                                            generation;<br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Evaluate inventory
-                                            consumption;<br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Evaluate manpower usage;
-                                            and<br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Identify quality of the
-                                            product<br>
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> Skyfinch Service-CRM's
+                                                single
+                                                interface facilitates the creation of a
+                                                systematic pricing quotation immediately upon receipt of complaint. Once
+                                                the
+                                                customer
+                                                approves the quote the task can be delegated to accomplish the service
+                                                in a
+                                                streamlined
+                                                fashion. This enhances customer satisfaction by reducing turnaround
+                                                times
+                                                and by
+                                                increasing the efficiency of service process. <br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The total integration of
+                                                    all the
+                                                    business processes involved in the service
+                                                    workflow gives business stakeholders to potentially: <br>
+                                                    <span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Identify revenue
+                                                        generation;<br>
+                                                        <span><img src="./img/double-tick.svg"
+                                                                style="width: 40px !important;" alt=""> Evaluate
+                                                            inventory
+                                                            consumption;<br>
+                                                            <span><img src="./img/double-tick.svg"
+                                                                    style="width: 40px !important;" alt=""> Evaluate
+                                                                manpower usage;
+                                                                and<br>
+                                                                <span><img src="./img/double-tick.svg"
+                                                                        style="width: 40px !important;" alt=""> Identify
+                                                                    quality of the
+                                                                    product<br>
                                         </p>
                                     </div>
                                 </div>
@@ -1440,30 +1572,40 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 content-pane font-italic mb-3">Purchase Management</h4>
                                         <p class="font-italic fs-6 text-muted mb-2">
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> POS enhances the agility
-                                            of Purchase
-                                            management by simplifying and rendering
-                                            the Inward Entry procedure free of hassles<br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Accurate product costing
-                                            is actuated
-                                            by the modules capacity to build buying
-                                            level product cost upon the Landing Price<br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system is
-                                            programmable to
-                                            automatically project selling price updates
-                                            according to any change attributed to marked price<br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Level of Stock is
-                                            automatically
-                                            updated as when Goods Inward are verified and
-                                            accounted for in the system<br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The module's integration
-                                            with
-                                            inventory captures a clear vector of purchases
-                                            and stock to accurately forecast the Profit/Gross margin<br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Provision to assign
-                                            distributor-wise
-                                            formula enables to arrive at efficient and
-                                            reasonable distributor margins<br>
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> POS enhances the agility
+                                                of Purchase
+                                                management by simplifying and rendering
+                                                the Inward Entry procedure free of hassles<br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> Accurate product costing
+                                                    is actuated
+                                                    by the modules capacity to build buying
+                                                    level product cost upon the Landing Price<br>
+                                                    <span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The system is
+                                                        programmable to
+                                                        automatically project selling price updates
+                                                        according to any change attributed to marked price<br>
+                                                        <span><img src="./img/double-tick.svg"
+                                                                style="width: 40px !important;" alt=""> Level of Stock
+                                                            is
+                                                            automatically
+                                                            updated as when Goods Inward are verified and
+                                                            accounted for in the system<br>
+                                                            <span><img src="./img/double-tick.svg"
+                                                                    style="width: 40px !important;" alt=""> The module's
+                                                                integration
+                                                                with
+                                                                inventory captures a clear vector of purchases
+                                                                and stock to accurately forecast the Profit/Gross
+                                                                margin<br>
+                                                                <span><img src="./img/double-tick.svg"
+                                                                        style="width: 40px !important;" alt="">
+                                                                    Provision to assign
+                                                                    distributor-wise
+                                                                    formula enables to arrive at efficient and
+                                                                    reasonable distributor margins<br>
                                         </p>
                                     </div>
                                 </div>
@@ -1474,36 +1616,49 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 content-pane font-italic mb-4">Inventory Management</h4>
                                         <p class="font-italic fs-6 text-muted mb-2">
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The tenacity of the
-                                            module to
-                                            accommodate more than 100,000 Stock Keeping Units
-                                            (SKUs), enables the effortless and efficient management of large inventories
-                                            with
-                                            diverse product categories<br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system is
-                                            customizable to design
-                                            the categories and sub-categories of the
-                                            Inventory to have a better understanding and visibility through personalized
-                                            screens<br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Any change in the
-                                            category level of
-                                            products can be easily incorporated into
-                                            the solution<br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The module offers clear
-                                            visibility
-                                            of the rolled up totals for any category
-                                            level of the Inventory<br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The Dynamic Drill Down
-                                            view presents
-                                            a vivid picture of the Inventory
-                                            status<br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Actual Vs Estimated
-                                            stock audits can
-                                            be conducted at any time to easily and
-                                            quickly find if there are discrepancies<br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Support of excel files
-                                            while doing
-                                            stock audits is a great advantage
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> The tenacity of the
+                                                module to
+                                                accommodate more than 100,000 Stock Keeping Units
+                                                (SKUs), enables the effortless and efficient management of large
+                                                inventories
+                                                with
+                                                diverse product categories<br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The system is
+                                                    customizable to design
+                                                    the categories and sub-categories of the
+                                                    Inventory to have a better understanding and visibility through
+                                                    personalized
+                                                    screens<br>
+                                                    <span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Any change in the
+                                                        category level of
+                                                        products can be easily incorporated into
+                                                        the solution<br>
+                                                        <span><img src="./img/double-tick.svg"
+                                                                style="width: 40px !important;" alt=""> The module
+                                                            offers clear
+                                                            visibility
+                                                            of the rolled up totals for any category
+                                                            level of the Inventory<br>
+                                                            <span><img src="./img/double-tick.svg"
+                                                                    style="width: 40px !important;" alt=""> The Dynamic
+                                                                Drill Down
+                                                                view presents
+                                                                a vivid picture of the Inventory
+                                                                status<br>
+                                                                <span><img src="./img/double-tick.svg"
+                                                                        style="width: 40px !important;" alt=""> Actual
+                                                                    Vs Estimated
+                                                                    stock audits can
+                                                                    be conducted at any time to easily and
+                                                                    quickly find if there are discrepancies<br>
+                                                                    <span><img src="./img/double-tick.svg"
+                                                                            style="width: 40px !important;" alt="">
+                                                                        Support of excel files
+                                                                        while doing
+                                                                        stock audits is a great advantage
                                         </p>
                                     </div>
                                 </div>
@@ -1514,28 +1669,40 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 content-pane font-italic mb-4">Customer Management</h4>
                                         <p class="font-italic fs-6 text-muted mb-2">
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Simple steps to create
-                                            Customer
-                                            Record enhances user-experience<br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Segmenting Customers
-                                            based on
-                                            various categories gives clarity in choosing the
-                                            most effective area of focus for campaigns and reap maximum benefits<br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Tracking and maintaining
-                                            customers'
-                                            transaction level with the business
-                                            empowers to assign customer-specific Credit Limits<br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The facility to track
-                                            and monitor
-                                            Receivables pending from customers presents
-                                            customer-wise payment aging notifications, sends SMSs/emails regarding the
-                                            dues to
-                                            customers, and amicably enables the recovery of all pending payments.<br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The module comes with
-                                            the faculty to
-                                            handle time-bound package deals, Offers,
-                                            Schemes, and customer-specific appropriation/deduction of Loyalty Bonus
-                                            points
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> Simple steps to create
+                                                Customer
+                                                Record enhances user-experience<br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> Segmenting Customers
+                                                    based on
+                                                    various categories gives clarity in choosing the
+                                                    most effective area of focus for campaigns and reap maximum
+                                                    benefits<br>
+                                                    <span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Tracking and
+                                                        maintaining
+                                                        customers'
+                                                        transaction level with the business
+                                                        empowers to assign customer-specific Credit Limits<br>
+                                                        <span><img src="./img/double-tick.svg"
+                                                                style="width: 40px !important;" alt=""> The facility to
+                                                            track
+                                                            and monitor
+                                                            Receivables pending from customers presents
+                                                            customer-wise payment aging notifications, sends SMSs/emails
+                                                            regarding the
+                                                            dues to
+                                                            customers, and amicably enables the recovery of all pending
+                                                            payments.<br>
+                                                            <span><img src="./img/double-tick.svg"
+                                                                    style="width: 40px !important;" alt=""> The module
+                                                                comes with
+                                                                the faculty to
+                                                                handle time-bound package deals, Offers,
+                                                                Schemes, and customer-specific appropriation/deduction
+                                                                of Loyalty Bonus
+                                                                points
                                         </p>
                                     </div>
                                 </div>
@@ -1546,29 +1713,38 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 content-pane font-italic mb-4">Supplier Management</h4>
                                         <p class="font-italic fs-6 text-muted mb-2">
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch offers
-                                            customized solutions
-                                            to suit the supplier relationship process
-                                            requirements of any business. These solutions digitize and streamline the
-                                            process of:
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Identifying, sourcing,
-                                            contracting,
-                                            and procuring the required goods/services
-                                            from qualified suppliers
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Managing supplier
-                                            performance
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Implementing
-                                            technologies,
-                                            processes, policies, and procedures to support the
-                                            purchasing process
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Developing and
-                                            maintaining
-                                            relationship with suppliers towards healthy
-                                            prospects
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Generating
-                                            cost-effective
-                                            forecasts/theories to meet any kind of supply and
-                                            demand scenario
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> Skyfinch offers
+                                                customized solutions
+                                                to suit the supplier relationship process
+                                                requirements of any business. These solutions digitize and streamline
+                                                the
+                                                process of:
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> Identifying, sourcing,
+                                                    contracting,
+                                                    and procuring the required goods/services
+                                                    from qualified suppliers
+                                                    <span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Managing supplier
+                                                        performance
+                                                        <span><img src="./img/double-tick.svg"
+                                                                style="width: 40px !important;" alt=""> Implementing
+                                                            technologies,
+                                                            processes, policies, and procedures to support the
+                                                            purchasing process
+                                                            <span><img src="./img/double-tick.svg"
+                                                                    style="width: 40px !important;" alt=""> Developing
+                                                                and
+                                                                maintaining
+                                                                relationship with suppliers towards healthy
+                                                                prospects
+                                                                <span><img src="./img/double-tick.svg"
+                                                                        style="width: 40px !important;" alt="">
+                                                                    Generating
+                                                                    cost-effective
+                                                                    forecasts/theories to meet any kind of supply and
+                                                                    demand scenario
                                         </p>
                                     </div>
                                 </div>
@@ -1579,26 +1755,34 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 content-pane font-italic mb-4">Reorder/Replenishment</h4>
                                         <p class="font-italic fs-6 text-muted mb-2">
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Reorder/Replenishment
-                                            notifications
-                                            are raised to designated
-                                            personnel based on:
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">Min/Max sales range for
-                                            any
-                                            particular date in the previous year(s).
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Sales for a particular
-                                            period (days,
-                                            month, years) from the past.
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Reorder Level
-                                            specifications.
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Lead times.
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Fall in the prescribed
-                                            safety-stock-level of any given product.
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> Reorder/Replenishment
+                                                notifications
+                                                are raised to designated
+                                                personnel based on:
+                                                <br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt="">Min/Max sales range for
+                                                    any
+                                                    particular date in the previous year(s).
+                                                    <br>
+                                                    <span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Sales for a
+                                                        particular
+                                                        period (days,
+                                                        month, years) from the past.
+                                                        <br>
+                                                        <span><img src="./img/double-tick.svg"
+                                                                style="width: 40px !important;" alt=""> Reorder Level
+                                                            specifications.
+                                                            <br>
+                                                            <span><img src="./img/double-tick.svg"
+                                                                    style="width: 40px !important;" alt=""> Lead times.
+                                                                <br>
+                                                                <span><img src="./img/double-tick.svg"
+                                                                        style="width: 40px !important;" alt=""> Fall in
+                                                                    the prescribed
+                                                                    safety-stock-level of any given product.
                                         </p>
                                     </div>
                                 </div>
@@ -1609,19 +1793,22 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 content-pane font-italic mb-4">Barcode Stickers</h4>
                                         <p class="font-italic fs-6 text-muted mb-2">
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Facilitates the
-                                            designing and
-                                            printing of barcode's indigenously.
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Enables the generation
-                                            of stickers
-                                            using normal laser printer or ink
-                                            jet printer with the liberty of choosing desired logo and design.
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system supports
-                                            dedicated
-                                            sticker printers, printing A4 size
-                                            sticker sheets, and partial sheet printing.
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> Facilitates the
+                                                designing and
+                                                printing of barcode's indigenously.
+                                                <br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> Enables the generation
+                                                    of stickers
+                                                    using normal laser printer or ink
+                                                    jet printer with the liberty of choosing desired logo and design.
+                                                    <br>
+                                                    <span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The system supports
+                                                        dedicated
+                                                        sticker printers, printing A4 size
+                                                        sticker sheets, and partial sheet printing.
                                         </p>
                                     </div>
                                 </div>
@@ -1632,39 +1819,53 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 content-pane font-italic mb-4">Complaint Management</h4>
                                         <p class="font-italic fs-6 text-muted mb-2">
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> One of the key aspects
-                                            in sales and
-                                            service that maximizes customer
-                                            satisfaction is Complaints Management. This plays a very important role in
-                                            the retention
-                                            and expansion of client-base. Skyfinch's Complaint Management module
-                                            actuates the
-                                            efficient and comprehensive tracking and monitoring of the service process
-                                            and provides
-                                            the scope to rectify discrepancies and constantly enhance efficiency of
-                                            service by
-                                            facilitating:
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">Generation of complaint
-                                            ticket
-                                            number;
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Tracking of Activities;
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Simple escalation
-                                            procedure;
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Analysis of the nature
-                                            of
-                                            discrepancies;
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Accurate resolutions
-                                            through
-                                            time-tested reports; and
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Initiating AMC
-                                            procedures based on
-                                            warranty status.
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> One of the key aspects
+                                                in sales and
+                                                service that maximizes customer
+                                                satisfaction is Complaints Management. This plays a very important role
+                                                in
+                                                the retention
+                                                and expansion of client-base. Skyfinch's Complaint Management module
+                                                actuates the
+                                                efficient and comprehensive tracking and monitoring of the service
+                                                process
+                                                and provides
+                                                the scope to rectify discrepancies and constantly enhance efficiency of
+                                                service by
+                                                facilitating:
+                                                <br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt="">Generation of complaint
+                                                    ticket
+                                                    number;
+                                                    <br>
+                                                    <span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Tracking of
+                                                        Activities;
+                                                        <br>
+                                                        <span><img src="./img/double-tick.svg"
+                                                                style="width: 40px !important;" alt=""> Simple
+                                                            escalation
+                                                            procedure;
+                                                            <br>
+                                                            <span><img src="./img/double-tick.svg"
+                                                                    style="width: 40px !important;" alt=""> Analysis of
+                                                                the nature
+                                                                of
+                                                                discrepancies;
+                                                                <br>
+                                                                <span><img src="./img/double-tick.svg"
+                                                                        style="width: 40px !important;" alt=""> Accurate
+                                                                    resolutions
+                                                                    through
+                                                                    time-tested reports; and
+                                                                    <br>
+                                                                    <span><img src="./img/double-tick.svg"
+                                                                            style="width: 40px !important;" alt="">
+                                                                        Initiating AMC
+                                                                        procedures based on
+                                                                        warranty status.
                                         </p>
                                     </div>
                                 </div>
@@ -1675,20 +1876,24 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 content-pane font-italic mb-4">AMC Management</h4>
                                         <p class="font-italic fs-6 text-muted mb-2">
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The solution provides a
-                                            clear
-                                            picture of the sales, warranty, and AMC scenario
-                                            and raises notifications for Preventive Maintenance Schedule (PMS) visits
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The module ensures the
-                                            increase in
-                                            service revenue, while also enhancing
-                                            customer's confidence in the Product
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system generates
-                                            Annual
-                                            Maintenance Contract proposals by tracking the
-                                            warranty and AMC expiry dates
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> The solution provides a
+                                                clear
+                                                picture of the sales, warranty, and AMC scenario
+                                                and raises notifications for Preventive Maintenance Schedule (PMS)
+                                                visits
+                                                <br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The module ensures the
+                                                    increase in
+                                                    service revenue, while also enhancing
+                                                    customer's confidence in the Product
+                                                    <br>
+                                                    <span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The system generates
+                                                        Annual
+                                                        Maintenance Contract proposals by tracking the
+                                                        warranty and AMC expiry dates
                                         </p>
                                     </div>
                                 </div>
@@ -1699,16 +1904,20 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 content-pane font-italic mb-4">Spare Part Consumption</h4>
                                         <p class="font-italic fs-6 text-muted mb-2">
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
-                                            The system helps to increase revenue from spare parts sales by accounting
-                                            for each and
-                                            every spare part purchased and sold
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The facility to generate
-                                            assign
-                                            unique codes to spares gives clear visibility
-                                            to track and monitor the consumption and warranty/AMC details of spare parts
-                                            <br>
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt="">
+                                                The system helps to increase revenue from spare parts sales by
+                                                accounting
+                                                for each and
+                                                every spare part purchased and sold
+                                                <br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The facility to generate
+                                                    assign
+                                                    unique codes to spares gives clear visibility
+                                                    to track and monitor the consumption and warranty/AMC details of
+                                                    spare parts
+                                                    <br>
                                         </p>
                                     </div>
                                 </div>
@@ -1719,20 +1928,25 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 content-pane font-italic mb-4">Technician Allocation</h4>
                                         <p class="font-italic fs-6 text-muted mb-2">
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Based on the nature of
-                                            complaint and
-                                            the equipment type the system prompts the
-                                            allocation of the appropriate Technician for any given job
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The Technician
-                                            Allocation facility
-                                            rules out logjams by seamlessly scheduling
-                                            the job works and by sequentially delegating the work in a logical pattern
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The solution prioritizes
-                                            jobs based
-                                            on customer-type and customer-request and
-                                            ensures maximum customer satisfaction
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> Based on the nature of
+                                                complaint and
+                                                the equipment type the system prompts the
+                                                allocation of the appropriate Technician for any given job
+                                                <br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The Technician
+                                                    Allocation facility
+                                                    rules out logjams by seamlessly scheduling
+                                                    the job works and by sequentially delegating the work in a logical
+                                                    pattern
+                                                    <br>
+                                                    <span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The solution
+                                                        prioritizes
+                                                        jobs based
+                                                        on customer-type and customer-request and
+                                                        ensures maximum customer satisfaction
                                         </p>
                                     </div>
                                 </div>
@@ -1743,20 +1957,25 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 content-pane font-italic mb-4">Technician Allocation</h4>
                                         <p class="font-italic fs-6 text-muted mb-2">
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Based on the nature of
-                                            complaint and
-                                            the equipment type the system prompts the
-                                            allocation of the appropriate Technician for any given job
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The Technician
-                                            Allocation facility
-                                            rules out logjams by seamlessly scheduling
-                                            the job works and by sequentially delegating the work in a logical pattern
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The solution prioritizes
-                                            jobs based
-                                            on customer-type and customer-request and
-                                            ensures maximum customer satisfaction
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> Based on the nature of
+                                                complaint and
+                                                the equipment type the system prompts the
+                                                allocation of the appropriate Technician for any given job
+                                                <br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The Technician
+                                                    Allocation facility
+                                                    rules out logjams by seamlessly scheduling
+                                                    the job works and by sequentially delegating the work in a logical
+                                                    pattern
+                                                    <br>
+                                                    <span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The solution
+                                                        prioritizes
+                                                        jobs based
+                                                        on customer-type and customer-request and
+                                                        ensures maximum customer satisfaction
                                         </p>
                                     </div>
                                 </div>
@@ -1767,24 +1986,30 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 content-pane font-italic mb-4">SMS Support</h4>
                                         <p class="font-italic fs-6 text-muted mb-2">
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system's provision
-                                            to facilitate
-                                            the sending of
-                                            invoices/receipts to clients in SMS mode renders the procedure paperless.
-                                            Ability to
-                                            support the same in any regional language is a great advantage.
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Business stakeholders
-                                            can receive
-                                            periodical SMS reports on
-                                            inventory status, daily sales, key accounting data, etc, and gain remote
-                                            access to
-                                            business data even through the use of a basic dongle.
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch integrates the
-                                            SMS gateway
-                                            provider with the any business
-                                            using HTTP API.
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> The system's provision
+                                                to facilitate
+                                                the sending of
+                                                invoices/receipts to clients in SMS mode renders the procedure
+                                                paperless.
+                                                Ability to
+                                                support the same in any regional language is a great advantage.
+                                                <br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> Business stakeholders
+                                                    can receive
+                                                    periodical SMS reports on
+                                                    inventory status, daily sales, key accounting data, etc, and gain
+                                                    remote
+                                                    access to
+                                                    business data even through the use of a basic dongle.
+                                                    <br>
+                                                    <span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Skyfinch integrates
+                                                        the
+                                                        SMS gateway
+                                                        provider with the any business
+                                                        using HTTP API.
                                         </p>
                                     </div>
                                 </div>
@@ -1795,30 +2020,38 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 content-pane font-italic mb-4">Tax Management</h4>
                                         <p class="font-italic fs-6 text-muted mb-2">
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Simple yet perfect tax
-                                            definition
-                                            empowers the accurate
-                                            appropriation of GST components in a user-friendly fashion.
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The flexibility of the
-                                            system gives
-                                            scope to enter and alter tax
-                                            details for accuracy even during Invoice level.
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Customized taxation
-                                            module enables
-                                            the assigning of taxes at
-                                            multiple levels for the same product depending on the type of sale.
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Comprehensive solution
-                                            enables
-                                            handling all attributes of taxation
-                                            like, GST, SGST, CGST, IGST/UGST.
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The scalability of the
-                                            software is
-                                            robust enough to accommodate all
-                                            futuristic governmental shifts in taxation procedures.
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> Simple yet perfect tax
+                                                definition
+                                                empowers the accurate
+                                                appropriation of GST components in a user-friendly fashion.
+                                                <br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The flexibility of the
+                                                    system gives
+                                                    scope to enter and alter tax
+                                                    details for accuracy even during Invoice level.
+                                                    <br>
+                                                    <span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Customized taxation
+                                                        module enables
+                                                        the assigning of taxes at
+                                                        multiple levels for the same product depending on the type of
+                                                        sale.
+                                                        <br>
+                                                        <span><img src="./img/double-tick.svg"
+                                                                style="width: 40px !important;" alt=""> Comprehensive
+                                                            solution
+                                                            enables
+                                                            handling all attributes of taxation
+                                                            like, GST, SGST, CGST, IGST/UGST.
+                                                            <br>
+                                                            <span><img src="./img/double-tick.svg"
+                                                                    style="width: 40px !important;" alt=""> The
+                                                                scalability of the
+                                                                software is
+                                                                robust enough to accommodate all
+                                                                futuristic governmental shifts in taxation procedures.
                                         </p>
                                     </div>
                                 </div>
@@ -1830,29 +2063,39 @@
                                         <h4 class="display-6 content-pane font-italic mb-4">Financial control with GST
                                         </h4>
                                         <p class="font-italic fs-6 text-muted mb-2">
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> All System required
-                                            accounts are
-                                            Auto Generated.
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> You can create any
-                                            number of
-                                            additional Financial Accounts.
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Simplified import and
-                                            export
-                                            functionality eases the integration of
-                                            all accounts and transactions in Tally with Skyfinch's accounting platform.
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The flexibility of the
-                                            solution
-                                            provides the scope to view financial
-                                            reports from multiple perspectives.
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The solution capacitates
-                                            the viewing
-                                            of Composite Ledgers, and
-                                            empowers business stakeholders to enjoy a robust Cash Register management
-                                            system.
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> All System required
+                                                accounts are
+                                                Auto Generated.
+                                                <br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> You can create any
+                                                    number of
+                                                    additional Financial Accounts.
+                                                    <br>
+                                                    <span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Simplified import
+                                                        and
+                                                        export
+                                                        functionality eases the integration of
+                                                        all accounts and transactions in Tally with Skyfinch's
+                                                        accounting platform.
+                                                        <br>
+                                                        <span><img src="./img/double-tick.svg"
+                                                                style="width: 40px !important;" alt=""> The flexibility
+                                                            of the
+                                                            solution
+                                                            provides the scope to view financial
+                                                            reports from multiple perspectives.
+                                                            <br>
+                                                            <span><img src="./img/double-tick.svg"
+                                                                    style="width: 40px !important;" alt=""> The solution
+                                                                capacitates
+                                                                the viewing
+                                                                of Composite Ledgers, and
+                                                                empowers business stakeholders to enjoy a robust Cash
+                                                                Register management
+                                                                system.
                                         </p>
                                     </div>
                                 </div>
@@ -1863,29 +2106,39 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 content-pane font-italic mb-4">Analytical Reports</h4>
                                         <p class="font-italic fs-6 text-muted mb-2">
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch's
-                                            business-specific
-                                            customized solution, through
-                                            multi-level data analytics empowers business owners and decision makers to
-                                            have key
-                                            business reports on:
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The products that top
-                                            the sales
-                                            scenario.
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Fast moving items.
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Dump stock & dead stock.
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Peak of business rush
-                                            hour for
-                                            effective and efficient staff
-                                            management.
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Daily sales statistics,
-                                            sales
-                                            returns, stock items and short stocks.
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> Skyfinch's
+                                                business-specific
+                                                customized solution, through
+                                                multi-level data analytics empowers business owners and decision makers
+                                                to
+                                                have key
+                                                business reports on:
+                                                <br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The products that top
+                                                    the sales
+                                                    scenario.
+                                                    <br>
+                                                    <span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Fast moving items.
+                                                        <br>
+                                                        <span><img src="./img/double-tick.svg"
+                                                                style="width: 40px !important;" alt=""> Dump stock &
+                                                            dead stock.
+                                                            <br>
+                                                            <span><img src="./img/double-tick.svg"
+                                                                    style="width: 40px !important;" alt=""> Peak of
+                                                                business rush
+                                                                hour for
+                                                                effective and efficient staff
+                                                                management.
+                                                                <br>
+                                                                <span><img src="./img/double-tick.svg"
+                                                                        style="width: 40px !important;" alt=""> Daily
+                                                                    sales statistics,
+                                                                    sales
+                                                                    returns, stock items and short stocks.
                                         </p>
                                     </div>
                                 </div>
@@ -1896,24 +2149,30 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 content-pane font-italic mb-4">User control Management</h4>
                                         <p class="font-italic fs-6 text-muted mb-2">
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Provision to assign
-                                            computer
-                                            system-specific grant/limit of access
-                                            to business data restricts users from accessing data beyond the necessity of
-                                            their
-                                            professional scope.
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Ability to create login
-                                            IDs, user
-                                            groups, functionality groups, and
-                                            capture Action History help to manage access rights effectively.
-                                            <br>
-                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The power to determine
-                                            role-specific
-                                            access to specific areas of the
-                                            application and the tenacity to create additional passwords give total
-                                            control over data
-                                            security.
+                                            <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                    alt=""> Provision to assign
+                                                computer
+                                                system-specific grant/limit of access
+                                                to business data restricts users from accessing data beyond the
+                                                necessity of
+                                                their
+                                                professional scope.
+                                                <br>
+                                                <span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> Ability to create login
+                                                    IDs, user
+                                                    groups, functionality groups, and
+                                                    capture Action History help to manage access rights effectively.
+                                                    <br>
+                                                    <span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The power to
+                                                        determine
+                                                        role-specific
+                                                        access to specific areas of the
+                                                        application and the tenacity to create additional passwords give
+                                                        total
+                                                        control over data
+                                                        security.
                                         </p>
                                     </div>
                                 </div>
@@ -2329,7 +2588,7 @@
     </section>
     <!-- Footer End -->
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg page-top btn-lg-square rounded-circle wow fadeInDown" data-wow-delay="3.5s"
+    <a href="#" class="btn btn-lg page-top btn-lg-square rounded-circle animated fadeInDown"
         data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
         data-bs-title="back-to-top"><img src="img/right-arrow.png" alt=""></a>
     <!-- JavaScript Libraries -->

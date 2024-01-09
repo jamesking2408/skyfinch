@@ -554,7 +554,7 @@
                             </button>
                         </li>
                         <li class="content mb-3">
-                            <button onclick="jumpToProfile('profile_sec2_4')"
+                            <button onclick="jumpToProfile('profile_sec2')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">
                                 Profile | Our Products
                             </button>
@@ -626,8 +626,8 @@
     </div>
     <!-- Search Modal End-->
     <!-- Navbar Start -->
-    <div class="container-fluid vw-nav fixed-top m-0 p-0 wow fadeIn" data-wow-delay="0.8s">
-        <div class="top-bar row gx-2 pb-lg-0 align-items-center d-lg-flex d-md-flex d-none bg-blue wow fadeIn">
+    <div class="container-fluid vw-nav fixed-top m-0 p-0">
+        <div class="top-bar row gx-2 pb-lg-0 align-items-center d-lg-flex d-md-flex d-none bg-blue">
             <div class="col-lg-7 col-md-12 text-start id_con">
                 <medium class="ms-lg-2"><i id="top-icons" class="fa fa-map-marker-alt me-lg-2 me-md-2">
                     </i>5, Republic Street, Reddiarpalayam, Puducherry-605010,
@@ -645,11 +645,10 @@
                 </medium>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 py-md-2 py-2 px-lg-4 wow fadeIn bg-white"
-            data-wow-delay="0.9s">
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 py-md-2 py-2 px-lg-4 bg-white">
             <a href="index.html" class="navbar-brand ms-0 ms-lg-0">
-                <img src="img/cloud.png" alt="" class="r-cloud wow slideInLeft" data-wow-delay="1.2s" />
-                <img src="img/cloud.png" alt="" class="l-cloud wow slideInRight" data-wow-delay="1s" />
+                <img src="img/cloud.png" alt="" class="r-cloud animated slideInLeft"/>
+                <img src="img/cloud.png" alt="" class="l-cloud animated slideInRight"/>
                 <b class="display-6 cloud">SkyFinch
                     <h6 class="me-0 p-0">Solution to Success</h6>
                 </b>
@@ -777,20 +776,23 @@
     <!-- Navbar End -->
     <!-- Modules start -->
     <section id="sec8" class="bg-0 pt-lg-4 mt-lg-2 mt-md-5 mt-5">
-        <div class="container pt-lg-5 pt-md-3 pt-2 pb-lg-0 pb-md-4 pb-3 mt-lg-0 mt-md-5 mt-0">
-            <div class="row d-flex justify-content-center align-items-center pb-1 pt-2 pt-md-4 pb-lg-0 pt-lg-0">
+        <div class="container-fluid pt-lg-5 pt-md-3 pt-2 pb-lg-0 pb-md-2 pb-3 mt-lg-0 mt-md-0 mt-0">
+            <div class="row d-flex justify-content-center align-items-center pb-1 pt-2 pb-lg-0 pt-lg-0">
                 <div class="col-lg-12 center pb-4 mt-3 pt-2">
-                    <h3 class="display-3 fw-bold fs-2 pb-0 tx-co center">Choose The Right Plan For Your Business</h3>
+                    <h3 class="display-5 fw-bold fs-2 pb-0 tx-co center">Choose The Right Plan For Your
+                        Business
+                    </h3>
                 </div>
                 <div class="row d-flex justify-content-center align-items-center" id="module_card">
-                    <div id="card" class="col-lg-4 col-md-6 col-12 gy-4 gy-lg-0" data-aos-duration="1000"
-                        data-aos="fade-up">
+                    <div id="card"
+                        class="col-lg-4 col-md-6 col-12 d-flex justify-content-center align-items-center gy-4 gy-lg-0"
+                        data-aos-duration="1000" data-aos="fade-up">
                         <div class="card h-card border-none off">
                             <div class="offer center px-5 fw-bold position-absolute">Save 40%</div>
                             <div class="card-body p-2 tx-co card-bg1 py-3">
                                 <h5 class="center p-25 fw-bold">STANDARD</h5>
-                                <h2 class="center p-50 fw-bold pt-2" style="padding-left: 60px;">29.99<span
-                                        class="p-15">/Per Month</span></h2>
+                                <b class="center p-50 fw-bold pt-2" style="padding-left: 60px;">29.99<span
+                                        class="p-15">/Per Month</span></b>
                                 <hr>
                                 <ul class="pt-0" style="padding-left: 45px;">
                                     <li class="nt text-muted">Unlimited updates & Projects</li>
@@ -800,22 +802,23 @@
                                     <li class="nt text-muted">Custom Features</li>
                                 </ul>
                                 <div class="center pt-1">
-                                    <a href="product Enquiry.html"
-                                        class="btn1 card-btn1 fw-bold mb-1 rounded-pill">Choose
+                                    <a href="product Enquiry.html" class="btn1 card-btn1 fw-bold mb-1 rounded-pill"
+                                        onclick="choosePlan(' ', 'STANDARD - 29.99 /per month')">Choose
                                         Plan</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div id="card" class="col-lg-4 col-md-6 col-12 gy-4 gy-lg-0" data-aos-duration="1000"
-                        data-aos="fade-up">
+                    <div id="card"
+                        class="col-lg-4 col-md-6 col-12 d-flex justify-content-center align-items-center gy-4 gy-lg-0"
+                        data-aos-duration="1000" data-aos="fade-up">
                         <div class="card h-card border-none off">
                             <div class="offer1 center px-5 fw-bold position-absolute">Save 40%</div>
                             <div class="card-body p-2 text-white card-bg2 py-3">
                                 <h5 class="center p-25 ps-2 text-white fw-bold">PROFESSIONAL <sup
                                         class="text-warning p-25">&#9733;</sup></h5>
-                                <h2 class="center p-50 text-white fw-bold pt-2" style="padding-left: 60px;">69.99<span
-                                        class="p-15">/3 Month</span></h2>
+                                <b class="center p-50 text-white fw-bold pt-2" style="padding-left: 60px;">69.00<span
+                                        class="p-15">/ 3 Month</span></b>
                                 <hr>
                                 <ul class="pt-0" style="padding-left: 45px;">
                                     <li class="nt1">Unlimited updates & Projects</li>
@@ -825,21 +828,22 @@
                                     <li class="nt1">Custom Features</li>
                                 </ul>
                                 <div class="center pt-1">
-                                    <a href="product Enquiry.html"
-                                        class="btn2 card-btn2 fw-bold mb-1 rounded-pill">Choose Plan</a>
+                                    <a href="product Enquiry.html" class="btn2 card-btn2 fw-bold mb-1 rounded-pill"
+                                        onclick="choosePlan(' ', 'PROFESSIONAL - 69.99 /per month')">Choose
+                                        Plan</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div id="card" class="col-lg-4 col-md-6 col-12 gy-4 gy-lg-0" data-aos-duration="1000"
-                        data-aos="fade-up">
-                        <div class="card h-card border-none off prem-card">
+                    <div id="card"
+                        class="cards_dot col-lg-4 col-md-12 col-12 d-flex justify-content-center align-items-center gy-4 gy-lg-0"
+                        data-aos-duration="1000" data-aos="fade-up">
+                        <div class="card  h-card border-none off">
                             <div class="offer center px-5 fw-bold position-absolute">Save 40%</div>
                             <div class="card-body p-2 tx-co card-bg1 py-3">
                                 <h5 class="center p-25 fw-bold">PREMIUM</h5>
-                                <h2 class="center p-50 fw-bold pt-2" style="padding-left: 60px;">99.00<span
-                                        class="p-15">/12
-                                        Month</span></h2>
+                                <b class="center p-50 fw-bold pt-2" style="padding-left: 60px;">99.00<span
+                                        class="p-15">/12 Month</span></b>
                                 <hr>
                                 <ul class="pt-0" style="padding-left: 45px;">
                                     <li class="nt text-muted">Unlimited updates & Projects</li>
@@ -849,8 +853,8 @@
                                     <li class="nt text-muted">Custom Features</li>
                                 </ul>
                                 <div class="center pt-1">
-                                    <a href="product Enquiry.html"
-                                        class="btn1 card-btn1 fw-bold mb-1 rounded-pill">Choose
+                                    <a href="product Enquiry.html" class="btn1 card-btn1 fw-bold mb-1 rounded-pill"
+                                        onclick="choosePlan(' ', 'PREMIUM - 99.99 /per month')">Choose
                                         Plan</a>
                                 </div>
                             </div>
@@ -964,7 +968,7 @@
     </section>
     <!-- Footer End -->
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg page-top btn-lg-square rounded-circle wow fadeInDown" data-wow-delay="0.5s"
+    <a href="#" class="btn btn-lg page-top btn-lg-square rounded-circle animated fadeInDown"
         data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
         data-bs-title="back-to-top" style="margin-bottom: -50px;"><img src="img/right-arrow.png" alt=""></a>
     <!-- JavaScript Libraries -->

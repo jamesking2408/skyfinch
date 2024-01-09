@@ -556,7 +556,7 @@
                             </button>
                         </li>
                         <li class="content mb-3">
-                            <button onclick="jumpToProfile('profile_sec2_4')"
+                            <button onclick="jumpToProfile('profile_sec2')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">
                                 Profile | Our Products
                             </button>
@@ -629,7 +629,7 @@
     <!-- Search Modal End-->
     <!-- Start chat box Design  -->
     <span class="tooltip-text" style="visibility: hidden;">I'm Skyfinch</span>
-    <button title="" class="chatbot-toggler wow fadeInDown" data-wow-delay="2.2s" data-bs-toggle="tooltip"
+    <button title="" class="chatbot-toggler fadeInDown" data-bs-toggle="tooltip"
         data-bs-placement="left" data-bs-custom-class="chat-tooltip" data-bs-title="Hi! I'm Help you.👋">
         <span class="material-symbols-outlined">mode_comment</span>
         <span class="material-symbols-outlined">close</span>
@@ -654,8 +654,8 @@
     </div>
     <!-- End chat box Design  -->
     <!-- Navbar Start -->
-    <div class="container-fluid vw-nav fixed-top m-0 p-0 wow fadeIn" data-wow-delay="0.8s">
-        <div class="top-bar row gx-2 pb-lg-0 align-items-center d-lg-flex d-md-flex d-none bg-blue wow fadeIn">
+    <div class="container-fluid vw-nav fixed-top m-0 p-0">
+        <div class="top-bar row gx-2 pb-lg-0 align-items-center d-lg-flex d-md-flex d-none bg-blue">
             <div class="col-lg-7 col-md-12 text-start id_con">
                 <medium class="ms-lg-2"><i id="top-icons" class="fa fa-map-marker-alt me-lg-2 me-md-2">
                     </i>5, Republic Street, Reddiarpalayam, Puducherry-605010,
@@ -673,11 +673,10 @@
                 </medium>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 py-md-2 py-2 px-lg-4 wow fadeIn bg-white"
-            data-wow-delay="0.9s">
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 py-md-2 py-2 px-lg-4 bg-white">
             <a href="index.html" class="navbar-brand ms-0 ms-lg-0">
-                <img src="img/cloud.png" alt="" class="r-cloud wow slideInLeft" data-wow-delay="1.2s" />
-                <img src="img/cloud.png" alt="" class="l-cloud wow slideInRight" data-wow-delay="1s" />
+                <img src="img/cloud.png" alt="" class="r-cloud animated slideInLeft"/>
+                <img src="img/cloud.png" alt="" class="l-cloud animated slideInRight"/>
                 <b class="display-6 cloud">SkyFinch
                     <h6 class="me-0 p-0">Solution to Success</h6>
                 </b>
@@ -943,6 +942,14 @@
             <span class="close">&times;</span>
             <img class="modal-content1">
         </div>
+        <div class="idMyModal modal1">
+            <span class="close">&times;</span>
+            <img class="modal-content1">
+        </div>
+        <div class="idMyModal modal1">
+            <span class="close">&times;</span>
+            <img class="modal-content1">
+        </div>
         <!-- Add left and right buttons -->
         <div class="container1 pt-0 pb-3">
             <div class="row d-lg-none d-md-none d-block">
@@ -976,37 +983,97 @@
                         role="tablist" aria-orientation="vertical" data-mcs-theme="dark">
                         <a class="nav-link mb-1 p-1 shadow active" id="v-pills-Travel-tab" data-bs-toggle="pill"
                             href="#v-pills-Travel" role="tab" aria-controls="v-pills-Travel" aria-selected="true">
-
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Travel Plan Management</span></a>
+                            <div class="row rt_cont p-0 m-0 align-items-center">
+                                <div class="col-1 p-0 m-0">
+                                    <i class="fa fa-bars ms-1 me-3"></i>
+                                </div>
+                                <div class="col-11 p-0 m-0">
+                                    <span class="m-0 h5 font-weight-bold small text-uppercase">Travel Plan
+                                        Management</span>
+                                </div>
+                            </div>
+                        </a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Risk-tab" data-bs-toggle="pill"
                             href="#v-pills-Risk" role="tab" aria-controls="v-pills-Risk" aria-selected="false">
-
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Risk Management</span></a>
+                            <div class="row rt_cont p-0 m-0 align-items-center">
+                                <div class="col-1 p-0 m-0">
+                                    <i class="fa fa-bars ms-1 me-3"></i>
+                                </div>
+                                <div class="col-11 p-0 m-0">
+                                    <span class="m-0 h5 font-weight-bold small text-uppercase">Risk Management</span>
+                                </div>
+                            </div>
+                        </a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Mobile-tab" data-bs-toggle="pill"
                             href="#v-pills-Mobile" role="tab" aria-controls="v-pills-Mobile" aria-selected="false">
-
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Mobile Application</span></a>
+                            <div class="row rt_cont p-0 m-0 align-items-center">
+                                <div class="col-1 p-0 m-0">
+                                    <i class="fa fa-bars ms-1 me-3"></i>
+                                </div>
+                                <div class="col-11 p-0 m-0">
+                                    <span class="m-0 h5 font-weight-bold small text-uppercase">Mobile Application</span>
+                                </div>
+                            </div>
+                        </a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Employee-tab" data-bs-toggle="pill"
                             href="#v-pills-Employee" role="tab" aria-controls="v-pills-Employee" aria-selected="false">
-
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Employee Advance Maintenance</span></a>
+                            <div class="row rt_cont p-0 m-0 align-items-center">
+                                <div class="col-1 p-0 m-0">
+                                    <i class="fa fa-bars ms-1 me-3"></i>
+                                </div>
+                                <div class="col-11 p-0 m-0">
+                                    <span class="m-0 h5 font-weight-bold small text-uppercase">Employee Advance
+                                        Maintenance</span>
+                                </div>
+                            </div>
+                        </a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Multiple-tab" data-bs-toggle="pill"
                             href="#v-pills-Multiple" role="tab" aria-controls="v-pills-Multiple" aria-selected="false">
-
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Multiple Approvals</span></a>
+                            <div class="row rt_cont p-0 m-0 align-items-center">
+                                <div class="col-1 p-0 m-0">
+                                    <i class="fa fa-bars ms-1 me-3"></i>
+                                </div>
+                                <div class="col-11 p-0 m-0">
+                                    <span class="m-0 h5 font-weight-bold small text-uppercase">Multiple Approvals</span>
+                                </div>
+                            </div>
+                        </a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Pending-tab" data-bs-toggle="pill"
                             href="#v-pills-Pending" role="tab" aria-controls="v-pills-Pending" aria-selected="false">
-
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Pending settlement tracking </span></a>
+                            <div class="row rt_cont p-0 m-0 align-items-center">
+                                <div class="col-1 p-0 m-0">
+                                    <i class="fa fa-bars ms-1 me-3"></i>
+                                </div>
+                                <div class="col-11 p-0 m-0">
+                                    <span class="m-0 h5 font-weight-bold small text-uppercase">Pending settlement
+                                        tracking</span>
+                                </div>
+                            </div>
+                        </a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Instant-tab" data-bs-toggle="pill"
                             href="#v-pills-Instant" role="tab" aria-controls="v-pills-Instant" aria-selected="false">
-
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Instant notification</span></a>
+                            <div class="row rt_cont p-0 m-0 align-items-center">
+                                <div class="col-1 p-0 m-0">
+                                    <i class="fa fa-bars ms-1 me-3"></i>
+                                </div>
+                                <div class="col-11 p-0 m-0">
+                                    <span class="m-0 h5 font-weight-bold small text-uppercase">Instant
+                                        notification</span>
+                                </div>
+                            </div>
+                        </a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Hotel-tab" data-bs-toggle="pill"
                             href="#v-pills-Hotel" role="tab" aria-controls="v-pills-Hotel" aria-selected="false">
-
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Mode of Travel & Hotel
-                                Suggestions</span></a>
+                            <div class="row rt_cont p-0 m-0 align-items-center">
+                                <div class="col-1 p-0 m-0">
+                                    <i class="fa fa-bars ms-1 me-3"></i>
+                                </div>
+                                <div class="col-11 p-0 m-0">
+                                    <span class="m-0 h5 font-weight-bold small text-uppercase">Mode of Travel & Hotel
+                                        Suggestions</span>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-9 col-12 d-lg-block d-md-block d-none pb-lg-0 pb-5 wow fadeInRight"
@@ -1021,17 +1088,22 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Travel Plan Management</h4>
                                 <ul class="list-unstyled">
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The limits and liabilities
-                                        of the company in granting travel concession to its employees based on their
-                                        cadre and criteria of employment can be pre-defined in the Risk Management
-                                        solution</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system effectively
-                                        controls the allocation of travel concessions to the staff by raising alerts if
-                                        any travel arrangement or claim exceeds the scope of the concerned employee's
-                                        pre-defined eligibility parameters</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Error-free billing actuated
-                                        by the facility to easily rectify wrong entries, and the action audit
-                                        capabilities.</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The limits and liabilities
+                                            of the company in granting travel concession to its employees based on their
+                                            cadre and criteria of employment can be pre-defined in the Risk Management
+                                            solution</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The system effectively
+                                            controls the allocation of travel concessions to the staff by raising alerts
+                                            if
+                                            any travel arrangement or claim exceeds the scope of the concerned
+                                            employee's
+                                            pre-defined eligibility parameters</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Error-free billing actuated
+                                            by the facility to easily rectify wrong entries, and the action audit
+                                            capabilities.</li>
                                 </ul>
                             </div>
                         </div>
@@ -1040,14 +1112,18 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-3">Risk Management</h4>
                                 <ul class="list-unstyled">
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The limits and liabilities
-                                        of the company in granting travel concession to its employees based on their
-                                        cadre and criteria of employment can be pre-defined in the Risk Management
-                                        solution</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system effectively
-                                        controls the allocation of travel concessions to the staff by raising alerts if
-                                        any travel arrangement or claim exceeds the scope of the concerned employee's
-                                        pre-defined eligibility parameters</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The limits and liabilities
+                                            of the company in granting travel concession to its employees based on their
+                                            cadre and criteria of employment can be pre-defined in the Risk Management
+                                            solution</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The system effectively
+                                            controls the allocation of travel concessions to the staff by raising alerts
+                                            if
+                                            any travel arrangement or claim exceeds the scope of the concerned
+                                            employee's
+                                            pre-defined eligibility parameters</li>
                                 </ul>
                             </div>
                         </div>
@@ -1056,17 +1132,24 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Mobile Application</h4>
                                 <ul class="list-unstyled">
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch Corporate Travel
-                                        Management software's Mobile App solution enables the corporate traveler to stay
-                                        connected with the office and extend or alter or enhance any corporate travel
-                                        plan from anywhere at anytime</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system's Mobile App
-                                        empowers uninterrupted conduct of corporate travel plans by providing complete
-                                        details of the itinerary to the traveler and the management and by enabling
-                                        appropriate requests and authorizations whenever and wherever necessary</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The App empowers designated
-                                        authorities to issue Mobile Approvals for Travel Request, Travel Settlements,
-                                        Advance requests, Advance Settlement, etc</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Skyfinch Corporate Travel
+                                            Management software's Mobile App solution enables the corporate traveler to
+                                            stay
+                                            connected with the office and extend or alter or enhance any corporate
+                                            travel
+                                            plan from anywhere at anytime</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The system's Mobile App
+                                            empowers uninterrupted conduct of corporate travel plans by providing
+                                            complete
+                                            details of the itinerary to the traveler and the management and by enabling
+                                            appropriate requests and authorizations whenever and wherever necessary</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The App empowers designated
+                                            authorities to issue Mobile Approvals for Travel Request, Travel
+                                            Settlements,
+                                            Advance requests, Advance Settlement, etc</li>
                                 </ul>
                             </div>
                         </div>
@@ -1075,24 +1158,33 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Travel Desk</h4>
                                 <ul class="list-unstyled">
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The solution empowers
-                                        corporate travel by allowing the integration of Travel Agency support in the
-                                        form of a Travel Desk in the very premises of the Corporate Office</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system integrates the
-                                        Travel Desk functionalities to stay in tune with the corporate policies and
-                                        appropriately evaluate travel plans and arrange for transportation, transit,
-                                        accommodation, etc.</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The software supports Travel
-                                        Desks to manage with ease the travel schedules of individual employees and also
-                                        groups</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The software maintains a
-                                        record of the travel credentials accumulated by employees like, frequent flier
-                                        points/discounts, and empowers the Travel Desks take due advantage to
-                                        economically handle corporate travels</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system is also robust
-                                        enough to support international travel and duly tracks, monitors, and notifies
-                                        the Travel Desks appropriately to ensure that all the necessary visas and other
-                                        documentation of employees traveling abroad are in order</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The solution empowers
+                                            corporate travel by allowing the integration of Travel Agency support in the
+                                            form of a Travel Desk in the very premises of the Corporate Office</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The system integrates the
+                                            Travel Desk functionalities to stay in tune with the corporate policies and
+                                            appropriately evaluate travel plans and arrange for transportation, transit,
+                                            accommodation, etc.</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The software supports Travel
+                                            Desks to manage with ease the travel schedules of individual employees and
+                                            also
+                                            groups</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The software maintains a
+                                            record of the travel credentials accumulated by employees like, frequent
+                                            flier
+                                            points/discounts, and empowers the Travel Desks take due advantage to
+                                            economically handle corporate travels</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The system is also robust
+                                            enough to support international travel and duly tracks, monitors, and
+                                            notifies
+                                            the Travel Desks appropriately to ensure that all the necessary visas and
+                                            other
+                                            documentation of employees traveling abroad are in order</li>
                                 </ul>
                             </div>
                         </div>
@@ -1101,15 +1193,20 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Employee Advance Maintenance</h4>
                                 <ul class="list-unstyled">
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Upon approval of a travel
-                                        request the system facilitates the management to issue cash to the concerned
-                                        employee(s) to enable advance bookings and provide hand-cash for travelers; and
-                                        also maintain a record of the transactions</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Apart from travel related
-                                        purposes, the system also provides companies with the scope of releasing cash to
-                                        employees towards celebrating office functions and other regional/seasonal
-                                        festivals, and for registering the same as advance payment for travel and still
-                                        render it accountable appropriately</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Upon approval of a travel
+                                            request the system facilitates the management to issue cash to the concerned
+                                            employee(s) to enable advance bookings and provide hand-cash for travelers;
+                                            and
+                                            also maintain a record of the transactions</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Apart from travel related
+                                            purposes, the system also provides companies with the scope of releasing
+                                            cash to
+                                            employees towards celebrating office functions and other regional/seasonal
+                                            festivals, and for registering the same as advance payment for travel and
+                                            still
+                                            render it accountable appropriately</li>
                                 </ul>
                             </div>
                         </div>
@@ -1118,14 +1215,19 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Multiple Approvals</h4>
                                 <ul class="list-unstyled">
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The hierarchy of approving
-                                        authorities for travel request can be pre-defined in the system</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Once a travel request is
-                                        raised, the request is automatically ascended through the pre-defined hierarchy
-                                        based on status of approval at each stage</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The approving authorities
-                                        are empowered to approve or deny travel requests at anytime and from anywhere,
-                                        even while on the move through the solution's Mobile Approval facility</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The hierarchy of approving
+                                            authorities for travel request can be pre-defined in the system</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Once a travel request is
+                                            raised, the request is automatically ascended through the pre-defined
+                                            hierarchy
+                                            based on status of approval at each stage</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The approving authorities
+                                            are empowered to approve or deny travel requests at anytime and from
+                                            anywhere,
+                                            even while on the move through the solution's Mobile Approval facility</li>
                                 </ul>
                             </div>
                         </div>
@@ -1134,10 +1236,12 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Pending settlement tracking</h4>
                                 <ul class="list-unstyled">
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">Upon completion of the
-                                        business trip the system actively tracks if the concerned employee(s) have
-                                        submitted the travel expense settlement details. If not, an alert is raised to
-                                        ensure that all the related details are registered in order</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt="">Upon completion of the
+                                            business trip the system actively tracks if the concerned employee(s) have
+                                            submitted the travel expense settlement details. If not, an alert is raised
+                                            to
+                                            ensure that all the related details are registered in order</li>
                                 </ul>
                             </div>
                         </div>
@@ -1146,18 +1250,23 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Instant notification</h4>
                                 <ul class="list-unstyled">
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch Corporate Travel
-                                        Management module's stringent tracking, monitoring, and notifying facility
-                                        effectively follows the entire chain of activities involved in the digital
-                                        process and instantly alerts all concerned personnel with:</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Travel Request Approval
-                                        notification whenever a travel request is raised and is pending approval at any
-                                        stage of the hierarchical chain</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Email notifications to the
-                                        Requestor whenever a travel request is approved</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Pending Settlement
-                                        notifications to employees, who have not submitted travel expense settlement
-                                        details after completing the business trip</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Skyfinch Corporate Travel
+                                            Management module's stringent tracking, monitoring, and notifying facility
+                                            effectively follows the entire chain of activities involved in the digital
+                                            process and instantly alerts all concerned personnel with:</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Travel Request Approval
+                                            notification whenever a travel request is raised and is pending approval at
+                                            any
+                                            stage of the hierarchical chain</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Email notifications to the
+                                            Requestor whenever a travel request is approved</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Pending Settlement
+                                            notifications to employees, who have not submitted travel expense settlement
+                                            details after completing the business trip</li>
                                 </ul>
                             </div>
                         </div>
@@ -1166,13 +1275,18 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Mode of Travel & Hotel Suggestions</h4>
                                 <ul class="list-unstyled">
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch's digital solution
-                                        for Corporate Travel management is designed to display the availability status
-                                        of all possible modes of transport like Flights, Trains, and Coaches/Buses based
-                                        on the source and destination places of any given travel request</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Similarly for any given
-                                        destination of a travel request a range of hotels available along with their
-                                        respective vacancy status is furnished by the system to ease the booking process
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Skyfinch's digital solution
+                                            for Corporate Travel management is designed to display the availability
+                                            status
+                                            of all possible modes of transport like Flights, Trains, and Coaches/Buses
+                                            based
+                                            on the source and destination places of any given travel request</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Similarly for any given
+                                            destination of a travel request a range of hotels available along with their
+                                            respective vacancy status is furnished by the system to ease the booking
+                                            process
                                     </li>
                                 </ul>
                             </div>
@@ -1196,24 +1310,30 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 font-italic mb-4">Travel Plan Management</h4>
                                         <ul class="list-unstyled">
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The limits and
-                                                liabilities
-                                                of the company in granting travel concession to its employees based on
-                                                their
-                                                cadre and criteria of employment can be pre-defined in the Risk
-                                                Management
-                                                solution</li>
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system
-                                                effectively
-                                                controls the allocation of travel concessions to the staff by raising
-                                                alerts if
-                                                any travel arrangement or claim exceeds the scope of the concerned
-                                                employee's
-                                                pre-defined eligibility parameters</li>
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Error-free billing
-                                                actuated
-                                                by the facility to easily rectify wrong entries, and the action audit
-                                                capabilities.</li>
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The limits and
+                                                    liabilities
+                                                    of the company in granting travel concession to its employees based
+                                                    on
+                                                    their
+                                                    cadre and criteria of employment can be pre-defined in the Risk
+                                                    Management
+                                                    solution</li>
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The system
+                                                    effectively
+                                                    controls the allocation of travel concessions to the staff by
+                                                    raising
+                                                    alerts if
+                                                    any travel arrangement or claim exceeds the scope of the concerned
+                                                    employee's
+                                                    pre-defined eligibility parameters</li>
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> Error-free billing
+                                                    actuated
+                                                    by the facility to easily rectify wrong entries, and the action
+                                                    audit
+                                                    capabilities.</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1224,20 +1344,24 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 font-italic mb-3">Risk Management</h4>
                                         <ul class="list-unstyled">
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The limits and
-                                                liabilities
-                                                of the company in granting travel concession to its employees based on
-                                                their
-                                                cadre and criteria of employment can be pre-defined in the Risk
-                                                Management
-                                                solution</li>
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system
-                                                effectively
-                                                controls the allocation of travel concessions to the staff by raising
-                                                alerts if
-                                                any travel arrangement or claim exceeds the scope of the concerned
-                                                employee's
-                                                pre-defined eligibility parameters</li>
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The limits and
+                                                    liabilities
+                                                    of the company in granting travel concession to its employees based
+                                                    on
+                                                    their
+                                                    cadre and criteria of employment can be pre-defined in the Risk
+                                                    Management
+                                                    solution</li>
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The system
+                                                    effectively
+                                                    controls the allocation of travel concessions to the staff by
+                                                    raising
+                                                    alerts if
+                                                    any travel arrangement or claim exceeds the scope of the concerned
+                                                    employee's
+                                                    pre-defined eligibility parameters</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1248,26 +1372,33 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 font-italic mb-4">Mobile Application</h4>
                                         <ul class="list-unstyled">
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch Corporate
-                                                Travel
-                                                Management software's Mobile App solution enables the corporate traveler
-                                                to stay
-                                                connected with the office and extend or alter or enhance any corporate
-                                                travel
-                                                plan from anywhere at anytime</li>
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system's Mobile
-                                                App
-                                                empowers uninterrupted conduct of corporate travel plans by providing
-                                                complete
-                                                details of the itinerary to the traveler and the management and by
-                                                enabling
-                                                appropriate requests and authorizations whenever and wherever necessary
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> Skyfinch Corporate
+                                                    Travel
+                                                    Management software's Mobile App solution enables the corporate
+                                                    traveler
+                                                    to stay
+                                                    connected with the office and extend or alter or enhance any
+                                                    corporate
+                                                    travel
+                                                    plan from anywhere at anytime</li>
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The system's Mobile
+                                                    App
+                                                    empowers uninterrupted conduct of corporate travel plans by
+                                                    providing
+                                                    complete
+                                                    details of the itinerary to the traveler and the management and by
+                                                    enabling
+                                                    appropriate requests and authorizations whenever and wherever
+                                                    necessary
                                             </li>
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The App empowers
-                                                designated
-                                                authorities to issue Mobile Approvals for Travel Request, Travel
-                                                Settlements,
-                                                Advance requests, Advance Settlement, etc</li>
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The App empowers
+                                                    designated
+                                                    authorities to issue Mobile Approvals for Travel Request, Travel
+                                                    Settlements,
+                                                    Advance requests, Advance Settlement, etc</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1278,36 +1409,49 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 font-italic mb-4">Travel Desk</h4>
                                         <ul class="list-unstyled">
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The solution
-                                                empowers
-                                                corporate travel by allowing the integration of Travel Agency support in
-                                                the
-                                                form of a Travel Desk in the very premises of the Corporate Office</li>
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system
-                                                integrates the
-                                                Travel Desk functionalities to stay in tune with the corporate policies
-                                                and
-                                                appropriately evaluate travel plans and arrange for transportation,
-                                                transit,
-                                                accommodation, etc.</li>
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The software
-                                                supports Travel
-                                                Desks to manage with ease the travel schedules of individual employees
-                                                and also
-                                                groups</li>
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The software
-                                                maintains a
-                                                record of the travel credentials accumulated by employees like, frequent
-                                                flier
-                                                points/discounts, and empowers the Travel Desks take due advantage to
-                                                economically handle corporate travels</li>
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system is also
-                                                robust
-                                                enough to support international travel and duly tracks, monitors, and
-                                                notifies
-                                                the Travel Desks appropriately to ensure that all the necessary visas
-                                                and other
-                                                documentation of employees traveling abroad are in order</li>
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The solution
+                                                    empowers
+                                                    corporate travel by allowing the integration of Travel Agency
+                                                    support in
+                                                    the
+                                                    form of a Travel Desk in the very premises of the Corporate Office
+                                            </li>
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The system
+                                                    integrates the
+                                                    Travel Desk functionalities to stay in tune with the corporate
+                                                    policies
+                                                    and
+                                                    appropriately evaluate travel plans and arrange for transportation,
+                                                    transit,
+                                                    accommodation, etc.</li>
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The software
+                                                    supports Travel
+                                                    Desks to manage with ease the travel schedules of individual
+                                                    employees
+                                                    and also
+                                                    groups</li>
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The software
+                                                    maintains a
+                                                    record of the travel credentials accumulated by employees like,
+                                                    frequent
+                                                    flier
+                                                    points/discounts, and empowers the Travel Desks take due advantage
+                                                    to
+                                                    economically handle corporate travels</li>
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The system is also
+                                                    robust
+                                                    enough to support international travel and duly tracks, monitors,
+                                                    and
+                                                    notifies
+                                                    the Travel Desks appropriately to ensure that all the necessary
+                                                    visas
+                                                    and other
+                                                    documentation of employees traveling abroad are in order</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1318,22 +1462,26 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 font-italic mb-4">Employee Advance Maintenance</h4>
                                         <ul class="list-unstyled">
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Upon approval of a
-                                                travel
-                                                request the system facilitates the management to issue cash to the
-                                                concerned
-                                                employee(s) to enable advance bookings and provide hand-cash for
-                                                travelers; and
-                                                also maintain a record of the transactions</li>
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Apart from travel
-                                                related
-                                                purposes, the system also provides companies with the scope of releasing
-                                                cash to
-                                                employees towards celebrating office functions and other
-                                                regional/seasonal
-                                                festivals, and for registering the same as advance payment for travel
-                                                and still
-                                                render it accountable appropriately</li>
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> Upon approval of a
+                                                    travel
+                                                    request the system facilitates the management to issue cash to the
+                                                    concerned
+                                                    employee(s) to enable advance bookings and provide hand-cash for
+                                                    travelers; and
+                                                    also maintain a record of the transactions</li>
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> Apart from travel
+                                                    related
+                                                    purposes, the system also provides companies with the scope of
+                                                    releasing
+                                                    cash to
+                                                    employees towards celebrating office functions and other
+                                                    regional/seasonal
+                                                    festivals, and for registering the same as advance payment for
+                                                    travel
+                                                    and still
+                                                    render it accountable appropriately</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1344,19 +1492,24 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 font-italic mb-4">Multiple Approvals</h4>
                                         <ul class="list-unstyled">
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The hierarchy of
-                                                approving
-                                                authorities for travel request can be pre-defined in the system</li>
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Once a travel
-                                                request is
-                                                raised, the request is automatically ascended through the pre-defined
-                                                hierarchy
-                                                based on status of approval at each stage</li>
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The approving
-                                                authorities
-                                                are empowered to approve or deny travel requests at anytime and from
-                                                anywhere,
-                                                even while on the move through the solution's Mobile Approval facility
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The hierarchy of
+                                                    approving
+                                                    authorities for travel request can be pre-defined in the system</li>
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> Once a travel
+                                                    request is
+                                                    raised, the request is automatically ascended through the
+                                                    pre-defined
+                                                    hierarchy
+                                                    based on status of approval at each stage</li>
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> The approving
+                                                    authorities
+                                                    are empowered to approve or deny travel requests at anytime and from
+                                                    anywhere,
+                                                    even while on the move through the solution's Mobile Approval
+                                                    facility
                                             </li>
                                         </ul>
                                     </div>
@@ -1368,13 +1521,15 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 font-italic mb-4">Pending settlement tracking</h4>
                                         <ul class="list-unstyled">
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">Upon completion of
-                                                the
-                                                business trip the system actively tracks if the concerned employee(s)
-                                                have
-                                                submitted the travel expense settlement details. If not, an alert is
-                                                raised to
-                                                ensure that all the related details are registered in order</li>
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt="">Upon completion of
+                                                    the
+                                                    business trip the system actively tracks if the concerned
+                                                    employee(s)
+                                                    have
+                                                    submitted the travel expense settlement details. If not, an alert is
+                                                    raised to
+                                                    ensure that all the related details are registered in order</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1385,25 +1540,30 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 font-italic mb-4">Instant notification</h4>
                                         <ul class="list-unstyled">
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch Corporate
-                                                Travel
-                                                Management module's stringent tracking, monitoring, and notifying
-                                                facility
-                                                effectively follows the entire chain of activities involved in the
-                                                digital
-                                                process and instantly alerts all concerned personnel with:</li>
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Travel Request
-                                                Approval
-                                                notification whenever a travel request is raised and is pending approval
-                                                at any
-                                                stage of the hierarchical chain</li>
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Email notifications
-                                                to the
-                                                Requestor whenever a travel request is approved</li>
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Pending Settlement
-                                                notifications to employees, who have not submitted travel expense
-                                                settlement
-                                                details after completing the business trip</li>
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> Skyfinch Corporate
+                                                    Travel
+                                                    Management module's stringent tracking, monitoring, and notifying
+                                                    facility
+                                                    effectively follows the entire chain of activities involved in the
+                                                    digital
+                                                    process and instantly alerts all concerned personnel with:</li>
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> Travel Request
+                                                    Approval
+                                                    notification whenever a travel request is raised and is pending
+                                                    approval
+                                                    at any
+                                                    stage of the hierarchical chain</li>
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> Email notifications
+                                                    to the
+                                                    Requestor whenever a travel request is approved</li>
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> Pending Settlement
+                                                    notifications to employees, who have not submitted travel expense
+                                                    settlement
+                                                    details after completing the business trip</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1414,19 +1574,25 @@
                                     <div class="font-italic fs-6 text-muted mb-2">
                                         <h4 class="display-6 font-italic mb-4">Mode of Travel & Hotel Suggestions</h4>
                                         <ul class="list-unstyled">
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch's digital
-                                                solution
-                                                for Corporate Travel management is designed to display the availability
-                                                status
-                                                of all possible modes of transport like Flights, Trains, and
-                                                Coaches/Buses based
-                                                on the source and destination places of any given travel request</li>
-                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Similarly for any
-                                                given
-                                                destination of a travel request a range of hotels available along with
-                                                their
-                                                respective vacancy status is furnished by the system to ease the booking
-                                                process
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> Skyfinch's digital
+                                                    solution
+                                                    for Corporate Travel management is designed to display the
+                                                    availability
+                                                    status
+                                                    of all possible modes of transport like Flights, Trains, and
+                                                    Coaches/Buses based
+                                                    on the source and destination places of any given travel request
+                                            </li>
+                                            <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                        alt=""> Similarly for any
+                                                    given
+                                                    destination of a travel request a range of hotels available along
+                                                    with
+                                                    their
+                                                    respective vacancy status is furnished by the system to ease the
+                                                    booking
+                                                    process
                                             </li>
                                         </ul>
                                     </div>
@@ -1843,7 +2009,7 @@
     </section>
     <!-- Footer End -->
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg page-top btn-lg-square rounded-circle wow fadeInDown" data-wow-delay="3.5s"
+    <a href="#" class="btn btn-lg page-top btn-lg-square rounded-circle animated fadeInDown"
         data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
         data-bs-title="back-to-top"><img src="img/right-arrow.png" alt=""></a>
     <!-- JavaScript Libraries -->

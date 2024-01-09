@@ -555,7 +555,7 @@
                             </button>
                         </li>
                         <li class="content mb-3">
-                            <button onclick="jumpToProfile('profile_sec2_4')"
+                            <button onclick="jumpToProfile('profile_sec2')"
                                 class="btn btn-outline-primary border-0 w-100 text-start searchLink">
                                 Profile | Our Products
                             </button>
@@ -628,7 +628,7 @@
     <!-- Search Modal End-->
     <!-- Start chat box Design  -->
     <span class="tooltip-text" style="visibility: hidden;">I'm Skyfinch</span>
-    <button title="" class="chatbot-toggler wow fadeInDown" data-wow-delay="2.2s" data-bs-toggle="tooltip"
+    <button title="" class="chatbot-toggler fadeInDown" data-bs-toggle="tooltip"
         data-bs-placement="left" data-bs-custom-class="chat-tooltip" data-bs-title="Hi! I'm Help you.👋">
         <span class="material-symbols-outlined">mode_comment</span>
         <span class="material-symbols-outlined">close</span>
@@ -653,8 +653,8 @@
     </div>
     <!-- End chat box Design -->
     <!-- Navbar Start -->
-    <div class="container-fluid vw-nav fixed-top m-0 p-0 wow fadeIn" data-wow-delay="0.8s">
-        <div class="top-bar row gx-2 pb-lg-0 align-items-center d-lg-flex d-md-flex d-none bg-blue wow fadeIn">
+    <div class="container-fluid vw-nav fixed-top m-0 p-0">
+        <div class="top-bar row gx-2 pb-lg-0 align-items-center d-lg-flex d-md-flex d-none bg-blue">
             <div class="col-lg-7 col-md-12 text-start id_con">
                 <medium class="ms-lg-2"><i id="top-icons" class="fa fa-map-marker-alt me-lg-2 me-md-2">
                     </i>5, Republic Street, Reddiarpalayam, Puducherry-605010,
@@ -672,11 +672,10 @@
                 </medium>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 py-md-2 py-2 px-lg-4 wow fadeIn bg-white"
-            data-wow-delay="0.9s">
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 py-md-2 py-2 px-lg-4 bg-white">
             <a href="index.html" class="navbar-brand ms-0 ms-lg-0">
-                <img src="img/cloud.png" alt="" class="r-cloud wow slideInLeft" data-wow-delay="1.2s" />
-                <img src="img/cloud.png" alt="" class="l-cloud wow slideInRight" data-wow-delay="1s" />
+                <img src="img/cloud.png" alt="" class="r-cloud animated slideInLeft"/>
+                <img src="img/cloud.png" alt="" class="l-cloud animated slideInRight"/>
                 <b class="display-6 cloud">SkyFinch
                     <h6 class="me-0 p-0">Solution to Success</h6>
                 </b>
@@ -939,6 +938,14 @@
             <span class="close">&times;</span>
             <img class="modal-content1">
         </div>
+        <div class="idMyModal modal1">
+            <span class="close">&times;</span>
+            <img class="modal-content1">
+        </div>
+        <div class="idMyModal modal1">
+            <span class="close">&times;</span>
+            <img class="modal-content1">
+        </div>
         <!-- Add left and right buttons -->
         <div class="container1 pt-0 pb-3">
             <div class="row d-lg-none d-md-none d-block">
@@ -973,54 +980,72 @@
                         <a class="nav-link mb-1 p-1 shadow active" id="v-pills-Icon-tab" data-bs-toggle="pill"
                             href="#v-pills-Icon" role="tab" aria-controls="v-pills-Icon" aria-selected="true">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Iconographic Billing</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>Iconographic Billing</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Order-tab" data-bs-toggle="pill"
                             href="#v-pills-Order" role="tab" aria-controls="v-pills-Order" aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Order Management</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>Order Management</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Delivery-tab" data-bs-toggle="pill"
                             href="#v-pills-Delivery" role="tab" aria-controls="v-pills-Delivery" aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Delivery Management</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>Delivery Management</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Table-tab" data-bs-toggle="pill"
                             href="#v-pills-Table" role="tab" aria-controls="v-pills-Table" aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Table Management</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>Table Management</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Token-tab" data-bs-toggle="pill"
                             href="#v-pills-Token" role="tab" aria-controls="v-pills-Token" aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Kitchen Order Table
-                                (Ticket/Token)</span></a>
+                            <div class="row rt_cont p-0 m-0 align-items-center">
+                                <div class="col-1 p-0 m-0 ms-1">
+                                    <i class="fa fa-bars"></i>
+                                </div>
+                                <div class="col-10 p-0 m-0">
+                                    <span class="m-0 h5 font-weight-bold text-uppercase">Kitchen Order Table (Ticket/Token)</span>
+                                </div>
+                            </div>
+                        </a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-BOM-tab" data-bs-toggle="pill"
                             href="#v-pills-BOM" role="tab" aria-controls="v-pills-BOM" aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>BOM Management</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>BOM Management</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Daily-tab" data-bs-toggle="pill"
                             href="#v-pills-Daily" role="tab" aria-controls="v-pills-Daily" aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Daily Sales</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>Daily Sales</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-SMS-tab" data-bs-toggle="pill"
                             href="#v-pills-SMS" role="tab" aria-controls="v-pills-SMS" aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>SMS Support</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>SMS Support</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Tax-tab" data-bs-toggle="pill"
                             href="#v-pills-Tax" role="tab" aria-controls="v-pills-Tax" aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Tax Management</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>Tax Management</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Financial-tab" data-bs-toggle="pill"
                             href="#v-pills-Financial" role="tab" aria-controls="v-pills-Financial"
                             aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Financial Accounting</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>Financial Accounting</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Analytics-tab" data-bs-toggle="pill"
                             href="#v-pills-Analytics" role="tab" aria-controls="v-pills-Analytics"
                             aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Analytics Reports</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>Analytics Reports</span></a>
                         <a class="nav-link mb-1 p-1 shadow" id="v-pills-Users-tab" data-bs-toggle="pill"
                             href="#v-pills-Users" role="tab" aria-controls="v-pills-Users" aria-selected="false">
 
-                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i class="fa fa-bars ms-1 me-3"></i>Users Management</span></a>
+                            <span class="m-0 h5 font-weight-bold small text-uppercase"><i
+                                    class="fa fa-bars ms-1 me-3"></i>Users Management</span></a>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-7 col-12 d-lg-block d-md-block d-none pb-lg-0 pb-5 wow fadeInRight"
@@ -1035,28 +1060,42 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Iconographic Management</h4>
                                 <ul class="list-unstyled">
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Iconographic billing
-                                        interface with or without touch screen</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Pictorial representation
-                                        food and beverage types on the invoice screen ease the selection of item</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Manual Price Control
-                                        facility enables the effortless selection of the applicable rates at any given
-                                        time for items with multiple Prices</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The provision to create
-                                        multiple price lists enables the risk-free assessment of discount rates</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Option to accept payments
-                                        through multiple payment modes improves customer experience and ensures prompt
-                                        receipt of payments</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Data-wise visibility into
-                                        the list of food & beverages gives drastic ability to quickly locate the item
-                                        mentioned or required by clients</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The presence of the
-                                        automated Offers and Schemes Management solution on the billing screen enables
-                                        to promptly assign applicable offers to customers and elicit customer
-                                        satisfaction</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Ability to handle Dine-In,
-                                        Take Away, and Home Delivery orders with ease; have category-wise view of items,
-                                        and set search filters for easy search are other benefits</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Iconographic billing
+                                            interface with or without touch screen</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Pictorial representation
+                                            food and beverage types on the invoice screen ease the selection of item
+                                    </li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Manual Price Control
+                                            facility enables the effortless selection of the applicable rates at any
+                                            given
+                                            time for items with multiple Prices</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The provision to create
+                                            multiple price lists enables the risk-free assessment of discount rates</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Option to accept payments
+                                            through multiple payment modes improves customer experience and ensures
+                                            prompt
+                                            receipt of payments</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Data-wise visibility into
+                                            the list of food & beverages gives drastic ability to quickly locate the
+                                            item
+                                            mentioned or required by clients</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The presence of the
+                                            automated Offers and Schemes Management solution on the billing screen
+                                            enables
+                                            to promptly assign applicable offers to customers and elicit customer
+                                            satisfaction</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Ability to handle Dine-In,
+                                            Take Away, and Home Delivery orders with ease; have category-wise view of
+                                            items,
+                                            and set search filters for easy search are other benefits</li>
                                 </ul>
                             </div>
                         </div>
@@ -1065,18 +1104,24 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-3">Order Management</h4>
                                 <ul class="list-unstyled">
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The Skyfinch Order
-                                        Management faculty's Dashboard facility gives a clear picture of the status of
-                                        all in-house and pick-up orders on a single screen
-                                        Customized to fit any restaurant functionality the system is flexible enough to
-                                        allow the performance of any desired order management workflow</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The ability to track and
-                                        prioritize orders based on customer preference or business requisites is a
-                                        tactical tool to handle bottlenecks</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The facility to
-                                        simultaneously print restaurant sales related documents on two different
-                                        printers enhances business agility by generating hard copies of order/business
-                                        information at 2 different places at the same time</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The Skyfinch Order
+                                            Management faculty's Dashboard facility gives a clear picture of the status
+                                            of
+                                            all in-house and pick-up orders on a single screen
+                                            Customized to fit any restaurant functionality the system is flexible enough
+                                            to
+                                            allow the performance of any desired order management workflow</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The ability to track and
+                                            prioritize orders based on customer preference or business requisites is a
+                                            tactical tool to handle bottlenecks</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The facility to
+                                            simultaneously print restaurant sales related documents on two different
+                                            printers enhances business agility by generating hard copies of
+                                            order/business
+                                            information at 2 different places at the same time</li>
                                 </ul>
                             </div>
                         </div>
@@ -1085,16 +1130,23 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Delivery Management</h4>
                                 <ul class="list-unstyled">
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The Skyfinch Delivery
-                                        Management solution supports multiple price lists for in-house, take-home, and
-                                        door delivery orders and automatically assigns the appropriate price based on
-                                        the type of service</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Facility to store multiple
-                                        customer-addresses in the Delivery management system reduces the processing time
-                                        for deliveries</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The feasibility to assign
-                                        appropriate delivery staff for any given delivery and to maintain a report about
-                                        each delivery gives total control over the process</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The Skyfinch Delivery
+                                            Management solution supports multiple price lists for in-house, take-home,
+                                            and
+                                            door delivery orders and automatically assigns the appropriate price based
+                                            on
+                                            the type of service</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Facility to store multiple
+                                            customer-addresses in the Delivery management system reduces the processing
+                                            time
+                                            for deliveries</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The feasibility to assign
+                                            appropriate delivery staff for any given delivery and to maintain a report
+                                            about
+                                            each delivery gives total control over the process</li>
                                 </ul>
                             </div>
                         </div>
@@ -1103,22 +1155,32 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Table Management</h4>
                                 <ul class="list-unstyled">
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> By predefining the number of
-                                        tables with respective seating capacity in the iconographic interface powered
-                                        system Table management becomes as easy as having things done at the touch of an
-                                        icon</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Easy tracking and monitoring
-                                        facility enables the stress-free management of rush hour table allocations</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Hall-wise multiple price
-                                        list projection allows the handling of tables at different halls through the
-                                        same system</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system automatically
-                                        reserves tables as per entries made for reservation, notifies the appropriate
-                                        staff, and eradicates all possibilities for any conflict of interest in table
-                                        allocations</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Ability to check
-                                        availability of table on future dates enable the efficient assignment of
-                                        reservations and maximize customer satisfaction</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            By predefining the number of
+                                            tables with respective seating capacity in the iconographic interface
+                                            powered
+                                            system Table management becomes as easy as having things done at the touch
+                                            of an
+                                            icon</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Easy tracking and monitoring
+                                            facility enables the stress-free management of rush hour table allocations
+                                    </li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Hall-wise multiple price
+                                            list projection allows the handling of tables at different halls through the
+                                            same system</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The system automatically
+                                            reserves tables as per entries made for reservation, notifies the
+                                            appropriate
+                                            staff, and eradicates all possibilities for any conflict of interest in
+                                            table
+                                            allocations</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Ability to check
+                                            availability of table on future dates enable the efficient assignment of
+                                            reservations and maximize customer satisfaction</li>
                                 </ul>
                             </div>
                         </div>
@@ -1127,28 +1189,41 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Kitchen Order Table (Ticket/Token)</h4>
                                 <ul class="list-unstyled">
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The tracking tenacity of the
-                                        module empowers the generation of KOTs for billing from a single counter
-                                        irrespective of the number or type of food counters the items are collected from
-                                        to cater to a single client</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> KOTs can also printed for
-                                        items grouped counter wise on same or separate printers assigned for the purpose
-                                        on the network</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The facility to
-                                        simultaneously print KOTs on two different printers enhances business agility
-                                        gaining on the transit time of KOTs from captain to kitchen</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch solution for
-                                        Restaurant Sales management enables the user-friendly and quick creation of KOT
-                                        document number and date</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> KOTs made in Invoices,
-                                        Estimates, and Advance Booking documents can be viewed</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Even before Invoice could be
-                                        generated the system allows the printing of KOTs for review of record</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The solution enables the
-                                        generation of the copies of KOTs in the form of SMSs to be sent to customers and
-                                        intended users</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch software keeps a
-                                        count of the number of KOTs printed and eliminates all scope for malpractice
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The tracking tenacity of the
+                                            module empowers the generation of KOTs for billing from a single counter
+                                            irrespective of the number or type of food counters the items are collected
+                                            from
+                                            to cater to a single client</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            KOTs can also printed for
+                                            items grouped counter wise on same or separate printers assigned for the
+                                            purpose
+                                            on the network</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The facility to
+                                            simultaneously print KOTs on two different printers enhances business
+                                            agility
+                                            gaining on the transit time of KOTs from captain to kitchen</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Skyfinch solution for
+                                            Restaurant Sales management enables the user-friendly and quick creation of
+                                            KOT
+                                            document number and date</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            KOTs made in Invoices,
+                                            Estimates, and Advance Booking documents can be viewed</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Even before Invoice could be
+                                            generated the system allows the printing of KOTs for review of record</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The solution enables the
+                                            generation of the copies of KOTs in the form of SMSs to be sent to customers
+                                            and
+                                            intended users</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Skyfinch software keeps a
+                                            count of the number of KOTs printed and eliminates all scope for malpractice
                                     </li>
                                 </ul>
                             </div>
@@ -1158,24 +1233,36 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">BOM Management</h4>
                                 <ul class="list-unstyled">
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The solution can project an
-                                        estimation of the value of raw materials required to prepare the items for any
-                                        given food order</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Define the Bill of Material
-                                        for each and every item on a menu along with their respective making costs,
-                                        thereby enabling the efficient and competitive pricing of food items</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system balances between
-                                        the stock and the sale of food items by reducing the stock of raw materials that
-                                        are set to be involved in the making of the food in each sale</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch Restaurant Sales
-                                        module has the tenacity to accurately calculate the selling price of products
-                                        based on the percentage of profit desired by business owners</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Dump stock reports give a
-                                        vector of wastage and provides the scope to rein in the level of wastage</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The solution has the genius
-                                        to calculate the amount of raw materials required for bulk orders and match it
-                                        against the available stock and project a report of shortage in stock and the
-                                        cost involved to procure the same</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The solution can project an
+                                            estimation of the value of raw materials required to prepare the items for
+                                            any
+                                            given food order</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Define the Bill of Material
+                                            for each and every item on a menu along with their respective making costs,
+                                            thereby enabling the efficient and competitive pricing of food items</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The system balances between
+                                            the stock and the sale of food items by reducing the stock of raw materials
+                                            that
+                                            are set to be involved in the making of the food in each sale</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Skyfinch Restaurant Sales
+                                            module has the tenacity to accurately calculate the selling price of
+                                            products
+                                            based on the percentage of profit desired by business owners</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Dump stock reports give a
+                                            vector of wastage and provides the scope to rein in the level of wastage
+                                    </li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The solution has the genius
+                                            to calculate the amount of raw materials required for bulk orders and match
+                                            it
+                                            against the available stock and project a report of shortage in stock and
+                                            the
+                                            cost involved to procure the same</li>
                                 </ul>
                             </div>
                         </div>
@@ -1184,22 +1271,30 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Daily Sales</h4>
                                 <ul class="list-unstyled">
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Multi-level tactical
-                                        sales-checks made possible by 'Quick View' of last few bills and the
-                                        terminal-wise 'Quickly View' faculty</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The ability to understand
-                                        the actual stature of business proceeds is enhanced by the modules facility to
-                                        furnish:</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Daily sales oriented
-                                        Inventory view</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">Daily sales oriented
-                                        multi-level rolled up totals view </li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Sales Total view for any
-                                        date & time range</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> View of sales invoices of
-                                        items mentioned in Daily Sales view</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Items-Wise analytics of
-                                        daily sales</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Multi-level tactical
+                                            sales-checks made possible by 'Quick View' of last few bills and the
+                                            terminal-wise 'Quickly View' faculty</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The ability to understand
+                                            the actual stature of business proceeds is enhanced by the modules facility
+                                            to
+                                            furnish:</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Daily sales oriented
+                                            Inventory view</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt="">Daily sales oriented
+                                            multi-level rolled up totals view </li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Sales Total view for any
+                                            date & time range</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            View of sales invoices of
+                                            items mentioned in Daily Sales view</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Items-Wise analytics of
+                                            daily sales</li>
                                 </ul>
                             </div>
                         </div>
@@ -1208,15 +1303,20 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">SMS Support</h4>
                                 <ul class="list-unstyled">
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The module enables the
-                                        sending of invoices and receipts to customers through SMS, the highlight being
-                                        the possibility of sending them in the regional language</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system is capacitated to
-                                        generate reports on Daily Sales, Stock position, Cash Register balance, etc for
-                                        any predefined periodical time span and send them as SMSs to business
-                                        stakeholders, who can access them even over simple dongle connection</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch integrates the SMS
-                                        gateway provider with the any business using HTTP API</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The module enables the
+                                            sending of invoices and receipts to customers through SMS, the highlight
+                                            being
+                                            the possibility of sending them in the regional language</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The system is capacitated to
+                                            generate reports on Daily Sales, Stock position, Cash Register balance, etc
+                                            for
+                                            any predefined periodical time span and send them as SMSs to business
+                                            stakeholders, who can access them even over simple dongle connection</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Skyfinch integrates the SMS
+                                            gateway provider with the any business using HTTP API</li>
                                 </ul>
                             </div>
                         </div>
@@ -1226,17 +1326,22 @@
                                 <h4 class="display-6 font-italic mb-4">Tax Management</h4>
                                 <ul class="list-unstyled">
                                     <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
-                                        The module is flexible to allow the application/rectification of taxes or
-                                        addition of taxes anywhere between making Purchase Entry to running the BillI
+                                            The module is flexible to allow the application/rectification of taxes or
+                                            addition of taxes anywhere between making Purchase Entry to running the
+                                            BillI
                                     </li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> If there is need to collect
-                                        more than one tax, custom tax structures can be easily designed to assign
-                                        appropriate tax(s) to items</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Easy manageability of GST,
-                                        SGST, CGST, IGST/UGST</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">The software design is
-                                        scalable to accommodate all future governmental changes that might be attributed
-                                        to the existing system</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            If there is need to collect
+                                            more than one tax, custom tax structures can be easily designed to assign
+                                            appropriate tax(s) to items</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Easy manageability of GST,
+                                            SGST, CGST, IGST/UGST</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;"
+                                                alt="">The software design is
+                                            scalable to accommodate all future governmental changes that might be
+                                            attributed
+                                            to the existing system</li>
                                 </ul>
                             </div>
                         </div>
@@ -1245,19 +1350,26 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Financial Accounting</h4>
                                 <ul class="list-unstyled">
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system automatically
-                                        generates all the GST components as per statutory requisites </li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The solution gives scope for
-                                        the creation of as many Financial Accounts as required</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Simplified import and export
-                                        functionality eases the integration of all accounts and transactions in Tally
-                                        with Skyfinch's accounting platform</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The flexibility of the
-                                        solution provides the scope to view financial reports from multiple perspectives
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The system automatically
+                                            generates all the GST components as per statutory requisites </li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The solution gives scope for
+                                            the creation of as many Financial Accounts as required</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Simplified import and export
+                                            functionality eases the integration of all accounts and transactions in
+                                            Tally
+                                            with Skyfinch's accounting platform</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The flexibility of the
+                                            solution provides the scope to view financial reports from multiple
+                                            perspectives
                                     </li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The solution capacitates the
-                                        viewing of Composite Ledgers, and empowers business stakeholders to enjoy a
-                                        robust Cash Register management system</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The solution capacitates the
+                                            viewing of Composite Ledgers, and empowers business stakeholders to enjoy a
+                                            robust Cash Register management system</li>
                                 </ul>
                             </div>
                         </div>
@@ -1266,18 +1378,25 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Analytics Reports</h4>
                                 <ul class="list-unstyled">
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch's business-specific
-                                        customized solution, through multi-level data analytics empowers business owners
-                                        and decision makers to have key business reports on:</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The products that top the
-                                        sales scenario</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Fast moving items- Fast
-                                        moving items</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Dump stock & dead stock</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Peak of business rush hour
-                                        for effective and efficient staff management</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Daily sales statistics,
-                                        sales returns, stock items and short stocks</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Skyfinch's business-specific
+                                            customized solution, through multi-level data analytics empowers business
+                                            owners
+                                            and decision makers to have key business reports on:</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The products that top the
+                                            sales scenario</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Fast moving items- Fast
+                                            moving items</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Dump stock & dead stock</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Peak of business rush hour
+                                            for effective and efficient staff management</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Daily sales statistics,
+                                            sales returns, stock items and short stocks</li>
                                 </ul>
                             </div>
                         </div>
@@ -1286,15 +1405,19 @@
                             <div class="font-italic fs-6 text-muted mb-2">
                                 <h4 class="display-6 font-italic mb-4">Users Management</h4>
                                 <ul class="list-unstyled">
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Provision to assign computer
-                                        system-specific grant/limit of access to business data restricts users from
-                                        accessing data beyond the necessity of their professional scope</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Ability to create login IDs,
-                                        user groups, functionality groups, and capture Action History help to manage
-                                        access rights effectively</li>
-                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The power to determine
-                                        role-specific access to specific areas of the application and the tenacity to
-                                        create additional passwords give total control over data security</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Provision to assign computer
+                                            system-specific grant/limit of access to business data restricts users from
+                                            accessing data beyond the necessity of their professional scope</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            Ability to create login IDs,
+                                            user groups, functionality groups, and capture Action History help to manage
+                                            access rights effectively</li>
+                                    <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
+                                            The power to determine
+                                            role-specific access to specific areas of the application and the tenacity
+                                            to
+                                            create additional passwords give total control over data security</li>
                                 </ul>
                             </div>
                         </div>
@@ -1316,44 +1439,57 @@
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">Iconographic Management</h4>
                                             <ul class="list-unstyled">
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Iconographic
-                                                    billing
-                                                    interface with or without touch screen</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Pictorial
-                                                    representation
-                                                    food and beverage types on the invoice screen ease the selection of
-                                                    item</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Manual Price
-                                                    Control
-                                                    facility enables the effortless selection of the applicable rates at
-                                                    any given
-                                                    time for items with multiple Prices</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The provision to
-                                                    create
-                                                    multiple price lists enables the risk-free assessment of discount
-                                                    rates</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Option to accept
-                                                    payments
-                                                    through multiple payment modes improves customer experience and
-                                                    ensures prompt
-                                                    receipt of payments</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Data-wise
-                                                    visibility into
-                                                    the list of food & beverages gives drastic ability to quickly locate
-                                                    the item
-                                                    mentioned or required by clients</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The presence of
-                                                    the
-                                                    automated Offers and Schemes Management solution on the billing
-                                                    screen enables
-                                                    to promptly assign applicable offers to customers and elicit
-                                                    customer
-                                                    satisfaction</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Ability to
-                                                    handle Dine-In,
-                                                    Take Away, and Home Delivery orders with ease; have category-wise
-                                                    view of items,
-                                                    and set search filters for easy search are other benefits</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Iconographic
+                                                        billing
+                                                        interface with or without touch screen</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Pictorial
+                                                        representation
+                                                        food and beverage types on the invoice screen ease the selection
+                                                        of
+                                                        item</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Manual Price
+                                                        Control
+                                                        facility enables the effortless selection of the applicable
+                                                        rates at
+                                                        any given
+                                                        time for items with multiple Prices</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The provision to
+                                                        create
+                                                        multiple price lists enables the risk-free assessment of
+                                                        discount
+                                                        rates</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Option to accept
+                                                        payments
+                                                        through multiple payment modes improves customer experience and
+                                                        ensures prompt
+                                                        receipt of payments</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Data-wise
+                                                        visibility into
+                                                        the list of food & beverages gives drastic ability to quickly
+                                                        locate
+                                                        the item
+                                                        mentioned or required by clients</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The presence of
+                                                        the
+                                                        automated Offers and Schemes Management solution on the billing
+                                                        screen enables
+                                                        to promptly assign applicable offers to customers and elicit
+                                                        customer
+                                                        satisfaction</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Ability to
+                                                        handle Dine-In,
+                                                        Take Away, and Home Delivery orders with ease; have
+                                                        category-wise
+                                                        view of items,
+                                                        and set search filters for easy search are other benefits</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1364,25 +1500,30 @@
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-3">Order Management</h4>
                                             <ul class="list-unstyled">
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The Skyfinch
-                                                    Order
-                                                    Management faculty's Dashboard facility gives a clear picture of the
-                                                    status of
-                                                    all in-house and pick-up orders on a single screen
-                                                    Customized to fit any restaurant functionality the system is
-                                                    flexible enough to
-                                                    allow the performance of any desired order management workflow</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The ability to
-                                                    track and
-                                                    prioritize orders based on customer preference or business
-                                                    requisites is a
-                                                    tactical tool to handle bottlenecks</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The facility to
-                                                    simultaneously print restaurant sales related documents on two
-                                                    different
-                                                    printers enhances business agility by generating hard copies of
-                                                    order/business
-                                                    information at 2 different places at the same time</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The Skyfinch
+                                                        Order
+                                                        Management faculty's Dashboard facility gives a clear picture of
+                                                        the
+                                                        status of
+                                                        all in-house and pick-up orders on a single screen
+                                                        Customized to fit any restaurant functionality the system is
+                                                        flexible enough to
+                                                        allow the performance of any desired order management workflow
+                                                </li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The ability to
+                                                        track and
+                                                        prioritize orders based on customer preference or business
+                                                        requisites is a
+                                                        tactical tool to handle bottlenecks</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The facility to
+                                                        simultaneously print restaurant sales related documents on two
+                                                        different
+                                                        printers enhances business agility by generating hard copies of
+                                                        order/business
+                                                        information at 2 different places at the same time</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1393,23 +1534,28 @@
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">Delivery Management</h4>
                                             <ul class="list-unstyled">
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The Skyfinch
-                                                    Delivery
-                                                    Management solution supports multiple price lists for in-house,
-                                                    take-home, and
-                                                    door delivery orders and automatically assigns the appropriate price
-                                                    based on
-                                                    the type of service</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Facility to
-                                                    store multiple
-                                                    customer-addresses in the Delivery management system reduces the
-                                                    processing time
-                                                    for deliveries</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The feasibility
-                                                    to assign
-                                                    appropriate delivery staff for any given delivery and to maintain a
-                                                    report about
-                                                    each delivery gives total control over the process</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The Skyfinch
+                                                        Delivery
+                                                        Management solution supports multiple price lists for in-house,
+                                                        take-home, and
+                                                        door delivery orders and automatically assigns the appropriate
+                                                        price
+                                                        based on
+                                                        the type of service</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Facility to
+                                                        store multiple
+                                                        customer-addresses in the Delivery management system reduces the
+                                                        processing time
+                                                        for deliveries</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The feasibility
+                                                        to assign
+                                                        appropriate delivery staff for any given delivery and to
+                                                        maintain a
+                                                        report about
+                                                        each delivery gives total control over the process</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1420,33 +1566,41 @@
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">Table Management</h4>
                                             <ul class="list-unstyled">
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> By predefining
-                                                    the number of
-                                                    tables with respective seating capacity in the iconographic
-                                                    interface powered
-                                                    system Table management becomes as easy as having things done at the
-                                                    touch of an
-                                                    icon</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Easy tracking
-                                                    and monitoring
-                                                    facility enables the stress-free management of rush hour table
-                                                    allocations</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Hall-wise
-                                                    multiple price
-                                                    list projection allows the handling of tables at different halls
-                                                    through the
-                                                    same system</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system
-                                                    automatically
-                                                    reserves tables as per entries made for reservation, notifies the
-                                                    appropriate
-                                                    staff, and eradicates all possibilities for any conflict of interest
-                                                    in table
-                                                    allocations</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Ability to check
-                                                    availability of table on future dates enable the efficient
-                                                    assignment of
-                                                    reservations and maximize customer satisfaction</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> By predefining
+                                                        the number of
+                                                        tables with respective seating capacity in the iconographic
+                                                        interface powered
+                                                        system Table management becomes as easy as having things done at
+                                                        the
+                                                        touch of an
+                                                        icon</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Easy tracking
+                                                        and monitoring
+                                                        facility enables the stress-free management of rush hour table
+                                                        allocations</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Hall-wise
+                                                        multiple price
+                                                        list projection allows the handling of tables at different halls
+                                                        through the
+                                                        same system</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The system
+                                                        automatically
+                                                        reserves tables as per entries made for reservation, notifies
+                                                        the
+                                                        appropriate
+                                                        staff, and eradicates all possibilities for any conflict of
+                                                        interest
+                                                        in table
+                                                        allocations</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Ability to check
+                                                        availability of table on future dates enable the efficient
+                                                        assignment of
+                                                        reservations and maximize customer satisfaction</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1458,43 +1612,54 @@
                                             <h4 class="display-6 font-italic mb-4">Kitchen Order Table (Ticket/Token)
                                             </h4>
                                             <ul class="list-unstyled">
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The tracking
-                                                    tenacity of the
-                                                    module empowers the generation of KOTs for billing from a single
-                                                    counter
-                                                    irrespective of the number or type of food counters the items are
-                                                    collected from
-                                                    to cater to a single client</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> KOTs can also
-                                                    printed for
-                                                    items grouped counter wise on same or separate printers assigned for
-                                                    the purpose
-                                                    on the network</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The facility to
-                                                    simultaneously print KOTs on two different printers enhances
-                                                    business agility
-                                                    gaining on the transit time of KOTs from captain to kitchen</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch
-                                                    solution for
-                                                    Restaurant Sales management enables the user-friendly and quick
-                                                    creation of KOT
-                                                    document number and date</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> KOTs made in
-                                                    Invoices,
-                                                    Estimates, and Advance Booking documents can be viewed</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Even before
-                                                    Invoice could be
-                                                    generated the system allows the printing of KOTs for review of
-                                                    record</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The solution
-                                                    enables the
-                                                    generation of the copies of KOTs in the form of SMSs to be sent to
-                                                    customers and
-                                                    intended users</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch
-                                                    software keeps a
-                                                    count of the number of KOTs printed and eliminates all scope for
-                                                    malpractice
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The tracking
+                                                        tenacity of the
+                                                        module empowers the generation of KOTs for billing from a single
+                                                        counter
+                                                        irrespective of the number or type of food counters the items
+                                                        are
+                                                        collected from
+                                                        to cater to a single client</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> KOTs can also
+                                                        printed for
+                                                        items grouped counter wise on same or separate printers assigned
+                                                        for
+                                                        the purpose
+                                                        on the network</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The facility to
+                                                        simultaneously print KOTs on two different printers enhances
+                                                        business agility
+                                                        gaining on the transit time of KOTs from captain to kitchen</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Skyfinch
+                                                        solution for
+                                                        Restaurant Sales management enables the user-friendly and quick
+                                                        creation of KOT
+                                                        document number and date</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> KOTs made in
+                                                        Invoices,
+                                                        Estimates, and Advance Booking documents can be viewed</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Even before
+                                                        Invoice could be
+                                                        generated the system allows the printing of KOTs for review of
+                                                        record</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The solution
+                                                        enables the
+                                                        generation of the copies of KOTs in the form of SMSs to be sent
+                                                        to
+                                                        customers and
+                                                        intended users</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Skyfinch
+                                                        software keeps a
+                                                        count of the number of KOTs printed and eliminates all scope for
+                                                        malpractice
                                                 </li>
                                             </ul>
                                         </div>
@@ -1506,38 +1671,51 @@
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">BOM Management</h4>
                                             <ul class="list-unstyled">
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The solution can
-                                                    project an
-                                                    estimation of the value of raw materials required to prepare the
-                                                    items for any
-                                                    given food order</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Define the Bill
-                                                    of Material
-                                                    for each and every item on a menu along with their respective making
-                                                    costs,
-                                                    thereby enabling the efficient and competitive pricing of food items
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The solution can
+                                                        project an
+                                                        estimation of the value of raw materials required to prepare the
+                                                        items for any
+                                                        given food order</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Define the Bill
+                                                        of Material
+                                                        for each and every item on a menu along with their respective
+                                                        making
+                                                        costs,
+                                                        thereby enabling the efficient and competitive pricing of food
+                                                        items
                                                 </li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system
-                                                    balances between
-                                                    the stock and the sale of food items by reducing the stock of raw
-                                                    materials that
-                                                    are set to be involved in the making of the food in each sale</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch
-                                                    Restaurant Sales
-                                                    module has the tenacity to accurately calculate the selling price of
-                                                    products
-                                                    based on the percentage of profit desired by business owners</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Dump stock
-                                                    reports give a
-                                                    vector of wastage and provides the scope to rein in the level of
-                                                    wastage</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The solution has
-                                                    the genius
-                                                    to calculate the amount of raw materials required for bulk orders
-                                                    and match it
-                                                    against the available stock and project a report of shortage in
-                                                    stock and the
-                                                    cost involved to procure the same</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The system
+                                                        balances between
+                                                        the stock and the sale of food items by reducing the stock of
+                                                        raw
+                                                        materials that
+                                                        are set to be involved in the making of the food in each sale
+                                                </li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Skyfinch
+                                                        Restaurant Sales
+                                                        module has the tenacity to accurately calculate the selling
+                                                        price of
+                                                        products
+                                                        based on the percentage of profit desired by business owners
+                                                </li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Dump stock
+                                                        reports give a
+                                                        vector of wastage and provides the scope to rein in the level of
+                                                        wastage</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The solution has
+                                                        the genius
+                                                        to calculate the amount of raw materials required for bulk
+                                                        orders
+                                                        and match it
+                                                        against the available stock and project a report of shortage in
+                                                        stock and the
+                                                        cost involved to procure the same</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1548,30 +1726,39 @@
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">Daily Sales</h4>
                                             <ul class="list-unstyled">
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Multi-level
-                                                    tactical
-                                                    sales-checks made possible by 'Quick View' of last few bills and the
-                                                    terminal-wise 'Quickly View' faculty</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The ability to
-                                                    understand
-                                                    the actual stature of business proceeds is enhanced by the modules
-                                                    facility to
-                                                    furnish:</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Daily sales
-                                                    oriented
-                                                    Inventory view</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">Daily sales
-                                                    oriented
-                                                    multi-level rolled up totals view </li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Sales Total view
-                                                    for any
-                                                    date & time range</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> View of sales
-                                                    invoices of
-                                                    items mentioned in Daily Sales view</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Items-Wise
-                                                    analytics of
-                                                    daily sales</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Multi-level
+                                                        tactical
+                                                        sales-checks made possible by 'Quick View' of last few bills and
+                                                        the
+                                                        terminal-wise 'Quickly View' faculty</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The ability to
+                                                        understand
+                                                        the actual stature of business proceeds is enhanced by the
+                                                        modules
+                                                        facility to
+                                                        furnish:</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Daily sales
+                                                        oriented
+                                                        Inventory view</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt="">Daily sales
+                                                        oriented
+                                                        multi-level rolled up totals view </li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Sales Total view
+                                                        for any
+                                                        date & time range</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> View of sales
+                                                        invoices of
+                                                        items mentioned in Daily Sales view</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Items-Wise
+                                                        analytics of
+                                                        daily sales</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1582,22 +1769,26 @@
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">SMS Support</h4>
                                             <ul class="list-unstyled">
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The module
-                                                    enables the
-                                                    sending of invoices and receipts to customers through SMS, the
-                                                    highlight being
-                                                    the possibility of sending them in the regional language</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system is
-                                                    capacitated to
-                                                    generate reports on Daily Sales, Stock position, Cash Register
-                                                    balance, etc for
-                                                    any predefined periodical time span and send them as SMSs to
-                                                    business
-                                                    stakeholders, who can access them even over simple dongle connection
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The module
+                                                        enables the
+                                                        sending of invoices and receipts to customers through SMS, the
+                                                        highlight being
+                                                        the possibility of sending them in the regional language</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The system is
+                                                        capacitated to
+                                                        generate reports on Daily Sales, Stock position, Cash Register
+                                                        balance, etc for
+                                                        any predefined periodical time span and send them as SMSs to
+                                                        business
+                                                        stakeholders, who can access them even over simple dongle
+                                                        connection
                                                 </li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch
-                                                    integrates the SMS
-                                                    gateway provider with the any business using HTTP API</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Skyfinch
+                                                        integrates the SMS
+                                                        gateway provider with the any business using HTTP API</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1608,25 +1799,32 @@
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">Tax Management</h4>
                                             <ul class="list-unstyled">
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">
-                                                    The module is flexible to allow the application/rectification of
-                                                    taxes or
-                                                    addition of taxes anywhere between making Purchase Entry to running
-                                                    the BillI
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt="">
+                                                        The module is flexible to allow the application/rectification of
+                                                        taxes or
+                                                        addition of taxes anywhere between making Purchase Entry to
+                                                        running
+                                                        the BillI
                                                 </li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> If there is need
-                                                    to collect
-                                                    more than one tax, custom tax structures can be easily designed to
-                                                    assign
-                                                    appropriate tax(s) to items</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Easy
-                                                    manageability of GST,
-                                                    SGST, CGST, IGST/UGST</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt="">The software
-                                                    design is
-                                                    scalable to accommodate all future governmental changes that might
-                                                    be attributed
-                                                    to the existing system</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> If there is need
+                                                        to collect
+                                                        more than one tax, custom tax structures can be easily designed
+                                                        to
+                                                        assign
+                                                        appropriate tax(s) to items</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Easy
+                                                        manageability of GST,
+                                                        SGST, CGST, IGST/UGST</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt="">The software
+                                                        design is
+                                                        scalable to accommodate all future governmental changes that
+                                                        might
+                                                        be attributed
+                                                        to the existing system</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1637,27 +1835,36 @@
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">Financial Accounting</h4>
                                             <ul class="list-unstyled">
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The system
-                                                    automatically
-                                                    generates all the GST components as per statutory requisites </li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The solution
-                                                    gives scope for
-                                                    the creation of as many Financial Accounts as required</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Simplified
-                                                    import and export
-                                                    functionality eases the integration of all accounts and transactions
-                                                    in Tally
-                                                    with Skyfinch's accounting platform</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The flexibility
-                                                    of the
-                                                    solution provides the scope to view financial reports from multiple
-                                                    perspectives
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The system
+                                                        automatically
+                                                        generates all the GST components as per statutory requisites
                                                 </li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The solution
-                                                    capacitates the
-                                                    viewing of Composite Ledgers, and empowers business stakeholders to
-                                                    enjoy a
-                                                    robust Cash Register management system</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The solution
+                                                        gives scope for
+                                                        the creation of as many Financial Accounts as required</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Simplified
+                                                        import and export
+                                                        functionality eases the integration of all accounts and
+                                                        transactions
+                                                        in Tally
+                                                        with Skyfinch's accounting platform</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The flexibility
+                                                        of the
+                                                        solution provides the scope to view financial reports from
+                                                        multiple
+                                                        perspectives
+                                                </li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The solution
+                                                        capacitates the
+                                                        viewing of Composite Ledgers, and empowers business stakeholders
+                                                        to
+                                                        enjoy a
+                                                        robust Cash Register management system</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1668,25 +1875,31 @@
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">Analytics Reports</h4>
                                             <ul class="list-unstyled">
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch's
-                                                    business-specific
-                                                    customized solution, through multi-level data analytics empowers
-                                                    business owners
-                                                    and decision makers to have key business reports on:</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The products
-                                                    that top the
-                                                    sales scenario</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Fast moving
-                                                    items- Fast
-                                                    moving items</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Dump stock &
-                                                    dead stock</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Peak of business
-                                                    rush hour
-                                                    for effective and efficient staff management</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Daily sales
-                                                    statistics,
-                                                    sales returns, stock items and short stocks</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Skyfinch's
+                                                        business-specific
+                                                        customized solution, through multi-level data analytics empowers
+                                                        business owners
+                                                        and decision makers to have key business reports on:</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The products
+                                                        that top the
+                                                        sales scenario</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Fast moving
+                                                        items- Fast
+                                                        moving items</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Dump stock &
+                                                        dead stock</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Peak of business
+                                                        rush hour
+                                                        for effective and efficient staff management</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Daily sales
+                                                        statistics,
+                                                        sales returns, stock items and short stocks</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1697,32 +1910,38 @@
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">Analytical Reports</h4>
                                             <ul class="list-unstyled">
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Skyfinch's
-                                                    business-specific
-                                                    customized solution, through
-                                                    multi-level data analytics empowers business owners and decision
-                                                    makers
-                                                    to have
-                                                    key
-                                                    business reports on:</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The products
-                                                    that
-                                                    top the
-                                                    sales scenario.</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Fast moving
-                                                    items.
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Skyfinch's
+                                                        business-specific
+                                                        customized solution, through
+                                                        multi-level data analytics empowers business owners and decision
+                                                        makers
+                                                        to have
+                                                        key
+                                                        business reports on:</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The products
+                                                        that
+                                                        top the
+                                                        sales scenario.</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Fast moving
+                                                        items.
                                                 </li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Dump stock &
-                                                    dead
-                                                    stock.
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Dump stock &
+                                                        dead
+                                                        stock.
                                                 </li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Peak of business
-                                                    rush hour
-                                                    for effective and efficient staff
-                                                    management.</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Daily sales
-                                                    statistics,
-                                                    sales returns, stock items and short stocks.</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Peak of business
+                                                        rush hour
+                                                        for effective and efficient staff
+                                                        management.</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Daily sales
+                                                        statistics,
+                                                        sales returns, stock items and short stocks.</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1733,21 +1952,28 @@
                                         <div class="font-italic fs-6 text-muted mb-2">
                                             <h4 class="display-6 font-italic mb-4">Users Management</h4>
                                             <ul class="list-unstyled">
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Provision to
-                                                    assign computer
-                                                    system-specific grant/limit of access to business data restricts
-                                                    users from
-                                                    accessing data beyond the necessity of their professional scope</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> Ability to
-                                                    create login IDs,
-                                                    user groups, functionality groups, and capture Action History help
-                                                    to manage
-                                                    access rights effectively</li>
-                                                <li><span><img src="./img/double-tick.svg" style="width: 40px !important;" alt=""> The power to
-                                                    determine
-                                                    role-specific access to specific areas of the application and the
-                                                    tenacity to
-                                                    create additional passwords give total control over data security
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Provision to
+                                                        assign computer
+                                                        system-specific grant/limit of access to business data restricts
+                                                        users from
+                                                        accessing data beyond the necessity of their professional scope
+                                                </li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> Ability to
+                                                        create login IDs,
+                                                        user groups, functionality groups, and capture Action History
+                                                        help
+                                                        to manage
+                                                        access rights effectively</li>
+                                                <li><span><img src="./img/double-tick.svg"
+                                                            style="width: 40px !important;" alt=""> The power to
+                                                        determine
+                                                        role-specific access to specific areas of the application and
+                                                        the
+                                                        tenacity to
+                                                        create additional passwords give total control over data
+                                                        security
                                                 </li>
                                             </ul>
                                         </div>
@@ -2165,7 +2391,7 @@
     </section>
     <!-- Footer End -->
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg page-top btn-lg-square rounded-circle wow fadeInDown" data-wow-delay="3.5s"
+    <a href="#" class="btn btn-lg page-top btn-lg-square rounded-circle animated fadeInDown"
         data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
         data-bs-title="back-to-top"><img src="img/right-arrow.png" alt=""></a>
     <!-- JavaScript Libraries -->

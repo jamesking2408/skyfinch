@@ -670,6 +670,11 @@
         bottom: 0% !important;
     }
 
+    .mm-response {
+        left: 7rem;
+        top: 2rem !important;
+    }
+
     .beat-pro i,
     .beat-pro2 i,
     .beat-pro3 i {
@@ -2161,6 +2166,11 @@
         width: 350px;
     }
 
+    .mm-response {
+        left: 7rem;
+        top: 2rem !important;
+    }
+
     .portfolio_details_inner .row {
         margin-bottom: 30px;
     }
@@ -3612,6 +3622,11 @@
 
     #product_land {
         margin-top: 50px !important;
+    }
+
+    .mm-response {
+        left: 7rem;
+        top: 2rem !important;
     }
 
     .img-pdt {
@@ -8825,7 +8840,7 @@
         position: relative !important;
         top: 0;
         left: 0;
-        transform: translateX(2rem) translateY(-2rem);
+        transform: translateX(0.8rem) translateY(-2rem);
         filter: drop-shadow(5px 21px 11px rgba(0, 0, 0, 0.3));
     }
 
