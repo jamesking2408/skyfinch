@@ -50,7 +50,7 @@ function contact_sub() {
         document.querySelector(".sub-popup p").innerHTML = "Successfully submitted.<br>We will response SOON.<br>Thank you so much!";
         console.log("\t\t\t REQUEST FORM DETAILS" + "\n Name : " + na + " " + "\n Mail ID: " + id + " " + "\n Subject: " + sub + " " + "\n Project Details: " + msg);
         popup.classList.add("open-popup");
-        const body = "<center><h1>SKYFINCH WEBSITE</h1></center>" +
+        const body = "<center><h1 style='color:#355EFC; font-family: 'Times New Roman', serif;'>SKYFINCH WEBSITE</h1></center>" +
             "<br><center><h3>CONTACT DETAILS</h3></center>" +
             "<center><table>" +
             "  <tr><td>Name:</td><td>" + na + "</td></tr>" +

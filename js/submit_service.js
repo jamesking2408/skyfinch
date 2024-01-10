@@ -59,7 +59,7 @@ function callBack() {
         document.querySelector(".sub-popup p").innerHTML = "Successfully submitted.<br>We will response SOON.<br>Thank you so much!";
         console.log("\t\t\t REQUEST FORM DETAILS" + "\n Name : " + name1 + " " + "\n Phone Number: " + mob + " " + "\n Mail ID: " + mail + " " + "\n Subject: " + sub + " " + "\n Project Details: " + txt);
         popup.classList.add("open-popup");
-        const body = "<center><h1>SKYFINCH WEBSITE</h1></center>" +
+        const body = "<center><h1 style='color:#355EFC; font-family: 'Times New Roman', serif;'>SKYFINCH WEBSITE</h1></center>" +
             "<br><center><h3>CUSTOMER REQUEST FORM</h3></center>" +
             "<center><table>" +
             "  <tr><td>Name:</td><td>" + name1 + "</td></tr>" +

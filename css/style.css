@@ -75,7 +75,9 @@ input[data-autocompleted] {
     background-color: white !important;
 }
 
-.hamburger {display: none !important;}
+.hamburger {
+    display: none !important;
+}
 
 .show-chatbot .chatbot-toggler span:first-child,
 .chatbot-toggler span:last-child {
@@ -669,7 +671,7 @@ h6,
     opacity: 0;
     visibility: hidden;
     transition: opacity .5s ease-out, visibility 0s linear .5s;
-    z-index: 99999;
+    z-index: 99999999;
 }
 
 #spinner.show {
@@ -800,14 +802,17 @@ h6,
 #Layer_2:hover {
     fill: #0268ec !important;
 }
+
 .submenu .dropbtn1:hover .arrow {
     transform: translate(220%, 0%);
     transition: transform 0.4s;
 }
+
 .submenu .dropbtn1 .arrow1 {
     left: 0;
     transform: translate(500%, 0%);
 }
+
 .submenu .dropbtn1:hover .arrow1 {
     transform: translate(540%, 0%);
     transition: transform 0.4s;
@@ -2131,5 +2136,36 @@ b.cloud {
     50% {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+/* celebration of pongal */
+.navbar .pot {
+    position: absolute !important;
+    left: 0;
+    top: 0;
+    transform: translateX(14.6rem) translateY(-0.9rem) rotate(5deg) !important;
+    z-index: 1;
+    width: 75px !important;
+}
+
+.navbar .sugarcane {
+    position: absolute !important;
+    left: 0;
+    top: 0;
+    transform: translateX(0.6rem) translateY(-0.5rem) rotate(-80deg) !important;
+    z-index: 0;
+    width: 65px !important;
+}
+
+@media screen and (max-width:500px) {
+    .navbar .pot {
+        transform: translateX(6.9rem) translateY(-0.3rem) rotate(23deg) !important;
+        z-index: 0;
+        width: 60px !important;
+    }
+    .navbar .sugarcane {
+        transform: translateX(-0.4rem) translateY(0rem) rotate(-65deg) !important;
+        width: 50px !important;
     }
 }

@@ -30,7 +30,7 @@
             if ($('#spinner').length > 0) {
                 $('#spinner').removeClass('show');
             }
-        }, 5000);
+        }, 3000);
     };
     spinner();
 
@@ -60,7 +60,6 @@
 
     // Initiate the wowjs
     new WOW().init();
-
 
     //<!-- pop up -->
     $(".mytooltip").hover(
@@ -359,6 +358,12 @@
         showing.show();
         showing1.show();
         modal_body.hide();
+        $.scrollify.disable();
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") {
+                $.scrollify.enable();
+            }
+        });
     });
 
     $(".searchLink").click(function () {
@@ -366,7 +371,14 @@
         var fade1 = $('.modal');
         fade.hide();
         fade1.hide();
+        $.scrollify.enable();
     });
+    exampleModal.click(function(){
+        $.scrollify.enable();
+    });
+
+
+
 
     // Dropdown toggle start
 

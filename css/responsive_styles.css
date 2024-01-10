@@ -1616,27 +1616,27 @@
     }
 
     .cloud h6 {
-        top: 25px;
-        left: 42px;
+        top: 20px;
+        left: 30px;
         font-size: 7.2px;
     }
 
     b.cloud {
-        top: 3px;
-        left: 29px;
-        font-size: 23px;
+    top: 20px !important;
+    left: 28px;
+    font-size: 20px;
     }
 
     .r-cloud {
         transform: translate(-10%, 1%);
-        width: 160px;
+        width: 145px;
         height: 55px;
         transform: perspective(1cm);
     }
 
     .l-cloud {
         /* transform: translate(10, 5%); */
-        width: 165px;
+        width: 140px;
         height: 50px;
         transform: perspective(2cm);
     }
@@ -3024,27 +3024,27 @@
 
     .l-cloud {
         /* transform: translate(-1%, 5%) !important; */
-        width: 165px;
+        width: 140px;
         height: 50px;
         transform: perspective(2cm);
     }
 
     .r-cloud {
         transform: translate(-10%, 1%);
-        width: 160px;
+        width: 145px;
         height: 55px;
         transform: perspective(1cm);
     }
 
     b.cloud {
-        top: 3px;
-        left: 29px;
-        font-size: 23px;
+        top: 20px !important;
+        left: 28px;
+        font-size: 20px;
     }
 
     .cloud h6 {
-        top: 25px;
-        left: 42px;
+        top: 20px;
+        left: 30px;
         font-size: 7.2px;
     }
 

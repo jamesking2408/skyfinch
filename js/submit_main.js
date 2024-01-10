@@ -57,7 +57,7 @@ function msgButton() {
         document.querySelector(".sub-popup p").innerHTML = "Successfully submitted.<br>We will response SOON.<br>Thank you so much!";
         console.log("\t\t\tCUSTOMER DETAILS" + "\nName : " + cus_name + " " + "\n Phone Number: " + num + " " + "\n Mail ID: " + mail + " " + "\n Project Details: " + txt);
         popup.classList.add("open-popup");
-        const body = "<center><h1>SKYFINCH WEBSITE</h1></center>" +
+        const body = "<center><h1 style='color:#355EFC; font-family: 'Times New Roman', serif;'>SKYFINCH WEBSITE</h1></center>" +
             "<br><center><h3>CUSTOMER DETAILS FORM</h3></center>" +
             "<center><table>" +
             "  <tr><td>Name:</td><td>" + cus_name + "</td></tr>" +

@@ -104,7 +104,7 @@ function prodEnqiry() {
         document.querySelector(".sub-popup h2").innerHTML = "Congrats!";
         document.querySelector(".sub-popup p").innerHTML = "Your details submitted successfully. ";
         popup.classList.add("open-popup");
-        var body = "<center><h1 style='color:#355EFC; font-family: 'Times New Roman', serif;'>SKYFINCH WEBSITE</h1></center>" +
+        var body = "<center><h1>SKYFINCH WEBSITE</h1></center>" +
             "<br><center><h3>CUSTOMER DETAILS</h3></center>" +
             "<center><table>" +
             "  <tr><td>Name:</td><td>" + cus_name + "</td></tr>" +
