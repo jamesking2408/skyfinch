@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/theme.css">
     <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/googleWebFonts/fonts.css" />
     <link rel="stylesheet" type="text/css" href="css/fontawesome-6.4.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-icons.css">
     <!-- Libraries Stylesheet -->
@@ -58,6 +59,34 @@
         <img src="./img/cloud_spin.gif" alt="" width="250px">
     </div>
     <!-- Spinner End -->
+    <!-- Start chat box Design  -->
+    <button title="" class="container-fluid chatbot-toggler animated fadeIn" data-bs-toggle="tooltip"
+        data-bs-placement="left" data-bs-custom-class="chat-tooltip" data-bs-title="Hi! I'm Help you.👋">
+        <span class="material-symbols-outlined">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="chatbot">
+        <header>
+            <h2 class="text-light">CHATBOT</h2>
+            <span class="material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">🤖</span>
+                <p>
+                    Hi <br />I'm SkyFinch👋 <br />
+                    If you need any help?<br />
+                    Type: 'Help'
+                </p>
+            </li>
+            <li class="chat outgoing"></li>
+        </ul>
+        <div class="chat-input">
+            <textarea class="bg-white" placeholder="Type here...." required></textarea>
+            <span id="send-btn" class="material-symbols-outlined">send</span>
+        </div>
+    </div>
+    <!-- End chat box Design  -->
     <!-- Search Modal Start-->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -661,8 +690,8 @@
         </div>
         <nav class="navbar navbar-expand-lg navbar-light py-lg-0 py-md-2 py-2 px-lg-4 bg-white">
             <a href="index.html" class="navbar-brand ms-0 ms-lg-0">
-                <img src="img/cloud.png" alt="" class="r-cloud animated slideInLeft"/>
-                <img src="img/cloud.png" alt="" class="l-cloud animated slideInRight"/>
+                <img src="img/cloud.png" alt="" class="r-cloud animated slideInLeft" />
+                <img src="img/cloud.png" alt="" class="l-cloud animated slideInRight" />
                 <b class="display-6 cloud">SkyFinch
                     <h6 class="me-0 p-0">Solution to Success</h6>
                 </b>
@@ -1940,8 +1969,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-12 my-lg-1 my-5 animated fadeInUp" data-aos-duration="500"
-                                    data-aos="fade-up">
+                                <div class="col-lg-3 col-md-4 col-12 my-lg-1 my-5 animated fadeInUp"
+                                    data-aos-duration="500" data-aos="fade-up">
                                     <div class="row">
                                         <div class="col-md-12 col-6 d-flex justify-content-center align-items-center">
                                             <a href="ssfinch.html" target="_blank">
@@ -1968,7 +1997,8 @@
                                                 </div>
                                             </a>
                                         </div>
-                                        <div class="col-md-12 col-6 d-flex justify-content-center align-items-center">
+                                        <div
+                                            class="col-md-12 col-6 d-flex justify-content-center align-items-center mm-response">
                                             <div class="card portfolio_box mb-3 border-0">
                                                 <div class="single_portfolio">
                                                     <img class="img-fluid w-100" src="img/profile/mms.jpg" alt="">
@@ -2459,9 +2489,8 @@
                         href="privacy_policy.html">Privacy&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
                     <a class="foo-policy" href="confidentality_policy.html">Confidentiality&nbsp;Policy</a>
                 </div>
-                <div id="foo-rights"
-                    class="col-md-12 col-lg-12 d-flex align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-1 mt-1 pt-lg-1 pt-1">
-                    &copy; Skyfinch 2023. All rights reserved. Designed by Skyfinch.
+                <div id="foo-rights" class="col-md-12 col-lg-12 d-flex align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-1 mt-1 pt-lg-1 pt-1">
+                    &copy; 2024 SkyFinch. All rights reserved. Designed by SkyFinch.
                 </div>
             </div>
         </div>
@@ -2469,8 +2498,8 @@
     </section>
     <!-- Footer End -->
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg page-top btn-lg-square rounded-circle animated fadeInDown" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
-        data-bs-title="back-to-top"><img src="img/right-arrow.png" alt="" /></a>
+    <a href="#" class="btn btn-lg page-top btn-lg-square rounded-circle animated fadeInDown" data-bs-toggle="tooltip"
+        data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="back-to-top"><img src="img/right-arrow.png" alt="" /></a>
     <!-- JavaScript Libraries -->
 
     <!--Start of Tawk.to Script-->
@@ -2619,7 +2648,7 @@
     <!-- Section Scroll effects -->
     <script src="js/Scrollify/jquery.scrollify.js"></script>
     <!-- Section Scroll effects -->
-    <!-- <script src="js/submit.js"></script> -->
+    <script src="js/chatbox.js"></script>
     <!-- Smooth scroll -->
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
