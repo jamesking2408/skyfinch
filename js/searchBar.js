@@ -101,77 +101,102 @@ function jumpToTerm(sectionId) {
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
-function searchContent() {
-    let input = document.getElementById('searchbar').value;
-    input = input.toLowerCase();
-    let x = document.getElementsByClassName('content');
+// function searchContent() {
+//     let input = document.getElementById('searchbar').value;
+//     input = input.toLowerCase();
+//     let x = document.getElementsByClassName('content');
 
-    for (let i = 0; i < x.length; i++) {
-        if (!x[i].innerHTML.toLowerCase().includes(input)) {
-            x[i].style.display = "none";
+//     for (let i = 0; i < x.length; i++) {
+//         if (!x[i].innerHTML.toLowerCase().includes(input)) {
+//             x[i].style.display = "none";
+//         } else {
+//             x[i].style.display = "list-item";
+//         }
+//     }
+// }
+const searchInput = document.getElementById("searchbar");
+const inputMessage = document.getElementById("input-message");
+
+searchInput.addEventListener("keyup", searchContent);
+
+function searchContent(e) {
+    const userInput = (e.target.value || '').toLowerCase();
+    const contentElements = document.getElementsByClassName('content');
+    let count = 0;
+
+    for (let i = 0; i < contentElements.length; i++) {
+        const contentText = contentElements[i].innerHTML.toLowerCase();
+        const contentDisplay = contentText.includes(userInput) ? "list-item" : "none";
+        contentElements[i].style.display = contentDisplay;
+        count += contentDisplay === "none" ? 0 : 1;
+    }
+
+    setInputMessage(userInput === "" ? "" : count);
+}
+
+function setInputMessage(n) {
+    let message = "No results found." || "&nbsp;";
+    if (typeof n === "number") {
+        if (!n) {
+            message = "No results found.";
         } else {
-            x[i].style.display = "list-item";
+            message = `${n} result${n === 1 ? "" : "s"} found`;
         }
     }
+    inputMessage.innerHTML = message;
 }
 
-let currentResult = 0;
+// let currentResult = -1;
 
-function highlightResult(resultIndex) {
-    let x = document.getElementsByClassName('content');
-    for (let i = 0; i < x.length; i++) {
-        x[i].classList.remove("highlighted");
-    }
-    x[resultIndex].classList.add("highlighted");
-}
+// function highlightResult(resultIndex) {
+//     let x = document.getElementsByClassName('content');
+//     for (let i = 0; i < x.length; i++) {
+//         x[i].classList.remove("highlighted");
+//     }
 
-let timeout;
-function debounce(func, wait) {
-    clearTimeout(timeout);
-    timeout = setTimeout(func, wait);
-}
+//     if (resultIndex >= 0 && resultIndex < x.length) {
+//         x[resultIndex].classList.add("highlighted");
+//     }
+// }
 
-document.getElementById('searchbar').addEventListener('input', function () {
-    currentResult = 0;
-    debounce(searchContent, 300);
-});
+// let timeout;
+// function debounce(func, wait) {
+//     clearTimeout(timeout);
+//     timeout = setTimeout(func, wait);
+// }
 
-document.getElementById('searchbar').addEventListener('keydown', function (event) {
-    if (event.key === "Enter") {
-        event.preventDefault();
-        searchContent();
-    } else if (event.key === "ArrowDown") {
-        event.preventDefault();
-        navigateResults(1);
-    } else if (event.key === "ArrowUp") {
-        event.preventDefault();
-        navigateResults(-1);
-    }
-});
+// document.getElementById('searchbar').addEventListener('input', function () {
+//     currentResult = -1; // Reset current result when input changes
+//     debounce(searchContent, 300);
+// });
 
-function navigateResults(direction) {
-    let x = document.getElementsByClassName('content');
+// document.getElementById('searchbar').addEventListener('keydown', function (event) {
+//     if (event.key === "Enter") {
+//         event.preventDefault();
+//         searchContent();
+//     } else if (event.key === "ArrowDown") {
+//         event.preventDefault();
+//         navigateResults(1);
+//     } else if (event.key === "ArrowUp") {
+//         event.preventDefault();
+//         navigateResults(-1);
+//     }
+// });
 
-    if (x.length > 0) {
-        x[currentResult].classList.remove("highlighted");
+// function navigateResults(direction) {
+//     let x = document.getElementsByClassName('content');
 
-        currentResult += direction;
+//     if (x.length > 0) {
+//         highlightResult(currentResult); // Remove previous highlight
 
-        if (currentResult < 0) {
-            currentResult = x.length - 1;
-        } else if (currentResult >= x.length) {
-            currentResult = 0;
-        }
+//         currentResult += direction;
 
-        x[currentResult].classList.add("highlighted");
-    }
-}
+//         if (currentResult < 0) {
+//             currentResult = x.length - 1;
+//         } else if (currentResult >= x.length) {
+//             currentResult = 0;
+//         }
 
-
-
-
-
-
-
-
-
+//         highlightResult(currentResult); // Highlight new result
+//     }
+// }

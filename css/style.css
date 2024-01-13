@@ -270,20 +270,24 @@ input[data-autocompleted] {
 }
 
 .custom-tooltip {
-    --bs-tooltip-bg: rgba(3, 86, 240, 0.975);
-    --bs-tooltip-color: var(--light);
+    --bs-tooltip-bg: rgba(21, 103, 255, 0.975);
+    --bs-tooltip-color: white;
     --bs-tooltip-border-color: var(--primary);
     --bs-tooltip-border-width: 1px;
     --bs-tooltip-border-radius: .5rem;
     --bs-tooltip-padding: 1rem;
-    --bs-tooltip-font-size: .95rem;
+    --bs-tooltip-font-size: 1rem;
     --bs-tooltip-opacity: 1;
     --bs-tooltip-arrow-color: rgba(3, 86, 240, 0.975);
+    font-weight: 600;
 }
 
 .chat-tooltip {
-    --bs-tooltip-bg: rgba(3, 86, 240, 0.975);
+    --bs-tooltip-bg: rgba(21, 103, 255, 0.975);
     --bs-tooltip-color: var(--light);
+    --bs-tooltip-padding: 1rem;
+    --bs-tooltip-font-size: 1rem;
+    font-weight: 600;
 }
 
 .contact-tooltip {
@@ -294,7 +298,7 @@ input[data-autocompleted] {
     --bs-tooltip-border-radius: .5rem;
     --bs-tooltip-padding: .8rem;
     --bs-tooltip-font-size: .95rem;
-    --bs-tooltip-font-weight: 1rem;
+    font-weight: 600;
 }
 
 .SmoothScroll {
@@ -1606,6 +1610,9 @@ b.cloud {
 }
 
 /* TRY pop */
+.mytooltip {
+    cursor: pointer;
+}
 .tooltip-content {
     position: absolute;
     z-index: 9999 !important;
@@ -1980,6 +1987,17 @@ b.cloud {
 
 /* Manual CSS end*/
 /* Search box Start */
+.searchLink:hover {
+    text-decoration: underline;
+}
+.pwd-sky {
+    font-family: 'Black Ops One';
+}
+#input-message {
+    display: flex;
+    justify-content: center;
+    color: #a3a3a3;
+}
 #searchButton span h6 {
     font-family: 'Aclonica';
     font-size: 18px;
@@ -2010,6 +2028,7 @@ b.cloud {
 .collapse #searchButton .fa-search {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
 }
 
 #searchButton h6 {

@@ -81,12 +81,10 @@
             $('.tooltip-content').hide();
         }
     );
-
     $('#spl1, #spl2').click(function () {
         $('.tooltip-content').hide();
     });
     //<!-- pop up end-->
-
     //section change start
     // Filter
     $('.sec1 a').click(function () {
@@ -349,16 +347,19 @@
         exampleModalClose.focus();
     });
     $("#searchButton").click(function () {
+        $.scrollify.disable();
         var showing = $('.modal-backdrop');
         var showing1 = $('.modal');
         var modal_body = $('.modal-body .content');
         $('#searchbar').click(function () {
             modal_body.show();
+            $.scrollify.disable();
         });
         showing.show();
         showing1.show();
         modal_body.hide();
-        $.scrollify.disable();
+        document.searchForm.reset();// Erase the field
+        setInputMessage().reset(); // Erase the Error Element
         document.addEventListener("keydown", (e) => {
             if (e.key === "Escape") {
                 $.scrollify.enable();

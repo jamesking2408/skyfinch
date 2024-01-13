@@ -70,7 +70,7 @@ function callBack() {
             "</table></center>";
         Email.send({
             SecureToken: "43b9e9f4-c4ca-4b5e-a846-c43c61f9f360",
-            To: 'jai29112024@gmail.com',
+            To: 'mktg@skyfinch.com',
             From: "sjkumarsri@gmail.com",
             Subject: name1,
             Body: body
