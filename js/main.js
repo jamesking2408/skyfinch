@@ -64,12 +64,18 @@
     //<!-- pop up -->
     $(".mytooltip").hover(
         function (e) {
+            // e.preventDefault();
+            e.stopPropagation();
             $(this).find('.tooltip-content').delay(2000).fadeIn();
             $(this).find('.tooltip-content').hover(
                 function (e) {
+                    // e.preventDefault();
+                    e.stopPropagation();
                     $('.tooltip-content').stop(true);
                 },
                 function (e) {
+                    // e.preventDefault();
+                    e.stopPropagation();
                     $('.tooltip-content').hide();
                     $('.tooltip-content').stop();
                 }
@@ -77,6 +83,8 @@
             $(this).find('.tooltip-content').delay(4000).fadeOut();
         },
         function (e) {
+            // e.preventDefault();
+            e.stopPropagation();
             $('.tooltip-content').stop();
             $('.tooltip-content').hide();
         }
@@ -108,21 +116,21 @@
     $(document).ready(function () {
         setTimeout(() => {
             screenCheck();
-        }, 1000);
+        }, 1800);
     });
 
     $(window).on('resize', function () {
         setTimeout(() => {
             screenCheck();
-        }, 1800);
+        }, 2500);
     });
 
     function applyScroll() {
         $.scrollify({
-            section: "section",
+            section: ".scroll",
             sectionName: "section-name",
             interstitialSection: "",
-            // easing: "easeOutExpo",
+            easing: "easeOutExpo",
             // easing: "easeOutQuad",
             scrollSpeed: 500,
             offset: 0,
@@ -132,11 +140,7 @@
             setHeights: true,
             overflowScroll: false,
             updateHash: false,
-            touchScroll: true,
-            before: function () { },
-            after: function () { },
-            afterResize: function () { },
-            afterRender: function () { }
+            touchScroll: true
         });
     }
 
@@ -333,9 +337,7 @@
     /*  End  Magnific Pop Up
     /*----------------------------------------------------*/
 
-
-
-    //////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
 
     // Search box start
 
@@ -358,8 +360,8 @@
         showing.show();
         showing1.show();
         modal_body.hide();
-        document.searchForm.reset();// Erase the field
-        setInputMessage().reset(); // Erase the Error Element
+        // document.searchForm.reset();// Erase the field
+        setInputMessage(0); // Erase the no result found Element
         document.addEventListener("keydown", (e) => {
             if (e.key === "Escape") {
                 $.scrollify.enable();
@@ -374,7 +376,14 @@
         fade1.hide();
         $.scrollify.enable();
     });
-    exampleModal.click(function(){
+    $(".search-deco-underline").click(function () {
+        var fade = $('.modal-backdrop');
+        var fade1 = $('.modal');
+        fade.hide();
+        fade1.hide();
+        // $.scrollify.enable();
+    });
+    exampleModal.click(function () {
         $.scrollify.enable();
     });
 

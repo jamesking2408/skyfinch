@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>SkyFinch | 404-Error</title>
+  <title>SkyFinch | Product Enquiry</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="Cache-Control" content="max-age=31536000, immutable">
   <meta content="" name="keywords">
@@ -33,7 +33,6 @@
   <link rel="stylesheet" type="text/css" href="css/hamburgers.css" />
 </head>
 <body>
-  <!-- Spinner Start -->
   <div id="spinner"
     class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
     <img src="./img/cloud_spin.gif" alt="" width="250px">
@@ -443,8 +442,7 @@
                 class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
                 Overview | Visitor's Management System | VMS
               </button>
-              <a href="vms.html#abt-wave"
-                class="text-success ps-3 text-start search-deco-underline urlHash"></a>
+              <a href="vms.html#abt-wave" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
               <p class="text-dark ps-3 text-start paragraph">A business equipped with the
                 cost-effective and elite Skyfinch Visitor Management System (VMS)
                 lures a great first impression out of any person visiting its premises.</p>
@@ -871,6 +869,54 @@
     </div>
   </div>
   <!-- Search Modal End-->
+  <!-- Start chat box Design  -->
+  <span class="tooltip-text" style="visibility: hidden;">I'm Skyfinch</span>
+  <button title="" class="chatbot-toggler wow fadeInDown" data-wow-delay="2.2s" data-bs-toggle="tooltip"
+    data-bs-placement="left" data-bs-custom-class="chat-tooltip" data-bs-title="Hi! I'm Help you.👋">
+    <span class="material-symbols-outlined">mode_comment</span>
+    <span class="material-symbols-outlined">close</span>
+  </button>
+  <div class="chatbot">
+    <header>
+      <h2 class="text-light">CHATBOT</h2>
+      <span class="material-symbols-outlined">close</span>
+    </header>
+    <ul class="chatbox">
+      <li class="chat incoming">
+        <span class="material-symbols-outlined">🤖</span>
+        <p>Hi <br> I'm SkyFinch 👋 <br> If you need any help?<br> Type: 'Help'</p>
+      </li>
+      <li class="chat outgoing">
+      </li>
+    </ul>
+    <div class="chat-input">
+      <textarea placeholder="Type here...." required></textarea>
+      <span id="send-btn" class="material-symbols-outlined">send</span>
+    </div>
+  </div>
+  <!-- End chat box Design  -->
+  <!-- Submit alert box -->
+  <div class="container-sub container-md-sub">
+    <div class="sub-popup" id="pop">
+      <img src="img/404-tick.png" alt="">
+      <h2 class="display-5" style="color: rgb(1, 1, 68);"></h2>
+      <p class="fw-semibold">. </p> <!-- onclick="closePopupPq()" -->
+      <button type="button" class="exit fw-bold">OK<span><img src="img/thumbs.png" alt="thumbs"
+            style="width: 25px; margin-top: -8px;"></span></button>
+    </div>
+  </div>
+  <!-- Submit alert box -->
+  <!-- Submit wrong alert box -->
+  <div class="container-sub container-md-sub">
+    <div class="sub-popup1" id="pop1">
+      <img src="img/wrong.png" class="wrong" alt="">
+      <h2 class="display-5" style="color: rgb(219, 17, 17);"></h2>
+      <p class="fw-semibold"></p>
+      <button type="button" class="exit1 fs-5 fw-bolder">OK<span><img src="img/thumbs.png" alt="thumbs"
+            style="width: 25px;"></span></button>
+    </div>
+  </div>
+  <!-- Submit wrong alert box -->
   <!-- Navbar Start -->
   <div class="container-fluid vw-nav fixed-top m-0 p-0">
     <div class="top-bar row gx-2 pb-lg-0 align-items-center d-lg-flex d-md-flex d-none bg-blue">
@@ -939,7 +985,7 @@
           <a href="index.html" class="nav-item nav-link">Home</a>
           <a href="service.html" class="nav-item nav-link">Services</a>
           <div class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle active" id="solutionsDropdown">Solutions</a>
+            <a href="#" class="nav-link dropdown-toggle" id="solutionsDropdown">Solutions</a>
             <div class="dropdown-menu border-light m-0 p-0">
               <!-- Add IDs to buttons for easier targeting -->
               <div class="submenu w-100 px-3 py-0">
@@ -973,7 +1019,7 @@
             </div>
           </div>
           <div class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" id="solutionsDropdown1">Company</a>
+            <a href="#" class="nav-link dropdown-toggle active" id="solutionsDropdown1">Company</a>
             <div class="dropdown-menu border-light m-0 p-0">
               <!-- Add IDs to buttons for easier targeting -->
               <div class="submenu w-100 px-3 py-0">
@@ -998,7 +1044,7 @@
             <img class="img-icons1" src="img/socialMedia/facebook_icon.png" alt="" />
           </a>
           <a class="btn ms-lg-2 ms-3 p-0" href="https://twitter.com/Roadmaperp" data-bs-toggle="tooltip"
-            data-bs-placement="bottom" data-bs-custom-class=" custom-tooltip" data-bs-title="Twitter" target="_blank">
+            data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Twitter" target="_blank">
             <img class="img-icons" src="img/socialMedia/twitter.png" alt="" />
           </a>
           <a class="btn ms-lg-2 ms-1 p-0" href="https://www.instagram.com/skyfinchroadmap" data-bs-toggle="tooltip"
@@ -1015,23 +1061,328 @@
     </nav>
   </div>
   <!-- Navbar End -->
-  <!-- 404 Start -->
-  <section class="bg-404">
-    <div class="container-xxl py-5 mt-lg-5 wow fadeInUp" data-wow-delay="0.9s">
-      <div class="container text-center mt-lg-5 pt-lg-3">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 mt-lg-5 pt-lg-3">
-            <img src="img/404.gif" alt="" width="100px" style="mix-blend-mode:multiply;">
-            <h1 class="mb-4">Page Not Found</h1>
-            <p class="mb-3">We’re sorry, the page you have looked for does not exist in our website! Maybe
-              go to our home page or try to use a search?</p>
-            <a class="btn btn-primary py-2 px-5" href="index.html">Go Back To Home</a>
+  <!-- Landing Page Start -->
+  <section id="land-sec" class="container-fluid pt-lg-4 mt-lg-2 "> <!--New header page (update)-->
+    <div class="container mt-lg-2 py-lg-0 mt-md-5 mt-4 py-2">
+      <div class="row my-lg-2 py-lg-1 pb-md-5 pb-4">
+        <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="row d-flex justify-content-center align-items-center mt-2">
+            <div class="col-lg-4">
+              <div class="row d-flex justify-content-center">
+                <h3 class="fw-bold display-2 d-md-1 mb-4">Product <span class="ms-lg-5 ms-0">Enquiry</span></h3>
+              </div>
+              <div class="row d-flex align-items-start justify-content-evenly">
+                <div class="col-lg-6 col-md-4 col-sm-5 col-auto">
+                  <div class="card border-0 bg-transparent">
+                    <div class="card-body p-0">
+                      <div class="mb-2">
+                        <img src="img/form-logo2.png" alt="" class="logo">
+                      </div>
+                      <h5 class="card-title">Phone:</h5>
+                      <p class="card-text text-muted">
+                        +91 9443487210<br>+0413 4207333
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-4 col-sm-5 col-auto">
+                  <div class="card border-0 bg-transparent">
+                    <div class="card-body p-0">
+                      <div class="mb-2">
+                        <img src="img/form-logo1.png" alt="" class="logo">
+                      </div>
+                      <h5 class="card-title">Email:</h5>
+                      <p class="card-text text-muted">info@skyfinch.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 mt-2 pt-1 mx-lg-0 mx-3">
+              <form name="cus_form">
+                <div class="row mx-lg-0 mx-3">
+                  <div class="col-lg-6 mt-1 pb-2 wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="input-data">
+                      <label for="cus-name">Enter your name</label>
+                      <input type="text" id="cus-name" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mt-1 pb-2 wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="input-data">
+                      <label for="cus-number">Your phone number</label>
+                      <input type="text" id="cus-number" maxlength="10" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mt-3 pb-2 wow fadeInRight" data-wow-delay="0.4s">
+                    <div class="input-data">
+                      <label for="cus-mail">Your E-mail</label>
+                      <input type="email" id="cus-mail" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mt-3 pb-2 wow fadeInRight" data-wow-delay="0.4s">
+                    <div class="input-data">
+                      <label for="cus-company">Company</label>
+                      <input type="text" id="cus-company" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mt-3 pb-2 wow fadeInRight" data-wow-delay="0.6s">
+                    <div class="input-data">
+                      <label for="cus-job">Job title</label>
+                      <input type="text" id="cus-job" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mt-3 pb-2 wow fadeInRight" data-wow-delay="0.6s">
+                    <div class="input-data">
+                      <label for="cus-country">Country</label>
+                      <input type="text" id="cus-country" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mt-3 pb-2 wow fadeInRight" data-wow-delay="0.8s">
+                    <div class="input-data">
+                      <label for="cus-work">Works with select</label>
+                      <input type="text" value="Business" id="cus-work" readonly>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mt-3 pb-2 wow fadeInRight" data-wow-delay="0.8s">
+                    <div class="input-data">
+                      <label for="cus-ss">Products</label>
+                      <input type="text" id="cus-ss">
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mt-3 pb-2 wow fadeInRight" data-wow-delay="0.9s">
+                    <div class="input-data">
+                      <label for="cus-price">Plan & Price</label>
+                      <input type="text" id="cus-price">
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mt-3 pb-2 wow fadeInRight" data-wow-delay="0.9s">
+                    <div class="input-data">
+                      <label for="cus-text">Comments</label>
+                      <input type="text" id="cus-text" required>
+                    </div>
+                  </div>
+                  <div
+                    class="col-lg-12 mx-auto d-flex justify-content-end d-lg-flex justify-content-lg-end pt-3 my-2 wow fadeInUp"
+                    data-wow-delay="1.1s">
+                    <input type="reset" class="btn btn-pop me-5" onclick="resetFormProduct()"></input>
+                    <button type="button" class="btn btn-pop me-5" onclick="prodEnqiry()">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- 404 End -->
+  <!-- Landing Page End -->
+  <!-- Team Start -->
+  <section class="bg-11 pt-lg-2 pb-lg-0 pt-4 pb-1">
+    <div class="container-fluid mt-lg-1 pt-lg-2 mt-md-4 py-md-2 mt-4 py-3">
+      <div class="container pt-0 mt-2 mb-0">
+        <div class="row d-flex justify-content-center align-items-center mt-3 mb-0 py-0">
+          <div class="col-lg-12 divide">
+            <div class="row mt-lg-0 mt-0 d-flex justify-content-center align-items-center">
+              <h5 class="fw-bold pb-md-5 pb-lg-1 mt-lg-4 pt-lg-2 pt-2 pb-3 text-center display-5 wow fadeInDown"
+                data-wow-delay="0.4s" data-aos-duration="1000" data-aos="fade-up">Our Valuable
+                Customers</h5>
+              <div class="cus owl-carousel owl-theme pt-1" data-aos-duration="1000">
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/1.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/Ajay Travels.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/annai electronics.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/chemfab.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/clickyp.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/ghcl.png" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/jagan photos.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/kbs.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/ks.png" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/lakshmi jewellery.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/life-cell.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/mbm.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/megna.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/mr and mrs botique.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/ms.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/nds.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/new cars.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/nithin.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/nithya.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/prabu studio.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/rainbow.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/rane.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/S.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/sanguine.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/sanjay environmental.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/sivasakthi.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/st mobiles.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/tedcas.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/Thulasi.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="card border-0 mx-2">
+                    <img src="img/cus/wordwide cargo.jpg" alt="zC" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container pt-lg-1 mt-lg-1 pt-md-5 mt-md-2 pt-2 mt-2">
+        <div class="text-center mx-auto mb-lg-1 py-lg-0 wow fadeInUp" data-wow-delay="0.1s" data-aos-duration="1000"
+          data-aos="fade-up" style="max-width: 600px;">
+          <h1 class="display-6 mb-lg-0 mb-3">Exclusive Team</h1>
+        </div>
+        <div class="row d-flex justify-content-center ">
+          <div
+            class="d-flex justify-content-center align-items-center col-lg-4 col-md-6 col-6 mt-lg-1 mt-2 wow fadeInUp"
+            data-wow-delay="0.1s" data-aos-duration="1000" data-aos="fade-down">
+            <div class="card hov2">
+              <img class="card-body rounded" src="img/india/aboutus2.jpg" alt="">
+              <div class="d-flex justify-content-center">
+                <h6 class="mb-0 pb-2">ERP</h6>
+              </div>
+            </div>
+          </div>
+          <div
+            class="d-flex justify-content-center align-items-center col-lg-4 col-md-6 col-6 mt-lg-1 mt-2 wow fadeInUp"
+            data-wow-delay="0.3s" data-aos-duration="1000" data-aos="fade-up">
+            <div class="card hov2">
+              <img class="card-body rounded" src="img/india/team-new1.jpg" alt="">
+              <div class="d-flex justify-content-center">
+                <h6 class="mb-0 pb-2">DOT NET</h6>
+              </div>
+            </div>
+          </div>
+          <div
+            class="d-flex justify-content-center align-items-center col-lg-4 col-md-12 col-12 mt-lg-1 mt-4 wow fadeInUp"
+            data-wow-delay="0.5s" data-aos-duration="1000" data-aos="fade-up">
+            <div class="card hov2">
+              <img class="card-body rounded" src="img/india/team-new2.jpg" alt="">
+              <div class="d-flex justify-content-center">
+                <h6 class="mb-0 pb-2 text-uppercase">Support Team</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Team End -->
   <!-- Footer Start -->
   <section id="sec13" class="container-fluid scroll text-light footer mt-lg-0 pt-lg-5 mt-0 pt-4 wow fadeIn"
     data-wow-delay="0.1s">
@@ -1136,20 +1487,22 @@
   <!-- Footer End -->
   <!-- Back to Top -->
   <a href="#" class="btn btn-lg page-top btn-lg-square rounded-circle animated fadeInDown" data-bs-toggle="tooltip"
-    data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="back-to-top"
-    style="margin-bottom: -50px;"><img src="img/right-arrow.png" alt=""></a>
+    data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="back-to-top"><img
+      src="img/right-arrow.png" alt=""></a>
   <!-- JavaScript Libraries -->
   <script src="js/Jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/AnimationOnScroll/package/dist/aos.js"></script>
+  <script src="js/placeholder.min.js"></script>
+  <script src="js/searchBar.js"></script>
+  <script src="js/productEnquiry.js"></script>
   <script src="lib/wow/wow.min.js"></script>
   <script src="lib/easing/easing.min.js"></script>
   <script src="lib/waypoints/waypoints.min.js"></script>
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/counterup/counterup.min.js"></script>
-  <script src="js/AnimationOnScroll/package/dist/aos.js"></script>
   <script src="css/malihu-custom-scrollbar-plugin-3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-  <script src="js/placeholder.min.js"></script>
-  <script src="js/searchBar.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/smtpjs/smtp.js"></script>
   <!-- Scroll effects -->
   <script>
     AOS.init();

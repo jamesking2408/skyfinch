@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>SkyFinch | Help</title>
@@ -33,7 +32,6 @@
     <link rel="stylesheet" type="text/css" href="css/hamburgers.css" />
     <link rel="stylesheet" href="css/help.css">
 </head>
-
 <body>
     <!-- Navbar Start -->
     <div class="container-fluid vw-nav fixed-top m-0 p-0">
@@ -56,8 +54,8 @@
             </div>
         </div>
         <nav class="navbar navbar-expand-lg navbar-light py-lg-0 py-md-2 py-2 px-lg-4 bg-white">
-            <img class="sugarcane" src="img/sugar_cane.png" alt="">
-            <img class="pot" src="img/pongal-pot-2.png" alt="">
+            <!-- <img class="sugarcane" src="img/sugar_cane.png" alt="">
+            <img class="pot" src="img/pongal-pot-2.png" alt=""> -->
             <a href="index.html" class="navbar-brand ms-0 ms-lg-0">
                 <img src="img/cloud.png" alt="" class="r-cloud animated slideInLeft"/>
                 <img src="img/cloud.png" alt="" class="l-cloud animated slideInRight"/>
@@ -606,17 +604,18 @@
                         Discover
                     </h4>
                     <a class="btn btn-link" href="products.html">Products</a>
-                    <a class="btn btn-link" href="pl_pr.html" onclick="choosePlan('', '')">Product Enquiry</a>
+                    <a class="btn btn-link" href="productEnquiry.html" onclick="choosePlan('', '')">Product Enquiry</a>
+                    <a class="btn btn-link" href="planandPrice.html">Plans and Price</a>
                     <a class="btn btn-link" href="contact.html">Contact us</a>
                 </div>
                 <div id="polices" class="col-lg-3 col-6 mb-lg-0 mb-4 ms-0 ms-lg-2 mt-5 mt-lg-5">
                     <h4 class="text-white mb-4 w-25 border-bottom border-primary">
                         Policies
                     </h4>
-                    <a class="btn btn-link" href="anti_spam.html">Anti-spam&nbsp;Policy</a>
-                    <a class="btn btn-link" href="term_use.html">Terms of Service</a>
-                    <a class="btn btn-link" href="privacy_policy.html">Privacy&nbsp;Policy</a>
-                    <a class="btn btn-link" href="confidentality_policy.html">Confidentiality&nbsp;Policy</a>
+                    <a class="btn btn-link" href="antiSpam.html">Anti-spam&nbsp;Policy</a>
+                    <a class="btn btn-link" href="termsUse.html">Terms of Service</a>
+                    <a class="btn btn-link" href="privacy.html">Privacy&nbsp;Policy</a>
+                    <a class="btn btn-link" href="confidentality.html">Confidentiality&nbsp;Policy</a>
                 </div>
             </div>
         </div>
@@ -643,12 +642,12 @@
                 <div
                     class="col-md-12 col-lg-12 col d-flex flex-wrap align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-2 pt-2 mt-3 pb-lg-0 mb-lg-0">
                     <a class="foo-policy"
-                        href="anti_spam.html">Anti-spam&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
+                        href="antiSpam.html">Anti-spam&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
                     <a class="foo-policy"
-                        href="term_use.html">Terms&nbsp;of&nbsp;Service<span>&nbsp;&VerticalLine;&nbsp;</span></a>
+                        href="termsUse.html">Terms&nbsp;of&nbsp;Service<span>&nbsp;&VerticalLine;&nbsp;</span></a>
                     <a class="foo-policy"
-                        href="privacy_policy.html">Privacy&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
-                    <a class="foo-policy" href="confidentality_policy.html">Confidentiality&nbsp;Policy</a>
+                        href="privacy.html">Privacy&nbsp;Policy<span>&nbsp;&VerticalLine;&nbsp;</span></a>
+                    <a class="foo-policy" href="confidentality.html">Confidentiality&nbsp;Policy</a>
                 </div>
                 <div id="foo-rights"
                     class="col-md-12 col-lg-12 d-flex align-items-end justify-content-center text-secondary text-center text-md-center mt-lg-1 mt-1 pt-lg-1 pt-1">
@@ -675,7 +674,6 @@
     <!-- Scroll effects -->
     <script>
         AOS.init();
-
         // var jsPDF = window.jspdf.jsPDF;
         // $(document).ready(function () {
         //     if (jsPDF && jsPDF.version) {
@@ -684,7 +682,6 @@
         // });
         // // Create a new instance of jsPDF
         // const pdf = new jsPDF();
-
         // // Add content to the PDF
         // pdf.text("CUSTOMER DETAILS", 105, 30, null, null, "center");
         // pdf.text(`Name: ${cus_name}`, 20, 40);
@@ -696,12 +693,10 @@
         // pdf.text(`Sales: ${sales}`, 20, 100);
         // pdf.text(`Price: ${price}`, 20, 110);
         // pdf.text(`Message: ${txt}`, 20, 120);
-
         // // Save the PDF with a unique filename
         // // const filename = new Date().toISOString().split('T')[0] + "Product_Enq_form.pdf";
         // const currentDateTime = new Date().toISOString().replace(/[-T:]/g, '').split('.')[0];
         // const filename = currentDateTime + "_Product_Enq_form.pdf";
-
         // // Trigger the download
         // pdf.save(filename);
     </script>
@@ -715,5 +710,4 @@
     <script src="js/chatbox.js"></script>
     <script src="js/main.js"></script>
 </body>
-
 </html>

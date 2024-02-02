@@ -627,6 +627,11 @@ h6,
     font-weight: 500 !important;
 }
 
+.fw-qut-bold {
+    font-weight: 450 !important;
+    font-size: 17px;
+}
+
 /*** New Spinner ***/
 .loading {
     position: fixed;
@@ -824,18 +829,20 @@ h6,
 
 .cloud h6 {
     position: absolute;
-    top: 30px;
-    left: 62px;
-    font-size: 9.5px;
-    color: black;
+    top: 27px;
+    left: 63px;
+    font-size: 12px;
+    font-weight: 600 !important;
+    font-family: latin;
+    color: #fcc143;
 }
 
 b.cloud {
     position: absolute;
     bottom: 0;
-    top: 13px !important;
+    top: 11px !important;
     left: 72px;
-    color: white !important;
+    color: #fff !important;
     height: 37px;
     font-size: 31px;
     font-family: 'Black Ops One', cursive;
@@ -1613,6 +1620,7 @@ b.cloud {
 .mytooltip {
     cursor: pointer;
 }
+
 .tooltip-content {
     position: absolute;
     z-index: 9999 !important;
@@ -1986,18 +1994,52 @@ b.cloud {
 }
 
 /* Manual CSS end*/
+/* mSCB start */
+.mCSB_inside>.mCSB_container {
+    margin-right: 20px !important;
+}
+
+.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+    margin-right: 0 !important;
+}
+
+/* mSCB end */
 /* Search box Start */
+.searchLink {
+    font-size: 20px;
+}
+
 .searchLink:hover {
     text-decoration: underline;
 }
+
+.search-deco-underline {
+    text-decoration: underline !important;
+}
+
+.search-deco-underline:hover {
+    text-decoration: none !important;
+}
+
+.content .paragraph {
+    font-size: 15px !important;
+}
+
+.highlight {
+    font-weight: bold;
+    padding: 1px;
+}
+
 .pwd-sky {
     font-family: 'Black Ops One';
 }
+
 #input-message {
     display: flex;
     justify-content: center;
     color: #a3a3a3;
 }
+
 #searchButton span h6 {
     font-family: 'Aclonica';
     font-size: 18px;
@@ -2183,6 +2225,7 @@ b.cloud {
         z-index: 0;
         width: 60px !important;
     }
+
     .navbar .sugarcane {
         transform: translateX(-0.4rem) translateY(0rem) rotate(-65deg) !important;
         width: 50px !important;

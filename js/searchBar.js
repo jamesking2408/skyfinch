@@ -82,45 +82,43 @@ function jumpToProfile(sectionId) {
     window.location.href = link;
 }
 function jumpToPp(sectionId) {
-    const url = new URL('/privacy_policy.html', window.location.origin);
+    const url = new URL('/privacy.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
 function jumpToAp(sectionId) {
-    const url = new URL('/confidentality_policy.html', window.location.origin);
+    const url = new URL('/confidentality.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
 function jumpToCp(sectionId) {
-    const url = new URL('/anti_spam.html', window.location.origin);
+    const url = new URL('/antiSpam.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
 function jumpToTerm(sectionId) {
-    const url = new URL('/term_use.html', window.location.origin);
+    const url = new URL('/termsUse.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
-// function searchContent() {
-//     let input = document.getElementById('searchbar').value;
-//     input = input.toLowerCase();
-//     let x = document.getElementsByClassName('content');
+function jumpToPq(sectionId) {
+    const url = new URL('/planandPrice.html', window.location.origin);
+    const link = `${url}#${sectionId}`;
+    window.location.href = link;
+}
+function jumpToProduct(sectionId) {
+    const url = new URL('/products.html', window.location.origin);
+    const link = `${url}#${sectionId}`;
+    window.location.href = link;
+}
 
-//     for (let i = 0; i < x.length; i++) {
-//         if (!x[i].innerHTML.toLowerCase().includes(input)) {
-//             x[i].style.display = "none";
-//         } else {
-//             x[i].style.display = "list-item";
-//         }
-//     }
-// }
-const searchInput = document.getElementById("searchbar");
-const inputMessage = document.getElementById("input-message");
+let searchInput = document.getElementById("searchbar");
+let inputMessage = document.getElementById("input-message");
 
 searchInput.addEventListener("keyup", searchContent);
 
-function searchContent(e) {
-    const userInput = (e.target.value || '').toLowerCase();
+function searchContent() {
+    const userInput = (searchInput.value || '').toLowerCase();
     const contentElements = document.getElementsByClassName('content');
     let count = 0;
 
@@ -130,12 +128,12 @@ function searchContent(e) {
         contentElements[i].style.display = contentDisplay;
         count += contentDisplay === "none" ? 0 : 1;
     }
-
+    highlight(userInput);
     setInputMessage(userInput === "" ? "" : count);
 }
 
 function setInputMessage(n) {
-    let message = "No results found." || "&nbsp;";
+    let message = "No results found." && "&nbsp;";
     if (typeof n === "number") {
         if (!n) {
             message = "No results found.";
@@ -145,58 +143,36 @@ function setInputMessage(n) {
     }
     inputMessage.innerHTML = message;
 }
+// Showing URL in Search list
+document.addEventListener("DOMContentLoaded", function(){
+    const elementsWithClass = document.querySelectorAll(".urlHash");
 
-// let currentResult = -1;
+    elementsWithClass.forEach(element => {
+        const urlHash = new URL(element.href);
+        const domain = urlHash.origin;
+        const pageName = urlHash.pathname.split("/").pop();
+        const fullURL = domain +"/"+ pageName;
+        element.innerHTML = fullURL;
+    });
+});
 
-// function highlightResult(resultIndex) {
-//     let x = document.getElementsByClassName('content');
-//     for (let i = 0; i < x.length; i++) {
-//         x[i].classList.remove("highlighted");
-//     }
+let opars = document.querySelectorAll(".paragraph"); // Select all elements with the class .paragraph
 
-//     if (resultIndex >= 0 && resultIndex < x.length) {
-//         x[resultIndex].classList.add("highlighted");
-//     }
-// }
+// Create an array to store the original HTML content of each .paragraph element
+let originalParagraphs = [];
+opars.forEach(paragraph => {
+    originalParagraphs.push(paragraph.innerHTML);
+});
+function highlight(search) {
+    opars.forEach((paragraph, index) => {
+        var re = new RegExp(search, 'gi'); // 'g' flag for global and case-insensitive search
+        search = search.replace(/[.*+?^${}()|[\]\\]/gi, '\\$&');
 
-// let timeout;
-// function debounce(func, wait) {
-//     clearTimeout(timeout);
-//     timeout = setTimeout(func, wait);
-// }
-
-// document.getElementById('searchbar').addEventListener('input', function () {
-//     currentResult = -1; // Reset current result when input changes
-//     debounce(searchContent, 300);
-// });
-
-// document.getElementById('searchbar').addEventListener('keydown', function (event) {
-//     if (event.key === "Enter") {
-//         event.preventDefault();
-//         searchContent();
-//     } else if (event.key === "ArrowDown") {
-//         event.preventDefault();
-//         navigateResults(1);
-//     } else if (event.key === "ArrowUp") {
-//         event.preventDefault();
-//         navigateResults(-1);
-//     }
-// });
-
-// function navigateResults(direction) {
-//     let x = document.getElementsByClassName('content');
-
-//     if (x.length > 0) {
-//         highlightResult(currentResult); // Remove previous highlight
-
-//         currentResult += direction;
-
-//         if (currentResult < 0) {
-//             currentResult = x.length - 1;
-//         } else if (currentResult >= x.length) {
-//             currentResult = 0;
-//         }
-
-//         highlightResult(currentResult); // Highlight new result
-//     }
-// }
+        if (search.length > 0) {
+            paragraph.innerHTML = originalParagraphs[index].replace(re, `<strong style="font-style: italic;">$&</strong>`);
+        }
+        else {
+            paragraph.innerHTML = originalParagraphs[index];
+        }
+    });
+}
