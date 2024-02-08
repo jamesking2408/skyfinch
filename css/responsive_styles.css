@@ -191,7 +191,8 @@
 
     .dropdown-content1 {
         position: relative;
-        width: inherit;
+        width: fit-content;
+        padding: 5px 25px;
         margin-top: -10px;
         margin-left: 30px;
         border-radius: 0px;
@@ -306,7 +307,11 @@
     }
 
     #sec2_1 {
-        height: 50rem;
+        height: fit-content;
+    }
+
+    #sec2_1 .container-fluid {
+        transform: translateX(0) translateY(0.5rem);
     }
 
     #sec2_1 .swiper {
@@ -478,7 +483,7 @@
     }
 
     .bg-04 {
-        background-size: 100% 55%;
+        background-size: 100% 28%;
     }
 
     #swiper_box .swiper-button-prev {
@@ -1457,6 +1462,7 @@
 
     .chatbot .chatbox {
         height: 90%;
+        padding: 15px 20px 100px;
     }
 
     .chatbot header span {
@@ -1601,7 +1607,8 @@
 
     .dropdown-content1 {
         position: relative;
-        width: inherit;
+        width: fit-content;
+        padding: 5px 25px;
         margin-top: -10px;
         margin-left: 30px;
         border-radius: 0px;
@@ -1722,7 +1729,11 @@
     }
 
     #sec2_1 {
-        height: 50rem;
+        height: fit-content;
+    }
+
+    #sec2_1 .container-fluid {
+        transform: translateX(0) translateY(1rem);
     }
 
     #sec2_1 .swiper {
@@ -1894,7 +1905,11 @@
     }
 
     .bg-04 {
-        background-size: 100% 64%;
+        background-size: 100% 34%;
+    }
+
+    #sec4 .container {
+        transform: translateX(0) translateY(-1rem) !important;
     }
 
     #swiper_box .myswiper2 {
@@ -1969,16 +1984,21 @@
 
     .tooltip-content {
         max-width: 180px;
-        -ms-transform: translateY(-80px) translateX(15px);
-        transform: translateY(-80px) translateX(15px);
-        -webkit-transform: translateY(-80px) translateX(15px);
+        -ms-transform: translateY(-105px) translateX(-10px);
+        transform: translateY(-105px) translateX(-10px);
+        -webkit-transform: translateY(-105px) translateX(-10px);
     }
 
     .tooltip-content.tooltip-s-content {
         max-width: 180px;
-        -ms-transform: translateY(-105px) translateX(-23px);
-        transform: translateY(-105px) translateX(-23px);
-        -webkit-transform: translateY(-105px) translateX(-23px);
+        -ms-transform: translateY(-105px) translateX(-10px);
+        transform: translateY(-105px) translateX(-10px);
+        -webkit-transform: translateY(-105px) translateX(-10px);
+    }
+
+    .mytooltip .card-title {
+        font-size: 0.80rem !important;
+        font-weight: 500 !important;
     }
 
     .bg-06 {
@@ -2822,7 +2842,7 @@
 
     /* Style page responsive start */
     .nav-icons {
-        margin-right: -80px;
+        margin-right: -110px;
         margin-top: -20px;
     }
 
@@ -2863,6 +2883,7 @@
 
     .chatbot .chatbox {
         height: 90%;
+        padding: 15px 20px 100px;
     }
 
     .chatbot header span {
@@ -2987,13 +3008,13 @@
     }
 
     .contact-border {
-        position: absolute;
+        position: relative;
         width: 12rem;
-        transform: translateX(-90%) translateY(235%) !important;
+        transform: translateX(20%) translateY(430%) !important;
     }
 
     .contact-border:hover {
-        transform: translateX(-90%) translateY(235%) !important;
+        transform: translateX(20%) translateY(428%) !important;
     }
 
     #main_top.page-top {
@@ -3008,7 +3029,8 @@
 
     .dropdown-content1 {
         position: relative;
-        width: inherit;
+        width: fit-content;
+        padding: 5px 25px;
         margin-top: -10px;
         margin-left: 30px;
         border-radius: 0px;
@@ -3023,29 +3045,27 @@
     }
 
     .l-cloud {
-        /* transform: translate(-1%, 5%) !important; */
-        width: 140px;
-        height: 50px;
-        transform: perspective(2cm);
+        transform: translate(0%, -3%) !important;
+        width: 200px;
+        height: 65px;
     }
 
     .r-cloud {
-        transform: translate(-10%, 1%);
-        width: 145px;
-        height: 55px;
-        transform: perspective(1cm);
+        transform: translate(-5%, -1%) !important;
+        width: 200px;
+        height: 65px;
     }
 
     b.cloud {
-        top: 20px !important;
-        left: 28px;
-        font-size: 20px;
+        top: 15px !important;
+        left: 30px;
+        font-size: 28px;
     }
 
     .cloud h6 {
-        top: 20px;
-        left: 30px;
-        font-size: 7.2px;
+        top: 28px;
+        left: 56px;
+        font-size: 12px;
     }
 
     #home_skyfinch .caro-caption a.btn {
@@ -3140,7 +3160,11 @@
     }
 
     #sec2_1 {
-        height: 50rem;
+        height: fit-content;
+    }
+
+    #sec2_1 .container-fluid {
+        transform: translateX(0) translateY(0rem);
     }
 
     #sec2_1 .swiper {
@@ -3312,7 +3336,11 @@
     }
 
     .bg-04 {
-        background-size: 100% 65%;
+        background-size: 100% 40%;
+    }
+
+    #sec4 .container {
+        transform: translateX(0) translateY(1rem) !important;
     }
 
     #sec5 {
@@ -3405,16 +3433,20 @@
 
     .tooltip-content {
         max-width: 180px;
-        -ms-transform: translateY(-80px) translateX(15px);
-        transform: translateY(-80px) translateX(15px);
-        -webkit-transform: translateY(-80px) translateX(15px);
+        -ms-transform: translateY(-105px) translateX(-10px);
+        transform: translateY(-105px) translateX(-10px);
+        -webkit-transform: translateY(-105px) translateX(-10px);
     }
 
     .tooltip-content.tooltip-s-content {
         max-width: 180px;
-        -ms-transform: translateY(-105px) translateX(-23px);
-        transform: translateY(-105px) translateX(-23px);
-        -webkit-transform: translateY(-105px) translateX(-23px);
+        -ms-transform: translateY(-105px) translateX(-10px);
+        transform: translateY(-105px) translateX(-10px);
+        -webkit-transform: translateY(-105px) translateX(-10px);
+    }
+
+    .mytooltip .card-title {
+        font-size: 0.90rem !important;
     }
 
     .bg-06 {
@@ -3673,7 +3705,23 @@
     }
 
     .bg-12 .row .tab-pane {
-        height: 405px !important;
+        height: 425px !important;
+    }
+
+    #tab-sec .swiper-button-next {
+        bottom: 50%;
+        left: 50%;
+        transform: translateX(150%) translateY(10rem);
+    }
+
+    #tab-sec .swiper-button-prev {
+        bottom: 50%;
+        left: 50%;
+        transform: translateX(-250%) translateY(10rem);
+    }
+
+    #tab-sec .swiper-pagination {
+        bottom: 5rem !important;
     }
 
     /* point of sales responsive */
@@ -4325,6 +4373,7 @@
 
     .chatbot .chatbox {
         height: 90%;
+        padding: 15px 20px 90px;
     }
 
     .chatbot header span {
@@ -4346,6 +4395,16 @@
         top: 0;
         left: 0;
         transform: translateX(0) translateY(0rem) !important;
+    }
+
+    #sec5 .container {
+        transform: translateX(0) translateY(0rem) !important;
+    }
+
+    /* Manual Responsive matrix column */
+    .col-clone-matx {
+        flex: 0 0 auto !important;
+        width: 33.33333333% !important;
     }
 
     .container2,
@@ -4370,8 +4429,8 @@
     }
 
     .card.hov2 {
-        width: 200px !important;
-        height: auto !important;
+        width: 210px !important;
+        height: 210px !important;
     }
 
     .mx-6 {
@@ -4473,13 +4532,13 @@
     }
 
     .contact-border {
-        position: absolute;
+        position: relative;
         width: 17rem;
-        transform: translateX(-90%) translateY(145%) !important;
+        transform: translateX(20%) translateY(385%) !important;
     }
 
     .contact-border:hover {
-        transform: translateX(-90%) translateY(145%) !important;
+        transform: translateX(20%) translateY(383%) !important;
     }
 
     #main_top.page-top {
@@ -4494,7 +4553,8 @@
 
     .dropdown-content1 {
         position: relative;
-        width: inherit;
+        width: fit-content;
+        padding: 5px 25px;
         margin-top: -10px;
         margin-left: 30px;
         border-radius: 0px;
@@ -4510,14 +4570,26 @@
 
     .cloud h6 {
         top: 28px;
-        left: 50px;
-        font-size: 9.2px;
+        left: 56px;
+        font-size: 12px;
     }
 
     b.cloud {
-        top: 3px;
-        left: 55px;
+        top: 15px !important;
+        left: 57px;
         font-size: 28px;
+    }
+
+    .l-cloud {
+        transform: translate(0%, -3%) !important;
+        width: 240px;
+        height: 65px;
+    }
+
+    .r-cloud {
+        transform: translate(0%, -1%) !important;
+        width: 240px;
+        height: 65px;
     }
 
     #header-carousel .carousel-item {
@@ -4559,15 +4631,15 @@
     }
 
     .mid-slide1 {
-        margin-top: 30px;
+        margin-top: 15px;
     }
 
     .mid-slide2 {
-        padding-top: 40px;
+        padding-top: 15px;
     }
 
     .mid-slide3 {
-        padding-top: 50px;
+        padding-top: 15px;
     }
 
     .abt-img {
@@ -4626,6 +4698,11 @@
         transform: translateX(0) translateY(-0.5rem) !important;
     }
 
+    .col-clone-app {
+        flex: 0 0 auto !important;
+        width: 50% !important;
+    }
+
     #swiper_app .mySwiper {
         width: 500px;
     }
@@ -4678,7 +4755,7 @@
     }
 
     .bg-02 .card.team {
-        min-height: 210px;
+        height: inherit;
     }
 
     #order-lg-row {
@@ -4694,7 +4771,7 @@
     }
 
     .bg-04 {
-        background-size: 100% 55%;
+        background-size: 100% 38%;
     }
 
     #swiper_box {
@@ -4742,17 +4819,19 @@
     }
 
     .tooltip-content {
-        max-width: 180px;
-        -ms-transform: translateY(-80px) translateX(15px);
-        transform: translateY(-80px) translateX(15px);
-        -webkit-transform: translateY(-80px) translateX(15px);
+        max-width: 215px;
+        min-width: 215px;
+        -ms-transform: translateY(-105px) translateX(-10px);
+        transform: translateY(-105px) translateX(-10px);
+        -webkit-transform: translateY(-105px) translateX(-10px);
     }
 
     .tooltip-content.tooltip-s-content {
-        max-width: 180px;
-        -ms-transform: translateY(-105px) translateX(-23px);
-        transform: translateY(-105px) translateX(-23px);
-        -webkit-transform: translateY(-105px) translateX(-23px);
+        max-width: 215px;
+        min-width: 215px;
+        -ms-transform: translateY(-105px) translateX(-10px);
+        transform: translateY(-105px) translateX(-10px);
+        -webkit-transform: translateY(-105px) translateX(-10px);
     }
 
     .bg-06 {
@@ -4768,8 +4847,8 @@
     }
 
     .show1 img.win-app {
-        width: 250px;
-        height: 250px;
+        width: 350px;
+        height: 350px;
     }
 
     .show2 img.webapp {
@@ -4803,6 +4882,15 @@
         transform: translate(-10px, -30px) !important;
     }
 
+    .profile_topic {
+        margin-left: 50px !important;
+        width: 310px !important;
+
+        & h1 {
+            font-size: calc(4rem + 0.9vw) !important;
+        }
+    }
+
     #profile_sec2 .hist_2,
     #profile_sec2 .hist_3 {
         max-width: 500px !important;
@@ -4817,16 +4905,26 @@
     }
 
     #profile_sec2 .leg_btn_nxt {
-        transform: translate(0px, -100px);
+        transform: translate(0px, -60px);
     }
 
     #profile_sec2 .leg_btn_prev {
-        transform: translate(0px, -90px);
+        transform: translate(0px, -60px);
+    }
+
+    .mm-response {
+        left: 9rem;
+        top: 2rem !important;
     }
 
     .page-banner.home-banner {
         margin-top: 100px;
         height: 700px;
+    }
+
+    .page-banner.home-banner .img-fluid {
+        position: relative;
+        top: 4.5rem;
     }
 
     #land_profile {
@@ -4926,7 +5024,7 @@
         position: relative;
         top: 0;
         left: 0;
-        transform: translateX(1rem) translateY(0.8rem);
+        transform: translateX(0rem) translateY(0.8rem);
     }
 
     .page-section .container,
@@ -4972,6 +5070,8 @@
 
     /* Sub_pages responsive Start */
     .bg-00 .facts {
+        position: relative;
+        top: 2rem;
         margin-top: 0px !important;
     }
 
@@ -4983,8 +5083,8 @@
     #abt-wave img {
         left: 0;
         bottom: 0;
-        transform: translateX(3rem) translateY(-2rem);
-        width: 400px;
+        transform: translateX(0rem) translateY(-1rem);
+        width: 280px;
     }
 
     #abt-wave .container {
@@ -5079,7 +5179,7 @@
     }
 
     .bg-12 .row .tab-pane {
-        height: 350px !important;
+        height: 500px !important;
     }
 
     .bg-12 .row .tab-row1 {
@@ -5089,12 +5189,24 @@
     .bg-12 .container {
         top: 0;
         left: 0;
-        transform: translateY(6rem) translateX(0rem) !important;
+        transform: translateY(2rem) translateX(0rem) !important;
     }
 
     .bg-12 {
         position: relative;
         height: 730px;
+    }
+
+    #tab-sec .swiper-button-next {
+        bottom: 50%;
+        left: 50%;
+        transform: translateX(150%) translateY(15rem);
+    }
+
+    #tab-sec .swiper-button-prev {
+        bottom: 50%;
+        left: 50%;
+        transform: translateX(-250%) translateY(15rem);
     }
 
     /* point of sales responsive */
@@ -5771,11 +5883,12 @@
         transform: translateX(0) translateY(0rem) !important;
     }
 
+    #sec4 .container .card.pop2 {
+        height: 250px !important;
+    }
+
     #sec5 {
-        position: relative !important;
-        top: 0;
-        left: 0;
-        transform: translateX(0) translateY(3rem) !important;
+        transform: translateX(0) translateY(0rem) !important;
     }
 
     #sec5 .container {
@@ -5872,15 +5985,13 @@
     }
 
     .contact-border {
-        position: absolute;
+        position: relative;
         width: 17rem;
-        left: 50%;
-        bottom: 50%;
-        transform: translateX(-120%) translateY(130%) !important;
+        transform: translateX(20%) translateY(385%) !important;
     }
 
     .contact-border:hover {
-        transform: translateX(-120%) translateY(130%) !important;
+        transform: translateX(20%) translateY(383%) !important;
     }
 
     #main_top.page-top {
@@ -5946,6 +6057,7 @@
     }
 
     .caro-caption {
+        padding-top: 40px;
         padding-left: 30px;
         padding-right: 25px;
         padding-bottom: 30px;
@@ -5960,15 +6072,15 @@
     }
 
     .mid-slide1 {
-        margin-top: 30px;
+        margin-top: 10px;
     }
 
     .mid-slide2 {
-        padding-top: 40px;
+        padding-top: 10px;
     }
 
     .mid-slide3 {
-        padding-top: 50px;
+        padding-top: 10px;
     }
 
     .abt-img {
@@ -6128,6 +6240,10 @@
     .collapse #searchButton {
         display: block;
         width: 255px !important;
+    }
+
+    .tooltip-content {
+        width: 280px !important;
     }
 
     /* Style page responsive End */
@@ -6325,7 +6441,7 @@
     #abt-wave img {
         left: 0;
         bottom: 0;
-        transform: translateX(3rem) translateY(-2rem);
+        transform: translateX(0rem) translateY(-2rem);
         width: 400px;
     }
 
@@ -6534,77 +6650,6 @@
     .button:hover span:nth-child(4) {
         bottom: 40%;
     }
-
-    /*
-    #hotel_land .btn-pq .button {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translate(15rem, 15rem) !important;
-    }
-
-    #Restaurant_land .btn-pq .button {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translate(15rem, 12rem) !important;
-    }
-
-    #vms_land .btn-pq .button {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translate(15rem, 12rem) !important;
-    }
-
-    #vms_land .btn-pq .button {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translate(15rem, 12rem) !important;
-    }
-
-    #crm_land .btn-pq .button {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translate(15rem, 12rem) !important;
-    }
-
-    #ctm_land .btn-pq .button {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translate(15rem, 12rem) !important;
-    }
-
-    #ems_land .btn-pq .button {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translate(15rem, 12rem) !important;
-    }
-
-    #fms_land .btn-pq .button {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translate(15rem, 12rem) !important;
-    }
-
-    #pms_land .btn-pq .button {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translate(15rem, 12rem) !important;
-    }
-
-    #ss_land .btn-pq .button {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        transform: translate(15rem, 12rem) !important;
-    } */
 
     #module_card .prem-card {
         max-width: 440px !important;
@@ -7386,7 +7431,17 @@
     }
 
     .bg-10 {
-        height: 44rem;
+        height: fit-content;
+    }
+
+    #sec7 {
+        & .container {
+            transform: translateX(0) translateY(-1rem) !important;
+        }
+
+        & .container-fluid {
+            transform: translateX(0) translateY(-3rem) !important;
+        }
     }
 
     #main_top.page-top {
@@ -8195,7 +8250,7 @@
     }
 
     #sec4 {
-        background-size: 100% 45%;
+        background-size: 100% 47.5%;
     }
 
     #sec4 .container {
@@ -8329,6 +8384,10 @@
         height: 700px;
     }
 
+    .profile_topic {
+        width: 380px !important;
+    }
+
     #land_profile {
         height: max-content !important;
         padding-bottom: 30px;
@@ -8443,9 +8502,7 @@
     }
 
     .bg-12 .no-scroll {
-        display: flex !important;
-        justify-content: center !important;
-        justify-items: center !important;
+        display: grid !important;
         align-items: center !important;
     }
 
@@ -8455,7 +8512,8 @@
     }
 
     ul>.nt,
-    ul>.nt1 {
+    ul>.nt1,
+    ul>.nt-x {
         padding-bottom: 2px !important;
     }
 
@@ -9163,12 +9221,13 @@
         transform: translateY(1.5rem);
     }
 
-
     .bg-12 .no-scroll {
-        display: flex !important;
-        justify-content: center !important;
-        justify-items: center !important;
+        display: grid !important;
         align-items: center !important;
+    }
+
+    .profile_topic {
+        width: 380px !important;
     }
 }
 
@@ -9242,9 +9301,7 @@
 
 
     .bg-12 .no-scroll {
-        display: flex !important;
-        justify-content: center !important;
-        justify-items: center !important;
+        display: grid !important;
         align-items: center !important;
     }
 
@@ -9285,7 +9342,12 @@
     #sec8 .container-fluid {
         position: relative;
         top: 0;
-        transform: translateY(1rem);
+        transform: translateY(0rem);
+    }
+
+    #sec8 #card ul {
+        padding-left: 35px !important;
+        padding-right: 20px !important;
     }
 
     .bg-404 {
@@ -9418,6 +9480,7 @@
 }
 
 @media only screen and (max-width:768px) {
+
     .page-section {
         margin-top: 0px !important;
     }
@@ -9428,8 +9491,10 @@
 
     #tab-sec .swiper-button-next:after,
     #tab-sec .swiper-button-prev:after {
+        font-weight: bolder;
         font-size: 20px !important;
         background-color: #ffffff;
+        color: #003a77 !important;
         padding: 15px;
         border-radius: 50%;
         width: 40px;
@@ -9438,18 +9503,6 @@
 
     .features h5 {
         padding-left: 15px;
-    }
-
-    #tab-sec .swiper-button-next {
-        bottom: 50%;
-        left: 50%;
-        transform: translateX(150%) translateY(13rem);
-    }
-
-    #tab-sec .swiper-button-prev {
-        bottom: 50%;
-        left: 50%;
-        transform: translateX(-250%) translateY(13rem);
     }
 
     #sec13 #cpy-ryt {
@@ -9484,12 +9537,13 @@
         transform: translateY(-2rem);
     }
 
-    /* #prod_sec_2 {
-        display: none !important;
-    } */
     /* Product enquiry button  */
+    #sales_land .box {
+        transform: translate(-50%, -9rem) !important;
+    }
+
     .box {
-        transform: translate(-50%, -5rem) !important;
+        transform: translate(-50%, -4rem) !important;
     }
 
     .button--nina {

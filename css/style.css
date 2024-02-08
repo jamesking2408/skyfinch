@@ -1625,7 +1625,7 @@ b.cloud {
     position: absolute;
     z-index: 9999 !important;
     min-width: 240px;
-    width: 400px !important;
+    width: 350px !important;
     background-image: -o-linear-gradient(rgba(47, 0, 255, 0.09) 100%, rgba(47, 0, 255, 0.09) 100%);
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(47, 0, 255, 0.09)), to(rgba(47, 0, 255, 0.09)));
     background-image: linear-gradient(rgba(47, 0, 255, 0.09) 100%, rgba(47, 0, 255, 0.09) 100%);
@@ -1851,33 +1851,69 @@ b.cloud {
 /* Form start */
 .input-data {
     position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    /* width: 50%; */
 }
 
 .input-data>input,
 .input-data>select {
-    height: 100%;
+    font-family: inherit;
     width: 100%;
-    border: none;
-    background-color: transparent;
-    border-bottom: 2px solid #000133;
-    outline: none;
-    font-size: 18px;
-    font-weight: 400;
-    -o-transition: all 0.5s ease-in;
-    transition: all 0.5s ease-in;
-    -webkit-transition: all 0.5s ease-in;
+    border: 0;
+    border-bottom: 2px solid var(--dark);
+    outline: 0;
+    font-size: 1.1rem;
+    color: var(--dark);
+    padding: 5px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.input-data input::placeholder {
+    color: transparent;
+}
+
+.input-data input:placeholder-shown~label {
+    font-size: 1rem;
+    cursor: text;
+    top: 20px;
 }
 
 .input-data input:focus {
-    border-bottom: 2px solid rgb(0, 0, 0);
+    padding-bottom: 6px;
+    /* font-weight: 700; */
+    border-width: 3px;
+    border-image: linear-gradient(to right, #260063, #4053fc);
+    border-image-slice: 1;
 }
 
 .input-data>label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
     pointer-events: none;
-    color: rgb(8, 0, 83);
-    font-size: 18px;
+    color: #080053;
+    font-size: 16px;
     font-weight: bold;
 }
+
+.input-data input:focus~label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #080053;
+    font-weight: 700;
+}
+
+.input-data input:required,
+.input-data input:invalid {
+    box-shadow: none;
+}
+
 
 .input-data>select:focus {
     border-bottom: 2px solid rgb(0, 0, 0);

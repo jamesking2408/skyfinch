@@ -23,7 +23,6 @@
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
-
     // Spinner
     var spinner = function () {
         setTimeout(function () {
@@ -135,8 +134,9 @@
             scrollSpeed: 500,
             offset: 0,
             scrollbars: true,
-            target: "html,body",
-            standardScrollElements: false,
+            target: "html",
+            sectionContainer: "body",
+            standardScrollElements: "",
             setHeights: true,
             overflowScroll: false,
             updateHash: false,
@@ -160,7 +160,6 @@
             $.scrollify.enable();
         }
     }
-
     //end of scroll effects
 
     // Back to top button
@@ -168,23 +167,19 @@
     $(window).scroll(function () {
         if ($(this).scrollTop() > 0) {
             $('.back-to-top').fadeIn('slow');
-        } else {
-            $('.back-to-top').fadeOut('slow');
-        }
-    });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({ scrollTop: 10 }, 10, 'easeInOutExpo');
-        return false;
-    });
-
-    // Other pages
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 0) {
             $('.page-top').fadeIn('slow');
         } else {
+            $('.back-to-top').fadeOut('slow');
             $('.page-top').fadeOut('slow');
         }
     });
+    $('.back-to-top').click(function () {
+        $('html, body').animate({
+            scrollTop: 10
+        }, 10, 'easeInOutExpo');
+        return false;
+    });
+
     $('.page-top').click(function () {
         $('html, body').animate({ scrollTop: 10 }, 10, 'easeInOutExpo');
         return false;
@@ -194,7 +189,7 @@
     // Facts counter
     $('.count').counterUp({
         delay: 10,
-        time: 3000
+        time: 2000
     });
 
 
@@ -337,7 +332,7 @@
     /*  End  Magnific Pop Up
     /*----------------------------------------------------*/
 
-//////////////////////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////////////////////
 
     // Search box start
 
@@ -360,7 +355,7 @@
         showing.show();
         showing1.show();
         modal_body.hide();
-        // document.searchForm.reset();// Erase the field
+        document.searchForm.reset();// Erase the field
         setInputMessage(0); // Erase the no result found Element
         document.addEventListener("keydown", (e) => {
             if (e.key === "Escape") {

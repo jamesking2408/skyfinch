@@ -282,7 +282,6 @@ if touchScroll is false - update index
         }
         var currentScrollTime = new Date().getTime();
 
-
         e = e || window.event;
         var value;
         if (e.originalEvent) {
@@ -351,7 +350,16 @@ if touchScroll is false - update index
         if(locked===true) {
           return false;
         }
-        if(e.keyCode==38 || e.keyCode==33) {
+
+        if(e.ctrlKey && e.keyCode==36) { // Manual set keycode ctrl+home
+          e.preventDefault();
+          index = 0;
+          animateScroll(index,false,true,false);
+        } else if(e.ctrlKey && e.keyCode==35) { // Manual set keycode ctrl+end
+          e.preventDefault();
+          index = heights.length-1;
+          animateScroll(index,false,true,false);
+        } else if(e.keyCode==38 || e.keyCode==33) {
           if(index>0) {
             if(atTop()) {
               e.preventDefault();

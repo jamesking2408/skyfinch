@@ -38,14 +38,14 @@ $(function () {
   }
 });
 // Spinner
-var spinner = function () {
-  setTimeout(function () {
-    if ($('#spinner').length > 0) {
-      $('#spinner').removeClass('show');
-    }
-  }, 2500);
-};
-spinner();
+// var spinner = function () {
+//   setTimeout(function () {
+//     if ($('#spinner').length > 0) {
+//       $('#spinner').removeClass('show');
+//     }
+//   }, 3000);
+// };
+// spinner();
 $('document').ready(function () {
   var nav_height = 70;
   $("a[data-role='smoothscroll']").click(function (e) {
