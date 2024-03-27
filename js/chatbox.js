@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const sendChatBtn = document.querySelector(".chat-input span");
     const chatbox = document.querySelector(".chatbox");
     const chatbotToggler = document.querySelector(".chatbot-toggler");
+    const chatbotCloser = document.querySelector(".chatbot header span");
     let userMessage;
     const responses = [
         "How can I help you?Type:'Help'",
@@ -104,10 +105,20 @@ document.addEventListener('DOMContentLoaded', function () {
     sendChatBtn.addEventListener("click", handleChat)
     chatInput.addEventListener("keypress", handleKeyPress);
     // Add an event listener to the document to handle clicks
-    document.addEventListener("click", handleClickOutsideChatbot);
+    // document.addEventListener("click", handleClickOutsideChatbot);
     chatbotToggler.addEventListener("click", function () {
-        document.body.classList.toggle("show-chatbot");
         chatInput.focus();
+        document.body.classList.toggle("show-chatbot");
+        // const bodyClass = document.querySelector("body.show-chatbot");
+        // if (bodyClass) {
+        //     $.scrollify.disable();
+        // } else {
+        //     $.scrollify.enable();
+        // }
     });
+    chatbotCloser.addEventListener("click", function () {
+        document.body.classList.remove("show-chatbot");
+    });
+
     //<!-- Chat BOX JS End -->
 });

@@ -15,7 +15,7 @@
   opacity: 0;
   display: none;
   box-sizing: border-box;
-  transition: opacity 500ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
 }
 
 .modally-wrap .modally-underlay {
@@ -61,7 +61,7 @@
   font-size: 32px;
   line-height: 23px;
   opacity: 1;
-  transition: opacity 250ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
   font-weight: 300;
   /* Corrects font smoothing for webkit */
   -webkit-font-smoothing: inherit;

@@ -1,51 +1,96 @@
+// Details are Request form in Contact page
+(function ($) {
+    "use strict";
 
-function contact_sub() {
-    const na = document.querySelector("#na").value;
-    const id = document.querySelector("#id").value;
-    const sub = document.querySelector("#sub").value;
-    const msg = document.querySelector("#msg").value;
+    $("#contactus").validate({
+        rules: {
+            contactName: {
+                required: true
+            },
+            contactMail: {
+                required: true
+            },
+            contactSubject: {
+                required: true
+            },
+            contactMsg: {
+                maxlength: 250
+            }
+        },
+        messages: {
+            contactName: {
+                required: "Name must be entered"
+            },
+            contactMail: {
+                required: "Email ID must be entered"
+            },
+            contactSubject: {
+                required: "Subject must be entered"
+            }
+        },
+        errorElement: 'em',
+        highlight: function (element, errorClass) {
+            $(element).parent().addClass('has-danger')
+            $(element).addClass('form-control-danger')
+        }, errorPlacement: function (label, element) {
+            if (element.parent('.form-floating').length) {
+                label.insertAfter(element.parent());
+                label.addClass('text-danger');
+            } else if (element.hasClass('select2')) {
+                label.insertAfter(element.next('span'));
+                label.addClass('text-danger');
+            } else {
+                label.insertAfter(element);
+                label.addClass('text-danger');
+                // default
+            }
+        }
+    });
 
-    if ((na == "") && (id == "") && (sub == "") && (msg == "")) {
-        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
-        document.querySelector(".sub-popup1 p").innerHTML = "Check your ALL field!";
-        popup1.classList.add("open-popup");
-        document.querySelector(".exit1").addEventListener("click", function () {
-            document.querySelector("#na").focus();
-        })
+    function emailValid() {
+        var email = $('#contactMail').val();
+        if (email != "" && email != null) {
+            if (/^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i.test(email)) {
+                $("#contactMail").attr("class", "form-control");
+                $("#contactMail-errorLable").text('');
+                $("#contactMail-errorLable").attr("style", "display: none;");
+                return true;
+            }
+            else {
+                $("#contactMail").attr("class", "form-control error");
+                $("#contactMail-errorLable").text('Please enter valid Email ID');
+                $("#contactMail-errorLable").attr("style", "display: block;");
+                $("#contactMail").val();
+                return false;
+            }
+        }
+        else {
+            $("#contactMail").attr("class", "form-control");
+            $("#contactMail-errorLable").text('');
+            $("#contactMail-errorLable").attr("style", "display: none;");
+            return true;
+        }
     }
-    else if (na == "") {
-        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
-        document.querySelector(".sub-popup1 p").innerHTML = "Check your Name field!";
-        popup1.classList.add("open-popup");
-        document.querySelector(".exit1").addEventListener("click", function () {
-            document.querySelector("#na").focus();
-        })
-    }
-    else if (!mail_filter.test(id) || (id == "")) {
-        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
-        document.querySelector(".sub-popup1 p").innerHTML = "Check your mail field!";
-        popup1.classList.add("open-popup");
-        document.querySelector(".exit1").addEventListener("click", function () {
-            document.querySelector("#id").focus();
-        })
-    }
-    else if (sub == "") {
-        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
-        document.querySelector(".sub-popup1 p").innerHTML = "Check your Subject field!";
-        popup1.classList.add("open-popup");
-        document.querySelector(".exit1").addEventListener("click", function () {
-            document.querySelector("#sub").focus();
-        })
-    }
-    else if (msg == "") {
-        document.querySelector(".sub-popup1 h2").innerHTML = "<img src=\"img/sad.png\" width=\"60px\" height=\"50px\" border-radius=\"0\" margin=\"-10px 0px 0px 5px\"> SORRY!";
-        document.querySelector(".sub-popup1 p").innerHTML = "Check your Message field!";
-        popup1.classList.add("open-popup");
-        document.querySelector(".exit1").addEventListener("click", function () {
-            document.querySelector("#msg").focus();
-        })
-    }
-    else {
+
+    $('#contactMail').on('blur', function () {
+        emailValid();
+    });
+
+    $("#contactMail").on('input', function () {
+        $('#contactMail-errorLable').css('display', 'none').text("");
+    });
+
+    let popup = document.querySelector("#pop");
+
+    $("#closePopup2").on('click', function () {
+        popup.classList.remove("open-popup");
+        document.contactus.reset();
+    });
+    function contactSub() {
+        let na = document.querySelector("#contactName").value;
+        let id = document.querySelector("#contactMail").value;
+        let sub = document.querySelector("#contactSubject").value;
+        let msg = document.querySelector("#contactMsg").value;
         document.querySelector(".sub-popup h2").innerHTML = "Congrats!";
         document.querySelector(".sub-popup p").innerHTML = "Successfully submitted.<br>We will response SOON.<br>Thank you so much!";
         console.log("\t\t\t REQUEST FORM DETAILS" + "\n Name : " + na + " " + "\n Mail ID: " + id + " " + "\n Subject: " + sub + " " + "\n Project Details: " + msg);
@@ -58,13 +103,37 @@ function contact_sub() {
             "  <tr><td>Subject:</td><td>" + sub + "</td></tr>" +
             "  <tr><td>Project Details:</td><td>" + msg + "</td></tr>" +
             "</table></center>";
-        Email.send({
-            SecureToken: "43b9e9f4-c4ca-4b5e-a846-c43c61f9f360",
-            To: 'mktg@skyfinch.com',
-            From: "sjkumarsri@gmail.com",
-            Subject: na,
-            Body: body
-        })
+        // Email.send({
+        //     SecureToken: "43b9e9f4-c4ca-4b5e-a846-c43c61f9f360",
+        //     To: 'mktg@skyfinch.com',
+        //     From: "sjkumarsri@gmail.com",
+        //     Subject: id,
+        //     Body: body
+        // })
     }
-}
 
+    $("#contactSub").on('click', function () {
+        var fields = ["#contactName", "#contactMail", "#contactSubject", "#contactMsg"];
+        var currentIndex = 0;
+
+        function focusNextEmptyField() {
+            for (var i = currentIndex; i < fields.length; i++) {
+                if ($(fields[i]).val() === '') {
+                    $(fields[i]).focus();
+                    currentIndex = i;
+                    return;
+                }
+            }
+            $(fields[0]).focus();
+            currentIndex = 0;
+        }
+        if (($("#contactus").valid()) && (emailValid())) {
+            contactSub();
+        }
+        else {
+            emailValid();
+            focusNextEmptyField();
+        }
+    });
+
+})(jQuery);

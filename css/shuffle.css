@@ -19,6 +19,10 @@ input[type=radio] {
   display: none;
 }
 
+.modal1 {
+  display: none;
+}
+
 .card1 {
   position: absolute;
   transition: transform 0.4s ease;
@@ -127,7 +131,7 @@ input[type=radio] {
 #item-4:checked~.cards1 #song-4,
 #item-5:checked~.cards1 #song-5,
 #item-6:checked~.cards1 #song-6 {
-  transform: translateX(0) scale(1.08);
+  transform: translateX(0) translateY(1rem) scale(1.08);
   opacity: 1;
   z-index: 1;
 }
@@ -149,8 +153,8 @@ input[type=radio] {
   }
 
   .bg-00 .container {
-    width: 300px;
-    height: 280px;
+    width: 265px;
+    height: 250px;
     left: 0;
     bottom: 0;
     transform: translateX(-4%);
@@ -221,15 +225,22 @@ input[type=radio] {
 
 @media (min-width:376px) and (max-width:425px) {
   .bg-00 {
-    height: max-content !important;
+    height: 30rem !important;
   }
 
-  .bg-00 .container {
-    width: 320px;
-    height: 250px;
-    left: 0;
-    bottom: 0;
-    transform: translateX(-2%) translateY(1.2rem) !important;
+  .bg-00 {
+    & .container-fluid {
+      position: relative;
+      top: 1rem;
+    }
+
+    & .container {
+      width: 320px;
+      height: 250px;
+      left: 0;
+      bottom: 0;
+      transform: translateX(-1rem) translateY(2.9rem) !important;
+    }
   }
 
   /* Payroll Images */
@@ -270,7 +281,7 @@ input[type=radio] {
 
   .bg-00 .container1 {
     width: 90% !important;
-    transform: translate(2rem, 2rem);
+    transform: translate(2rem, 4rem);
   }
 
   /* Payroll Images */
@@ -307,7 +318,7 @@ input[type=radio] {
     width: 500px;
     height: 320px;
     transform: translate(0rem, 0.5rem);
-}
+  }
 
   /* Payroll Images */
   .card1 .img-pay {
@@ -349,7 +360,31 @@ input[type=radio] {
   .bg-00 .container {
     position: relative;
     top: 0;
-    transform: translateY(4rem);
+    transform: translateY(2rem);
+  }
+
+  #item-1:checked~.cards1 #song-6,
+  #item-2:checked~.cards1 #song-1,
+  #item-3:checked~.cards1 #song-2,
+  #item-4:checked~.cards1 #song-3,
+  #item-5:checked~.cards1 #song-4,
+  #item-6:checked~.cards1 #song-5 {
+    transform: translateX(-25%) scale(0.8) !important;
+  }
+
+  #item-1:checked~.cards1 #song-2,
+  #item-2:checked~.cards1 #song-3,
+  #item-3:checked~.cards1 #song-4,
+  #item-4:checked~.cards1 #song-5,
+  #item-5:checked~.cards1 #song-6,
+  #item-6:checked~.cards1 #song-1 {
+    transform: translateX(25%) scale(0.8) !important;
+  }
+
+  .bg-00 .container1 {
+    position: relative;
+    top: 0;
+    transform: translateY(30rem);
   }
 }
 
@@ -362,11 +397,5 @@ input[type=radio] {
   .card1 .img-pay {
     width: 600px !important;
     height: 350px !important;
-  }
-}
-
-@media (min-width:500px) and (max-width:1440px) {
-  .modal1 {
-    display: none;
   }
 }

@@ -1,8 +1,23 @@
 (function ($) {
     "use strict";
 
-    // <!-- Change select option method -->
 
+    $(window).on('load', function () {
+        $(".modal-content").load("searchModal.html");
+        if (screen.width < 768) {
+            // $('.page-top img').removeAttr("data-bs-toggle");
+            $('[data-bs-toggle="tooltip"]').tooltip('dispose');
+        } else {
+            $('.page-top img').attr("data-bs-toggle", "tooltip");
+        }
+        $(".row_tab .tab-pane, .row_tab .tab-row1, .swiper .tab-pane, .tabPaneScroll").mCustomScrollbar({
+            scrollButtons: { enable: true },
+            theme: "dark",
+            scrollbarPosition: "inside"
+        });
+    });
+
+    // <!-- Change select option method -->
     $(document).ready(function () {
         $('.form-select').on('change', function () {
             var selectedValue = $(this).val();
@@ -61,37 +76,40 @@
     new WOW().init();
 
     //<!-- pop up -->
-    $(".mytooltip").hover(
-        function (e) {
-            // e.preventDefault();
-            e.stopPropagation();
-            $(this).find('.tooltip-content').delay(2000).fadeIn();
-            $(this).find('.tooltip-content').hover(
-                function (e) {
-                    // e.preventDefault();
-                    e.stopPropagation();
-                    $('.tooltip-content').stop(true);
-                },
-                function (e) {
-                    // e.preventDefault();
-                    e.stopPropagation();
-                    $('.tooltip-content').hide();
-                    $('.tooltip-content').stop();
-                }
-            );
-            $(this).find('.tooltip-content').delay(4000).fadeOut();
-        },
-        function (e) {
-            // e.preventDefault();
-            e.stopPropagation();
-            $('.tooltip-content').stop();
+    function myTooltip() {
+        $(".mytooltip").hover(
+            function (e) {
+                // e.preventDefault();
+                e.stopPropagation();
+                $(this).find('.tooltip-content').delay(900).fadeIn();
+                $(this).find('.tooltip-content').hover(
+                    function (e) {
+                        // e.preventDefault();
+                        e.stopPropagation();
+                        $('.tooltip-content').stop(true);
+                    },
+                    function (e) {
+                        // e.preventDefault();
+                        e.stopPropagation();
+                        $('.tooltip-content').hide();
+                        $('.tooltip-content').stop();
+                    }
+                );
+                $(this).find('.tooltip-content').delay(4000).fadeOut();
+            },
+            function (e) {
+                // e.preventDefault();
+                e.stopPropagation();
+                $('.tooltip-content').stop();
+                $('.tooltip-content').hide();
+            }
+        );
+        $('#spl1, #spl2').click(function () {
             $('.tooltip-content').hide();
-        }
-    );
-    $('#spl1, #spl2').click(function () {
-        $('.tooltip-content').hide();
-    });
+        });
+    }
     //<!-- pop up end-->
+
     //section change start
     // Filter
     $('.sec1 a').click(function () {
@@ -101,6 +119,13 @@
         } else {
             $('.product').not('.' + value).hide();
             $('.product').filter('.' + value).show();
+            if (screen.width < 768) {
+                var tabElement = $('.' + value);
+                var scrollPosition = tabElement.offset().top;
+                $('html, body').animate({
+                    scrollTop: scrollPosition - 250
+                }, 'smooth');
+            }
         }
     })
 
@@ -109,6 +134,14 @@
         $(this).addClass('active_tab');
     })
 
+    // mCustomScroll script
+    // $(window).on("load", function () {
+    //     $("#content-4").mCustomScrollbar({
+    //         // scrollButtons: { enable: true },
+    //         // theme: "dark-thin",
+    //         // scrollbarPosition: "inside"
+    //     });
+    // });
 
     //<!-- update Section Scroll effects -->
 
@@ -116,6 +149,12 @@
         setTimeout(() => {
             screenCheck();
         }, 1800);
+
+        // Popup tooltip
+        if (screen.width < 765) {
+            myTooltip();
+        }
+
     });
 
     $(window).on('resize', function () {
@@ -162,27 +201,36 @@
     }
     //end of scroll effects
 
-    // Back to top button
-    // Index page
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 0) {
-            $('.back-to-top').fadeIn('slow');
-            $('.page-top').fadeIn('slow');
-        } else {
-            $('.back-to-top').fadeOut('slow');
-            $('.page-top').fadeOut('slow');
+    // Navbar scroll background
+    $(".hamburger").on("click", function (e) {
+        e.preventDefault();
+        if ($(this).hasClass("is-active")) {
+            $("body").css("overflow", "scroll"); // Disables scrolling
+        }
+        else {
+            $("body").css("overflow", "hidden"); // Enables scrolling
         }
     });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({
-            scrollTop: 10
-        }, 10, 'easeInOutExpo');
-        return false;
-    });
 
-    $('.page-top').click(function () {
-        $('html, body').animate({ scrollTop: 10 }, 10, 'easeInOutExpo');
-        return false;
+    // Back to top button
+    // Index page
+    $(document).ready(function () {
+        $('.page-top').hide();
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 450) {
+                $('.back-to-top').show();
+                $('.page-top').show();
+                $('.back-to-top').fadeIn('slow');
+                $('.page-top').fadeIn('slow');
+            } else {
+                $('.back-to-top').fadeOut('slow');
+                $('.page-top').fadeOut('slow');
+            }
+        });
+        $('.page-top').click(function () {
+            $('html, body').animate({ scrollTop: 10 }, 10, 'easeInOutExpo');
+            return false;
+        });
     });
     // End of back to top button
 
@@ -192,47 +240,37 @@
         time: 2000
     });
 
-
     //<!-- OwlCarousel script start -->
-    var owl = $('.cus');
+    var owl = $('#part-proud .cus');
     owl.owlCarousel({
         rtl: false,
         items: 5,
-        autoplay: true,
-        slideTransition: 'linear',
-        // autoplayTimeout: 4000,
-        // autoplaySpeed: 6000,
-        nav: false,
         loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplaySpeed: 3000,
+        autoplayHoverPause: true,
+        nav: true,
         dots: false,
         responsive: {
             0: {
-                items: 2
-            },
-            600: {
                 items: 3
             },
+            600: {
+                items: 4
+            },
             1000: {
-                items: 6
+                items: 5
             }
         }
     });
-    // $('.play').on('click', function () {
-    //     owl.trigger('play.owl.autoplay', [10])
-    // })
-    // $('.stop').on('click', function () {
-    //     owl.trigger('stop.owl.autoplay')
-    // })
 
     // change direction OwlCarousel
-    var owl1 = $('.cus1');
+    var owl1 = $('.cus');
     owl1.owlCarousel({
         rtl: true,
         items: 5,
         autoplay: true,
-        slideTransition: 'linear',
-        // autoplayTimeout: 4000,
-        // autoplaySpeed: 6000,
         nav: false,
         loop: true,
         dots: false,
@@ -254,11 +292,11 @@
     owl.owlCarousel({
         rtl: true,
         items: 5,
-        autoplay: true,
-        slideTransition: 'linear',
-        autoplayTimeout: 4000,
-        autoplaySpeed: 6000,
         loop: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 5000,
+        autoplayHoverPause: false,
         dots: false,
         responsive: {
             0: {
@@ -271,17 +309,17 @@
                 items: 5
             }
         }
-    });
+    }).trigger("play.owl.autoplay");
 
     var owl = $('.cus_profile_r');
     owl.owlCarousel({
         rtl: false,
         items: 5,
-        autoplay: true,
-        slideTransition: 'linear',
-        autoplayTimeout: 4000,
-        autoplaySpeed: 6000,
         loop: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 5000,
+        autoplayHoverPause: false,
         dots: false,
         responsive: {
             0: {
@@ -294,7 +332,7 @@
                 items: 5
             }
         }
-    });
+    }).trigger("play.owl.autoplay");
 
 
     //<!-- OwlCarousel script end -->
@@ -334,158 +372,105 @@
 
     //////////////////////////////////////////////////////////////////////////////////////////////////
 
-    // Search box start
 
-    var exampleModal = $("#exampleModal"),
-        exampleModalClose = $(".modal-header input");
+    document.addEventListener("DOMContentLoaded", function () {
 
-    exampleModal.on("shown.bs.modal", function () {
-        document.activeElement.blur();
-        exampleModalClose.focus();
+        // Dropdown mobile and tab view click event
+        if (screen.width < 992) {
+            DropdownMenuResponsive();
+        }
     });
-    $("#searchButton").click(function () {
-        $.scrollify.disable();
-        var showing = $('.modal-backdrop');
-        var showing1 = $('.modal');
-        var modal_body = $('.modal-body .content');
-        $('#searchbar').click(function () {
-            modal_body.show();
-            $.scrollify.disable();
-        });
-        showing.show();
-        showing1.show();
-        modal_body.hide();
-        document.searchForm.reset();// Erase the field
-        setInputMessage(0); // Erase the no result found Element
-        document.addEventListener("keydown", (e) => {
-            if (e.key === "Escape") {
-                $.scrollify.enable();
-            }
-        });
-    });
-
-    $(".searchLink").click(function () {
-        var fade = $('.modal-backdrop');
-        var fade1 = $('.modal');
-        fade.hide();
-        fade1.hide();
-        $.scrollify.enable();
-    });
-    $(".search-deco-underline").click(function () {
-        var fade = $('.modal-backdrop');
-        var fade1 = $('.modal');
-        fade.hide();
-        fade1.hide();
-        // $.scrollify.enable();
-    });
-    exampleModal.click(function () {
-        $.scrollify.enable();
-    });
-
-
-
 
     // Dropdown toggle start
 
-    // Toggle dropdown on click
-    var solutionsDropdown = document.getElementById('solutionsDropdown');
-    var solutionsDropdown1 = document.getElementById('solutionsDropdown1');
-    solutionsDropdown.addEventListener('click', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        var dropdownMenu = this.nextElementSibling;
-        dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
-    });
+    function DropdownMenuResponsive() {
+        // Toggle dropdown on click
+        var solutionsDropdown = document.getElementById('solutionsDropdown');
+        var solutionsDropdown1 = document.getElementById('solutionsDropdown1');
+        var dropdownMenu = solutionsDropdown.nextElementSibling;
+        var dropdownMenu1 = solutionsDropdown1.nextElementSibling;
 
-    solutionsDropdown1.addEventListener('click', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        var dropdownMenu = this.nextElementSibling;
-        dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
-    });
+        // Toggle dropdown submenu on button click
+        var applicationBtn = document.getElementById('applicationBtn');
+        var webBtn = document.getElementById('webBtn');
+        var applicationContent = document.querySelector('.dropdown-content1.application');
+        var webContent = document.querySelector('.dropdown-content1.web');
 
-    // Toggle dropdown submenu on button click
-    var applicationBtn = document.getElementById('applicationBtn');
-    var webBtn = document.getElementById('webBtn');
-    var applicationContent = document.querySelector('.dropdown-content1.application');
-    var webContent = document.querySelector('.dropdown-content1.web');
-
-    function toggleDropdownContent(e, content) {
-        e.preventDefault();
-        e.stopPropagation();
-        content.style.display = (content.style.display === 'block') ? 'none' : 'block';
-    }
-
-    applicationBtn.addEventListener('click', function (e) {
-        toggleDropdownContent(e, applicationContent);
-        webContent.style.display = 'none';
-    });
-
-    webBtn.addEventListener('click', function (e) {
-        toggleDropdownContent(e, webContent);
-        applicationContent.style.display = 'none';
-    });
-
-    // Close dropdowns when clicking outside
-    document.addEventListener('click', function (e) {
-        var target = e.target;
-
-        if (!target.closest('.navbar-nav .nav-item.dropdown')) {
-            var dropdownMenus = document.querySelectorAll('.navbar-nav .nav-item.dropdown .dropdown-menu');
-            dropdownMenus.forEach(function (menu) {
-                menu.style.display = 'none';
-            });
-        }
-        if (!target.closest('.dropdown-content1')) {
-            document.querySelectorAll('.dropdown-content1').forEach(function (content) {
-                content.style.display = 'none';
-            });
-        }
-        if (!target.closest('#navbarCollapse')) {
-            var mainNav = document.querySelector('#navbarCollapse');
-            if (mainNav.classList.contains('show')) {
-                mainNav.classList.remove('show');
-            }
-        }
-    });
-
-    // Navbar toggler icon
-    var forEach = function (t, o, r) {
-        if ("[object Object]" === Object.prototype.toString.call(t))
-            for (var c in t)
-                Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
-        else for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t);
-    };
-    var hamburgers = document.querySelectorAll(".hamburger");
-
-    function closeMenu() {
-        // Iterate through each hamburger element
-        forEach(hamburgers, function (hamburger) {
-            // Check if the hamburger has the "is-active" class
-            if (hamburger.classList.contains("is-active")) {
-                // Remove the "is-active" class
-                hamburger.classList.remove("is-active");
-            }
-        });
-    }
-
-    if (hamburgers.length > 0) {
-        forEach(hamburgers, function (hamburger) {
-            hamburger.addEventListener(
-                "click",
-                function (event) {
-                    // Prevent the click event from propagating to the document
-                    event.stopPropagation();
-                    // Toggle the "is-active" class
-                    this.classList.toggle("is-active");
-                },
-                false
-            );
+        solutionsDropdown.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+            dropdownMenu1.style.display = 'none';
+            webContent.style.display = 'none';
+            applicationContent.style.display = 'none';
         });
 
-        // Add a click event listener to the document to close the menu when clicked outside
-        document.addEventListener("click", closeMenu);
+        solutionsDropdown1.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            dropdownMenu1.style.display = (dropdownMenu1.style.display === 'block') ? 'none' : 'block';
+            dropdownMenu.style.display = 'none';
+            webContent.style.display = 'none';
+            applicationContent.style.display = 'none';
+        });
+
+        function toggleDropdownContent(e, content) {
+            e.preventDefault();
+            e.stopPropagation();
+            content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+        }
+
+        applicationBtn.addEventListener('click', function (e) {
+            toggleDropdownContent(e, applicationContent);
+            webContent.style.display = 'none';
+        });
+
+        webBtn.addEventListener('click', function (e) {
+            toggleDropdownContent(e, webContent);
+            applicationContent.style.display = 'none';
+        });
+
+
+        // Close dropdowns when clicking outside
+        // document.addEventListener('click', function (e) {
+        //     e.preventDefault();
+        //     dropdownMenu.style.display = 'none';
+        //     dropdownMenu1.style.display = 'none';
+        // });
+        // Navbar toggler icon
+        var forEach = function (t, o, r) {
+            if ("[object Object]" === Object.prototype.toString.call(t))
+                for (var c in t)
+                    Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
+            else for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t);
+        };
+        var hamburgers = document.querySelectorAll(".hamburger");
+
+        if (hamburgers.length > 0) {
+            forEach(hamburgers, function (hamburger) {
+                hamburger.addEventListener(
+                    "click",
+                    function (event) {
+                        // Prevent the click event from propagating to the document
+                        event.stopPropagation();
+                        // Toggle the "is-active" class
+                        this.classList.toggle("is-active");
+                        dropdownMenu1.style.display = 'none';
+                        dropdownMenu.style.display = 'none';
+                        webContent.style.display = 'none';
+                        applicationContent.style.display = 'none';
+                    },
+                    false
+                );
+            });
+        }
     }
+
+
 })(jQuery);
 
-
+//  Product Enquiry form automatically fill plan price
+function choosePlan(planName, planPrice) {
+    localStorage.setItem('selectedPlanName', planName);
+    localStorage.setItem('selectedPlanPrice', planPrice);
+}

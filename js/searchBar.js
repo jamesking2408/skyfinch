@@ -111,11 +111,22 @@ function jumpToProduct(sectionId) {
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
+function jumpToContactUs(sectionId) {
+    const url = new URL('/contactUs.html', window.location.origin);
+    const link = `${url}#${sectionId}`;
+    window.location.href = link;
+}
 
 let searchInput = document.getElementById("searchbar");
 let inputMessage = document.getElementById("input-message");
 
-searchInput.addEventListener("keyup", searchContent);
+searchInput.addEventListener("keyup", function () {
+    // debugger;
+    document.querySelector('#content-3').scrollTo(0, 0); // Scroll to the top of the page
+    searchContent();
+    searchURL();
+    currentListUrl();
+});
 
 function searchContent() {
     const userInput = (searchInput.value || '').toLowerCase();
@@ -125,15 +136,22 @@ function searchContent() {
     for (let i = 0; i < contentElements.length; i++) {
         const contentText = contentElements[i].innerHTML.toLowerCase();
         const contentDisplay = contentText.includes(userInput) ? "list-item" : "none";
+        const modalBody = document.querySelector('#content-3');
         contentElements[i].style.display = contentDisplay;
         count += contentDisplay === "none" ? 0 : 1;
+        if (userInput === '' || userInput === ' ') {
+            modalBody.style.display = "none";
+        }
+        else {
+            modalBody.style.display = "block";
+        }
     }
     highlight(userInput);
     setInputMessage(userInput === "" ? "" : count);
 }
 
 function setInputMessage(n) {
-    let message = "No results found." && "&nbsp;";
+    let message = '';
     if (typeof n === "number") {
         if (!n) {
             message = "No results found.";
@@ -143,18 +161,47 @@ function setInputMessage(n) {
     }
     inputMessage.innerHTML = message;
 }
+
+function currentListUrl() {
+    var currentPageUrl = document.querySelector(".nav-item.nav-link.active");
+    var currentSubPageUrl = document.querySelector(".submenu a.active");
+    var anchorElements = document.querySelectorAll("ul.list-unstyled li > a");
+    // debugger;
+    if (currentPageUrl) {
+        anchorElements.forEach(function (element) {
+            if (element.getAttribute('href') === currentPageUrl.getAttribute('href')) {
+                element.parentElement.remove();
+            }
+        });
+    } else if (currentSubPageUrl) {
+        anchorElements.forEach(function (element) {
+            if (element.getAttribute('href') === currentSubPageUrl.getAttribute('href')) {
+                element.parentElement.remove();
+            }
+        });
+    }
+    else {
+        var currentPageUrl = window.location.pathname.split("/").pop();
+        anchorElements.forEach(function (element) {
+            if (element.getAttribute('href') === currentPageUrl) {
+                element.parentElement.remove();
+            }
+        });
+    }
+}
+
 // Showing URL in Search list
-document.addEventListener("DOMContentLoaded", function(){
+function searchURL() {
     const elementsWithClass = document.querySelectorAll(".urlHash");
 
     elementsWithClass.forEach(element => {
         const urlHash = new URL(element.href);
         const domain = urlHash.origin;
         const pageName = urlHash.pathname.split("/").pop();
-        const fullURL = domain +"/"+ pageName;
+        const fullURL = domain + "/" + pageName;
         element.innerHTML = fullURL;
     });
-});
+}
 
 let opars = document.querySelectorAll(".paragraph"); // Select all elements with the class .paragraph
 
@@ -176,3 +223,53 @@ function highlight(search) {
         }
     });
 }
+
+
+// Search box start
+$(document).ready(function () {
+    var exampleModal = $("#exampleModal"),
+        exampleModalClose = $(".modal-header input");
+
+    exampleModal.on("shown.bs.modal", function () {
+        document.activeElement.blur();
+        exampleModalClose.focus();
+    });
+    $(".searchButton_cls").click(function () {
+        $.scrollify.disable();
+        var showing = $('.modal-backdrop');
+        var showing1 = $('.modal');
+        var modal_body = $('.modal-body .content');
+        showing.show();
+        showing1.show();
+        modal_body.hide();
+        document.searchForm.reset();// Erase the field
+        setInputMessage(null); // Erase the no result found Element
+        $('#exampleModal').on('hidden.bs.modal', function (e) {
+            $.scrollify.enable();
+        });
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") {
+                $.scrollify.enable();
+            }
+        });
+        $('.searchForm .btn-close').on('click', function () {
+            $.scrollify.enable();
+        });
+    });
+
+    $(".searchLink").click(function () {
+        var fade = $('.modal-backdrop');
+        var fade1 = $('.modal');
+        fade.hide();
+        fade1.hide();
+        $.scrollify.enable();
+    });
+    $(".search-deco-underline").click(function () {
+        var fade = $('.modal-backdrop');
+        var fade1 = $('.modal');
+        fade.hide();
+        fade1.hide();
+        $.scrollify.enable();
+    });
+
+});

@@ -2,6 +2,7 @@
 
 /* Point of sales start */
 .img-pos {
+    position: relative;
     background-image: url(../img/pos-bg.jpg);
     width: 100%;
     height: inherit !important;
@@ -30,11 +31,11 @@
 }
 
 .border-pos {
-    position: relative;
+    position: absolute;
     width: min-content !important;
     left: 0;
     bottom: 0;
-    transform: translateX(2rem) translateY(30rem);
+    transform: translateX(1.5rem) translateY(-1rem);
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -44,16 +45,20 @@
 }
 
 .border-pos:hover {
-    transform: translateX(2rem) translateY(29.5rem) !important;
+    transform: translateX(1.5rem) translateY(-1.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.767);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+nav ol.breadcrumb {
+    align-items: center;
 }
 
 .nav-pills-custom .nav-link {
@@ -100,13 +105,12 @@
 
 .bg-12 .row .tab-row1 {
     max-height: 530px !important;
-    /* height: 530px !important; */
     height: fit-content !important;
 }
 
-/* #tab-sec .tab-content {
-    border: 4px var(--primary) solid;
-} */
+.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: transparent !important;
+}
 
 #tab-sec .nav-link.active {
     color: #ffffff;
@@ -382,6 +386,7 @@
     height: 100vh;
 }
 
+
 /* #sec8 #module_card,
 #module_card .h-card {
     max-height: 445px !important;
@@ -399,7 +404,7 @@
     -webkit-transition: .4s;
     -moz-transition: .4s;
     -o-transition: .4s;
-    transition: .4s
+    transition: .4s;
 }
 
 #module_card #card:active::before,
@@ -523,6 +528,7 @@
 /* Point of sales End */
 /* Hotel management systems start */
 .img-hms {
+    position: relative;
     background-image: url(../img/hotel-recp.jpg);
     width: 100%;
     height: 100%;
@@ -534,11 +540,11 @@
 }
 
 .border-hms {
-    position: relative;
+    position: absolute;
     width: min-content !important;
     left: 0;
     bottom: 0;
-    transform: translateX(2rem) translateY(30rem);
+    transform: translateX(2rem) translateY(-2rem);
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -548,7 +554,7 @@
 }
 
 .border-hms:hover {
-    transform: translateX(2rem) translateY(29.5rem) !important;
+    transform: translateX(2rem) translateY(-2.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -622,6 +628,7 @@ section.bg-00 {
 /* Hotel management systems End */
 /* Restaurant management systems Start */
 .img-rms {
+    position: relative;
     background-image: url(../img/restaurant-bg.jpg);
     width: 100%;
     height: 100%;
@@ -633,11 +640,11 @@ section.bg-00 {
 }
 
 .border-rms {
-    position: relative;
+    position: absolute;
     width: min-content !important;
     left: 0;
     bottom: 0;
-    transform: translateX(2rem) translateY(30rem);
+    transform: translateX(2rem) translateY(-2rem);
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -647,7 +654,7 @@ section.bg-00 {
 }
 
 .border-rms:hover {
-    transform: translateX(2rem) translateY(29.5rem) !important;
+    transform: translateX(2rem) translateY(-2.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -663,6 +670,7 @@ section.bg-00 {
 
 /* Smart Skyfinch Start */
 .img-ssfinch {
+    position: relative;
     background-image: url(../img/smart-bg.jpg);
     width: 100%;
     height: 100%;
@@ -674,11 +682,11 @@ section.bg-00 {
 }
 
 .border-ssfinch {
-    position: relative;
-    width: 49% !important;
+    position: absolute;
+    width: min-content !important;
     left: 0;
     bottom: 0;
-    transform: translateX(2rem) translateY(30rem) !important;
+    transform: translateX(2rem) translateY(-2rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -688,7 +696,7 @@ section.bg-00 {
 }
 
 .border-ssfinch:hover {
-    transform: translateX(2rem) translateY(29.5rem) !important;
+    transform: translateX(2rem) translateY(-2.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -703,6 +711,7 @@ section.bg-00 {
 /* Smart Skyfinch End */
 /* Visitor Management system start */
 .img-vms {
+    position: relative;
     background-image: url(../img/vms-bg.jpg);
     width: 100%;
     height: 100%;
@@ -714,11 +723,11 @@ section.bg-00 {
 }
 
 .border-vms {
-    position: relative;
+    position: absolute;
     width: min-content !important;
     left: 0;
     bottom: 0;
-    transform: translateX(2rem) translateY(30rem) !important;
+    transform: translateX(2rem) translateY(-2rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -728,7 +737,7 @@ section.bg-00 {
 }
 
 .border-vms:hover {
-    transform: translateX(2rem) translateY(29.5rem) !important;
+    transform: translateX(2rem) translateY(-2.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -743,6 +752,7 @@ section.bg-00 {
 /* Visitor Management system End */
 /* CRM start */
 .img-crm {
+    position: relative;
     background-image: url(../img/crm-bg.jpg);
     width: 100%;
     height: 100%;
@@ -756,11 +766,11 @@ section.bg-00 {
 }
 
 .border-crm {
-    position: relative;
+    position: absolute;
     width: max-content !important;
     left: 0;
     bottom: 0;
-    transform: translateX(2rem) translateY(30rem) !important;
+    transform: translateX(2rem) translateY(-2rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -770,7 +780,7 @@ section.bg-00 {
 }
 
 .border-crm:hover {
-    transform: translateX(2rem) translateY(29.5rem) !important;
+    transform: translateX(2rem) translateY(-2.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -785,6 +795,7 @@ section.bg-00 {
 /* CRM End */
 /* CTM start */
 .img-ctm {
+    position: relative;
     background-image: url(../img/ctm-bg.jpg);
     width: 100%;
     height: 100%;
@@ -798,11 +809,11 @@ section.bg-00 {
 }
 
 .border-ctm {
-    position: relative;
+    position: absolute;
     width: min-content !important;
     left: 0;
     bottom: 0;
-    transform: translateX(2rem) translateY(30rem) !important;
+    transform: translateX(2rem) translateY(-2.5rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -812,7 +823,7 @@ section.bg-00 {
 }
 
 .border-ctm:hover {
-    transform: translateX(2rem) translateY(29.5rem) !important;
+    transform: translateX(2rem) translateY(-3rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -827,6 +838,7 @@ section.bg-00 {
 /* CTM End */
 /* FMS Start */
 .img-fms {
+    position: relative;
     background-image: url(../img/fms.svg);
     width: 100%;
     height: 100%;
@@ -840,11 +852,11 @@ section.bg-00 {
 }
 
 .border-fms {
-    position: relative;
+    position: absolute;
     width: min-content !important;
     left: 0;
     bottom: 0;
-    transform: translateX(2rem) translateY(30rem) !important;
+    transform: translateX(2rem) translateY(-2rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -854,7 +866,7 @@ section.bg-00 {
 }
 
 .border-fms:hover {
-    transform: translateX(2rem) translateY(29.5rem) !important;
+    transform: translateX(2rem) translateY(-2.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -869,6 +881,7 @@ section.bg-00 {
 /* FMS End */
 /* EMS Start */
 .img-ems {
+    position: relative;
     background-image: url(../img/ems-bg.jpg);
     width: 100%;
     height: 100%;
@@ -882,11 +895,11 @@ section.bg-00 {
 }
 
 .border-ems {
-    position: relative;
+    position: absolute;
     width: min-content !important;
     left: 0;
     bottom: 0;
-    transform: translateX(2rem) translateY(30rem) !important;
+    transform: translateX(2rem) translateY(-2rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -896,7 +909,7 @@ section.bg-00 {
 }
 
 .border-ems:hover {
-    transform: translateX(2rem) translateY(29.5rem) !important;
+    transform: translateX(2rem) translateY(-2.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -911,6 +924,7 @@ section.bg-00 {
 /* EMS End */
 /* PMS Start */
 .img-pms {
+    position: relative;
     background-image: url(../img/pms-bg.png);
     width: 100%;
     height: 100%;
@@ -924,11 +938,11 @@ section.bg-00 {
 }
 
 .border-pms {
-    position: relative;
+    position: absolute;
     width: min-content !important;
     left: 0;
     bottom: 0;
-    transform: translateX(2rem) translateY(30rem) !important;
+    transform: translateX(2rem) translateY(-2rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -938,7 +952,7 @@ section.bg-00 {
 }
 
 .border-pms:hover {
-    transform: translateX(2rem) translateY(29.5rem) !important;
+    transform: translateX(2rem) translateY(-2.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -953,6 +967,7 @@ section.bg-00 {
 /* PMS End */
 /* sales and Services Start */
 .img-sales {
+    position: relative;
     background-image: url(../img/sales-bg.jpg);
     width: 100%;
     height: 100%;
@@ -966,11 +981,11 @@ section.bg-00 {
 }
 
 .border-sales {
-    position: relative;
+    position: absolute;
     width: min-content !important;
     left: 0;
     bottom: 0;
-    transform: translateX(2rem) translateY(30rem) !important;
+    transform: translateX(2rem) translateY(-2rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -980,7 +995,7 @@ section.bg-00 {
 }
 
 .border-sales:hover {
-    transform: translateX(2rem) translateY(29.5rem) !important;
+    transform: translateX(2rem) translateY(-2.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -1000,7 +1015,6 @@ section.bg-00 {
     background-position: center !important;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 50px !important;
 }
 
 .pt-70 {
@@ -1297,8 +1311,8 @@ ul>.nt-x {
     position: absolute;
     display: block;
     width: 100%;
-    height: inherit;
-    background-image: linear-gradient(to bottom, #00CBA9, #05ddb9, #06eec7, #15f8d2, #27fcd8, #3afddd, #50fade, #66fae1, #7ef8e4, #94fcea, #aafaed, #bef8ee);
+    height: 100%;
+    background-image: linear-gradient(to top, #02e2bd, #02ebc4, #02f5cc, #15f8d2, #27fcd8, #3afddd, #50fade, #66fae1, #7ef8e4, #94fcea, #aafaed, #bef8ee);
     top: 0;
     left: 0;
     opacity: 0.4;
@@ -1306,6 +1320,7 @@ ul>.nt-x {
 }
 
 .bg-terms {
+    position: relative;
     background-image: url(../img/policy_terms.png);
     background-position: top center;
     background-repeat: no-repeat;
@@ -1318,6 +1333,22 @@ ul>.nt-x {
     width: 100%;
     height: auto;
     background-color: hsla(176, 92%, 90%, 0.29);
+
+    & .nav .nav-link {
+        width: fit-content !important;
+
+        & .font-weight-bold {
+            font-weight: 400;
+        }
+    }
+
+    & .nav .nav-link.active {
+        color: #001c44 !important;
+
+        & .font-weight-bold {
+            font-weight: 500;
+        }
+    }
 }
 
 #terms_tab .tab-content>.tab-pane {
@@ -1339,6 +1370,7 @@ ul>.nt-x {
 }
 
 .bg-anti {
+    position: relative;
     background-image: url(../img/policy-pg.png);
     background-position: top center;
     background-repeat: no-repeat;
@@ -1360,6 +1392,22 @@ ul>.nt-x {
     width: 100%;
     height: 100%;
     background-color: hsla(176, 92%, 90%, 0.29);
+
+    & .nav .nav-link {
+        width: fit-content !important;
+
+        & .font-weight-bold {
+            font-weight: 400;
+        }
+    }
+
+    & .nav .nav-link.active {
+        color: #001c44 !important;
+
+        & .font-weight-bold {
+            font-weight: 500;
+        }
+    }
 }
 
 .bg-anti-spam::before {
@@ -1376,6 +1424,7 @@ ul>.nt-x {
 }
 
 .bg-anti-spam {
+    position: relative;
     background-image: url(../img/conf-img.png);
     background-position: top center;
     background-repeat: no-repeat;
@@ -1385,21 +1434,52 @@ ul>.nt-x {
 }
 
 .policy_tab_cp {
+    position: relative;
     background-image: url(../img/img-grd.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    & .nav .nav-link {
+        width: fit-content !important;
+
+        & .font-weight-bold {
+            font-weight: 400;
+        }
+    }
+
+    & .nav .nav-link.active {
+        color: #001c44 !important;
+
+        & .font-weight-bold {
+            font-weight: 500;
+        }
+    }
+}
+
+.bg-spam {
+    position: relative;
+    background-image: url(../img/bg-anti-spam.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
 }
 
-.bg-spam {
-    background-image: url(../img/bg-anti-spam.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
+@keyframes movewaves {
+    0% {
+        background-position: 0% 30%;
+    }
+
+    50% {
+        background-position: 50% 30%;
+    }
+
+    100% {
+        background-position: 90% 30%;
+    }
 }
 
 .bg-spam::before {
@@ -1418,7 +1498,23 @@ ul>.nt-x {
 .policy_tab_ap {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to top, #fcd2be, #fcd2be, #fcd2be, #fcd2be, #fcd2be, #fcd2be, #fdd8c6, #fdd8c6, #fdd8c6, #fdd8c6, #fdd8c6, #fdd8c6);
+    background-color: #fbeae1;
+
+    & .nav .nav-link {
+        width: fit-content !important;
+
+        & .font-weight-bold {
+            font-weight: 400;
+        }
+    }
+
+    & .nav .nav-link.active {
+        color: #001c44 !important;
+
+        & .font-weight-bold {
+            font-weight: 500;
+        }
+    }
 }
 
 .policy_img {
@@ -1442,9 +1538,6 @@ ul>.nt-x {
     -webkit-text-stroke: 0.9px;
 }
 
-.tab-row1 .font-weight-bold {
-    font-size: 1.08rem;
-}
 
 /* Product Enquiry btn */
 /* Nina */
@@ -1452,7 +1545,7 @@ ul>.nt-x {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 1rem);
+    transform: translate(-50%, -2.5rem);
 }
 
 .button--nina {

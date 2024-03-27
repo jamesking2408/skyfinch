@@ -41,749 +41,7 @@
   </div>
   <!-- Spinner End -->
   <!-- Search Modal Start-->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content mt-35">
-        <div class="modal-header">
-          <form class="searchForm" name="searchForm">
-            <div class="col-12 p-1 bg-light rounded rounded-pill shadow-sm mb-2">
-              <div class="input-group">
-                <input type="text" id="searchbar" name="searchbar"
-                  class="form-control border-0 rounded rounded-pill bg-light" onkeyup="searchContent()"
-                  aria-describedby="button-addon1" autocomplete="off" />
-              </div>
-            </div>
-            <div id="input-message">No Result Found.</div>
-          </form>
-        </div>
-        <div class="modal-body px-4 py-2 overflow-scroll overflow-x-hidden overflow-y-hidden mCustomScrollbar"
-          data-mcs-theme="dark">
-          <ul class="list-unstyled">
-            <li class="content my-3">
-              <button onclick="jumpToMain('sec1')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Why Choose should join us
-              </button>
-              <a href="index.html#sec1" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">
-                GST Ready Billing.. Best Practices.. Routine Maintenance.. Time Savings..
-              </p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToMain('sec2')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Skyfinch Teams
-              </button>
-              <a href="index.html#sec2" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Highly Qualified and
-                Experienced...</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToMain('sec2_1')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Skyfinch | Applications
-              </button>
-              <a href="index.html#sec2_1" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">1.Online application
-                2.Offline application 3.Hybrid application
-                <br>4.Hybrid Solution 5.Mobile application
-                6.Database solution
-              </p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToMain('sec3')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Skyfinch Highlights
-              </button>
-              <a href="index.html#sec3" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">
-                <i class="bi bi-check text-success"></i>Fits All Business Sizes
-                <i class="bi bi-check text-success"></i>Versatile Solutions
-                <i class="bi bi-check text-success"></i>Best Solution For Events
-                <i class="bi bi-check text-success"></i>Scalability Unlimited
-                <i class="bi bi-check text-success"></i>International Standards
-                <i class="bi bi-check text-success"></i>The Point Of Sale Module
-              </p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToMain('sec4')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Why choose us | Our projects, product, customer and Global office
-              </button>
-              <a href="index.html#sec4" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Best Fit Solutions... Customer
-                Support... Proven Credibility...</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToMain('sec5')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                The MR Reporting software is an Online
-              </button>
-              <a href="index.html#sec5" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">
-                <i class="bi bi-caret-right-fill text-success"></i>Materials
-                <i class="bi bi-caret-right-fill text-success"></i>Tractability
-                <i class="bi bi-caret-right-fill text-success"></i>Bin
-                <i class="bi bi-caret-right-fill text-success"></i>Inventory
-                <i class="bi bi-caret-right-fill text-success"></i>Warehouse
-                <i class="bi bi-caret-right-fill text-success"></i>Distribution
-                <i class="bi bi-caret-right-fill text-success"></i>Bill
-                <i class="bi bi-caret-right-fill text-success"></i>Quality
-                <i class="bi bi-caret-right-fill text-success"></i>Life Cycle
-                <i class="bi bi-caret-right-fill text-success"></i>Hardware
-                <i class="bi bi-caret-right-fill text-success"></i>Data Loss
-                <i class="bi bi-caret-right-fill text-success"></i>Accounting...
-              </p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToMain('sec6')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Skyfinch makes your Business Proud | Application | Window |
-                All products
-              </button>
-              <a href="index.html#sec6" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">
-                Windows Application... Web
-                Applications...
-              </p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToMain('sec7')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Our valuable Customer | contact Us
-              </button>
-              <a href="index.html#sec7" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">
-                Got A Project Or A Partnership In Mind?
-              </p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToMain('sec13')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Footer | Social media's | Address
-              </button>
-              <a href="index.html#sec13" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">
-                ...Explore...
-                Discover...
-                Policies...
-              </p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToAbout('about_view')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                We Help Our Clients To Grow Their Business | About Us
-              </button>
-              <a href="about.html#about_view" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">
-                ...Since its Establishment in the year 2004 at
-                Puducherry, India... Story.. Mission.. Vision..
-              </p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToAbout('about_Awards')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Our relevant Achievements | Awards | 24/7 Available
-              </button>
-              <a href="about.html#about_Awards" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph"></p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToAbout('about_no1')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">The Number #1 Product
-                & Service Company | About Us
-              </button>
-              <a href="about.html#about_no1" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">
-                ...SkyFinch offers a smart,
-                proven solution that provides modern functionality. Our highly
-                specialized team
-                spans industries from manufacturing to service...
-              </p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToAbout('about_Teams')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Exclusive Teams | About Us
-              </button>
-              <a href="about.html#about_Teams" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">
-                ...ERP, Dot net and
-                Support Team...
-              </p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToContact('contact_form')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Contact Us | Forms | If You Have Any Query, Please Contact Us
-              </button>
-              <a href="contact.html#contact_form"
-                class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">If You Have Any Query, Please Contact Us, here forms
-                details...</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToSales('abt-wave')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Overview | Point of Sales | POS
-              </button>
-              <a href="sales.html#abt-wave" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">...As and when a sale happens; Skyfinch's
-                Point of Sale (PoS) solution, tracks, records, accounts, and
-                updates all essential business workflow...</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToSales('sales_image')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                POS | Points of Sales
-              </button>
-              <a href="sales.html#sales_image" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">The Complete Accounting Solution for All Sales
-                Activities...Assign Counter, Purchase, Sales and Stock...
-              </p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToSales('tab-sec')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                POS | Sales | Module`s
-              </button>
-              <a href="sales.html#tab-sec" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Sales Module's as like
-                different Managements. Billing, Purchase, Inventory, Customer,
-                etc.,...</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToSales('sec8')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Point Of Sales | Plan
-                and Price
-              </button>
-              <a href="sales.html#sec8" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Choose The Right Plan For Your Business of Point
-                of sales a Standard, professional and Premium.</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToHms('abt-wave')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Overview | Hotel Management System | HMS
-              </button>
-              <a href="hms.html#abt-wave" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Skyfinch Hotel Management
-                System enhances business agility and accuracy in a
-                user friendly manner to maximize customer satisfaction.</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToHms('hms_image')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                HMS | Hotel Management System
-              </button>
-              <a href="hms.html#hms_image" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">The End to End Digital Solution for the Workflow
-                of All types Hotel. CheckIn/CheckOut, Laundry, House Keeping and Front
-                Office.</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToHms('tab-sec')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                HMS | Hotel | Module`s
-              </button>
-              <a href="hms.html#tab-sec" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Hotel Management Module's has
-                Check-In, Check-Out, Front Office, etc.,</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToHms('sec8')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                HMS | Hotel | Plan and Price
-              </button>
-              <a href="hms.html#sec8" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Choose The Right Plan For Your Business
-                Hotel Management as a Standard, Professional and Premium.
-              </p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToRms('abt-wave')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Overview | Restaurant Management System | RMS
-              </button>
-              <a href="rms.html#abt-wave" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph"> Skyfinch Restaurant management
-                system integrates all business components involved in
-                the restaurant sales activity...</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToRms('rms_image')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                RMS | Restaurant Management System
-              </button>
-              <a href="rms.html#rms_image" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Complete Solution for Quick &
-                Error-Free Restaurant Sales Process like a Sales and
-                Remainder.</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToRms('tab-sec')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                RMS | Restaurant | Module`s
-              </button>
-              <a href="rms.html#tab-sec" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Restaurant Management Module's has Iconographic
-                Billing, Order Management, Delivery Management, etc.,</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToRms('sec8')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                RMS | Restaurant | Plan and Price
-              </button>
-              <a href="rms.html#sec8" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Choose The Right Plan For Your Business for
-                Restaurant Management is Standard, Professional and
-                Premium.</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToSsfinch('abt-wave')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Overview | Smart-SkyFinch Management System | SMS
-              </button>
-              <a href="ssfinch.html#abt-wave" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Smart Skyfinch is a fully
-                customizable end to end digital solution for all types of
-                businesses...Mobile Applications and Business Intelligence services
-                power the conduct of business at anytime from anywhere, even while on the
-                move.</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToSsfinch('ssfinch_image')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Smart-SkyFinch | Smart-SkyFinch Management System
-              </button>
-              <a href="ssfinch.html#ssfinch_image"
-                class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">The Smart Choice for Digital
-                Solution for All Business Processes as a DC Duelist, Product Plan,
-                Sales and Stock</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToSsfinch('tab-sec')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Smart-SkyFinch | Smart-SkyFinch | Module`s
-              </button>
-              <a href="ssfinch.html#tab-sec" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Smart-SkyFinch Management has a
-                Supplier, Barcode, Quality, etc.,</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToSsfinch('sec8')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Smart-SkyFinch | Plan and Price
-              </button>
-              <a href="ssfinch.html#sec8" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Choose The Right Plan For Your
-                Smart-SkyFinch have Standard, Professional and Permium.</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToVms('abt-wave')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Overview | Visitor's Management System | VMS
-              </button>
-              <a href="vms.html#abt-wave" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">A business equipped with the
-                cost-effective and elite Skyfinch Visitor Management System (VMS)
-                lures a great first impression out of any person visiting its premises.</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToVms('vms_image')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                VMS | Visitor's Management System
-              </button>
-              <a href="vms.html#vms_image" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Complete control over Visitor Management in the
-                best of
-                Business Interests as Inventory Tracking, Centralized Workflow Approvals and
-                Purchase Orders.</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToVms('tab-sec')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                VMS | Visitor's | Module`s
-              </button>
-              <a href="rms.html#tab-sec" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">The Visitors Management Modules have a
-                Appointment Scheduling and Management, Customized Visitor Passes with
-                Photographs, Track Entry and Exit of Visitor, etc.,</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToVms('sec8')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                VMS | Visitor's | Plan and Price
-              </button>
-              <a href="vms.html#sec8" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Choose The Right Plan For Your Visitors
-                Management have a Standard, Professional and Premium.</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToCrm('abt-wave')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Overview | CRM
-              </button>
-              <a href="crm.html#abt-wave" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Skyfinch CRM provides absolute real-time
-                visibility into customer relations management activities and helps
-                businesses to track, automate, analyze and optimize customer
-                interactions throughout the customer lifecycle.</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToCrm('crm_image')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                CRM | Customer Relationship Management
-              </button>
-              <a href="crm.html#crm_image" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Absolute, Real-time Visibility Powered CRM
-                Automation like a Login, Employee Screen, Stock and Employee
-                Location.</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToCrm('tab-sec')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                CRM | Module`s
-              </button>
-              <a href="crm.html#tab-sec" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Customer Relationship
-                Management have a Distributors/Retailers/Salesman, Products/SKUs, Order
-                Management, Location Tracking, Photo Upload, etc.,</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToCrm('sec8')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                CRM | Customer Relationship Management | Plan and Price
-              </button>
-              <a href="crm.html#sec8" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Choose The Right Plan For Your
-                CRM have a Standard, Professional and Premium.</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToCtm('abt-wave')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Overview | Travel Management System | TMS
-              </button>
-              <a href="ctm.html#abt-wave" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Skyfinch Travel Management
-                solution enables corporate companies to a where to company
-                policies, while efficiently facilitating the business
-                travel requirements of its employees...</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToCtm('ctm_image')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                TMS | Travel Management System
-              </button>
-              <a href="ctm.html#ctm_image" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Digital Platform to Streamline and Control
-                Corporate Travel Process & Budget like a Travel Request, Dashboard, Approvals and
-                Application Settings</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToCtm('tab-sec')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                TMS | Module`s
-              </button>
-              <a href="ctm.html#tab-sec" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">The Corporate Travel Management as a
-                Travel Plan Management, Risk Management, Mobile Application, Multiple
-                Approvals, etc.,</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToCtm('sec8')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                TMS | Travel Management System | Plan and Price
-              </button>
-              <a href="ctm.html#sec8" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">The Corporate Travel Management
-                System have a Standard, Professional and Premium.</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToFms('abt-wave')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Overview | Fleet Management System | FMS
-              </button>
-              <a href="fms.html#abt-wave" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph"> Skyfinch Fleet Management
-                software gives digital edge to the management of the processes and
-                tasks involved in coordinating and facilitating
-                various transport and transport related activities.</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToFms('fms_image')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                FMS | Fleet Management System
-              </button>
-              <a href="fms.html#fms_image" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Multi-faceted Fleet Management
-                solution to handle all Vehicle types Trip Log, Business Entity and
-                Dashboard.</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToFms('tab-sec')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                FMS | Module`s
-              </button>
-              <a href="fms.html#tab-sec" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">The Fleet Management Solution as a Trip
-                Log, Contract Management, Bus Audit, Invoice Generator, etc.,
-              </p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToFms('sec8')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                FMS | Plan and Price
-              </button>
-              <a href="fms.html#sec8" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Choose The Right Plan For Your
-                FMSStandard, Professional and Premium.</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToEms('abt-wave')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Overview | Events Management System | EMS
-              </button>
-              <a href="ems.html#abt-wave" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Managing an event involves a phenomenal amount
-                of mental and physical stress right from its beginning till its
-                end...</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToEms('ems_image')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                EMS | Events Management System
-              </button>
-              <a href="ems.html#ems_image" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Robust Solution to Scale the Workflow of Any
-                Event have a Login, Enquiry Form, Confirm order and Album
-                print.</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToEms('tab-sec')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                EMS | Module`s
-              </button>
-              <a href="ems.html#tab-sec" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">The Event Management Modules has a Enquiry, Work
-                Order, Pre-Event Allocation, Job Completion, etc.,</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToEms('sec8')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                EMS | Plan and Price
-              </button>
-              <a href="ems.html#sec8" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Choose The Right Plan For Your
-                EMS Standard, Professional and Premium.</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToPms('abt-wave')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Overview | Payroll Management System | PMS
-              </button>
-              <a href="payroll.html#abt-wave" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph"> A Payroll Management System is a software
-                solution that automates the process of paying employees in an organization.
-              </p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToPms('pms_image')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                PMS | Payroll Management System
-              </button>
-              <a href="payroll.html#pms_image" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Robust Solution to scale the Workflow of Any Event as a
-                Assign Counter, Purchase Sales, and Stock.</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToPms('tab-sec')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                PMS | Payroll | Module`s
-              </button>
-              <a href="payroll.html#tab-sec" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph"></p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToPms('sec8')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                PMS | Payroll | Plan and Price
-              </button>
-              <a href="payroll.html#sec8" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Choose The Right Plan For Your PMS Standard,
-                Professional and Premium.</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToSs('abt-wave')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Overview | Sales and Services Management System
-              </button>
-              <a href="sands.html#abt-wave" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">The Skyfinch Sales & Service module gives
-                total visibility into the entire business process and maximizes the performance
-                efficiency.</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToSs('ss_image')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Sales and Services - Complete control over Sales and Services
-                Management in the best of Business Interests
-              </button>
-              <a href="sands.html#ss_image" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">The Unified Solution to maximize service revenue and
-                customer
-                base Assign Counter, Purchase, Sales and Stock.</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToSs('tab-sec')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Sales and Services Management System | Module`s
-              </button>
-              <a href="sands.html#tab-sec" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">The Sales and Services Modules have a Service
-                Management, Purchase Management, Inventory Management, Customer Management, etc.,</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToSs('sec8')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Sales and Services Management System | Plan and Price
-              </button>
-              <a href="sands.html#sec8" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">Choose The Right Plan For Your Sales and
-                Services have a Standard, Professional and Premium.</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToProfile('profile_sec2_1')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Profile | About SkyFinch | Traits | About Roadmap’s
-              </button>
-              <a href="profile.html#profile_sec2_1"
-                class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">
-                ...SkyFinch, a division of Roadmap IT Solutions (P) Ltd,
-                Puducherry pioneers in providing software solutions to digitize the
-                workflow of all types of businesses...
-              </p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToProfile('profile_sec2_2')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Profile | SkyFinch Technologies
-              </button>
-              <a href="profile.html#profile_sec2_2"
-                class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">
-                ...Mircrosoft, Web, Javascript, Mobile,
-                OpenSource, Database, Reporting Tools, Other Trending, Skyfinch Products
-                Features, Third Party Integration...
-              </p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToProfile('profile_sec2_3')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Profile | About SkyFinch Products
-              </button>
-              <a href="profile.html#profile_sec2_3"
-                class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">
-                “Fast in Functioning.. Easy to Use..
-                Designed to Perfection.. Developed to grow Businesses..” Main objective
-                is to take forward & mid-sized companies with complete knowledge on
-                processes...
-              </p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToProfile('prod_sec_2')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Profile | Our Products
-              </button>
-              <a href="profile.html#prod_sec_2" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">... Commercial Application...
-                Corporate Application... Education Application...
-                Industrial Application...</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToProfile('profile_sec2_5')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Profile | IT Services
-              </button>
-              <a href="profile.html#profile_sec2_5"
-                class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">
-                ...IT Services,
-                Desktop Application, Integration Services,
-                Web Application, Mobile Application,
-                Learning Application, Automation Services,
-                Financial Solutions, Database Maintenance,
-                Application Management, Customization Services,
-                Industry Standard, ML / AI, Big
-                Data Solutions...
-              </p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToProfile('profile_sec2')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Profile | SkyFinch Legacy
-              </button>
-              <a href="profile.html#profile_sec2"
-                class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-              <p class="text-dark ps-3 text-start paragraph">...Established in 2004 in
-                Puducherry, India. Powered by a team of 350+ highly skilled IT
-                professionals With the Oracle Gold Partner advantage</p>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToPp('policy_tab')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Privacy Policy | Secure data Policy
-              </button>
-              <a href="privacy.html#policy_tab" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToAp('policy_tab')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Anti-Spam Policy | Secure data Policy
-              </button>
-              <a href="antiSpam.html#policy_tab" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToCp('policy_tab')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Confidentiality Policy | Secure data Policy
-              </button>
-              <a href="confidentality.html#policy_tab"
-                class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToTerm('terms_tab')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Terms of Use | Secure data Policy
-              </button>
-              <a href="termsUse.html#terms_tab" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToPq('sec8')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Product Enquiry | Plan and Price
-              </button>
-              <a href="planandPrice.html#sec8" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-            </li>
-            <li class="content my-3">
-              <button onclick="jumpToProduct('portfolio')"
-                class="btn text-primary border-0 w-100 pb-0 text-start searchLink paragraph">
-                Products | Skyfinch Products
-              </button>
-              <a href="products.html#portfolio" class="text-success ps-3 text-start search-deco-underline urlHash"></a>
-            </li>
-          </ul>
-        </div>
-        <p class="d-flex justify-content-center text-secondary p-0 mb-1"><small class="p-0">Powered by <span
-              class="text-primary pwd-sky"><i class="bi bi-cloud fs-5 pe-1"
-                style="position:relative; top: 2px;"></i>SkyFinch</span></small></p>
-      </div>
-    </div>
-  </div>
+  <div id="searchModal"></div>
   <!-- Search Modal End -->
   <!-- Start chat box Design -->
   <span class="tooltip-text" style="visibility: hidden">I’m Skyfinch</span>
@@ -820,24 +78,21 @@
       <img src="img/404-tick.png" alt="" />
       <h2 class="display-5" style="color: rgb(1, 1, 68)"></h2>
       <p class="fw-semibold">.</p>
-      <button type="button" class="exit fs-5 fw-bolder" onclick="closePopup0()">
+      <button type="button" id="closePopup0" class="exit fs-5 fw-bolder">
         OK<span><img src="img/thumbs.png" alt="thumbs" style="width: 25px; margin-top: -2px" /></span>
       </button>
     </div>
   </div>
   <!-- Submit alert box -->
-  <!-- Submit wrong alert box -->
-  <div class="container-sub">
-    <div class="sub-popup1" id="pop1">
-      <img src="img/wrong.png" class="wrong" alt="" />
-      <h2 class="display-5" style="color: rgb(219, 17, 17)"></h2>
-      <p class="fw-semibold"></p>
-      <button type="button" class="exit1 fs-5 fw-bolder" onclick="closePopup1()">
-        OK<span><img src="img/thumbs.png" alt="thumbs" style="width: 25px; margin-top: -2px" /></span>
-      </button>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content mt-35">
+        <!-- load search modal page -->
+      </div>
     </div>
   </div>
-  <!-- Submit wrong alert box -->
+
   <!-- Navbar Start -->
   <div class="container-fluid vw-nav fixed-top m-0 p-0">
     <div class="top-bar row gx-2 pb-lg-0 align-items-center d-lg-flex d-md-none d-none bg-blue">
@@ -858,17 +113,17 @@
         </medium>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light py-lg-0 py-md-2 py-2 px-lg-4 bg-white">
-      <!-- <img class="sugarcane" src="img/sugar_cane.png" alt="">
-      <img class="pot" src="img/pongal-pot-2.png" alt=""> -->
+    <nav class="navbar navbar-expand-lg navbar-light py-lg-0 py-md-2 py-2 px-lg-4 bg-white shadow">
+
+      <div class="hamburger hamburger--emphatic" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </div>
       <a href="index.html" class="navbar-brand ms-0 ms-lg-0">
-        <img src="img/cloud.png" alt="" class="r-cloud animated slideInRight" />
-        <img src="img/cloud.png" alt="" class="l-cloud animated slideInLeft" />
-        <b class="display-6 cloud">SkyFinch
-          <h6 class="me-0 p-0">Solution to Success</h6>
-        </b>
+        <img class="logo-cloud" src="img/logo--img.png" alt="logo">
       </a>
-      <div class="nav-icons d-lg-none d-md-flex d-flex ms-4 gap-1 wow fadeInDown" data-wow-delay="1.8s">
+      <div class="nav-icons d-manual-flex ms-4 gap-1 fadeInUp">
         <a class="btn ms-1" href="https://www.facebook.com/skyfinch.roadmap" data-bs-toggle="tooltip"
           data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Facebook" target="_blank">
           <img class="img-icons1" src="img/socialMedia/facebook_icon.png" alt="facebook" />
@@ -886,80 +141,85 @@
           <img class="img-icons" src="img/socialMedia/linkedin_icon.png" alt="linkedin" />
         </a>
       </div>
-      <div class="hamburger hamburger--emphatic" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <div class="hamburger-box">
-          <div class="hamburger-inner"></div>
-        </div>
-      </div>
+      <a class="p-0 pb-0 me-0 d-flex d-md-flex d-lg-none justify-content-center align-items-center ">
+        <button id="searchButton" type="button" class="btn border-0 searchButton_cls" data-bs-toggle="modal"
+          data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+          <img src="img/search.png" alt="search" style="width:50px;position:relative;left: -0.4rem;top: -0.5rem;"
+            srcset="">
+        </button>
+      </a>
       <div class="collapse navbar-collapse me-2" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
+        <div class="navbar-nav ms-auto me-2 mt-3 mt-lg-0 p-4 p-lg-0">
           <!-- Search Bar start -->
           <a class="p-0 pb-0 me-4 d-flex justify-content-center align-items-center">
-            <button id="searchButton" type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
-              data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+            <button id="searchButton" type="button" class="btn btn-outline-primary searchButton_cls"
+              data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
               <span class="row">
                 <i class="col-1 fa fa-search"></i>
                 <h6 class="col-10 p-0 m-0">Search...</h6>
               </span>
+              <img class="img-search-lg" src="img/search.png" alt="search" style="display: none;" srcset="">
             </button>
           </a>
-          <a href="index.html" class="nav-item nav-link">Home</a>
-          <a href="service.html" class="nav-item nav-link active">Services</a>
+          <a href="index.html" class="nav-item nav-link"><i class="bi bi-house-door fs-5 mx-lg-1 mx-2"></i>Home</a>
+          <a href="service.html" class="nav-item nav-link active"><i
+              class="bi bi-gear-wide-connected fs-5 mx-lg-1 mx-2"></i>
+            Services</a>
           <div class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" id="solutionsDropdown">Solutions</a>
-            <div class="dropdown-menu border-light m-0 p-0">
+            <div class="nav-link dropdown-toggle" id="solutionsDropdown"><i
+                class="bi bi-link-45deg fs-5 mx-lg-1 mx-2"></i> Solutions</div>
+            <div class="dropdown-menu border-none ms-3 m-0 p-0">
               <!-- Add IDs to buttons for easier targeting -->
-              <div class="submenu w-100 px-3 py-0">
-                <button class="dropbtn1 w-100 p-1" id="applicationBtn">
+              <div class="submenu w-100 px-3 mx-lg-0 mx-3 py-1">
+                <button class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="applicationBtn">
                   Application
                   <span class="arrow"><i class="fa-solid fa-angles-right"></i></span>
                 </button>
-                <div class="dropdown-content1 application text-dec px-2 py-2">
+                <div class="dropdown-content1 application text-dec px-lg-2 py-lg-2 py-3 animated fadeInUp-cust">
                   <a href="sales.html">POS</a>
                   <a href="hms.html">Hotel Management System</a>
                   <a href="rms.html">Restaurant Management System</a>
-                  <a href="ssfinch.html">Smart-Skyfinch</a>
+                  <a href="ssfinch.html">Smart-SkyFinch</a>
                   <a href="vms.html">Visitors Management System</a>
                 </div>
               </div>
-              <br class="d-lg-none d-sm-block" />
-              <div class="submenu w-100 px-3 py-0">
-                <button class="dropbtn1 w-100 p-1" id="webBtn">
+              <hr class="hr hr-blurry" />
+              <div class="submenu w-100 px-3 mx-lg-0 mx-3 py-1">
+                <button class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="webBtn">
                   Web
                   <span class="arrow1"><i class="fa-solid fa-angles-right"></i></span>
                 </button>
-                <div class="dropdown-content1 web text-dec px-2 py-2">
+                <div class="dropdown-content1 web text-dec px-lg-2 py-lg-2 py-3 animated fadeInUp-cust">
                   <a href="crm.html">CRM</a>
                   <a href="ctm.html">Travel Management System</a>
                   <a href="fms.html">Fleet Management System</a>
                   <a href="ems.html">Event Management System</a>
-                  <a href="payroll.html">Payroll Management System</a>
-                  <a href="sands.html">Sales and Services System</a>
+                  <a href="payroll.html">PayRoll Management System</a>
+                  <a href="sands.html">Sales and Service System</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" id="solutionsDropdown1">Company</a>
-            <div class="dropdown-menu border-light m-0 p-0">
+            <div class="nav-link dropdown-toggle" id="solutionsDropdown1"><i
+                class="bi bi-person-circle fs-5 mx-lg-1 mx-2"></i> Company</div>
+            <div class="dropdown-menu border-none ms-3 m-0 p-0">
               <!-- Add IDs to buttons for easier targeting -->
-              <div class="submenu w-100 px-3 py-0">
-                <a href="about.html" class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="abt_btn">About Us
-                </a>
+              <div class="submenu w-100 px-3 mx-lg-0 mx-3 py-lg-1 py-2">
+                <a href="about.html" class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="abt_btn">About Us</a>
               </div>
-              <br class="d-lg-none d-sm-block" />
-              <div class="submenu w-100 px-3 py-0">
-                <a href="profile.html" class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="pro_btn">Profile
-                </a>
+              <hr class="hr hr-blurry" />
+              <div class="submenu w-100 px-3 mx-lg-0 mx-3 py-lg-1 py-2">
+                <a href="profile.html" class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="pro_btn">Profile</a>
               </div>
             </div>
           </div>
-          <a href="contact.html" class="nav-item nav-link">Contact</a>
+          <a href="contact.html" class="nav-item nav-link"><i class="bi bi-telephone fs-5 mx-lg-1 mx-2"></i> Contact</a>
         </div>
         <div class="d-lg-flex d-none justify-content-lg-center align-items-lg-center" style="height: 30px">
           <div class="vr text-dark" style="width: 2.5px"></div>
         </div>
-        <div class="d-lg-inline-block d-md-none d-none d-grid ms-lg-2 ms-md-2 ms-2">
+        <div class="d-manual-flex justify-content-center ms-lg-2 ms-md-2 ms-2">
           <a class="btn ms-lg-2 ms-3 p-0" href="https://www.facebook.com/skyfinch.roadmap" data-bs-toggle="tooltip"
             data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Facebook" target="_blank">
             <img class="img-icons1" src="img/socialMedia/facebook_icon.png" alt="" />
@@ -968,11 +228,11 @@
             data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Twitter" target="_blank">
             <img class="img-icons" src="img/socialMedia/twitter.png" alt="" />
           </a>
-          <a class="btn ms-lg-2 ms-1 p-0" href="https://www.instagram.com/skyfinchroadmap" data-bs-toggle="tooltip"
+          <a class="btn ms-lg-2 ms-3 p-0" href="https://www.instagram.com/skyfinchroadmap" data-bs-toggle="tooltip"
             data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Instagram" target="_blank">
             <img class="img-icons" src="img/socialMedia/instagram.png" alt="" />
           </a>
-          <a class="btn ms-lg-3 ms-3 p-0" href="https://www.linkedin.com/company/skyfinchroadmap"
+          <a class="btn ms-lg-2 ms-3 p-0" href="https://www.linkedin.com/company/skyfinchroadmap"
             data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip"
             data-bs-title="LinkedIn" target="_blank">
             <img class="img-icons1" src="img/socialMedia/linkedin_icon.png" alt="" />
@@ -981,10 +241,12 @@
       </div>
     </nav>
   </div>
+
   <!-- Navbar End -->
   <main>
     <!-- Page Header Start -->
-    <section id="service_land" class="container-fluid px-0 pt-lg-4 mt-lg-2 mt-0 pt-0">
+    <section id="service_land"
+      class="container-fluid d-flex justify-content-center align-items-center px-0 pt-lg-4 mt-lg-2 mt-0 pt-0">
       <!--New header page (update)-->
       <div class="container1 service-bg mt-lg-4 pt-lg-4 mt-1 pt-1 mb-3">
         <div class="row px-2 service-border wow fadeInUp" data-wow-delay="1.5s">
@@ -992,7 +254,7 @@
             SERVICES
           </h1>
           <nav aria-label="breadcrumb">
-            <ol class="breadcrumb mb-1 wow fadeInLeft" data-wow-delay="1.8s">
+            <ol class="breadcrumb mb-1 wow slideInUp" data-wow-delay="1.8s">
               <li class="breadcrumb-item fw-bold">
                 <a class="" href="index.html">Home</a>
               </li>
@@ -1006,308 +268,305 @@
     </section>
     <!-- Page Header End -->
     <!-- Service Start -->
-    <section id="tab-sec" class="container-fluid pt-1 mt-0 pt-lg-2 mt-lg-0 pt-4 mt-2">
-      <div class="container-fluid service pt-lg-0 mt-lg-4 pt-1 mt-2">
-        <div class="container">
-          <div class="text-center mx-auto mt-lg-4 pt-lg-5 mt-1 mb-lg-1 g-lg-4 gy-4 wow fadeInLeft" data-wow-delay="0.1s"
-            style="max-width: 600px">
-            <p class="d-inline-block border rounded text-primary fw-semi-bold py-0 px-1 my-1 mb-0">
-              Our Services
-            </p>
-            <h3 class="display-5 mb-1">
-              <!-- Awesome Financial Services For Business -->
-              Awesome Services For Our Company
-            </h3>
-          </div>
-          <div class="row g-lg-2 gy-4 mt-lg-0 mt-2 respo_ser_tab">
-            <div class="col-lg-4 wow fadeInLeft" data-wow-delay="0.1s" data-aos-duration="500" data-aos="fade-up">
-              <div class="nav nav-pills g-2 d-flex justify-content-around w-100 h-75 me-2">
-                <button class="nav-link bar-clor g-2 w-100 text-start border p-2 mb-2 active" data-bs-toggle="pill"
-                  data-bs-target="#tab-pane-1" type="button">
-                  <div class="row rt_cont p-0 m-0 align-items-center">
-                    <div class="col-1 p-0 m-0 ms-1">
-                      <i class="fa fa-bars"></i>
-                    </div>
-                    <div class="col-10 p-0 m-0">
-                      <span class="m-0 h5 font-weight-bold text-uppercase">Software
-                        Development</span>
-                    </div>
+    <section id="tab-sec"
+      class="container-fluid service-tab-sec d-flex justify-content-center align-items-center pt-1 mt-0 pt-lg-2 mt-lg-0 pt-2 mt-2">
+      <div class="container mb-lg-0 mb-4">
+        <div class="text-center mx-auto mt-lg-4 pt-lg-5 mt-1 mb-lg-1 g-lg-4 gy-4 animated slideInUp"
+          style="max-width: 600px" data-aos-duration="500" data-aos="slide-up">
+          <h4 class="d-inline-block text-primary fw-semi-bold py-0 px-1 my-1 mb-0">
+            Our Services
+          </h4>
+          <h3 class="display-5 mb-1">
+            <!-- Awesome Financial Services For Business -->
+            Awesome Services For Our Company
+          </h3>
+        </div>
+        <div class="row g-lg-2 gy-4 mt-lg-0 mt-2 respo_ser_tab">
+          <div class="col-lg-4 animated slideInUp" data-aos-duration="500" data-aos="slide-up">
+            <div class="nav nav-pills g-2 d-flex justify-content-around w-100 h-75 me-2">
+              <button class="nav-link bar-clor g-2 w-100 text-start border p-2 mb-2 active" data-bs-toggle="pill"
+                data-bs-target="#tab-pane-1" data-tab="#tab-pane-1" type="button">
+                <div class="row rt_cont p-0 m-0 align-items-center">
+                  <div class="col-1 p-0 m-0 ms-1">
+                    <i class="fa fa-bars"></i>
                   </div>
-                </button>
-                <button class="nav-link bar-clor g-2 w-100 text-start border p-2 mb-2" data-bs-toggle="pill"
-                  data-bs-target="#tab-pane-2" type="button">
-                  <div class="row rt_cont p-0 m-0 align-items-center">
-                    <div class="col-1 p-0 m-0 ms-1">
-                      <i class="fa fa-bars"></i>
-                    </div>
-                    <div class="col-8 p-0 m-0">
-                      <span class="m-0 h5 font-weight-bold text-uppercase">Web Development</span>
-                    </div>
+                  <div class="col-10 p-0 m-0">
+                    <span class="m-0 h5 font-weight-bold text-uppercase">Software
+                      Development</span>
                   </div>
-                </button>
-                <button class="nav-link bar-clor g-2 w-100 text-start border p-2 mb-2" data-bs-toggle="pill"
-                  data-bs-target="#tab-pane-3" type="button">
-                  <div class="row rt_cont p-0 m-0 align-items-center">
-                    <div class="col-1 p-0 m-0 ms-1">
-                      <i class="fa fa-bars"></i>
-                    </div>
-                    <div class="col-10 p-0 m-0">
-                      <span class="m-0 h5 font-weight-bold text-uppercase">Mobile Application
-                        Development</span>
-                    </div>
+                </div>
+              </button>
+              <button class="nav-link bar-clor g-2 w-100 text-start border p-2 mb-2" data-bs-toggle="pill"
+                data-bs-target="#tab-pane-2" data-tab="#tab-pane-2" type="button">
+                <div class="row rt_cont p-0 m-0 align-items-center">
+                  <div class="col-1 p-0 m-0 ms-1">
+                    <i class="fa fa-bars"></i>
                   </div>
-                </button>
-                <button class="nav-link bar-clor g-2 w-100 text-start border p-2 mb-2" data-bs-toggle="pill"
-                  data-bs-target="#tab-pane-4" type="button">
-                  <div class="row rt_cont p-0 m-0 align-items-center">
-                    <div class="col-1 p-0 m-0 ms-1">
-                      <i class="fa fa-bars"></i>
-                    </div>
-                    <div class="col-10 p-0 m-0">
-                      <span class="m-0 h5 font-weight-bold text-uppercase">Automation
-                        Services</span>
-                    </div>
+                  <div class="col-8 p-0 m-0">
+                    <span class="m-0 h5 font-weight-bold text-uppercase">Web Development</span>
                   </div>
-                </button>
-                <button class="nav-link bar-clor g-2 w-100 text-start border p-2 mb-2" data-bs-toggle="pill"
-                  data-bs-target="#tab-pane-5" type="button">
-                  <div class="row rt_cont p-0 m-0 align-items-center">
-                    <div class="col-1 p-0 m-0 ms-1">
-                      <i class="fa fa-bars"></i>
-                    </div>
-                    <div class="col-10 p-0 m-0">
-                      <span class="m-0 h5 font-weight-bold text-uppercase">Integration
-                        Services</span>
-                    </div>
+                </div>
+              </button>
+              <button class="nav-link bar-clor g-2 w-100 text-start border p-2 mb-2" data-bs-toggle="pill"
+                data-bs-target="#tab-pane-3" data-tab="#tab-pane-3" type="button">
+                <div class="row rt_cont p-0 m-0 align-items-center">
+                  <div class="col-1 p-0 m-0 ms-1">
+                    <i class="fa fa-bars"></i>
                   </div>
-                </button>
-                <button class="nav-link bar-clor g-2 w-100 text-start border p-2 mb-2" data-bs-toggle="pill"
-                  data-bs-target="#tab-pane-6" type="button">
-                  <div class="row rt_cont p-0 m-0 align-items-center">
-                    <div class="col-1 p-0 m-0 ms-1">
-                      <i class="fa fa-bars"></i>
-                    </div>
-                    <div class="col-10 p-0 m-0">
-                      <span class="m-0 h5 font-weight-bold text-uppercase">ML/AI and Big Data
-                        Solutions</span>
-                    </div>
+                  <div class="col-10 p-0 m-0">
+                    <span class="m-0 h5 font-weight-bold text-uppercase">Mobile Application
+                      Development</span>
                   </div>
-                </button>
-              </div>
+                </div>
+              </button>
+              <button class="nav-link bar-clor g-2 w-100 text-start border p-2 mb-2" data-bs-toggle="pill"
+                data-bs-target="#tab-pane-4" data-tab="#tab-pane-4" type="button">
+                <div class="row rt_cont p-0 m-0 align-items-center">
+                  <div class="col-1 p-0 m-0 ms-1">
+                    <i class="fa fa-bars"></i>
+                  </div>
+                  <div class="col-10 p-0 m-0">
+                    <span class="m-0 h5 font-weight-bold text-uppercase">Automation
+                      Services</span>
+                  </div>
+                </div>
+              </button>
+              <button class="nav-link bar-clor g-2 w-100 text-start border p-2 mb-2" data-bs-toggle="pill"
+                data-bs-target="#tab-pane-5" data-tab="#tab-pane-5" type="button">
+                <div class="row rt_cont p-0 m-0 align-items-center">
+                  <div class="col-1 p-0 m-0 ms-1">
+                    <i class="fa fa-bars"></i>
+                  </div>
+                  <div class="col-10 p-0 m-0">
+                    <span class="m-0 h5 font-weight-bold text-uppercase">Integration
+                      Services</span>
+                  </div>
+                </div>
+              </button>
+              <button class="nav-link bar-clor g-2 w-100 text-start border p-2 mb-2" data-bs-toggle="pill"
+                data-bs-target="#tab-pane-6" data-tab="#tab-pane-6" type="button">
+                <div class="row rt_cont p-0 m-0 align-items-center">
+                  <div class="col-1 p-0 m-0 ms-1">
+                    <i class="fa fa-bars"></i>
+                  </div>
+                  <div class="col-10 p-0 m-0">
+                    <span class="m-0 h5 font-weight-bold text-uppercase">ML/AI and Big Data
+                      Solutions</span>
+                  </div>
+                </div>
+              </button>
             </div>
-            <div class="col-lg-8">
-              <div class="tab-content w-100 h-75 wow fadeInRight" data-wow-delay="0.1s" data-aos-duration="500"
-                data-aos="fade-up">
-                <div class="tab-pane show active" id="tab-pane-1">
-                  <div class="row g-lg-4 g-md-4 g-2">
-                    <div class="col-12 col-md-6 tabPane_img col-lg-6" style="min-height: 350px">
-                      <div class="position-relative h-100">
-                        <img class="position-absolute rounded w-100" src="img/soft_service.png" alt="" />
-                      </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="tab-content w-100 h-75 animated slideInUp" data-aos-duration="500" data-aos="fade-up">
+              <div class="tab-pane show active animated zoomIn" id="tab-pane-1">
+                <div class="row g-lg-4 g-md-4 g-2">
+                  <div class="col-12 col-md-6 tabPane_img col-lg-6" style="min-height: 350px">
+                    <div class="d-flex justify-content-center position-relative h-100">
+                      <img class="position-absolute rounded w-100" src="img/soft_service.png" alt="" />
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6">
-                      <h3 class="mb-lg-3 mb-md-3 mb-1">
-                        SOFTWARE DEVELOPMENT
-                      </h3>
-                      <p class="mb-lg-3 mb-md-3 mb-1 text-justify">
-                        We offer complete range of software development services with full
-                        fledged support right from inception till deployment. Our user-friendly
-                        software solutions are flexible to align with the unique process
-                        requirements of any business type.
-                      </p>
-                      <div class="row g-2">
-                        <div class="col-12 col-md-12 col-lg-12">
-                          <p>
-                            <i class="fa fa-check text-primary me-3"></i>Agile Development
-                            Methodology
-                          </p>
-                          <p>
-                            <i class="fa fa-check text-primary me-3"></i>Code Quality and
-                            Testing
-                          </p>
-                          <p>
-                            <i class="fa fa-check text-primary me-3"></i>Continuous
-                            Integration and Deployment(CI/CD)
-                          </p>
-                        </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <h3 class="mb-lg-3 mb-md-3 mb-1">
+                      SOFTWARE DEVELOPMENT
+                    </h3>
+                    <p class="mb-lg-3 mb-md-3 mb-1 text-justify">
+                      We offer complete range of software development services with full
+                      fledged support right from inception till deployment. Our user-friendly
+                      software solutions are flexible to align with the unique process
+                      requirements of any business type.
+                    </p>
+                    <div class="row g-2">
+                      <div class="col-12 col-md-12 col-lg-12">
+                        <p>
+                          <i class="fa fa-check text-primary me-3"></i>Agile Development
+                          Methodology
+                        </p>
+                        <p>
+                          <i class="fa fa-check text-primary me-3"></i>Code Quality and
+                          Testing
+                        </p>
+                        <p>
+                          <i class="fa fa-check text-primary me-3"></i>Continuous
+                          Integration and Deployment(CI/CD)
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane" id="tab-pane-2">
-                  <div class="row g-4">
-                    <div class="col-md-6 col-lg-6 tabPane_img h-100 animated zoomIn">
-                      <div class="position-relative h-100">
-                        <img class="img-fluid rounded w-100" src="img/web_services.png"
-                          style="height: 280px !important;" alt="" />
-                      </div>
+              </div>
+              <div class="tab-pane animated zoomIn" id="tab-pane-2">
+                <div class="row g-4">
+                  <div class="col-md-6 col-lg-6 tabPane_img h-100">
+                    <div class="d-flex justify-content-center position-relative h-100">
+                      <img class="img-fluid rounded w-100" src="img/web_services.png" style="height: 280px;" alt="" />
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6 animated zoomIn">
-                      <h3 class="mb-lg-3 mb-md-3 mb-1">
-                        WEB DEVELOPMENT
-                      </h3>
-                      <p class="mb-lg-3 mb-md-3 mb-1">
-                        Skyfinch's Web Development team delivers completely functional websites
-                        that exactly portray the vision of our clients on the screen. Our
-                        service is designed to infallibly enhance the market presence of new and
-                        existing Businesses.
-                      </p>
-                      <div class="row g-2">
-                        <div class="col-12 col-md-12 col-lg-10">
-                          <p>
-                            <i class="fa fa-check text-primary me-3"></i>Responsive Design
-                          </p>
-                          <p>
-                            <i class="fa fa-check text-primary me-3"></i>Performance
-                            Optimization
-                          </p>
-                          <p>
-                            <i class="fa fa-check text-primary me-3"></i>Security measures
-                          </p>
-                        </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <h3 class="mb-lg-3 mb-md-3 mb-1">
+                      WEB DEVELOPMENT
+                    </h3>
+                    <p class="mb-lg-3 mb-md-3 mb-1">
+                      Skyfinch's Web Development team delivers completely functional websites
+                      that exactly portray the vision of our clients on the screen. Our
+                      service is designed to infallibly enhance the market presence of new and
+                      existing Businesses.
+                    </p>
+                    <div class="row g-2">
+                      <div class="col-12 col-md-12 col-lg-10">
+                        <p>
+                          <i class="fa fa-check text-primary me-3"></i>Responsive Design
+                        </p>
+                        <p>
+                          <i class="fa fa-check text-primary me-3"></i>Performance
+                          Optimization
+                        </p>
+                        <p>
+                          <i class="fa fa-check text-primary me-3"></i>Security measures
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane" id="tab-pane-3">
-                  <div class="row g-4">
-                    <div class="col-md-6 col-lg-6 tabPane_img h-75 animated zoomIn">
-                      <div class="position-relative h-75">
-                        <img class="img-fluid rounded w-100" src="img/mob_services.png" alt="" />
-                      </div>
+              </div>
+              <div class="tab-pane animated zoomIn" id="tab-pane-3">
+                <div class="row g-4">
+                  <div class="col-md-6 col-lg-6 tabPane_img h-75">
+                    <div class="d-flex justify-content-center position-relative h-75">
+                      <img class="img-fluid rounded w-100" src="img/mob_services.png" alt="" />
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6 animated zoomIn">
-                      <h3 class="mb-lg-3 mb-md-3 mb-1">
-                        MOBILE APPLICATION DEVELOPMENT
-                      </h3>
-                      <p class="mb-lg-3 mb-md-3 mb-1">
-                        The apt Mobile Application solutions furnished by our team of experts in
-                        Android, and Apple's iOS platforms with latest development tools, bring
-                        the office functions desired by our clients into the very palm of the
-                        intended business stakeholder.
-                      </p>
-                      <div class="row g-2">
-                        <div class="col-12 col-md-12 col-lg-10">
-                          <p>
-                            <i class="fa fa-check text-primary me-3"></i>User Experience(UX)
-                            design
-                          </p>
-                          <p>
-                            <i class="fa fa-check text-primary me-3"></i>Performance
-                            Optimization
-                          </p>
-                          <p>
-                            <i class="fa fa-check text-primary me-3"></i>Security and Data
-                            Privacy
-                          </p>
-                        </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <h3 class="mb-lg-3 mb-md-3 mb-1">
+                      MOBILE APPLICATION DEVELOPMENT
+                    </h3>
+                    <p class="mb-lg-3 mb-md-3 mb-1">
+                      The apt Mobile Application solutions furnished by our team of experts in
+                      Android, and Apple's iOS platforms with latest development tools, bring
+                      the office functions desired by our clients into the very palm of the
+                      intended business stakeholder.
+                    </p>
+                    <div class="row g-2">
+                      <div class="col-12 col-md-12 col-lg-10">
+                        <p>
+                          <i class="fa fa-check text-primary me-3"></i>User Experience(UX)
+                          design
+                        </p>
+                        <p>
+                          <i class="fa fa-check text-primary me-3"></i>Performance
+                          Optimization
+                        </p>
+                        <p>
+                          <i class="fa fa-check text-primary me-3"></i>Security and Data
+                          Privacy
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane" id="tab-pane-4">
-                  <div class="row g-4">
-                    <div class="col-md-6 col-lg-6 tabPane_img animated zoomIn">
-                      <div class="position-relative h-100">
-                        <img class="position-absolute rounded w-100" src="img/automation.svg" alt="" />
-                      </div>
+              </div>
+              <div class="tab-pane animated zoomIn" id="tab-pane-4">
+                <div class="row g-4">
+                  <div class="col-md-6 col-lg-6 tabPane_img">
+                    <div class="d-flex justify-content-center position-relative h-100">
+                      <img class="position-absolute rounded w-100" src="img/automation.svg" alt="" />
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6 animated zoomIn">
-                      <h3 class="mb-lg-3 mb-md-3 mb-1">
-                        AUTOMATION SERVICES
-                      </h3>
-                      <p class="mb-lg-3 mb-md-3 mb-1">
-                        Service automation is the strategic integration of tools and
-                        functionalities from diverse domains, creating a unified interface for
-                        seamless workflow management. This process entails the automation of
-                        events, tasks, and business functions to enhance operational efficiency
-                      </p>
-                      <div class="row g-2">
-                        <div class="col-12 col-md-12 col-lg-12">
-                          <p>
-                            <i class="fa fa-check text-primary me-3"></i>Unified Interface
-                            for Workflows
-                          </p>
-                          <p>
-                            <i class="fa fa-check text-primary me-3"></i>Automation of
-                            Events and Functions
-                          </p>
-                          <p>
-                            <i class="fa fa-check text-primary me-3"></i>Enhanced
-                            Operational Cohesion
-                          </p>
-                        </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <h3 class="mb-lg-3 mb-md-3 mb-1">
+                      AUTOMATION SERVICES
+                    </h3>
+                    <p class="mb-lg-3 mb-md-3 mb-1">
+                      Service automation is the strategic integration of tools and
+                      functionalities from diverse domains, creating a unified interface for
+                      seamless workflow management. This process entails the automation of
+                      events, tasks, and business functions to enhance operational efficiency
+                    </p>
+                    <div class="row g-2">
+                      <div class="col-12 col-md-12 col-lg-12">
+                        <p>
+                          <i class="fa fa-check text-primary me-3"></i>Unified Interface
+                          for Workflows
+                        </p>
+                        <p>
+                          <i class="fa fa-check text-primary me-3"></i>Automation of
+                          Events and Functions
+                        </p>
+                        <p>
+                          <i class="fa fa-check text-primary me-3"></i>Enhanced
+                          Operational Cohesion
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane" id="tab-pane-5">
-                  <div class="row g-4">
-                    <div class="col-md-6 col-lg-6 tabPane_img animated zoomIn">
-                      <div class="position-relative h-100">
-                        <img class="position-absolute sms_services rounded w-100" src="img/Intergration_services.png"
-                          alt="" />
-                      </div>
+              </div>
+              <div class="tab-pane animated zoomIn" id="tab-pane-5">
+                <div class="row g-4">
+                  <div class="col-md-6 col-lg-6 tabPane_img">
+                    <div class="d-flex justify-content-center position-relative h-100">
+                      <img class="position-absolute sms_services rounded w-100" src="img/Intergration_services.png"
+                        alt="" />
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6 animated zoomIn">
-                      <h3 class="mb-lg-3 mb-md-3 mb-1">
-                        INTEGRATION SERVICES
-                      </h3>
-                      <p class="mb-lg-3 mb-md-3 mb-1">
-                        Integration services involve connecting and coordinating diverse
-                        software applications and systems within an organization to enable
-                        seamless data sharing and process automation.
-                      </p>
-                      <div class="row g-2">
-                        <div class="col-12 col-md-12 col-lg-12">
-                          <p>
-                            <i class="fa fa-check text-primary me-3"></i>Seamless
-                            Connectivity
-                          </p>
-                          <p>
-                            <i class="fa fa-check text-primary me-3"></i>Efficient Data
-                            Synchronization
-                          </p>
-                          <p>
-                            <i class="fa fa-check text-primary me-3"></i>Process Automation
-                          </p>
-                        </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <h3 class="mb-lg-3 mb-md-3 mb-1">
+                      INTEGRATION SERVICES
+                    </h3>
+                    <p class="mb-lg-3 mb-md-3 mb-1">
+                      Integration services involve connecting and coordinating diverse
+                      software applications and systems within an organization to enable
+                      seamless data sharing and process automation.
+                    </p>
+                    <div class="row g-2">
+                      <div class="col-12 col-md-12 col-lg-12">
+                        <p>
+                          <i class="fa fa-check text-primary me-3"></i>Seamless
+                          Connectivity
+                        </p>
+                        <p>
+                          <i class="fa fa-check text-primary me-3"></i>Efficient Data
+                          Synchronization
+                        </p>
+                        <p>
+                          <i class="fa fa-check text-primary me-3"></i>Process Automation
+                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane" id="tab-pane-6">
-                  <div class="row g-4">
-                    <div class="col-md-6 col-lg-6 tabPane_img animated zoomIn">
-                      <div class="position-relative h-100">
-                        <img class="position-absolute rounded w-100" src="img/ml_ai-bd.png" alt="" />
-                      </div>
+              </div>
+              <div class="tab-pane animated zoomIn" id="tab-pane-6">
+                <div class="row g-4">
+                  <div class="col-md-6 col-lg-6 tabPane_img">
+                    <div class="d-flex justify-content-center position-relative h-100">
+                      <img class="position-absolute rounded w-100" src="img/ml_ai-bd.png" alt="" />
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6 animated zoomIn">
-                      <h3 class="mb-lg-3 mb-md-3 mb-1">
-                        ML/AI AND BIG DATA SOLUTIONS
-                      </h3>
-                      <p class="mb-lg-3 mb-md-3 mb-1">
-                        Data Science is the interdisciplinary field that utilizes machine
-                        learning, artificial intelligence, and big data analytics to extract
-                        insights, patterns, and knowledge from complex datasets for informed
-                        decision-making.
-                      </p>
-                      <div class="row g-2">
-                        <div class="col-12 col-md-12 col-lg-12">
-                          <p>
-                            <i class="fa fa-check text-primary me-3"></i> Machine Learning
-                            and Predictive Analytics
-                          </p>
-                          <p>
-                            <i class="fa fa-check text-primary me-3"></i> Business
-                            Intelligence and Decision-Making
-                          </p>
-                          <p>
-                            <i class="fa fa-check text-primary me-3"></i> Data Processing
-                            and Analysis at Scale
-                          </p>
-                        </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <h3 class="mb-lg-3 mb-md-3 mb-1">
+                      ML/AI AND BIG DATA SOLUTIONS
+                    </h3>
+                    <p class="mb-lg-3 mb-md-3 mb-1">
+                      Data Science is the interdisciplinary field that utilizes machine
+                      learning, artificial intelligence, and big data analytics to extract
+                      insights, patterns, and knowledge from complex datasets for informed
+                      decision-making.
+                    </p>
+                    <div class="row g-2">
+                      <div class="col-12 col-md-12 col-lg-12">
+                        <p>
+                          <i class="fa fa-check text-primary me-3"></i> Machine Learning
+                          and Predictive Analytics
+                        </p>
+                        <p>
+                          <i class="fa fa-check text-primary me-3"></i> Business
+                          Intelligence and Decision-Making
+                        </p>
+                        <p>
+                          <i class="fa fa-check text-primary me-3"></i> Data Processing
+                          and Analysis at Scale
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -1320,64 +579,73 @@
     </section>
     <!-- Service End -->
     <!-- Callback Start -->
-    <section id="req-call" class="bg-02">
-      <div class="container-fluid mt-5 pt-1">
-        <div class="container d-flex justify-content-center pt-2 mt-5 mb-sm-0">
-          <div class="row">
-            <div
-              class="col-lg-12 callback bg-white d-flex justify-content-center mt-2 mt-lg-5 pt-lg-4 mb-lg-3 pb-lg-2 px-4">
-              <div class="px-lg-2 px-md-2 py-lg-3 py-md-3 mx-lg-4 mx-md-5 px-0 wow fadeInUp" data-wow-delay="0.1s"
-                data-aos-duration="500" data-aos="slide-up">
-                <div class="text-center mt-3 mx-auto fadeInUp">
-                  <p class="d-inline-block rounded text-primary fw-semi-bold px-3">
-                    Get In Touch
-                  </p>
-                  <h3 class="display-5 display-my mb-3">
-                    Request A Call-Back
-                  </h3>
-                </div>
-                <form name="callus" action="">
-                  <div class="row gy-3">
-                    <div class="col-12 col-md-6 col-lg-6" data-aos-duration="500" data-aos="fade-up">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" style="text-transform: uppercase" id="na"
-                          placeholder="Your Name" aria-label=".form-control-sm example" />
-                        <label for="na">Your Name</label>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6" data-aos-duration="500" data-aos="fade-up">
-                      <div class="form-floating">
-                        <input type="email" class="form-control" id="Id" placeholder="Your Email" />
-                        <label for="Id">Your Email</label>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6" data-aos-duration="500" data-aos="fade-up">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" id="mob" maxlength="10" placeholder="Your Mobile" />
-                        <label for="mob">Your Mobile</label>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6" data-aos-duration="500" data-aos="fade-up">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" id="sub" placeholder="Subject" />
-                        <label for="sub">Subject</label>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-12 col-lg-12" data-aos-duration="500" data-aos="fade-up">
-                      <div class="form-floating">
-                        <textarea class="form-control form-control-sm" placeholder="Leave a message here" id="msg"
-                          style="height: auto; overflow: hidden"></textarea>
-                        <label for="msg" class="form-label">Message here..</label>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-12 col-lg-6 text-center d-inline-block mx-auto mt-2 mb-0 pt-1 mb-3">
-                      <button type="button" class="btn btn-outline-primary my-0" onclick="callBack()">
-                        Submit now
-                      </button>
-                    </div>
-                  </div>
-                </form>
+    <section id="req-call" class="bg-02 d-flex justify-content-center align-items-center">
+      <div class="container d-flex justify-content-center pt-lg-2 mt-lg-1 mb-lg-1 pt-2 mt-5 mb-5">
+        <div class="row">
+          <div class="col-lg-12 callback d-flex justify-content-center mt-2 mt-lg-5 pt-lg-2 mb-lg-3 pb-lg-2 px-4">
+            <div class="px-lg-2 px-md-2 py-lg-1 py-md-3 mx-lg-4 mx-md-5 px-0 wow fadeInUp" data-aos-duration="500"
+              data-aos="slide-up">
+              <div class="text-center mt-3 mx-auto fadeInUp">
+                <h4 class="d-inline-block text-primary fw-semi-bold px-3">
+                  Get In Touch
+                </h4>
+                <h3 class="display-5 display-my mb-3">
+                  Request A Call-Back
+                </h3>
               </div>
+              <form name="callus" id="callus" action="">
+                <div class="row gy-3 d-flex justify-content-center">
+                  <div class="col-12 col-md-6 col-lg-6 mb-md-1 mb-2" data-aos-duration="500" data-aos="fade-up">
+                    <fieldset>
+                      <input type="text" class="form-control text-capitalize" style="text-transform: uppercase"
+                        id="serviceName" name="serviceName" placeholder="Enter your name"
+                        aria-label=".form-control-sm example" onkeypress="return /[a-zA-Z .]/i.test(event.key)"
+                        maxlength="90" />
+                      <label for="serviceName">Name <span id="important">*</span></label>
+                    </fieldset>
+                    <label id="serviceName-errorLable" for="serviceName" class="error text-danger"
+                      style="display:none"></label>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6 mb-md-1 mb-2" data-aos-duration="500" data-aos="fade-up">
+                    <fieldset>
+                      <input type="text" class="form-control" id="serviceMail" name="serviceMail"
+                        placeholder="Enter your email id" maxlength="60" />
+                      <label for="serviceMail">Email ID <span id="important">*</span></label>
+                    </fieldset>
+                    <label id="serviceMail-errorLable" for="serviceMail" class="error text-danger"
+                      style="display:none"></label>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6 mb-md-1 mb-2" data-aos-duration="500" data-aos="fade-up">
+                    <fieldset>
+                      <input type="text" class="form-control" id="serviceNum" name="serviceNum" maxlength="15"
+                        onkeypress="return /[-+0-9 ]/i.test(event.key)" placeholder="Enter your phone number" />
+                      <label for="serviceNum">Phone Number <span id="important">*</span></label>
+                    </fieldset>
+                    <label id="serviceNum-errorLable" for="serviceNum" class="error text-danger"
+                      style="display:none"></label>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6 mb-md-1 mb-2" data-aos-duration="500" data-aos="fade-up">
+                    <fieldset>
+                      <input type="text" class="form-control" id="serviceSub" name="serviceSub"
+                        placeholder="Enter your subject" maxlength="100" />
+                      <label for="serviceSub">Subject <span id="important">*</span></label>
+                    </fieldset>
+                    <label id="serviceSub-errorLable" for="serviceSub" class="error text-danger"
+                      style="display:none"></label>
+                  </div>
+                  <div class="col-12 col-md-12 col-lg-12" data-aos-duration="500" data-aos="fade-up">
+                    <fieldset>
+                      <textarea class="form-control form-control-sm" placeholder="Message here.." id="serviceMsg"
+                        name="serviceMsg"></textarea>
+                      <label for="serviceMsg" class="form-label">Message</span></label>
+                    </fieldset>
+                  </div>
+                  <div
+                    class="col-12 col-md-12 col-lg-6 d-flex justify-content-center align-items-center position-relative x-auto mt-2 pt-1 mb-3 mb-md-0">
+                    <input type="button" id="callBack" value="Submit" class="btn call-btn-warning my-0">
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -1386,68 +654,74 @@
     <!-- Callback End -->
   </main>
   <!-- Footer Start -->
-  <section id="sec13" class="container-fluid scroll text-light footer mt-lg-0 pt-lg-5 mt-0 pt-4 wow fadeIn"
-    data-wow-delay="0.1s">
+  <section id="sec13" class="container-fluid scroll text-light footer mt-lg-0 pt-lg-5 mt-0 pt-4 wow fadeIn">
     <div class="container pt-lg-5 mt-lg-0 mt-3 pt-4">
-      <div class="row d-flex justify-content-around g-lg-5 mt-lg-1 mt-1 g-md-2 g-4">
+      <div class="row d-flex justify-content-start g-lg-5 mt-lg-1 mt-1 g-md-2 g-4">
         <div class="col-lg-4 col-12 col-md-12">
-          <h6 class="mb-4 cloud">SkyFinch</h6>
-          <div class="row">
-            <div class="col-lg-2 col-1 px-0 d-flex justify-content-center align-items-center">
-              <i class="fa fa-map-marker-alt mb-md-3 mb-3"></i>
+            <a href="index.html" class="">
+                <h6 class="mb-4 cloud">SkyFinch</h6>
+            </a>
+            <div class="row justify-content-evenly align-items-center mb-md-2 mb-3">
+                <div class="col-lg-2 col-1 px-0 d-flex justify-content-center align-items-center">
+                    <i class="fa fa-map-marker-alt"></i>
+                </div>
+                <div class="col-lg-10 col-md-10 col-10 px-0">
+                    <p class="mb-2">
+                        5, Republic Street, Reddiarpalayam, <br />Puducherry-605 010,
+                        India
+                    </p>
+                </div>
             </div>
-            <div class="col-lg-10 col-md-10 col-10 px-0">
-              <p class="mb-2">
-                5, Republic Street, Reddiarpalayam, <br />Puducherry-605 010,
-                India
-              </p>
+            <div class="row justify-content-evenly align-items-center mb-md-2 mb-3">
+                <div class="col-lg-2 col-1 px-0 d-flex justify-content-center align-items-center">
+                    <i class="fa fa-phone"></i>
+                </div>
+                <div class="col-lg-10 col-10 px-0">
+                    <a href="tel:+91 9443487210">
+                        <p class="mb-2 text-light">+91 9443487210</p>
+                    </a>
+                </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-2 col-1 px-0 d-flex justify-content-center align-items-center">
-              <i class="fa fa-phone mb-md-2 mb-3"></i>
+            <div class="row justify-content-evenly align-items-center mb-md-2 mb-3">
+                <div class="col-lg-2 col-1 px-0 d-flex justify-content-center align-items-center">
+                    <i class="fa fa-envelope"></i>
+                </div>
+                <div class="col-lg-10 col-10 px-0">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@skyfinch.com"
+                        target="_blank" rel="noopener noreferrer">
+                        <p class="btn-link text-light mb-2">info@skyfinch.com</p>
+                    </a>
+                </div>
             </div>
-            <div class="col-lg-10 col-10 px-0">
-              <p class="mb-2">+91 9443487210</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-2 col-1 px-0 d-flex justify-content-center align-items-center">
-              <i class="fa fa-envelope mb-md-2 mb-3"></i>
-            </div>
-            <div class="col-lg-10 col-10 px-0">
-              <p class="btn-link text-light mb-2">info@skyfinch.com</p>
-            </div>
-          </div>
         </div>
-        <div class="col-lg-2 col-6 mb-lg-0 mb-4 mt-5 mt-lg-5">
-          <h4 class="text-white mb-4 w-25 border-bottom border-primary">
-            Explore
-          </h4>
-          <a class="btn btn-link" href="index.html">Home</a>
-          <a class="btn btn-link" href="service.html">Services</a>
-          <a class="btn btn-link" href="about.html">About Us</a>
-          <a class="btn btn-link" href="profile.html">Profile</a>
+        <div class="col-lg-2 col-md-6 col-sm-6 col-12 mb-lg-0 mb-4 mt-5 mt-lg-5">
+            <h4 class="text-white mb-4 fit-content-text border-bottom border-primary">
+                Explore
+            </h4>
+            <a class="btn btn-link" href="index.html">Home</a>
+            <a class="btn btn-link" href="service.html">Services</a>
+            <a class="btn btn-link" href="about.html">About Us</a>
+            <a class="btn btn-link" href="profile.html">Profile</a>
         </div>
-        <div class="col-lg-2 col-6 mb-lg-0 mb-4 mt-5 mt-lg-5">
-          <h4 class="text-white mb-4 w-25 border-bottom border-primary">
-            Discover
-          </h4>
-          <a class="btn btn-link" href="products.html">Products</a>
-          <a class="btn btn-link" href="productEnquiry.html" onclick="choosePlan('', '')">Product Enquiry</a>
-          <a class="btn btn-link" href="planandPrice.html">Plans and Price</a>
-          <a class="btn btn-link" href="contact.html">Contact us</a>
+        <div class="col-lg-2 col-md-6 col-sm-6 col-12 mb-lg-0 mb-4 mt-5 mt-lg-5">
+            <h4 class="text-white mb-4 fit-content-text border-bottom border-primary">
+                Discover
+            </h4>
+            <a class="btn btn-link" href="products.html">Products</a>
+            <a class="btn btn-link" href="productEnquiry.html" onclick="choosePlan('', '')">Product Enquiry</a>
+            <a class="btn btn-link" href="planandPrice.html">Plans and Price</a>
+            <a class="btn btn-link" href="contact.html">Contact us</a>
         </div>
-        <div id="polices" class="col-lg-3 col-6 mb-lg-0 mb-4 ms-0 ms-lg-2 mt-5 mt-lg-5">
-          <h4 class="text-white mb-4 w-25 border-bottom border-primary">
-            Policies
-          </h4>
-          <a class="btn btn-link" href="antiSpam.html">Anti-spam&nbsp;Policy</a>
-          <a class="btn btn-link" href="termsUse.html">Terms of Service</a>
-          <a class="btn btn-link" href="privacy.html">Privacy&nbsp;Policy</a>
-          <a class="btn btn-link" href="confidentality.html">Confidentiality&nbsp;Policy</a>
+        <div id="polices" class="col-lg-3 col-md-6 col-sm-6 col-12 mb-lg-0 mb-4 ms-0 ms-lg-2 mt-5 mt-lg-5">
+            <h4 class="text-white mb-4 fit-content-text border-bottom border-primary">
+                Policies
+            </h4>
+            <a class="btn btn-link" href="antiSpam.html">Anti-spam&nbsp;Policy</a>
+            <a class="btn btn-link" href="termsUse.html">Terms of Service</a>
+            <a class="btn btn-link" href="privacy.html">Privacy&nbsp;Policy</a>
+            <a class="btn btn-link" href="confidentality.html">Confidentiality&nbsp;Policy</a>
         </div>
-      </div>
+    </div>
     </div>
     <!-- Copyright Start -->
     <div id="cpy-ryt" class="row mt-lg-1 mt-3 pt-3 mb-0 pb-0 d-flex align-items-end justify-content-center">
@@ -1487,8 +761,10 @@
   </section>
   <!-- Footer End -->
   <!-- Back to Top -->
-  <a href="#" class="btn btn-lg page-top btn-lg-square rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top"
-    data-bs-custom-class="custom-tooltip" data-bs-title="back-to-top"><img src="img/right-arrow.png" alt="" /></a>
+  <a href="#" id="sub_top" class="btn btn-lg page-top btn-lg-square rounded-circle">
+    <img src="img/right-arrow.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top"
+      data-bs-custom-class="custom-tooltip" data-bs-title="back-to-top" />
+  </a>
   <!-- JavaScript Libraries -->
   <script src="js/Jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
@@ -1498,21 +774,34 @@
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="lib/counterup/counterup.min.js"></script>
   <script src="js/AnimationOnScroll/package/dist/aos.js"></script>
-  <script src="js/searchBar.js"></script>
   <script src="css/malihu-custom-scrollbar-plugin-3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-  <script src="js/placeholder.min.js"></script>
   <script src="lib/smtpjs/smtp.js"></script>
+  <script src="js/jquery.validate.js"></script>
   <!-- Scroll effects -->
   <script>
     AOS.init();
   </script>
+  <script>
+    $(document).ready(function () {
+      if (screen.width < 768) {
+        $('#tab-sec .nav-link').each(function () {
+          $(this).on('click', function (e) {
+            e.preventDefault();
+            var tabId = $(this).attr('data-tab');
+            var tabElement = $(tabId);
+            var scrollPosition = tabElement.offset().top;
+            $('html, body').animate({
+              scrollTop: scrollPosition - 450
+            }, 'smooth');
+          });
+        });
+      }
+    });
+  </script>
   <!-- Scroll effects -->
-  <!-- Section Scroll effects -->
   <script src="js/Scrollify/jquery.scrollify.js"></script>
   <!-- Section Scroll effects -->
-  <!-- Smooth scroll -->
   <script src="js/SmoothScroll.min.js"></script>
-  <!-- Submit javascript -->
   <script src="js/submit.js"></script>
   <script src="js/submitService.js"></script>
   <!-- Template Javascript -->

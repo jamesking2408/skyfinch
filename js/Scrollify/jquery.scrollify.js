@@ -351,11 +351,11 @@ if touchScroll is false - update index
           return false;
         }
 
-        if(e.ctrlKey && e.keyCode==36) { // Manual set keycode ctrl+home
+        if(e.ctrlKey && e.keyCode==36 || e.keyCode==36) { // Manual set keycode ctrl+home
           e.preventDefault();
           index = 0;
           animateScroll(index,false,true,false);
-        } else if(e.ctrlKey && e.keyCode==35) { // Manual set keycode ctrl+end
+        } else if(e.ctrlKey && e.keyCode==35 || e.keyCode==35) { // Manual set keycode ctrl+end
           e.preventDefault();
           index = heights.length-1;
           animateScroll(index,false,true,false);

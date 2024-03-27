@@ -1,4 +1,4 @@
-@media only screen and (max-width:602px) {
+@media only screen and (max-width:992px) {
   .toZoom {
     border-radius: 5px;
     cursor: pointer;
@@ -24,7 +24,6 @@
 
   .modal-content1 {
     display: block;
-    margin-top: 200px;
     width: 100%;
     max-width: 700px;
     background-color: #fefefe;
@@ -32,6 +31,10 @@
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .modal-content1 img {
