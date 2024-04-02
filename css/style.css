@@ -73,7 +73,6 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     scrollbar-width: none;
 }
 
@@ -105,9 +104,9 @@ input[data-autocompleted] {
 }
 
 .chatbot-toggler {
-    position: fixed;
+    /* position: fixed;
     right: 1%;
-    bottom: 40px;
+    bottom: 40px; */
     height: 50px;
     width: 50px;
     display: flex;
@@ -143,22 +142,22 @@ input[data-autocompleted] {
 
 .chatbot {
     position: fixed;
-    right: 4.6%;
-    bottom: 70px;
+    right: 4rem;
+    bottom: 2.5rem;
     height: 450px;
-    width: 320px;
-    transform: scale(0.5);
+    width: min(100%, 320px);
     opacity: 0;
     pointer-events: none;
     overflow: hidden;
     background-color: #fff;
-    border-radius: 20px 20px 0 20px;
-    border: 1px solid var(--primary);
+    border-radius: 20px 20px 20px 20px;
+    border: 2.5px solid var(--primary);
+    transform: scale(0.5);
     transform-origin: bottom right;
-    -webkit-box-shadow: 1px 1px 10px 2px #5e95e7;
-    -moz-box-shadow: 1px 1px 10px 2px #5e95e7;
-    box-shadow: 1px 1px 10px 2px #5e95e7;
-    transition: all .1s ease;
+    transition: all .3s ease;
+    -webkit-box-shadow: inset 0px 0px 5px 1px #5e95e7;
+    -moz-box-shadow: inset 0px 0px 5px 1px #5e95e7;
+    box-shadow: inset 0px 0px 5px 1px #5e95e7;
     z-index: 99999;
 }
 
@@ -491,8 +490,6 @@ input[type=number]::-webkit-outer-spin-button {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 8px;
-    /* -webkit-animation: zoomImg 15s infinite;
-    animation: zoomImg 15s infinite; */
 }
 
 .service-border {
@@ -551,13 +548,13 @@ input[type=number]::-webkit-outer-spin-button {
     width: 25%;
     left: 0;
     bottom: 0;
-    transform: translate(2rem, -4rem);
+    transform: translate(2rem, -4rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(19px);
     border: 2px solid rgba(255, 255, 255, 0.25);
-    transition: transform .2s;
+    transition: all .5s ease-in;
 }
 
 .contact-border:hover {
@@ -565,9 +562,9 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.767);
-    -ms-transform: scale(1.02) translate(2rem, -4.5rem);
-    transform: scale(1.02) translate(2rem, -4.5rem);
-    -webkit-transform: scale(1.02) translate(2rem, -4.5rem);
+    -ms-transform: translate(2rem, -4.5rem) !important;
+    transform: translate(2rem, -4.5rem) !important;
+    -webkit-transform: translate(2rem, -4.5rem) !important;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
@@ -612,17 +609,6 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
-/* #contact_form::before {
-    content: '';
-    background-color: rgba(0, 0, 0, 0.5);
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-} */
-
 /* End contact header change */
 :root {
     --primary: #355EFC;
@@ -657,15 +643,17 @@ a {
 
 /* Back-to-top start */
 /* Index page back to top */
-#main_top.page-top {
-    right: 1% !important;
-    bottom: 25% !important;
+.all_icons {
+    position: fixed;
+    right: 10px;
+    bottom: 5px;
+    z-index: 99999;
 }
 
 .page-top {
-    position: fixed;
+    /* position: fixed;
     right: 1%;
-    bottom: 100px;
+    bottom: 100px; */
     width: 80px;
     display: none;
     justify-content: center;
@@ -924,9 +912,9 @@ h6,
 }
 
 .dropbtn1.active {
-    font-weight: 500;
-    font-size: 16px;
-    color: #355EFC;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    color: #355EFC !important;
 }
 
 .text-dec a.active {
@@ -1163,6 +1151,15 @@ a .logo-cloud {
 }
 
 /*** Footer ***/
+#sec13 a {
+    display: block;
+    width: fit-content;
+
+    & p {
+        text-decoration: none !important;
+    }
+}
+
 #sec13 i.fa-map-marker-alt {
     font-size: 1.895rem;
     color: #4FC3F7 !important;
@@ -1314,15 +1311,14 @@ a .logo-cloud {
 .main {
     position: fixed;
     background-color: #dde8ee;
-    bottom: 17%;
-    left: auto;
-    right: 4.6%;
+    bottom: 5.3rem;
+    right: 4rem;
     width: min(100%, 300px);
     border: 1px solid rgb(10, 79, 228);
     -webkit-box-shadow: 0 0 21px 22px #298ffd;
     -moz-box-shadow: 0 0 21px 22px #298ffd;
     box-shadow: 0 0 21px 22px #298ffd;
-    border-radius: 35px 35px 35px 25px;
+    border-radius: 20px;
     z-index: 99999;
 }
 
@@ -1378,16 +1374,6 @@ a .logo-cloud {
 
 .main:hover {
     background-color: #d8e8f1;
-}
-
-#forms {
-    position: fixed;
-    bottom: 14.5%;
-    left: auto;
-    right: 1.7%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-radius: 15px;
-    z-index: 98;
 }
 
 #show_form:hover {
@@ -1497,7 +1483,6 @@ a .logo-cloud {
 }
 
 .heart {
-    /* background-image: url(../img/Hearts-In-Heart-blue.svg); */
     background-color: #ffffff;
     border-radius: 50%;
     background-position: center;
@@ -1771,11 +1756,6 @@ a .logo-cloud {
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
-}
-
-.bg-09 .bg9-row {
-    padding-top: 2rem !important;
-    margin-top: 2rem !important;
 }
 
 /* special sec 2 start */
@@ -2103,7 +2083,6 @@ a .logo-cloud {
     position: relative;
     padding: 15px 0 0;
     margin-top: 10px;
-    /* width: 50%; */
 }
 
 .input-data>input,
@@ -2138,10 +2117,6 @@ a .logo-cloud {
     cursor: text;
     top: 20px;
 }
-
-/* #land-sec .input-data input:focus~label {
-    top: -0.5rem;
-} */
 
 .input-data input:focus,
 .input-data textarea:focus {
@@ -2194,8 +2169,6 @@ a .logo-cloud {
 }
 
 /* Form end */
-/* section 7 end */
-/* ///////////////////////////////////////////////////////// ///////////////////////////////////////////////////////// ///////////////////////////////////////////////////////// */
 /* About us start */
 .bg-over:hover {
     background-color: #a39f9f;
@@ -2251,15 +2224,11 @@ a .logo-cloud {
 .callback {
     position: relative;
     top: 0;
-    transform: translateY(0.5rem);
+    transform: translateY(2rem);
     width: min(700px + 1vw);
     border-radius: 50px !important;
     border-width: 4px !important;
     background-color: rgba(255, 255, 255);
-    /* border-style: solid; */
-    /* -webkit-box-shadow: 32.5px 32.5px 10px -10px #0000006c;
-    -moz-box-shadow: 32.5px 32.5px 10px -10px #0000006c;
-    box-shadow: 32.5px 32.5px 10px -10px #0000006c; */
 }
 
 .call-btn-warning {

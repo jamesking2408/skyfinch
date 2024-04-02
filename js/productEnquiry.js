@@ -267,6 +267,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (selectedPlanPrice === ' ') {
         document.querySelector('#customerProduct').value = selectedPlanName;
         document.querySelector('#customerPlan').value = "";
+    } else if (selectedPlanName === ' ') {
+        document.querySelector('#customerProduct').value = "";
+        document.querySelector('#customerPlan').value = selectedPlanPrice;
     } else if (selectedPlanName && selectedPlanPrice) {
         document.querySelector('#customerPlan').value = selectedPlanPrice;
         document.querySelector('#customerProduct').value = selectedPlanName;

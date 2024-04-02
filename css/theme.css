@@ -1262,7 +1262,7 @@ a.text-dark:focus {
   position: relative;
   top: 0;
   left: 0;
-  transform: translate(30px, -85px);
+  transform: translate(30px, 5px);
 }
 
 #profile_sec2 .swiper-button-next:hover,
@@ -1493,7 +1493,7 @@ a.text-dark:focus {
 .divider {
   display: block;
   margin-top: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 15px;
   width: 32px;
   height: 3px;
   border-radius: 40px;
@@ -2592,7 +2592,6 @@ ul.cloud a:hover::before {
 #sf_tech .card-body,
 #tp_tech .card-body {
   height: 250px !important;
-  max-height: 400px !important;
 }
 
 .animate.zoomIn {
@@ -2727,6 +2726,8 @@ ul.cloud a:hover::before {
 
 .single_portfolio {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .single_portfolio .img-fluid {
@@ -2752,7 +2753,7 @@ ul.cloud a:hover::before {
 #prod_sec_2 .container {
   position: relative;
   top: 0;
-  transform: translateY(2.5rem);
+  transform: translateY(5rem);
 }
 
 #prod_sec_2 .show3 {

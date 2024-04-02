@@ -142,14 +142,13 @@ input[type=radio] {
 #item-4:checked~.cards1 #song-4 img,
 #item-5:checked~.cards1 #song-5 img,
 #item-6:checked~.cards1 #song-6 img {
-  /* box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47); */
   transform: scale(1.02);
   box-shadow: 0px 0px 10px 0px rgba(81, 81, 81, 0.7);
 }
 
 @media only screen and (max-width:320px) {
   .bg-00 {
-    height: max-content !important;
+    height: auto !important;
   }
 
   .bg-00 .container {
@@ -187,7 +186,7 @@ input[type=radio] {
 
 @media (min-width:321px) and (max-width:375px) {
   .bg-00 {
-    height: max-content !important;
+    height: auto !important;
   }
 
   .bg-00 .container {
@@ -225,7 +224,7 @@ input[type=radio] {
 
 @media (min-width:376px) and (max-width:425px) {
   .bg-00 {
-    height: 30rem !important;
+    height: auto !important;
   }
 
   .bg-00 {
@@ -239,7 +238,7 @@ input[type=radio] {
       height: 250px;
       left: 0;
       bottom: 0;
-      transform: translateX(-1rem) translateY(2.9rem) !important;
+      transform: translateX(-0.7rem) translateY(2rem) !important;
     }
   }
 
@@ -270,18 +269,18 @@ input[type=radio] {
 
 @media (min-width:426px) and (max-width:602px) {
   .bg-00 {
-    height: max-content !important;
+    height: auto !important;
   }
 
   .bg-00 .container {
     width: 380px;
     height: 320px;
-    transform: translate(-1rem, 5rem);
+    transform: translate(-0.7rem, 3rem);
   }
 
   .bg-00 .container1 {
-    width: 90% !important;
-    transform: translate(2rem, 4rem);
+    width: 100% !important;
+    transform: translate(0rem, 3rem);
   }
 
   /* Payroll Images */
@@ -311,7 +310,7 @@ input[type=radio] {
 
 @media (min-width:603px) and (max-width:768px) {
   .bg-00 {
-    height: max-content !important;
+    height: auto !important;
   }
 
   .bg-00 .container {
@@ -361,6 +360,7 @@ input[type=radio] {
     position: relative;
     top: 0;
     transform: translateY(2rem);
+    height: 450px;
   }
 
   #item-1:checked~.cards1 #song-6,
@@ -384,7 +384,7 @@ input[type=radio] {
   .bg-00 .container1 {
     position: relative;
     top: 0;
-    transform: translateY(30rem);
+    transform: translateY(2rem);
   }
 }
 

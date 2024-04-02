@@ -4,7 +4,7 @@
 
     $(window).on('load', function () {
         $(".modal-content").load("searchModal.html");
-        if (screen.width < 768) {
+        if (screen.width < 1024) {
             // $('.page-top img').removeAttr("data-bs-toggle");
             $('[data-bs-toggle="tooltip"]').tooltip('dispose');
         } else {
@@ -120,10 +120,11 @@
             $('.product').not('.' + value).hide();
             $('.product').filter('.' + value).show();
             if (screen.width < 768) {
-                var tabElement = $('.' + value);
+                // debugger;
+                var tabElement = $(this);
                 var scrollPosition = tabElement.offset().top;
                 $('html, body').animate({
-                    scrollTop: scrollPosition - 250
+                    scrollTop: scrollPosition - 200
                 }, 'smooth');
             }
         }
@@ -237,7 +238,7 @@
     // Facts counter
     $('.count').counterUp({
         delay: 10,
-        time: 2000
+        time: 5000
     });
 
     //<!-- OwlCarousel script start -->
