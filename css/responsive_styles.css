@@ -15,6 +15,7 @@
         .img-icons {
             width: 25px !important;
             height: 25px !important;
+            padding: 0 !important;
         }
     }
 
@@ -1322,8 +1323,9 @@
 
         & .img-icons1,
         .img-icons {
-            width: 25px !important;
-            height: 25px !important;
+            width: 30px !important;
+            height: 30px !important;
+            padding: 0 !important;
         }
     }
 
@@ -2632,8 +2634,9 @@
 
         & .img-icons1,
         .img-icons {
-            width: 35px !important;
-            height: 40px !important;
+            width: 30px !important;
+            height: 30px !important;
+            padding: 0 !important;
         }
     }
 
@@ -3045,7 +3048,7 @@
         position: relative !important;
         top: 0;
         left: 0;
-        transform: translateX(0) translateY(3rem) !important;
+        transform: translateX(0) translateY(0rem) !important;
     }
 
     #sec5 .container {
@@ -7697,7 +7700,7 @@
 
     .service-bg {
         object-fit: none;
-        height: 100% !important;
+        height: 100vh !important;
         background-position: 40% 50%;
     }
 
@@ -8270,7 +8273,7 @@
 
     .service-bg {
         object-fit: none;
-        height: inherit !important;
+        height: 100% !important;
         background-position: 40% 50%;
     }
 

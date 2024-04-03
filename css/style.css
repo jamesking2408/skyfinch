@@ -90,6 +90,10 @@ input[data-autocompleted] {
     background-color: white !important;
 }
 
+/* Bootstrap modify row */
+.row {
+    margin-right: 0px !important;
+}
 .hamburger {
     display: none !important;
 }
