@@ -71,8 +71,8 @@ html,
 body {
     width: 100% !important;
     height: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
     scrollbar-width: none;
 }
 
@@ -90,10 +90,6 @@ input[data-autocompleted] {
     background-color: white !important;
 }
 
-/* Bootstrap modify row */
-.row {
-    margin-right: 0px !important;
-}
 .hamburger {
     display: none !important;
 }
@@ -132,8 +128,9 @@ input[data-autocompleted] {
     border: 1px solid #0670fc;
 }
 
-.show-chatbot .chatbot-toggler {
+.show-chatbot .chatbot-toggler span {
     transform: rotate(90deg);
+    transition: transform .5s ease;
 }
 
 .chatbot-toggler span {
@@ -163,6 +160,7 @@ input[data-autocompleted] {
     -moz-box-shadow: inset 0px 0px 5px 1px #5e95e7;
     box-shadow: inset 0px 0px 5px 1px #5e95e7;
     z-index: 99999;
+    overflow-y: auto;
 }
 
 .show-chatbot .chatbot {
@@ -172,7 +170,7 @@ input[data-autocompleted] {
 }
 
 .chatbot header {
-    background-color: rgb(6, 112, 252);
+    background: linear-gradient(to right, #4495ff, #0672ff, #0068f0, #0059cc);
     padding: 16px 0;
     text-align: center;
     position: relative;
@@ -189,18 +187,41 @@ input[data-autocompleted] {
 
 .chatbot header span {
     position: absolute;
-    right: 10px;
+    left: 10px;
     top: 30%;
     color: #fff;
     cursor: pointer;
     transform: translateY(-50%);
     display: block;
+    font-size: 32px;
 }
 
 .chatbox {
-    height: 355px;
-    overflow-y: auto;
-    padding: 15px 20px 70px;
+    height: 325px;
+    overflow-y: hidden;
+    padding: 15px 5px 5px;
+}
+
+.chatbox::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+.chatbox::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(230, 230, 230, 0.3);
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+
+.chatbox::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 4px #c9c9c9;
+    background-color: #9e9e9e;
+    cursor: grab;
+}
+
+.chatbox::-webkit-scrollbar-thumb:active {
+    cursor: grabbing;
 }
 
 .chatbox .chat {
@@ -226,17 +247,19 @@ input[data-autocompleted] {
 
 .chatbox .chat p {
     color: #fff;
-    padding: 0 15px;
+    padding: 10px 15px;
+    min-width: 60px;
+    width: fit-content;
     margin-bottom: 0;
     border-radius: 20px 0px 20px 20px;
-    background-color: rgba(63, 143, 248, 0.849);
+    background: linear-gradient(to right top, #4495ff, #0672ff, #0068f0, #0059cc);
 }
 
 .chatbox .incoming p {
     color: #000;
-    background: #d8d7d7;
+    background: linear-gradient(to left bottom, #9dd5ffbe, #96d1ffbe, #8fceffbe, #83c9ffbe, #7cc6ffbe);
     border-radius: 30px 30px 30px 0;
-    width: 100%;
+    width: fit-content;
 }
 
 .chatbot .chat-input {
@@ -246,7 +269,7 @@ input[data-autocompleted] {
     display: flex;
     gap: 5px;
     background: #fff;
-    padding: 5px 20px;
+    padding: 5px 5px 5px 20px;
     border-top: 1px solid #ccc;
 }
 
@@ -269,7 +292,7 @@ input[data-autocompleted] {
     height: 35px;
     line-height: 35px;
     color: rgb(6, 112, 252);
-    font-size: 1.35rem;
+    font-size: 1.55rem;
     cursor: pointer;
     visibility: hidden;
 }
@@ -412,6 +435,7 @@ input[data-autocompleted] {
 }
 
 .img-abt {
+    position: relative;
     background-image: url(../img/aboutus1.jpg);
     width: 100%;
     height: 100%;
@@ -422,11 +446,11 @@ input[data-autocompleted] {
 }
 
 .boder-blur {
-    position: relative;
-    width: 25rem;
+    position: absolute;
+    width: min-content;
     left: 0;
     bottom: 0;
-    transform: translateY(30rem) translateX(2rem) !important;
+    transform: translateX(1.5rem) translateY(-4rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -436,7 +460,7 @@ input[data-autocompleted] {
 }
 
 .boder-blur:hover {
-    transform: translateY(29.5rem) translateX(2rem) !important;
+    transform: translateX(1.5rem) translateY(-4.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -501,7 +525,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: min-content;
     left: 0;
     bottom: 0;
-    transform: translate(2rem, -1rem);
+    transform: translate(2rem, -2rem);
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -515,9 +539,9 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.767);
-    -ms-transform: scale(1.02) translate(2rem, -1.5rem);
-    transform: scale(1.02) translate(2rem, -1.5rem);
-    -webkit-transform: scale(1.02) translate(2rem, -1.5rem);
+    -ms-transform: scale(1.02) translate(2rem, -2.5rem);
+    transform: scale(1.02) translate(2rem, -2.5rem);
+    -webkit-transform: scale(1.02) translate(2rem, -2.5rem);
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
@@ -552,7 +576,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 25%;
     left: 0;
     bottom: 0;
-    transform: translate(2rem, -4rem) !important;
+    transform: translate(2rem, -3rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -566,9 +590,9 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.767);
-    -ms-transform: translate(2rem, -4.5rem) !important;
-    transform: translate(2rem, -4.5rem) !important;
-    -webkit-transform: translate(2rem, -4.5rem) !important;
+    -ms-transform: translate(2rem, -3.5rem) !important;
+    transform: translate(2rem, -3.5rem) !important;
+    -webkit-transform: translate(2rem, -3.5rem) !important;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
@@ -683,6 +707,7 @@ a {
 
 .page-top:hover img {
     background: #ffffff;
+    border: 1px solid #1e88e5 !important;
 }
 
 .b-2-top:hover {
@@ -1267,20 +1292,6 @@ a .logo-cloud {
 
 /* Manual CSS Start*/
 /* section 1 Start */
-.dump {
-    background-image: url(../img/shape.png);
-    background-position: 0px 28px;
-    background-repeat: no-repeat;
-    background-size: 100% 25%;
-    transition: 0.3s ease-in-out;
-}
-
-.dump:hover {
-    transform: scale(0.98);
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2) !important;
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2) !important;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2) !important;
-}
 
 .beat1 i {
     font-size: 1.995rem;
@@ -1565,10 +1576,11 @@ a .logo-cloud {
 }
 
 #req-call.bg-02 {
-    background: #1eadff url(../img/bg_pattern.svg);
-    background-size: 70rem;
+    background-image: url(../img/bg_pattern.jpg);
+    background-size: contain;
     background-repeat: repeat;
     background-position: center;
+    background-attachment: fixed;
     opacity: 1;
 }
 
@@ -1613,6 +1625,7 @@ a .logo-cloud {
     content: "";
     background: url(/img/img-grd.jpg);
     background-size: 100% 100%;
+    background-attachment: fixed;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -1679,17 +1692,17 @@ a .logo-cloud {
     -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
-    transition: 0.9s;
+    transition: 0.7s;
 }
 
 .pill-bg {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(246, 223, 255, 0.5));
-    height: 120px;
+    height: 125px;
 }
 
 .pill-bg1 {
     background-image: linear-gradient(to right, rgba(187, 192, 253, 0.5), rgba(255, 255, 255, 0));
-    height: 120px;
+    height: 125px;
 }
 
 .card .beat-second i {
@@ -1911,6 +1924,7 @@ a .logo-cloud {
     background: url(../img/sec-alt-06.jpg);
     background-size: cover;
     background-position: 0% 50%;
+    background-attachment: fixed;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -1958,8 +1972,11 @@ a .logo-cloud {
     -webkit-transition: 0.5s;
 }
 
-.btn-silver:hover {
-    background-color: #9d9eff;
+.btn-silver:hover,
+.btn-silver:active {
+    background-color: #011A41 !important;
+    border-color: transparent !important;
+    color: #fff !important;
 }
 
 .show2,
@@ -2000,6 +2017,7 @@ a .logo-cloud {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -2013,9 +2031,10 @@ a .logo-cloud {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -35%);
     margin: 0px !important;
     transition: 0.5s ease;
+    width: 100%;
 }
 
 #part-proud .cus.owl-carousel {
@@ -2023,29 +2042,33 @@ a .logo-cloud {
 }
 
 #part-proud .owl-next {
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
-    transform: translate(51vw, -25px);
     font-size: 3rem;
     border-radius: 50% 0% 0% 50%;
     padding: 0px 20px !important;
+    margin: 0;
     background-color: #f7faffdc;
     height: 50px;
     width: 50px;
+    display: flex;
+    float: right;
 }
 
 #part-proud .owl-prev {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
-    transform: translate(-51vw, -25px);
     font-size: 3rem;
     border-radius: 0% 50% 50% 0%;
     padding: 0px 20px !important;
+    margin: 0;
     background-color: #f7faffdc;
     height: 50px;
     width: 50px;
+    display: flex;
+    float: left;
 }
 
 #part-proud .owl-next:hover,
@@ -2233,6 +2256,8 @@ a .logo-cloud {
     border-radius: 50px !important;
     border-width: 4px !important;
     background-color: rgba(255, 255, 255);
+    border: 3px solid #0e6ffd;
+    box-shadow: 0px 0px 5px 0px #0e6ffd;
 }
 
 .call-btn-warning {
@@ -2382,12 +2407,6 @@ a .logo-cloud {
 }
 
 /* point of sales */
-#smp-bg {
-    background-image: url(../img/smp-bg.svg);
-    background-repeat: no-repeat;
-    background-position: 30% 30% !important;
-    background-size: cover;
-}
 
 .caption-bg {
     background-color: #00000083;
@@ -2420,14 +2439,19 @@ a .logo-cloud {
 
 .search-deco-underline {
     text-decoration: underline !important;
+    font-size: 0.8rem;
 }
 
 .search-deco-underline:hover {
     text-decoration: none !important;
 }
 
+.content button {
+    font-size: 1.054rem !important;
+}
+
 .content .paragraph {
-    font-size: 15px !important;
+    font-size: 0.95rem;
 }
 
 .highlight {

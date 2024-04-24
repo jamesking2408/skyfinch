@@ -21,9 +21,7 @@
     $(document).ready(function () {
         $('.form-select').on('change', function () {
             var selectedValue = $(this).val();
-
             $('.tab-pane').removeClass('show active');
-
             $('#' + selectedValue).addClass('show active');
         });
     });
@@ -40,12 +38,12 @@
 
     // Spinner
     var spinner = function () {
-        setTimeout(function () {
+        setTimeout(() => {
             if ($('#spinner').length > 0) {
                 $('#spinner').removeClass('show');
             }
         }, 3000);
-    };
+    }
     spinner();
 
     //  TESTIMONIALS CAROUSEL HOOK
@@ -72,7 +70,7 @@
         }
     });
 
-    // Initiate the wowjs
+    // Initiate the wow.js
     new WOW().init();
 
     //<!-- pop up -->
@@ -119,14 +117,14 @@
         } else {
             $('.product').not('.' + value).hide();
             $('.product').filter('.' + value).show();
-            if (screen.width < 768) {
-                // debugger;
-                var tabElement = $(this);
-                var scrollPosition = tabElement.offset().top;
-                $('html, body').animate({
-                    scrollTop: scrollPosition - 200
-                }, 'smooth');
-            }
+            // if (screen.width < 768) {
+            //     // debugger;
+            //     var tabElement = $(this);
+            //     var scrollPosition = tabElement.offset().top;
+            //     $('html, body').animate({
+            //         scrollTop: scrollPosition - 200
+            //     }, 'smooth');
+            // }
         }
     })
 
@@ -134,15 +132,6 @@
         $('.sec1 a').removeClass('active_tab');
         $(this).addClass('active_tab');
     })
-
-    // mCustomScroll script
-    // $(window).on("load", function () {
-    //     $("#content-4").mCustomScrollbar({
-    //         // scrollButtons: { enable: true },
-    //         // theme: "dark-thin",
-    //         // scrollbarPosition: "inside"
-    //     });
-    // });
 
     //<!-- update Section Scroll effects -->
 
@@ -159,9 +148,7 @@
     });
 
     $(window).on('resize', function () {
-        setTimeout(() => {
-            screenCheck();
-        }, 2500);
+        screenCheck();
     });
 
     function applyScroll() {
@@ -218,7 +205,7 @@
     $(document).ready(function () {
         $('.page-top').hide();
         $(window).scroll(function () {
-            if ($(this).scrollTop() > 450) {
+            if ($(this).scrollTop() > 250) {
                 $('.back-to-top').show();
                 $('.page-top').show();
                 $('.back-to-top').fadeIn('slow');
@@ -229,7 +216,7 @@
             }
         });
         $('.page-top').click(function () {
-            $('html, body').animate({ scrollTop: 10 }, 10, 'easeInOutExpo');
+            $('html, body').animate({ scrollTop: 0 }, 500, 'ease');
             return false;
         });
     });
@@ -238,7 +225,7 @@
     // Facts counter
     $('.count').counterUp({
         delay: 10,
-        time: 5000
+        time: 2000
     });
 
     //<!-- OwlCarousel script start -->
@@ -294,6 +281,7 @@
         rtl: true,
         items: 5,
         loop: true,
+        margin: 10,
         autoplay: true,
         autoplayTimeout: 5000,
         autoplaySpeed: 5000,
@@ -316,6 +304,7 @@
     owl.owlCarousel({
         rtl: false,
         items: 5,
+        margin: 10,
         loop: true,
         autoplay: true,
         autoplayTimeout: 5000,

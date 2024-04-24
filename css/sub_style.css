@@ -5,7 +5,7 @@
     position: relative;
     background-image: url(../img/pos-bg.jpg);
     width: 100%;
-    height: inherit !important;
+    height: 100% !important;
     padding-bottom: 480px;
     background-position: center;
     background-size: cover;
@@ -35,7 +35,7 @@
     width: min-content !important;
     left: 0;
     bottom: 0;
-    transform: translateX(1.5rem) translateY(-1rem);
+    transform: translateX(1.5rem) translateY(-3rem);
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -45,7 +45,7 @@
 }
 
 .border-pos:hover {
-    transform: translateX(1.5rem) translateY(-1.5rem) !important;
+    transform: translateX(1.5rem) translateY(-3.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -534,7 +534,7 @@ nav ol.breadcrumb {
     width: min-content !important;
     left: 0;
     bottom: 0;
-    transform: translateX(2rem) translateY(-2rem);
+    transform: translateX(1.5rem) translateY(-3rem);
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -544,7 +544,7 @@ nav ol.breadcrumb {
 }
 
 .border-hms:hover {
-    transform: translateX(2rem) translateY(-2.5rem) !important;
+    transform: translateX(1.5rem) translateY(-3.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -634,7 +634,7 @@ section.bg-00 {
     width: min-content !important;
     left: 0;
     bottom: 0;
-    transform: translateX(2rem) translateY(-2rem);
+    transform: translateX(1.5rem) translateY(-3rem);
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -644,7 +644,7 @@ section.bg-00 {
 }
 
 .border-rms:hover {
-    transform: translateX(2rem) translateY(-2.5rem) !important;
+    transform: translateX(1.5rem) translateY(-3.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -676,7 +676,7 @@ section.bg-00 {
     width: min-content !important;
     left: 0;
     bottom: 0;
-    transform: translateX(2rem) translateY(-2rem) !important;
+    transform: translateX(1.5rem) translateY(-3rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -686,7 +686,7 @@ section.bg-00 {
 }
 
 .border-ssfinch:hover {
-    transform: translateX(2rem) translateY(-2.5rem) !important;
+    transform: translateX(1.5rem) translateY(-3.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -717,7 +717,7 @@ section.bg-00 {
     width: min-content !important;
     left: 0;
     bottom: 0;
-    transform: translateX(2rem) translateY(-2rem) !important;
+    transform: translateX(1.5rem) translateY(-3rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -727,7 +727,7 @@ section.bg-00 {
 }
 
 .border-vms:hover {
-    transform: translateX(2rem) translateY(-2.5rem) !important;
+    transform: translateX(1.5rem) translateY(-3.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -760,7 +760,7 @@ section.bg-00 {
     width: max-content !important;
     left: 0;
     bottom: 0;
-    transform: translateX(2rem) translateY(-2rem) !important;
+    transform: translateX(1.5rem) translateY(-3rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -770,7 +770,7 @@ section.bg-00 {
 }
 
 .border-crm:hover {
-    transform: translateX(2rem) translateY(-2.5rem) !important;
+    transform: translateX(1.5rem) translateY(-3.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -803,7 +803,7 @@ section.bg-00 {
     width: min-content !important;
     left: 0;
     bottom: 0;
-    transform: translateX(2rem) translateY(-2.5rem) !important;
+    transform: translateX(1.5rem) translateY(-3rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -813,7 +813,7 @@ section.bg-00 {
 }
 
 .border-ctm:hover {
-    transform: translateX(2rem) translateY(-3rem) !important;
+    transform: translateX(1.5rem) translateY(-3.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -846,7 +846,7 @@ section.bg-00 {
     width: min-content !important;
     left: 0;
     bottom: 0;
-    transform: translateX(2rem) translateY(-2rem) !important;
+    transform: translateX(1.5rem) translateY(-3rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -856,7 +856,7 @@ section.bg-00 {
 }
 
 .border-fms:hover {
-    transform: translateX(2rem) translateY(-2.5rem) !important;
+    transform: translateX(1.5rem) translateY(-3.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -889,7 +889,7 @@ section.bg-00 {
     width: min-content !important;
     left: 0;
     bottom: 0;
-    transform: translateX(2rem) translateY(-2rem) !important;
+    transform: translateX(1.5rem) translateY(-3rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -899,7 +899,7 @@ section.bg-00 {
 }
 
 .border-ems:hover {
-    transform: translateX(2rem) translateY(-2.5rem) !important;
+    transform: translateX(1.5rem) translateY(-3.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -932,7 +932,7 @@ section.bg-00 {
     width: min-content !important;
     left: 0;
     bottom: 0;
-    transform: translateX(2rem) translateY(-2rem) !important;
+    transform: translateX(1.5rem) translateY(-3rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -942,7 +942,7 @@ section.bg-00 {
 }
 
 .border-pms:hover {
-    transform: translateX(2rem) translateY(-2.5rem) !important;
+    transform: translateX(1.5rem) translateY(-3.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -975,7 +975,7 @@ section.bg-00 {
     width: min-content !important;
     left: 0;
     bottom: 0;
-    transform: translateX(2rem) translateY(-2rem) !important;
+    transform: translateX(1.5rem) translateY(-3rem) !important;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(15px);
@@ -985,7 +985,7 @@ section.bg-00 {
 }
 
 .border-sales:hover {
-    transform: translateX(2rem) translateY(-2.5rem) !important;
+    transform: translateX(1.5rem) translateY(-3.5rem) !important;
     background: rgba(255, 255, 255, 0.596);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(10px);
@@ -1207,7 +1207,7 @@ ul>.nt-x {
 .bg-terms {
     position: relative;
     background-image: url(../img/policy_terms.png);
-    background-position: top center;
+    background-position: 55% 0%;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -1257,7 +1257,7 @@ ul>.nt-x {
 .bg-anti {
     position: relative;
     background-image: url(../img/policy-pg.png);
-    background-position: top center;
+    background-position: 30% 0%;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -1346,9 +1346,9 @@ ul>.nt-x {
 .bg-spam {
     position: relative;
     background-image: url(../img/bg-anti-spam.png);
-    background-position: top center;
+    background-position: 93% 0%;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     width: 100%;
     height: 100%;
 }

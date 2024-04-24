@@ -47,12 +47,10 @@
   <div class="all_icons">
     <!-- Back to Top -->
     <a href="#" id="sub_top" class="btn btn-lg page-top btn-lg-square rounded-circle my-2">
-      <img src="img/right-arrow.png" alt="" data-bs-toggle="tooltip" data-bs-placement="top"
-        data-bs-custom-class="custom-tooltip" data-bs-title="back-to-top" />
+      <img src="img/right-arrow.png" alt="" />
     </a>
     <!-- Start chat box Design  -->
-    <button title="" class="chatbot-toggler my-2 fadeInDown" data-bs-toggle="tooltip" data-bs-placement="left"
-      data-bs-custom-class="chat-tooltip" data-bs-title="Hi! I'm Help you.👋">
+    <button title="" class="chatbot-toggler my-2 animated fadeInDown">
       <span class="material-symbols-outlined">mode_comment</span>
       <span class="material-symbols-outlined">close</span>
     </button>
@@ -62,16 +60,12 @@
   <div class="chatbot">
     <header>
       <h2 class="text-light">CHATBOT</h2>
-      <span class="material-symbols-outlined">close</span>
+      <span class="material-symbols-outlined">arrow_back</span>
     </header>
     <ul class="chatbox">
       <li class="chat incoming">
         <span class="material-symbols-outlined">🤖</span>
-        <p>
-          Hi <br />I’m SkyFinch 👋 <br />
-          If you need any help?<br />
-          Type: 'Help'
-        </p>
+        <p class="textRun"></p>
       </li>
       <li class="chat outgoing"></li>
     </ul>
@@ -281,7 +275,7 @@
       class="container-fluid service-tab-sec d-flex justify-content-center align-items-center pt-xl-2 mt-xl-0 py-5">
       <div class="container mb-xl-0 mb-lg-3 mb-4">
         <div class="text-center mx-auto mt-xl-4 pt-xl-5 mt-lg-3 pt-lg-1 mt-1 mb-lg-1 g-lg-4 gy-4"
-          style="max-width: 600px" data-aos-duration="500" data-aos="slide-up">
+          style="max-width: 600px" data-aos-duration="800" data-aos="fade-up">
           <h4 class="d-inline-block text-primary fw-semi-bold py-0 px-1 my-1 mb-0">
             Our Services
           </h4>
@@ -290,8 +284,8 @@
             Awesome Services For Our Company
           </h3>
         </div>
-        <div class="row g-lg-2 gy-4 mt-lg-0 mt-2 respo_ser_tab">
-          <div class="col-lg-4" data-aos-duration="500" data-aos="slide-up">
+        <div class="row g-lg-2 gy-4 mt-lg-0 mt-2 respo_ser_tab" data-aos-duration="800" data-aos="slide-up">
+          <div class="col-lg-4">
             <div class="nav nav-pills g-2 d-flex justify-content-around w-100 h-75 me-2">
               <button class="nav-link bar-clor g-2 w-100 text-start border p-2 mb-2 active" data-bs-toggle="pill"
                 data-bs-target="#tab-pane-1" data-tab="#tab-pane-1" type="button">
@@ -323,8 +317,7 @@
                     <i class="fa fa-bars"></i>
                   </div>
                   <div class="col-10 p-0 m-0">
-                    <span class="m-0 h5 font-weight-bold text-uppercase">Mobile Application
-                      Development</span>
+                    <span class="m-0 h5 font-weight-bold text-uppercase">Mobile Application Development</span>
                   </div>
                 </div>
               </button>
@@ -335,8 +328,7 @@
                     <i class="fa fa-bars"></i>
                   </div>
                   <div class="col-10 p-0 m-0">
-                    <span class="m-0 h5 font-weight-bold text-uppercase">Automation
-                      Services</span>
+                    <span class="m-0 h5 font-weight-bold text-uppercase">Automation Services</span>
                   </div>
                 </div>
               </button>
@@ -347,8 +339,7 @@
                     <i class="fa fa-bars"></i>
                   </div>
                   <div class="col-10 p-0 m-0">
-                    <span class="m-0 h5 font-weight-bold text-uppercase">Integration
-                      Services</span>
+                    <span class="m-0 h5 font-weight-bold text-uppercase">Integration Services</span>
                   </div>
                 </div>
               </button>
@@ -359,23 +350,22 @@
                     <i class="fa fa-bars"></i>
                   </div>
                   <div class="col-10 p-0 m-0">
-                    <span class="m-0 h5 font-weight-bold text-uppercase">ML/AI and Big Data
-                      Solutions</span>
+                    <span class="m-0 h5 font-weight-bold text-uppercase">ML/AI and Big Data Solutions</span>
                   </div>
                 </div>
               </button>
             </div>
           </div>
           <div class="col-lg-8">
-            <div class="tab-content w-100 h-75" data-aos-duration="500" data-aos="fade-up">
-              <div class="tab-pane show active animated zoomIn" id="tab-pane-1">
+            <div class="tab-content w-100 h-75">
+              <div class="tab-pane show active" id="tab-pane-1">
                 <div class="row g-lg-4 g-md-4 g-2">
-                  <div class="col-12 col-md-6 tabPane_img col-lg-6" style="min-height: 350px">
+                  <div class="col-12 col-md-6 tabPane_img col-lg-6 animated zoomIn" style="min-height: 350px">
                     <div class="d-flex justify-content-center position-relative h-100">
                       <img class="position-absolute rounded w-100" src="img/soft_service.png" alt="" />
                     </div>
                   </div>
-                  <div class="col-12 col-md-6 col-lg-6">
+                  <div class="col-12 col-md-6 col-lg-6 animated zoomIn">
                     <h3 class="mb-lg-3 mb-md-3 mb-1">
                       SOFTWARE DEVELOPMENT
                     </h3>
@@ -403,14 +393,14 @@
                   </div>
                 </div>
               </div>
-              <div class="tab-pane animated zoomIn" id="tab-pane-2">
+              <div class="tab-pane" id="tab-pane-2">
                 <div class="row g-4">
-                  <div class="col-md-6 col-lg-6 tabPane_img h-100">
+                  <div class="col-md-6 col-lg-6 tabPane_img h-100 animated zoomIn">
                     <div class="d-flex justify-content-center position-relative h-100">
                       <img class="img-fluid rounded w-100" src="img/web_services.png" style="height: 280px;" alt="" />
                     </div>
                   </div>
-                  <div class="col-12 col-md-6 col-lg-6">
+                  <div class="col-12 col-md-6 col-lg-6 animated zoomIn">
                     <h3 class="mb-lg-3 mb-md-3 mb-1">
                       WEB DEVELOPMENT
                     </h3>
@@ -437,14 +427,14 @@
                   </div>
                 </div>
               </div>
-              <div class="tab-pane animated zoomIn" id="tab-pane-3">
+              <div class="tab-pane" id="tab-pane-3">
                 <div class="row g-4">
-                  <div class="col-md-6 col-lg-6 tabPane_img h-75">
+                  <div class="col-md-6 col-lg-6 tabPane_img h-75 animated zoomIn">
                     <div class="d-flex justify-content-center position-relative h-75">
                       <img class="img-fluid rounded w-100" src="img/mob_services.png" alt="" />
                     </div>
                   </div>
-                  <div class="col-12 col-md-6 col-lg-6">
+                  <div class="col-12 col-md-6 col-lg-6 animated zoomIn">
                     <h3 class="mb-lg-3 mb-md-3 mb-1">
                       MOBILE APPLICATION DEVELOPMENT
                     </h3>
@@ -473,14 +463,14 @@
                   </div>
                 </div>
               </div>
-              <div class="tab-pane animated zoomIn" id="tab-pane-4">
+              <div class="tab-pane" id="tab-pane-4">
                 <div class="row g-4">
-                  <div class="col-md-6 col-lg-6 tabPane_img">
+                  <div class="col-md-6 col-lg-6 tabPane_img animated zoomIn">
                     <div class="d-flex justify-content-center position-relative h-100">
                       <img class="position-absolute rounded w-100" src="img/automation.svg" alt="" />
                     </div>
                   </div>
-                  <div class="col-12 col-md-6 col-lg-6">
+                  <div class="col-12 col-md-6 col-lg-6 animated zoomIn">
                     <h3 class="mb-lg-3 mb-md-3 mb-1">
                       AUTOMATION SERVICES
                     </h3>
@@ -509,15 +499,15 @@
                   </div>
                 </div>
               </div>
-              <div class="tab-pane animated zoomIn" id="tab-pane-5">
+              <div class="tab-pane" id="tab-pane-5">
                 <div class="row g-4">
-                  <div class="col-md-6 col-lg-6 tabPane_img">
+                  <div class="col-md-6 col-lg-6 tabPane_img animated zoomIn">
                     <div class="d-flex justify-content-center position-relative h-100">
                       <img class="position-absolute sms_services rounded w-100" src="img/Intergration_services.png"
                         alt="" />
                     </div>
                   </div>
-                  <div class="col-12 col-md-6 col-lg-6">
+                  <div class="col-12 col-md-6 col-lg-6 animated zoomIn">
                     <h3 class="mb-lg-3 mb-md-3 mb-1">
                       INTEGRATION SERVICES
                     </h3>
@@ -544,14 +534,14 @@
                   </div>
                 </div>
               </div>
-              <div class="tab-pane animated zoomIn" id="tab-pane-6">
+              <div class="tab-pane" id="tab-pane-6">
                 <div class="row g-4">
-                  <div class="col-md-6 col-lg-6 tabPane_img">
+                  <div class="col-md-6 col-lg-6 tabPane_img animated zoomIn">
                     <div class="d-flex justify-content-center position-relative h-100">
                       <img class="position-absolute rounded w-100" src="img/ml_ai-bd.png" alt="" />
                     </div>
                   </div>
-                  <div class="col-12 col-md-6 col-lg-6">
+                  <div class="col-12 col-md-6 col-lg-6 animated zoomIn">
                     <h3 class="mb-lg-3 mb-md-3 mb-1">
                       ML/AI AND BIG DATA SOLUTIONS
                     </h3>
@@ -591,7 +581,7 @@
       <div class="container d-flex justify-content-center mt-xl-1 mb-xl-1 pt-lg-2">
         <div class="row">
           <div class="col-lg-12 callback d-flex justify-content-center mt-xl-5 mb-xl-3 my-lg-3 py-lg-2 mt-2 px-4">
-            <div class="px-lg-2 px-md-2 py-lg-1 py-md-3 mx-lg-4 mx-md-3 px-0" data-aos-duration="500"
+            <div class="px-lg-2 px-md-2 py-lg-1 py-md-3 mx-lg-4 mx-md-3 px-0" data-aos-duration="800"
               data-aos="slide-up">
               <div class="text-center mt-3 mx-auto fadeInUp">
                 <h4 class="d-inline-block text-primary fw-semi-bold px-3">
@@ -603,7 +593,7 @@
               </div>
               <form name="callus" id="callus" action="">
                 <div class="row gy-3 d-flex justify-content-center">
-                  <div class="col-12 col-md-6 col-lg-6 mb-md-1 mb-2" data-aos-duration="500" data-aos="fade-up">
+                  <div class="col-12 col-md-6 col-lg-6 mb-md-1 mb-2" data-aos-duration="800" data-aos="fade-up">
                     <fieldset>
                       <input type="text" class="form-control text-capitalize" style="text-transform: uppercase"
                         id="serviceName" name="serviceName" placeholder="Enter your name"
@@ -614,7 +604,7 @@
                     <label id="serviceName-errorLable" for="serviceName" class="error text-danger"
                       style="display:none"></label>
                   </div>
-                  <div class="col-12 col-md-6 col-lg-6 mb-md-1 mb-2" data-aos-duration="500" data-aos="fade-up">
+                  <div class="col-12 col-md-6 col-lg-6 mb-md-1 mb-2" data-aos-duration="800" data-aos="fade-up">
                     <fieldset>
                       <input type="text" class="form-control" id="serviceMail" name="serviceMail"
                         placeholder="Enter your email id" maxlength="60" />
@@ -623,7 +613,7 @@
                     <label id="serviceMail-errorLable" for="serviceMail" class="error text-danger"
                       style="display:none"></label>
                   </div>
-                  <div class="col-12 col-md-6 col-lg-6 mb-md-1 mb-2" data-aos-duration="500" data-aos="fade-up">
+                  <div class="col-12 col-md-6 col-lg-6 mb-md-1 mb-2" data-aos-duration="800" data-aos="fade-up">
                     <fieldset>
                       <input type="text" class="form-control" id="serviceNum" name="serviceNum" maxlength="15"
                         onkeypress="return /[-+0-9 ]/i.test(event.key)" placeholder="Enter your phone number" />
@@ -632,7 +622,7 @@
                     <label id="serviceNum-errorLable" for="serviceNum" class="error text-danger"
                       style="display:none"></label>
                   </div>
-                  <div class="col-12 col-md-6 col-lg-6 mb-md-1 mb-2" data-aos-duration="500" data-aos="fade-up">
+                  <div class="col-12 col-md-6 col-lg-6 mb-md-1 mb-2" data-aos-duration="800" data-aos="fade-up">
                     <fieldset>
                       <input type="text" class="form-control" id="serviceSub" name="serviceSub"
                         placeholder="Enter your subject" maxlength="100" />
@@ -641,7 +631,7 @@
                     <label id="serviceSub-errorLable" for="serviceSub" class="error text-danger"
                       style="display:none"></label>
                   </div>
-                  <div class="col-12 col-md-12 col-lg-12" data-aos-duration="500" data-aos="fade-up">
+                  <div class="col-12 col-md-12 col-lg-12" data-aos-duration="800" data-aos="fade-up">
                     <fieldset>
                       <textarea class="form-control form-control-sm" placeholder="Message here.." id="serviceMsg"
                         name="serviceMsg"></textarea>

@@ -139,7 +139,7 @@ function searchContent() {
         const modalBody = document.querySelector('#content-3');
         contentElements[i].style.display = contentDisplay;
         count += contentDisplay === "none" ? 0 : 1;
-        if (userInput === '' || userInput === ' ') {
+        if (/^\s*$/.test(userInput)) {
             modalBody.style.display = "none";
         }
         else {
@@ -152,8 +152,10 @@ function searchContent() {
 
 function setInputMessage(n) {
     let message = '';
+    let userInput = (searchInput.value || '').toLowerCase();
+    let emptySpaces =  /^\s*$/.test(userInput);
     if (typeof n === "number") {
-        if (!n) {
+        if (!n || emptySpaces === true) {
             message = "No results found.";
         } else {
             message = `${n} result${n === 1 ? "" : "s"} found`;

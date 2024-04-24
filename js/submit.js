@@ -48,7 +48,7 @@
                 $("#form_number").val(mobNo);
             } else {
                 $("#form_number-errorLable").css('display', 'block').text("Please enter a valid Phone Number.");
-                $("#form_number").val('');
+                $("#form_number").val();
             }
         } else {
             $("#form_number-errorLable").css('display', 'none').text("");
@@ -75,7 +75,7 @@
                 $("#form_mail").attr("class", "form-control error");
                 $("#form_mail-errorLable").text('Please enter valid Email ID');
                 $("#form_mail-errorLable").attr("style", "display: block;");
-                $("#form_mail").val('');
+                $("#form_mail").val();
             }
         }
         else {
