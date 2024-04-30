@@ -2,6 +2,9 @@
 @media only screen and (max-width:320px) {
 
     /* Style page responsive start */
+    .dropdown-content1 {
+        width: calc(100% - 20px) !important;
+    }
 
     #contact_form {
         & .formBg {
@@ -51,6 +54,10 @@
     #home_skyfinch #header-carousel,
     #home_skyfinch .carousel-inner {
         height: inherit !important;
+    }
+
+    #sec13 {
+        height: 90rem;
     }
 
     .container2,
@@ -580,7 +587,7 @@
 
     .callback {
         transform: translateY(0rem);
-        width: min(300px - 1vw);
+        width: calc(100% - 40px);
         border-radius: 15px;
         margin-bottom: 50px;
         padding: 40px;
@@ -611,14 +618,14 @@
         width: 100% !important;
         top: 0 !important;
         left: 0 !important;
-        transform:none !important;
+        transform: none !important;
     }
 
     #profile_sec2 .hist_3 {
         width: 100% !important;
         top: 0 !important;
         left: 0 !important;
-        transform:none !important;
+        transform: none !important;
     }
 
     #profile_sec2 {
@@ -1331,6 +1338,13 @@
 @media (min-width:321px) and (max-width:375px) {
 
     /* Style page responsive start */
+    .dropdown-content1 {
+        width: auto !important;
+    }
+
+    .submenu {
+        width: calc(100% - 10px) !important;
+    }
 
     #contact_form {
         & .formBg {
@@ -1381,6 +1395,10 @@
     #home_skyfinch #header-carousel,
     #home_skyfinch .carousel-inner {
         height: inherit !important;
+    }
+
+    #sec13 {
+        height: 90rem;
     }
 
     .container2,
@@ -1915,7 +1933,7 @@
 
     .callback {
         transform: translateY(0rem);
-        width: min(320px - 1vw);
+        width: calc(100% - 40px);
         border-radius: 15px;
         margin-bottom: 50px;
         padding: 40px;
@@ -2655,6 +2673,14 @@
 @media (min-width:376px) and (max-width:425px) {
 
     /* Style page responsive start */
+    .dropdown-content1 {
+        width: auto !important;
+    }
+
+    .submenu {
+        width: calc(100% - 10px) !important;
+    }
+
     #contact_form {
         & .formBg {
             width: 380px;
@@ -2695,6 +2721,10 @@
     #home_skyfinch #header-carousel,
     #home_skyfinch .carousel-inner {
         height: inherit !important;
+    }
+
+    #sec13 {
+        height: 90rem;
     }
 
     .container2,
@@ -3256,7 +3286,7 @@
 
     .callback {
         transform: translateY(0rem);
-        width: min(320px - 1vw);
+        width: calc(100% - 40px);
         border-radius: 15px;
         margin-bottom: 50px;
         padding: 40px;
@@ -3417,6 +3447,10 @@
 
     #profile_sec2_2 img {
         width: 350px;
+    }
+
+    .modal-title {
+        padding: 0px 20px;
     }
 
     .portfolio_details_inner .row {
@@ -3997,6 +4031,7 @@
     .bg-terms {
         height: auto !important;
     }
+
     .terms_img {
         width: 320px !important;
     }
@@ -4115,6 +4150,10 @@
 
     #sec5 .container {
         transform: translateX(0) translateY(0rem) !important;
+    }
+
+    #sec13 {
+        height: 80rem;
     }
 
     /* Manual Responsive matrix column */
@@ -4527,7 +4566,7 @@
 
     .callback {
         transform: translateY(0rem);
-        width: min(470px - 1vw);
+        width: calc(100% - 70px);
         border-radius: 100px;
         margin-bottom: 40px;
         padding: 2rem 3rem !important;
@@ -5479,6 +5518,10 @@
         transform: translateX(0) translateY(0rem) !important;
     }
 
+    #sec13 {
+        height: 70rem;
+    }
+
     .mx-6 {
         margin-left: 6rem !important;
         margin-right: 6rem !important;
@@ -5741,18 +5784,13 @@
         height: 250px;
     }
 
-    .show3 .card {
-        width: 100% !important;
-        height: 200px !important;
-    }
-
     .bg-10 {
         height: 65rem !important;
     }
 
     .callback {
         transform: translateY(0rem);
-        width: min(550px - 1vw);
+        width: calc(100% - 70px);
         border-radius: 100px;
         margin-bottom: 40px;
         padding: 2rem 1.5rem !important;
@@ -6020,7 +6058,7 @@
     }
 
     #fms_image.bg-00 {
-        height: 36rem !important;
+        height: 38rem !important;
     }
 
     #pms_image .container-fluid {
@@ -6056,6 +6094,11 @@
     .bg-12 .row .tab-row1 {
         max-height: 350px !important;
         height: fit-content !important;
+    }
+
+    .bg-12 .no-scroll {
+        display: grid !important;
+        align-items: center !important;
     }
 
     .bg-12 .container {
@@ -6613,6 +6656,7 @@
 
     .callback {
         transform: translateY(0rem);
+        width: calc(100% - 100px);
     }
 
     #home_skyfinch {
@@ -6839,6 +6883,7 @@
     }
 
     #sec7 {
+        padding: 0 !important;
         & .container {
             transform: translateX(0) translateY(0rem) !important;
         }
@@ -7591,6 +7636,9 @@
 @media (min-width:1025px) and (max-width:1366px) {
 
     /* Style page responsive start */
+    .h-custom-75 {
+        height: 75%;
+    }
 
     /* Social media icons */
     .nav-icons.d-manual-flex {
@@ -7719,17 +7767,6 @@
         background-position: center bottom;
     }
 
-    #sec13 {
-        position: relative;
-    }
-
-    #sec13 #cpy-ryt {
-        position: relative;
-        bottom: 0;
-        left: 0;
-        transform: translateX(0rem) translateY(0rem);
-    }
-
     .footer .foo-policy,
     #foo-rights {
         font-size: 16px;
@@ -7751,6 +7788,10 @@
             margin-bottom: 0.5rem !important;
         }
 
+    }
+
+    #profile_sec2_2 .page-section {
+        height: inherit;
     }
 
     .profile_topic~p {
@@ -8137,7 +8178,6 @@
 
 /* Desktop Screen */
 @media (min-width:1367px) and (max-width:1440px) {
-
     /* Social media icons */
     .nav-icons.d-manual-flex {
         display: none !important;
@@ -8148,6 +8188,10 @@
     #home_skyfinch #header-carousel,
     #home_skyfinch .carousel-inner {
         height: inherit !important;
+    }
+
+    .carousel-inner .carousel-item .carousel-caption{
+        transform: translateY(3rem);
     }
 
     #home_skyfinch .caro-caption p {
@@ -8216,20 +8260,14 @@
         }
     }
 
-
     #home_skyfinch .caro-caption a {
         font-size: 1.2rem;
         padding: 1rem 0.8rem !important;
     }
 
-    #about_view .container {
-        transform: translateY(0);
-    }
-
     #about_Awards .container {
         position: relative;
         top: 0;
-        transform: translateY(4rem);
     }
 
     .img-abt {
@@ -8275,24 +8313,12 @@
         transform: translateY(2rem);
     }
 
-    #sec13 {
-        position: relative;
-    }
-
-    #sec13 #cpy-ryt {
-        position: relative;
-        bottom: 0;
-        left: 0;
-        transform: translateX(0rem) translateY(2rem);
-    }
-
     .footer .foo-policy,
     #foo-rights {
         font-size: 16px;
     }
 
     .callback {
-        width: min(900px - 1vw);
         border-radius: 80px;
         margin-bottom: 40px;
     }
@@ -8484,7 +8510,6 @@
     #sec8 .container-fluid {
         position: relative;
         top: 0;
-        transform: translateY(1rem);
     }
 
     li.li-rms1 {
@@ -8521,6 +8546,8 @@
 
     .bg-0 {
         height: 100% !important;
+        display: flex;
+        align-items: center;
     }
 
     .bg-11 {
@@ -8548,7 +8575,7 @@
     }
 
     #prod_sec_2 .container {
-        transform: translateY(7rem);
+        transform: translateY(8rem);
     }
 
     #land-sec .container {
@@ -8556,9 +8583,22 @@
     }
 
     section #portfolio {
-       position: relative;
-       top: 0;
-       transform: translateY(3rem);
+        position: relative;
+        top: 0;
+        transform: translateY(3rem);
+    }
+
+    #profile_sec2_2 .page-section {
+        height: inherit;
+    }
+
+    .modally-content .modal-title {
+        padding: 15px 2px;
+    }
+
+    div:has(> .btn-pop) {
+        position: relative !important;
+        top: 0 !important;
     }
 }
 
@@ -8651,7 +8691,8 @@
         bottom: 15px;
     }
 
-    #module_card #card:active::before, #module_card #card:hover::before {
+    #module_card #card:active::before,
+    #module_card #card:hover::before {
         right: 240px;
         bottom: -25px;
     }
@@ -8733,7 +8774,7 @@
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
     }
 
-    div:has( > .btn-pop) {
+    div:has(> .btn-pop) {
         position: relative !important;
         top: 0 !important;
     }
@@ -8840,7 +8881,8 @@
     }
 
     .navbar .dropdown-menu {
-        margin-left: 3rem !important;
+        margin-left: 1.5rem !important;
+        box-shadow: none;
     }
 
     .navbar .navbar-nav .nav-link {
@@ -8848,7 +8890,7 @@
     }
 
     #navbarCollapse .dropdown-menu {
-        width: min-content;
+        width: 100%;
     }
 
     .submenu {
@@ -9038,13 +9080,6 @@
     .features h5 {
         padding-left: 15px;
         text-wrap: wrap;
-    }
-
-    #sec13 #cpy-ryt {
-        position: relative;
-        bottom: 0;
-        left: 0;
-        transform: translateX(0rem) translateY(-0.9rem);
     }
 
     #sec7 .container {

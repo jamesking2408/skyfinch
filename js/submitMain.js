@@ -58,16 +58,16 @@
 
         if (length !== 0) {
             if (regex.test(mobNo)) {
-                $("#cus_number-errorLable").css('display', 'none').text("");
+                $("#cus_number-errorLabel").css('display', 'none').text("");
                 $("#cus_number").val(mobNo);
                 return true;
             } else {
-                $("#cus_number-errorLable").css('display', 'block').text("Please enter a valid Phone Number.");
+                $("#cus_number-errorLabel").css('display', 'block').text("Please enter a valid Phone Number.");
                 $("#cus_number").val();
                 return false;
             }
         } else {
-            $("#cus_number-errorLable").css('display', 'none').text("");
+            $("#cus_number-errorLabel").css('display', 'none').text("");
             return true;
         }
     }
@@ -77,7 +77,7 @@
     });
 
     $("#cus_number").on('input', function () {
-        $('#cus_number-errorLable').css('display', 'none').text("");
+        $('#cus_number-errorLabel').css('display', 'none').text("");
     });
 
     function emailValid() {
@@ -85,22 +85,22 @@
         if (email != "" && email != null) {
             if (/^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i.test(email)) {
                 $("#cus_mail").attr("class", "form-control");
-                $("#cus_mail-errorLable").text('');
-                $("#cus_mail-errorLable").attr("style", "display: none;");
+                $("#cus_mail-errorLabel").text('');
+                $("#cus_mail-errorLabel").attr("style", "display: none;");
                 return true;
             }
             else {
                 $("#cus_mail").attr("class", "form-control error");
-                $("#cus_mail-errorLable").text('Please enter valid Email ID');
-                $("#cus_mail-errorLable").attr("style", "display: block;");
+                $("#cus_mail-errorLabel").text('Please enter valid Email ID');
+                $("#cus_mail-errorLabel").attr("style", "display: block;");
                 $("#cus_mail").val();
                 return false;
             }
         }
         else {
             $("#cus_mail").attr("class", "form-control");
-            $("#cus_mail-errorLable").text('');
-            $("#cus_mail-errorLable").attr("style", "display: none;");
+            $("#cus_mail-errorLabel").text('');
+            $("#cus_mail-errorLabel").attr("style", "display: none;");
             return true;
         }
     }
@@ -110,7 +110,7 @@
     });
 
     $("#cus_mail").on('input', function () {
-        $('#cus_mail-errorLable').css('display', 'none').text("");
+        $('#cus_mail-errorLabel').css('display', 'none').text("");
     });
 
     let popup = document.querySelector("#pop");

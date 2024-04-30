@@ -75,80 +75,68 @@
             }
         }
     });
-
     // Text first letter capitalized
     $('#msg').keyup(function () {
         var caps = $('#msg').val();
         caps = caps.charAt(0).toUpperCase() + caps.slice(1);
         $('#msg').val(caps);
     });
-
-
     function emailValid() {
         var email = $('#customerMail').val();
         if (email != "" && email != null) {
             if (/^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i.test(email)) {
                 $("#customerMail").attr("class", "form-control");
-                $("#customerMail-errorLable").text('');
-                $("#customerMail-errorLable").attr("style", "display: none;");
+                $("#customerMail-errorLabel").text('');
+                $("#customerMail-errorLabel").attr("style", "display: none;");
                 return true;
             }
             else {
                 $("#customerMail").attr("class", "form-control error");
-                $("#customerMail-errorLable").text('Please enter valid Email ID');
-                $("#customerMail-errorLable").attr("style", "display: block;");
+                $("#customerMail-errorLabel").text('Please enter valid Email ID');
+                $("#customerMail-errorLabel").attr("style", "display: block;");
                 $("#customerMail").val();
                 return false;
             }
         }
         else {
             $("#customerMail").attr("class", "form-control");
-            $("#customerMail-errorLable").text('');
-            $("#customerMail-errorLable").attr("style", "display: none;");
+            $("#customerMail-errorLabel").text('');
+            $("#customerMail-errorLabel").attr("style", "display: none;");
             return true;
         }
     }
-
     $('#customerMail').on('blur', function () {
         emailValid();
     });
-
     $("#customerMail").on('input', function () {
-        $('#customerMail-errorLable').css('display', 'none').text("");
+        $('#customerMail-errorLabel').css('display', 'none').text("");
     });
-
     function MobileNum() {
         var mobNo = $("#customerNum").val().trim();
         var length = mobNo.length;
         var regex = /^(?:\+?\d{1,3})?(\s*[\-]\s*)?[1-9]\d{9,14}$/;
-
         if (length !== 0) {
             if (regex.test(mobNo)) {
-                $("#customerNum-errorLable").css('display', 'none').text("");
+                $("#customerNum-errorLabel").css('display', 'none').text("");
                 $("#customerNum").val(mobNo);
                 return true;
             } else {
-                $("#customerNum-errorLable").css('display', 'block').text("Please enter a valid Phone Number.");
+                $("#customerNum-errorLabel").css('display', 'block').text("Please enter a valid Phone Number.");
                 $("#customerNum").val();
                 return false;
             }
         } else {
-            $("#customerNum-errorLable").css('display', 'none').text("");
+            $("#customerNum-errorLabel").css('display', 'none').text("");
             return true;
         }
     }
-
     $("#customerNum").on('blur', function () {
         MobileNum();
     });
-
     $("#customerNum").on('input', function () {
-        $('#customerNum-errorLable').css('display', 'none').text("");
+        $('#customerNum-errorLabel').css('display', 'none').text("");
     });
-
     let popup = document.querySelector("#pop");
-
-
     function prodEnquiry() {
         let cus_name = document.querySelector("#customerName").value;
         let num = document.querySelector("#customerNum").value;
@@ -184,7 +172,6 @@
         //     Body: body
         // })
     }
-
     $("#customerName").on('input', function () {
         var regexName = /^[a-zA-Z .]*$/i;
         if (!regexName.test($(this).val())) {
@@ -193,7 +180,6 @@
             });
         }
     });
-
     $("#customerNum").on('input', function () {
         var regexNumber = /^[-+0-9 ]*$/i;
         if (!regexNumber.test($(this).val())) {
@@ -202,7 +188,6 @@
             });
         }
     });
-
     $("#customerCompy").on('input', function () {
         var regexCompany = /^[a-zA-Z 0-9 & ()-.]*$/i;
         if (!regexCompany.test($(this).val())) {
@@ -211,11 +196,9 @@
             });
         }
     });
-
     $("#prodEnquiry").on('click', function () {
         var fields = ["#customerName", "#customerNum", "#customerMail", "#customerCompy", "#customerJob", "#customerCountry", "#customerProduct", "#customerPlan"];
         var currentIndex = 0;
-
         function focusNextEmptyField() {
             for (var i = currentIndex; i < fields.length; i++) {
                 if ($(fields[i]).val() === '') {
@@ -236,7 +219,6 @@
             focusNextEmptyField();
         }
     });
-
     function resetFormProduct() {
         document.cus_Form.reset();
     }
@@ -246,11 +228,8 @@
         validator.resetForm();
         resetFormProduct();
     });
-
 })(jQuery);
-
 document.querySelector(".exit").addEventListener("click", closePopupPq);
-
 function closePopupPq() {
     let popup = document.querySelector(".open-popup");
     if (popup) {
@@ -258,19 +237,19 @@ function closePopupPq() {
     }
     document.cus_Form.reset();
 }
-
-
 document.addEventListener('DOMContentLoaded', function () {
     var selectedPlanName = localStorage.getItem('selectedPlanName');
     var selectedPlanPrice = localStorage.getItem('selectedPlanPrice');
-
-    if (selectedPlanPrice === ' ') {
+    if ((selectedPlanPrice === ' ') && (selectedPlanName === ' ')) {
+        document.querySelector('#customerPlan').value = "";
+        document.querySelector('#customerProduct').value = "";
+    } else if (selectedPlanPrice === ' ') {
         document.querySelector('#customerProduct').value = selectedPlanName;
         document.querySelector('#customerPlan').value = "";
     } else if (selectedPlanName === ' ') {
         document.querySelector('#customerProduct').value = "";
         document.querySelector('#customerPlan').value = selectedPlanPrice;
-    } else if (selectedPlanName && selectedPlanPrice) {
+    } else {
         document.querySelector('#customerPlan').value = selectedPlanPrice;
         document.querySelector('#customerProduct').value = selectedPlanName;
     }

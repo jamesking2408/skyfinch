@@ -116,10 +116,6 @@ nav ol.breadcrumb {
     background-color: var(--primary);
 }
 
-#tab-sec .nav-link {
-    color: var(--primary);
-}
-
 .bg-12 .row .tab-pane {
     height: 530px !important;
 }
@@ -380,6 +376,11 @@ nav ol.breadcrumb {
     background: radial-gradient(circle, rgba(246, 246, 246, 1) 0%, rgba(138, 198, 241, 1) 50%, rgba(10, 153, 255, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f6f6f6", endColorstr="#0a99ff", GradientType=1);
     height: 100vh;
+}
+
+#module_card {
+    margin: 15px 0px !important;
+    transform: translateY(-15px);
 }
 
 #module_card #card::before {

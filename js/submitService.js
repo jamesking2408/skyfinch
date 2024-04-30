@@ -67,16 +67,16 @@
 
         if (length !== 0) {
             if (regex.test(mobNo)) {
-                $("#serviceNum-errorLable").css('display', 'none').text("");
+                $("#serviceNum-errorLabel").css('display', 'none').text("");
                 $("#serviceNum").val(mobNo);
                 return true;
             } else {
-                $("#serviceNum-errorLable").css('display', 'block').text("Please enter a valid Phone Number.");
+                $("#serviceNum-errorLabel").css('display', 'block').text("Please enter a valid Phone Number.");
                 $("#serviceNum").val();
                 return false;
             }
         } else {
-            $("#serviceNum-errorLable").css('display', 'none').text("");
+            $("#serviceNum-errorLabel").css('display', 'none').text("");
             return true;
         }
     }
@@ -86,7 +86,7 @@
     });
 
     $("#serviceNum").on('input', function () {
-        $('#serviceNum-errorLable').css('display', 'none').text("");
+        $('#serviceNum-errorLabel').css('display', 'none').text("");
     });
 
     function emailValid() {
@@ -94,22 +94,22 @@
         if (email != "" && email != null) {
             if (/^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i.test(email)) {
                 $("#serviceMail").attr("class", "form-control");
-                $("#serviceMail-errorLable").text('');
-                $("#serviceMail-errorLable").attr("style", "display: none;");
+                $("#serviceMail-errorLabel").text('');
+                $("#serviceMail-errorLabel").attr("style", "display: none;");
                 return true;
             }
             else {
                 $("#serviceMail").attr("class", "form-control error");
-                $("#serviceMail-errorLable").text('Please enter valid Email ID');
-                $("#serviceMail-errorLable").attr("style", "display: block;");
+                $("#serviceMail-errorLabel").text('Please enter valid Email ID');
+                $("#serviceMail-errorLabel").attr("style", "display: block;");
                 $("#serviceMail").val();
                 return false;
             }
         }
         else {
             $("#serviceMail").attr("class", "form-control");
-            $("#serviceMail-errorLable").text('');
-            $("#serviceMail-errorLable").attr("style", "display: none;");
+            $("#serviceMail-errorLabel").text('');
+            $("#serviceMail-errorLabel").attr("style", "display: none;");
             return true;
         }
     }
@@ -119,7 +119,7 @@
     });
 
     $("#serviceMail").on('input', function () {
-        $('#serviceMail-errorLable').css('display', 'none').text("");
+        $('#serviceMail-errorLabel').css('display', 'none').text("");
     });
 
     let popup = document.querySelector("#pop");

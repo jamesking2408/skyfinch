@@ -52,22 +52,22 @@
         if (email != "" && email != null) {
             if (/^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i.test(email)) {
                 $("#contactMail").attr("class", "form-control");
-                $("#contactMail-errorLable").text('');
-                $("#contactMail-errorLable").attr("style", "display: none;");
+                $("#contactMail-errorLabel").text('');
+                $("#contactMail-errorLabel").attr("style", "display: none;");
                 return true;
             }
             else {
                 $("#contactMail").attr("class", "form-control error");
-                $("#contactMail-errorLable").text('Please enter valid Email ID');
-                $("#contactMail-errorLable").attr("style", "display: block;");
+                $("#contactMail-errorLabel").text('Please enter valid Email ID');
+                $("#contactMail-errorLabel").attr("style", "display: block;");
                 $("#contactMail").val();
                 return false;
             }
         }
         else {
             $("#contactMail").attr("class", "form-control");
-            $("#contactMail-errorLable").text('');
-            $("#contactMail-errorLable").attr("style", "display: none;");
+            $("#contactMail-errorLabel").text('');
+            $("#contactMail-errorLabel").attr("style", "display: none;");
             return true;
         }
     }
@@ -77,7 +77,7 @@
     });
 
     $("#contactMail").on('input', function () {
-        $('#contactMail-errorLable').css('display', 'none').text("");
+        $('#contactMail-errorLabel').css('display', 'none').text("");
     });
 
     let popup = document.querySelector("#pop");

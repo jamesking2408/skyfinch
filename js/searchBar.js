@@ -116,23 +116,18 @@ function jumpToContactUs(sectionId) {
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
-
 let searchInput = document.getElementById("searchbar");
 let inputMessage = document.getElementById("input-message");
-
 searchInput.addEventListener("keyup", function () {
-    // debugger;
     document.querySelector('#content-3').scrollTo(0, 0); // Scroll to the top of the page
     searchContent();
     searchURL();
     currentListUrl();
 });
-
 function searchContent() {
     const userInput = (searchInput.value || '').toLowerCase();
     const contentElements = document.getElementsByClassName('content');
     let count = 0;
-
     for (let i = 0; i < contentElements.length; i++) {
         const contentText = contentElements[i].innerHTML.toLowerCase();
         const contentDisplay = contentText.includes(userInput) ? "list-item" : "none";
@@ -149,7 +144,6 @@ function searchContent() {
     highlight(userInput);
     setInputMessage(userInput === "" ? "" : count);
 }
-
 function setInputMessage(n) {
     let message = '';
     let userInput = (searchInput.value || '').toLowerCase();
@@ -163,12 +157,10 @@ function setInputMessage(n) {
     }
     inputMessage.innerHTML = message;
 }
-
 function currentListUrl() {
     var currentPageUrl = document.querySelector(".nav-item.nav-link.active");
     var currentSubPageUrl = document.querySelector(".submenu a.active");
     var anchorElements = document.querySelectorAll("ul.list-unstyled li > a");
-    // debugger;
     if (currentPageUrl) {
         anchorElements.forEach(function (element) {
             if (element.getAttribute('href') === currentPageUrl.getAttribute('href')) {
@@ -191,11 +183,9 @@ function currentListUrl() {
         });
     }
 }
-
 // Showing URL in Search list
 function searchURL() {
     const elementsWithClass = document.querySelectorAll(".urlHash");
-
     elementsWithClass.forEach(element => {
         const urlHash = new URL(element.href);
         const domain = urlHash.origin;
@@ -204,9 +194,7 @@ function searchURL() {
         element.innerHTML = fullURL;
     });
 }
-
 let opars = document.querySelectorAll(".paragraph"); // Select all elements with the class .paragraph
-
 // Create an array to store the original HTML content of each .paragraph element
 let originalParagraphs = [];
 opars.forEach(paragraph => {
@@ -225,8 +213,6 @@ function highlight(search) {
         }
     });
 }
-
-
 // Search box start
 $(document).ready(function () {
     var exampleModal = $("#exampleModal"),
@@ -258,7 +244,6 @@ $(document).ready(function () {
             $.scrollify.enable();
         });
     });
-
     $(".searchLink").click(function () {
         var fade = $('.modal-backdrop');
         var fade1 = $('.modal');
@@ -273,5 +258,4 @@ $(document).ready(function () {
         fade1.hide();
         $.scrollify.enable();
     });
-
 });

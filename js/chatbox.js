@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const chatbox = document.querySelector(".chatbox");
     const chatbotToggler = document.querySelector(".chatbot-toggler");
     const chatbotCloser = document.querySelector(".chatbot header span");
-
     let userMessage;
     const responses = [
         "How can I help you?",
@@ -39,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(() => {
             let botResponse;
             if ((userMessage.toLowerCase() === "hi") || (userMessage.toLowerCase() === "hi skyfinch")) {
-                botResponse = "Hi 👋 Nice to meet you.";
+                botResponse = "Hi <span>&#128075</span> Nice to meet you.";
             }
             else if (userMessage.toLowerCase() === "hello") {
                 botResponse = "Hello! Nice to meet you.";
@@ -62,8 +61,8 @@ document.addEventListener('DOMContentLoaded', function () {
             else if ((userMessage.toLowerCase() === "bye") || (userMessage.toLowerCase() === "ok bye") || (userMessage.toLowerCase() === "tata")) {
                 botResponse = "Bye! Nice to meet you.";
             }
-            else if ((userMessage.toLowerCase() === "help") || (userMessage.toLowerCase() === "hlp")) {
-                botResponse = '<b>You ask me like one of this question.</b> <br>✔ Who is <u>CEO</u>? <br>✔ In Which <u>year</u> skyfinch established? <br>✔ What are the <u>Service</u> in skyfinch?<br>✔ <u>Contact</u> Details?<br>';
+            else if ((userMessage.toLowerCase() === "help") || (userMessage.toLowerCase() === "hlp") || (userMessage.toLowerCase() === "help me") || (userMessage.toLowerCase() === "please") || (userMessage.toLowerCase() === "please help me")) {
+                botResponse = '<b>You ask me like one of this question.</b> <br>✔ Who is <u>CEO</u>? <br>✔ In Which <u>year</u> skyfinch established? <br>✔ What are the <u>Service</u> in skyfinch?<br>✔ <u>Contact</u> Details?<br>✔ <u>All Pages</u> Lists?<br>';
             }
             else if ((userMessage.toLowerCase() === 'who is ceo?') || (userMessage.toLowerCase() === 'who is ceo') || (userMessage.toLowerCase() === 'company ceo?') || (userMessage.toLowerCase() === 'ceo?') || (userMessage.toLowerCase() === 'ceo')) {
                 botResponse = "<b>Mr. S. Kabilan Sokkalingam - Founder</b> <br>Mr. S. Kabilan Sokkalingam - Founder, Managing Partner, CEO & President.";
@@ -72,10 +71,28 @@ document.addEventListener('DOMContentLoaded', function () {
                 botResponse = "Business professionals having more than 20 years of experience in various business domains. Since it's establishment in the year 2004 at Puducherry, India";
             }
             else if ((userMessage.toLowerCase() === 'what are the service in skyfinch?') || (userMessage.toLowerCase() === 'service') || (userMessage.toLowerCase() === 'service?')) {
-                botResponse = "📌 Software development <br>📌 Web Development <br>📌 Mobile Application development<br>📌 Automation Services<br>📌 Integration Services <br>📌 ML/AI and Big Data Solutions</br>";
+                botResponse = 'Here Redirect to <a href="service.html"><em>Service</em></a> page available, Click it!<br>📌 Software development <br>📌 Web Development <br>📌 Mobile Application development<br>📌 Automation Services<br>📌 Integration Services <br>📌 ML/AI and Big Data Solutions</br>';
             }
             else if ((userMessage.toLowerCase() === 'contact') || (userMessage.toLowerCase() === "contact details?") || (userMessage.toLowerCase() === "contact details") || (userMessage.toLowerCase() === "how can i contact you?")) {
                 botResponse = "<b>Address :</b> No.5, Republic Street, Reddiarpalayam, Puducherry -605 010, India. <br> <b> Ph :</b> +91 413-4207 333, 94425 90611, 94434 83240, 94899 18298 <br> <b>E-mail :</b> info@skyfinch.com";
+            }
+            else if (userMessage.toLowerCase() === 'home') {
+                botResponse = 'Here Redirect to <a href="index.html"><em>Home</em></a> page available, Click it!';
+            }
+            else if (userMessage.toLowerCase() === 'contact') {
+                botResponse = 'Here Redirect to <a href="contact.html"><em>Contact</em></a> page available, Click it!';
+            }
+            else if (userMessage.toLowerCase() === 'about') {
+                botResponse = 'Here Redirect to <a href="about.html"><em>About</em></a> page available, Click it!';
+            }
+            else if (userMessage.toLowerCase() === 'profile') {
+                botResponse = 'Here Redirect to <a href="profile.html"><em>Profile</em></a> page available, Click it!';
+            }
+            else if (userMessage.toLowerCase() === 'product') {
+                botResponse = 'Here Redirect to <a href="product.html"><b>Products</b></a> page available, Click it!';
+            }
+            else if ((userMessage.toLowerCase() === 'all pages') || (userMessage.toLowerCase() === 'all')) {
+                botResponse = 'Here Redirect to All pages available, Click it!<br> <a href="index.html"><b class="pagesLink">Home</b></a> <a href="service.html"><b class="pagesLink">Service</b></a> <a href="about.html"><b class="pagesLink">About</b></a> <a href="profile.html"><b class="pagesLink">Profile</b></a> <a href="contact.html"><b class="pagesLink">Contact</b></a> <a href="sales.html"><b class="pagesLink">POS</b></a> <a href="hms.html"><b class="pagesLink">Hotel</b></a> <a href="rms.html"><b class="pagesLink">Restaurant</b></a> <a href="ssfinch.html"><b class="pagesLink">Smart-Skyfinch</b></a> <a href="vms.html"><b class="pagesLink">Visitor`s</b></a> <a href="crm.html"><b class="pagesLink">CRM</b></a> <a href="ctm.html"><b class="pagesLink">Travel</b></a> <a href="ems.html"><b class="pagesLink">Event</b></a> <a href="ems.html"><b class="pagesLink">Fleet</b></a> <a href="pms.html"><b class="pagesLink">Payroll</b></a> <a href="sands.html"><b class="pagesLink">Sales & Service</b></a>';
             }
             else {
                 botResponse = getRandomResponse();
@@ -92,8 +109,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const handleClickOutsideChatbot = (event) => {
         const isTextarea = event.target === chatInput;
         const isHeader = event.target.closest('header');
-        if (!chatbox.contains(event.target) && !chatbotToggler.contains(event.target) && !isTextarea && !isHeader) {
+        const chatInputArea = document.querySelector('.chat-input');
+        const pageTopArea = document.querySelector('#sub_top');
+        if (!chatbox.contains(event.target) && !chatbotToggler.contains(event.target) && !isTextarea && !isHeader && !chatInputArea.contains(event.target) && !pageTopArea.contains(event.target)) {
             document.body.classList.remove("show-chatbot");
+            // enableScrollify();
         }
     }
     // Function to handle Enter key press
@@ -104,11 +124,15 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
     var isTogglerClick = false;
+
     function msgTextRun() {
         if (isTogglerClick === false) {
             var showText = function (target, message, index, interval) {
                 if (index < message.length) {
-                    $(target).append(message[index++]);
+                    $(target).html($(target).html() + message[index++]);
+                    if (message[index - 1] === '\t') {
+                        $(target).append('<span>&#128075</span>');
+                    }
                     if (message[index - 1] === '\n') {
                         $(target).append('<br>');
                     }
@@ -116,53 +140,52 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
             $(function () {
-                var message = "Hi I'm SkyFinch👋\nIf you need any help?\nType: 'Help'...";
-                showText(".textRun", message, 0, 100);
+                var message = "Hi I'm SkyFinch\t\nIf you need any help?\nType: 'Help'...";
+                showText(".textRun", message, 0, 80);
             });
         }
         isTogglerClick = true;
     }
 
     function applyScroll() {
-        $.scrollify({});
+        $.scrollify();
     }
-
     // Function to enable Scrollify
     function enableScrollify() {
         $.scrollify.enable();
+        $('.chatbox').css('overflow-y', 'auto');
+        $('body').css('overflow', 'auto');
     }
-
     // Function to disable Scrollify
     function disableScrollify() {
         $.scrollify.disable();
+        $('.chatbox').css('overflow-y', 'auto');
+        $('body').css('overflow', 'hidden');
     }
-
     // Call applyScroll function to initialize Scrollify
-    applyScroll();
-
-    sendChatBtn.addEventListener("click", handleChat)
+    // applyScroll();
+    document.addEventListener("click", handleClickOutsideChatbot);
+    sendChatBtn.addEventListener("click", function () {
+        handleChat();
+        $(".chat-input textarea").focus();
+    });
     chatInput.addEventListener("keypress", handleKeyPress);
-    // document.addEventListener("click", handleClickOutsideChatbot);
     chatbotToggler.addEventListener("click", function () {
         document.body.classList.toggle("show-chatbot");
         msgTextRun();
         if ($('body').hasClass('show-chatbot')) {
             $(".chat-input textarea").focus();
-            disableScrollify();
-            $('.chatbox').css('overflow-y', 'auto');
-            $('body').css('overflow', 'hidden');
-        } else {
-            enableScrollify();
-            $('body').css('overflow', 'auto');
         }
+        // if ($('body').hasClass('show-chatbot')) {
+        //     $(".chat-input textarea").focus();
+        //     disableScrollify();
+        // } else {
+        //     enableScrollify();
+        // }
     });
     chatbotCloser.addEventListener("click", function () {
         document.body.classList.remove("show-chatbot");
-        enableScrollify();
-        $('.chatbox').css('overflow-y', 'auto');
-        $('body').css('overflow', 'auto');
+        // enableScrollify();
     });
-
-
     //<!-- Chat BOX JS End -->
 });

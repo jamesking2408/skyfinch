@@ -44,14 +44,14 @@
 
         if (length !== 0) {
             if (regex.test(mobNo)) {
-                $("#form_number-errorLable").css('display', 'none').text("");
+                $("#form_number-errorLabel").css('display', 'none').text("");
                 $("#form_number").val(mobNo);
             } else {
-                $("#form_number-errorLable").css('display', 'block').text("Please enter a valid Phone Number.");
+                $("#form_number-errorLabel").css('display', 'block').text("Please enter a valid Phone Number.");
                 $("#form_number").val();
             }
         } else {
-            $("#form_number-errorLable").css('display', 'none').text("");
+            $("#form_number-errorLabel").css('display', 'none').text("");
         }
     }
 
@@ -60,7 +60,7 @@
     });
 
     $("#form_number").on('input', function () {
-        $('#form_number-errorLable').css('display', 'none').text("");
+        $('#form_number-errorLabel').css('display', 'none').text("");
     });
 
     function emailValid() {
@@ -68,20 +68,20 @@
         if (email != "" && email != null) {
             if (/^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i.test(email)) {
                 $("#form_mail").attr("class", "form-control");
-                $("#form_mail-errorLable").text('');
-                $("#form_mail-errorLable").attr("style", "display: none;");
+                $("#form_mail-errorLabel").text('');
+                $("#form_mail-errorLabel").attr("style", "display: none;");
             }
             else {
                 $("#form_mail").attr("class", "form-control error");
-                $("#form_mail-errorLable").text('Please enter valid Email ID');
-                $("#form_mail-errorLable").attr("style", "display: block;");
+                $("#form_mail-errorLabel").text('Please enter valid Email ID');
+                $("#form_mail-errorLabel").attr("style", "display: block;");
                 $("#form_mail").val();
             }
         }
         else {
             $("#form_mail").attr("class", "form-control");
-            $("#form_mail-errorLable").text('');
-            $("#form_mail-errorLable").attr("style", "display: none;");
+            $("#form_mail-errorLabel").text('');
+            $("#form_mail-errorLabel").attr("style", "display: none;");
         }
     }
 

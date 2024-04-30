@@ -1,7 +1,5 @@
 (function ($) {
     "use strict";
-
-
     $(window).on('load', function () {
         $(".modal-content").load("searchModal.html");
         if (screen.width < 1024) {
@@ -16,7 +14,6 @@
             scrollbarPosition: "inside"
         });
     });
-
     // <!-- Change select option method -->
     $(document).ready(function () {
         $('.form-select').on('change', function () {
@@ -25,17 +22,14 @@
             $('#' + selectedValue).addClass('show active');
         });
     });
-
     // <!-- AOS Animation Not Firing Correctly After Browser Resize -->
     let samt = 0;
     window.addEventListener('scroll', function () {
         samt <= 10 ? samt++ : AOS.refresh();
     });
-
     //<!-- Tooltip bootstrap 5.3 -->
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-
     // Spinner
     var spinner = function () {
         setTimeout(() => {
@@ -45,34 +39,12 @@
         }, 3000);
     }
     spinner();
-
     //  TESTIMONIALS CAROUSEL HOOK
     $(document).ready(function () {
         $('.owl-carousel').owlCarousel();
     });
-    $('#customers-testimonials').owlCarousel({
-        loop: true,
-        center: true,
-        margin: -38,
-        dots: true,
-        autoplayTimeout: 5000,
-        smartSpeed: 450,
-        responsive: {
-            0: {
-                items: 1
-            },
-            768: {
-                items: 2
-            },
-            1170: {
-                items: 3
-            }
-        }
-    });
-
     // Initiate the wow.js
     new WOW().init();
-
     //<!-- pop up -->
     function myTooltip() {
         $(".mytooltip").hover(
@@ -107,7 +79,6 @@
         });
     }
     //<!-- pop up end-->
-
     //section change start
     // Filter
     $('.sec1 a').click(function () {
@@ -118,7 +89,6 @@
             $('.product').not('.' + value).hide();
             $('.product').filter('.' + value).show();
             // if (screen.width < 768) {
-            //     // debugger;
             //     var tabElement = $(this);
             //     var scrollPosition = tabElement.offset().top;
             //     $('html, body').animate({
@@ -127,30 +97,23 @@
             // }
         }
     })
-
     $('.sec1 a').click(function () {
         $('.sec1 a').removeClass('active_tab');
         $(this).addClass('active_tab');
-    })
-
+    });
     //<!-- update Section Scroll effects -->
-
     $(document).ready(function () {
         setTimeout(() => {
             screenCheck();
         }, 1800);
-
         // Popup tooltip
-        if (screen.width < 765) {
+        if (screen.width < 991) {
             myTooltip();
         }
-
     });
-
     $(window).on('resize', function () {
         screenCheck();
     });
-
     function applyScroll() {
         $.scrollify({
             section: ".scroll",
@@ -170,7 +133,6 @@
             touchScroll: true
         });
     }
-
     function screenCheck() {
         var deviceAgent = navigator.userAgent.toLowerCase();
         var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
@@ -187,8 +149,26 @@
             $.scrollify.enable();
         }
     }
+    // Call applyScroll function to initialize Scrollify
+    applyScroll();
+    // disable scrollify
+    $(".cloud li").on("click", function () {
+        $.scrollify.disable();
+    });
+    $(".modally-close-button").on('click', function () {
+        $.scrollify.enable();
+    });
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+            $.scrollify.enable();
+        }
+    });
+    $(".modally-close").click(function (e) {
+        if (e.target == this) {
+            $.scrollify.enable();
+        }
+    });
     //end of scroll effects
-
     // Navbar scroll background
     $(".hamburger").on("click", function (e) {
         e.preventDefault();
@@ -199,7 +179,6 @@
             $("body").css("overflow", "hidden"); // Enables scrolling
         }
     });
-
     // Back to top button
     // Index page
     $(document).ready(function () {
@@ -216,18 +195,16 @@
             }
         });
         $('.page-top').click(function () {
-            $('html, body').animate({ scrollTop: 0 }, 500, 'ease');
+            $('html, body').animate({ scrollTop: 0 }, 1000, 'easeInOutExpo');
             return false;
         });
     });
     // End of back to top button
-
     // Facts counter
     $('.count').counterUp({
         delay: 10,
         time: 2000
     });
-
     //<!-- OwlCarousel script start -->
     var owl = $('#part-proud .cus');
     owl.owlCarousel({
@@ -252,29 +229,7 @@
             }
         }
     });
-
     // change direction OwlCarousel
-    var owl1 = $('.cus');
-    owl1.owlCarousel({
-        rtl: true,
-        items: 5,
-        autoplay: true,
-        nav: false,
-        loop: true,
-        dots: false,
-        responsive: {
-            0: {
-                items: 2
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 6
-            }
-        }
-    });
-
     // Profile carousel
     var owl = $('.cus_profile_l');
     owl.owlCarousel({
@@ -283,8 +238,9 @@
         loop: true,
         margin: 10,
         autoplay: true,
-        autoplayTimeout: 5000,
-        autoplaySpeed: 5000,
+        slideTransition: 'linear',
+        autoplayTimeout: 6000,
+        autoplaySpeed: 6000,
         autoplayHoverPause: false,
         dots: false,
         responsive: {
@@ -299,7 +255,6 @@
             }
         }
     }).trigger("play.owl.autoplay");
-
     var owl = $('.cus_profile_r');
     owl.owlCarousel({
         rtl: false,
@@ -307,8 +262,9 @@
         margin: 10,
         loop: true,
         autoplay: true,
-        autoplayTimeout: 5000,
-        autoplaySpeed: 5000,
+        slideTransition: 'linear',
+        autoplayTimeout: 6000,
+        autoplaySpeed: 6000,
         autoplayHoverPause: false,
         dots: false,
         responsive: {
@@ -323,8 +279,6 @@
             }
         }
     }).trigger("play.owl.autoplay");
-
-
     //<!-- OwlCarousel script end -->
     $("#myBtn").click(function () {
         var dots = $("#dots");
@@ -333,13 +287,15 @@
 
         if (dots.css("display") === "none") {
             dots.css("display", "inline");
-            btnText.text("Read more");
+            btnText.html("Read more <span>&rarr;</span>");
             moreText.css("display", "none");
         } else {
             dots.css("display", "none");
-            btnText.text("Read less");
+            btnText.html("Read less <span>&rarr;</span>");
             moreText.css("display", "inline");
         }
+        // Append the HTML inside myBtn element
+        btnText.append('<div class="button_line"></div>');
     })
     /* ---------------------------------------------
             Isotope js Starts
@@ -359,10 +315,6 @@
     /*----------------------------------------------------*/
     /*  End  Magnific Pop Up
     /*----------------------------------------------------*/
-
-    //////////////////////////////////////////////////////////////////////////////////////////////////
-
-
     document.addEventListener("DOMContentLoaded", function () {
 
         // Dropdown mobile and tab view click event
@@ -370,22 +322,18 @@
             DropdownMenuResponsive();
         }
     });
-
     // Dropdown toggle start
-
     function DropdownMenuResponsive() {
         // Toggle dropdown on click
         var solutionsDropdown = document.getElementById('solutionsDropdown');
         var solutionsDropdown1 = document.getElementById('solutionsDropdown1');
         var dropdownMenu = solutionsDropdown.nextElementSibling;
         var dropdownMenu1 = solutionsDropdown1.nextElementSibling;
-
         // Toggle dropdown submenu on button click
         var applicationBtn = document.getElementById('applicationBtn');
         var webBtn = document.getElementById('webBtn');
         var applicationContent = document.querySelector('.dropdown-content1.application');
         var webContent = document.querySelector('.dropdown-content1.web');
-
         solutionsDropdown.addEventListener('click', function (e) {
             e.preventDefault();
             e.stopPropagation();
@@ -394,7 +342,6 @@
             webContent.style.display = 'none';
             applicationContent.style.display = 'none';
         });
-
         solutionsDropdown1.addEventListener('click', function (e) {
             e.preventDefault();
             e.stopPropagation();
@@ -403,24 +350,19 @@
             webContent.style.display = 'none';
             applicationContent.style.display = 'none';
         });
-
         function toggleDropdownContent(e, content) {
             e.preventDefault();
             e.stopPropagation();
             content.style.display = (content.style.display === 'block') ? 'none' : 'block';
         }
-
         applicationBtn.addEventListener('click', function (e) {
             toggleDropdownContent(e, applicationContent);
             webContent.style.display = 'none';
         });
-
         webBtn.addEventListener('click', function (e) {
             toggleDropdownContent(e, webContent);
             applicationContent.style.display = 'none';
         });
-
-
         // Close dropdowns when clicking outside
         // document.addEventListener('click', function (e) {
         //     e.preventDefault();
@@ -435,7 +377,6 @@
             else for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t);
         };
         var hamburgers = document.querySelectorAll(".hamburger");
-
         if (hamburgers.length > 0) {
             forEach(hamburgers, function (hamburger) {
                 hamburger.addEventListener(
@@ -455,10 +396,7 @@
             });
         }
     }
-
-
 })(jQuery);
-
 //  Product Enquiry form automatically fill plan price
 function choosePlan(planName, planPrice) {
     localStorage.setItem('selectedPlanName', planName);
