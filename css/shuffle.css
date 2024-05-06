@@ -1,0 +1,401 @@
+.bg-00 {
+  transition: background 0.4s ease-in;
+  background: rgb(194, 234, 247);
+  background: -moz-linear-gradient(85deg, rgba(194, 234, 247, 1) 0%, rgba(134, 219, 246, 1) 50%, rgba(76, 204, 245, 0.8911939775910365) 100%);
+  background: -webkit-linear-gradient(85deg, rgba(194, 234, 247, 1) 0%, rgba(134, 219, 246, 1) 50%, rgba(76, 204, 245, 0.8911939775910365) 100%);
+  background: linear-gradient(85deg, rgba(194, 234, 247, 1) 0%, rgba(134, 219, 246, 1) 50%, rgba(76, 204, 245, 0.8911939775910365) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c2eaf7", endColorstr="#4cccf5", GradientType=1);
+}
+
+.bg-00.blue {
+  background: rgb(194, 234, 247);
+  background: -moz-linear-gradient(270deg, rgba(194, 234, 247, 1) 0%, rgba(134, 219, 246, 1) 50%, rgba(76, 204, 245, 0.8911939775910365) 100%);
+  background: -webkit-linear-gradient(270deg, rgba(194, 234, 247, 1) 0%, rgba(134, 219, 246, 1) 50%, rgba(76, 204, 245, 0.8911939775910365) 100%);
+  background: linear-gradient(270deg, rgba(194, 234, 247, 1) 0%, rgba(134, 219, 246, 1) 50%, rgba(76, 204, 245, 0.8911939775910365) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c2eaf7", endColorstr="#4cccf5", GradientType=1);
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.modal1 {
+  display: none;
+}
+
+.card1 {
+  position: absolute;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+  /* update */
+  display: flex;
+  justify-content: space-around;
+}
+
+.bg-00 #left-button,
+.bg-00 #right-button {
+  z-index: 5;
+}
+
+.containers {
+  width: 100%;
+  max-width: 760px;
+  max-height: 500px;
+  transform-style: preserve-3d;
+}
+
+.cards1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 40px;
+}
+
+/* Payroll image */
+.card1 .img-pay {
+  width: 700px !important;
+  height: 450px !important;
+}
+
+.containers img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+  object-fit: contain;
+  background-color: white;
+}
+
+.song {
+  transition: transform 0.3s, opacity 0.3s, z-index 0.3s;
+}
+
+#item-1:checked~.cards1 #song-6,
+#item-2:checked~.cards1 #song-1,
+#item-3:checked~.cards1 #song-2,
+#item-4:checked~.cards1 #song-3,
+#item-5:checked~.cards1 #song-4,
+#item-6:checked~.cards1 #song-5 {
+  transform: translateX(-40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+#item-1:checked~.cards1 #song-5,
+#item-2:checked~.cards1 #song-6,
+#item-3:checked~.cards1 #song-1,
+#item-4:checked~.cards1 #song-2,
+#item-5:checked~.cards1 #song-3,
+#item-6:checked~.cards1 #song-4 {
+  transform: translateX(0) scale(0.8);
+  opacity: 0;
+  z-index: 0;
+}
+
+#item-1:checked~.cards1 #song-4,
+#item-2:checked~.cards1 #song-5,
+#item-3:checked~.cards1 #song-6,
+#item-4:checked~.cards1 #song-1,
+#item-5:checked~.cards1 #song-2,
+#item-6:checked~.cards1 #song-3 {
+  transform: translateX(0) scale(0.8);
+  opacity: 0;
+  z-index: 0;
+}
+
+#item-1:checked~.cards1 #song-3,
+#item-2:checked~.cards1 #song-4,
+#item-3:checked~.cards1 #song-5,
+#item-4:checked~.cards1 #song-6,
+#item-5:checked~.cards1 #song-1,
+#item-6:checked~.cards1 #song-2 {
+  transform: translateX(0) scale(0.8);
+  opacity: 0;
+  z-index: 0;
+}
+
+#item-1:checked~.cards1 #song-2,
+#item-2:checked~.cards1 #song-3,
+#item-3:checked~.cards1 #song-4,
+#item-4:checked~.cards1 #song-5,
+#item-5:checked~.cards1 #song-6,
+#item-6:checked~.cards1 #song-1 {
+  transform: translateX(40%) scale(0.8);
+  opacity: 0.4;
+  z-index: -1;
+}
+
+#item-1:checked~.cards1 #song-1,
+#item-2:checked~.cards1 #song-2,
+#item-3:checked~.cards1 #song-3,
+#item-4:checked~.cards1 #song-4,
+#item-5:checked~.cards1 #song-5,
+#item-6:checked~.cards1 #song-6 {
+  transform: translateX(0) translateY(1rem) scale(1.08);
+  opacity: 1;
+  z-index: 1;
+}
+
+#item-1:checked~.cards1 #song-1 img,
+#item-2:checked~.cards1 #song-2 img,
+#item-3:checked~.cards1 #song-3 img,
+#item-4:checked~.cards1 #song-4 img,
+#item-5:checked~.cards1 #song-5 img,
+#item-6:checked~.cards1 #song-6 img {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px 0px rgba(81, 81, 81, 0.7);
+}
+
+@media only screen and (max-width:320px) {
+  .bg-00 {
+    height: auto !important;
+  }
+
+  .bg-00 .container {
+    width: 265px;
+    height: 250px;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-4%);
+  }
+
+  /* Payroll Images */
+  .card1 .img-pay {
+    width: 260px !important;
+    height: 175px !important;
+  }
+
+  #item-1:checked~.cards1 #song-6,
+  #item-2:checked~.cards1 #song-1,
+  #item-3:checked~.cards1 #song-2,
+  #item-4:checked~.cards1 #song-3,
+  #item-5:checked~.cards1 #song-4,
+  #item-6:checked~.cards1 #song-5 {
+    transform: translateX(-10%) scale(0.8);
+  }
+
+  #item-1:checked~.cards1 #song-2,
+  #item-2:checked~.cards1 #song-3,
+  #item-3:checked~.cards1 #song-4,
+  #item-4:checked~.cards1 #song-5,
+  #item-5:checked~.cards1 #song-6,
+  #item-6:checked~.cards1 #song-1 {
+    transform: translateX(10%) scale(0.8);
+  }
+}
+
+@media (min-width:321px) and (max-width:375px) {
+  .bg-00 {
+    height: auto !important;
+  }
+
+  .bg-00 .container {
+    width: 300px;
+    height: 280px;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-3%);
+  }
+
+  /* Payroll Images */
+  .card1 .img-pay {
+    width: 300px !important;
+    height: 175px !important;
+  }
+
+  #item-1:checked~.cards1 #song-6,
+  #item-2:checked~.cards1 #song-1,
+  #item-3:checked~.cards1 #song-2,
+  #item-4:checked~.cards1 #song-3,
+  #item-5:checked~.cards1 #song-4,
+  #item-6:checked~.cards1 #song-5 {
+    transform: translateX(-15%) scale(0.8);
+  }
+
+  #item-1:checked~.cards1 #song-2,
+  #item-2:checked~.cards1 #song-3,
+  #item-3:checked~.cards1 #song-4,
+  #item-4:checked~.cards1 #song-5,
+  #item-5:checked~.cards1 #song-6,
+  #item-6:checked~.cards1 #song-1 {
+    transform: translateX(15%) scale(0.8);
+  }
+}
+
+@media (min-width:376px) and (max-width:425px) {
+  .bg-00 {
+    height: auto !important;
+  }
+
+  .bg-00 {
+    & .container-fluid {
+      position: relative;
+      top: 1rem;
+    }
+
+    & .container {
+      width: 320px;
+      height: 250px;
+      left: 0;
+      bottom: 0;
+      transform: translateX(-0.7rem) translateY(2rem) !important;
+    }
+  }
+
+  /* Payroll Images */
+  .card1 .img-pay {
+    max-width: 315px !important;
+    max-height: 165px !important;
+  }
+
+  #item-1:checked~.cards1 #song-6,
+  #item-2:checked~.cards1 #song-1,
+  #item-3:checked~.cards1 #song-2,
+  #item-4:checked~.cards1 #song-3,
+  #item-5:checked~.cards1 #song-4,
+  #item-6:checked~.cards1 #song-5 {
+    transform: translateX(-20%) scale(0.8);
+  }
+
+  #item-1:checked~.cards1 #song-2,
+  #item-2:checked~.cards1 #song-3,
+  #item-3:checked~.cards1 #song-4,
+  #item-4:checked~.cards1 #song-5,
+  #item-5:checked~.cards1 #song-6,
+  #item-6:checked~.cards1 #song-1 {
+    transform: translateX(20%) scale(0.8);
+  }
+}
+
+@media (min-width:426px) and (max-width:602px) {
+  .bg-00 {
+    height: auto !important;
+  }
+
+  .bg-00 .container {
+    width: 380px;
+    height: 320px;
+    transform: translate(-0.7rem, 3rem);
+  }
+
+  .bg-00 .container1 {
+    width: 100% !important;
+    transform: translate(0rem, 3rem);
+  }
+
+  /* Payroll Images */
+  .card1 .img-pay {
+    width: 365px !important;
+    height: 210px !important;
+  }
+
+  #item-1:checked~.cards1 #song-6,
+  #item-2:checked~.cards1 #song-1,
+  #item-3:checked~.cards1 #song-2,
+  #item-4:checked~.cards1 #song-3,
+  #item-5:checked~.cards1 #song-4,
+  #item-6:checked~.cards1 #song-5 {
+    transform: translateX(-30%) scale(0.8) !important;
+  }
+
+  #item-1:checked~.cards1 #song-2,
+  #item-2:checked~.cards1 #song-3,
+  #item-3:checked~.cards1 #song-4,
+  #item-4:checked~.cards1 #song-5,
+  #item-5:checked~.cards1 #song-6,
+  #item-6:checked~.cards1 #song-1 {
+    transform: translateX(30%) scale(0.8) !important;
+  }
+}
+
+@media (min-width:603px) and (max-width:768px) {
+  .bg-00 {
+    height: auto !important;
+  }
+
+  .bg-00 .container {
+    width: 500px;
+    height: 320px;
+    transform: translate(0rem, 0.5rem);
+  }
+
+  /* Payroll Images */
+  .card1 .img-pay {
+    max-width: 480px !important;
+    max-height: 285px !important;
+  }
+
+  #item-1:checked~.cards1 #song-6,
+  #item-2:checked~.cards1 #song-1,
+  #item-3:checked~.cards1 #song-2,
+  #item-4:checked~.cards1 #song-3,
+  #item-5:checked~.cards1 #song-4,
+  #item-6:checked~.cards1 #song-5 {
+    transform: translateX(-25%) scale(0.8) !important;
+  }
+
+  #item-1:checked~.cards1 #song-2,
+  #item-2:checked~.cards1 #song-3,
+  #item-3:checked~.cards1 #song-4,
+  #item-4:checked~.cards1 #song-5,
+  #item-5:checked~.cards1 #song-6,
+  #item-6:checked~.cards1 #song-1 {
+    transform: translateX(25%) scale(0.8) !important;
+  }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+  .containers {
+    max-width: 600px;
+    max-height: 500px;
+  }
+
+  /* Payroll Images */
+  .card1 .img-pay {
+    max-width: 565px !important;
+    max-height: 320px !important;
+  }
+
+  .bg-00 .container {
+    position: relative;
+    top: 0;
+    transform: translateY(2rem);
+    height: 450px;
+  }
+
+  #item-1:checked~.cards1 #song-6,
+  #item-2:checked~.cards1 #song-1,
+  #item-3:checked~.cards1 #song-2,
+  #item-4:checked~.cards1 #song-3,
+  #item-5:checked~.cards1 #song-4,
+  #item-6:checked~.cards1 #song-5 {
+    transform: translateX(-25%) scale(0.8) !important;
+  }
+
+  #item-1:checked~.cards1 #song-2,
+  #item-2:checked~.cards1 #song-3,
+  #item-3:checked~.cards1 #song-4,
+  #item-4:checked~.cards1 #song-5,
+  #item-5:checked~.cards1 #song-6,
+  #item-6:checked~.cards1 #song-1 {
+    transform: translateX(25%) scale(0.8) !important;
+  }
+
+  .bg-00 .container1 {
+    position: relative;
+    top: 0;
+    transform: translateY(2rem);
+  }
+}
+
+@media (min-width:1025px) and (max-width:1366px) {
+  .containers {
+    max-width: 620px;
+    max-height: 500px;
+  }
+
+  .card1 .img-pay {
+    width: 600px !important;
+    height: 350px !important;
+  }
+}
