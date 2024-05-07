@@ -1383,7 +1383,7 @@
 
     .chatbot .chatbox {
         height: 80%;
-        padding: 15px 20px 100px;
+        padding: 15px 20px 35px;
     }
 
     #home_skyfinch {
@@ -2710,7 +2710,7 @@
 
     .chatbot .chatbox {
         height: 80%;
-        padding: 15px 20px 100px;
+        padding: 15px 20px 35px;
     }
 
     #home_skyfinch {
@@ -2780,7 +2780,7 @@
 
     .bg-00 .container1 {
         width: 100% !important;
-        transform: translate(0rem, 3rem);
+        transform: translate(0rem, 1.5rem);
     }
 
     .service-border h1,
@@ -7638,6 +7638,7 @@
     /* Style page responsive start */
     .h-custom-75 {
         height: 75%;
+        transform: translateY(2rem);
     }
 
     /* Social media icons */
@@ -7691,7 +7692,6 @@
             transform: translateX(0) translateY(-0.5rem) !important;
         }
     }
-
 
     #sec5 .container {
         transform: translateX(0) translateY(3rem) !important;
@@ -8232,6 +8232,16 @@
         min-width: 1250px !important;
     }
 
+    #sec6 .show1 .card {
+        width: 100% !important;
+        height: 200px !important;
+    }
+
+    #sec6 .show2 .card {
+        width: 300px !important;
+        height: 180px !important;
+    }
+
     #sec6 .show3 .card {
         width: 200px;
         min-height: 225px;
@@ -8328,7 +8338,6 @@
     #land_profile .page-banner {
         position: relative;
         top: 0;
-        transform: translateY(3rem);
     }
 
     #profile_sec2_1 .container {
@@ -8350,7 +8359,6 @@
     }
 
     .page-banner.home-banner {
-        margin-top: 100px;
         height: 440px;
     }
 
@@ -8562,7 +8570,7 @@
     }
 
     .bg-11 .container {
-        transform: translateY(1rem);
+        transform: translateY(2rem);
     }
 
     .bg-12 .no-scroll {
@@ -8957,7 +8965,7 @@
     }
 
     #part-proud .cus.owl-carousel {
-        padding: 0px 20px;
+        padding: 0px;
     }
 
     #part-proud .owl-nav {

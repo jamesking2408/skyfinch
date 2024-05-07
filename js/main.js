@@ -118,7 +118,6 @@
                 });
             });
         }
-
     });
     $(window).on('resize', function () {
         screenCheck();
@@ -186,19 +185,36 @@
     applyScroll();
     // disable scrollify
     $(".cloud li").on("click", function () {
-        $.scrollify.disable();
+        disableScrollify();
     });
-    $(".modally-close-button").on('click', function () {
+    // Function to disable scrollify
+    function disableScrollify() {
+        // Assuming scrollify is a jQuery plugin
+        $.scrollify.disable();
+        $('body').css('overflow', 'hidden');
+    }
+
+    // Function to enable scrollify
+    function enableScrollify() {
+        // Assuming scrollify is a jQuery plugin
         $.scrollify.enable();
+        $('body').css('overflow', 'auto');
+    }
+
+    $(".modally-close-button").on('click', function () {
+        enableScrollify();
+        $('body').css('overflow', 'auto');
     });
     document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") {
-            $.scrollify.enable();
+            enableScrollify();
+            $('body').css('overflow', 'auto');
         }
     });
     $(".modally-close").click(function (e) {
         if (e.target == this) {
-            $.scrollify.enable();
+            enableScrollify();
+            $('body').css('overflow', 'auto');
         }
     });
     //end of scroll effects

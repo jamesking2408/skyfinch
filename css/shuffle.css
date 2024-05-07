@@ -70,6 +70,12 @@ input[type=radio] {
   transition: transform 0.3s, opacity 0.3s, z-index 0.3s;
 }
 
+label.card div {
+  position: relative;
+  top: 0;
+  transform: translate(10px, 10px);
+}
+
 #item-1:checked~.cards1 #song-6,
 #item-2:checked~.cards1 #song-1,
 #item-3:checked~.cards1 #song-2,
@@ -230,7 +236,7 @@ input[type=radio] {
   .bg-00 {
     & .container-fluid {
       position: relative;
-      top: 1rem;
+      top: 0;
     }
 
     & .container {
@@ -238,7 +244,7 @@ input[type=radio] {
       height: 250px;
       left: 0;
       bottom: 0;
-      transform: translateX(-0.7rem) translateY(2rem) !important;
+      transform: translateX(-0.7rem) translateY(0) !important;
     }
   }
 

@@ -16,14 +16,63 @@ document.addEventListener('DOMContentLoaded', function () {
         "I'm your friend! feel free ask me...",
         "If you need any help? Type:'Help'"
     ];
+    // const createChatLi = (message, className) => {
+    //     // Create a chat <li> element with passed message and className
+    //     const chatli = document.createElement("li");
+    //     chatli.classList.add("chat", className);
+    //     let chatContent = className === "outgoing" ? `<p class="animated zoomIn">${message}</p>` : `<span class="material-symbols-outlined animated zoomInLeft">🤖</span><p class="animated zoomInLeft">${message}</p>`;
+    //     chatli.innerHTML = chatContent;
+    //     return chatli;
+    // }
+
     const createChatLi = (message, className) => {
         // Create a chat <li> element with passed message and className
         const chatli = document.createElement("li");
         chatli.classList.add("chat", className);
+        chatli.dataset.time = Date.now(); // Store the current time in dataset for calculating time ago
         let chatContent = className === "outgoing" ? `<p class="animated zoomIn">${message}</p>` : `<span class="material-symbols-outlined animated zoomInLeft">🤖</span><p class="animated zoomInLeft">${message}</p>`;
         chatli.innerHTML = chatContent;
+
+        // Add timestamp for outgoing messages
+        if ((className === "outgoing") || (className === "incoming")) {
+            const timestampSpan = document.createElement("span");
+            timestampSpan.classList.add("timestamp");
+            timestampSpan.innerText = "just now";
+
+            chatli.querySelector("p").appendChild(timestampSpan);
+
+            // Update timestamp text dynamically
+            const updateTimestamp = () => {
+                const timeAgo = getTimeAgo(parseInt(chatli.dataset.time));
+                timestampSpan.innerText = timeAgo;
+            };
+
+            // Update timestamp immediately and every second
+            updateTimestamp();
+            setInterval(updateTimestamp, 1000);
+        }
+
         return chatli;
-    }
+    };
+
+    // Function to calculate time ago
+    const getTimeAgo = (sentTime) => {
+        const now = Date.now();
+        const diff = Math.floor((now - sentTime) / 1000);
+        if (diff < 60) {
+            return "just now";
+        } else if (diff < 3600) {
+            const minutes = Math.floor(diff / 60);
+            return minutes === 1 ? "1 min ago" : " " + minutes + " mins ago";
+        } else if (diff < 86400) {
+            const hours = Math.floor(diff / 3600);
+            return hours === 1 ? "1 hr ago" : " " + hours + " hrs ago";
+        } else {
+            const days = Math.floor(diff / 86400);
+            return days === 1 ? "1 day ago" : " " + days + " days ago";
+        }
+    };
+
     const getRandomResponse = () => {
         const randomIndex = Math.floor(Math.random() * responses.length);
         return responses[randomIndex];
@@ -111,9 +160,16 @@ document.addEventListener('DOMContentLoaded', function () {
         const isHeader = event.target.closest('header');
         const chatInputArea = document.querySelector('.chat-input');
         const pageTopArea = document.querySelector('#sub_top');
-        if (!chatbox.contains(event.target) && !chatbotToggler.contains(event.target) && !isTextarea && !isHeader && !chatInputArea.contains(event.target) && !pageTopArea.contains(event.target)) {
+
+        // profile page skyfinch technologies
+        const isCloudLi = document.querySelector(".cloud");
+
+        // Search bar
+        const isSearchBar = document.querySelector("#exampleModal");
+        const isNavbar = document.querySelector(".navbar");
+        if (!chatbox.contains(event.target) && !chatbotToggler.contains(event.target) && !isTextarea && !isHeader && !chatInputArea.contains(event.target) && !pageTopArea.contains(event.target) && !isCloudLi.contains(event.target) && !isSearchBar.contains(event.target) && !isNavbar.contains(event.target)) {
             document.body.classList.remove("show-chatbot");
-            // enableScrollify();
+            enableScrollify();
         }
     }
     // Function to handle Enter key press
@@ -143,6 +199,27 @@ document.addEventListener('DOMContentLoaded', function () {
                 var message = "Hi I'm SkyFinch\t\nIf you need any help?\nType: 'Help'...";
                 showText(".textRun", message, 0, 80);
             });
+            const defChat = document.querySelector(".chat.incoming");
+            if ("incoming" === "incoming") {
+                const timestampSpan = document.createElement("span");
+                timestampSpan.classList.add("timestamp");
+                timestampSpan.dataset.time = Date.now();
+                timestampSpan.textContent = "just now";
+                // Update timestamp text dynamically
+                insertAfter(timestampSpan, defChat);
+                const updateTimestamp = () => {
+                    const defTimeAgo = getTimeAgo(parseInt(timestampSpan.dataset.time));
+                    timestampSpan.innerText = defTimeAgo;
+                };
+
+                function insertAfter(newNode, existingNode) {
+                    existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
+                }
+
+                // Update timestamp immediately and every second
+                updateTimestamp();
+                setInterval(updateTimestamp, 1000);
+            }
         }
         isTogglerClick = true;
     }
@@ -167,7 +244,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.addEventListener("click", handleClickOutsideChatbot);
     sendChatBtn.addEventListener("click", function () {
         handleChat();
-        $(".chat-input textarea").focus();
+        // $(".chat-input textarea").focus();
     });
     chatInput.addEventListener("keypress", handleKeyPress);
     chatbotToggler.addEventListener("click", function () {
@@ -176,16 +253,16 @@ document.addEventListener('DOMContentLoaded', function () {
         if ($('body').hasClass('show-chatbot')) {
             $(".chat-input textarea").focus();
         }
-        // if ($('body').hasClass('show-chatbot')) {
-        //     $(".chat-input textarea").focus();
-        //     disableScrollify();
-        // } else {
-        //     enableScrollify();
-        // }
+        if ($('body').hasClass('show-chatbot')) {
+            $(".chat-input textarea").focus();
+            disableScrollify();
+        } else {
+            enableScrollify();
+        }
     });
     chatbotCloser.addEventListener("click", function () {
         document.body.classList.remove("show-chatbot");
-        // enableScrollify();
+        enableScrollify();
     });
     //<!-- Chat BOX JS End -->
 });
