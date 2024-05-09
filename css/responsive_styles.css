@@ -6752,6 +6752,8 @@
 
     #sec13 {
         position: relative !important;
+        min-height: 40rem;
+        max-height: 100%;
     }
 
     #req-call .container-fluid {
@@ -8226,7 +8228,7 @@
         position: relative !important;
         top: 0;
         left: 0;
-        transform: translateX(0) translateY(2rem) !important;
+        transform: translateX(0) translateY(4rem) !important;
         margin-left: 3rem;
         margin-right: 3rem;
         min-width: 1250px !important;

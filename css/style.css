@@ -1316,7 +1316,7 @@ a .logo-cloud {
 
 #sec13 {
     position: relative;
-    height: 100vh;
+    height: 100%;
 
     & #cpy-ryt {
         position: absolute;

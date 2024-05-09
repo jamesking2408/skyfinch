@@ -1476,7 +1476,9 @@ ul>.nt-x {
     transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 }
 
-.button--nina:hover {
+.button--nina:hover,
+.button--nina:active,
+.button--nina:focus-visible {
     background-color: #ffee02;
 }
 

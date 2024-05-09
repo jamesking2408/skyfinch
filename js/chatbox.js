@@ -167,9 +167,11 @@ document.addEventListener('DOMContentLoaded', function () {
         // Search bar
         const isSearchBar = document.querySelector("#exampleModal");
         const isNavbar = document.querySelector(".navbar");
-        if (!chatbox.contains(event.target) && !chatbotToggler.contains(event.target) && !isTextarea && !isHeader && !chatInputArea.contains(event.target) && !pageTopArea.contains(event.target) && !isCloudLi.contains(event.target) && !isSearchBar.contains(event.target) && !isNavbar.contains(event.target)) {
-            document.body.classList.remove("show-chatbot");
-            enableScrollify();
+        if ($('body').hasClass('show-chatbot')) {
+            if (!chatbox.contains(event.target) && !chatbotToggler.contains(event.target) && !isTextarea && !isHeader && !chatInputArea.contains(event.target) && !pageTopArea.contains(event.target) && !isCloudLi.contains(event.target) && !isSearchBar.contains(event.target) && !isNavbar.contains(event.target)) {
+                document.body.classList.remove("show-chatbot");
+                enableScrollify();
+            }
         }
     }
     // Function to handle Enter key press
