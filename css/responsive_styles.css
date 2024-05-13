@@ -36,10 +36,10 @@
         border-radius: 0;
     }
 
-    .chatbot header h2 {
+    /* .chatbot header h2 {
         margin-left: 30%;
         margin-right: 30%;
-    }
+    } */
 
     .chatbot .chatbox {
         height: 80%;
@@ -196,7 +196,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: 60%;
+        object-position: 80%;
     }
 
     .carousel-control-prev,
@@ -278,8 +278,13 @@
         width: min(100%, 238px);
     }
 
+    .carousel-caption {
+        transform: translate(0px, -20px);
+        align-items: end;
+    }
+
     .h-crus {
-        height: 650px !important;
+        height: 900px !important;
     }
 
     .bg-02 img {
@@ -1376,10 +1381,10 @@
         border-radius: 0;
     }
 
-    .chatbot header h2 {
+    /* .chatbot header h2 {
         margin-left: 30%;
         margin-right: 30%;
-    }
+    } */
 
     .chatbot .chatbox {
         height: 80%;
@@ -1540,7 +1545,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: 60%;
+        object-position: 80%;
     }
 
     .carousel-control-prev,
@@ -1622,8 +1627,13 @@
         width: min(100%, 270px);
     }
 
+    .carousel-caption {
+        transform: translate(0px, -20px);
+        align-items: end;
+    }
+
     .h-crus {
-        height: 600px !important;
+        height: 900px !important;
     }
 
     .bg-02 img {
@@ -2703,10 +2713,10 @@
         }
     }
 
-    .chatbot header h2 {
+    /* .chatbot header h2 {
         margin-left: 35%;
         margin-right: 35%;
-    }
+    } */
 
     .chatbot .chatbox {
         height: 80%;
@@ -2862,7 +2872,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: 60%;
+        object-position: 80%;
     }
 
     .carousel-control-prev,
@@ -2971,8 +2981,13 @@
         border-radius: 0;
     }
 
+    .carousel-caption {
+        transform: translate(0px, -20px);
+        align-items: end;
+    }
+
     .h-crus {
-        height: 600px !important;
+        height: 900px !important;
     }
 
     .bg-02 img {
@@ -4116,10 +4131,10 @@
         }
     }
 
-    .chatbot header h2 {
+    /* .chatbot header h2 {
         margin-left: 50px;
         margin-right: 50px;
-    }
+    } */
 
     .chatbot .chatbox {
         height: 80%;
@@ -4312,7 +4327,7 @@
 
     #header-carousel .carousel-item {
         position: relative;
-        min-height: 450px;
+        height: inherit;
     }
 
     .carousel-item img {
@@ -4336,6 +4351,15 @@
     .carousel-control-next-icon {
         width: 2.5rem;
         height: 2.5rem;
+    }
+
+    .carousel-caption {
+        transform: translate(0px, -20px);
+        align-items: end;
+    }
+
+    .h-crus {
+        height: 900px !important;
     }
 
     .caro-caption {
@@ -5452,10 +5476,10 @@
         }
     }
 
-    .chatbot header h2 {
+    /* .chatbot header h2 {
         margin-left: 50px;
         margin-right: 50px;
-    }
+    } */
 
     .chatbot .chatbox {
         height: 80%;
@@ -5473,7 +5497,7 @@
     }
 
     .carousel-item img {
-        height: 600 !important;
+        height: inherit !important;
     }
 
     .container2 img {
@@ -5620,7 +5644,7 @@
 
     #header-carousel .carousel-item {
         position: relative;
-        min-height: 450px;
+        height: inherit;
     }
 
     #header-carousel .carousel-item img {
@@ -5628,7 +5652,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: 60%;
+        object-position: 80%;
     }
 
     .carousel-control-prev,
@@ -5643,15 +5667,20 @@
         height: 2.5rem;
     }
 
+    .carousel-caption {
+        transform: translate(0px, -20px);
+        align-items: end;
+    }
+
+    .h-crus {
+        height: 900px !important;
+    }
+
     .caro-caption {
         padding-top: 40px;
         padding-left: 30px;
         padding-right: 25px;
         padding-bottom: 30px;
-    }
-
-    .top-slide1 {
-        margin-top: -10px !important;
     }
 
     .mid-slide1 {
@@ -6645,10 +6674,10 @@
         color: transparent !important;
     }
 
-    .chatbot header h2 {
+    /* .chatbot header h2 {
         margin-left: 50px;
         margin-right: 50px;
-    }
+    } */
 
     .chatbot .chatbox {
         height: 80%;
@@ -6753,7 +6782,11 @@
     #sec13 {
         position: relative !important;
         min-height: 40rem;
-        max-height: 100%;
+        height: auto;
+
+        & #cpy-ryt {
+            position: relative;
+        }
     }
 
     #req-call .container-fluid {
@@ -6886,6 +6919,7 @@
 
     #sec7 {
         padding: 0 !important;
+
         & .container {
             transform: translateX(0) translateY(0rem) !important;
         }
@@ -7643,6 +7677,11 @@
         transform: translateY(2rem);
     }
 
+    .carousel-inner .carousel-item:first-child .carousel-caption .container {
+        transform: translateX(-80px);
+        width: 80%;
+    }
+
     /* Social media icons */
     .nav-icons.d-manual-flex {
         display: none;
@@ -8180,6 +8219,7 @@
 
 /* Desktop Screen */
 @media (min-width:1367px) and (max-width:1440px) {
+
     /* Social media icons */
     .nav-icons.d-manual-flex {
         display: none !important;
@@ -8192,8 +8232,18 @@
         height: inherit !important;
     }
 
-    .carousel-inner .carousel-item .carousel-caption{
+    .carousel-inner .carousel-item .carousel-caption {
         transform: translateY(3rem);
+    }
+
+    .carousel-inner .carousel-item:first-child .carousel-caption .container {
+        transform: translateX(-80px);
+        width: 80%;
+    }
+
+    .carousel-inner .carousel-item:nth-child(2) .carousel-caption .container {
+        transform: translateX(-80px);
+        width: 80%;
     }
 
     #home_skyfinch .caro-caption p {
@@ -8626,10 +8676,10 @@
         font-size: 25px;
     }
 
-    .chatbot header h2 {
+    /* .chatbot header h2 {
         margin-left: 100px;
         margin-right: 100px;
-    }
+    } */
 
     .chatbot .chatbox {
         height: 90%;
@@ -9029,6 +9079,19 @@
     a .logo-cloud {
         width: 10.25rem;
         height: 50px;
+    }
+
+    .carousel-control-next {
+        right: 4px;
+    }
+
+    .carousel-control-prev .span-control,
+    .carousel-control-next .span-control {
+        position: absolute;
+        bottom: 0;
+        transform: translateY(-15rem);
+        width: 40px;
+        height: 40px;
     }
 
     .nav-item .hr.hr-blurry {
