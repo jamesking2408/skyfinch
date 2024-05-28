@@ -142,11 +142,8 @@
             updateHash: false,
             touchScroll: true,
             after: function (index) {
-                // Index starts from 0, so index 2 corresponds to section 3
                 if (currentSubPageUrl.attr('href') === 'about.html') {
-                    // Check if the current section in about page
                     if (index === 2) {
-                        // Your condition to execute when scrolling to section 3
                         $('.count').counterUp({
                             delay: 10,
                             time: 2000
@@ -155,7 +152,6 @@
                 } else {
                     // Index page
                     if (index === 5) {
-                        // Your condition to execute when scrolling to section 4
                         $('.count').counterUp({
                             delay: 10,
                             time: 2000
@@ -218,16 +214,6 @@
         }
     });
     //end of scroll effects
-    // Navbar scroll background
-    $(".hamburger").on("click", function (e) {
-        e.preventDefault();
-        if ($(this).hasClass("is-active")) {
-            $("body").css("overflow", "scroll"); // Disables scrolling
-        }
-        else {
-            $("body").css("overflow", "hidden"); // Enables scrolling
-        }
-    });
     // Back to top button
     // Index page
     $(document).ready(function () {
@@ -446,3 +432,51 @@ function choosePlan(planName, planPrice) {
     localStorage.setItem('selectedPlanName', planName);
     localStorage.setItem('selectedPlanPrice', planPrice);
 }
+// Cursor moving animation
+const cursor = document.querySelector(".cursor");
+const follower = document.querySelector(".cursor-follower");
+const btnLink = document.querySelectorAll("a, button, .swiper-pagination-bullet, .filters ul, input[type=button], div[role=button]");
+
+let posX = 0,
+    posY = 0,
+    mouseX = 0,
+    mouseY = 0;
+
+TweenMax.to({}, 0.02, {
+    repeat: -1,
+    onRepeat: function () {
+        posX += (mouseX - posX) / 9;
+        posY += (mouseY - posY) / 9;
+
+        TweenMax.set(follower, {
+            css: {
+                left: posX - 20,
+                top: posY - 20
+            }
+        });
+
+        TweenMax.set(cursor, {
+            css: {
+                left: mouseX,
+                top: mouseY
+            }
+        });
+    }
+});
+
+document.addEventListener("mousemove", (e) => {
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+});
+
+btnLink.forEach((el) => {
+    el.addEventListener("mouseenter", () => {
+        cursor.classList.add("active");
+        follower.classList.add("active");
+    });
+
+    el.addEventListener("mouseleave", () => {
+        cursor.classList.remove("active");
+        follower.classList.remove("active");
+    });
+});

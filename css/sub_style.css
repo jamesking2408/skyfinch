@@ -409,7 +409,7 @@ nav ol.breadcrumb {
     color: #fff;
     border-radius: 6px;
     padding: 5px 10px;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 .card-btn2 {
@@ -417,7 +417,7 @@ nav ol.breadcrumb {
     color: #fff;
     border-radius: 6px;
     padding: 5px 10px;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 #module_card #card .btn1 {
@@ -440,7 +440,7 @@ nav ol.breadcrumb {
     z-index: 1;
     border: 0;
     overflow: hidden;
-    margin: 0
+    margin: 0;
 }
 
 #module_card #card .btn2 {
@@ -463,7 +463,7 @@ nav ol.breadcrumb {
     z-index: 1;
     border: 0;
     overflow: hidden;
-    margin: 0
+    margin: 0;
 }
 
 #module_card #card .btn1::before {
@@ -480,7 +480,7 @@ nav ol.breadcrumb {
     transition-timing-function: ease;
     transform-origin: 0 0;
     transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
-    transform: scaleX(0)
+    transform: scaleX(0);
 }
 
 #module_card #card .btn2::before {
@@ -497,13 +497,13 @@ nav ol.breadcrumb {
     transition-timing-function: ease;
     transform-origin: 0 0;
     transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
-    transform: scaleX(0)
+    transform: scaleX(0);
 }
 
 #module_card #card .card:hover .btn1::before {
     transform: scaleX(1);
     color: #fff !important;
-    z-index: -1
+    z-index: -1;
 }
 
 #module_card #card .card:hover .btn2 {
@@ -513,7 +513,7 @@ nav ol.breadcrumb {
 #module_card #card .card:hover .btn2::before {
     transform: scaleX(1);
     color: #fff !important;
-    z-index: -1
+    z-index: -1;
 }
 
 /* Point of sales End */
@@ -1025,8 +1025,9 @@ section.bg-00 {
 }
 
 .bg-0 {
-    background-image: linear-gradient(to top, #00006d, #0047aa, #007dc6, #00b0c9, #00e1c1);
+    background-image: linear-gradient(180deg, #ffffff03, #ffffffb9 85%), radial-gradient(ellipse at top left, #0d6efd80, transparent 50%), radial-gradient(ellipse at top right, #fceebf80, transparent 50%), radial-gradient(ellipse at center right, #712cf980, transparent 50%), radial-gradient(ellipse at center left, #d6338480, transparent 50%),radial-gradient(ellipse at bottom right, #0d6efd80, transparent 50%), radial-gradient(ellipse at bottom left, #fceebf80, transparent 50%);
     height: 100% !important;
+    background-size: cover;
 }
 
 .center {

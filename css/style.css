@@ -1167,7 +1167,13 @@ a .logo-cloud {
         border-radius: 50% !important;
     }
 
+    & button:hover{
+        opacity: 1;
+        background-color: #355EFC !important;
+    }
+
     & .active {
+        transform: scale(1.4);
         background-color: #355EFC !important;
     }
 }
@@ -1237,6 +1243,16 @@ a .logo-cloud {
     margin-left: 68px;
 }
 
+span#no-1 {
+    display: inline-block;
+    background: url(../img/number-one.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0.42rem 0.4rem;
+    width: 60px;
+    height: 45px;
+}
+
 .page-header .breadcrumb-item,
 .page-header .breadcrumb-item a {
     font-weight: 500;
@@ -1272,8 +1288,7 @@ a .logo-cloud {
 }
 
 .footer .cloud {
-    height: 37px;
-    font-size: 31px;
+    font-size: 2.8rem;
     color: #FFFFFF;
     font-family: 'Black Ops One', cursive;
 }
@@ -1309,7 +1324,10 @@ a .logo-cloud {
 }
 
 .footer {
-    background: #000B1C;
+    background: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
 }
 
 .footer .foo-policy {
@@ -1648,10 +1666,99 @@ a .logo-cloud {
 
 /*////////////////////////////////////////////////*/
 .bg-02 {
-    background-image: linear-gradient(65deg, rgba(236, 239, 255, 0.8), rgba(203, 207, 253, 0.4), rgba(221, 224, 253, 0.8), rgba(236, 239, 255, 0.4));
-    background-repeat: no-repeat;
-    background-size: 100% 290%;
-    background-position: center;
+    background-image: linear-gradient(67deg, rgb(236 239 255), rgb(228 230 255), rgb(243 244 255), rgb(236 239 255));
+    background-size: 400% 400%;
+    -webkit-animation: magicGradient 30s ease infinite;
+    -moz-animation: magicGradient 30s ease infinite;
+    animation: magicGradient 30s ease infinite;
+}
+
+/* #sec2_1.bg-02 {
+    background: linear-gradient(324deg, rgb(175, 198, 255), rgb(177, 223, 255));
+    background: linear-gradient(324deg, rgb(236 239 255), rgb(175, 198, 255), rgb(177, 223, 255), rgb(236 239 255));;
+    background-size: 400% 400%;
+
+    -webkit-animation: magicGradient 30s ease infinite;
+    -moz-animation: magicGradient 30s ease infinite;
+    animation: magicGradient 30s ease infinite;
+} */
+
+@-webkit-keyframes magicGradient {
+    0% {
+        background-position: 2% 0%
+    }
+
+    20% {
+        background-position: 20% 50%
+    }
+
+    40% {
+        background-position: 50% 100%
+    }
+
+    60% {
+        background-position: 100% 0%
+    }
+
+    80% {
+        background-position: 50% 100%
+    }
+
+    100% {
+        background-position: 2% 0%
+    }
+}
+
+@-moz-keyframes magicGradient {
+    0% {
+        background-position: 2% 0%
+    }
+
+    20% {
+        background-position: 20% 50%
+    }
+
+    40% {
+        background-position: 50% 100%
+    }
+
+    60% {
+        background-position: 100% 0%
+    }
+
+    80% {
+        background-position: 50% 100%
+    }
+
+    100% {
+        background-position: 2% 0%
+    }
+}
+
+@keyframes magicGradient {
+    0% {
+        background-position: 2% 0%
+    }
+
+    20% {
+        background-position: 20% 50%
+    }
+
+    40% {
+        background-position: 50% 100%
+    }
+
+    60% {
+        background-position: 100% 0%
+    }
+
+    80% {
+        background-position: 50% 100%
+    }
+
+    100% {
+        background-position: 2% 0%
+    }
 }
 
 #req-call.bg-02 {
@@ -1661,6 +1768,7 @@ a .logo-cloud {
     background-position: center;
     background-attachment: fixed;
     opacity: 1;
+    animation: none;
 }
 
 .bg-02 .smt_img {
@@ -2031,8 +2139,111 @@ a .logo-cloud {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
+.cube {
+    margin-top: 0.5rem;
+    position: relative;
+    width: 300px;
+    height: 160px;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    color: #000;
+    text-align: center;
+}
+
+.active-state {
+    background: linear-gradient(rgb(244 246 255) 0%, rgb(255, 255, 255) 100%);
+    transform: perspective(1000px) rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.default-state {
+    flex: 1 1 auto;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(rgb(244 246 255) 0%, rgb(255, 255, 255) 100%);
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+
+    & i {
+        font-size: 2.5rem !important;
+    }
+}
+
+.default-state,
+.active-state {
+    height: inherit;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: transform 0.4s ease;
+    transform-origin: center center -65px;
+    -webkit-transform-origin: center center -65px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.cube p {
+    font-size: 15px;
+    padding: 5px 10px;
+    margin: 0;
+}
+
+.cube:hover .active-state {
+    z-index: 99999;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+.cube:hover .default-state {
+    transform: perspective(1000px) rotateX(90deg) rotateY(0deg) rotateZ(0deg);
+}
+
 .hov1 .card-body i {
     font-size: 40px;
+}
+
+#navbarCollapse {
+    transition: all 0.35s ease-in-out !important;
+    -webkit-animation-name: MenuAnimation;
+    animation-name: MenuAnimation;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 500ms;
+    animation-duration: 500ms;
+}
+
+#navbarCollapse.show {
+    height: 100vh !important;
+    transition: all 0.35s ease-in-out !important;
+}
+
+@keyframes MenuAnimation {
+    from {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes MenuAnimation {
+    from {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+#navbarCollapse.collapsing {
+    height: 100vh !important;
 }
 
 #navbarCollapse .border-none {
@@ -2045,7 +2256,8 @@ a .logo-cloud {
 }
 
 .btn-silver {
-    background-color: #dadbff;
+    background-color: rgba(0, 76, 255, 0.099) !important;
+    color: #222222 !important;
     -o-transition: 0.5s;
     transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -2053,9 +2265,14 @@ a .logo-cloud {
 
 .btn-silver:hover,
 .btn-silver:active {
-    background-color: #011A41 !important;
+    color: #ffffff !important;
+    background-color: rgb(0, 76, 255) !important;
     border-color: transparent !important;
-    color: #fff !important;
+}
+
+.active_tab {
+    background-color: rgb(0, 76, 255) !important;
+    color: white !important;
 }
 
 .show2,
@@ -2075,11 +2292,6 @@ a .logo-cloud {
 .show3 .card {
     width: 170px;
     min-height: 180px;
-}
-
-.active_tab {
-    background-color: #011A41 !important;
-    color: white !important;
 }
 
 /* Special section end*/
@@ -2265,6 +2477,82 @@ a .logo-cloud {
     box-shadow: none;
 }
 
+/* gsap cursor moving animation */
+.z-n {
+    display: block;
+    z-index: 999999999;
+}
+@media screen and (max-width:991px) {
+    .z-n {display: none;}
+}
+
+.cursor {
+    position: absolute;
+    background: rgb(0, 76, 255);
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    z-index: 999999999;
+    transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity, 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) background;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    transform: scale(0.8);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+}
+
+.cursor.active {
+    opacity: 1;
+    transform: scale(0);
+    background: rgb(33, 8, 255);
+    transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity, 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) background;
+}
+
+.cursor::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 2px;
+    top: 8px;
+    left: 2px;
+    display: block;
+    border-radius: 100%;
+    opacity: 0;
+    color: #fff;
+}
+
+.cursor.active::before {
+    opacity: 1;
+}
+
+.cursor-follower {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    z-index: 99999999;
+    background: rgba(255, 255, 255, 1);
+    transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity, 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) background;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    transform: translate(4px, 4px);
+}
+
+.cursor-follower.active {
+    background: rgba(255, 255, 255, 0.475);
+    /* opacity: 0.3; */
+    transform: scale(1.5);
+    mix-blend-mode: screen;
+    transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity, 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) background;
+}
 
 .input-data>select:focus {
     border-bottom: 2px solid rgb(0, 0, 0);
@@ -2579,12 +2867,16 @@ a .logo-cloud {
     background-color: #90caf9;
 }
 
-
-.nav-pills .bar-clor {
+.nav-pills .bar-clr {
     color: #011A41 !important;
 }
 
-.nav-pills .bar-clor.active {
+.nav-pills .bar-clr:hover {
+    background-color: #0d6efd !important;
+    color: #FFFFFF !important;
+}
+
+.nav-pills .bar-clr.active {
     color: #FFFFFF !important;
 }
 

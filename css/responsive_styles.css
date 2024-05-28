@@ -520,18 +520,18 @@
         margin-top: 0 !important;
     }
 
-    .tooltip-content {
+    #sec5 .col-clone-matx:nth-child(odd) .tooltip-content {
         max-width: 180px;
-        -ms-transform: translateY(-80px) translateX(15px);
-        transform: translateY(-80px) translateX(15px);
-        -webkit-transform: translateY(-80px) translateX(15px);
+        -ms-transform: translateY(-105px) translateX(35px);
+        transform: translateY(-105px) translateX(35px);
+        -webkit-transform: translateY(-105px) translateX(35px);
     }
 
-    .tooltip-content.tooltip-s-content {
+    #sec5 .col-clone-matx:nth-child(even) .tooltip-content {
         max-width: 180px;
-        -ms-transform: translateY(-105px) translateX(-23px);
-        transform: translateY(-105px) translateX(-23px);
-        -webkit-transform: translateY(-105px) translateX(-23px);
+        -ms-transform: translateY(-105px) translateX(-30px);
+        transform: translateY(-105px) translateX(-30px);
+        -webkit-transform: translateY(-105px) translateX(-30px);
     }
 
     .bg-06 {
@@ -572,10 +572,6 @@
 
     .bg-10 {
         height: 75rem;
-    }
-
-    #sec7 .container-fluid {
-        margin-top: 50px;
     }
 
     .show3 i {
@@ -1865,18 +1861,18 @@
         margin-top: 0 !important;
     }
 
-    .tooltip-content {
+    #sec5 .col-clone-matx:nth-child(odd) .tooltip-content {
         max-width: 180px;
-        -ms-transform: translateY(-105px) translateX(-10px);
-        transform: translateY(-105px) translateX(-10px);
-        -webkit-transform: translateY(-105px) translateX(-10px);
+        -ms-transform: translateY(-105px) translateX(30px);
+        transform: translateY(-105px) translateX(30px);
+        -webkit-transform: translateY(-105px) translateX(30px);
     }
 
-    .tooltip-content.tooltip-s-content {
+    #sec5 .col-clone-matx:nth-child(even) .tooltip-content {
         max-width: 180px;
-        -ms-transform: translateY(-105px) translateX(-10px);
-        transform: translateY(-105px) translateX(-10px);
-        -webkit-transform: translateY(-105px) translateX(-10px);
+        -ms-transform: translateY(-105px) translateX(-20px);
+        transform: translateY(-105px) translateX(-20px);
+        -webkit-transform: translateY(-105px) translateX(-20px);
     }
 
     .mytooltip .card-title {
@@ -1917,10 +1913,6 @@
 
     .bg-10 {
         height: 65.9rem;
-    }
-
-    #sec7 .container-fluid {
-        margin-top: 50px;
     }
 
     .show3 i {
@@ -3210,19 +3202,26 @@
         margin-top: 0 !important;
     }
 
-    .tooltip-content {
+    #sec5 .col-clone-matx:nth-child(odd) .tooltip-content {
+        max-width: 180px;
+        -ms-transform: translateY(-105px) translateX(20px);
+        transform: translateY(-105px) translateX(20px);
+        -webkit-transform: translateY(-105px) translateX(20px);
+    }
+
+    #sec5 .col-clone-matx:nth-child(even) .tooltip-content {
         max-width: 180px;
         -ms-transform: translateY(-105px) translateX(-10px);
         transform: translateY(-105px) translateX(-10px);
         -webkit-transform: translateY(-105px) translateX(-10px);
     }
 
-    .tooltip-content.tooltip-s-content {
+    /* .tooltip-content.tooltip-s-content {
         max-width: 180px;
         -ms-transform: translateY(-105px) translateX(-10px);
         transform: translateY(-105px) translateX(-10px);
         -webkit-transform: translateY(-105px) translateX(-10px);
-    }
+    } */
 
     .mytooltip .card-title {
         font-size: 0.90rem !important;
@@ -3274,11 +3273,7 @@
     }
 
     .bg-10 {
-        height: 65.9rem;
-    }
-
-    #sec7 .container-fluid {
-        margin-top: 50px;
+        height: auto;
     }
 
     .show3 i {
@@ -3333,7 +3328,7 @@
     }
 
     .profile_topic {
-        width: min(225px - 1vw);
+        width: min(100% - 50px);
     }
 
     #profile_sec2 .hist_1,
@@ -4198,8 +4193,8 @@
     }
 
     .card.hov2 {
-        width: 210px !important;
-        height: 210px !important;
+        min-width: 210px !important;
+        height: 245px !important;
     }
 
     .mx-6 {
@@ -4534,17 +4529,9 @@
     .tooltip-content {
         max-width: 215px;
         min-width: 215px;
-        -ms-transform: translateY(-105px) translateX(-10px);
-        transform: translateY(-105px) translateX(-10px);
-        -webkit-transform: translateY(-105px) translateX(-10px);
-    }
-
-    .tooltip-content.tooltip-s-content {
-        max-width: 215px;
-        min-width: 215px;
-        -ms-transform: translateY(-105px) translateX(-10px);
-        transform: translateY(-105px) translateX(-10px);
-        -webkit-transform: translateY(-105px) translateX(-10px);
+        -ms-transform: translateY(-105px) translateX(-5px);
+        transform: translateY(-105px) translateX(-5px);
+        -webkit-transform: translateY(-105px) translateX(-5px);
     }
 
     .bg-06 {
@@ -4576,7 +4563,13 @@
 
     #prod_sec_2 .show1 .card,
     #prod_sec_2 .show2 .card {
-        height: 110px !important;
+        height: auto !important;
+    }
+
+    .show1 .cube,
+    .show2 .cube {
+        width: min(100vw - 370px);
+        height: 140px;
     }
 
     .show3 .card {
@@ -5009,7 +5002,8 @@
     }
 
     #module_card .card {
-        max-width: 470px !important;
+        width: 100%;
+        max-width: 350px !important;
     }
 
     #module_card #card::before {
@@ -5018,7 +5012,7 @@
 
     #module_card #card:active::before,
     #module_card #card:hover::before {
-        right: 116px;
+        right: 95px;
         bottom: -20px;
     }
 
@@ -5515,6 +5509,11 @@
         transition: opacity .09s;
     }
 
+    .card.hov2 {
+        width: 100%;
+        height: 320px;
+    }
+
     .container1 {
         margin-top: 0;
         width: 100% !important;
@@ -5813,6 +5812,11 @@
         height: 250px;
     }
 
+    #sec6 .show3 .card {
+        width: 95%;
+        min-height: 180px;
+    }
+
     .bg-10 {
         height: 65rem !important;
     }
@@ -5832,6 +5836,9 @@
 
     .tooltip-content {
         width: 280px !important;
+        -ms-transform: translateY(-120px) translateX(0px);
+        transform: translateY(-120px) translateX(0px);
+        -webkit-transform: translateY(-120px) translateX(0px);
     }
 
     /* Style page responsive End */
@@ -6000,6 +6007,10 @@
 
     #card.cards_dot {
         width: 372px !important;
+    }
+
+    #module_card #card::before {
+        display: none;
     }
 
     .bg-00 .facts {
@@ -6213,6 +6224,10 @@
 
     .border-pos h1 {
         font-size: 2.505rem;
+    }
+
+    #module_card .card {
+        width: 100%;
     }
 
     #hotel_land {
@@ -6628,6 +6643,16 @@
         }
     }
 
+    .carousel-inner .carousel-item:first-child .carousel-caption .container {
+        transform: translateX(-80px);
+        width: 80%;
+    }
+
+    .carousel-inner .carousel-item:nth-child(2) .carousel-caption .container {
+        transform: translateX(-50px);
+        width: 85%;
+    }
+
     #land-sec {
         margin-top: 4.4rem !important;
 
@@ -6901,6 +6926,12 @@
     .show2 img.webapp {
         width: 280px;
         height: 250px;
+    }
+
+    .show1 .cube,
+    .show2 .cube {
+        width: 240px;
+        height: 140px;
     }
 
     .show1 .card,
@@ -8074,7 +8105,6 @@
         top: 0;
     }
 
-
     .bg-11 .container h1 {
         padding: 0px !important;
     }
@@ -8782,7 +8812,8 @@
     }
 
     #module_card b {
-        padding-left: 45px !important;
+        padding-left: 0 !important;
+        display: block;
     }
 
     .offer1,
@@ -8934,10 +8965,18 @@
         align-items: center;
     }
 
-    .navbar .navbar-nav {
-        margin-top: 10px;
-        border-top: 1px solid rgba(0, 0, 0, .07);
-        background: #FFFFFF;
+    .navbar {
+        overflow: auto;
+        & .navbar-nav {
+            margin-top: 10px;
+            border-top: 1px solid rgba(0, 0, 0, .07);
+            background: #FFFFFF;
+
+            & .dropdown-content1 a,
+            .dropbtn1 {
+                font-size: 1.2rem !important;
+            }
+        }
     }
 
     .navbar .dropdown-menu {
@@ -8947,6 +8986,7 @@
 
     .navbar .navbar-nav .nav-link {
         padding: 8px 0;
+        font-size: 1.2rem !important;
     }
 
     #navbarCollapse .dropdown-menu {
