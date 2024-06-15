@@ -8591,6 +8591,7 @@
 
     #prod_sec_2 .container {
         transform: translateY(0rem);
+        padding: 5rem 12px;
     }
 
     #prodEnq-sec .container {
