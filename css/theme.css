@@ -1217,7 +1217,7 @@ a.text-dark:focus {
 }
 
 #profile_sec2 {
-  background-image: linear-gradient(to right top, #c3a1f8, #bbaafc, #b5b2fe, #b0baff, #aec1ff, #a1c9ff, #95d0ff, #8ed6ff, #76dfff, #5ee7ff, #4beff8, #49f6eb);
+  background-image: linear-gradient(to right top, #c3a1f869, #bbaafc69, #b5b2fe69, #b0baff69, #aec1ff69, #a1c9ff69, #95d0ff69, #8ed6ff69, #76dfff69, #5ee7ff69, #4beff869, #49f6eb69);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2769,7 +2769,7 @@ ul.cloud a:hover::before {
   & .container {
     position: relative;
     top: 0;
-    transform: translateY(5rem);
+    transform: translateY(2rem);
   }
 }
 

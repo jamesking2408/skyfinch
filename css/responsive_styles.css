@@ -1,6 +1,11 @@
 /* Small Mobile Screen */
 @media only screen and (max-width:320px) {
 
+    /* Logo Image */
+    a .logo-cloud {
+        width: 140px !important;
+    }
+
     /* Style page responsive start */
     .dropdown-content1 {
         width: calc(100% - 20px) !important;
@@ -72,13 +77,14 @@
     }
 
     .card.hov2 {
-        width: 80% !important;
+        width: 100% !important;
         height: auto !important;
     }
 
     .img-abt {
         max-width: 100% !important;
-        height: 420px !important;
+        height: 650px !important;
+        background-position: 60%;
     }
 
     .boder-blur h1,
@@ -93,7 +99,7 @@
 
     .service-bg {
         object-fit: none;
-        height: 520px !important;
+        height: 650px !important;
         background-position: 40% 50%;
     }
 
@@ -138,8 +144,9 @@
 
     .contact_bg {
         width: 100%;
-        height: 450px;
         padding: 0;
+        height: 650px;
+        background-position: 80%;
     }
 
     .contact-border h1,
@@ -234,10 +241,6 @@
 
     .mid-slide3 {
         padding-top: 2px;
-    }
-
-    .abt-img {
-        width: 300px;
     }
 
     .footer .foo-policy,
@@ -762,6 +765,8 @@
 
     #product_land {
         margin-top: 50px !important;
+        height: 600px !important;
+        background-position-x: 42% !important;
     }
 
     .portfolio-grid {
@@ -775,10 +780,12 @@
     }
 
     .border-pdt h1 {
-        font-size: 1.35rem;
-        font-weight: 300;
+        font-size: 2.15rem;
         padding-top: 5px;
-        padding-right: 2px;
+        padding-right: 0px;
+        position: relative;
+        top: -2rem;
+        left: -1rem;
     }
 
     /* Sub_pages responsive Start */
@@ -792,7 +799,7 @@
     }
 
     .img-pos {
-        height: inherit;
+        height: 650px !important;
     }
 
     .bg-11 {
@@ -914,9 +921,9 @@
         right: 60px;
     }
 
-    #module_card #card:active::before,
-    #module_card #card:hover::before {
-        right: -2px;
+    #module_card #card:has(> .card:hover)::before,
+    #module_card #card:has(> .card:active)::before {
+        right: -8px;
         bottom: -15px;
     }
 
@@ -926,7 +933,7 @@
     }
 
     .img-hms {
-        height: 370px !important;
+        height: 650px !important;
     }
 
     .bg-00 .container1.facts h5 {
@@ -957,7 +964,7 @@
     }
 
     .img-rms {
-        height: 390px !important;
+        height: 650px !important;
     }
 
     .border-rms {
@@ -984,7 +991,7 @@
     }
 
     .img-ssfinch {
-        height: 390px;
+        height: 650px !important;
     }
 
     .border-ssfinch {
@@ -1011,7 +1018,7 @@
     }
 
     .img-vms {
-        height: 390px;
+        height: 650px !important;
     }
 
     .border-vms {
@@ -1039,8 +1046,8 @@
     }
 
     .img-crm {
-        height: 390px;
-        background-position: center 100% !important;
+        height: 650px !important;
+        background-position: 65% 100% !important;
     }
 
     .border-crm {
@@ -1068,7 +1075,7 @@
     }
 
     .img-ctm {
-        height: 390px;
+        height: 650px !important;
         background-position: center 100% !important;
     }
 
@@ -1097,8 +1104,8 @@
     }
 
     .img-fms {
-        height: 390px;
-        background-position: 60% 100% !important;
+        height: 650px !important;
+        background-position: 59% 100% !important;
     }
 
     .border-fms {
@@ -1126,7 +1133,7 @@
     }
 
     .img-ems {
-        height: 390px;
+        height: 650px !important;
         background-position: 60% 100% !important;
     }
 
@@ -1155,8 +1162,8 @@
     }
 
     .img-pms {
-        height: 390px;
-        background-position: 60% 100% !important;
+        height: 650px !important;
+        background-position: 55% 100% !important;
     }
 
     .border-pms {
@@ -1184,7 +1191,7 @@
     }
 
     .img-sales {
-        height: 390px;
+        height: 650px !important;
         background-position: 60% 100% !important;
     }
 
@@ -1212,13 +1219,13 @@
         margin-top: -6px !important;
     }
 
-    #land-sec {
+    #prodEnq-sec {
         position: relative;
         margin-top: 0 !important;
         height: auto;
     }
 
-    #land-sec .container {
+    #prodEnq-sec .container {
         position: relative;
         top: 0;
         left: 0;
@@ -1414,13 +1421,14 @@
     }
 
     .card.hov2 {
-        width: 80% !important;
+        width: 100% !important;
         height: auto !important;
     }
 
     .img-abt {
         max-width: 100% !important;
-        height: 420px !important;
+        height: 650px !important;
+        background-position: 60%;
     }
 
     .boder-blur h1,
@@ -1435,7 +1443,7 @@
 
     .service-bg {
         object-fit: none;
-        height: 520px !important;
+        height: 650px !important;
         background-position: 40% 50%;
     }
 
@@ -1475,8 +1483,9 @@
 
     .contact_bg {
         width: 100%;
-        height: 450px;
         padding: 0;
+        height: 650px;
+        background-position: 80%;
     }
 
     .contact-border h1,
@@ -1579,10 +1588,6 @@
 
     .mid-slide3 {
         padding-top: 5px;
-    }
-
-    .abt-img {
-        width: 300px;
     }
 
     .footer .foo-policy,
@@ -2099,7 +2104,8 @@
 
     #product_land {
         margin-top: 50px !important;
-        background-position: 47% !important;
+        background-position: 42% !important;
+        height: 600px !important;
     }
 
     .portfolio-grid {
@@ -2113,10 +2119,12 @@
     }
 
     .border-pdt h1 {
-        font-size: 1.655rem;
+        font-size: 2.25rem;
         font-weight: 300;
         padding-top: 5px;
         padding-right: 2px;
+        position: relative;
+        top: -1rem;
     }
 
     /* Sub_pages responsive Start */
@@ -2130,7 +2138,7 @@
     }
 
     .img-pos {
-        height: inherit;
+        height: 650px !important;
     }
 
     .bg-11 {
@@ -2142,7 +2150,7 @@
     }
 
     .bg-12 .row .tab-pane {
-        height: 405px !important;
+        height: 450px !important;
     }
 
     /* point of sales responsive */
@@ -2253,9 +2261,9 @@
         right: 60px;
     }
 
-    #module_card #card:active::before,
-    #module_card #card:hover::before {
-        right: 5px;
+    #module_card #card:has(> .card:hover)::before,
+    #module_card #card:has(> .card:active)::before {
+        right: -5px;
         bottom: -20px;
     }
 
@@ -2265,7 +2273,7 @@
     }
 
     .img-hms {
-        height: 100% !important;
+        height: 650px !important;
     }
 
     .bg-00 .container1.facts h5 {
@@ -2295,7 +2303,7 @@
     }
 
     .img-rms {
-        height: 390px !important;
+        height: 650px !important;
     }
 
     .border-rms {
@@ -2322,7 +2330,7 @@
     }
 
     .img-ssfinch {
-        height: 390px;
+        height: 650px !important;
     }
 
     .border-ssfinch {
@@ -2349,7 +2357,7 @@
     }
 
     .img-vms {
-        height: 390px;
+        height: 650px !important;
     }
 
     .border-vms {
@@ -2377,8 +2385,8 @@
     }
 
     .img-crm {
-        height: 390px;
-        background-position: center 100% !important;
+        height: 650px !important;
+        background-position: 65% 100% !important;
     }
 
     .border-crm {
@@ -2406,7 +2414,7 @@
     }
 
     .img-ctm {
-        height: 390px;
+        height: 650px !important;
         background-position: center 100% !important;
     }
 
@@ -2435,8 +2443,8 @@
     }
 
     .img-fms {
-        height: 390px;
-        background-position: 60% 100% !important;
+        height: 650px !important;
+        background-position: 59% 100% !important;
     }
 
     .border-fms {
@@ -2464,7 +2472,7 @@
     }
 
     .img-ems {
-        height: 390px;
+        height: 650px !important;
         background-position: 60% 100% !important;
     }
 
@@ -2493,8 +2501,8 @@
     }
 
     .img-pms {
-        height: 390px;
-        background-position: 60% 100% !important;
+        height: 650px !important;
+        background-position: 55% 100% !important;
     }
 
     .border-pms {
@@ -2522,7 +2530,7 @@
     }
 
     .img-sales {
-        height: 390px;
+        height: 650px !important;
         background-position: 60% 100% !important;
     }
 
@@ -2550,13 +2558,13 @@
         margin-top: -6px !important;
     }
 
-    #land-sec {
+    #prodEnq-sec {
         position: relative;
         margin-top: 0 !important;
         height: auto;
     }
 
-    #land-sec .container {
+    #prodEnq-sec .container {
         position: relative;
         top: 0;
         left: 0;
@@ -2741,13 +2749,14 @@
     }
 
     .card.hov2 {
-        width: 80% !important;
+        width: 100% !important;
         height: auto !important;
     }
 
     .img-abt {
         max-width: 100% !important;
-        height: 420px !important;
+        height: 650px !important;
+        background-position: 60%;
     }
 
     .boder-blur h1,
@@ -2762,7 +2771,7 @@
 
     .service-bg {
         object-fit: none;
-        height: 520px !important;
+        height: 650px !important;
         background-position: 40% 50%;
     }
 
@@ -2807,8 +2816,9 @@
 
     .contact_bg {
         width: 100%;
-        height: 450px;
         padding: 0;
+        height: 650px;
+        background-position: 80%;
     }
 
     .contact-border h1,
@@ -2902,10 +2912,6 @@
 
     .mid-slide3 {
         padding-top: 10px;
-    }
-
-    .abt-img {
-        width: 300px;
     }
 
     .footer .foo-policy,
@@ -3469,6 +3475,8 @@
 
     #product_land {
         margin-top: 50px !important;
+        height: 600px !important;
+        background-position: 42% !important;
     }
 
     .portfolio-grid {
@@ -3486,10 +3494,12 @@
     }
 
     .border-pdt h1 {
-        font-size: 1.795rem;
+        font-size: 2.395rem;
         font-weight: 300;
         padding-top: 5px;
         padding-right: 2px;
+        position: relative;
+        top: -1rem;
     }
 
     /* Sub_pages responsive Start */
@@ -3502,7 +3512,7 @@
     }
 
     .img-pos {
-        height: inherit;
+        height: 650px !important;
     }
 
     .bg-11 {
@@ -3514,7 +3524,7 @@
     }
 
     .bg-12 .row .tab-pane {
-        height: 425px !important;
+        height: 500px !important;
     }
 
     #tab-sec .swiper-slider {
@@ -3652,9 +3662,9 @@
         right: 60px;
     }
 
-    #module_card #card:active::before,
-    #module_card #card:hover::before {
-        right: 30px;
+    #module_card #card:has(> .card:hover)::before,
+    #module_card #card:has(> .card:active)::before {
+        right: 0;
         bottom: -20px;
     }
 
@@ -3664,7 +3674,7 @@
     }
 
     .img-hms {
-        height: 100% !important;
+        height: 650px !important;
     }
 
     .bg-00 .container1.facts h5 {
@@ -3694,7 +3704,7 @@
     }
 
     .img-rms {
-        height: 100% !important;
+        height: 650px !important;
     }
 
     .border-rms {
@@ -3721,7 +3731,7 @@
     }
 
     .img-ssfinch {
-        height: 390px;
+        height: 650px !important;
     }
 
     .border-ssfinch {
@@ -3748,7 +3758,7 @@
     }
 
     .img-vms {
-        height: 390px;
+        height: 650px !important;
     }
 
     .border-vms {
@@ -3776,8 +3786,8 @@
     }
 
     .img-crm {
-        height: 390px;
-        background-position: center 100% !important;
+        height: 650px !important;
+        background-position: 65% 100% !important;
     }
 
     .border-crm {
@@ -3805,7 +3815,7 @@
     }
 
     .img-ctm {
-        height: 390px;
+        height: 650px !important;
         background-position: center 100% !important;
     }
 
@@ -3834,8 +3844,8 @@
     }
 
     .img-fms {
-        height: 390px;
-        background-position: 60% 100% !important;
+        height: 650px !important;
+        background-position: 59% 100% !important;
     }
 
     .border-fms {
@@ -3863,7 +3873,7 @@
     }
 
     .img-ems {
-        height: 390px;
+        height: 650px !important;
         background-position: 60% 100% !important;
     }
 
@@ -3892,8 +3902,8 @@
     }
 
     .img-pms {
-        height: 390px;
-        background-position: 60% 100% !important;
+        height: 650px !important;
+        background-position: 55% 100% !important;
     }
 
     .border-pms {
@@ -3921,7 +3931,7 @@
     }
 
     .img-sales {
-        height: 390px;
+        height: 650px !important;
         background-position: 60% 100% !important;
     }
 
@@ -3949,13 +3959,13 @@
         margin-top: -6px !important;
     }
 
-    #land-sec {
+    #prodEnq-sec {
         position: relative;
         margin-top: 0 !important;
         height: auto;
     }
 
-    #land-sec .container {
+    #prodEnq-sec .container {
         position: relative;
         top: 0;
         left: 0;
@@ -4379,10 +4389,6 @@
         padding-top: 15px;
     }
 
-    .abt-img {
-        width: 300px;
-    }
-
     .w-md-50 {
         width: 42% !important;
     }
@@ -4569,7 +4575,7 @@
     .show1 .cube,
     .show2 .cube {
         width: min(100vw - 370px);
-        height: 140px;
+        height: 155px;
     }
 
     .show3 .card {
@@ -4771,7 +4777,7 @@
     }
 
     .border-pdt h1 {
-        font-size: 2.295rem;
+        font-size: 2.995rem;
         font-weight: 300;
         padding-top: 5px;
         padding-right: 2px;
@@ -4802,6 +4808,11 @@
         padding-top: 0px !important;
         top: 0;
         transform: translateY(2rem);
+    }
+
+    .img-pos, .img-hms, .img-rms, .img-ssfinch, .img-vms, .img-crm, .img-ctm, .img-ems, .img-fms, .img-pms, .img-sales {
+        height: 650px !important;
+        background-position: 60% !important;
     }
 
     /* Common height all product pages */
@@ -4891,7 +4902,7 @@
     .bg-12 .container {
         top: 0;
         left: 0;
-        transform: translateY(2rem) translateX(0rem) !important;
+        transform: translateY(0rem) translateX(0rem) !important;
     }
 
     .bg-12 {
@@ -5002,27 +5013,22 @@
     }
 
     #module_card .card {
-        width: 100%;
-        max-width: 350px !important;
+        width: 70%;
+        /* max-width: 350px !important; */
     }
 
     #module_card #card::before {
         right: 150px;
     }
 
-    #module_card #card:active::before,
-    #module_card #card:hover::before {
-        right: 95px;
+    #module_card #card:has(> .card:hover)::before,
+    #module_card #card:has(> .card:active)::before {
+        right: 70px;
         bottom: -20px;
     }
 
     #hotel_land {
         position: relative;
-        height: 550px;
-    }
-
-    .img-hms {
-        height: inherit;
     }
 
     .border-hms {
@@ -5077,10 +5083,6 @@
         position: relative;
     }
 
-    .img-ssfinch {
-        background-position: center;
-    }
-
     .border-ssfinch {
         transform: translateX(1.5rem) translateY(-1rem) !important;
     }
@@ -5105,10 +5107,6 @@
 
     #vms_land {
         position: relative;
-    }
-
-    .img-vms {
-        background-position: top center;
     }
 
     .border-vms {
@@ -5289,13 +5287,13 @@
         margin-top: -4px !important;
     }
 
-    #land-sec {
+    #prodEnq-sec {
         position: relative;
         margin-top: 0 !important;
         height: auto;
     }
 
-    #land-sec .container {
+    #prodEnq-sec .container {
         position: relative;
         top: 0;
         left: 0;
@@ -5433,11 +5431,11 @@
 @media (min-width:603px) and (max-width:768px) {
 
     /* Style page responsive start */
-    section#land-sec {
+    section#prodEnq-sec {
         height: auto;
     }
 
-    #land-sec .container {
+    #prodEnq-sec .container {
         position: relative;
         top: 0;
         transform: translateY(0rem);
@@ -5692,10 +5690,6 @@
 
     .mid-slide3 {
         padding-top: 10px;
-    }
-
-    .abt-img {
-        width: 400px;
     }
 
     .footer .foo-policy,
@@ -6025,13 +6019,6 @@
         height: inherit;
     }
 
-    #sales_image .container-fluid {
-        margin-top: 0px !important;
-        padding-top: 0px !important;
-        top: 0;
-        transform: translateY(2rem);
-    }
-
     .bg-00 {
         height: 38rem !important;
     }
@@ -6041,82 +6028,19 @@
         transform: translate(0rem, 4rem);
     }
 
-    #hms_image .container-fluid {
+    #sales_image .container-fluid, #hms_image .container-fluid, #rms_image .container-fluid, #ssfinch_image .container-fluid, #vms_image .container-fluid, #crm_image .container-fluid, #ctm_image .container-fluid, #ems_image .container-fluid, #fms_image .container-fluid, #pms_image .container-fluid, #ss_image .container-fluid {
         margin-top: 0px !important;
         padding-top: 0px !important;
         top: 0;
-        transform: translateY(1rem);
-    }
-
-    #rms_image .container-fluid {
-        margin-top: 0px !important;
-        padding-top: 0px !important;
-        top: 0;
-        transform: translateY(1rem);
-    }
-
-    #ssfinch_image .container-fluid {
-        margin-top: 0px !important;
-        padding-top: 0px !important;
-        top: 0;
-        transform: translateY(1rem);
-    }
-
-    #vms_image .container-fluid {
-        margin-top: 0px !important;
-        padding-top: 0px !important;
-        top: 0;
-        transform: translateY(1rem);
-    }
-
-    #crm_image .container-fluid {
-        margin-top: 0px !important;
-        padding-top: 0px !important;
-        top: 0;
-        transform: translateY(1rem);
-    }
-
-    #ctm_image .container-fluid {
-        margin-top: 0px !important;
-        padding-top: 0px !important;
-        top: 0;
-        transform: translateY(1rem);
-    }
-
-    #ems_image .container-fluid {
-        margin-top: 0px !important;
-        padding-top: 0px !important;
-        top: 0;
-        transform: translateY(1rem);
-    }
-
-    #fms_image .container-fluid {
-        margin-top: 0px !important;
-        padding-top: 0px !important;
-        top: 0;
-        transform: translateY(1rem);
+        transform: translateY(0rem);
     }
 
     #fms_image.bg-00 {
         height: 38rem !important;
     }
 
-    #pms_image .container-fluid {
-        margin-top: 0px !important;
-        padding-top: 0px !important;
-        top: 0;
-        transform: translateY(1rem);
-    }
-
     #pms_image.bg-00 {
         height: 36rem !important;
-    }
-
-    #ss_image .container-fluid {
-        margin-top: 0px !important;
-        padding-top: 0px !important;
-        top: 0;
-        transform: translateY(1rem);
     }
 
     .bg-11 {
@@ -6653,7 +6577,7 @@
         width: 85%;
     }
 
-    #land-sec {
+    #prodEnq-sec {
         margin-top: 4.4rem !important;
 
         & .container {
@@ -7705,7 +7629,6 @@
     /* Style page responsive start */
     .h-custom-75 {
         height: 75%;
-        transform: translateY(2rem);
     }
 
     .carousel-inner .carousel-item:first-child .carousel-caption .container {
@@ -7718,17 +7641,17 @@
         display: none;
     }
 
-    #land-sec .container {
+    #prodEnq-sec .container {
         transform: translateY(3.2rem);
         max-height: 510px;
     }
 
-    #land-sec .row-product-form {
+    #prodEnq-sec .row-product-form {
         position: relative;
         top: -1rem;
     }
 
-    #land-sec .input-data,
+    #prodEnq-sec .input-data,
     #sec7 .input-data {
         margin-top: 0px;
     }
@@ -7750,7 +7673,7 @@
     }
 
     #sec2_1 .container-fluid {
-        transform: translateX(0) translateY(1rem);
+        transform: translateX(0) translateY(0rem);
     }
 
     #sec4 {
@@ -7766,14 +7689,14 @@
     }
 
     #sec5 .container {
-        transform: translateX(0) translateY(3rem) !important;
+        transform: translateX(0) translateY(0rem) !important;
     }
 
     #sec6 .container {
         position: relative !important;
         top: 0;
         left: 0;
-        transform: translateX(0) translateY(2rem) !important;
+        transform: translateX(0) translateY(0.5rem) !important;
         margin-left: 3rem;
         margin-right: 3rem;
         min-width: 1250px !important;
@@ -7801,7 +7724,7 @@
         position: relative !important;
         top: 0;
         left: 0;
-        transform: translateX(0) translateY(0.5rem) !important;
+        transform: translateX(0) translateY(1rem) !important;
     }
 
     #service_land {
@@ -7817,7 +7740,7 @@
     #tab-sec .container {
         position: relative;
         top: 0;
-        transform: translateY(1rem);
+        transform: translateY(0rem);
     }
 
     .respo_ser_tab {
@@ -7940,14 +7863,14 @@
     }
 
     #module_card #card {
-        height: 370px;
+        height: auto;
         position: relative;
-        top: 2rem;
+        /* top: 2rem; */
     }
 
-    #module_card #card:active::before,
-    #module_card #card:hover::before {
-        right: 50px;
+    #module_card #card:has(> .card:hover)::before,
+    #module_card #card:has(> .card:active)::before {
+        right: 8px;
         bottom: -45px;
     }
 
@@ -7960,7 +7883,7 @@
         position: relative !important;
         top: 0;
         left: 0;
-        transform: translateX(0rem) translateY(1rem);
+        transform: translateX(0rem) translateY(0rem);
     }
 
     .bg-00 .container-fluid {
@@ -7968,7 +7891,7 @@
         padding-top: 0px !important;
         position: relative;
         top: 0;
-        transform: translateY(3rem);
+        transform: translateY(2rem);
     }
 
     .bg-00 .container {
@@ -8263,7 +8186,7 @@
     }
 
     .carousel-inner .carousel-item .carousel-caption {
-        transform: translateY(3rem);
+        transform: translateY(6rem);
     }
 
     .carousel-inner .carousel-item:first-child .carousel-caption .container {
@@ -8289,8 +8212,10 @@
     }
 
     #sec4 {
-        display: grid;
-        place-items: center;
+        & .bg-04 {
+            height: 330px;
+            display: grid;
+        }
 
         & .container {
             position: relative !important;
@@ -8425,19 +8350,19 @@
     #profile_sec2_1 .container {
         position: relative;
         top: 0;
-        transform: translateY(3rem);
+        transform: translateY(0rem);
     }
 
     #profile_sec2_3 .container {
         position: relative;
         top: 0;
-        transform: translateY(3rem);
+        transform: translateY(0rem);
     }
 
     #profile_sec2_4 .container-fluid {
         position: relative;
         top: 0;
-        transform: translateY(3rem);
+        transform: translateY(0rem);
     }
 
     .page-banner.home-banner {
@@ -8665,10 +8590,10 @@
     }
 
     #prod_sec_2 .container {
-        transform: translateY(8rem);
+        transform: translateY(0rem);
     }
 
-    #land-sec .container {
+    #prodEnq-sec .container {
         transform: translateY(3.2rem);
     }
 
@@ -8781,8 +8706,8 @@
         bottom: 15px;
     }
 
-    #module_card #card:active::before,
-    #module_card #card:hover::before {
+    #module_card #card:has(> .card:hover)::before,
+    #module_card #card:has(> .card:active)::before {
         right: 240px;
         bottom: -25px;
     }
@@ -8804,6 +8729,7 @@
     #sec8 #module_card,
     #module_card .h-card {
         max-height: 100% !important;
+        row-gap: 2rem;
     }
 
     #module_card .card-bg2 h5 {
@@ -8824,12 +8750,16 @@
     #sec8 .container-fluid {
         position: relative;
         top: 0;
-        transform: translateY(1.5rem);
+        transform: translateY(0rem);
     }
 
     #sec8 #card ul {
         padding-left: 35px !important;
         padding-right: 20px !important;
+    }
+
+    .bg-a4 {
+        border-radius: 40px 40px 40px 40px;
     }
 
     .bg-404 {
@@ -8872,6 +8802,18 @@
 }
 
 @media (min-width: 992px) {
+    .nav-item.dropdown--hov,
+    .nav-item.dropdown--hov-01,
+    .dropdown--menu,
+    .dropdown--menu-01 {
+        display: block;
+    }
+
+    .nav-item.dropdown,
+    .nav-item.dropdown {
+        display: none;
+    }
+
     .navbar .nav-item .dropdown-menu {
         display: block;
         visibility: hidden;
@@ -8960,13 +8902,25 @@
 
 
 @media (max-width: 991px) {
+    .nav-item.dropdown--hov,
+    .nav-item.dropdown--hov-01,
+    .dropdown--menu,
+    .dropdown--menu-01 {
+        display: none;
+    }
+
+    .nav-item.dropdown,
+    .nav-item.dropdown {
+        display: block;
+    }
+
     .hamburger {
         display: flex !important;
         align-items: center;
     }
 
     .navbar {
-        overflow: auto;
+        /* overflow: auto; */
         & .navbar-nav {
             margin-top: 10px;
             border-top: 1px solid rgba(0, 0, 0, .07);
@@ -9103,7 +9057,7 @@
 }
 
 @media (min-width:300px) and (max-width:699px) {
-    #land-sec .container {
+    #prodEnq-sec .container {
         border-radius: 0px;
         border: 0px solid rgba(255, 255, 255, 0.25);
     }
@@ -9117,7 +9071,7 @@
 
     /* Logo Image */
     a .logo-cloud {
-        width: 10.25rem;
+        width: 160px;
         height: 50px;
     }
 
@@ -9168,11 +9122,14 @@
         height: 45px;
     }
 
+    #land-sec {
+        height: 700px;
+    }
+
     #abt-wave img {
         left: 0;
         bottom: 0;
         transform: translateX(0rem) translateY(-1rem);
-        max-width: 350px;
     }
 
     .one-lg {
@@ -9222,7 +9179,7 @@
         transform: translateY(0rem);
     }
 
-    #land-sec .center-product {
+    #prodEnq-sec .center-product {
         text-align: center;
     }
 
@@ -9279,6 +9236,10 @@
 
     #searchButton.searchButton_cls:focus {
         box-shadow: none;
+    }
+
+    .abt-img {
+        width: 100%;
     }
 }
 

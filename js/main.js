@@ -13,6 +13,20 @@
             theme: "dark",
             scrollbarPosition: "inside"
         });
+        $('body').on('copy', function (e) {
+            e.preventDefault();
+            var defaultText = "!OOPS, you can not copy and paste.";
+            var clipboardData = e.originalEvent.clipboardData || window.clipboardData;
+            if (clipboardData) {
+                clipboardData.setData('text', defaultText);
+            } else {
+                window.clipboardData.setData('Text', defaultText);
+            }
+        });
+        $(document).bind("contextmenu", function (e) {
+            e.preventDefault();
+            return false;
+        });
     });
     // <!-- Change select option method -->
     $(document).ready(function () {
@@ -46,38 +60,36 @@
     // Initiate the wow.js
     new WOW().init();
     //<!-- pop up -->
-    function myTooltip() {
-        $(".mytooltip").hover(
-            function (e) {
-                // e.preventDefault();
-                e.stopPropagation();
-                $(this).find('.tooltip-content').delay(900).fadeIn();
-                $(this).find('.tooltip-content').hover(
-                    function (e) {
-                        // e.preventDefault();
-                        e.stopPropagation();
-                        $('.tooltip-content').stop(true);
-                    },
-                    function (e) {
-                        // e.preventDefault();
-                        e.stopPropagation();
-                        $('.tooltip-content').hide();
-                        $('.tooltip-content').stop();
-                    }
-                );
-                $(this).find('.tooltip-content').delay(4000).fadeOut();
-            },
-            function (e) {
-                // e.preventDefault();
-                e.stopPropagation();
-                $('.tooltip-content').stop();
-                $('.tooltip-content').hide();
-            }
-        );
-        $('#spl1, #spl2').click(function () {
+    $(".mytooltip").hover(
+        function (e) {
+            // e.preventDefault();
+            e.stopPropagation();
+            $(this).find('.tooltip-content').delay(900).fadeIn();
+            $(this).find('.tooltip-content').hover(
+                function (e) {
+                    // e.preventDefault();
+                    e.stopPropagation();
+                    $('.tooltip-content').stop(true);
+                },
+                function (e) {
+                    // e.preventDefault();
+                    e.stopPropagation();
+                    $('.tooltip-content').hide();
+                    $('.tooltip-content').stop();
+                }
+            );
+            $(this).find('.tooltip-content').delay(4000).fadeOut();
+        },
+        function (e) {
+            // e.preventDefault();
+            e.stopPropagation();
+            $('.tooltip-content').stop();
             $('.tooltip-content').hide();
-        });
-    }
+        }
+    );
+    $('.spl1').click(function () {
+        $('.tooltip-content').css("display", "none");
+    });
     //<!-- pop up end-->
     //section change start
     // Filter
@@ -106,10 +118,6 @@
         setTimeout(() => {
             screenCheck();
         }, 1800);
-        // Popup tooltip
-        if (screen.width < 991) {
-            myTooltip();
-        }
         if (screen.width < 1114) {
             $(document).ready(function () {
                 $('.count').counterUp({
@@ -123,7 +131,7 @@
         screenCheck();
     });
 
-    let currentSubPageUrl = $(".submenu a.active");
+    let currentSubPageUrl = window.location.pathname.split("/").pop();
     function applyScroll() {
         $.scrollify({
             section: ".scroll",
@@ -142,7 +150,7 @@
             updateHash: false,
             touchScroll: true,
             after: function (index) {
-                if (currentSubPageUrl.attr('href') === 'about.html') {
+                if (currentSubPageUrl === 'about.html') {
                     if (index === 2) {
                         $('.count').counterUp({
                             delay: 10,
@@ -161,6 +169,7 @@
             }
         });
     }
+
     function screenCheck() {
         var deviceAgent = navigator.userAgent.toLowerCase();
         var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
@@ -345,13 +354,134 @@
     /*----------------------------------------------------*/
     /*  End  Magnific Pop Up
     /*----------------------------------------------------*/
+
+    // fixed Navbar
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 45) {
+            $('.vw-nav').addClass('fixed-top animated slideInDown');
+            $(document).find('.dropdown--menu, .dropdown--menu-01').css("top", "65px");
+        } else {
+            $('.vw-nav').removeClass('fixed-top animated slideInDown');
+            $(document).find('.dropdown--menu, .dropdown--menu-01').css("top", "100px");
+        }
+    });
+
     document.addEventListener("DOMContentLoaded", function () {
 
         // Dropdown mobile and tab view click event
         if (screen.width < 992) {
             DropdownMenuResponsive();
         }
+
     });
+    $(document).ready(function () {
+        // Initially hide the dropdown menu
+        $('.dropdown--menu').hide();
+
+        // Handle mouseenter and mouseleave events on the dropdown hover element
+        $('.dropdown--hov').on("mouseenter mouseleave", function (e) {
+            e.stopPropagation();
+
+            // Show the dropdown menu on mouseenter
+            if (e.type === "mouseenter") {
+                $('.dropdown--menu').stop(true, true).show();
+            }
+            // Hide the dropdown menu on mouseleave
+            else if (e.type === "mouseleave") {
+                $('.dropdown--menu').stop(true, true).hide();
+            }
+        });
+
+        // Ensure the dropdown menu does not hide when hovering over it
+        $('.dropdown--menu').hover(
+            function (e) {
+                e.stopPropagation();
+                $(this).stop(true, true).show();
+                $(document).find(".dropdown--hov").addClass('dropdown--hov--active active');
+            },
+            function (e) {
+                e.stopPropagation();
+                $(this).stop(true, true).hide();
+                $(document).find(".dropdown--hov").removeClass('dropdown--hov--active active');
+            }
+        );
+    });
+
+    $(document).ready(function () {
+        // Initially hide the dropdown menu
+        $('.dropdown--menu-01').hide();
+
+        // Handle mouseenter and mouseleave events on the dropdown hover element
+        $('.dropdown--hov-01').on("mouseenter mouseleave", function (e) {
+            e.stopPropagation();
+
+            // Show the dropdown menu on mouseenter
+            if (e.type === "mouseenter") {
+                $('.dropdown--menu-01').stop(true, true).show();
+            }
+            // Hide the dropdown menu on mouseleave
+            else if (e.type === "mouseleave") {
+                $('.dropdown--menu-01').stop(true, true).hide();
+            }
+        });
+
+        // Ensure the dropdown menu does not hide when hovering over it
+        $('.dropdown--menu-01').hover(
+            function (e) {
+                e.stopPropagation();
+                $(this).stop(true, true).show();
+                $(document).find(".dropdown--hov-01").addClass('dropdown--hov--active active');
+            },
+            function (e) {
+                e.stopPropagation();
+                $(this).stop(true, true).hide();
+                $(document).find(".dropdown--hov-01").removeClass('dropdown--hov--active active');
+            }
+        );
+
+        function activeSubUrl() {
+            // Get the current page URL
+            var currentUrl = window.location.pathname.split("/").pop();
+            // a tag link as active
+            var dropdownElements = $(".dropdown--menu .link-dec a");
+            // submenu link as active
+            var submenuLinks = $(".submenu a");
+
+            // Add active class to the element whose href matches the current URL
+            dropdownElements.each(function () {
+                if ($(this).attr('href') === currentUrl) {
+                    $(this).addClass('active');
+                }
+            });
+
+            submenuLinks.each(function () {
+                if ($(this).attr('href') === currentUrl) {
+                    $(this).addClass('active');
+                }
+            });
+        }
+
+        activeSubUrl();
+
+        // parent dropdown active
+        $('.dropbtn1').each(function () {
+            const $dropbtn1 = $(this);
+            const $dropdownContent1 = $dropbtn1.next('.dropdown-content1');
+
+            if ($dropdownContent1.find('a.active').length) {
+                $dropbtn1.addClass('active');
+            }
+        });
+
+        $('.dropdown-toggle').each(function () {
+            const $dropToggle = $(this);
+            const $dropbtnEle = $dropToggle.next('.dropdown-menu');
+            if ($dropbtnEle.find('.dropbtn1.active').length) {
+                $dropToggle.addClass('active');
+            }
+        });
+    });
+
     // Dropdown toggle start
     function DropdownMenuResponsive() {
         // Toggle dropdown on click
@@ -393,12 +523,6 @@
             toggleDropdownContent(e, webContent);
             applicationContent.style.display = 'none';
         });
-        // Close dropdowns when clicking outside
-        // document.addEventListener('click', function (e) {
-        //     e.preventDefault();
-        //     dropdownMenu.style.display = 'none';
-        //     dropdownMenu1.style.display = 'none';
-        // });
         // Navbar toggler icon
         var forEach = function (t, o, r) {
             if ("[object Object]" === Object.prototype.toString.call(t))
@@ -409,74 +533,74 @@
         var hamburgers = document.querySelectorAll(".hamburger");
         if (hamburgers.length > 0) {
             forEach(hamburgers, function (hamburger) {
-                hamburger.addEventListener(
-                    "click",
-                    function (event) {
-                        // Prevent the click event from propagating to the document
-                        event.stopPropagation();
-                        // Toggle the "is-active" class
-                        this.classList.toggle("is-active");
-                        dropdownMenu1.style.display = 'none';
-                        dropdownMenu.style.display = 'none';
-                        webContent.style.display = 'none';
-                        applicationContent.style.display = 'none';
-                    },
+                hamburger.addEventListener("click", function (event) {
+                    // Prevent the click event from propagating to the document
+                    event.stopPropagation();
+                    // Toggle the "is-active" class
+                    this.classList.toggle("is-active");
+                    document.querySelector('.vw-nav .navbar').classList.toggle("overflow-auto");
+                    dropdownMenu1.style.display = 'none';
+                    dropdownMenu.style.display = 'none';
+                    webContent.style.display = 'none';
+                    applicationContent.style.display = 'none';
+                },
                     false
                 );
             });
         }
     }
+    // Cursor moving animation
+    const cursor = document.querySelector(".cursor");
+    const follower = document.querySelector(".cursor-follower");
+    const btnLink = document.querySelectorAll("a, button, .swiper-pagination-bullet, .filters ul, input[type=button], div[role=button], .btn");
+
+    let posX = 0,
+        posY = 0,
+        mouseX = 1,
+        mouseY = 1;
+
+    // Animate cursor and follower positions
+    TweenMax.to({}, 0.016, {
+        repeat: -1,
+        onRepeat: function () {
+            posX += (mouseX - posX) / 9;
+            posY += (mouseY - posY) / 9;
+
+            TweenMax.set(follower, {
+                css: {
+                    left: posX - 20,
+                    top: posY - 20
+                }
+            });
+
+            TweenMax.set(cursor, {
+                css: {
+                    left: mouseX,
+                    top: mouseY
+                }
+            });
+        }
+    });
+
+    document.addEventListener("mousemove", (e) => {
+        mouseX = e.pageX;
+        mouseY = e.pageY;
+    });
+
+    btnLink.forEach((el) => {
+        el.addEventListener("mouseenter", () => {
+            cursor.classList.add("active");
+            follower.classList.add("active");
+        });
+
+        el.addEventListener("mouseleave", () => {
+            cursor.classList.remove("active");
+            follower.classList.remove("active");
+        });
+    });
 })(jQuery);
 //  Product Enquiry form automatically fill plan price
 function choosePlan(planName, planPrice) {
     localStorage.setItem('selectedPlanName', planName);
     localStorage.setItem('selectedPlanPrice', planPrice);
 }
-// Cursor moving animation
-const cursor = document.querySelector(".cursor");
-const follower = document.querySelector(".cursor-follower");
-const btnLink = document.querySelectorAll("a, button, .swiper-pagination-bullet, .filters ul, input[type=button], div[role=button]");
-
-let posX = 0,
-    posY = 0,
-    mouseX = 0,
-    mouseY = 0;
-
-TweenMax.to({}, 0.02, {
-    repeat: -1,
-    onRepeat: function () {
-        posX += (mouseX - posX) / 9;
-        posY += (mouseY - posY) / 9;
-
-        TweenMax.set(follower, {
-            css: {
-                left: posX - 20,
-                top: posY - 20
-            }
-        });
-
-        TweenMax.set(cursor, {
-            css: {
-                left: mouseX,
-                top: mouseY
-            }
-        });
-    }
-});
-
-document.addEventListener("mousemove", (e) => {
-    mouseX = e.pageX;
-    mouseY = e.pageY;
-});
-
-btnLink.forEach((el) => {
-    el.addEventListener("mouseenter", () => {
-        cursor.classList.add("active");
-        follower.classList.add("active");
-    });
-
-    el.addEventListener("mouseleave", () => {
-        cursor.classList.remove("active");
-        follower.classList.remove("active");
-    });
-});

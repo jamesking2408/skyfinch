@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 botResponse = "<b>Mr. S. Kabilan Sokkalingam - Founder</b> <br>Mr. S. Kabilan Sokkalingam - Founder, Managing Partner, CEO & President.";
             }
             else if ((userMessage.toLowerCase() === 'year') || (userMessage.toLowerCase() === 'what is your age?') || (userMessage.toLowerCase() === 'your age?') || (userMessage.toLowerCase() === 'skyfinch starting year?') || (userMessage.toLowerCase() === 'in which year skyfinch established') || (userMessage.toLowerCase() === 'in which year skyfinch established?')) {
-                botResponse = "Business professionals having more than 20 years of experience in various business domains. Since it's establishment in the year 2004 at Puducherry, India";
+                botResponse = "Business professionals having more than 20+ years of experience in various business domains. Since it's establishment in the year 2004 at Puducherry, India";
             }
             else if ((userMessage.toLowerCase() === 'what are the service in skyfinch?') || (userMessage.toLowerCase() === 'service') || (userMessage.toLowerCase() === 'service?')) {
                 botResponse = 'Here Redirect to <a href="service.html"><em>Service</em></a> page available, Click it!<br>📌 Software development <br>📌 Web Development <br>📌 Mobile Application development<br>📌 Automation Services<br>📌 Integration Services <br>📌 ML/AI and Big Data Solutions</br>';

@@ -87,113 +87,248 @@
         </div>
     </div>
     <!-- End chat box Design  -->
+
     <!-- Navbar Start -->
-    <div class="container-fluid vw-nav fixed-top m-0 p-0">
-        <div class="top-bar row gx-2 pb-lg-0 align-items-center d-lg-flex d-md-none d-none bg-blue">
-            <div class="col-xl-8 col-lg-7 col-md-12 text-start id_con">
-                <medium class="ms-lg-2"><i id="top-icons" class="fa fa-map-marker-alt me-lg-2 me-md-2">
-                    </i>5, Republic Street, Reddiarpalayam, Puducherry-605010,
-                    India</medium>
-                <medium class="ms-lg-3 ms-0"><i id="top-icons" class="fa fa-clock me-lg-2 me-md-2 me-0">
-                    </i>9.00 am - 6.30 pm (IST)</medium>
-            </div>
-            <div class="col-xl-4 col-lg-5 col-md-5 text-lg-end text-md-start pe-lg-3 id_con">
-                <medium class=""><i id="top-icons" class="fa fa-envelope me-lg-2 me-md-2 me-0"></i><a class="text-dark" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@skyfinch.com" target="_blank" rel="noopener noreferrer">info&#x40;skyfinch.com</a>
-                </medium>
-                <medium class="ps-lg-1 ps-0"><i id="top-icons" class="fa fa-phone me-lg-2 me-md-2 me-0"></i><a class="text-dark" href="tel:+91 9443487210">+91 9443487210</a>
-                </medium>
+    <div class="container-fluid shadow fixed-top">
+        <div class="container-fluid m-0 p-0 bg-white">
+            <div class="top-bar row gx-2 pb-lg-0 align-items-center d-lg-flex d-md-none d-none bg-blue">
+                <div class="col-lg-8 col-md-12 d-flex justify-content-between id_con">
+                    <medium class="ms-lg-2"><img class="tp-svg" src="./img/google-maps.svg" alt="map"> 5, Republic Street, Reddiarpalayam, Puducherry-605010, India</medium>
+                    <medium class="ms-lg-3 ms-0"><img class="tp-svg" src="./img/clock.svg" alt="map">9.00 am - 6.30 pm (IST)</medium>
+                </div>
+                <div class="col-lg-4 col-md-5 d-flex justify-content-evenly pe-lg-3 id_con">
+                    <medium class=""><img class="tp-svg" src="./img/mail.svg" alt="map"><a class="text-dark" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@skyfinch.com" target="_blank" rel="noopener noreferrer">info&#x40;skyfinch.com</a> </medium>
+                    <medium class="ps-lg-1 ps-0"><img class="tp-svg" src="./img/indian-flag.svg" alt="map"><a class="text-dark" href="tel:+91 9443487210">+91 9443487210</a> </medium>
+                </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 py-md-2 py-2 px-lg-4 bg-white shadow">
-            <div class="hamburger hamburger--emphatic" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <div class="hamburger-box">
-                    <div class="hamburger-inner"></div>
+        <div class="container-fluid vw-nav m-0 p-0">
+            <nav class="navbar navbar-expand-lg navbar-light py-lg-0 py-2 px-lg-4">
+
+                <div class="hamburger hamburger--emphatic" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
                 </div>
-            </div>
-            <a href="index.html" class="navbar-brand ms-0 ms-lg-0">
-                <img class="logo-cloud" src="img/logo--img.png" alt="logo">
-            </a>
-            <div class="nav-icons d-manual-flex ms-4 gap-1 fadeInUp">
-                <a class="btn ms-1" href="https://www.facebook.com/skyfinch.roadmap" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Facebook" target="_blank"> <img class="img-icons1" src="img/socialMedia/facebook_icon.png" alt="facebook" /> </a>
-                <a class="btn ms-1" href="https://twitter.com/Roadmaperp" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Twitter" target="_blank"> <img class="img-icons" src="img/socialMedia/twitter.png" alt="twitter" /> </a>
-                <a class="btn ms-1" href="https://www.instagram.com/skyfinchroadmap" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Instagram" target="_blank"> <img class="img-icons" src="img/socialMedia/instagram.png" alt="instagram" /> </a>
-                <a class="btn ms-1" href="https://www.linkedin.com/company/skyfinchroadmap" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="LinkedIn" target="_blank"> <img class="img-icons" src="img/socialMedia/linkedin_icon.png" alt="linkedin" /> </a>
-            </div>
-            <a class="p-0 pb-0 me-0 d-flex d-md-flex d-lg-none justify-content-center align-items-center ">
-                <button id="searchButton" type="button" class="btn border-0 searchButton_cls" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
-                    <img src="img/search.png" alt="search" style="width:50px;position:relative;left: -0.4rem;top: -0.5rem;" srcset="">
-                </button>
-            </a>
-            <div class="collapse navbar-collapse me-2 animated slideInLeft" id="navbarCollapse">
-                <div class="navbar-nav ms-xl-auto me-xl-2 mx-lg-auto ms-auto me-2 mt-3 mt-lg-0 p-4 p-lg-0">
-                    <!-- Search Bar start -->
-                    <a class="p-0 pb-0 me-4 d-flex justify-content-center align-items-center">
-                        <button id="searchButton" type="button" class="btn btn-outline-primary searchButton_cls" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
-                            <span class="row">
-                                <i class="col-1 fa fa-search"></i>
-                                <h6 class="col-10 p-0 m-0">Search...</h6>
-                            </span>
-                            <img class="img-search-lg" src="img/search.png" alt="search" style="display: none;" srcset="">
-                        </button>
-                    </a>
-                    <a href="index.html" class="nav-item nav-link"><i class="bi bi-house-door fs-5 mx-lg-1 mx-2"></i> Home</a>
-                    <a href="service.html" class="nav-item nav-link"><i class="bi bi-gear-wide-connected fs-5 mx-lg-1 mx-2"></i> Services</a>
-                    <div class="nav-item dropdown">
-                        <div class="nav-link dropdown-toggle active" id="solutionsDropdown"><i class="bi bi-link-45deg fs-5 mx-lg-1 mx-2"></i> Solutions</div>
-                        <div class="dropdown-menu border-none ms-3 m-0 p-0">
-                            <!-- Add IDs to buttons for easier targeting -->
-                            <div class="submenu w-100 px-3 mx-lg-0 mx-3 py-1">
-                                <button class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="applicationBtn"> Application <span class="arrow"><i class="fa-solid fa-angles-right"></i></span> </button>
-                                <div class="dropdown-content1 application text-dec px-lg-3 py-lg-2 py-3 animated fadeInUp-cust">
-                                    <a href="sales.html">POS</a>
-                                    <a href="hms.html">Hotel Management System</a>
-                                    <a href="rms.html">Restaurant Management System</a>
-                                    <a href="ssfinch.html">Smart-SkyFinch</a>
-                                    <a href="vms.html">Visitors Management System</a>
+                <a href="index.html" class="navbar-brand ms-0 ms-lg-0">
+                    <img class="logo-cloud" src="img/logo--img.png" alt="logo">
+                </a>
+                <div class="nav-icons d-manual-flex ms-4 gap-1 fadeInUp">
+                    <a class="btn ms-1" href="https://www.facebook.com/skyfinch.roadmap" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Facebook" target="_blank"> <img class="img-icons1" src="img/socialMedia/facebook_icon.png" alt="facebook" /> </a>
+                    <a class="btn ms-1" href="https://twitter.com/Roadmaperp" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Twitter" target="_blank"> <img class="img-icons" src="img/socialMedia/twitter.png" alt="twitter" /> </a>
+                    <a class="btn ms-1" href="https://www.instagram.com/skyfinchroadmap" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Instagram" target="_blank"> <img class="img-icons" src="img/socialMedia/instagram.png" alt="instagram" /> </a>
+                    <a class="btn ms-1" href="https://www.linkedin.com/company/skyfinchroadmap" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="LinkedIn" target="_blank"> <img class="img-icons" src="img/socialMedia/linkedin_icon.png" alt="linkedin" /> </a>
+                </div>
+                <a class="p-0 pb-0 me-0 d-flex d-md-flex d-lg-none justify-content-center align-items-center ">
+                    <button id="searchButton" type="button" class="btn border-0 searchButton_cls" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+                        <img src="img/search.png" alt="search" style="width:50px;position:relative;left: -0.4rem;top: -0.5rem;" srcset="">
+                    </button>
+                </a>
+                <div class="collapse navbar-collapse me-2" id="navbarCollapse">
+                    <div class="navbar-nav ms-xl-auto me-xl-2 mx-lg-auto ms-auto me-2 mt-3 mt-lg-0 p-4 p-lg-0">
+                        <!-- Search Bar start -->
+                        <a class="p-0 pb-0 me-4 d-flex justify-content-center align-items-center">
+                            <button id="searchButton" type="button" class="btn btn-outline-primary searchButton_cls" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+                                <span class="row">
+                                    <i class="col-1 fa fa-search"></i>
+                                    <h6 class="col-10 p-0 m-0">Search...</h6>
+                                </span>
+                                <img class="img-search-lg" src="img/search.png" alt="search" style="display: none;" srcset="">
+                            </button>
+                        </a>
+                        <a href="index.html" class="nav-item nav-link"><i class="bi bi-house-door fs-5 mx-lg-1 mx-2"></i> Home</a>
+                        <a href="service.html" class="nav-item nav-link"><i class="bi bi-gear-wide-connected fs-5 mx-lg-1 mx-2"></i> Services</a>
+                        <!-- Dropdown below 991px  -->
+                        <div class="nav-item dropdown">
+                            <div class="nav-link dropdown-toggle" id="solutionsDropdown"><i class="bi bi-link-45deg fs-5 mx-lg-1 mx-2"></i> Solutions</div>
+                            <div class="dropdown-menu border-none ms-3 m-0 p-0">
+                                <!-- Add IDs to buttons for easier targeting -->
+                                <div class="submenu w-100 px-3 mx-lg-0 mx-3 py-1">
+                                    <button class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="applicationBtn"> Application <span class="arrow"><i class="fa-solid fa-angles-right"></i></span> </button>
+                                    <div class="dropdown-content1 application text-dec px-lg-3 py-lg-2 py-3 animated fadeInUp-cust">
+                                        <a href="sales.html">POS</a>
+                                        <a href="hms.html">Hotel Management System</a>
+                                        <a href="rms.html">Restaurant Management System</a>
+                                        <a href="ssfinch.html">Smart-SkyFinch</a>
+                                        <a href="vms.html">Visitors Management System</a>
+                                    </div>
+                                </div>
+                                <hr class="hr hr-blurry" />
+                                <div class="submenu w-100 px-3 mx-lg-0 mx-3 py-1">
+                                    <button class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="webBtn"> Web <span class="arrow1"><i class="fa-solid fa-angles-right"></i></span> </button>
+                                    <div class="dropdown-content1 web text-dec px-lg-3 py-lg-2 py-3 animated fadeInUp-cust">
+                                        <a href="crm.html">CRM</a>
+                                        <a href="ctm.html">Travel Management System</a>
+                                        <a href="fms.html">Fleet Management System</a>
+                                        <a href="ems.html">Event Management System</a>
+                                        <a href="payroll.html">PayRoll Management System</a>
+                                        <a href="sands.html">Sales and Service System</a>
+                                    </div>
                                 </div>
                             </div>
-                            <hr class="hr hr-blurry" />
-                            <div class="submenu w-100 px-3 mx-lg-0 mx-3 py-1">
-                                <button class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2 active" id="webBtn"> Web <span class="arrow1"><i class="fa-solid fa-angles-right"></i></span> </button>
-                                <div class="dropdown-content1 web text-dec px-lg-3 py-lg-2 py-3 animated fadeInUp-cust">
-                                    <a href="crm.html">CRM</a>
-                                    <a href="ctm.html">Travel Management System</a>
-                                    <a class="active" href="fms.html">Fleet Management System</a>
-                                    <a href="ems.html">Event Management System</a>
-                                    <a href="payroll.html">PayRoll Management System</a>
-                                    <a href="sands.html">Sales and Service System</a>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <div class="nav-link dropdown-toggle" id="solutionsDropdown1"><i class="bi bi-person-circle fs-5 mx-lg-1 mx-2"></i> Company</div>
+                            <div class="dropdown-menu border-none ms-3 m-0 p-0">
+                                <!-- Add IDs to buttons for easier targeting -->
+                                <div class="submenu w-100 px-3 mx-lg-0 mx-3 py-lg-1 py-1">
+                                    <a href="about.html" class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="abt_btn">About Us</a>
+                                </div>
+                                <hr class="hr hr-blurry" />
+                                <div class="submenu w-100 px-3 mx-lg-0 mx-3 py-lg-1 py-1">
+                                    <a href="profile.html" class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="pro_btn">Profile</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Dropdown above 992px  -->
+                        <div class="nav-item dropdown--hov">
+                            <div class="nav-link dropdown-toggle active" id="solutionsDropdown"><i class="bi bi-link-45deg fs-5 mx-lg-1 mx-2"></i> Solutions</div>
+                            <!-- Solution Dropdown -->
+                        </div>
+                        <div class="nav-item dropdown--hov-01">
+                            <div class="nav-link dropdown-toggle" id="solutionsDropdown1"><i class="bi bi-person-circle fs-5 mx-lg-1 mx-2"></i> Company</div>
+                            <!-- Company Dropdown -->
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link"><i class="bi bi-telephone fs-5 mx-lg-1 mx-2"></i> Contact</a>
+                    </div>
+                    <div class="d-lg-flex d-none justify-content-lg-center align-items-lg-center" style="height: 30px">
+                        <div class="vr text-dark" style="width: 2.5px"></div>
+                    </div>
+                    <div class="d-manual-flex justify-content-center ms-lg-2 ms-md-2 ms-2">
+                        <a class="btn ms-lg-2 ms-3 p-0" href="https://www.facebook.com/skyfinch.roadmap" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Facebook" target="_blank"> <img class="img-icons1" src="img/socialMedia/facebook_icon.png" alt="" /> </a>
+                        <a class="btn ms-lg-2 ms-3 p-0" href="https://twitter.com/Roadmaperp" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Twitter" target="_blank"> <img class="img-icons" src="img/socialMedia/twitter.png" alt="" /> </a>
+                        <a class="btn ms-lg-2 ms-3 p-0" href="https://www.instagram.com/skyfinchroadmap" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Instagram" target="_blank"> <img class="img-icons" src="img/socialMedia/instagram.png" alt="" /> </a>
+                        <a class="btn ms-lg-2 ms-3 p-0" href="https://www.linkedin.com/company/skyfinchroadmap" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="LinkedIn" target="_blank"> <img class="img-icons1" src="img/socialMedia/linkedin_icon.png" alt="" /> </a>
+                    </div>
+                </div>
+                <!-- dropdown for solutions-->
+                <div class="container-fluid fixed-top shadow dropdown--menu">
+                    <div class="row">
+                        <div class="col-3 p-2 banner-bg--left">
+                            <h4 class="text-white fw-bold p-3 mb-0 fs-2">Solutions</h4>
+                            <p class="text-white fw-bold p-3 fs-6">Explore comprehensive solutions tailored for our product applications to enhance performance, efficiency, and user satisfaction.</p>
+                            <a class="btn bg-warning abt-btn--cmp" href="about.html"> About us </a>
+                        </div>
+                        <div class="col-6 p-2 banner-bg--center">
+                            <div class="row d-flex justify-content-evenly">
+                                <div class="col-6 ps-5 py-3">
+                                    <div class="row link-dec">
+                                        <div class="col-12 p-2">
+                                            <h5 class="text-dark">WEB</h5>
+                                        </div>
+                                        <a href="sales.html">POS</a>
+                                        <a href="hms.html">Hotel Management System</a>
+                                        <a href="rms.html">Restaurant Management System</a>
+                                        <a href="ssfinch.html">Smart-Skyfinch</a>
+                                        <a href="vms.html">Visitors Management System</a>
+                                    </div>
+                                </div>
+                                <div class="col-6 px-2 py-3">
+                                    <div class="row link-dec">
+                                        <div class="col-12 p-2">
+                                            <h5 class="text-dark">APPLICATION</h5>
+                                        </div>
+                                        <a href="crm.html">CRM</a>
+                                        <a href="ctm.html">CTM</a>
+                                        <a href="fms.html">Fleet Management System</a>
+                                        <a href="ems.html">Event Management System</a>
+                                        <a href="payroll.html">Payroll Management System</a>
+                                        <a href="sands.html">Sales and Services Management System</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 p-2 text-center banner-bg--right">
+                            <div class="d-flex flex-column justify-content-start align-items-center h-100">
+                                <h4 class="text-primary fw-bold p-3">Let's grow together <span class="text-dark fw-bold fs-3">Partner with us</span></h4>
+                                <a class="btn bg-primary text-white abt-btn--cont" href="contactUs.html">Get A Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- dropdown for company -->
+                <div class="container-fluid fixed-top shadow dropdown--menu-01">
+                    <div class="row">
+                        <div class="col-3 px-4 py-2 banner-bg--left">
+                            <h4 class="text-white fw-bold p-2 mt-2 mb-0 fs-2">Company</h4>
+                            <p class="text-white fw-bold p-2 fs-6 text-capitalize">We partner you to deliver a innovative solution to your needs with our 20+ year of technical experience with fortune 50+ Organization</p>
+                            <a class="btn bg-warning abt-btn--cmp" href="about.html"> Know more </a>
+                        </div>
+                        <div class="col-9 px-4 py-2">
+                            <div class="row">
+                                <div class="col-6 ps-2 py-3">
+                                    <div class="row">
+                                        <div class="col-12 p-2">
+                                            <h5 class="text-dark head-line">ABOUT US</h5>
+                                        </div>
+                                        <div class="col-12">
+                                            <!-- Image card href link -->
+                                            <a href="about.html">
+                                                <div class="card bg-gray border-0 p-2">
+                                                    <div class="row ">
+                                                        <div class="col-6 pe-0">
+                                                            <div class="col-12">
+                                                                <img class="img-fluid" src="./img/abt--land.png" alt="">
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <img class="img-fluid" src="./img/abt--view.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 ps-0">
+                                                            <div class="col-12">
+                                                                <img class="img-fluid" src="./img/abt--awd.png" alt="">
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <img class="img-fluid" src="./img/abt--prof.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 px-2 py-3">
+                                    <div class="row">
+                                        <div class="col-12 p-2">
+                                            <h5 class="text-dark head-line">PROFILE</h5>
+                                        </div>
+                                        <div class="col-12">
+                                            <!-- Image card href link -->
+                                            <a href="profile.html">
+                                                <div class="card bg-gray border-0 p-2">
+                                                    <div class="row ">
+                                                        <div class="col-6 pe-0">
+                                                            <div class="col-12">
+                                                                <img class="img-fluid" src="./img/prof--land.png" alt="">
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <img class="img-fluid" src="./img/prof--abt.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 ps-0">
+                                                            <div class="col-12">
+                                                                <img class="img-fluid" src="./img/prof--view.png" alt="">
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <img class="img-fluid" src="./img/prof--IT.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="nav-item dropdown">
-                        <div class="nav-link dropdown-toggle" id="solutionsDropdown1"><i class="bi bi-person-circle fs-5 mx-lg-1 mx-2"></i> Company</div>
-                        <div class="dropdown-menu border-none ms-3 m-0 p-0">
-                            <!-- Add IDs to buttons for easier targeting -->
-                            <div class="submenu w-100 px-3 mx-lg-0 mx-3 py-lg-1 py-1">
-                                <a href="about.html" class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="abt_btn">About Us</a>
-                            </div>
-                            <hr class="hr hr-blurry" />
-                            <div class="submenu w-100 px-3 mx-lg-0 mx-3 py-lg-1 py-1">
-                                <a href="profile.html" class="dropbtn1 w-100 p-lg-1 py-lg-1 py-2" id="pro_btn">Profile</a>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link"><i class="bi bi-telephone fs-5 mx-lg-1 mx-2"></i> Contact</a>
                 </div>
-                <div class="d-lg-flex d-none justify-content-lg-center align-items-lg-center" style="height: 30px">
-                    <div class="vr text-dark" style="width: 2.5px"></div>
-                </div>
-                <div class="d-manual-flex justify-content-center ms-lg-2 ms-md-2 ms-2">
-                    <a class="btn ms-lg-2 ms-3 p-0" href="https://www.facebook.com/skyfinch.roadmap" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Facebook" target="_blank"> <img class="img-icons1" src="img/socialMedia/facebook_icon.png" alt="" /> </a>
-                    <a class="btn ms-lg-2 ms-3 p-0" href="https://twitter.com/Roadmaperp" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Twitter" target="_blank"> <img class="img-icons" src="img/socialMedia/twitter.png" alt="" /> </a>
-                    <a class="btn ms-lg-2 ms-3 p-0" href="https://www.instagram.com/skyfinchroadmap" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Instagram" target="_blank"> <img class="img-icons" src="img/socialMedia/instagram.png" alt="" /> </a>
-                    <a class="btn ms-lg-2 ms-3 p-0" href="https://www.linkedin.com/company/skyfinchroadmap" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="LinkedIn" target="_blank"> <img class="img-icons1" src="img/socialMedia/linkedin_icon.png" alt="" /> </a>
-                </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </div>
     <!-- Navbar End -->
+
     <!-- Page Header Start -->
     <section id="fms_land" class="container1 pt-lg-4 mt-lg-2"> <!--New header page (update)-->
         <div class="container-fluid img-fms mt-2 pt-1 mb-0 mt-lg-4 pt-lg-5 mb-lg-4">
@@ -215,7 +350,7 @@
         <div class="container mt-1 pt-1 mt-lg-2 pt-lg-1">
             <div class="row d-flex align-items-start pt-xl-3 mt-xl-3 py-0 my-0">
                 <div class="col-lg-6 col-md-12 mt-lg-3 pt-lg-1 mt-2 mb-3 wow fadeInLeft" data-wow-delay="0.5s" data-aos-duration="800" data-aos="fade-up">
-                    <h3 id="" class="d-inline-block rounded fw-semi-bold mt-lg-1 mt-md-2 mt-4 p-0"> Overview </h3>
+                    <h3 id="" class="d-inline-block rounded fw-semi-bold mt-lg-1 mt-2 p-0"> Overview </h3>
                     <p class="text-justify"> Skyfinch Fleet Management software gives a digital edge to the management of the processes and tasks involved in coordinating and facilitating various transport and transport-related activities. The system is suitable for the movement of goods and people on a trip basis and on a on a contract basis. The solution gives clear visibility into the fleet management process, effectively streamlines the workflow, and minimizes overall costs through cost-efficient utilization of resources such as vehicles, fuel, spare parts, etc. The system also ensures the availability of vehicles as and when required to maximize customer satisfaction. The software is designed to enhance the user experience in many ways, organizational policy-specific financial management being an example. </p>
                 </div>
                 <div class="col-lg-6 d-flex justify-content-center align-items-center mt-lg-2 mt-0 wow fadeInUp" data-wow-delay=".5s" data-aos-duration="800" data-aos="slide-up">
@@ -1680,11 +1815,11 @@
                                 <b class="center p-50 fw-bold pt-2" style="padding-left: 60px;">29.99<span class="p-15">/Per Month</span></b>
                                 <hr>
                                 <ul class="pt-0" style="padding-left: 45px;">
-                                    <li class="nt1 text-muted">Unlimited updates & Projects</li>
-                                    <li class="nt-x text-muted">Custom Permissions</li>
-                                    <li class="nt-x text-muted">Custom Features</li>
-                                    <li class="nt-x text-muted">Custom Permissions</li>
-                                    <li class="nt-x text-muted">Custom Features</li>
+                                    <li class="nt1 text-muted">Create advanced approval processes</li>
+                                    <li class="nt-x text-muted">Use advance billing capabilities</li>
+                                    <li class="nt-x text-muted">Schedule cancellations</li>
+                                    <li class="nt-x text-muted">Automate revenue recognition</li>
+                                    <li class="nt-x text-muted">Unlimited updated's & project's</li>
                                 </ul>
                                 <div class="center pt-1">
                                     <a href="productEnquiry.html" class="btn1 card-btn1 fw-bold mb-1 rounded-pill" onclick="choosePlan('Fleet Management System' , 'STANDARD - 29.99 /per month')">Choose Plan</a>
@@ -1700,11 +1835,11 @@
                                 <b class="center p-50 text-white fw-bold pt-2" style="padding-left: 60px;">69.00<span class="p-15">/ 3 Month</span></b>
                                 <hr>
                                 <ul class="pt-0" style="padding-left: 45px;">
-                                    <li class="nt1">Unlimited updates & Projects</li>
-                                    <li class="nt1">Custom Permissions</li>
-                                    <li class="nt1">Custom Features</li>
-                                    <li class="nt-x">Custom Permissions</li>
-                                    <li class="nt-x">Custom Features</li>
+                                    <li class="nt1">Create advanced approval processes</li>
+                                    <li class="nt1">Use advance billing capabilities</li>
+                                    <li class="nt1">Schedule cancellations</li>
+                                    <li class="nt-x">Automate revenue recognition</li>
+                                    <li class="nt-x">Unlimited updated's & project's</li>
                                 </ul>
                                 <div class="center pt-1">
                                     <a href="productEnquiry.html" class="btn2 card-btn2 fw-bold mb-1 rounded-pill" onclick="choosePlan('Fleet Management System', 'PROFESSIONAL - 69.99 /per month')">Choose Plan</a>
@@ -1720,11 +1855,11 @@
                                 <b class="center p-50 fw-bold pt-2" style="padding-left: 60px;">99.00<span class="p-15">/12 Month</span></b>
                                 <hr>
                                 <ul class="pt-0" style="padding-left: 45px;">
-                                    <li class="nt1 text-muted">Unlimited updates & Projects</li>
-                                    <li class="nt1 text-muted">Custom Permissions</li>
-                                    <li class="nt1 text-muted">Custom Features</li>
-                                    <li class="nt1 text-muted">Custom Permissions</li>
-                                    <li class="nt1 text-muted">Custom Features</li>
+                                    <li class="nt1 text-muted">Create advanced approval processes</li>
+                                    <li class="nt1 text-muted">Use advance billing capabilities</li>
+                                    <li class="nt1 text-muted">Schedule cancellations</li>
+                                    <li class="nt1 text-muted">Automate revenue recognition</li>
+                                    <li class="nt1 text-muted">Unlimited updated's & project's</li>
                                 </ul>
                                 <div class="center pt-1">
                                     <a href="productEnquiry.html" class="btn1 card-btn1 fw-bold mb-1 rounded-pill" onclick="choosePlan('Fleet Management System', 'PREMIUM - 99.99 /per month')">Choose Plan</a>
@@ -1740,7 +1875,7 @@
     <!-- Team Start -->
     <section class="bg-11 pt-xl-2 py-5">
         <div class="container-fluid px-0 mt-xl-1 pt-xl-2">
-            <div id="part-proud" class="container-fluid px-0 mt-xl-5 pt-xl-2 mb-xl-1">
+            <div id="part-proud" class="container-fluid px-0 mt-xl-4 pt-xl-2 mb-xl-1">
                 <div class="row d-flex justify-content-center align-items-center mt-xl-1 w-100 mx-auto">
                     <div class="col-lg-12 divide px-0">
                         <div class="row d-flex justify-content-center align-items-center mx-auto">
@@ -1922,7 +2057,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center col-lg-4 col-md-12 col-custom-mob mt-lg-1 mt-4 wow fadeInUp" data-wow-delay="0.5s" data-aos-duration="800" data-aos="fade-up">
+                    <div class="d-flex justify-content-center align-items-center col-lg-4 col-sm-6 col-12 mt-lg-1 mt-4 wow fadeInUp" data-wow-delay="0.5s" data-aos-duration="800" data-aos="fade-up">
                         <div class="card hov2">
                             <img class="card-body rounded" src="img/india/team-new2.jpg" alt="">
                             <div class="d-flex justify-content-center">
@@ -2010,8 +2145,8 @@
         <!-- Copyright End -->
     </section> <!-- Footer End -->
     <div class="z-n">
-      <div class="cursor"></div>
-      <div class="cursor-follower"></div>
+        <div class="cursor"></div>
+        <div class="cursor-follower"></div>
     </div>
     <!-- JavaScript Libraries -->
     <script src="js/Jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
