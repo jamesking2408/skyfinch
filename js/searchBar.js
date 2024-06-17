@@ -2,117 +2,117 @@
 // Auto focus will locate main.js page
 // focus input field
 function jumpToMain(sectionId) {
-    const url = new URL('/index.html', window.location.origin);
+    const url = new URL('./index.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
 function jumpToService(sectionId) {
-    const url = new URL('/service.html', window.location.origin);
+    const url = new URL('./service.html', window.location.origin);
     url.hash = '#' + sectionId;
     window.location.href = url.href;
 }
 function jumpToAbout(sectionId) {
-    const url = new URL('/about.html', window.location.origin);
+    const url = new URL('./about.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
 function jumpToContact(sectionId) {
-    const url = new URL('/contact.html', window.location.origin);
+    const url = new URL('./contact.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
 function jumpToSales(sectionId) {
-    const url = new URL('/sales.html', window.location.origin);
+    const url = new URL('./sales.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
 function jumpToHms(sectionId) {
-    const url = new URL('/hms.html', window.location.origin);
+    const url = new URL('./hms.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
 function jumpToRms(sectionId) {
-    const url = new URL('/rms.html', window.location.origin);
+    const url = new URL('./rms.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
 function jumpToSsfinch(sectionId) {
-    const url = new URL('/ssfinch.html', window.location.origin);
+    const url = new URL('./ssfinch.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
 function jumpToVms(sectionId) {
-    const url = new URL('/vms.html', window.location.origin);
+    const url = new URL('./vms.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
 function jumpToCrm(sectionId) {
-    const url = new URL('/crm.html', window.location.origin);
+    const url = new URL('./crm.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
 function jumpToCtm(sectionId) {
-    const url = new URL('/ctm.html', window.location.origin);
+    const url = new URL('./ctm.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
 function jumpToEms(sectionId) {
-    const url = new URL('/ems.html', window.location.origin);
+    const url = new URL('./ems.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
 function jumpToFms(sectionId) {
-    const url = new URL('/fms.html', window.location.origin);
+    const url = new URL('./fms.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
 function jumpToPms(sectionId) {
-    const url = new URL('/payroll.html', window.location.origin);
+    const url = new URL('./payroll.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
 function jumpToSs(sectionId) {
-    const url = new URL('/sands.html', window.location.origin);
+    const url = new URL('./sands.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
 function jumpToProfile(sectionId) {
-    const url = new URL('/profile.html', window.location.origin);
+    const url = new URL('./profile.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
 function jumpToPp(sectionId) {
-    const url = new URL('/privacy.html', window.location.origin);
+    const url = new URL('./privacy.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
 function jumpToAp(sectionId) {
-    const url = new URL('/confidentality.html', window.location.origin);
+    const url = new URL('./confidentality.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
 function jumpToCp(sectionId) {
-    const url = new URL('/antiSpam.html', window.location.origin);
+    const url = new URL('./antiSpam.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
 function jumpToTerm(sectionId) {
-    const url = new URL('/termsUse.html', window.location.origin);
+    const url = new URL('./termsUse.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
 function jumpToPq(sectionId) {
-    const url = new URL('/planandPrice.html', window.location.origin);
+    const url = new URL('./planandPrice.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
 function jumpToProduct(sectionId) {
-    const url = new URL('/products.html', window.location.origin);
+    const url = new URL('./products.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }
 function jumpToContactUs(sectionId) {
-    const url = new URL('/contactUs.html', window.location.origin);
+    const url = new URL('./contactUs.html', window.location.origin);
     const link = `${url}#${sectionId}`;
     window.location.href = link;
 }

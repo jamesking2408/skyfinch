@@ -1318,6 +1318,7 @@ a .logo-cloud {
 
 .carousel-indicators {
     bottom: 15% !important;
+    outline: none;
 
     & button {
         background-color: #757575 !important;
