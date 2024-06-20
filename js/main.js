@@ -139,7 +139,7 @@
             interstitialSection: "",
             easing: "easeOutExpo",
             // easing: "easeOutQuad",
-            scrollSpeed: 500,
+            scrollSpeed: 200,
             offset: 0,
             scrollbars: true,
             target: "html",
@@ -157,13 +157,26 @@
                             time: 2000
                         });
                     }
-                } else {
+                } else if (currentSubPageUrl === 'index.html') {
                     // Index page
                     if (index === 5) {
                         $('.count').counterUp({
                             delay: 10,
                             time: 2000
                         });
+                    } else if (index === 8) {
+                        var validator = $("#cus_form").validate();
+                        validator.resetForm();
+                    }
+                } else if (currentSubPageUrl === 'service.html') {
+                    if (index === 2) {
+                        const validateService = $('#callus').validate();
+                        validateService.resetForm();
+                    }
+                } else if ((currentSubPageUrl === 'contact.html') || (currentSubPageUrl === 'contactUs.html')) {
+                    if ((index === 1) || (index === 0)) {
+                        const validateService = $('#contactus').validate();
+                        validateService.resetForm();
                     }
                 }
             }
@@ -480,6 +493,53 @@
                 $dropToggle.addClass('active');
             }
         });
+
+        var svgColorToBoxShadowColor = {
+            "req-gather.svg": "rgb(197 181 253)",
+            "desingFrame.svg": "rgb(195 232 249)",
+            "prototype-demo.svg": "rgb(240 132 79)",
+            "cac.svg": "rgb(241 219 144)",
+            "dev.svg": "rgb(247 212 234)",
+            "deploy.svg": "rgb(207 233 199)",
+            "sam.svg": "rgb(227 148 255)",
+            "seo.svg": "rgb(193 201 49)"
+        };
+
+        $(".hov-box").hover(
+            function () {
+                // Mouse enter
+                var svgImageSrc = $(this).find(".svgImage").attr("src").split('/').pop();
+                var boxShadowColor = svgColorToBoxShadowColor[svgImageSrc];
+                if (boxShadowColor) {
+                    $(this).css("box-shadow", `9px 9px 0px ${boxShadowColor}`);
+                }
+            }, function () {
+                // Mouse leave
+                $(this).css("box-shadow", "none");
+            }
+        );
+        document.addEventListener('keydown', function (e) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+                e.preventDefault();
+                alert('Saving this page is disabled.');
+            }
+        });
+        var currentUrl = window.location.href;
+            var pageTitle = $('title').text(); // Dynamically get the page title
+            var pageDescription = "Skyfinch is a leading IT company specializing in both service-based and product-based solutions. Our expertise spans across software development, IT consulting, and innovative product creation, ensuring comprehensive solutions for businesses worldwide."; // You can dynamically set this too
+            var imageUrl = "./img/cover--image.png"; // Update this as needed
+
+            $('head').append(`
+                <meta property="og:title" content="${pageTitle}">
+                <meta property="og:description" content="${pageDescription}">
+                <meta property="og:image" content="${imageUrl}">
+                <meta property="og:url" content="${currentUrl}">
+                <meta property="og:type" content="website">
+                <meta name="twitter:card" content="summary_large_image">
+                <meta name="twitter:title" content="${pageTitle}">
+                <meta name="twitter:description" content="${pageDescription}">
+                <meta name="twitter:image" content="${imageUrl}">
+            `);
     });
 
     // Dropdown toggle start
@@ -549,55 +609,7 @@
             });
         }
     }
-    // Cursor moving animation
-    const cursor = document.querySelector(".cursor");
-    const follower = document.querySelector(".cursor-follower");
-    const btnLink = document.querySelectorAll("a, button, .swiper-pagination-bullet, .filters ul, input[type=button], div[role=button], .btn");
 
-    let posX = 0,
-        posY = 0,
-        mouseX = 1,
-        mouseY = 1;
-
-    // Animate cursor and follower positions
-    TweenMax.to({}, 0.016, {
-        repeat: -1,
-        onRepeat: function () {
-            posX += (mouseX - posX) / 9;
-            posY += (mouseY - posY) / 9;
-
-            TweenMax.set(follower, {
-                css: {
-                    left: posX - 20,
-                    top: posY - 20
-                }
-            });
-
-            TweenMax.set(cursor, {
-                css: {
-                    left: mouseX,
-                    top: mouseY
-                }
-            });
-        }
-    });
-
-    document.addEventListener("mousemove", (e) => {
-        mouseX = e.pageX;
-        mouseY = e.pageY;
-    });
-
-    btnLink.forEach((el) => {
-        el.addEventListener("mouseenter", () => {
-            cursor.classList.add("active");
-            follower.classList.add("active");
-        });
-
-        el.addEventListener("mouseleave", () => {
-            cursor.classList.remove("active");
-            follower.classList.remove("active");
-        });
-    });
 })(jQuery);
 //  Product Enquiry form automatically fill plan price
 function choosePlan(planName, planPrice) {

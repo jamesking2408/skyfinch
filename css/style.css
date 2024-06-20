@@ -1655,25 +1655,25 @@ span#no-1 {
 }
 
 .contact-shake {
-    animation: shake 1s ease infinite;
+    animation: shake 1.5s ease infinite;
 }
 
 @keyframes shake {
     30% {
-        transform: scale(1.2);
+        transform: scale(1.02);
     }
 
     40%,
     60% {
-        transform: rotate(-20deg) scale(1.2);
+        transform: rotate(-20deg) scale(1.02);
     }
 
     50% {
-        transform: rotate(20deg) scale(1.2);
+        transform: rotate(20deg) scale(1.02);
     }
 
     70% {
-        transform: rotate(0deg) scale(1.2);
+        transform: rotate(0deg) scale(1.02);
     }
 
     100% {
@@ -1683,20 +1683,20 @@ span#no-1 {
 
 @-webkit-keyframes shake {
     30% {
-        transform: scale(1.2);
+        transform: scale(1.02);
     }
 
     40%,
     60% {
-        transform: rotate(-20deg) scale(1.2);
+        transform: rotate(-20deg) scale(1.02);
     }
 
     50% {
-        transform: rotate(20deg) scale(1.2);
+        transform: rotate(20deg) scale(1.02);
     }
 
     70% {
-        transform: rotate(0deg) scale(1.2);
+        transform: rotate(0deg) scale(1.02);
     }
 
     100% {
@@ -1889,15 +1889,9 @@ span#no-1 {
     animation: magicGradient 30s ease infinite;
 }
 
-/* #sec2_1.bg-02 {
-    background: linear-gradient(324deg, rgb(175, 198, 255), rgb(177, 223, 255));
-    background: linear-gradient(324deg, rgb(236 239 255), rgb(175, 198, 255), rgb(177, 223, 255), rgb(236 239 255));;
-    background-size: 400% 400%;
-
-    -webkit-animation: magicGradient 30s ease infinite;
-    -moz-animation: magicGradient 30s ease infinite;
-    animation: magicGradient 30s ease infinite;
-} */
+#sec2.bg-02 {
+    background: #edf8ff;
+}
 
 @-webkit-keyframes magicGradient {
     0% {
@@ -2381,6 +2375,38 @@ span#no-1 {
     transform: perspective(1000px) rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
 }
 
+.all-state {
+    width: 100%;
+    min-height: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    border-radius: 20px;
+    & img {
+        width: 60px !important;
+        height: 60px !important;
+        margin: 10px 0px;
+    }
+}
+
+.card.hov-box {
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(109, 129, 255, 0.11)), to(rgb(255, 255, 255, 0)));
+    background-image: -o-linear-gradient(rgba(109, 129, 255, 0.11) 0%, rgb(255, 255, 255, 0) 100%);
+    background-image: linear-gradient(rgba(109, 129, 255, 0.11) 0%, rgb(255, 255, 255, 0) 100%);
+}
+
+.card.hov-box:hover {
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+}
+
 .default-state {
     flex: 1 1 auto;
     text-align: center;
@@ -2412,6 +2438,7 @@ span#no-1 {
     flex-direction: column;
     justify-content: center;
     row-gap: 20px;
+    border-radius: 20px;
 }
 
 .cube p {
@@ -2759,7 +2786,7 @@ span#no-1 {
 
 /* gsap cursor moving animation */
 .z-n {
-    display: block;
+    display: none;
     z-index: 999999999;
 }
 
