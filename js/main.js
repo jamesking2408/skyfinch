@@ -525,21 +525,9 @@
             }
         });
         var currentUrl = window.location.href;
-            var pageTitle = $('title').text(); // Dynamically get the page title
-            var pageDescription = "Skyfinch is a leading IT company specializing in both service-based and product-based solutions. Our expertise spans across software development, IT consulting, and innovative product creation, ensuring comprehensive solutions for businesses worldwide."; // You can dynamically set this too
-            var imageUrl = "./img/logo-sky.png"; // Update this as needed
-
-            $('head').append(`
-                <meta property="og:title" content="${pageTitle}">
-                <meta property="og:description" content="${pageDescription}">
-                <meta property="og:image" content="${imageUrl}">
-                <meta property="og:url" content="${currentUrl}">
-                <meta property="og:type" content="website">
-                <meta name="twitter:card" content="summary_large_image">
-                <meta name="twitter:title" content="${pageTitle}">
-                <meta name="twitter:description" content="${pageDescription}">
-                <meta name="twitter:image" content="${imageUrl}">
-            `);
+        $('head').append(`
+            <meta property="og:url" content="${currentUrl}">
+        `);
     });
 
     // Dropdown toggle start
