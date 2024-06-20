@@ -527,7 +527,7 @@
         var currentUrl = window.location.href;
             var pageTitle = $('title').text(); // Dynamically get the page title
             var pageDescription = "Skyfinch is a leading IT company specializing in both service-based and product-based solutions. Our expertise spans across software development, IT consulting, and innovative product creation, ensuring comprehensive solutions for businesses worldwide."; // You can dynamically set this too
-            var imageUrl = "./img/cover--image.png"; // Update this as needed
+            var imageUrl = "./img/logo-sky.png"; // Update this as needed
 
             $('head').append(`
                 <meta property="og:title" content="${pageTitle}">
