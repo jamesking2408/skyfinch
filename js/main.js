@@ -175,8 +175,13 @@
                     }
                 } else if ((currentSubPageUrl === 'contact.html') || (currentSubPageUrl === 'contactUs.html')) {
                     if ((index === 1) || (index === 0)) {
-                        const validateService = $('#contactus').validate();
-                        validateService.resetForm();
+                        const validateContact = $('#contactus').validate();
+                        validateContact.resetForm();
+                    }
+                } else if (currentSubPageUrl === 'productEnquiry.html') {
+                    if (index === 1) {
+                        const validateEnq = $('#cus_Form').validate();
+                        validateEnq.resetForm();
                     }
                 }
             }

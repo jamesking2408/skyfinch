@@ -584,6 +584,7 @@ input[type=number]::-webkit-outer-spin-button {
     backdrop-filter: blur(19px);
     border: 2px solid rgba(255, 255, 255, 0.25);
     transition: transform .2s;
+    z-index: 1;
 }
 
 .service-border:hover {
@@ -609,6 +610,7 @@ input[type=number]::-webkit-outer-spin-button {
     backdrop-filter: blur(19px);
     border: 2px solid rgba(255, 255, 255, 0.25);
     transition: transform .2s;
+    z-index: 1;
 }
 
 /* Start Contact header change */
@@ -635,6 +637,7 @@ input[type=number]::-webkit-outer-spin-button {
     backdrop-filter: blur(19px);
     border: 2px solid rgba(255, 255, 255, 0.25);
     transition: all .5s ease-in;
+    z-index: 1;
 }
 
 .contact-border:hover {
@@ -1163,7 +1166,7 @@ h6,
 .tabPane_img img {
     top: -2rem;
     height: 330px !important;
-    filter: drop-shadow(5px 15px 11px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.1));
 }
 
 .submenu .dropbtn1 .arrow,
@@ -1471,6 +1474,19 @@ span#no-1 {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     margin-right: 10px;
+    transition: transform 0.3s ease, content 0.5s ease;
+}
+/* .footer .btn.btn-link::before {
+    position: relative;
+    content: "\25CF";
+    margin-right: 10px;
+    transition: transform 0.3s ease, content 0.5s ease;
+} */
+
+.footer .btn.btn-link:hover::before {
+    content: "\25B2";
+    display: inline-block;
+    transform: rotate(90deg);
 }
 
 .footer .btn.btn-link:hover {
@@ -2385,6 +2401,7 @@ span#no-1 {
     align-items: center;
     row-gap: 20px;
     border-radius: 20px;
+
     & img {
         width: 60px !important;
         height: 60px !important;
@@ -2877,7 +2894,8 @@ span#no-1 {
 .img-ems::after,
 .img-fms::after,
 .img-payroll::after,
-.img-sales::after {
+.img-sales::after,
+#land-sec::after {
     content: "";
     position: absolute;
     width: 200%;
@@ -2902,7 +2920,8 @@ span#no-1 {
 .img-ems:hover::after,
 .img-fms:hover::after,
 .img-payroll:hover::after,
-.img-sales:hover::after {
+.img-sales:hover::after,
+#land-sec:hover::after {
     height: 250%;
     transition: all 600ms linear;
     background-color: transparent;
@@ -2923,7 +2942,8 @@ span#no-1 {
     .img-ems::after,
     .img-fms::after,
     .img-payroll::after,
-    .img-sales::after {
+    .img-sales::after,
+    #land-sec::after {
         display: none;
     }
 }
