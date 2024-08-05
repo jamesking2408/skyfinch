@@ -1,5 +1,5 @@
 .bg-00 {
-  transition: background 0.1s ease;
+  transition: background 0.4s ease-in;
   background: rgb(194, 234, 247);
   background: -moz-linear-gradient(85deg, rgba(194, 234, 247, 1) 0%, rgba(134, 219, 246, 1) 50%, rgba(76, 204, 245, 0.8911939775910365) 100%);
   background: -webkit-linear-gradient(85deg, rgba(194, 234, 247, 1) 0%, rgba(134, 219, 246, 1) 50%, rgba(76, 204, 245, 0.8911939775910365) 100%);
@@ -8,7 +8,6 @@
 }
 
 .bg-00.blue {
-  transition: background 0.1s ease;
   background: rgb(194, 234, 247);
   background: -moz-linear-gradient(270deg, rgba(194, 234, 247, 1) 0%, rgba(134, 219, 246, 1) 50%, rgba(76, 204, 245, 0.8911939775910365) 100%);
   background: -webkit-linear-gradient(270deg, rgba(194, 234, 247, 1) 0%, rgba(134, 219, 246, 1) 50%, rgba(76, 204, 245, 0.8911939775910365) 100%);
@@ -323,7 +322,7 @@ label.card div {
   .bg-00 .container {
     width: 500px;
     height: 320px;
-    transform: translate(-1rem, 0.5rem);
+    transform: translate(0rem, 0.5rem);
   }
 
   /* Payroll Images */
