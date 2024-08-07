@@ -1217,7 +1217,7 @@ a.text-dark:focus {
 }
 
 #profile_sec2 {
-  background-image: linear-gradient(to right top, #c3a1f8, #bbaafc, #b5b2fe, #b0baff, #aec1ff, #a1c9ff, #95d0ff, #8ed6ff, #76dfff, #5ee7ff, #4beff8, #49f6eb);
+  background-image: linear-gradient(to right top, #c3a1f869, #bbaafc69, #b5b2fe69, #b0baff69, #aec1ff69, #a1c9ff69, #95d0ff69, #8ed6ff69, #76dfff69, #5ee7ff69, #4beff869, #49f6eb69);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1733,10 +1733,10 @@ a.text-dark:focus {
 .features {
   text-align: center;
   width: 250px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .features .header {
@@ -2379,7 +2379,7 @@ a.text-dark:focus {
 
 /* Word cluster start */
 #profile_sec2_2 .sec ul.cloud {
-  width: 82vw;
+  width: 100%;
 }
 
 ul.cloud {
@@ -2390,7 +2390,7 @@ ul.cloud {
   align-items: center;
   justify-content: center;
   line-height: 2.75rem;
-  width: 450px;
+  max-width: 1000px;
 }
 
 ul.cloud a {
@@ -2469,9 +2469,13 @@ ul.cloud a::before {
   transition: width 0.25s;
 }
 
-ul.cloud a:focus::before,
-ul.cloud a:hover::before {
-  width: 100%;
+ul.cloud a:focus,
+ul.cloud a:hover {
+  text-shadow: 2px 3px 3px #fffffff6;
+
+  &::before {
+    width: 100%;
+  }
 }
 
 /* Modal popup start */
@@ -2596,10 +2600,14 @@ ul.cloud a:hover::before {
 #ms_tech .card-body,
 #web_tech .card-body,
 #js_tech .card-body,
-#mob_tech .card-body,
 #os_tech .card-body,
 #db_tech .card-body,
-#rt_tech .card-body,
+#rt_tech .card-body{
+  height: 225px !important;
+  display: grid;
+}
+
+#mob_tech .card-body,
 #ot_tech .card-body,
 #sf_tech .card-body,
 #tp_tech .card-body {
@@ -2686,7 +2694,7 @@ ul.cloud a:hover::before {
 }
 
 .portfolio-grid .card {
-  display: flex;
+  display: grid;
   justify-content: center;
 }
 
@@ -2766,10 +2774,11 @@ ul.cloud a:hover::before {
 #prod_sec_2 {
   /* background: url(../img/hero-pattern.svg); */
   background-size: cover;
-  & .container {
+
+  & .conMove {
     position: relative;
     top: 0;
-    transform: translateY(5rem);
+    transform: translateY(2rem);
   }
 }
 

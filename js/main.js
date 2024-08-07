@@ -64,7 +64,7 @@
         function (e) {
             // e.preventDefault();
             e.stopPropagation();
-            $(this).find('.tooltip-content').delay(900).fadeIn();
+            $(this).find('.tooltip-content').fadeIn();
             $(this).find('.tooltip-content').hover(
                 function (e) {
                     // e.preventDefault();
@@ -131,14 +131,16 @@
         screenCheck();
     });
 
-    let currentSubPageUrl = window.location.pathname.split("/").pop();
+    let currentUrl = window.location.pathname.split("/").pop();
+    var currentPageUrl = document.querySelector(".nav-item.nav-link.active");
+    var currentSubPageUrl = currentPageUrl ? currentPageUrl.getAttribute('href') : '';
+
     function applyScroll() {
         $.scrollify({
             section: ".scroll",
             sectionName: "section-name",
             interstitialSection: "",
             easing: "easeOutExpo",
-            // easing: "easeOutQuad",
             scrollSpeed: 200,
             offset: 0,
             scrollbars: true,
@@ -150,7 +152,7 @@
             updateHash: false,
             touchScroll: true,
             after: function (index) {
-                if (currentSubPageUrl === 'about.html') {
+                if (currentSubPageUrl === 'about.html' || currentUrl === 'about.html') {
                     if (index === 2) {
                         $('.count').counterUp({
                             delay: 10,
@@ -158,7 +160,6 @@
                         });
                     }
                 } else if (currentSubPageUrl === 'index.html') {
-                    // Index page
                     if (index === 5) {
                         $('.count').counterUp({
                             delay: 10,
@@ -168,17 +169,17 @@
                         var validator = $("#cus_form").validate();
                         validator.resetForm();
                     }
-                } else if (currentSubPageUrl === 'service.html') {
+                } else if (currentSubPageUrl === 'service.html' || currentUrl === 'service.html') {
                     if (index === 2) {
                         const validateService = $('#callus').validate();
                         validateService.resetForm();
                     }
-                } else if ((currentSubPageUrl === 'contact.html') || (currentSubPageUrl === 'contactUs.html')) {
-                    if ((index === 1) || (index === 0)) {
+                } else if (currentSubPageUrl === 'contact.html' || currentSubPageUrl === 'contactUs.html' || currentUrl === 'contact.html' || currentUrl === 'contactUs.html') {
+                    if (index === 1 || index === 0) {
                         const validateContact = $('#contactus').validate();
                         validateContact.resetForm();
                     }
-                } else if (currentSubPageUrl === 'productEnquiry.html') {
+                } else if (currentSubPageUrl === 'productEnquiry.html' || currentUrl === 'productEnquiry.html') {
                     if (index === 1) {
                         const validateEnq = $('#cus_Form').validate();
                         validateEnq.resetForm();
@@ -187,6 +188,9 @@
             }
         });
     }
+
+    // Call applyScroll function to initialize Scrollify
+    applyScroll();
 
     function screenCheck() {
         var deviceAgent = navigator.userAgent.toLowerCase();
@@ -204,8 +208,6 @@
             $.scrollify.enable();
         }
     }
-    // Call applyScroll function to initialize Scrollify
-    applyScroll();
     // disable scrollify
     $(".cloud li").on("click", function () {
         disableScrollify();
@@ -256,8 +258,9 @@
                 $('.page-top').fadeOut('slow');
             }
         });
-        $('.page-top').click(function () {
-            $('html, body').animate({ scrollTop: 0 }, 1000, 'easeInOutExpo');
+        $('.page-top, .back-to-top').click(function () {
+            // $('html, body').animate({ scrollTop: 0 }, 1000, 'easeInOutExpo');
+            $('html, body').scrollTop(0);
             return false;
         });
     });
@@ -344,11 +347,11 @@
 
         if (dots.css("display") === "none") {
             dots.css("display", "inline");
-            btnText.html("Read more <span>&rarr;</span>");
+            btnText.html("Read more <span><i class='fa fa-arrow-right'></i></span>");
             moreText.css("display", "none");
         } else {
             dots.css("display", "none");
-            btnText.html("Read less <span>&rarr;</span>");
+            btnText.html("Read less <span><i class='fa fa-arrow-right'></i></span>");
             moreText.css("display", "inline");
         }
         // Append the HTML inside myBtn element
@@ -385,11 +388,16 @@
     });
 
     document.addEventListener("DOMContentLoaded", function () {
-
-        // Dropdown mobile and tab view click event
-        if (screen.width < 992) {
-            DropdownMenuResponsive();
-        }
+        $.ajax({
+            url: 'preloads.html',
+            async: false,
+            success: function (data) {
+                $('head').append(data);
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.error('Error loading preloads:', textStatus, errorThrown);
+            }
+        });
 
     });
     $(document).ready(function () {
@@ -423,9 +431,7 @@
                 $(document).find(".dropdown--hov").removeClass('dropdown--hov--active active');
             }
         );
-    });
 
-    $(document).ready(function () {
         // Initially hide the dropdown menu
         $('.dropdown--menu-01').hide();
 
@@ -456,7 +462,9 @@
                 $(document).find(".dropdown--hov-01").removeClass('dropdown--hov--active active');
             }
         );
+    });
 
+    $(document).ready(function () {
         function activeSubUrl() {
             // Get the current page URL
             var currentUrl = window.location.pathname.split("/").pop();
@@ -533,76 +541,152 @@
         $('head').append(`
             <meta property="og:url" content="${currentUrl}">
         `);
-    });
 
-    // Dropdown toggle start
-    function DropdownMenuResponsive() {
-        // Toggle dropdown on click
-        var solutionsDropdown = document.getElementById('solutionsDropdown');
-        var solutionsDropdown1 = document.getElementById('solutionsDropdown1');
-        var dropdownMenu = solutionsDropdown.nextElementSibling;
-        var dropdownMenu1 = solutionsDropdown1.nextElementSibling;
-        // Toggle dropdown submenu on button click
-        var applicationBtn = document.getElementById('applicationBtn');
-        var webBtn = document.getElementById('webBtn');
-        var applicationContent = document.querySelector('.dropdown-content1.application');
-        var webContent = document.querySelector('.dropdown-content1.web');
-        solutionsDropdown.addEventListener('click', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-            dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
-            dropdownMenu1.style.display = 'none';
-            webContent.style.display = 'none';
-            applicationContent.style.display = 'none';
-        });
-        solutionsDropdown1.addEventListener('click', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-            dropdownMenu1.style.display = (dropdownMenu1.style.display === 'block') ? 'none' : 'block';
-            dropdownMenu.style.display = 'none';
-            webContent.style.display = 'none';
-            applicationContent.style.display = 'none';
-        });
-        function toggleDropdownContent(e, content) {
-            e.preventDefault();
-            e.stopPropagation();
-            content.style.display = (content.style.display === 'block') ? 'none' : 'block';
-        }
-        applicationBtn.addEventListener('click', function (e) {
-            toggleDropdownContent(e, applicationContent);
-            webContent.style.display = 'none';
-        });
-        webBtn.addEventListener('click', function (e) {
-            toggleDropdownContent(e, webContent);
-            applicationContent.style.display = 'none';
-        });
-        // Navbar toggler icon
-        var forEach = function (t, o, r) {
-            if ("[object Object]" === Object.prototype.toString.call(t))
-                for (var c in t)
-                    Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
-            else for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t);
-        };
-        var hamburgers = document.querySelectorAll(".hamburger");
-        if (hamburgers.length > 0) {
-            forEach(hamburgers, function (hamburger) {
-                hamburger.addEventListener("click", function (event) {
-                    // Prevent the click event from propagating to the document
-                    event.stopPropagation();
-                    // Toggle the "is-active" class
-                    this.classList.toggle("is-active");
-                    document.querySelector('.vw-nav .navbar').classList.toggle("overflow-auto");
+        function DropdownMenuResponsive() {
+            // Toggle dropdown on click
+            var solutionsDropdown = document.getElementById('solutionsDropdown');
+            var solutionsDropdown1 = document.getElementById('solutionsDropdown1');
+            var dropdownMenu = solutionsDropdown.nextElementSibling;
+            var dropdownMenu1 = solutionsDropdown1.nextElementSibling;
+
+            // Toggle dropdown submenu on button click
+            var applicationBtn = document.getElementById('applicationBtn');
+            var webBtn = document.getElementById('webBtn');
+            var applicationContent = document.querySelector('.dropdown-content1.application');
+            var webContent = document.querySelector('.dropdown-content1.web');
+
+            function toggleDropdownContent(e, content) {
+                e.preventDefault();
+                e.stopPropagation();
+                content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+            }
+
+            if (solutionsDropdown) {
+                solutionsDropdown.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
                     dropdownMenu1.style.display = 'none';
+                    webContent.style.display = 'none';
+                    applicationContent.style.display = 'none';
+                });
+            }
+
+            if (solutionsDropdown1) {
+                solutionsDropdown1.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    dropdownMenu1.style.display = (dropdownMenu1.style.display === 'block') ? 'none' : 'block';
                     dropdownMenu.style.display = 'none';
                     webContent.style.display = 'none';
                     applicationContent.style.display = 'none';
-                },
-                    false
-                );
-            });
-        }
-    }
+                });
+            }
 
+            if (applicationBtn) {
+                applicationBtn.addEventListener('click', function (e) {
+                    toggleDropdownContent(e, applicationContent);
+                    webContent.style.display = 'none';
+                });
+            }
+
+            if (webBtn) {
+                webBtn.addEventListener('click', function (e) {
+                    toggleDropdownContent(e, webContent);
+                    applicationContent.style.display = 'none';
+                });
+            }
+
+            // Navbar toggler icon
+            var forEach = function (t, o, r) {
+                if ("[object Object]" === Object.prototype.toString.call(t))
+                    for (var c in t)
+                        Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
+                else for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t);
+            };
+
+            var hamburgers = document.querySelectorAll(".hamburger");
+            if (hamburgers.length > 0) {
+                forEach(hamburgers, function (hamburger) {
+                    hamburger.addEventListener("click", function (event) {
+                        event.stopPropagation();
+                        // Toggle the "is-active" class
+                        this.classList.toggle("is-active");
+                        // const element = document.querySelector('.vw-nav .navbar');
+                        // const hasElement = document.querySelector('.vw-nav');
+                        // if (element.classList.contains('overflow-y-auto') && element.classList.contains('overflow-x-hidden')) {
+                        //     element.classList.remove('overflow-y-auto', 'overflow-x-hidden');
+                        //     hasElement.classList.remove('pb-5');
+                        // } else {
+                        //     element.classList.add('overflow-y-auto', 'overflow-x-hidden');
+                        //     hasElement.classList.add('pb-5');
+                        // }
+                        const element = document.querySelector('.vw-nav .navbar');
+                        const hasElement = document.querySelector('.vw-nav');
+                        const navbarCollapse = document.querySelector('#navbarCollapse');
+
+                        function toggleClassesBasedOnWidth() {
+                            // Get the current viewport width
+                            const viewportWidth = window.innerWidth;
+
+                            // Check if the viewport width is less than or equal to 992px
+                            if (viewportWidth <= 992) {
+                                if (element.classList.contains('overflow-y-auto') && element.classList.contains('overflow-x-hidden')) {
+                                    element.classList.remove('overflow-y-auto', 'overflow-x-hidden');
+                                    hasElement.classList.remove('pb-5');
+                                } else {
+                                    element.classList.add('overflow-y-auto', 'overflow-x-hidden');
+                                    hasElement.classList.add('pb-5');
+                                }
+                            } else {
+                                // Optionally, handle the case for viewport width greater than 992px
+                                element.classList.remove('overflow-y-auto', 'overflow-x-hidden');
+                                hasElement.classList.remove('pb-5');
+                                navbarCollapse.classList.remove('show');
+                            }
+                        }
+
+                        // Initial check
+                        toggleClassesBasedOnWidth();
+
+                        // Optional: Add an event listener to handle changes in viewport width
+                        window.addEventListener('resize', toggleClassesBasedOnWidth);
+                        dropdownMenu1.style.display = 'none';
+                        dropdownMenu.style.display = 'none';
+                        webContent.style.display = 'none';
+                        applicationContent.style.display = 'none';
+                    }, false);
+                });
+            }
+        }
+        // Initialize dropdown menu
+        DropdownMenuResponsive();
+        // Select the element using jQuery
+        var $elem = $('.mapFull iframe');
+
+        // Function to request fullscreen mode
+        function openFullscreen() {
+            if ($elem[0].requestFullscreen) {
+                $elem[0].requestFullscreen();
+            } else if ($elem[0].webkitRequestFullscreen) { /* Safari */
+                $elem[0].webkitRequestFullscreen();
+            } else if ($elem[0].mozRequestFullScreen) { /* Firefox */
+                $elem[0].mozRequestFullScreen();
+            } else if ($elem[0].msRequestFullscreen) { /* IE11 */
+                $elem[0].msRequestFullscreen();
+            }
+        }
+
+        // Function to handle click or touch events
+        function handleClickOrTouch(event) {
+            event.preventDefault(); // Prevent default behavior for touch events
+            openFullscreen();
+        }
+
+        // Bind the click and touchstart events to the button
+        $('#fullscreenBtn').on('click touchstart', handleClickOrTouch);
+
+    });
 })(jQuery);
 //  Product Enquiry form automatically fill plan price
 function choosePlan(planName, planPrice) {

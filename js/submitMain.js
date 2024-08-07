@@ -22,7 +22,7 @@
                 required: "Name must be entered"
             },
             cus_number: {
-                required: "Phone Number must be entered"
+                required: "Mobile Number must be entered"
             },
             cus_mail: {
                 required: "Email ID must be entered"
@@ -54,15 +54,24 @@
     function MobileNum() {
         var mobNo = $("#cus_number").val().trim();
         var length = mobNo.length;
-        var regex = /^(?:\+?\d{1,3})?(\s*[\-]\s*)?[1-9]\d{9,14}$/;
+        var regex =  /^(?:\+?91|00|0)?[-. ]??[6789]\d{9}$/;
 
         if (length !== 0) {
             if (regex.test(mobNo)) {
                 $("#cus_number-errorLabel").css('display', 'none').text("");
                 $("#cus_number").val(mobNo);
-                return true;
+                const ourMobNo =mobNo.slice(-10);
+                if(ourMobNo == 9443487210 || ourMobNo == 8220017918)
+                {
+                    $("#cus_number-errorLabel").css('display', 'block').text("Please Enter your Mobile Number");
+                    $("#cus_number").val();
+                    return false;
+                }
+                else{
+                    return true;
+                }
             } else {
-                $("#cus_number-errorLabel").css('display', 'block').text("Please enter a valid Phone Number.");
+                $("#cus_number-errorLabel").css('display', 'block').text("Please Enter a Valid Mobile Number");
                 $("#cus_number").val();
                 return false;
             }
@@ -78,12 +87,25 @@
 
     $("#cus_number").on('input', function () {
         $('#cus_number-errorLabel').css('display', 'none').text("");
+        this.value = this.value.replace(/^\s+/, '');
     });
 
     function emailValid() {
+        // var email = $('#cus_mail').val().trim();
         var email = $('#cus_mail').val();
-        if (email != "" && email != null) {
-            if (/^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i.test(email)) {
+        if (email != "") {
+            // Regular expression for basic email validation
+            // var regex = /^[a-z0-9]+@[A-Za-z]{4,10}\.[a-z]{2,3}$/;
+            var regex = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i;
+
+            if (email.toLowerCase() === "info@skyfinch.com") {
+                $("#cus_mail").attr("class", "form-control error");
+                $("#cus_mail-errorLabel").text('Please Enter your Email ID');
+                $("#cus_mail-errorLabel").attr("style", "display: block;");
+                $("#cus_mail").val();
+                return false;
+            }
+            if (regex.test(email)) {
                 $("#cus_mail").attr("class", "form-control");
                 $("#cus_mail-errorLabel").text('');
                 $("#cus_mail-errorLabel").attr("style", "display: none;");
@@ -91,7 +113,7 @@
             }
             else {
                 $("#cus_mail").attr("class", "form-control error");
-                $("#cus_mail-errorLabel").text('Please enter valid Email ID');
+                $("#cus_mail-errorLabel").text('Please Enter Valid Email ID');
                 $("#cus_mail-errorLabel").attr("style", "display: block;");
                 $("#cus_mail").val();
                 return false;
@@ -111,6 +133,52 @@
 
     $("#cus_mail").on('input', function () {
         $('#cus_mail-errorLabel').css('display', 'none').text("");
+        var value = $(this).val();
+        value = value.replace(/\s+/g, '');
+        $(this).val(value.toLowerCase());
+    });
+
+    function validateName() {
+        var cusName = $("#cus_name").val();
+        var cusNameTrim = $.trim(cusName); // Trim whitespace from both ends
+        var regex = /^[A-Za-z]+(?: [A-Za-z]+)*(?:\.[A-Za-z]+)?$/; // Regex pattern to allow one dot
+
+        if (cusNameTrim === "") {
+            // If the trimmed name is empty
+            $("#cus_name").removeClass("error"); // Add error class
+            $('#cus_name-errorLabel').css('display', 'block').text(''); // Show error message
+            return false;
+        } else {
+            // If the trimmed name is not empty
+            if (regex.test(cusNameTrim)) {
+                // If the name matches the regex
+                $('#cus_name').val(cusNameTrim); // Set trimmed value
+                $("#cus_name").removeClass("error").addClass("form-control"); // Remove error class, add form-control class
+                $('#cus_name-errorLabel').css('display', 'none').text(""); // Hide error message
+                return true;
+            } else {
+                // If the name does not match the regex
+                $("#cus_name").addClass("error"); // Add error class
+                $('#cus_name-errorLabel').css('display', 'block').text('Please Enter a Valid Name'); // Show error message
+                return false;
+            }
+        }
+    }
+
+    // Validate on blur event (when the input loses focus)
+    $('#cus_name').on('blur', function () {
+        validateName();
+    });
+
+    // Clear error message on input event (when typing)
+    $("#cus_name").on('input', function () {
+        $('#cus_name-errorLabel').css('display', 'none').text(""); // Hide error message
+        $("#cus_name").removeClass("error"); // Remove error class
+        var regexName = /^[a-zA-Z .]*$/;
+        var value = $(this).val();
+        if (!regexName.test(value)) {
+            $(this).val(value.replace(/[^a-zA-Z .]/g, ''));
+        }
     });
 
     let popup = document.querySelector("#pop");
@@ -120,6 +188,13 @@
         document.cus_form.reset();
     });
 
+
+    let openForm = $("#open_form").validate();
+    $("#hide_form").on('click', function() {
+        openForm.resetForm();
+        $("#form_mail-errorLabel, #form_number-errorLabel").css("display", "none");
+    });
+
     function submitDetails() {
         let cus_name = document.querySelector("#cus_name").value;
         let cus_number = document.querySelector("#cus_number").value;
@@ -127,45 +202,50 @@
         let cus_text = document.querySelector("#cus_text").value;
         document.querySelector(".sub-popup h2").innerHTML = "Congrats!";
         document.querySelector(".sub-popup p").innerHTML = "Successfully submitted.<br>We will response SOON.<br>Thank you so much!";
-        console.log("\t\t\tCUSTOMER DETAILS" + "\nName : " + cus_name + " " + "\n Phone Number: " + cus_number + " " + "\n Mail ID: " + cus_mail + " " + "\n Project Details: " + cus_text);
+        console.log("\t\t\tCUSTOMER DETAILS" + "\nName : " + cus_name + " " + "\n Mobile Number: " + cus_number + " " + "\n Mail ID: " + cus_mail + " " + "\n Project Details: " + cus_text);
         popup.classList.add("open-popup");
-        const body = "<center><h1 style='color:#355EFC; font-family: 'Times New Roman', serif;'>SKYFINCH WEBSITE</h1></center>" +
-            "<br><center><h3>CUSTOMER DETAILS FORM</h3></center>" +
-            "<center><table>" +
-            "  <tr><td>Name:</td><td>" + cus_name + "</td></tr>" +
-            "  <tr><td>Mail ID:</td><td>" + cus_mail + "</td></tr>" +
-            "  <tr><td>Phone Number:</td><td>" + cus_number + "</td></tr>" +
-            "  <tr><td>Project Details:</td><td>" + cus_text + "</td></tr>" +
-            "</table></center>";
-        // Email.send({
-        //     SecureToken: "43b9e9f4-c4ca-4b5e-a846-c43c61f9f360",
-        //     To: 'mktg@skyfinch.com',
-        //     From: "sjkumarsri@gmail.com",
-        //     Subject: cus_name,
-        //     Body: body
-        // })
+        const body = `
+            <center>
+                <h1 style="color:#355EFC; font-family: 'Times New Roman', serif;">SKYFINCH WEBSITE</h1>
+                <br>
+                <h3>CONTACT DETAILS FORM</h3>
+                <table style="
+                border-collapse: collapse;
+                width: 60%;
+                margin: 20px auto;
+                font-family: Arial, sans-serif;
+                background-color: #f9f9f9;
+                border: 1px solid #ddd;">
+                <tr style="background-color: #f2f2f2;">
+                <th style="text-align: left; padding: 10px; border-bottom: 1px solid #ddd; border-right: 1px solid #ddd;">Field</th>
+                <th style="text-align: left; padding: 10px; border-bottom: 1px solid #ddd;">Details</th>
+                </tr>
+                <tr>
+                <td style="padding: 10px; border-bottom: 1px solid #ddd; border-right: 1px solid #ddd;">Name:</td>
+                <td style="padding: 10px; border-bottom: 1px solid #ddd;">${cus_name}</td>
+                </tr>
+                <tr>
+                <td style="padding: 10px; border-bottom: 1px solid #ddd; border-right: 1px solid #ddd;">Mail-ID:</td>
+                <td style="padding: 10px; border-bottom: 1px solid #ddd;">${cus_number}</td>
+                </tr>
+				<tr>
+                <td style="padding: 10px; border-bottom: 1px solid #ddd; border-right: 1px solid #ddd;">Mobile Number:</td>
+                <td style="padding: 10px; border-bottom: 1px solid #ddd;">${cus_mail}</td>
+                </tr>
+                <tr>
+                <td style="padding: 10px; border-bottom: 1px solid #ddd; border-right: 1px solid #ddd;">Project Details:</td>
+                <td style="padding: 10px; border-bottom: 1px solid #ddd;">${cus_text}</td>
+                </tr>
+                </table>
+            </center>`;
+        Email.send({
+            SecureToken: "43b9e9f4-c4ca-4b5e-a846-c43c61f9f360",
+            To: 'sjkumarsri@gmail.com',
+            From: "sjkumarsri@gmail.com",
+            Subject: cus_name,
+            Body: body
+        })
     }
-
-
-    $("#cus_name").on('input', function () {
-
-        var originalValue = $("#cus_name").data('original-value');
-        if (originalValue === undefined) {
-            originalValue = $("#cus_name").val();
-            $("#cus_name").data('original-value', originalValue);
-        }
-
-        var value = $("#cus_name").val();
-        var regexName = /^[a-zA-Z.]+(?: [a-zA-Z.]+)*$/i; // Allow multiple words separated by a space
-
-        if (!regexName.test(value)) {
-            value = value.replace(/[^a-zA-Z. ]+/g, ''); // Remove special characters
-            value = value.replace(/\s+/g, ' ').trim(); // Replace multiple spaces with a single space and trim extra spaces
-            $("#cus_name").val(value);
-        } else {
-            $("#cus_name").data('original-value', value);
-        }
-    });
 
     $("#cus_number").on('input', function () {
         var value = $(this).val();
@@ -177,6 +257,7 @@
         }
     });
 
+    var SubmitFlag = true;
     $("#msgButton").on('click', function () {
         var fields = ["#cus_name", "#cus_number", "#cus_mail", "#cus_text"];
         var currentIndex = 0;
@@ -192,13 +273,17 @@
             $(fields[0]).focus();
             currentIndex = 0;
         }
-        if (($("#cus_form").valid()) && (emailValid()) && (MobileNum())) {
-            submitDetails();
+        if (($("#cus_form").valid()) && (emailValid()) && (MobileNum()) && (validateName() === true)) {
+            if (SubmitFlag === true){
+                submitDetails();
+                SubmitFlag = false;
+            }
         } else {
             emailValid();
             MobileNum();
             focusNextEmptyField();
         }
+
     });
 
 })(jQuery);
