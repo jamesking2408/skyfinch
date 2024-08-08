@@ -204,6 +204,9 @@
         document.querySelector(".sub-popup p").innerHTML = "Successfully submitted.<br>We will response SOON.<br>Thank you so much!";
         console.log("\t\t\tCUSTOMER DETAILS" + "\nName : " + cus_name + " " + "\n Mobile Number: " + cus_number + " " + "\n Mail ID: " + cus_mail + " " + "\n Project Details: " + cus_text);
         popup.classList.add("open-popup");
+        if (popup.classList.contains("open-popup")) {
+            document.querySelector("#closePopup").focus();
+        }
         const body = `
             <center>
                 <h1 style="color:#355EFC; font-family: 'Times New Roman', serif;">SKYFINCH WEBSITE</h1>
@@ -276,14 +279,13 @@
         if (($("#cus_form").valid()) && (emailValid()) && (MobileNum()) && (validateName() === true)) {
             if (SubmitFlag === true){
                 submitDetails();
-                SubmitFlag = false;
             }
         } else {
             emailValid();
             MobileNum();
             focusNextEmptyField();
         }
-
+        SubmitFlag = false;
     });
 
 })(jQuery);

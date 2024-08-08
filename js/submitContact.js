@@ -56,21 +56,19 @@
     function MobileNum() {
         var mobNo = $("#contactNum").val().trim();
         var length = mobNo.length;
-        var regex =  /^(?:\+?91|00|0)?[-. ]??[6789]\d{9}$/;
+        var regex = /^(?:\+?91|00|0)?[-. ]??[6789]\d{9}$/;
 
         if (length !== 0) {
             if (regex.test(mobNo)) {
-                debugger;
                 $("#contactNum-errorLabel").css('display', 'none').text("");
                 $("#contactNum").val(mobNo);
-                var ourMobNo =mobNo.slice(-10);
-                if(ourMobNo == 9443487210 || ourMobNo == 8220017918)
-                {
+                var ourMobNo = mobNo.slice(-10);
+                if (ourMobNo == 9443487210 || ourMobNo == 8220017918) {
                     $("#contactNum-errorLabel").css('display', 'block').text("Please Enter your Mobile Number");
                     $("#contactNum").val();
                     return false;
                 }
-                else{
+                else {
                     return true;
                 }
             } else {
@@ -239,6 +237,9 @@
         document.querySelector(".sub-popup h2").innerHTML = "Congrats!";
         document.querySelector(".sub-popup p").innerHTML = "Successfully submitted.<br>We will response SOON.<br>Thank you so much!";
         popup.classList.add("open-popup");
+        if (popup.classList.contains("open-popup")) {
+            document.querySelector("#closePopup2").focus();
+        }
         const body = `
             <center>
                 <h1 style="color:#355EFC; font-family: 'Times New Roman', serif;">SKYFINCH WEBSITE</h1>
@@ -286,6 +287,7 @@
         })
     }
 
+    var SubmitFlag = true;
     $("#contactSub").on('click', function () {
         var fields = ["#contactName", "#contactMail", "#contactSubject", "#contactMsg"];
         var currentIndex = 0;
@@ -302,11 +304,14 @@
             currentIndex = 0;
         }
         if (($("#contactus").valid()) && (emailValid()) && (MobileNum()) && (validateName() === true) && (validateSubject() === true)) {
-            contactSub();
+            if (SubmitFlag === true){
+                contactSub();
+            }
         }
         else {
             focusNextEmptyField();
         }
+        SubmitFlag = false;
     });
 
 })(jQuery);

@@ -138,6 +138,9 @@
         document.querySelector(".sub-popup p").innerHTML = "Successfully submitted.<br>We will response SOON.<br>Thank you so much!";
         console.log("\t\t\t REQUEST FORM DETAILS" + "\nEmail-ID: " + mail + " " + "\n Mobile Number: " + ph);
         popup.classList.add("open-popup");
+        if (popup.classList.contains("open-popup")) {
+            document.querySelector("#closePopup").focus();
+        }
         const body = `
             <center>
                 <h1 style="color:#355EFC; font-family: 'Times New Roman', serif;">SKYFINCH WEBSITE</h1>
@@ -178,16 +181,20 @@
         document.cus_form.reset();
     });
 
+    var SubmitFlag = true;
     $("#openPopup").on('click', function () {
         // emailValid();
         // MobileNum();
         if (($("#open_form").valid()) && (emailValid() === true) && (MobileNum() === true)) {
-            openPopup();
+            if (SubmitFlag === true) {
+                openPopup();
+            }
         }
         else {
             emailValid();
             MobileNum();
         }
+        SubmitFlag = false;
     });
 
 })(jQuery);

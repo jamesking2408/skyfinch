@@ -63,20 +63,19 @@
     function MobileNum() {
         var mobNo = $("#serviceNum").val().trim();
         var length = mobNo.length;
-        var regex =  /^(?:\+?91|00|0)?[-. ]??[6789]\d{9}$/;
+        var regex = /^(?:\+?91|00|0)?[-. ]??[6789]\d{9}$/;
 
         if (length !== 0) {
             if (regex.test(mobNo)) {
                 $("#serviceNum-errorLabel").css('display', 'none').text("");
                 $("#serviceNum").val(mobNo);
-                const ourMobNo =mobNo.slice(-10);
-                if(ourMobNo == 9443487210 || ourMobNo == 8220017918)
-                {
+                const ourMobNo = mobNo.slice(-10);
+                if (ourMobNo == 9443487210 || ourMobNo == 8220017918) {
                     $("#serviceNum-errorLabel").css('display', 'block').text("Please Enter your Mobile Number.");
                     $("#serviceNum").val();
                     return false;
                 }
-                else{
+                else {
                     return true;
                 }
             } else {
@@ -245,9 +244,11 @@
         let msg = document.querySelector("#serviceMsg").value;
         document.querySelector(".sub-popup h2").innerHTML = "Thank You!";
         document.querySelector(".sub-popup p").innerHTML = "Successfully submitted.<br>We will response SOON.<br>Thank you so much!";
-        console.log("\t\t\t REQUEST FORM DETAILS" + "\nName: " + name + "\nEmail-ID: " + mail + "\nContact: " + num + "\nSubject: " + subject + " " + "\nMessage: " + msg);
         popup.classList.add("open-popup");
-        const body =`
+        if (popup.classList.contains("open-popup")) {
+            document.querySelector("#closePopup0").focus();
+        }
+        const body = `
             <center>
                 <h1 style="color:#355EFC; font-family: 'Times New Roman', serif;">SKYFINCH WEBSITE</h1>
                 <br>
@@ -274,6 +275,10 @@
 				<tr>
                 <td style="padding: 10px; border-bottom: 1px solid #ddd; border-right: 1px solid #ddd;">Mobile Number:</td>
                 <td style="padding: 10px; border-bottom: 1px solid #ddd;">${mail}</td>
+                </tr>
+                <tr>
+                <td style="padding: 10px; border-bottom: 1px solid #ddd; border-right: 1px solid #ddd;">Subject:</td>
+                <td style="padding: 10px; border-bottom: 1px solid #ddd;">${subject}</td>
                 </tr>
                 <tr>
                 <td style="padding: 10px; border-bottom: 1px solid #ddd; border-right: 1px solid #ddd;">Project Details:</td>
@@ -320,6 +325,7 @@
         }
     });
 
+    var SubmitFlag = true;
     $("#callBack").on('click', function () {
         var fields = ["#serviceName", "#serviceMail", "#serviceNum", "#serviceSub"];
         var currentIndex = 0;
@@ -336,12 +342,15 @@
             currentIndex = 0;
         }
         if (($("#callus").valid()) && (emailValid()) && (MobileNum()) && (validateName() === true) && (validateSubject() === true)) {
-            callBack();
+            if (SubmitFlag === true) {
+                callBack();
+            }
         }
         else {
             // emailValid();
             // MobileNum();
             focusNextEmptyField();
         }
+        SubmitFlag = false;
     });
 })(jQuery);

@@ -230,10 +230,10 @@
     }
 
     $('#customerCompy').on('input', function () {
-            validateCompanyInput();
-        }).on('blur', function () {
-            trimSpacesOnBlur('customerCompy');
-        });
+        validateCompanyInput();
+    }).on('blur', function () {
+        trimSpacesOnBlur('customerCompy');
+    });
 
     function validateJobInput() {
         var $input = $('#customerJob');
@@ -245,10 +245,10 @@
     }
 
     $('#customerJob').on('input', function () {
-            validateJobInput();
-        }).on('blur', function () {
-            trimSpacesOnBlur('customerJob');
-        });
+        validateJobInput();
+    }).on('blur', function () {
+        trimSpacesOnBlur('customerJob');
+    });
 
     function validateCountryInput() {
         var $input = $('#customerCountry');
@@ -306,6 +306,9 @@
         document.querySelector(".sub-popup h2").innerHTML = "Congrats!";
         document.querySelector(".sub-popup p").innerHTML = "Your details submitted successfully. ";
         popup.classList.add("open-popup");
+        if (popup.classList.contains("open-popup")) {
+            document.querySelector(".exit").focus();
+        }
         var body = `
             <center>
                 <h1 style="color:#355EFC; font-family: 'Times New Roman', serif;">SKYFINCH WEBSITE</h1>
@@ -369,6 +372,7 @@
         })
     }
 
+    var SubmitFlag = true;
     $("#prodEnquiry").on('click', function () {
         var fields = ["#customerName", "#customerNum", "#customerMail", "#customerCompy", "#customerJob", "#customerCountry", "#customerProduct", "#customerPlan"];
         var currentIndex = 0;
@@ -384,13 +388,16 @@
             currentIndex = 0;
         }
         if (($("#cus_Form").valid() && (emailValid()) && (MobileNum()) && (validateName() === true))) {
-            prodEnquiry();
+            if (SubmitFlag === true) {
+                prodEnquiry();
+            }
         }
         else {
             emailValid();
             MobileNum();
             focusNextEmptyField();
         }
+        SubmitFlag = false;
     });
     function resetFormProduct() {
         document.cus_Form.reset();
