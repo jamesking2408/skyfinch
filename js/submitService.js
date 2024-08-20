@@ -61,6 +61,7 @@
     });
 
     function MobileNum() {
+        SubmitFlag = true;
         var mobNo = $("#serviceNum").val().trim();
         var length = mobNo.length;
         var regex = /^(?:\+?91|00|0)?[-. ]??[6789]\d{9}$/;
@@ -100,6 +101,7 @@
     });
 
     function emailValid() {
+        SubmitFlag = true;
         var email = $('#serviceMail').val();
         if (email !== "") {
             // Regular expression for basic email validation
@@ -144,6 +146,7 @@
     });
 
     function validateName() {
+        SubmitFlag = true;
         var cusName = $("#serviceName").val();
         var cusNameTrim = $.trim(cusName); // Trim whitespace from both ends
         var regex = /^[A-Za-z]+(?: [A-Za-z]+)*(?:\.[A-Za-z]+)?$/; // Regex pattern to allow one dot
@@ -188,6 +191,7 @@
     });
 
     function validateSubject() {
+        SubmitFlag = true;
         var cusSubject = $("#serviceSub").val();
         var length = cusSubject.length;
         var regex = /^[A-Za-z0-9]+(?: [A-Za-z0-9]+)*(?:\.[A-Za-z0-9]+)?$/;
@@ -234,6 +238,7 @@
         document.callus.reset();
         emailValid(null);
         MobileNum(null);
+        $("#callBack").prop('disabled', false);
     });
 
     function callBack() {
@@ -246,7 +251,10 @@
         document.querySelector(".sub-popup p").innerHTML = "Successfully submitted.<br>We will response SOON.<br>Thank you so much!";
         popup.classList.add("open-popup");
         if (popup.classList.contains("open-popup")) {
-            document.querySelector("#closePopup0").focus();
+            $('#callBack').prop('disabled', true);
+            setTimeout(function () {
+                $('#closePopup0').focus();
+            }, 100);
         }
         const body = `
             <center>
@@ -344,13 +352,14 @@
         if (($("#callus").valid()) && (emailValid()) && (MobileNum()) && (validateName() === true) && (validateSubject() === true)) {
             if (SubmitFlag === true) {
                 callBack();
+                SubmitFlag = false;
             }
         }
         else {
             // emailValid();
             // MobileNum();
             focusNextEmptyField();
+            SubmitFlag = true;
         }
-        SubmitFlag = false;
     });
 })(jQuery);

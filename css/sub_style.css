@@ -399,17 +399,17 @@ nav ol.breadcrumb {
     right: 80px;
     bottom: 15px;
     z-index: -1;
-    -webkit-transition: .4s;
-    -moz-transition: .4s;
-    -o-transition: .4s;
-    transition: .4s;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
     filter: invert(202%) sepia(0%) saturate(0%) hue-rotate(178deg) brightness(98%) contrast(100%);
 }
 
 #module_card #card:has(> .card:hover)::before,
 #module_card #card:has(> .card:active)::before {
-    right: 20px;
-    bottom: -25px;
+    right: calc(5px - 0.5vw);
+    bottom: calc(-10px - 0.5vw);
 }
 
 .card-btn1 {

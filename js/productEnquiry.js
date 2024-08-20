@@ -81,6 +81,7 @@
         $('#msg').val(caps);
     });
     function emailValid() {
+        SubmitFlag = true;
         var email = $('#customerMail').val();
         if (email != "") {
             // Regular expression for basic email validation
@@ -122,6 +123,7 @@
         this.value = this.value.replace(/^\s+/, '');
     });
     function MobileNum() {
+        SubmitFlag = true;
         var mobNo = $("#customerNum").val().trim();
         var length = mobNo.length;
         var regex = /^(?:\+?91|00|0)?[-. ]??[6789]\d{9}$/;
@@ -159,6 +161,7 @@
     });
 
     function validateName() {
+        SubmitFlag = true;
         var cusName = $("#customerName").val();
         var cusNameTrim = $.trim(cusName); // Trim whitespace from both ends
         var regex = /^[A-Za-z]+(?: [A-Za-z]+)*(?:\.[A-Za-z]+)?$/; // Regex pattern to allow one dot
@@ -307,7 +310,10 @@
         document.querySelector(".sub-popup p").innerHTML = "Your details submitted successfully. ";
         popup.classList.add("open-popup");
         if (popup.classList.contains("open-popup")) {
-            document.querySelector(".exit").focus();
+            $('#prodEnquiry').prop('disabled', true);
+            setTimeout(function () {
+                $('.exit').focus();
+            }, 100);
         }
         var body = `
             <center>
@@ -390,14 +396,15 @@
         if (($("#cus_Form").valid() && (emailValid()) && (MobileNum()) && (validateName() === true))) {
             if (SubmitFlag === true) {
                 prodEnquiry();
+                SubmitFlag = false;
             }
         }
         else {
             emailValid();
             MobileNum();
             focusNextEmptyField();
+            SubmitFlag = true;
         }
-        SubmitFlag = false;
     });
     function resetFormProduct() {
         document.cus_Form.reset();
@@ -417,6 +424,7 @@ function closePopupPq() {
         popup.classList.remove("open-popup");
     }
     document.cus_Form.reset();
+    $("#prodEnquiry").prop('disabled', false);
 }
 document.addEventListener('DOMContentLoaded', function () {
     var selectedPlanName = localStorage.getItem('selectedPlanName');

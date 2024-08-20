@@ -52,22 +52,22 @@
     });
 
     function MobileNum() {
+        SubmitFlag = true;
         var mobNo = $("#cus_number").val().trim();
         var length = mobNo.length;
-        var regex =  /^(?:\+?91|00|0)?[-. ]??[6789]\d{9}$/;
+        var regex = /^(?:\+?91|00|0)?[-. ]??[6789]\d{9}$/;
 
         if (length !== 0) {
             if (regex.test(mobNo)) {
                 $("#cus_number-errorLabel").css('display', 'none').text("");
                 $("#cus_number").val(mobNo);
-                const ourMobNo =mobNo.slice(-10);
-                if(ourMobNo == 9443487210 || ourMobNo == 8220017918)
-                {
+                const ourMobNo = mobNo.slice(-10);
+                if (ourMobNo == 9443487210 || ourMobNo == 8220017918) {
                     $("#cus_number-errorLabel").css('display', 'block').text("Please Enter your Mobile Number");
                     $("#cus_number").val();
                     return false;
                 }
-                else{
+                else {
                     return true;
                 }
             } else {
@@ -92,6 +92,7 @@
 
     function emailValid() {
         // var email = $('#cus_mail').val().trim();
+        SubmitFlag = true;
         var email = $('#cus_mail').val();
         if (email != "") {
             // Regular expression for basic email validation
@@ -139,6 +140,7 @@
     });
 
     function validateName() {
+        SubmitFlag = true;
         var cusName = $("#cus_name").val();
         var cusNameTrim = $.trim(cusName); // Trim whitespace from both ends
         var regex = /^[A-Za-z]+(?: [A-Za-z]+)*(?:\.[A-Za-z]+)?$/; // Regex pattern to allow one dot
@@ -186,11 +188,12 @@
         popup.classList.remove("open-popup");
         document.open_form.reset();
         document.cus_form.reset();
+        $("#msgButton").prop('disabled', false);
     });
 
 
     let openForm = $("#open_form").validate();
-    $("#hide_form").on('click', function() {
+    $("#hide_form").on('click', function () {
         openForm.resetForm();
         $("#form_mail-errorLabel, #form_number-errorLabel").css("display", "none");
     });
@@ -205,7 +208,10 @@
         console.log("\t\t\tCUSTOMER DETAILS" + "\nName : " + cus_name + " " + "\n Mobile Number: " + cus_number + " " + "\n Mail ID: " + cus_mail + " " + "\n Project Details: " + cus_text);
         popup.classList.add("open-popup");
         if (popup.classList.contains("open-popup")) {
-            document.querySelector("#closePopup").focus();
+            $('#msgButton').prop('disabled', true);
+            setTimeout(function () {
+                $('#closePopup').focus();
+            }, 100);
         }
         const body = `
             <center>
@@ -277,15 +283,16 @@
             currentIndex = 0;
         }
         if (($("#cus_form").valid()) && (emailValid()) && (MobileNum()) && (validateName() === true)) {
-            if (SubmitFlag === true){
+            if (SubmitFlag === true) {
                 submitDetails();
+                SubmitFlag = false;
             }
         } else {
             emailValid();
             MobileNum();
             focusNextEmptyField();
+            SubmitFlag = true;
         }
-        SubmitFlag = false;
     });
 
 })(jQuery);

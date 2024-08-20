@@ -50,6 +50,8 @@ input[type=radio] {
   width: 100%;
   height: 100%;
   margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 /* Payroll image */
@@ -279,9 +281,9 @@ label.card div {
   }
 
   .bg-00 .container {
-    width: 380px;
+    width: 100%;
     height: 320px;
-    transform: translate(-0.7rem, 3rem);
+    transform: translate(-0.5rem, 3rem);
   }
 
   .bg-00 .container1 {
@@ -289,9 +291,13 @@ label.card div {
     transform: translate(0rem, 3rem);
   }
 
+  .card1 img {
+    width: calc(320px + 2vw);
+  }
+
   /* Payroll Images */
   .card1 .img-pay {
-    width: 365px !important;
+    width: 335px !important;
     height: 210px !important;
   }
 
@@ -301,7 +307,7 @@ label.card div {
   #item-4:checked~.cards1 #song-3,
   #item-5:checked~.cards1 #song-4,
   #item-6:checked~.cards1 #song-5 {
-    transform: translateX(-30%) scale(0.8) !important;
+    transform: translateX(-20%) scale(0.8) !important;
   }
 
   #item-1:checked~.cards1 #song-2,
@@ -310,7 +316,7 @@ label.card div {
   #item-4:checked~.cards1 #song-5,
   #item-5:checked~.cards1 #song-6,
   #item-6:checked~.cards1 #song-1 {
-    transform: translateX(30%) scale(0.8) !important;
+    transform: translateX(20%) scale(0.8) !important;
   }
 }
 
@@ -322,7 +328,11 @@ label.card div {
   .bg-00 .container {
     width: 500px;
     height: 320px;
-    transform: translate(-1rem, 0.5rem);
+    transform: translate(0, 0.5rem);
+  }
+
+  .card1 img {
+    width: calc(405px + 2vw);
   }
 
   /* Payroll Images */
@@ -354,6 +364,10 @@ label.card div {
   .containers {
     max-width: 600px;
     max-height: 500px;
+  }
+
+  .card1 img {
+    width: calc(470px + 2vw);
   }
 
   /* Payroll Images */

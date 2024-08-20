@@ -38,6 +38,7 @@
     });
 
     function MobileNum() {
+        SubmitFlag = true;
         var mobNo = $("#form_number").val().trim();
         var length = mobNo.length;
         var regex = /^(?:\+?91|00|0)?[-. ]??[6789]\d{9}$/;
@@ -76,6 +77,7 @@
     });
 
     function emailValid() {
+        SubmitFlag = true;
         var email = $('#form_mail').val();
         if (email != "") {
             // Regular expression for basic email validation
@@ -139,7 +141,10 @@
         console.log("\t\t\t REQUEST FORM DETAILS" + "\nEmail-ID: " + mail + " " + "\n Mobile Number: " + ph);
         popup.classList.add("open-popup");
         if (popup.classList.contains("open-popup")) {
-            document.querySelector("#closePopup").focus();
+            $('#openPopup').prop('disabled', true);
+            setTimeout(function () {
+                $('#closePopup').focus();
+            }, 100);
         }
         const body = `
             <center>
@@ -179,6 +184,7 @@
         popup.classList.remove("open-popup");
         document.open_form.reset();
         document.cus_form.reset();
+        $("#openPopup").prop('disabled', false);
     });
 
     var SubmitFlag = true;
@@ -188,13 +194,14 @@
         if (($("#open_form").valid()) && (emailValid() === true) && (MobileNum() === true)) {
             if (SubmitFlag === true) {
                 openPopup();
+                SubmitFlag = false;
             }
         }
         else {
             emailValid();
             MobileNum();
+            SubmitFlag = true;
         }
-        SubmitFlag = false;
     });
 
 })(jQuery);

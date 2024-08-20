@@ -101,11 +101,13 @@
     <!-- Search Modal End-->
 
     <!-- Navbar Start -->
-    <div class="container-fluid shadow fixed-top px-lg-2 px-1">
+    <div class="container-fluid shadow fixed-top px-lg-2 px-1 vw-nav-full">
         <div class="container-fluid m-0 p-0 bg-white">
             <div class="top-bar row gx-2 pb-lg-0 align-items-center d-lg-flex d-md-none d-none bg-blue">
                 <div class="col-lg-8 col-md-12 d-flex justify-content-between id_con">
-                    <a href="https://maps.app.goo.gl/G9iaTsP1LYKNSyL77" target="_blank" rel="noopener noreferrer"><medium class="ms-lg-2 text-dark"><img class="tp-svg" src="./img/google-maps.svg" alt="map"> 5, Republic Street, Reddiarpalayam, Puducherry-605 010, India</medium></a>
+                    <a href="https://maps.app.goo.gl/G9iaTsP1LYKNSyL77" target="_blank" rel="noopener noreferrer">
+                        <medium class="ms-lg-2 text-dark"><img class="tp-svg" src="./img/google-maps.svg" alt="map"> 5, Republic Street, Reddiarpalayam, Puducherry-605 010, India</medium>
+                    </a>
                     <medium class="ms-lg-3 ms-0"><img class="tp-svg" src="./img/clock.svg" alt="map">9.00 am - 6.30 pm (IST)</medium>
                 </div>
                 <div class="col-lg-4 col-md-5 d-flex justify-content-evenly pe-lg-3 id_con">
@@ -270,7 +272,7 @@
                             <div class="row">
                                 <div class="col-6 ps-2 py-3">
                                     <div class="row">
-                                        <div class="col-12 p-3">
+                                        <div class="col-12 pt-0 p-3">
                                             <h5 class="text-dark head-line">ABOUT US</h5>
                                         </div>
                                         <div class="col-12">
@@ -287,7 +289,7 @@
                                 </div>
                                 <div class="col-6 px-2 py-3">
                                     <div class="row">
-                                        <div class="col-12 p-3">
+                                        <div class="col-12 pt-0 p-3">
                                             <h5 class="text-dark head-line">PROFILE</h5>
                                         </div>
                                         <div class="col-12">
@@ -295,7 +297,7 @@
                                             <a href="profile.html">
                                                 <div class="card bg-gray border-0 p-2">
                                                     <div class="card-body text-center p-0">
-                                                        <img src="./img/profile_dropdown.png" alt="profile" class="img-fluid">
+                                                        <img src="./img/profile_dropdown-svg.png" alt="profile" class="img-fluid">
                                                     </div>
                                                 </div>
                                             </a>
@@ -392,6 +394,8 @@
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
+                <div class="swiper-button-next leg_btn_nxt"></div>
+                <div class="swiper-button-prev leg_btn_prev"></div>
             </div>
         </div>
     </section>
@@ -865,7 +869,7 @@
         <div class="container-fluid conMove">
             <div class="row justify-content-center mt-2 mt-lg-2 mb-1 mb-lg-0">
                 <div class="row mt-lg-3 py-lg-2 py-3">
-                    <div class="sec1 col-12 col-sm-12 col-md-12 col-lg-12 text-center mt-lg-1 mt-0 mb-1 mb-lg-0 animated fadeInDown" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="sec1 col-12 col-sm-12 col-md-12 col-lg-12 text-center mt-lg-1 mt-0 mb-1 mb-lg-0">
                         <h2 class="title-section my-0 py-0">OUR PRODUCTS</h2>
                         <div class="divider mx-auto mb-3 pb-0"></div>
                         <a type="button" class="my-1 filter_tab_ text-uppercase btn-sm fw-bold btn btn-silver me-1 rounded-pill active_tab" data-filter="show0">All</a>
@@ -875,40 +879,254 @@
                         <a type="button" class="my-0 filter_tab_1 text-uppercase btn-sm fw-bold btn btn-silver ms-1 rounded-pill" data-filter="show4">Industrial</a>
                     </div>
                 </div>
-                <div class="col-lg-12 col-12 pt-lg-1 pt-3 px-lg-0 mx-lg-0">
-                    <div class="row d-flex justify-content-center align-items-center w-100" data-aos-duration="1000" data-aos="slide-up">
+                <div class="col-lg-12 col-12 pt-lg-1 pt-3 px-lg-0 mx-lg-0" data-aos="fade-up" data-aos-duration="1000">
+                    <!-- <div class="row d-flex justify-content-center align-items-center w-100" data-aos-duration="1000" data-aos="slide-up"> -->
                         <!-- Show All start -->
                         <div class="col product show0">
                             <div class="row d-flex justify-content-center align-items-center">
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center align-items-center animated fadeInUp">
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 my-lg-1 my-3 d-flex justify-content-center align-items-center">
                                     <a href="sales.html">
-                                        <div class="card portfolio_box border-0">
+                                        <div class="card portfolio_box border-0" title="Point of Sales">
                                             <div class="single_portfolio">
                                                 <img class="img-fluid w-100" src="./img/profile/pos.jpg" alt="">
                                             </div>
                                             <div class="short_info pb-3 px-2 text-center">
-                                                <h4>Point of Sales(POS)</h4>
+                                                <h4>Point of Sales</h4>
                                             </div>
                                         </div>
                                     </a>
-                                    <div class="vr vr-blurry position-absolute my-4 h-50 d-none d-md-none d-lg-block top-0 end-0"> </div>
                                 </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center align-items-center animated fadeInUp">
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 my-lg-1 my-3 d-flex justify-content-center align-items-center">
                                     <a href="ctm.html">
-                                        <div class="card portfolio_box border-0">
+                                        <div class="card portfolio_box border-0" title="Travel & Expenses Management System">
                                             <div class="single_portfolio">
                                                 <img class="img-fluid w-100" src="./img/profile/tms.jpg" alt="">
                                             </div>
                                             <div class="short_info pb-3 px-2 text-center">
-                                                <h4>Travel & Expenses Management System</h4>
+                                                <!-- <h4>Travel & Expenses Management System</h4> -->
+                                                <h4>Travel Management System</h4>
                                             </div>
                                         </div>
                                     </a>
-                                    <div class="vr vr-blurry position-absolute my-4 h-50 d-none d-md-none d-lg-block top-0 end-0"> </div>
                                 </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center align-items-center animated fadeInUp">
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 my-lg-1 my-3 d-flex justify-content-center align-items-center">
                                     <a href="hms.html">
-                                        <div class="card portfolio_box border-0">
+                                        <div class="card portfolio_box border-0" title="Hotel Management System">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/hms.jpg" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <!-- <h4>Hotel Management System</h4> -->
+                                                <h4>Hotel Management System</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 my-lg-1 my-3 d-flex justify-content-center align-items-center">
+                                    <a href="vms.html">
+                                        <div class="card portfolio_box border-0" title="Visitors Management System">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/vms.jpg" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <!-- <h4>Visitors Management System</h4> -->
+                                                <h4>Visitors Management System</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 my-lg-1 my-3 d-flex justify-content-center align-items-center">
+                                    <a href="payroll.html">
+                                        <div class="card portfolio_box border-0" title="HRM & PayRoll">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/pms.png" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <h4>HRM &amp; PayRoll</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 my-lg-1 my-3 d-flex justify-content-center align-items-center">
+                                    <a >
+                                        <div class="card portfolio_box border-0" title="Day Book">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/day-book.png" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <h4>Day Book</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 my-lg-1 my-3 d-flex justify-content-center align-items-center">
+                                    <a href="fms.html">
+                                        <div class="card portfolio_box border-0" title="Fleet Management System">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/fms1.png" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <!-- <h4>Fleet Management System</h4> -->
+                                                <h4>Fleet Management System</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 my-lg-1 my-3 d-flex justify-content-center align-items-center">
+                                    <a href="ems.html">
+                                        <div class="card portfolio_box border-0" title="Event Management System">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/ems.jpg" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <!-- <h4>Event Management System</h4> -->
+                                                <h4>Event Management System</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 my-lg-1 my-3 d-flex justify-content-center align-items-center">
+                                    <a href="ssfinch.html">
+                                        <div class="card portfolio_box border-0" title="SkyFinch ERP">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/erp.jpg" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <h4>SkyFinch ERP</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 my-lg-1 my-3 d-flex justify-content-center align-items-center">
+                                    <a href="rms.html">
+                                        <div class="card portfolio_box border-0" title="Restaurant Management System">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/rms.png" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <!-- <h4>Restaurant Management System</h4> -->
+                                                <h4>Restaurant Management System</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 my-lg-1 my-3 d-flex justify-content-center align-items-center">
+                                    <a >
+                                        <div class="card portfolio_box border-0" title="Laboratory Management System">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/lab.png" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <h4>Laboratory Management System</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 my-lg-1 my-3 d-flex justify-content-center align-items-center">
+                                    <a href="crm.html">
+                                        <div class="card portfolio_box border-0" title="Customer Relationship Management">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/crm.jpg" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <h4>Customer Relationship Management</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 my-lg-1 my-3 d-flex justify-content-center align-items-center">
+                                    <a >
+                                        <div class="card portfolio_box border-0" title="Mail-merge">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/mms.jpg" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <h4>Mail-Merge</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 my-lg-1 my-3 d-flex justify-content-center align-items-center">
+                                    <a >
+                                        <div class="card portfolio_box border-0" title="Ticket Management System">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/tms1.png" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <h4>Ticket Management System</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 my-lg-1 my-3 d-flex justify-content-center align-items-center">
+                                    <a >
+                                        <div class="card portfolio_box border-0" title="Learning Management System">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/lms.png" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <h4>Learning Management System</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 my-lg-1 my-3 d-flex justify-content-center align-items-center">
+                                    <a >
+                                        <div class="card portfolio_box border-0" title="Asset Management System">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/ams1.png" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <h4>Asset Management System</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 my-lg-1 my-3 d-flex justify-content-center align-items-center">
+                                    <a >
+                                        <div class="card portfolio_box border-0" title="Attendance Management System">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/ams.png" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <h4>Attendance Management System</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-4 col-6 my-lg-1 my-3 d-flex justify-content-center align-items-center">
+                                    <a >
+                                        <div class="card portfolio_box border-0" title="Truck Entry Management System">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/truck.png" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <h4>Truck Management System</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Show All end -->
+                        <!-- show 1 start -->
+                        <div class="container product show1">
+                            <div class="row d-flex justify-content-start justify-content-md-center align-items-center">
+                                <div class="col-lg-2 col-md-4 col-6 my-lg-1 my-3 g-lg-2 py-1 g-3 mx-lg-1 d-flex justify-content-center">
+                                    <a href="sales.html" class="">
+                                        <div class="card portfolio_box border-0" title="Point of Sales">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/pos.jpg" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <h4>Point of Sales</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-6 my-lg-1 my-3 g-lg-2 py-1 g-3 mx-lg-1 d-flex justify-content-center">
+                                    <a href="hms.html" class="">
+                                        <div class="card portfolio_box border-0" title="Hotel Manangement System">
                                             <div class="single_portfolio">
                                                 <img class="img-fluid w-100" src="./img/profile/hms.jpg" alt="">
                                             </div>
@@ -917,89 +1135,22 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <div class="vr vr-blurry position-absolute my-4 h-50 d-none d-md-none d-lg-block top-0 end-0"> </div>
                                 </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center align-items-center animated fadeInUp">
-                                    <a href="vms.html">
-                                        <div class="card portfolio_box border-0">
-                                            <div class="single_portfolio">
-                                                <img class="img-fluid w-100" src="./img/profile/vms.jpg" alt="">
-                                            </div>
-                                            <div class="short_info pb-3 px-2 text-center">
-                                                <h4>Visitors Management System</h4>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div class="vr vr-blurry position-absolute my-4 h-50 d-none d-md-none d-lg-block top-0 end-0"> </div>
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center align-items-center animated fadeInUp">
-                                    <a href="payroll.html">
-                                        <div class="card portfolio_box border-0">
+                                <div class="col-lg-2 col-md-4 col-6 my-lg-1 my-3 g-lg-2 py-1 g-3 mx-lg-1 d-flex justify-content-center">
+                                    <a href="payroll.html" class="">
+                                        <div class="card portfolio_box border-0" title="HRM & PayRoll">
                                             <div class="single_portfolio">
                                                 <img class="img-fluid w-100" src="./img/profile/pms.png" alt="">
                                             </div>
                                             <div class="short_info pb-3 px-2 text-center">
-                                                <h4>HRM & PayRoll</h4>
+                                                <h4>HRM &amp; PayRoll</h4>
                                             </div>
                                         </div>
                                     </a>
-                                    <div class="vr vr-blurry position-absolute my-4 h-50 d-none d-md-none d-lg-block top-0 end-0"> </div>
                                 </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center align-items-center animated fadeInUp">
-                                    <div class="card portfolio_box border-0">
-                                        <div class="single_portfolio">
-                                            <img class="img-fluid w-100" src="./img/profile/day-book.png" alt="">
-                                        </div>
-                                        <div class="short_info pb-3 px-2 text-center">
-                                            <h4>Day Book</h4>
-                                        </div>
-                                    </div>
-                                    <!-- <div class="vr vr-blurry position-absolute my-4 h-50 d-none d-md-none d-lg-block top-0 end-0"> </div> -->
-                                </div>
-                                <!--  d-none d-md-none d-lg-block -->
-                                <hr class="hr hr-blurry old_act_tab2" />
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center align-items-center animated fadeInUp">
-                                    <a href="fms.html">
-                                        <div class="card portfolio_box border-0">
-                                            <div class="single_portfolio">
-                                                <img class="img-fluid w-100" src="./img/profile/fms1.png" alt="">
-                                            </div>
-                                            <div class="short_info pb-3 px-2 text-center">
-                                                <h4>Fleet Management System</h4>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div class="vr vr-blurry position-absolute my-4 h-50 d-none d-md-none d-lg-block top-0 end-0"> </div>
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center align-items-center animated fadeInUp">
-                                    <a href="ems.html">
-                                        <div class="card portfolio_box border-0">
-                                            <div class="single_portfolio">
-                                                <img class="img-fluid w-100" src="./img/profile/ems.jpg" alt="">
-                                            </div>
-                                            <div class="short_info pb-3 px-2 text-center">
-                                                <h4>Event Management System</h4>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div class="vr vr-blurry position-absolute my-4 h-50 d-none d-md-none d-lg-block top-0 end-0"> </div>
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center align-items-center animated fadeInUp">
-                                    <a href="ssfinch.html">
-                                        <div class="card portfolio_box border-0">
-                                            <div class="single_portfolio">
-                                                <img class="img-fluid w-100" src="./img/profile/ssfinch.png" alt="">
-                                            </div>
-                                            <div class="short_info pb-3 px-2 text-center">
-                                                <h4>Smart - SkyFinch</h4>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div class="vr vr-blurry position-absolute my-4 h-50 d-none d-md-none d-lg-block top-0 end-0"> </div>
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center align-items-center animated fadeInUp">
-                                    <a href="rms.html">
-                                        <div class="card portfolio_box border-0">
+                                <div class="col-lg-2 col-md-4 col-6 my-lg-1 my-3 g-lg-2 py-1 g-3 mx-lg-1 d-flex justify-content-center">
+                                    <a href="rms.html" class="">
+                                        <div class="card portfolio_box border-0" title="Restaurant Management System">
                                             <div class="single_portfolio">
                                                 <img class="img-fluid w-100" src="./img/profile/rms.png" alt="">
                                             </div>
@@ -1008,318 +1159,209 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <div class="vr vr-blurry position-absolute my-4 h-50 d-none d-md-none d-lg-block top-0 end-0"> </div>
                                 </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center align-items-center animated fadeInUp">
-                                    <div class="card portfolio_box border-0">
-                                        <div class="single_portfolio">
-                                            <img class="img-fluid w-100" src="./img/profile/lab.png" alt="">
-                                        </div>
-                                        <div class="short_info pb-3 px-2 text-center">
-                                            <h4>Laboratory Management System</h4>
-                                        </div>
-                                    </div>
-                                    <div class="vr vr-blurry position-absolute my-4 h-50 d-none d-md-none d-lg-block top-0 end-0"> </div>
-                                </div>
-                                <div class="col-lg-2 col-md-4 col-sm-4 col-6 d-flex justify-content-center align-items-center animated fadeInUp">
-                                    <a href="crm.html">
-                                        <div class="card portfolio_box border-0">
+                                <div class="col-lg-2 col-md-4 col-6 my-lg-1 my-3 g-lg-2 py-1 g-3 mx-lg-1 d-flex justify-content-center">
+                                    <a href="ems.html" class="">
+                                        <div class="card portfolio_box border-0" title="Event Management System">
                                             <div class="single_portfolio">
-                                                <img class="img-fluid w-100" src="./img/profile/crm.jpg" alt="">
+                                                <img class="img-fluid w-100" src="./img/profile/ems.jpg" alt="">
                                             </div>
                                             <div class="short_info pb-3 px-2 text-center">
-                                                <h4>CRM</h4>
+                                                <h4>Event Management System</h4>
                                             </div>
                                         </div>
                                     </a>
-                                    <!-- <div class="vr vr-blurry position-absolute my-4 h-50 d-none d-md-none d-lg-block top-0 end-0"> </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Show All end -->
-                        <!-- show 1 start -->
-                        <div class="col product show1">
-                            <div class="row d-flex justify-content-evenly align-items-center">
-                                <div class="col-lg-3 col-md-4 col-12 my-3 g-lg-2 py-1 g-3 mx-lg-1" data-aos-duration="1000" data-aos="fade-up">
-                                    <div class="row animated fadeInUp">
-                                        <div class="col-md-12 col-6 d-flex justify-content-center align-items-center">
-                                            <a href="sales.html">
-                                                <div class="card portfolio_box border-0">
-                                                    <div class="single_portfolio">
-                                                        <img class="img-fluid w-100" src="./img/profile/pos.jpg" alt="">
-                                                    </div>
-                                                    <div class="short_info pb-3 px-2 text-center">
-                                                        <h4>Point of Sales(POS)</h4>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-md-12 col-6 d-flex justify-content-center align-items-center">
-                                            <a href="hms.html">
-                                                <div class="card portfolio_box border-0">
-                                                    <div class="single_portfolio">
-                                                        <img class="img-fluid w-100" src="./img/profile/hms.jpg" alt="">
-                                                    </div>
-                                                    <div class="short_info pb-3 px-2 text-center">
-                                                        <h4>Hotel Management System</h4>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-12 my-3" data-aos-duration="1000" data-aos="fade-up">
-                                    <div class="row animated fadeInUp">
-                                        <div class="col-md-12 col-12 d-flex justify-content-center align-items-center">
-                                            <a href="payroll.html">
-                                                <div class="card portfolio_box border-0">
-                                                    <div class="single_portfolio">
-                                                        <img class="img-fluid w-100" src="./img/profile/pms.png" alt="">
-                                                    </div>
-                                                    <div class="short_info pb-3 px-2 text-center">
-                                                        <h4>HRM & PayRoll</h4>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-12 my-3" data-aos-duration="1000" data-aos="fade-up">
-                                    <div class="row animated fadeInUp">
-                                        <div class="col-md-12 col-6 d-flex justify-content-center align-items-center">
-                                            <a href="ems.html">
-                                                <div class="card portfolio_box border-0">
-                                                    <div class="single_portfolio">
-                                                        <img class="img-fluid w-100" src="./img/profile/ems.jpg" alt="">
-                                                    </div>
-                                                    <div class="short_info pb-3 px-2 text-center">
-                                                        <h4>Event Management System</h4>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-md-12 col-6 d-flex justify-content-center align-items-center">
-                                            <a href="rms.html">
-                                                <div class="card portfolio_box border-0">
-                                                    <div class="single_portfolio">
-                                                        <img class="img-fluid w-100" src="./img/profile/rms.png" alt="">
-                                                    </div>
-                                                    <div class="short_info pb-3 px-2 text-center">
-                                                        <h4>Restaurant Management System</h4>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                         <!-- show 1 end -->
                         <!-- show 2 start -->
-                        <div class="col product show2">
-                            <div class="row d-flex justify-content-evenly align-items-center">
-                                <div class="col-lg-3 col-md-4 col-12 my-lg-1 my-3 g-lg-2 py-1 g-3 mx-lg-1 animated fadeInUp" data-aos-duration="1000" data-aos="fade-up">
-                                    <div class="row animated fadeInUp">
-                                        <div class="col-md-12 col-6 d-flex justify-content-center align-items-center">
-                                            <a href="ctm.html">
-                                                <div class="card portfolio_box border-0">
-                                                    <div class="single_portfolio">
-                                                        <img class="img-fluid w-100" src="./img/profile/tms.jpg" alt="">
-                                                    </div>
-                                                    <div class="short_info pb-3 px-2 text-center">
-                                                        <h4>Travel & Expenses Management System</h4>
-                                                    </div>
-                                                </div>
-                                            </a>
+                        <div class="container product show2">
+                            <div class="row d-flex justify-content-start justify-content-md-center align-items-center">
+                                <div class="col-lg-2 col-md-4 col-6 my-lg-1 my-3 g-lg-2 py-1 g-3 mx-lg-1 d-flex justify-content-center">
+                                    <a href="ctm.html">
+                                        <div class="card portfolio_box border-0" title="Travel & Expenses Management System">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/tms.jpg" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <h4>Travel Management System</h4>
+                                            </div>
                                         </div>
-                                        <div class="col-md-12 col-6 d-flex justify-content-center align-items-center">
-                                            <a href="vms.html">
-                                                <div class="card portfolio_box border-0">
-                                                    <div class="single_portfolio">
-                                                        <img class="img-fluid w-100" src="./img/profile/vms.jpg" alt="">
-                                                    </div>
-                                                    <div class="short_info pb-3 px-2 text-center">
-                                                        <h4>Visitors Management System</h4>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
+                                    </a>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-12 my-lg-1 my-3 animated fadeInUp" data-aos-duration="1000" data-aos="fade-up">
-                                    <div class="row justify-content-center animated fadeInUp">
-                                        <div class="col-md-12 col-6 d-flex justify-content-center align-items-center">
-                                            <a href="ssfinch.html">
-                                                <div class="card portfolio_box mb-4 border-0">
-                                                    <div class="single_portfolio">
-                                                        <img class="img-fluid w-100" src="./img/profile/ssfinch.png" alt="">
-                                                    </div>
-                                                    <div class="short_info pb-lg-0 pb-3 px-2 text-center">
-                                                        <h4>Smart - SkyFinch</h4>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-md-12 col-6 d-flex justify-content-center align-items-center">
-                                            <a href="crm.html">
-                                                <div class="card portfolio_box mb-3 border-0">
-                                                    <div class="single_portfolio">
-                                                        <img class="img-fluid w-100" src="./img/profile/crm.jpg" alt="">
-                                                    </div>
-                                                    <div class="short_info pb-lg-0 pb-3 px-2 text-center">
-                                                        <h4>CRM</h4>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-md-12 col-6 d-flex justify-content-center align-items-center mm-response">
-                                            <div class="card portfolio_box mb-3 border-0">
-                                                <div class="single_portfolio">
-                                                    <img class="img-fluid w-100" src="./img/profile/mms.jpg" alt="">
-                                                </div>
-                                                <div class="short_info pb-lg-0 pb-3 px-2 text-center">
-                                                    <h4>Mail-merge Management System</h4>
-                                                </div>
+                                <div class="col-lg-2 col-md-4 col-6 my-lg-1 my-3 g-lg-2 py-1 g-3 mx-lg-1 d-flex justify-content-center">
+                                    <a href="vms.html">
+                                        <div class="card portfolio_box border-0" title="Visitors Management System">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/vms.jpg" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <h4>Visitors Management System</h4>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
-                                <div class="col-lg-3 col-md-4 col-12 my-lg-1 my-3 animated fadeInUp" data-aos-duration="1000" data-aos="fade-up">
-                                    <div class="row animated fadeInUp">
-                                        <div class="col-md-12 col-6 d-flex justify-content-center align-items-center">
-                                            <div class="card portfolio_box border-0">
-                                                <div class="single_portfolio">
-                                                    <img class="img-fluid w-100" src="./img/profile/tms1.png" alt="">
-                                                </div>
-                                                <div class="short_info pb-3 px-2 text-center">
-                                                    <h4>Ticket Management System</h4>
-                                                </div>
+                                <div class="col-lg-2 col-md-4 col-6 my-lg-1 my-3 g-lg-2 py-1 g-3 mx-lg-1 d-flex justify-content-center">
+                                    <a href="ssfinch.html">
+                                        <div class="card portfolio_box border-0" title="Smart - SkyFinch">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/ssfinch.png" alt="">
+                                            </div>
+                                            <div class="short_info py-2 px-2 text-center">
+                                                <h4>Smart - SkyFinch</h4>
                                             </div>
                                         </div>
-                                        <div class="col-md-12 col-6 d-flex justify-content-center align-items-center">
-                                            <div class="card portfolio_box border-0">
-                                                <div class="single_portfolio">
-                                                    <img class="img-fluid w-100" src="./img/profile/erp.jpg" alt="">
-                                                </div>
-                                                <div class="short_info pb-3 px-2 text-center">
-                                                    <h4>SkyFinch ERP</h4>
-                                                </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-6 my-lg-1 my-3 g-lg-2 py-1 g-3 mx-lg-1 d-flex justify-content-center">
+                                    <a href="crm.html">
+                                        <div class="card portfolio_box border-0" title="Customer Relationship Management">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/crm.jpg" alt="">
+                                            </div>
+                                            <div class="short_info py-2 px-2 text-center">
+                                                <h4>Customer Relationship Management</h4>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-6 my-lg-1 my-3 g-lg-2 py-1 g-3 mx-lg-1 d-flex justify-content-center">
+                                    <a>
+                                        <div class="card portfolio_box border-0" title="Mail-Merge">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/mms.jpg" alt="">
+                                            </div>
+                                            <div class="short_info py-2 px-2 text-center">
+                                                <h4>Mail-Merge</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-6 my-lg-1 my-3 g-lg-2 py-1 g-3 mx-lg-1 d-flex justify-content-center">
+                                    <a>
+                                        <div class="card portfolio_box border-0" title="Ticket Management System">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/tms1.png" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <h4>Ticket Management System</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-6 my-lg-1 my-3 g-lg-2 py-1 g-3 mx-lg-1 d-flex justify-content-center">
+                                    <a>
+                                        <div class="card portfolio_box border-0" title="SkyFinch ERP">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/erp.jpg" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <h4>SkyFinch ERP</h4>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <!-- show 2 end -->
                         <!-- show 3 start -->
-                        <div class="col product show3">
-                            <div class="row d-flex justify-content-evenly align-items-center g-3">
-                                <div class="col-lg-3 col-sm-4 col-6 mb-3 g-lg-2 py-1 g-3 mx-lg-1 animated fadeInUp" data-aos-duration="1000" data-aos="fade-up">
-                                    <div class="row animated fadeInUp">
-                                        <div class="col-12 d-flex justify-content-center align-items-center">
-                                            <div class="card portfolio_box border-0">
-                                                <div class="single_portfolio">
-                                                    <img class="img-fluid w-100" src="./img/profile/day-book.png" alt="">
-                                                </div>
-                                                <div class="short_info pb-3 px-2 text-center">
-                                                    <h4>Day Book</h4>
-                                                </div>
+                        <div class="container product show3">
+                            <div class="row d-flex justify-content-start justify-content-md-center align-items-center">
+                                <div class="col-lg-2 col-sm-4 col-6 my-lg-1 my-3 py-1 mx-lg-1 d-flex justify-content-center">
+                                    <a>
+                                        <div class="card portfolio_box border-0" title="Day Book">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/day-book.png" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <h4>Day Book</h4>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
-                                <div class="col-lg-3 col-sm-4 col-6 animated fadeInUp" data-aos-duration="1000" data-aos="fade-up">
-                                    <div class="row animated fadeInUp">
-                                        <div class="col-12 d-flex justify-content-center align-items-center">
-                                            <div class="card portfolio_box border-0">
-                                                <div class="single_portfolio">
-                                                    <img class="img-fluid w-100" src="./img/profile/ams.png" alt="">
-                                                </div>
-                                                <div class="short_info pb-3 px-2 text-center">
-                                                    <h4>Attendance Management System</h4>
-                                                </div>
+                                <div class="col-lg-2 col-sm-4 col-6 my-lg-1 my-3 py-1 mx-lg-1 d-flex justify-content-center">
+                                    <a>
+                                        <div class="card portfolio_box border-0" title="Attendance Management System">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/ams.png" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <h4>Attendance Management System</h4>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
-                                <div class="col-lg-3 col-sm-4 col-12 d-flex justify-content-center animated fadeInUp" data-aos-duration="1000" data-aos="fade-up">
-                                    <div class="row animated fadeInUp">
-                                        <div class="col-12 d-flex justify-content-center align-items-center">
-                                            <div class="card portfolio_box border-0">
-                                                <div class="single_portfolio">
-                                                    <img class="img-fluid w-100" src="./img/profile/lms.png" alt="">
-                                                </div>
-                                                <div class="short_info pb-3 px-2 text-center">
-                                                    <h4>Learning Management System</h4>
-                                                </div>
+                                <div class="col-lg-2 col-sm-4 col-6 my-lg-1 my-3 py-1 mx-lg-1 d-flex justify-content-center">
+                                    <a>
+                                        <div class="card portfolio_box border-0" title="Learning Management System">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/lms.png" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <h4>Learning Management System</h4>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <!-- show 3 end -->
                         <!-- show 4 start -->
-                        <div class="col product show4">
-                            <div class="row d-flex justify-content-evenly align-items-center">
-                                <div class="col-lg-3 col-4 mb-3 g-lg-2 py-1 g-3 one-md one-sm one-s mx-lg-1 animated fadeInUp" data-aos-duration="1000" data-aos="fade-up">
-                                    <div class="row animated fadeInUp">
-                                        <div class="col-12 d-flex justify-content-center align-items-center">
-                                            <a href="fms.html">
-                                                <div class="card portfolio_box border-0">
-                                                    <div class="single_portfolio">
-                                                        <img class="img-fluid w-100" src="./img/profile/fms1.png" alt="">
-                                                    </div>
-                                                    <div class="short_info pb-3 px-2 text-center">
-                                                        <h4>Fleet Management System</h4>
-                                                    </div>
-                                                </div>
-                                            </a>
+                        <div class="container product show4">
+                            <div class="row d-flex justify-content-start justify-content-md-center align-items-center">
+                                <div class="col-lg-2 col-sm-4 col-6 my-lg-1 my-3 py-1 mx-lg-1 d-flex justify-content-center">
+                                    <a href="fms.html">
+                                        <div class="card portfolio_box border-0" title="Fleet Management System">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/fms1.png" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <h4>Fleet Management System</h4>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
-                                <div class="col-lg-3 col-md-4 two-md two-sm two-s animated fadeInUp" data-aos-duration="1000" data-aos="fade-up">
-                                    <div class="row animated fadeInUp">
-                                        <div class="col-md-12 col-6 py-1 my-3 d-flex justify-content-center align-items-center">
-                                            <div class="card portfolio_box border-0">
-                                                <div class="single_portfolio">
-                                                    <img class="img-fluid w-100" src="./img/profile/lab.png" alt="">
-                                                </div>
-                                                <div class="short_info pb-3 px-2 text-center">
-                                                    <h4>Laboratory Management System</h4>
-                                                </div>
+                                <div class="col-lg-2 col-sm-4 col-6 my-lg-1 my-3 py-1 mx-lg-1 d-flex justify-content-center">
+                                    <a>
+                                        <div class="card portfolio_box border-0" title="Laboratory Management System">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/lab.png" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <h4>Laboratory Management System</h4>
                                             </div>
                                         </div>
-                                        <div class="col-md-12 col-6 py-1 my-4 d-flex justify-content-center align-items-center">
-                                            <div class="card portfolio_box border-0">
-                                                <div class="single_portfolio">
-                                                    <img class="img-fluid w-100" src="./img/profile/ams1.png" alt="">
-                                                </div>
-                                                <div class="short_info pb-3 px-2 text-center">
-                                                    <h4>Asset Management System</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </a>
                                 </div>
-                                <div class="col-lg-3 col-4 three-md three-sm three-s animated fadeInUp" data-aos-duration="1000" data-aos="fade-up">
-                                    <div class="row animated fadeInUp">
-                                        <div class="col-12 d-flex justify-content-center align-items-center">
-                                            <div class="card portfolio_box border-0">
-                                                <div class="single_portfolio">
-                                                    <img class="img-fluid" src="./img/profile/truck.png" alt="">
-                                                </div>
-                                                <div class="short_info pb-3 px-2 text-center">
-                                                    <h4>Truck Entry Management System</h4>
-                                                </div>
+                                <div class="col-lg-2 col-sm-4 col-6 my-lg-1 my-3 py-1 mx-lg-1 d-flex justify-content-center">
+                                    <a>
+                                        <div class="card portfolio_box border-0" title="Asset Management System">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid w-100" src="./img/profile/ams1.png" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <h4>Asset Management System</h4>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-2 col-sm-4 col-6 my-lg-1 my-3 py-1 mx-lg-1 d-flex justify-content-center">
+                                    <a>
+                                        <div class="card portfolio_box border-0" title="Truck Entry Management System">
+                                            <div class="single_portfolio">
+                                                <img class="img-fluid" src="./img/profile/truck.png" alt="">
+                                            </div>
+                                            <div class="short_info pb-3 px-2 text-center">
+                                                <h4>Truck Management System</h4>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <!-- show 4 end -->
-                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
         </div>
@@ -1521,7 +1563,9 @@
                     <div class="row justify-content-evenly align-items-center mb-md-2 mb-3">
                         <div class="col-lg-2 col-1 px-0 d-flex justify-content-center align-items-center"> <i class="fa fa-map-marker-alt"></i> </div>
                         <div class="col-lg-10 col-md-10 col-10 px-0">
-                            <a href="https://maps.app.goo.gl/G9iaTsP1LYKNSyL77" target="_blank" rel="noopener noreferrer"><p class="mb-2 text-light"> 5, Republic Street, Reddiarpalayam, <br />Puducherry-605 010, India </p></a>
+                            <a href="https://maps.app.goo.gl/G9iaTsP1LYKNSyL77" target="_blank" rel="noopener noreferrer">
+                                <p class="mb-2 text-light"> 5, Republic Street, Reddiarpalayam, <br />Puducherry-605 010, India </p>
+                            </a>
                         </div>
                     </div>
                     <div class="row justify-content-evenly align-items-center mb-md-2 mb-3">
@@ -1546,7 +1590,7 @@
                     <a class="btn btn-link" href="index.html">Home</a>
                     <a class="btn btn-link" href="service.html">Services</a>
                     <a class="btn btn-link" href="about.html">About Us</a>
-                    <a class="btn btn-link" href="profile.html">Profile</a>
+                    <a class="btn btn-link" href="#">Profile</a>
                 </div>
                 <div class="col-xl-2 col-lg-3 col-md-6 col-12 mb-lg-0 mb-4 mt-5 mt-lg-5">
                     <h4 class="text-white mb-4 fit-content-text border-bottom border-primary"> Discover </h4>
@@ -1643,7 +1687,8 @@
                 $('.all1').removeClass('extra');
                 $('#portfolio .portfolio-filter ul li.filter_tab').on('click', function () {
                     $('#portfolio hr.hr-blurry').addClass('old_act_tab1');
-                    $('.all1').addClass('extra');
+                    // $('.all1').addClass('extra');
+                    $('.all1').removeClass('extra');
                     $('#portfolio hr.hr-blurry').removeClass('act_tab');
                     $('#portfolio hr.hr-blurry').removeClass('old_act_tab');
                 });
@@ -1656,6 +1701,10 @@
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             }
         });
         var swiper3 = new Swiper(".mySwiper3", {

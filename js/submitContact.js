@@ -227,6 +227,7 @@
     $("#closePopup2").on('click', function () {
         popup.classList.remove("open-popup");
         document.contactus.reset();
+        $("#contactSub").prop('disabled', false);
     });
     function contactSub() {
         let contact_Name = document.querySelector("#contactName").value;
@@ -238,7 +239,10 @@
         document.querySelector(".sub-popup p").innerHTML = "Successfully submitted.<br>We will response SOON.<br>Thank you so much!";
         popup.classList.add("open-popup");
         if (popup.classList.contains("open-popup")) {
-            document.querySelector("#closePopup2").focus();
+            $('#contactSub').prop('disabled', true);
+            setTimeout(function () {
+                $('#closePopup2').focus();
+            }, 100);
         }
         const body = `
             <center>
@@ -306,12 +310,13 @@
         if (($("#contactus").valid()) && (emailValid()) && (MobileNum()) && (validateName() === true) && (validateSubject() === true)) {
             if (SubmitFlag === true){
                 contactSub();
+                SubmitFlag = false;
             }
         }
         else {
             focusNextEmptyField();
+            SubmitFlag = true;
         }
-        SubmitFlag = false;
     });
 
 })(jQuery);

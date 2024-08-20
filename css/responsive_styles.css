@@ -750,10 +750,6 @@
         background-position-x: 42% !important;
     }
 
-    .portfolio-grid {
-        max-height: 63rem !important;
-    }
-
     .img-pdt {
         width: 100%;
         height: 390px;
@@ -797,16 +793,12 @@
 
     /* point of sales responsive */
     .border-pos {
-        width: 220px !important;
+        /* width: 220px !important; */
         transform: translateX(1.5rem) translateY(-1rem) !important;
     }
 
     .border-pos:hover {
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
-    }
-
-    .border-pos h1 {
-        font-size: 1.505rem;
     }
 
     .bg-12 {
@@ -898,16 +890,6 @@
         padding-left: 19px !important;
     }
 
-    #module_card #card::before {
-        right: 60px;
-    }
-
-    #module_card #card:has(> .card:hover)::before,
-    #module_card #card:has(> .card:active)::before {
-        right: -8px;
-        bottom: -15px;
-    }
-
     .offer1,
     .offer {
         transform: rotate(319deg) translateX(-45px) translateY(-27px) !important;
@@ -928,11 +910,6 @@
 
     .border-hms:hover {
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
-    }
-
-    .border-hms h1 {
-        font-size: 1.05rem;
-        padding-top: 5px;
     }
 
     .li-hms,
@@ -956,12 +933,6 @@
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
     }
 
-    .border-rms h1 {
-        font-size: 0.895rem;
-        font-weight: 100;
-        padding-top: 5px;
-    }
-
     .li-rms,
     li>.li-rms {
         font-size: 0.605rem !important;
@@ -983,12 +954,6 @@
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
     }
 
-    .border-ssfinch h1 {
-        font-size: 1.05rem;
-        font-weight: 100;
-        padding-top: 5px;
-    }
-
     .li-ssfinch,
     li>.li-ssfinch {
         font-size: 0.605rem !important;
@@ -1008,13 +973,6 @@
 
     .border-vms:hover {
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
-    }
-
-    .border-vms h1 {
-        font-size: 1rem;
-        font-weight: 100;
-        padding-top: 5px;
-        padding-right: 3px;
     }
 
     .li-vms,
@@ -1039,13 +997,6 @@
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
     }
 
-    .border-crm h1 {
-        font-size: 1.505rem;
-        font-weight: 100;
-        padding-top: 5px;
-        padding-right: 3px;
-    }
-
     .li-crm,
     li>.li-crm {
         font-size: 0.605rem !important;
@@ -1066,13 +1017,6 @@
 
     .border-ctm:hover {
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
-    }
-
-    .border-ctm h1 {
-        font-size: 1.05rem;
-        font-weight: 100;
-        padding-top: 5px;
-        padding-right: 3px;
     }
 
     .li-ctm,
@@ -1097,13 +1041,6 @@
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
     }
 
-    .border-fms h1 {
-        font-size: 1.05rem;
-        font-weight: 100;
-        padding-top: 5px;
-        padding-right: 3px;
-    }
-
     .li-fms,
     li>.li-fms {
         font-size: 0.605rem !important;
@@ -1124,13 +1061,6 @@
 
     .border-ems:hover {
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
-    }
-
-    .border-ems h1 {
-        font-size: 1.05rem;
-        font-weight: 100;
-        padding-top: 5px;
-        padding-right: 3px;
     }
 
     .li-ems,
@@ -1155,13 +1085,6 @@
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
     }
 
-    .border-pms h1 {
-        font-size: 1.05rem;
-        font-weight: 100;
-        padding-top: 5px;
-        padding-right: 3px;
-    }
-
     .li-pms,
     li>.li-pms {
         font-size: 0.605rem !important;
@@ -1182,13 +1105,6 @@
 
     .border-sales:hover {
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
-    }
-
-    .border-sales h1 {
-        font-size: 1.05rem;
-        font-weight: 100;
-        padding-top: 5px;
-        padding-right: 3px;
     }
 
     .li-sales,
@@ -2070,10 +1986,6 @@
         height: 600px !important;
     }
 
-    .portfolio-grid {
-        max-height: 61rem !important;
-    }
-
     .img-pdt {
         width: 100%;
         height: 390px;
@@ -2118,16 +2030,12 @@
     /* point of sales responsive */
     .border-pos {
         display: flex;
-        width: 220px !important;
+        /* width: 220px !important; */
         transform: translateX(1.5rem) translateY(-1rem);
     }
 
     .border-pos:hover {
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
-    }
-
-    .border-pos h1 {
-        font-size: 1.505rem;
     }
 
     .bg-12 {
@@ -2219,16 +2127,6 @@
         padding-left: 19px !important;
     }
 
-    #module_card #card::before {
-        right: 60px;
-    }
-
-    #module_card #card:has(> .card:hover)::before,
-    #module_card #card:has(> .card:active)::before {
-        right: -5px;
-        bottom: -20px;
-    }
-
     .offer1,
     .offer {
         transform: rotate(319deg) translateX(-45px) translateY(-27px) !important;
@@ -2248,11 +2146,6 @@
 
     .border-hms:hover {
         transform: translateX(1rem) translateY(-1.5rem) !important;
-    }
-
-    .border-hms h1 {
-        font-size: 1.305rem;
-        padding-top: 5px;
     }
 
     .li-hms,
@@ -2276,12 +2169,6 @@
         transform: translateX(1rem) translateY(-1.5rem) !important;
     }
 
-    .border-rms h1 {
-        font-size: 1.05rem;
-        font-weight: 100;
-        padding-top: 5px;
-    }
-
     .li-rms,
     li>.li-rms {
         font-size: 0.605rem !important;
@@ -2303,12 +2190,6 @@
         transform: translateX(1rem) translateY(-1.5rem) !important;
     }
 
-    .border-ssfinch h1 {
-        font-size: 1.505rem;
-        font-weight: 100;
-        padding-top: 5px;
-    }
-
     .li-ssfinch,
     li>.li-ssfinch {
         font-size: 0.605rem !important;
@@ -2328,13 +2209,6 @@
 
     .border-vms:hover {
         transform: translateX(1rem) translateY(-1.5rem) !important;
-    }
-
-    .border-vms h1 {
-        font-size: 1.205rem;
-        font-weight: 100;
-        padding-top: 5px;
-        padding-right: 3px;
     }
 
     .li-vms,
@@ -2359,13 +2233,6 @@
         transform: translateX(1rem) translateY(-1.5rem) !important;
     }
 
-    .border-crm h1 {
-        font-size: 1.905rem;
-        font-weight: 100;
-        padding-top: 5px;
-        padding-right: 3px;
-    }
-
     .li-crm,
     li>.li-crm {
         font-size: 0.605rem !important;
@@ -2386,13 +2253,6 @@
 
     .border-ctm:hover {
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
-    }
-
-    .border-ctm h1 {
-        font-size: 1.205rem;
-        font-weight: 100;
-        padding-top: 5px;
-        padding-right: 3px;
     }
 
     .li-ctm,
@@ -2417,13 +2277,6 @@
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
     }
 
-    .border-fms h1 {
-        font-size: 1.405rem;
-        font-weight: 100;
-        padding-top: 5px;
-        padding-right: 3px;
-    }
-
     .li-fms,
     li>.li-fms {
         font-size: 0.605rem !important;
@@ -2444,13 +2297,6 @@
 
     .border-ems:hover {
         transform: translateX(1rem) translateY(-1.5rem) !important;
-    }
-
-    .border-ems h1 {
-        font-size: 1.205rem;
-        font-weight: 100;
-        padding-top: 5px;
-        padding-right: 3px;
     }
 
     .li-ems,
@@ -2475,13 +2321,6 @@
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
     }
 
-    .border-pms h1 {
-        font-size: 1.205rem;
-        font-weight: 100;
-        padding-top: 5px;
-        padding-right: 3px;
-    }
-
     .li-pms,
     li>.li-pms {
         font-size: 0.605rem !important;
@@ -2502,13 +2341,6 @@
 
     .border-sales:hover {
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
-    }
-
-    .border-sales h1 {
-        font-size: 1.405rem;
-        font-weight: 100;
-        padding-top: 5px;
-        padding-right: 3px;
     }
 
     .li-sales,
@@ -3418,10 +3250,6 @@
         background-position: 42% !important;
     }
 
-    .portfolio-grid {
-        max-height: 60rem !important;
-    }
-
     .mm-response {
         top: 2rem !important;
     }
@@ -3496,16 +3324,12 @@
     /* point of sales responsive */
     .border-pos {
         display: flex;
-        width: 220px !important;
+        /* width: 220px !important; */
         transform: translateX(1.5rem) translateY(-1rem);
     }
 
     .border-pos:hover {
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
-    }
-
-    .border-pos h1 {
-        font-size: 1.505rem;
     }
 
     .bg-12 {
@@ -3597,16 +3421,6 @@
         padding-left: 19px !important;
     }
 
-    #module_card #card::before {
-        right: 60px;
-    }
-
-    #module_card #card:has(> .card:hover)::before,
-    #module_card #card:has(> .card:active)::before {
-        right: 0;
-        bottom: -20px;
-    }
-
     .offer1,
     .offer {
         transform: rotate(319deg) translateX(-45px) translateY(-27px) !important;
@@ -3626,11 +3440,6 @@
 
     .border-hms:hover {
         transform: translateX(1rem) translateY(-1.5rem) !important;
-    }
-
-    .border-hms h1 {
-        font-size: 1.505rem;
-        padding-top: 5px;
     }
 
     .li-hms,
@@ -3654,12 +3463,6 @@
         transform: translateX(1rem) translateY(-1.5rem) !important;
     }
 
-    .border-rms h1 {
-        font-size: 1.205rem;
-        font-weight: 100;
-        padding-top: 5px;
-    }
-
     .li-rms,
     li>.li-rms {
         font-size: 0.605rem !important;
@@ -3681,12 +3484,6 @@
         transform: translateX(1rem) translateY(-1.5rem) !important;
     }
 
-    .border-ssfinch h1 {
-        font-size: 1.505rem;
-        font-weight: 100;
-        padding-top: 5px;
-    }
-
     .li-ssfinch,
     li>.li-ssfinch {
         font-size: 0.605rem !important;
@@ -3706,13 +3503,6 @@
 
     .border-vms:hover {
         transform: translateX(1rem) translateY(-1.5rem) !important;
-    }
-
-    .border-vms h1 {
-        font-size: 1.455rem;
-        font-weight: 100;
-        padding-top: 5px;
-        padding-right: 3px;
     }
 
     .li-vms,
@@ -3737,13 +3527,6 @@
         transform: translateX(1rem) translateY(-1.5rem) !important;
     }
 
-    .border-crm h1 {
-        font-size: 2.95rem;
-        font-weight: 100;
-        padding-top: 5px;
-        padding-right: 3px;
-    }
-
     .li-crm,
     li>.li-crm {
         font-size: 0.605rem !important;
@@ -3764,13 +3547,6 @@
 
     .border-ctm:hover {
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
-    }
-
-    .border-ctm h1 {
-        font-size: 1.455rem;
-        font-weight: 100;
-        padding-top: 5px;
-        padding-right: 3px;
     }
 
     .li-ctm,
@@ -3795,13 +3571,6 @@
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
     }
 
-    .border-fms h1 {
-        font-size: 1.505rem;
-        font-weight: 100;
-        padding-top: 5px;
-        padding-right: 3px;
-    }
-
     .li-fms,
     li>.li-fms {
         font-size: 0.605rem !important;
@@ -3822,13 +3591,6 @@
 
     .border-ems:hover {
         transform: translateX(1rem) translateY(-1.5rem) !important
-    }
-
-    .border-ems h1 {
-        font-size: 1.505rem;
-        font-weight: 100;
-        padding-top: 5px;
-        padding-right: 3px;
     }
 
     .li-ems,
@@ -3853,13 +3615,6 @@
         transform: translateX(1.5rem) translateY(-1.5rem) !important
     }
 
-    .border-pms h1 {
-        font-size: 1.405rem;
-        font-weight: 100;
-        padding-top: 5px;
-        padding-right: 3px;
-    }
-
     .li-pms,
     li>.li-pms {
         font-size: 0.605rem !important;
@@ -3880,13 +3635,6 @@
 
     .border-sales:hover {
         transform: translateX(1.5rem) translateY(-1.5rem) !important
-    }
-
-    .border-sales h1 {
-        font-size: 1.505rem;
-        font-weight: 100;
-        padding-top: 5px;
-        padding-right: 3px;
     }
 
     .li-sales,
@@ -4497,7 +4245,7 @@
 
     #prod_sec_2 .show1 .card,
     #prod_sec_2 .show2 .card {
-        height: auto !important;
+        height: 155px !important;
     }
 
     .show1 .cube,
@@ -4564,7 +4312,7 @@
     }
 
     .mm-response {
-        top: 2rem !important;
+        top: 1rem !important;
     }
 
     .page-banner.home-banner {
@@ -4686,10 +4434,6 @@
 
     #product_land {
         margin-top: 55px !important;
-    }
-
-    .portfolio-grid {
-        max-height: 40rem !important;
     }
 
     .img-pdt {
@@ -4868,16 +4612,12 @@
     /* point of sales responsive */
     .border-pos {
         display: flex;
-        width: 22rem !important;
+        /* width: 22rem !important; */
         transform: translateX(1.5rem) translateY(-1rem) !important;
     }
 
     .border-pos:hover {
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
-    }
-
-    .border-pos h1 {
-        font-size: 2.505rem;
     }
 
     .btn-pq {
@@ -4945,18 +4685,8 @@
     }
 
     #module_card .card {
-        width: 70%;
+        width: 100%;
         /* max-width: 350px !important; */
-    }
-
-    #module_card #card::before {
-        right: 150px;
-    }
-
-    #module_card #card:has(> .card:hover)::before,
-    #module_card #card:has(> .card:active)::before {
-        right: 70px;
-        bottom: -20px;
     }
 
     #hotel_land {
@@ -4969,11 +4699,6 @@
 
     .border-hms:hover {
         transform: translateX(2rem) translateY(-1.5rem) !important;
-    }
-
-    .border-hms h1 {
-        font-size: 1.905rem;
-        padding-top: 5px;
     }
 
     .li-hms,
@@ -4997,11 +4722,6 @@
         transform: translateX(2rem) translateY(-1.5rem) !important;
     }
 
-    .border-rms h1 {
-        font-size: 1.505rem;
-        padding-top: 5px;
-    }
-
     .li-rms,
     li>.li-rms {
         font-size: 0.905rem !important;
@@ -5021,11 +4741,6 @@
 
     .border-ssfinch:hover {
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
-    }
-
-    .border-ssfinch h1 {
-        font-size: 1.505rem;
-        padding-top: 5px;
     }
 
     .li-ssfinch,
@@ -5049,11 +4764,6 @@
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
     }
 
-    .border-vms h1 {
-        font-size: 1.505rem;
-        padding-top: 5px;
-    }
-
     .li-vms,
     li>.li-vms {
         font-size: 0.905rem !important;
@@ -5073,11 +4783,6 @@
 
     .border-crm:hover {
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
-    }
-
-    .border-crm h1 {
-        font-size: 2.505rem !important;
-        padding-top: 5px;
     }
 
     .li-crm,
@@ -5101,11 +4806,6 @@
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
     }
 
-    .border-ctm h1 {
-        font-size: 2.05rem;
-        padding-top: 5px;
-    }
-
     .li-ctm,
     li>.li-ctm {
         font-size: 0.905rem !important;
@@ -5125,11 +4825,6 @@
 
     .border-fms:hover {
         transform: translateX(1.5rem) translateY(-1.5rem);
-    }
-
-    .border-fms h1 {
-        font-size: 2.05rem;
-        padding-top: 5px;
     }
 
     .li-fms,
@@ -5153,11 +4848,6 @@
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
     }
 
-    .border-ems h1 {
-        font-size: 2.05rem;
-        padding-top: 5px;
-    }
-
     .li-ems,
     li>.li-ems {
         font-size: 0.905rem !important;
@@ -5179,11 +4869,6 @@
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
     }
 
-    .border-pms h1 {
-        font-size: 2.05rem;
-        padding-top: 5px;
-    }
-
     .li-pms,
     li>.li-pms {
         font-size: 0.905rem !important;
@@ -5203,11 +4888,6 @@
 
     .border-sales:hover {
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
-    }
-
-    .border-sales h1 {
-        font-size: 2.05rem;
-        padding-top: 5px;
     }
 
     .li-sales,
@@ -5356,6 +5036,11 @@
 
     .policy_tab_cp {
         height: auto !important;
+    }
+
+    .portfolio_box.card {
+        width: calc(145px + 3.5vw) !important;
+        height: 150px !important;
     }
 }
 
@@ -5898,10 +5583,6 @@
         margin-top: 50px !important;
     }
 
-    .portfolio-grid {
-        max-height: 43rem !important;
-    }
-
     .img-pdt {
         width: 100%;
         height: 390px;
@@ -5913,16 +5594,6 @@
         font-weight: 300;
         padding-top: 5px;
         padding-right: 2px;
-    }
-
-    /* Sub_pages responsive Start */
-
-    #card.cards_dot {
-        width: 372px !important;
-    }
-
-    #module_card #card::before {
-        display: none;
     }
 
     .bg-00 .facts {
@@ -6089,16 +5760,12 @@
     }
 
     .border-pos {
-        width: 22rem !important;
+        /* width: 22rem !important; */
         transform: translateX(1.5rem) translateY(-1rem) !important;
     }
 
     .border-pos:hover {
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
-    }
-
-    .border-pos h1 {
-        font-size: 2.505rem;
     }
 
     #module_card .card {
@@ -6122,11 +5789,6 @@
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
     }
 
-    .border-hms h1 {
-        font-size: 1.905rem;
-        padding-top: 5px;
-    }
-
     .li-hms,
     li>.li-hms {
         font-size: 0.905rem !important;
@@ -6146,11 +5808,6 @@
 
     .border-rms:hover {
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
-    }
-
-    .border-rms h1 {
-        font-size: 1.905rem;
-        padding-top: 5px;
     }
 
     .li-rms,
@@ -6175,11 +5832,6 @@
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
     }
 
-    .border-ssfinch h1 {
-        font-size: 2.205rem;
-        padding-top: 5px;
-    }
-
     .li-ssfinch,
     li>.li-ssfinch {
         font-size: 0.905rem !important;
@@ -6200,11 +5852,6 @@
 
     .border-vms:hover {
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
-    }
-
-    .border-vms h1 {
-        font-size: 2.105rem;
-        padding-top: 5px;
     }
 
     .li-vms,
@@ -6229,11 +5876,6 @@
         transform: translateX(2rem) translateY(-1.5rem) !important;
     }
 
-    .border-crm h1 {
-        font-size: 2.905rem !important;
-        padding-top: 5px;
-    }
-
     .li-crm,
     li>.li-crm {
         font-size: 0.905rem !important;
@@ -6254,11 +5896,6 @@
 
     .border-ctm:hover {
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
-    }
-
-    .border-ctm h1 {
-        font-size: 2.05rem;
-        padding-top: 5px;
     }
 
     .li-ctm,
@@ -6283,11 +5920,6 @@
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
     }
 
-    .border-fms h1 {
-        font-size: 2.505rem;
-        padding-top: 5px;
-    }
-
     .li-fms,
     li>.li-fms {
         font-size: 0.905rem !important;
@@ -6308,11 +5940,6 @@
 
     .border-ems:hover {
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
-    }
-
-    .border-ems h1 {
-        font-size: 2.505rem;
-        padding-top: 5px;
     }
 
     .li-ems,
@@ -6337,11 +5964,6 @@
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
     }
 
-    .border-pms h1 {
-        font-size: 2.505rem;
-        padding-top: 5px;
-    }
-
     .li-pms,
     li>.li-pms {
         font-size: 0.905rem !important;
@@ -6362,11 +5984,6 @@
 
     .border-sales:hover {
         transform: translateX(1.5rem) translateY(-1.5rem) !important;
-    }
-
-    .border-sales h1 {
-        font-size: 2.505rem;
-        padding-top: 5px;
     }
 
     .li-sales,
@@ -6485,6 +6102,11 @@
 
     .policy_tab_cp {
         height: auto !important;
+    }
+
+    .portfolio_box.card {
+        width: calc(145px + 3.5vw) !important;
+        height: 150px !important;
     }
 }
 
@@ -6905,10 +6527,6 @@
         margin-top: 55px !important;
     }
 
-    .portfolio-grid {
-        max-height: 22rem !important;
-    }
-
     .portfolio_box.card {
         margin-bottom: 1rem !important;
     }
@@ -6937,9 +6555,6 @@
     }
 
     /* Sub_pages responsive Start */
-    #module_card #card::before {
-        display: none !important;
-    }
 
     .bg-00 .facts {
         margin-top: 0px !important;
@@ -7272,7 +6887,7 @@
 
     .border-ssfinch {
         position: absolute;
-        width: 25rem !important;
+        /* width: 25rem !important; */
         left: 0 !important;
         bottom: 0 !important;
         transform: translateX(2rem) translateY(-1rem) !important;
@@ -7851,12 +7466,6 @@
         /* top: 2rem; */
     }
 
-    #module_card #card:has(> .card:hover)::before,
-    #module_card #card:has(> .card:active)::before {
-        right: 8px;
-        bottom: -45px;
-    }
-
     ul.pt-0 {
         padding-left: 25px !important;
         padding-right: 30px !important;
@@ -8187,12 +7796,12 @@
         width: 80%;
     }
 
-    #home_skyfinch .caro-caption p {
+    /* #home_skyfinch .caro-caption p {
         font-size: large;
-    }
+    } */
 
     #home_skyfinch .caro-caption h1 {
-        font-size: 5rem !important;
+        font-size: 4rem !important;
     }
 
     #home_skyfinch .caro-caption {
@@ -8266,8 +7875,8 @@
     }
 
     #home_skyfinch .caro-caption a {
-        font-size: 1.2rem;
-        padding: 1rem 0.8rem !important;
+        font-size: 1.15rem;
+        /* padding: 1rem 0.8rem !important; */
     }
 
     #about_Awards .container {
@@ -8612,6 +8221,14 @@
         position: relative !important;
         top: 0 !important;
     }
+
+    .carousel-indicators {
+        bottom: 0 !important;
+    }
+
+    #profile_sec2_1 .mySwiper2 {
+        padding: 1rem 3rem !important;
+    }
 }
 
 /* 4K Big Screen */
@@ -8705,8 +8322,8 @@
 
     #module_card #card:has(> .card:hover)::before,
     #module_card #card:has(> .card:active)::before {
-        right: 240px;
-        bottom: -25px;
+        right: 210px;
+        bottom: -30px;
     }
 
     /* Style page responsive End */
@@ -8714,6 +8331,10 @@
     .page-banner.home-banner {
         margin-top: 100px;
         height: 440px;
+    }
+
+    .carousel-indicators {
+        bottom: 3rem !important;
     }
 }
 
@@ -8828,6 +8449,26 @@
         }
     }
 
+    .show2.product {
+        top: 0;
+    }
+
+}
+
+@media (min-width:1025px) and (max-width:1200px) {
+
+    .portfolio_box.card {
+        width: calc(150px + 1vw);
+        height: 140px;
+    }
+
+    #prod_sec_2 {
+        & .conMove {
+            position: relative;
+            top: 0;
+            transform: translateY(0rem);
+        }
+    }
 }
 
 @media (min-width: 992px) {
@@ -9082,6 +8723,26 @@
     #contact_form iframe {
         height: 350px !important;
     }
+
+    #module_card #card::before {
+        display: none;
+    }
+
+    .portfolio_box.card {
+        width: calc(120px + 3.5vw);
+        height: 160px;
+    }
+
+    #profile_sec2_1 .swiper-button-next{
+        position: relative;
+        left: 60% !important;
+        top: 2.35rem !important;
+    }
+
+    #profile_sec2_1 .swiper-button-prev {
+        left: 25% !important;
+        position: relative;
+    }
 }
 
 @media (max-width: 767px) {
@@ -9213,7 +8874,8 @@
         transform: translateY(0.5rem);
     }
 
-    #prod_sec_2 .show3 {
+    #prod_sec_2 .show3,
+    #prod_sec_2 .show4 {
         position: relative;
         top: 0;
         transform: translateY(0rem);
@@ -9327,6 +8989,50 @@
     .tabPane_img img {
         height: 260px !important;
     }
+
+    .border-pos h1 {
+        font-size: calc(1.15rem + 2vw);
+    }
+
+    .border-hms h1 {
+        font-size: calc(0.50rem + 3vw);
+    }
+
+    .border-rms h1 {
+        font-size: calc(0.28rem + 3vw);
+    }
+
+    .border-ssfinch h1 {
+        font-size: calc(1.15rem + 2vw);
+    }
+
+    .border-vms h1 {
+        font-size: calc(0.35rem + 3vw);
+    }
+
+    .border-crm h1 {
+        font-size: calc(1.15rem + 3vw);
+    }
+
+    .border-ctm h1 {
+        font-size: calc(0.45rem + 3vw);
+    }
+
+    .border-ems h1 {
+        font-size: calc(0.45rem + 3vw);
+    }
+
+    .border-fms h1 {
+        font-size: calc(0.45rem + 3vw);
+    }
+
+    .border-pms h1 {
+        font-size: calc(0.62rem + 2vw);
+    }
+
+    .border-sales h1 {
+        font-size: calc(0.82rem + 2vw);
+    }
 }
 
 @media (min-width:769px) and (max-width:1215px) {
@@ -9388,6 +9094,23 @@
             height: inherit;
         }
 
+    }
+}
+
+@media (min-width:992px) and (max-width:1024px) {
+    .portfolio_box.card {
+        width: calc(140px + 1vw);
+        height: 150px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1366px) {
+    #profile_sec2_1 .swiper-button-next{
+        right: 3rem !important;
+    }
+
+    #profile_sec2_1 .swiper-button-prev {
+        left: 3rem !important;
     }
 }
 

@@ -42,8 +42,13 @@
         samt <= 10 ? samt++ : AOS.refresh();
     });
     //<!-- Tooltip bootstrap 5.3 -->
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl, {
+            trigger: 'hover',
+            container: 'body'
+        });
+    });
     // Spinner
     var spinner = function () {
         setTimeout(() => {
@@ -379,10 +384,12 @@
     // fixed Navbar
     $(window).scroll(function () {
         if ($(this).scrollTop() > 45) {
-            $('.vw-nav').addClass('fixed-top animated slideInDown');
+            $('.vw-nav').addClass('fixed-top animated slideInDown faster');
+            $('.vw-nav-full').removeClass('animated slideInDown faster');
             $(document).find('.dropdown--menu, .dropdown--menu-01').css("top", "65px");
         } else {
-            $('.vw-nav').removeClass('fixed-top animated slideInDown');
+            $('.vw-nav').removeClass('fixed-top animated slideInDown faster');
+            $('.vw-nav-full').addClass('animated slideInDown faster');
             $(document).find('.dropdown--menu, .dropdown--menu-01').css("top", "100px");
         }
     });
@@ -686,6 +693,28 @@
         // Bind the click and touchstart events to the button
         $('#fullscreenBtn').on('click touchstart', handleClickOrTouch);
 
+        function redirectToGmail(event) {
+            event.preventDefault();
+            const composeUrl = 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@skyfinch.com';
+            const signInUrl = 'https://accounts.google.com/ServiceLogin?continue=' + encodeURIComponent(composeUrl);
+            window.open(signInUrl, '_blank');
+        }
+        function setupRedirects() {
+            const anchors = document.querySelectorAll('a[href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@skyfinch.com"]');
+
+            anchors.forEach(anchor => {
+                anchor.addEventListener('click', redirectToGmail);
+            });
+        }
+        setupRedirects();
+
+        // Full force to reload
+        if (!localStorage.getItem('reloaded')) {
+            localStorage.setItem('reloaded', 'true');
+            window.location.reload();
+        } else {
+            localStorage.removeItem('reloaded');
+        }
     });
 })(jQuery);
 //  Product Enquiry form automatically fill plan price

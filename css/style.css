@@ -623,8 +623,9 @@ input[type=number]::-webkit-outer-spin-button {
     position: relative;
     background-image: url(../img/contact.jpg);
     width: 100%;
-    height: 100%;
-    background-position: 10% 5%;
+    height: inherit;
+    padding-bottom: 480px;
+    background-position: 10% 25%;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 8px;
@@ -1024,7 +1025,7 @@ h6,
     display: none;
     background-color: #f6f8ff !important;
     position: fixed;
-    height: 350px;
+    height: 320px;
     top: 100px;
 }
 
@@ -1033,7 +1034,7 @@ h6,
     background: #6f8cff;
     background-position: center;
     background-size: cover;
-    height: 350px;
+    height: 320px;
 }
 
 .banner-bg--center {
@@ -1101,7 +1102,8 @@ h6,
 
 /* Dropdown new company */
 .card.bg-gray .card-body img{
-    width: calc(100% - 8vw);
+    width: calc(85% - 8vw);
+    height: 190px;
 }
 .bg-gray {
     position: relative;
@@ -1109,22 +1111,27 @@ h6,
 }
 
 .bg-gray::before {
-    content: 'View All -->';
+    /* content: 'View All -->'; */
+    content: '';
+    background-image: url(../img/link_hover_svg.svg);
+    background-size: 12%;
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: rgba(252, 252, 255, 0.759);
     color: #365efd;
     position: absolute;
-    font-weight: 700;
-    font-size: 24px;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 1;
+    opacity: 0;
+    /* padding-top: 80px;
+    font-size: 24px;
+    font-weight: 700;
     text-decoration: underline;
     text-transform: capitalize;
-    text-align: center;
-    padding-top: 80px;
-    opacity: 0;
-    z-index: 1;
+    text-align: center; */
 }
 
 .bg-gray:hover::before {
@@ -1153,7 +1160,7 @@ h6,
     text-decoration: none;
     color: #555555;
     border-radius: 5px;
-    transition: all 0.5s ease;
+    transition: all 0.1s ease;
 }
 
 .link-dec a:hover,
@@ -1377,7 +1384,7 @@ a .logo-cloud {
 }
 
 .carousel-indicators {
-    bottom: 15% !important;
+    bottom: 10% !important;
     outline: none;
 
     & button {
@@ -1419,7 +1426,7 @@ a .logo-cloud {
     background: rgba(255, 255, 255, 0.35);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.175);
+    border: 1px solid rgba(255, 255, 255, 0.175) !important;
 }
 
 
@@ -2654,9 +2661,9 @@ span#no-1 {
 .btn-silver {
     background-color: rgba(0, 76, 255, 0.099) !important;
     color: #222222 !important;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
 }
 
 .btn-silver:hover,
