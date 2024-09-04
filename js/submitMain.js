@@ -65,14 +65,17 @@
                 if (ourMobNo == 9443487210 || ourMobNo == 8220017918) {
                     $("#cus_number-errorLabel").css('display', 'block').text("Please Enter your Mobile Number");
                     $("#cus_number").val();
+                    $('#cus_number').attr('aria-invalid', 'true');
                     return false;
                 }
                 else {
+                    $('#cus_number').attr('aria-invalid', 'false');
                     return true;
                 }
             } else {
                 $("#cus_number-errorLabel").css('display', 'block').text("Please Enter a Valid Mobile Number");
                 $("#cus_number").val();
+                $('#cus_number').attr('aria-invalid', 'true');
                 return false;
             }
         } else {
@@ -104,12 +107,14 @@
                 $("#cus_mail-errorLabel").text('Please Enter your Email ID');
                 $("#cus_mail-errorLabel").attr("style", "display: block;");
                 $("#cus_mail").val();
+                $('#cus_mail').attr('aria-invalid', 'true');
                 return false;
             }
             if (regex.test(email)) {
                 $("#cus_mail").attr("class", "form-control");
                 $("#cus_mail-errorLabel").text('');
                 $("#cus_mail-errorLabel").attr("style", "display: none;");
+                $('#cus_mail').attr('aria-invalid', 'false');
                 return true;
             }
             else {
@@ -117,6 +122,7 @@
                 $("#cus_mail-errorLabel").text('Please Enter Valid Email ID');
                 $("#cus_mail-errorLabel").attr("style", "display: block;");
                 $("#cus_mail").val();
+                $('#cus_mail').attr('aria-invalid', 'true');
                 return false;
             }
         }
@@ -149,6 +155,7 @@
             // If the trimmed name is empty
             $("#cus_name").removeClass("error"); // Add error class
             $('#cus_name-errorLabel').css('display', 'block').text(''); // Show error message
+            $('#cus_name').attr('aria-invalid', 'true');
             return false;
         } else {
             // If the trimmed name is not empty
@@ -157,11 +164,13 @@
                 $('#cus_name').val(cusNameTrim); // Set trimmed value
                 $("#cus_name").removeClass("error").addClass("form-control"); // Remove error class, add form-control class
                 $('#cus_name-errorLabel').css('display', 'none').text(""); // Hide error message
+                $('#cus_name').attr('aria-invalid', 'false');
                 return true;
             } else {
                 // If the name does not match the regex
                 $("#cus_name").addClass("error"); // Add error class
                 $('#cus_name-errorLabel').css('display', 'block').text('Please Enter a Valid Name'); // Show error message
+                $('#cus_name').attr('aria-invalid', 'true');
                 return false;
             }
         }
@@ -273,7 +282,8 @@
 
         function focusNextEmptyField() {
             for (var i = currentIndex; i < fields.length; i++) {
-                if ($(fields[i]).val() === '') {
+                var firstErrorField = $(fields[i]).attr('aria-invalid');
+                if ($(fields[i]).val() === '' || firstErrorField === 'true') {
                     $(fields[i]).focus();
                     currentIndex = i;
                     return;

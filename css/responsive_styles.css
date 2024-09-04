@@ -133,7 +133,7 @@
 
     #contact_land {
         position: relative;
-        height: 520px;
+        /* height: 520px; */
     }
 
     .contact_bg {
@@ -3959,7 +3959,8 @@
     }
 
     .contact_bg {
-        height: 520px;
+        height: 650px;
+        background-position: 75% 25%;
     }
 
     .contact-border h1,
@@ -4161,7 +4162,7 @@
 
     .bg-02 .card.team {
         height: inherit !important;
-        min-height: 305px !important;
+        min-height: 335px !important;
     }
 
     #order-lg-row {
@@ -4308,7 +4309,7 @@
 
     #profile_sec2 .leg_btn_nxt,
     #profile_sec2 .leg_btn_prev {
-        transform: translate(0px, -60px);
+        transform: translate(0px, -10px);
     }
 
     .mm-response {
@@ -4443,7 +4444,7 @@
     }
 
     .border-pdt h1 {
-        font-size: 2.995rem;
+        font-size: calc(1.265rem + 3vw);
         font-weight: 300;
         padding-top: 5px;
         padding-right: 2px;
@@ -5040,7 +5041,6 @@
 
     .portfolio_box.card {
         width: calc(145px + 3.5vw) !important;
-        height: 150px !important;
     }
 }
 
@@ -5447,6 +5447,15 @@
         transform: none;
     }
 
+    .profile_topic {
+        margin-top: 50px !important;
+        width: 370px !important;
+
+        & h1 {
+            font-size: calc(4rem + 0.9vw) !important;
+        }
+    }
+
     #profile_sec2 .hist_2,
     #profile_sec2 .hist_3 {
         width: 600px !important;
@@ -5479,7 +5488,7 @@
 
     .page-banner.home-banner {
         margin-top: 100px;
-        height: 440px;
+        height: 100%;
     }
 
     #profile_sec2_1 .swiper-pagination {
@@ -5563,7 +5572,7 @@
     }
 
     #profile_sec2_2 {
-        height: 450px !important;
+        height: 500px !important;
     }
 
     #profile_sec2_2 .container {
@@ -6106,7 +6115,6 @@
 
     .portfolio_box.card {
         width: calc(145px + 3.5vw) !important;
-        height: 150px !important;
     }
 }
 
@@ -7517,7 +7525,7 @@
 
     .card-bg1,
     .card-bg2 {
-        height: 410px !important;
+        height: inherit !important;
 
         & hr {
             margin: 0.5rem 0;
@@ -7711,7 +7719,7 @@
     }
 
     .bg-0 {
-        height: 100% !important;
+        height: 680px !important;
     }
 
     .bg-11 {
@@ -8729,8 +8737,8 @@
     }
 
     .portfolio_box.card {
-        width: calc(120px + 3.5vw);
-        height: 160px;
+        width: calc(120px + 3.5vw) !important;
+        height: 150px !important;
     }
 
     #profile_sec2_1 .swiper-button-next{
@@ -8806,6 +8814,7 @@
 
     .page-section {
         margin-top: 0px !important;
+        height: inherit;
     }
 
     #tab-sec .swiper-button-next:after,

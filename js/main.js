@@ -13,16 +13,16 @@
             theme: "dark",
             scrollbarPosition: "inside"
         });
-        $('body').on('copy', function (e) {
-            e.preventDefault();
-            var defaultText = "!OOPS, you can not copy and paste.";
-            var clipboardData = e.originalEvent.clipboardData || window.clipboardData;
-            if (clipboardData) {
-                clipboardData.setData('text', defaultText);
-            } else {
-                window.clipboardData.setData('Text', defaultText);
-            }
-        });
+        // $('body').on('copy', function (e) {
+        //     e.preventDefault();
+        //     var defaultText = "!OOPS, you can not copy and paste.";
+        //     var clipboardData = e.originalEvent.clipboardData || window.clipboardData;
+        //     if (clipboardData) {
+        //         clipboardData.setData('text', defaultText);
+        //     } else {
+        //         window.clipboardData.setData('Text', defaultText);
+        //     }
+        // });
         $(document).bind("contextmenu", function (e) {
             e.preventDefault();
             return false;
@@ -123,7 +123,7 @@
         setTimeout(() => {
             screenCheck();
         }, 1800);
-        if (screen.width < 1114) {
+        if (screen.width < 1200) {
             $(document).ready(function () {
                 $('.count').counterUp({
                     delay: 10,
@@ -200,7 +200,7 @@
     function screenCheck() {
         var deviceAgent = navigator.userAgent.toLowerCase();
         var agentID = deviceAgent.match(/(iphone|ipod|ipad)/);
-        if (agentID || $(window).width() <= 1114) {
+        if (agentID || $(window).width() < 1200) {
             // its mobile screen
             $.scrollify.destroy();
             $('section').removeClass('scroll').removeAttr('style');
@@ -519,7 +519,7 @@
             "desingFrame.svg": "rgb(195 232 249)",
             "prototype-demo.svg": "rgb(240 132 79)",
             "cac.svg": "rgb(241 219 144)",
-            "dev.svg": "rgb(247 212 234)",
+            "dev.svg": "rgb(255 155 200)",
             "deploy.svg": "rgb(207 233 199)",
             "sam.svg": "rgb(227 148 255)",
             "seo.svg": "rgb(193 201 49)"

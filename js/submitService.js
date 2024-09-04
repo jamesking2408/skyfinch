@@ -73,15 +73,18 @@
                 const ourMobNo = mobNo.slice(-10);
                 if (ourMobNo == 9443487210 || ourMobNo == 8220017918) {
                     $("#serviceNum-errorLabel").css('display', 'block').text("Please Enter your Mobile Number.");
+                    $('#serviceNum').attr('aria-invalid', 'true');
                     $("#serviceNum").val();
                     return false;
                 }
                 else {
+                    $('#serviceNum').attr('aria-invalid', 'false');
                     return true;
                 }
             } else {
                 $("#serviceNum-errorLabel").css('display', 'block').text("Please Enter a Valid Mobile Number.");
                 $("#serviceNum").val();
+                $('#serviceNum').attr('aria-invalid', 'true');
                 return false;
             }
         } else {
@@ -111,6 +114,7 @@
                 $("#serviceMail").attr("class", "form-control error");
                 $("#serviceMail-errorLabel").text('Please Enter your Email ID');
                 $("#serviceMail-errorLabel").attr("style", "display: block;");
+                $('#serviceMail').attr('aria-invalid', 'true');
                 $("#serviceMail").val();
                 return false;
             }
@@ -118,12 +122,14 @@
                 $("#serviceMail").attr("class", "form-control");
                 $("#serviceMail-errorLabel").text('');
                 $("#serviceMail-errorLabel").attr("style", "display: none;");
+                $('#serviceMail').attr('aria-invalid', 'false');
                 return true;
             } else {
                 $("#serviceMail").attr("class", "form-control error");
                 $("#serviceMail-errorLabel").text('Please Enter a Valid Email ID');
                 $("#serviceMail-errorLabel").attr("style", "display: block;");
                 // $("#serviceMail").val('');
+                $('#serviceMail').attr('aria-invalid', 'true');
                 return false;
             }
         } else {
@@ -155,6 +161,7 @@
             // If the trimmed name is empty
             $("#serviceName").removeClass("error"); // Add error class
             $('#serviceName-errorLabel').css('display', 'block').text(''); // Show error message
+            $('#serviceName').attr('aria-invalid', 'true');
             return false;
         } else {
             // If the trimmed name is not empty
@@ -163,11 +170,13 @@
                 $('#serviceName').val(cusNameTrim); // Set trimmed value
                 $("#serviceName").removeClass("error").addClass("form-control"); // Remove error class, add form-control class
                 $('#serviceName-errorLabel').css('display', 'none').text(""); // Hide error message
+                $('#serviceName').attr('aria-invalid', 'false');
                 return true;
             } else {
                 // If the name does not match the regex
                 $("#serviceName").addClass("error"); // Add error class
                 $('#serviceName-errorLabel').css('display', 'block').text('Please Enter a Valid Name'); // Show error message
+                $('#serviceName').attr('aria-invalid', 'true');
                 return false;
             }
         }
@@ -200,17 +209,20 @@
                 $("#serviceSub").attr("class", "form-control error");
                 $('#serviceSub-errorLabel').css('display', 'none').text("");
                 $('#serviceSub').val(cusSubject);
+                $('#serviceSub').attr('aria-invalid', 'false');
                 return true;
             }
             else {
                 $("#serviceSub").attr("class", "form-control error");
                 $('#serviceSub-errorLabel').css('display', 'block').text('Please Enter a Valid Subject');
+                $('#serviceSub').attr('aria-invalid', 'true');
                 return false;
             }
         }
         else {
             $("#serviceSub").attr("class", "form-control error");
             $('#serviceSub-errorLabel').css('display', 'block').text('');
+            $('#serviceSub').attr('aria-invalid', 'true');
             return false;
         }
     }
@@ -340,7 +352,8 @@
 
         function focusNextEmptyField() {
             for (var i = currentIndex; i < fields.length; i++) {
-                if ($(fields[i]).val() === '') {
+                var firstErrorField = $(fields[i]).attr('aria-invalid');
+                if ($(fields[i]).val() === '' || firstErrorField === 'true') {
                     $(fields[i]).focus();
                     currentIndex = i;
                     return;

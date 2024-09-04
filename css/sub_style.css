@@ -1548,7 +1548,8 @@ ul>.nt-x {
 .button--nina:hover,
 .button--nina:active,
 .button--nina:focus-visible {
-    background-color: #ffee02;
+    background-color: #ffee02 !important;
+    border: none;
 }
 
 .button--nina:hover::before {

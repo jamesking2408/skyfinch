@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>SkyFinch | Product Enquiry</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta http-equiv="Cache-Control" content="max-age=31536000, immutable">
+  <meta http-equiv="cache-control" content="no-cache">
   <meta content="" name="keywords">
   <meta content="" name="description">
   <!-- css animate -->
@@ -76,7 +76,7 @@
       </li>
     </ul>
     <div class="chat-input">
-      <textarea placeholder="Type here...."></textarea>
+      <textarea placeholder="Type here...." required></textarea>
       <span id="send-btn" class="material-symbols-outlined">send</span>
     </div>
   </div>
@@ -402,6 +402,7 @@
                       <label for="customerCountry">Country <span id="important">*</span></label>
                       <input autocomplete="off" type="text" class="form-control text-capitalize" id="customerCountry" name="customerCountry" maxlength="80" placeholder="Enter your Country" onkeypress="return /[a-zA-Z .]/i.test(event.key)">
                     </div>
+                    <label id="customerCountry-errorLabel" for="customerCountry" class="error text-danger" style="display:none"></label>
                   </div>
                   <div class="col-md-6 mt-md-1 pt-md-0 pb-md-2 py-3 mb-1 wow fadeInUp" data-wow-delay="0.8s">
                     <div class="input-data">

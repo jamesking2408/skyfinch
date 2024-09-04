@@ -2619,7 +2619,7 @@ ul.cloud a:hover {
 #os_tech .card-body,
 #db_tech .card-body,
 #rt_tech .card-body{
-  height: 225px !important;
+  height: 225px;
   display: grid;
   place-content: baseline;
 }
@@ -2634,7 +2634,7 @@ ul.cloud a:hover {
 
 #mob_tech > div > div > div > div:nth-child(1) > div.card > .card-body,
 #mob_tech > div > div > div > div:nth-child(2) > div.card > .card-body {
-  height: 230px !important;
+  height: 230px;
   & .icons_mob, p {
     position: relative;
     top: -0.9rem;
@@ -2643,7 +2643,7 @@ ul.cloud a:hover {
 
 #mob_tech > div > div > div > div:nth-child(3) > div.card > .card-body,
 #mob_tech > div > div > div > div:nth-child(4) > div.card > .card-body {
-  height: 210px !important;
+  height: 210px;
   & .icons_mob, p {
     position: relative;
     top: -0.9rem;
@@ -2652,7 +2652,7 @@ ul.cloud a:hover {
 
 #ot_tech > div > div > div > div:nth-child(1) > div.card > .card-body,
 #ot_tech > div > div > div > div:nth-child(2) > div.card > .card-body {
-  height: 245px !important;
+  height: 245px;
   & .icons_ot, p {
     position: relative;
     top: -0.9rem;
@@ -2661,7 +2661,7 @@ ul.cloud a:hover {
 
 #ot_tech > div > div > div > div:nth-child(3) > div.card > .card-body,
 #ot_tech > div > div > div > div:nth-child(4) > div.card > .card-body {
-  height: 200px !important;
+  height: 200px;
   & .icons_ot, p {
     position: relative;
     top: -0.9rem;
@@ -2670,7 +2670,7 @@ ul.cloud a:hover {
 
 #sf_tech > div > div > div > div:nth-child(1) > div.card > .card-body,
 #sf_tech > div > div > div > div:nth-child(2) > div.card > .card-body {
-  height: 230px !important;
+  height: 230px;
   & .icons_sf, p {
     position: relative;
     top: -0.9rem;
@@ -2679,7 +2679,7 @@ ul.cloud a:hover {
 
 #sf_tech > div > div > div > div:nth-child(3) > div.card > .card-body,
 #sf_tech > div > div > div > div:nth-child(4) > div.card > .card-body {
-  height: 205px !important;
+  height: 205px;
   & .icons_sf, p {
     position: relative;
     top: -0.9rem;
@@ -2688,7 +2688,7 @@ ul.cloud a:hover {
 
 #tp_tech > div > div > div > div:nth-child(1) > div.card > .card-body,
 #tp_tech > div > div > div > div:nth-child(2) > div.card > .card-body {
-  height: 230px !important;
+  height: 230px;
   & .icons_tp, p {
     position: relative;
     top: -0.9rem;
@@ -2697,7 +2697,7 @@ ul.cloud a:hover {
 
 #tp_tech > div > div > div > div:nth-child(3) > div.card > .card-body,
 #tp_tech > div > div > div > div:nth-child(4) > div.card > .card-body {
-  height: 185px !important;
+  height: 185px;
   & .icons_tp, p {
     position: relative;
     top: -0.9rem;

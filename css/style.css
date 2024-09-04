@@ -1025,8 +1025,12 @@ h6,
     display: none;
     background-color: #f6f8ff !important;
     position: fixed;
-    height: 320px;
+    height: 350px;
     top: 100px;
+
+    & > div {
+        height: inherit;
+    }
 }
 
 .banner-bg--left {
@@ -1034,7 +1038,8 @@ h6,
     background: #6f8cff;
     background-position: center;
     background-size: cover;
-    height: 320px;
+    /* height: 320px; */
+    height: inherit;
 }
 
 .banner-bg--center {
@@ -1141,6 +1146,7 @@ h6,
 .link-dec {
     display: flex;
     flex-direction: column;
+    padding: 0px 15px;
 
     & h5 {
         width: fit-content;
@@ -2767,8 +2773,18 @@ span#no-1 {
 
 #part-proud .owl-next:hover,
 #part-proud .owl-prev:hover {
-    background-color: #023b91;
-    color: #fff;
+    background-color: #023b91 !important;
+    color: #fff !important;
+    outline: none !important;
+    border: none !important;
+}
+
+#part-proud .owl-next:focus-visible,
+#part-proud .owl-prev:focus-visible {
+    background-color: #023b91 !important;
+    color: #fff !important;
+    outline: none !important;
+    border: none !important;
 }
 
 #part-proud .owl-nav span {
@@ -3425,7 +3441,8 @@ textarea::placeholder {
     font-weight: 400;
     padding: 5px 10px;
     border: 1px solid #0670fc;
-    transition: all 0.3s ease;
+    transition: all 0.1s ease;
+    width: 100%;
 }
 
 .mybtn:hover {

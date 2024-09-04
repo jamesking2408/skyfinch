@@ -66,14 +66,17 @@
                 if (ourMobNo == 9443487210 || ourMobNo == 8220017918) {
                     $("#contactNum-errorLabel").css('display', 'block').text("Please Enter your Mobile Number");
                     $("#contactNum").val();
+                    $('#contactNum').attr('aria-invalid', 'true');
                     return false;
                 }
                 else {
+                    $('#contactNum').attr('aria-invalid', 'false');
                     return true;
                 }
             } else {
                 $("#contactNum-errorLabel").css('display', 'block').text("Please Enter a Valid Mobile Number");
                 $("#contactNum").val();
+                $('#contactNum').attr('aria-invalid', 'true');
                 return false;
             }
         } else {
@@ -102,12 +105,14 @@
                 $("#contactMail-errorLabel").text('Please Enter your Email ID');
                 $("#contactMail-errorLabel").attr("style", "display: block;");
                 $("#contactMail").val();
+                $('#contactMail').attr('aria-invalid', 'true');
                 return false;
             }
             if (regex.test(email)) {
                 $("#contactMail").attr("class", "form-control");
                 $("#contactMail-errorLabel").text('');
                 $("#contactMail-errorLabel").attr("style", "display: none;");
+                $('#contactMail').attr('aria-invalid', 'false');
                 return true;
             }
             else {
@@ -115,6 +120,7 @@
                 $("#contactMail-errorLabel").text('Please Enter Valid Email ID');
                 $("#contactMail-errorLabel").attr("style", "display: block;");
                 $("#contactMail").val();
+                $('#contactMail').attr('aria-invalid', 'true');
                 return false;
             }
         }
@@ -146,6 +152,7 @@
             // If the trimmed name is empty
             $("#contactName").removeClass("error"); // Add error class
             $('#contactName-errorLabel').css('display', 'block').text(''); // Show error message
+            $('#contactName').attr('aria-invalid', 'true');
             return false;
         } else {
             // If the trimmed name is not empty
@@ -154,11 +161,13 @@
                 $('#contactName').val(cusNameTrim); // Set trimmed value
                 $("#contactName").removeClass("error").addClass("form-control"); // Remove error class, add form-control class
                 $('#contactName-errorLabel').css('display', 'none').text(""); // Hide error message
+                $('#contactName').attr('aria-invalid', 'false');
                 return true;
             } else {
                 // If the name does not match the regex
                 $("#contactName").addClass("error"); // Add error class
                 $('#contactName-errorLabel').css('display', 'block').text('Please Enter a Valid Name'); // Show error message
+                $('#contactName').attr('aria-invalid', 'true');
                 return false;
             }
         }
@@ -190,17 +199,20 @@
                 $("#contactSubject").attr("class", "form-control error");
                 $('#contactSubject-errorLabel').css('display', 'none').text("");
                 $('#contactSubject').val(cusSubject);
+                $('#contactSubject').attr('aria-invalid', 'false');
                 return true;
             }
             else {
                 $("#contactSubject").attr("class", "form-control error");
                 $('#contactSubject-errorLabel').css('display', 'block').text('Please Enter Valid subject');
+                $('#contactSubject').attr('aria-invalid', 'true');
                 return false;
             }
         }
         else {
             $("#contactSubject").attr("class", "form-control error");
             $('#contactSubject-errorLabel').css('display', 'block').text('');
+            $('#contactSubject').attr('aria-invalid', 'true');
             return false;
         }
     }
@@ -298,7 +310,8 @@
 
         function focusNextEmptyField() {
             for (var i = currentIndex; i < fields.length; i++) {
-                if ($(fields[i]).val() === '') {
+                var firstErrorField = $(fields[i]).attr('aria-invalid');
+                if ($(fields[i]).val() === '' || firstErrorField === 'true') {
                     $(fields[i]).focus();
                     currentIndex = i;
                     return;

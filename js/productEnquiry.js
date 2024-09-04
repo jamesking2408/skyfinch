@@ -92,12 +92,14 @@
                 $("#customerMail-errorLabel").text('Please Enter your Email ID');
                 $("#customerMail-errorLabel").attr("style", "display: block;");
                 $("#customerMail").val();
+                $('#customerMail').attr('aria-invalid', 'true');
                 return false;
             }
             if (regex.test(email)) {
                 $("#customerMail").attr("class", "form-control");
                 $("#customerMail-errorLabel").text('');
                 $("#customerMail-errorLabel").attr("style", "display: none;");
+                $('#customerMail').attr('aria-invalid', 'false');
                 return true;
             }
             else {
@@ -105,6 +107,7 @@
                 $("#customerMail-errorLabel").text('Please Enter Valid Email ID');
                 $("#customerMail-errorLabel").attr("style", "display: block;");
                 $("#customerMail").val();
+                $('#customerMail').attr('aria-invalid', 'true');
                 return false;
             }
         }
@@ -135,14 +138,17 @@
                 if (ourMobNo == 9443487210 || ourMobNo == 8220017918) {
                     $("#customerNum-errorLabel").css('display', 'block').text("Please Enter your Mobile Number.");
                     $("#customerNum").val();
+                    $('#customerNum').attr('aria-invalid', 'true');
                     return false;
                 }
                 else {
+                    $('#customerNum').attr('aria-invalid', 'false');
                     return true;
                 }
             } else {
                 $("#customerNum-errorLabel").css('display', 'block').text("Please Enter a Valid Mobile Number.");
                 $("#customerNum").val();
+                $('#customerNum').attr('aria-invalid', 'true');
                 return false;
             }
         } else {
@@ -170,6 +176,7 @@
             // If the trimmed name is empty
             $("#customerName").removeClass("error"); // Add error class
             $('#customerName-errorLabel').css('display', 'block').text(''); // Show error message
+            $('#customerName').attr('aria-invalid', 'true');
             return false;
         } else {
             // If the trimmed name is not empty
@@ -178,11 +185,13 @@
                 $('#customerName').val(cusNameTrim); // Set trimmed value
                 $("#customerName").removeClass("error").addClass("form-control"); // Remove error class, add form-control class
                 $('#customerName-errorLabel').css('display', 'none').text(""); // Hide error message
+                $('#customerName').attr('aria-invalid', 'false');
                 return true;
             } else {
                 // If the name does not match the regex
                 $("#customerName").addClass("error"); // Add error class
                 $('#customerName-errorLabel').css('display', 'block').text('Please Enter a Valid Name'); // Show error message
+                $('#customerName').attr('aria-invalid', 'true');
                 return false;
             }
         }
@@ -254,17 +263,51 @@
     });
 
     function validateCountryInput() {
-        var $input = $('#customerCountry');
-        const value = $input.val();
-        var regexCountry = /^[a-zA-Z\s.-]*$/;
-        if (!regexCountry.test(value)) {
-            $input.val(value.replace(/[^a-zA-Z\s.-]/g, ''));
+        SubmitFlag = true;
+        var cusName = $("#customerCountry").val();
+        var cusNameTrim = $.trim(cusName);
+        var regex = /^[A-Za-z]+(?:\s[A-Za-z]+)*(?:\.[A-Za-z]+)*$/;
+
+        if (cusNameTrim === "") {
+            // If the trimmed name is empty
+            $("#customerCountry").removeClass("error"); // Add error class
+            $('#customerCountry-errorLabel').css('display', 'block').text(''); // Show error message
+            $('#customerCountry').attr('aria-invalid', 'true');
+            return false;
+        } else {
+            // If the trimmed name is not empty
+            if (regex.test(cusNameTrim)) {
+                // If the name matches the regex
+                $('#customerCountry').val(cusNameTrim); // Set trimmed value
+                $("#customerCountry").removeClass("error").addClass("form-control"); // Remove error class, add form-control class
+                $('#customerCountry-errorLabel').css('display', 'none').text(""); // Hide error message
+                $('#customerCountry').attr('aria-invalid', 'false');
+                return true;
+            } else {
+                // If the name does not match the regex
+                $("#customerCountry").addClass("error"); // Add error class
+                $('#customerCountry-errorLabel').css('display', 'block').text('Please Enter a Valid Name'); // Show error message
+                $('#customerCountry').attr('aria-invalid', 'true');
+                return false;
+            }
         }
     }
-    $('#customerCountry').on('input', function () {
+
+    // Validate on blur event (when the input loses focus)
+    $('#customerCountry').on('blur', function () {
         validateCountryInput();
-    }).on('blur', function () {
         trimSpacesOnBlur('customerCountry');
+    });
+
+    // Clear error message on input event (when typing)
+    $("#customerCountry").on('input', function () {
+        $('#customerCountry-errorLabel').css('display', 'none').text(""); // Hide error message
+        $("#customerCountry").removeClass("error"); // Remove error class
+        var regexName = /^[a-zA-Z .]*$/;
+        var value = $(this).val();
+        if (!regexName.test(value)) {
+            $(this).val(value.replace(/[^a-zA-Z .]/g, ''));
+        }
     });
 
     function validateProductInput() {
@@ -384,7 +427,8 @@
         var currentIndex = 0;
         function focusNextEmptyField() {
             for (var i = currentIndex; i < fields.length; i++) {
-                if ($(fields[i]).val() === '') {
+                var firstErrorField = $(fields[i]).attr('aria-invalid');
+                if ($(fields[i]).val() === '' || firstErrorField === 'true') {
                     $(fields[i]).focus();
                     currentIndex = i;
                     return;
@@ -393,7 +437,7 @@
             $(fields[0]).focus();
             currentIndex = 0;
         }
-        if (($("#cus_Form").valid() && (emailValid()) && (MobileNum()) && (validateName() === true))) {
+        if (($("#cus_Form").valid() && (emailValid()) && (MobileNum()) && (validateName() === true) && (validateCountryInput() === true))) {
             if (SubmitFlag === true) {
                 prodEnquiry();
                 SubmitFlag = false;
